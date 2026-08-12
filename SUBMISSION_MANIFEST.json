@@ -4010,9 +4010,9 @@
       "sha256": "456562b4f515e566ca71a417aa3432536730bc67a47e14a9c8cbe5d478e78608"
     },
     {
-      "bytes": 104329,
+      "bytes": 104337,
       "path": "reproducibility/build_core_results_package.py",
-      "sha256": "71bd621e8ebfba17a8e46f07e7c46c3872c076ed6399141e34ca5a0c708d687f"
+      "sha256": "cdcf9a694d1cb57989c86064f90cc13b96f0a897b2e56957081193bcb608c215"
     },
     {
       "bytes": 62560,
@@ -6185,9 +6185,9 @@
       "sha256": "ca8058641060107943f2faa5d9d34608274947385b2bce4582e479c010ac0854"
     },
     {
-      "bytes": 25008,
+      "bytes": 25015,
       "path": "tests/test_core_results_packaging.py",
-      "sha256": "ff2c297920247a7805398e96ec86af64180e70de54d5cf7b44d276feaf2fffa4"
+      "sha256": "eac58e320364ff1345f19a8c2f8487eb4e1c067a73e895121a5cd672843da12f"
     },
     {
       "bytes": 14046,
@@ -6230,19 +6230,19 @@
       "sha256": "a0b7a8e69c46fc2328f140d1ecba5cb18581bb895df08c9b3893968efd264186"
     },
     {
-      "bytes": 3417,
+      "bytes": 3528,
       "path": "tools/build_submission_manifest.py",
-      "sha256": "77a87acc32977e93e48ca3dfb73c9d1f8c1a0663c845da8e08eddea95e7c5f3a"
+      "sha256": "757b8c8f548e4383ebb53cdd7a746a6299d031c965312ab5f1858c71d993c175"
     },
     {
-      "bytes": 1617,
+      "bytes": 1710,
       "path": "tools/build_submission_zip.py",
-      "sha256": "cc2b8c7dc386ad765a1155224b0f18b91ac5c31ff728b8a360c8c63e174379fe"
+      "sha256": "625922b8ea306d4a2212b2458c9a872f5fdbb3279cd0dc2586e576fed112b2e7"
     },
     {
-      "bytes": 3554,
+      "bytes": 3909,
       "path": "tools/validate_anonymous_submission.py",
-      "sha256": "bf0cbb939382a127072584832d64cd63bf7d0c1a85147f4bf901da7864eaf706"
+      "sha256": "0c397a5f0fd80e1f294737afd587626de394c42f6c89320c25806efb5fd54117"
     }
   ],
   "included_components": [
@@ -6250,7 +6250,7 @@
     "core-results"
   ],
   "license": "MIT",
-  "payload_bytes": 13501968,
+  "payload_bytes": 13502542,
   "payload_file_count": 1247,
   "release_date": "2026-08-12",
   "schema_version": 1

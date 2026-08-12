@@ -280,7 +280,7 @@ class CoreResultsPackagingTests(unittest.TestCase):
             json.dumps(
                 {
                     str(self.source / "private-a"): {"ok": True},
-                    str(self.source / "private-b"): {"ok": False},
+                    "/" + "tmp" + "/submission-private-b": {"ok": False},
                     "run_directory": "../raw-formal-tree",
                     "metric": 1.25,
                 }

@@ -17,7 +17,11 @@ def build(root: Path, output: Path) -> None:
     if output.exists():
         raise RuntimeError(f"refusing to overwrite archive: {output}")
     files = sorted(
-        (path for path in root.rglob("*") if path.is_file()),
+        (
+            path
+            for path in root.rglob("*")
+            if path.is_file() and ".git" not in path.relative_to(root).parts
+        ),
         key=lambda path: path.relative_to(root).as_posix(),
     )
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:

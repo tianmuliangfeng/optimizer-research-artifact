@@ -48,7 +48,14 @@ def validate(root: Path) -> None:
 
     for path in root.rglob("*"):
         relative = path.relative_to(root).as_posix()
-        if any(part in FORBIDDEN_NAMES for part in path.relative_to(root).parts):
+        parts = path.relative_to(root).parts
+        # A GitHub Actions checkout necessarily has an untracked root .git
+        # directory. It is transport metadata, not submission content. Ignore
+        # that tree while continuing to reject forbidden names everywhere in
+        # the tracked/work-tree payload.
+        if parts and parts[0] == ".git":
+            continue
+        if any(part in FORBIDDEN_NAMES for part in parts):
             errors.append(f"forbidden repository entry: {relative}")
             continue
         if not path.is_file() or path.suffix.lower() not in TEXT_SUFFIXES:

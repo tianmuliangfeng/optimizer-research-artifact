@@ -51,7 +51,7 @@ SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 WINDOWS_ABSOLUTE_RE = re.compile(r"(?i)(?<![A-Za-z0-9_])[A-Za-z]:[\\/]")
 UNC_RE = re.compile(r"(?<![\\])\\\\[^\\\s]+\\[^\\\s]+")
 PRIVATE_POSIX_RE = re.compile(
-    "/" + r"(?:data|home|Users|mnt|workspace|root)(?:/|\\)", re.IGNORECASE
+    "/" + r"(?:data|home|Users|mnt|workspace|root|tmp)(?:/|\\)", re.IGNORECASE
 )
 # Conservative full-path matchers used after known selected paths are remapped.
 WINDOWS_PATH_RE = re.compile(
@@ -59,7 +59,7 @@ WINDOWS_PATH_RE = re.compile(
 )
 UNC_PATH_RE = re.compile(r"(?<![\\])\\\\[^\s\"'<>|,;)}\]]+")
 PRIVATE_POSIX_PATH_RE = re.compile(
-    "/" + r"(?:data|home|Users|mnt|workspace|root)/[^\s\"'<>|,;)}\]]*",
+    "/" + r"(?:data|home|Users|mnt|workspace|root|tmp)/[^\s\"'<>|,;)}\]]*",
     re.IGNORECASE,
 )
 PATH_KEY_RE = re.compile(

@@ -25,6 +25,8 @@ def regular_files(root: Path, *, include_manifest: bool) -> list[Path]:
     files: list[Path] = []
     for current, directories, names in os.walk(root, followlinks=False):
         current_path = Path(current)
+        if current_path == root:
+            directories[:] = [name for name in directories if name != ".git"]
         for name in list(directories):
             path = current_path / name
             if path.is_symlink():
