@@ -1,0 +1,11 @@
+contrast_scope,metric,optimizer_step,origin_contrast_units,pearson,spearman,sign_concordant_units,sign_concordance,descriptive_not_confirmatory
+primary,normalized_loss_auc,AUC_0_128,16,0.07409837942682991,-0.03823529411764706,8,0.5,True
+primary,normalized_heldout_loss,16,16,-0.7286039488350495,-0.788235294117647,5,0.3125,True
+primary,normalized_heldout_loss,32,16,-0.6701277543106524,-0.7735294117647059,4,0.25,True
+primary,normalized_heldout_loss,64,16,0.47340423053924413,0.6558823529411765,8,0.5,True
+primary,normalized_heldout_loss,128,16,0.3192260282805622,0.5794117647058824,9,0.5625,True
+all,normalized_loss_auc,AUC_0_128,20,0.17667954994382326,0.1037593984962406,10,0.5,True
+all,normalized_heldout_loss,16,20,-0.7128788807421204,-0.7804511278195488,5,0.25,True
+all,normalized_heldout_loss,32,20,-0.6437672474618695,-0.7669172932330827,4,0.2,True
+all,normalized_heldout_loss,64,20,0.5188618877977745,0.5804511278195489,11,0.55,True
+all,normalized_heldout_loss,128,20,0.34645026135067886,0.5082706766917293,12,0.6,True

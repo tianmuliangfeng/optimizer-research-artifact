@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-29.3",
+  "experiment": "42_llama1b_isolated_efficiency",
+  "evidence_class": "paper_grade_single_host_isolated_throughput_and_memory",
+  "scientific_scope": {
+    "primary_question": "What implementation throughput and measured CUDA-memory trade-off do the four frozen LLaMA-1B optimizer roles exhibit under one identical isolated configuration?",
+    "quality_claim_source": "experiment 20 formal-6200 three-seed analysis; experiment 42 does not contribute quality estimates",
+    "timing_boundary": "within one certified idle LLaMA H100 node only",
+    "forbidden_uses": [
+      "do not treat the 544-update benchmark loss as optimizer-quality evidence",
+      "do not combine timing from concurrent training runs",
+      "do not promote selective_diag versus selective_none to the primary comparison",
+      "do not compare these timings numerically with the R1 host"
+    ]
+  },
+  "method_order": [
+    "muon",
+    "newton_full",
+    "down_none",
+    "down_diag"
+  ],
+  "method_roles": {
+    "muon": "Muon baseline",
+    "newton_full": "original Newton-Muon control for LLaMA",
+    "down_none": "Selective-none",
+    "down_diag": "Selective-diag"
+  },
+  "primary_contrasts": [
+    {
+      "candidate": "down_none",
+      "reference": "muon"
+    },
+    {
+      "candidate": "down_none",
+      "reference": "newton_full"
+    },
+    {
+      "candidate": "down_diag",
+      "reference": "muon"
+    },
+    {
+      "candidate": "down_diag",
+      "reference": "newton_full"
+    },
+    {
+      "candidate": "newton_full",
+      "reference": "muon"
+    }
+  ],
+  "frozen_configuration": {
+    "seed": 2026,
+    "initialization_sha256": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec",
+    "parameter_count": 1013690368,
+    "global_batch_size": 512,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "tokens_per_update": 524288,
+    "warmup_updates_excluded": 32,
+    "timed_updates": 512,
+    "total_updates": 544,
+    "validation_every": 544,
+    "validation_tokens": 8192,
+    "warmdown_updates": 0,
+    "backup_lr": 0.0036,
+    "matrix_lr": 0.01,
+    "adamw_matrix_lr": 0.000576,
+    "checkpoint_every": 0,
+    "resume_policy": "never",
+    "wandb_policy": "disabled_for_timing"
+  },
+  "execution_policy": {
+    "physical_timing_gpu": "0",
+    "required_idle_physical_gpus": [
+      "0",
+      "1"
+    ],
+    "required_gpu_name": "NVIDIA H100 80GB HBM3",
+    "repeats": 4,
+    "orders": [
+      [
+        "muon",
+        "newton_full",
+        "down_none",
+        "down_diag"
+      ],
+      [
+        "newton_full",
+        "down_none",
+        "down_diag",
+        "muon"
+      ],
+      [
+        "down_none",
+        "down_diag",
+        "muon",
+        "newton_full"
+      ],
+      [
+        "down_diag",
+        "muon",
+        "newton_full",
+        "down_none"
+      ]
+    ],
+    "exclusive_certificate_before_and_after_every_timed_cell": true,
+    "continuous_gpu_process_monitor_interval_seconds": 10,
+    "each_method_occupies_each_position_once": true,
+    "interrupted_cell_policy": "leave the incomplete attempt in place and rerun the complete cell from initialization"
+  },
+  "measurement_policy": {
+    "official_timer": "CUDA-synchronized optimizer-update time accumulated by the audited trainer",
+    "warmup_exclusion": "the first 32 complete optimizer updates are excluded",
+    "excluded_from_timer": [
+      "validation",
+      "source materialization",
+      "torch.compile setup before the first update",
+      "checkpoint IO",
+      "W&B"
+    ],
+    "peak_memory": "synchronize and reset CUDA peak statistics immediately after warmup update 32; report max_memory_allocated and max_memory_reserved over timed training updates 33 through 544, captured before final validation",
+    "throughput_practical_band_pct": 1.0,
+    "report_raw_repeats": true,
+    "report_rotation_position_effects": true
+  },
+  "expected_k_state_bytes": {
+    "muon": 0,
+    "newton_full": 6174277632,
+    "down_none": 1811939328,
+    "down_diag": 1812731904
+  },
+  "expected_state_bytes": {
+    "model_parameter_bytes": 4054761472,
+    "optimizer_state_bytes": {
+      "muon": 4466770072,
+      "newton_full": 10641047704,
+      "down_none": 6278709400,
+      "down_diag": 6279501976
+    }
+  },
+  "source_contract": {
+    "base_trainer_relative_path": "scripts/17_llama_swiglu_validation/train_llama_swiglu.py",
+    "base_trainer_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "derived_efficiency_base_sha256": "a21f364b73ea859e1ca62bc75600de348b00a0ce5fcbd315ed7e848eb2b4666a",
+    "profile_wrapper_relative_path": "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py",
+    "profile_wrapper_sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+    "official_repo_commit": "df78af0db523d8bceb25af4919a3e3e7082b80f3",
+    "triton_kernels_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+  },
+  "acceptance": {
+    "formal_rows": 16,
+    "all_cells_complete": true,
+    "all_cells_unresumed": true,
+    "all_exclusive_certificates_pass": true,
+    "all_runtime_source_data_and_initialization_fingerprints_match": true,
+    "all_timing_and_memory_values_finite": true,
+    "all_k_state_bytes_exact": true,
+    "analysis_pass_is_integrity_not_algorithm_superiority": true
+  }
+}

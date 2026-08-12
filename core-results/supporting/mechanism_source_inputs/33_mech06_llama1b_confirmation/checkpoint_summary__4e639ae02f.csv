@@ -1,0 +1,3 @@
+checkpoint_label,checkpoint_step,diagnostic_signal,median_diag_p95_over_p05,median_diagonal_cosine,median_covariance_relative_drift,median_top_eigenspace_overlap,diag_median_advantage,diag_positive_cells,diag_material_layers,full_median_advantage,full_positive_cells,full_material_layers
+early,1000,uncertain,20.944619178771973,0.6112135648727417,1.2142444466562532,0.07636593654751778,-1.4091822071610654e-05,8,0,1.2041293793669448e-06,16,0
+late,6200,uncertain,15.649162769317627,0.6683975756168365,1.1237800729317498,0.06757457926869392,-4.533948326790421e-06,11,0,1.7677921449280996e-06,16,0

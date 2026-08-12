@@ -1,0 +1,14 @@
+{
+  "claim_eligible": true,
+  "input_manifest_sha256": "fa450211332c0364a5808eda29e93ecc1025822e08a82c9682df1e73901788e3",
+  "mdp_manifest": true,
+  "outputs": {
+    "SUBMISSION_TABLES.md": "087b6ea1a254f131fa9e272022079348b998801e28e6dd20d31e8e4bbc7cb0bb",
+    "cross_scale_forest.svg": "255a6a3ece689155dc5db3d1aac5bf6347c4cbda669e59dfa0fd8e2f68076c19",
+    "quality_state_pareto.svg": "22a191135d50797d61f834ea3065f70e5b772ce3f7a6b65a088562a25e3df8f6"
+  },
+  "scale_count": 3,
+  "schema_version": "mdp_submission_tables_figures_v1",
+  "status": "passed",
+  "synthetic": false
+}

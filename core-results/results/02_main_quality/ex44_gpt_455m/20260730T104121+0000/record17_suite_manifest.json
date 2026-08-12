@@ -1,0 +1,49 @@
+{
+  "analysis_accepted_cells_fingerprint_sha256": "c9e2c865e41da09668b0c0586a199ea9493c78ff162ac703e6d21f1877fcda2b",
+  "analysis_decision": {
+    "ambiguous_primary_contrasts": [
+      "selective_none_vs_muon",
+      "selective_diag_vs_original"
+    ],
+    "common_target_crossing_definition": "first downward crossing of validation loss 2.95, linearly interpolated between adjacent validation checkpoints",
+    "delta_convention": "candidate_minus_comparator; negative is better",
+    "diag_vs_none_is_primary": false,
+    "original_vs_muon_is_mandatory_benchmark_anchor": true,
+    "practical_margin": 0.002,
+    "primary_classifications": {
+      "selective_diag_vs_muon": "quality_equivalent_within_margin",
+      "selective_diag_vs_original": "direction_candidate_worse_but_practically_unresolved",
+      "selective_none_vs_muon": "direction_candidate_better_but_practically_unresolved",
+      "selective_none_vs_original": "quality_equivalent_within_margin"
+    },
+    "primary_endpoint": "final_val_loss",
+    "seed_append_allowed_automatically": false,
+    "seed_append_rule": "A statistical trigger is necessary but not sufficient.  Additional seeds are allowed only if this uncertainty would change the frozen cross-scale paper claim; if allowed, run all four methods together on the next unused seeds (2027 then 2028), at most two.",
+    "statistical_seed_append_gate_triggered": true,
+    "timing_claim_eligible": false
+  },
+  "analysis_manifest": "PRIVATE_PATH_REDACTED__f4c9bd0267de",
+  "analysis_primary_classifications": {
+    "selective_diag_vs_muon": "quality_equivalent_within_margin",
+    "selective_diag_vs_original": "direction_candidate_worse_but_practically_unresolved",
+    "selective_none_vs_muon": "direction_candidate_better_but_practically_unresolved",
+    "selective_none_vs_original": "quality_equivalent_within_margin"
+  },
+  "analysis_statistical_seed_append_gate_triggered": true,
+  "completed_at": "2026-08-01T07:04:52.600072+00:00",
+  "formal_cells": 12,
+  "formal_manifest": "PRIVATE_PATH_REDACTED__17ba67bfe2a8",
+  "passed": true,
+  "preflight": "PRIVATE_PATH_REDACTED",
+  "run_dir": "PRIVATE_PATH_REDACTED__de3fccfb80cf",
+  "schema_version": 1,
+  "scientific_integrity_passed": true,
+  "script_version": "2026-07-30.7",
+  "smoke_manifest": "PRIVATE_PATH_REDACTED__744739bc90ad",
+  "source_snapshot_manifest": "PRIVATE_PATH_REDACTED__e7bbca3c9fc0",
+  "source_snapshot_manifest_sha256": "994d9ea082f5bd7d21afc0e53f66cf03c0d091d44d23a53dd5f3fd48d2d47b7b",
+  "status": "completed",
+  "timing_eligible": false,
+  "wandb_complete": true,
+  "wandb_pending": []
+}

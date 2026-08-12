@@ -1,0 +1,9 @@
+check_id,claim_class,metric,observed,tolerance,passed,note
+F01,definition,shape_error,0,0,true,"G is [m,n], P is [n,n], and GP is [m,n]."
+F02,definition,none_identity_error,0,1e-09,true,none sets only the eligible matrix right preconditioner to I.
+F03,ridge_contract,nonpositive_preconditioner_eigenvalue,0,0,true,Positive ridge preserves SPD preconditioners.
+F04,theorem_identity,resolvent_relative_residual,9.2497286507e-15,1e-09,true,A+^-1-A-^-1 = -A+^-1 DeltaA A-^-1.
+F05,theorem_bound,inverse_bound_violation,0,1e-09,true,Spectral-norm resolvent bound.
+F06,theorem_bound,matched_gradient_bound_violation,0,1e-09,true,The same frozen G is used on both sides.
+F07,theorem_identity,alpha_trace_spread,0,1e-09,true,Fixed trace-based ridge is constant along the alpha path.
+F08,proof_target_check,alpha_inverse_derivative_relative_error,3.36325054779e-11,2e-06,true,Central finite difference checks dK_alpha^-1/dalpha.

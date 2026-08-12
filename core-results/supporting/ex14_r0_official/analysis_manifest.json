@@ -1,0 +1,25 @@
+{
+  "input_files": [
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED"
+  ],
+  "methods": [
+    "muon",
+    "newton_muon_block4"
+  ],
+  "metrics": [
+    "lr/adamw",
+    "lr/matrix",
+    "official/step_avg_ms",
+    "official/train_time_s",
+    "val/loss"
+  ],
+  "output_dir": "PRIVATE_PATH_REDACTED__7690a2012ca3",
+  "quality_fail": 0,
+  "quality_pass": 33,
+  "quality_warn": 2,
+  "status": "PASS"
+}

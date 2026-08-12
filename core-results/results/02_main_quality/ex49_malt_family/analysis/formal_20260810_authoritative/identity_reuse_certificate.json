@@ -1,0 +1,117 @@
+{
+  "caveats": [
+    "Experiment 45 is reused through its accepted eight-method analysis summary and manifest; Experiment 49 does not rewrite its historical rows.",
+    "MALTER-Eq17-R1 adaptation denotes the frozen Equation-17 single-eta paper-derived interpretation and is not an official MALTER reproduction."
+  ],
+  "checks": {
+    "dual_method_selection_certificate_sha256_verified": true,
+    "experiment45_exact_24_rows": true,
+    "experiment45_protocol": "mousse_r1_unified_analysis_v1",
+    "experiment45_status": "completed_valid",
+    "formal_cells_and_lrs_match_selection": true,
+    "formal_checkpoint_files_hash_and_size_verified": true,
+    "formal_memory_and_state_schema_crosschecked": true,
+    "formal_protocol": "malt_r1_selected_6200step_v4",
+    "formal_source_runtime_data_consistent_across_methods_and_seeds": true,
+    "formal_steps": 6200,
+    "formal_tokens": 3250585600,
+    "initial_validation_equal_within_four_decimals": true,
+    "malt_malter_initialization_hash_equal_by_seed": true,
+    "malt_method_label_exact": true,
+    "malt_three_locally_accepted_formal_manifests": true,
+    "malter_eq17_method_label_exact": true,
+    "malter_eq17_three_locally_accepted_formal_manifests": true,
+    "timing_eligible": false
+  },
+  "input_bundle_sha256": "b64796cfff358c4e4edea366d34f568a02b70fdb0e863c8a0fc96b5614dd6ce1",
+  "input_files": [
+    {
+      "path": "PRIVATE_PATH_REDACTED__ed6af6e1960a",
+      "role": "dual_method_selection_certificate",
+      "sha256": "591348aad2d19f36ca405abe2162d329dc89246bc41fc1fec3cb0581a28fe4ee"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__a16e1d178647",
+      "role": "malt_formal_summary_seed2024",
+      "sha256": "2587ad97b956f35380d5d272821b554f6866bf017a1822fb50588e10b0976600"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__1fa11ea78f7c",
+      "role": "malt_formal_summary_seed2025",
+      "sha256": "7daf81c43de576a9ecca6f72afd080096ffc80c73817aa4498d5c1b4cd1e1978"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__f5128fe1fafa",
+      "role": "malt_formal_summary_seed2026",
+      "sha256": "b3a6620fa06abb4a4bfd829984d8d653a6f525b9931519e31da849616dae2d28"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__bbbd1e25e3b2",
+      "role": "malt_formal_manifest_seed2024",
+      "sha256": "9a4d86fcbd71f2a61868add4a372347a76c309f3619a208155187f6d6dcf1143"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__b3189eb4d7e1",
+      "role": "malt_formal_manifest_seed2025",
+      "sha256": "c74299629c5bc723b1d7c4da41d4ad395d274852914f0710633e0618650c1d25"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__e61d1de0457e",
+      "role": "malt_formal_manifest_seed2026",
+      "sha256": "a8bbebbf149474b23e4eadab82525d5c04524ddeacf402fada4c0fe1b827577c"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__7244fd82dc73",
+      "role": "malter_eq17_formal_summary_seed2024",
+      "sha256": "d5e1b12a2f87e44f0682ff0d49cbe850da3cce3710d95bd42aebf3385fe38186"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__67d2e7a29c9d",
+      "role": "malter_eq17_formal_summary_seed2025",
+      "sha256": "b471e68987b4fdeb9832f474841ece06d178f04007cd571f8a94678b1c6b7d5b"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__5969a1490132",
+      "role": "malter_eq17_formal_summary_seed2026",
+      "sha256": "1a737f248d8551e676bf7db399ad5cce40d2597517c7296f925cfac1226c41e6"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__2ae5143ec352",
+      "role": "malter_eq17_formal_manifest_seed2024",
+      "sha256": "953f590c8ef4bb832e42f419720708d403a403e7fbc71ed5165582306a86ba09"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__9c438fe0aeb8",
+      "role": "malter_eq17_formal_manifest_seed2025",
+      "sha256": "8299b71df912368276779718fd4a1cef0af61911499bbe2670836e9e55a786fa"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__53fea33c1fdc",
+      "role": "malter_eq17_formal_manifest_seed2026",
+      "sha256": "970153375fb97cce071de2497b4a27efd56dfde5eed1e99f65e9a849104dd047"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__d623021bc48e",
+      "role": "experiment45_eight_method_summary",
+      "sha256": "eda9ba780c934230c641e74c295c59c5105c384d8b5decff4623926fbec5627b"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__1afe091f2ef3",
+      "role": "experiment45_analysis_manifest",
+      "sha256": "ebda6864bb066cb1102cb2946d9007d8d406b32b6c2e5f00418ba25746fac394"
+    }
+  ],
+  "method_labels": {
+    "malt": "MALT-R1 adaptation",
+    "malter_eq17": "MALTER-Eq17-R1 adaptation"
+  },
+  "paired_quality_eligible": true,
+  "protocol": "malt_r1_experiment45_identity_reuse_v4",
+  "schema_version": 2,
+  "seed_coverage": [
+    2024,
+    2025,
+    2026
+  ],
+  "status": "passed"
+}

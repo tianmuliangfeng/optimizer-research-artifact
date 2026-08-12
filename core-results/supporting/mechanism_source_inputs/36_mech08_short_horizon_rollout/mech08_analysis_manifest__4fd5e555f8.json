@@ -1,0 +1,44 @@
+{
+  "artifacts": [
+    "checks.json",
+    "evaluation_all.csv",
+    "integrity_audit.json",
+    "matched_start_audit.csv",
+    "mech08_analysis_manifest.json",
+    "paired_contrast_summary.csv",
+    "paired_contrasts.csv",
+    "prediction_alignment.csv",
+    "prediction_bridge.csv",
+    "prediction_bridge_by_replica.csv",
+    "run_summary.csv",
+    "source_artifacts.csv"
+  ],
+  "checks": {
+    "diag_none_absent": true,
+    "efficiency_excluded": true,
+    "evaluation_rows": true,
+    "formal_jobs": true,
+    "four_primary_contrasts": true,
+    "integrity_not_hypothesis": true,
+    "matched_starts": true,
+    "prediction_reference": true
+  },
+  "contract_sha256": "6055db20194b43e94acc0051b4567473493c27c2c313713cf7bce695bddd7201",
+  "diag_none_primary": false,
+  "efficiency_benchmark_run": false,
+  "evaluation_rows": 432,
+  "formal_jobs": 48,
+  "integrity_pass_is_hypothesis_success": false,
+  "paired_contrast_rows": 600,
+  "passed": true,
+  "prediction_reference_sha256": "f8367f029bb534857001d07f5818e231889d7f4ef626734fb2027e9f2fa4df0b",
+  "primary_contrasts": [
+    "selective_diag_vs_muon",
+    "selective_none_vs_muon",
+    "selective_diag_vs_original_newton_muon",
+    "selective_none_vs_original_newton_muon"
+  ],
+  "schema_version": 1,
+  "script_version": "2026-07-27.1",
+  "timing_usable_for_paper": false
+}

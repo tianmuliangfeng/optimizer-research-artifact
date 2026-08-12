@@ -1,0 +1,68 @@
+{
+  "code_directory": "scripts/06_kstate_spectrum",
+  "entrypoints": {
+    "script:run_cproj_k_structure": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/06_kstate_spectrum/run_cproj_k_structure.py"
+    },
+    "script:run_quadratic_score_probe": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/06_kstate_spectrum/run_quadratic_score_probe.py"
+    },
+    "script:run_quadratic_score_probe_p1": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/06_kstate_spectrum/run_quadratic_score_probe_p1.py"
+    },
+    "script:run_quadratic_score_probe_p2": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/06_kstate_spectrum/run_quadratic_score_probe_p2.py"
+    },
+    "script:run_quadratic_score_probe_p3": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/06_kstate_spectrum/run_quadratic_score_probe_p3.py"
+    },
+    "script:run_targeted_diag_generalization": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/06_kstate_spectrum/run_targeted_diag_generalization.py"
+    }
+  },
+  "experiment_id": "06_kstate_spectrum",
+  "legacy_result_roots": [
+    "06_kstate_spectrum"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "06 Kstate Spectrum"
+}

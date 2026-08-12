@@ -1,0 +1,124 @@
+{
+  "architecture_associated_residual": 0.006257317,
+  "bridge_diag_minus_none_final": -0.0049,
+  "formal_evidence_pending_local_artifact_audit": true,
+  "host_runtime_delta_change": 0.0001,
+  "llama_diag_minus_none_final": 0.001357317,
+  "memory_usable_provisionally": true,
+  "methods": [
+    "diag",
+    "none"
+  ],
+  "original_gpt_diag_minus_none_final": -0.005,
+  "primary_endpoint": "step-6200 validation loss",
+  "quality_usable_from_wandb": true,
+  "seed": 2026,
+  "source_files": [
+    {
+      "bytes": 26987,
+      "metric": "lr/matrix",
+      "row_count": 311,
+      "run_count": 2,
+      "sha256": "221a2883b8a683774491560394909bce728ce97a7990b19779f86fdc34dc222c",
+      "source_file": "wandb_export_2026-07-22T09_26_38.139+08_00.csv"
+    },
+    {
+      "bytes": 25241,
+      "metric": "lr/adamw",
+      "row_count": 311,
+      "run_count": 2,
+      "sha256": "a029d057d923865f9c3b81b111afbd034942ef54a0f51e29e96ec695fe7c8374",
+      "source_file": "wandb_export_2026-07-22T09_26_41.884+08_00.csv"
+    },
+    {
+      "bytes": 639,
+      "metric": "memory/peak_allocated_mib",
+      "row_count": 1,
+      "run_count": 2,
+      "sha256": "a280896036629e2f33fcadd9a728be266a5a576e4dc3f34b43a4d567fb6dc17d",
+      "source_file": "wandb_export_2026-07-22T09_26_46.300+08_00.csv"
+    },
+    {
+      "bytes": 717,
+      "metric": "memory/optimizer_state_mib",
+      "row_count": 1,
+      "run_count": 2,
+      "sha256": "d8133eece7dc5631fee5f6ecc3c461f0984d20b81480081b4050e510fb7edd9c",
+      "source_file": "wandb_export_2026-07-22T09_26_49.550+08_00.csv"
+    },
+    {
+      "bytes": 603,
+      "metric": "memory/k_state_mib",
+      "row_count": 1,
+      "run_count": 2,
+      "sha256": "24495a2503e1ac315cce6dc4b9221413c70da8f959dbc10cc368d4a7cfdfc796",
+      "source_file": "wandb_export_2026-07-22T09_26_53.269+08_00.csv"
+    },
+    {
+      "bytes": 20951,
+      "metric": "performance/step_avg_ms",
+      "row_count": 309,
+      "run_count": 2,
+      "sha256": "ada31115c39f19a581f586962950bcb91adaf44470c3dea9abf213229424188c",
+      "source_file": "wandb_export_2026-07-22T09_26_58.421+08_00.csv"
+    },
+    {
+      "bytes": 22613,
+      "metric": "time/train_s",
+      "row_count": 311,
+      "run_count": 2,
+      "sha256": "e08d96ef83fff29cff2988dc59cadc843e60a877baae24189bfc71ef1c0622be",
+      "source_file": "wandb_export_2026-07-22T09_27_03.515+08_00.csv"
+    },
+    {
+      "bytes": 19201,
+      "metric": "train/loss_step",
+      "row_count": 310,
+      "run_count": 2,
+      "sha256": "84632c51a8c300e0ef7686ef7401566d8d9244eab2277a12859449dba6f518d6",
+      "source_file": "wandb_export_2026-07-22T09_27_08.070+08_00.csv"
+    },
+    {
+      "bytes": 4274,
+      "metric": "val/loss",
+      "row_count": 63,
+      "run_count": 2,
+      "sha256": "77a97c8e06be392efcc29d7d708b099d48a9954b0524fba3f9d1703bdf2d6126",
+      "source_file": "wandb_export_2026-07-22T09_27_12.455+08_00.csv"
+    },
+    {
+      "bytes": 921612,
+      "metric": "reference",
+      "row_count": 6472,
+      "run_count": "",
+      "sha256": "cc5f3b1a0cab2570fa4e37524ab25ff49234c2846c3bb4a064aace7eaa1ec02f",
+      "source_file": "reference/gpt_r1_original_seed2026_history_long.csv"
+    },
+    {
+      "bytes": 1192,
+      "metric": "reference",
+      "package_bytes": 1192,
+      "package_sha256": "4e51e718a37f5ebed82bcf1c4a489e02e224b290a91b2eb7581b68930ab77ac7",
+      "row_count": 4,
+      "run_count": "",
+      "sha256": "4e51e718a37f5ebed82bcf1c4a489e02e224b290a91b2eb7581b68930ab77ac7",
+      "source_bytes": 1192,
+      "source_file": "supporting/ex21_host_bridge/reference/gpt_r1_original_seed2026_run_summary.csv",
+      "source_sha256": "4e51e718a37f5ebed82bcf1c4a489e02e224b290a91b2eb7581b68930ab77ac7"
+    },
+    {
+      "bytes": 3748,
+      "metric": "reference",
+      "package_bytes": 3748,
+      "package_sha256": "587ca67592a4d1d253488413444a26d8525bd4193c7c81e5ee7337e069cda77d",
+      "row_count": 5,
+      "run_count": "",
+      "sha256": "587ca67592a4d1d253488413444a26d8525bd4193c7c81e5ee7337e069cda77d",
+      "source_bytes": 3748,
+      "source_file": "supporting/ex21_host_bridge/reference/llama_swiglu_seed2026_run_summary.csv",
+      "source_sha256": "587ca67592a4d1d253488413444a26d8525bd4193c7c81e5ee7337e069cda77d"
+    }
+  ],
+  "status": "PASS_WITH_CAVEATS",
+  "timing_usable": false
+}

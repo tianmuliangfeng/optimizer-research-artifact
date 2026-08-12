@@ -1,0 +1,49 @@
+{
+  "accepted_adjudication": {
+    "bad_layers": [
+      3
+    ],
+    "bad_rows": 6,
+    "computation_complete": true,
+    "failed_numeric_gate": "runtime_resolvent_relative_residual",
+    "formal_passed": false,
+    "layer_event_rows": 432,
+    "maximum": 0.014926732286117244,
+    "selected_units": 12,
+    "threshold": 0.01
+  },
+  "accepted_formal_manifest_sha256": "17de19a90fbf78386d3f9b0c048d0fd4c8114d3957450cc5e45e7c48a7837c52",
+  "accepted_result_relative_path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp04_refresh_replay/20260803T063912+0000",
+  "accepted_run_id": "20260803T063912+0000",
+  "accepted_source_snapshot_v4_manifest_sha256": "86f6115937166e37f49291e2a2ba6318b912767adbda0a8b1f76b02edcfe74d7",
+  "allowed_modes": {
+    "archive-verify": "reproduce the accepted numeric_gate_failed adjudication",
+    "check": "verify live hashes and tests",
+    "formal_or_resume": "blocked unless MDP04_ALLOW_ARCHIVAL_RERUN=1; cannot upgrade evidence",
+    "verify": "require a genuinely passed manifest"
+  },
+  "controller_lineage": {
+    "accepted_source_snapshot_v4_sha256": "ee2d9f12f978732ab6abd9ac38c39f20bdb6917f724a4cc1a7ec7383942ff696",
+    "authoritative_exact_reproduction_source": "accepted result source_snapshot_v4",
+    "difference_scope": "post-validator CLI handling only; failed formal adjudication exits without CalledProcessError traceback",
+    "live_archive_wrapper_sha256": "453a6c8547bf00ce1b790525fa97b781e76498bc834361b00707f21f24d67242"
+  },
+  "frozen_scientific_core": {
+    "pinned_ex37_runtime/triton_kernels.py": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f",
+    "refresh_stream_contract.json": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
+    "stream_metrics.py": "7f365e971772838775b862a4cb2cd89b39ec034d1d39e887e32dc9e9be36c648",
+    "stream_worker.py": "f0c4ef93ddc564fd650b40fe2056f5dcf2f0619b9e349e4493f5bc788bdc495d",
+    "test_streaming.py": "4b19e0c17efa925d144e3fe601d853cb07edbbec527556211ba7f20683818f15",
+    "validate_stream_replay.py": "8ea3041ed13821b72b7278cbd8905ba2f7827ece48e32355b8b5929d612adf41"
+  },
+  "handoff_md_modified": false,
+  "live_reproduction_tools": {
+    "analyze_stream_replay.py": "5f784b379555998664752a7783a3b10d92af0e2deddb8c81471518e33f9e63b3",
+    "commands/mdp04_refresh_streaming/20260803_mdp04_refresh_streaming.sh": "776c1d19452c6e8546980dd5ff6689ea5b702450470dd7f1c391b29fe19303a5",
+    "inspect_stream_replay.py": "048fda60f7f6c0c00d6a7a40279f8bec46763ebc5537b27a5b324c9a97e8e067",
+    "test_archive_inspector.py": "8f54b82eed670afb6b5ee3b7c2d5b76f7b9bd03107e323b83ca3d4b5587b96b0"
+  },
+  "mdp05_boundary": "MDP-05 / experiment 46 must use a new directory, contract, held-out offsets and outcomes; it must not overwrite or import this contract as its formal contract",
+  "schema_version": "mdp04_live_archive_manifest_v1",
+  "status": "archived_numeric_gate_failed"
+}

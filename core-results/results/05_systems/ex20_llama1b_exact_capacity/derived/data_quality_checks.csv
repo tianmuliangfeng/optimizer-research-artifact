@@ -1,0 +1,13 @@
+check,status,detail
+controller completed,PASS,completed
+capacity-only evidence,PASS,capacity_only
+exact odd-confirmation protocol,PASS,microbatch_capacity_exact_odd_confirmation_v1
+four unique requested methods,PASS,"['newton_full', 'down_none', 'down_diag', 'muon']"
+only predeclared midpoint batches,PASS,"{'newton_full': 35, 'down_none': 37, 'down_diag': 37, 'muon': 39}"
+three successes complete 34 steps,PASS,3
+single failure is CUDA OOM,PASS,"[{'method': 'newton_full', 'device_batch_size': '35', 'global_batch_size': '280', 'sequence_length': '1024', 'accumulation_steps': '8', 'status': 'failed', 'failure_class': 'oom', 'completed_steps': '', 'peak_allocated_bytes': '', 'peak_allocated_mib': '', 'peak_reserved_bytes': '', 'peak_reserved_mib': '', 'model_parameter_bytes': '', 'optimizer_state_bytes': '', 'k_state_bytes': '', 'preconditioner_workspace_bytes': '', 'baseline_free_bytes': '84620541952', 'gpu_total_memory_bytes': '85169143808', 'source': 'capacity_exact_odd_confirmation', 'cell_manifest': 'PRIVATE_PATH_REDACTED', 'error': 'return_code=1; see PRIVATE_PATH_REDACTED', 'parent_fine_manifest': 'PRIVATE_PATH_REDACTED'}]"
+identical pre-cell free memory,PASS,84620541952
+identical physical GPU memory,PASS,85169143808
+parent manifest hash matches archive,PASS,a93dc05152334ce647025363f9209d562a07065e6fcca3d6f042d3ab34a683e2
+all exact boundaries have width one,PASS,"{'newton_full': {'max_success_device_batch': 34, 'first_oom_device_batch': 35, 'capacity_interval': '[34, 35)', 'resolved_width': 1, 'odd_confirmation': 'oom'}, 'down_none': {'max_success_device_batch': 37, 'first_oom_device_batch': 38, 'capacity_interval': '[37, 38)', 'resolved_width': 1, 'odd_confirmation': 'completed'}, 'down_diag': {'max_success_device_batch': 37, 'first_oom_device_batch': 38, 'capacity_interval': '[37, 38)', 'resolved_width': 1, 'odd_confirmation': 'completed'}, 'muon': {'max_success_device_batch': 39, 'first_oom_device_batch': 40, 'capacity_interval': '[39, 40)', 'resolved_width': 1, 'odd_confirmation': 'completed'}}"
+OOM log parsed,PASS,"{'method': 'newton_full', 'device_batch_size': 35, 'exception': 'torch.OutOfMemoryError', 'requested_allocation_gib': 3.36, 'free_at_failure_gib': 2.14, 'pytorch_allocated_at_failure_gib': 74.1, 'reserved_unallocated_at_failure_gib': 2.36, 'log': '20260722T070855+0000_capacity_exact_seed2026PRIVATE_PATH_REDACTED'}"

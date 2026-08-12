@@ -1,0 +1,74 @@
+{
+  "bundles": {
+    "formal_primary_training": {
+      "evidence_level": "confirmatory",
+      "files": 2,
+      "passed": true
+    },
+    "llama_block_partition_invariance": {
+      "evidence_level": "limiting",
+      "files": 3,
+      "passed": true
+    },
+    "mech01_numerical": {
+      "evidence_level": "supportive",
+      "files": 5,
+      "passed": true
+    },
+    "mech02_geometry": {
+      "evidence_level": "descriptive",
+      "files": 3,
+      "passed": true
+    },
+    "mech03_shadow_prediction": {
+      "evidence_level": "limiting",
+      "files": 3,
+      "passed": true
+    },
+    "mech06_llama1b_diagnostic": {
+      "evidence_level": "limiting",
+      "files": 3,
+      "passed": true
+    },
+    "mech07_family_shadow": {
+      "evidence_level": "supportive",
+      "files": 2,
+      "passed": true
+    },
+    "mech08_rollout": {
+      "evidence_level": "supportive",
+      "files": 3,
+      "passed": true
+    },
+    "mech09r_refresh_mediation": {
+      "evidence_level": "confirmatory",
+      "files": 3,
+      "passed": true
+    },
+    "owt_foundational_module_allocation": {
+      "evidence_level": "supportive",
+      "files": 3,
+      "passed": true
+    },
+    "r1_block_alpha": {
+      "evidence_level": "confirmatory",
+      "files": 2,
+      "passed": true
+    },
+    "r1_dense_full_alpha": {
+      "evidence_level": "confirmatory",
+      "files": 3,
+      "passed": true
+    },
+    "wikitext_foundational_module_allocation": {
+      "evidence_level": "supportive",
+      "files": 3,
+      "passed": true
+    }
+  },
+  "files": 38,
+  "passed": true,
+  "registry_sha256": "fb5b109b6e7d9a88f83d8010cea6a38be13123dbfa2543cddcde7e06f1a94f1a",
+  "schema_version": 1,
+  "script_version": "2026-07-29.8"
+}

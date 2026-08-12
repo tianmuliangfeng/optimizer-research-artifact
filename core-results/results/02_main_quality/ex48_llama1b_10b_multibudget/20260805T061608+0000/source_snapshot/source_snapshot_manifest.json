@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-08-05T06:16:09.256860+00:00",
+  "files": {
+    "scripts/17_llama_swiglu_validation/train_llama_swiglu.py": {
+      "bytes": 52409,
+      "sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a"
+    },
+    "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py": {
+      "bytes": 19142,
+      "sha256": "f55601c5e1d5d898b3f7b51100d02eb552c7a615963828dd26688766b652f7d0"
+    },
+    "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": {
+      "bytes": 3713,
+      "sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+    },
+    "scripts/48_llama1b_10b_multibudget/README.md": {
+      "bytes": 5608,
+      "sha256": "a23645326cf68ffd9a907a3965394768c4125644bc0e2c1cd9dc13b644981f89"
+    },
+    "scripts/48_llama1b_10b_multibudget/analyze_formal.py": {
+      "bytes": 21714,
+      "sha256": "dce6a803cb6c3961625e0ead87706b6baa4e909d1d32e24a9af24270bd660cbf"
+    },
+    "scripts/48_llama1b_10b_multibudget/formal_contract.json": {
+      "bytes": 10216,
+      "sha256": "23350854d9136b70d638d6aa37ad72dfa158143c6e9e083be80ac0e700714b4b"
+    },
+    "scripts/48_llama1b_10b_multibudget/protocol.py": {
+      "bytes": 16055,
+      "sha256": "dd0d4993f110f3dd34ca379c7147b21543a714e180cdbe8bba4ad866f27603eb"
+    },
+    "scripts/48_llama1b_10b_multibudget/run_formal.py": {
+      "bytes": 40244,
+      "sha256": "d95cfc505823fe48c65be5d4886f843911cabbbdb06cd18de145899ef158782c"
+    },
+    "scripts/48_llama1b_10b_multibudget/train_segment.py": {
+      "bytes": 34853,
+      "sha256": "ab7fd5acd809cc6233be05469cbff922bd7d7a9f5703af107f62455963f0d02f"
+    },
+    "scripts/48_llama1b_10b_multibudget/upload_wandb.py": {
+      "bytes": 6885,
+      "sha256": "ca32cd30cf90ad84c716c7fc2a897f92efc563543847adbca484aa5f2d3a2bcf"
+    }
+  },
+  "schema_version": "ex48_source_snapshot_v1"
+}

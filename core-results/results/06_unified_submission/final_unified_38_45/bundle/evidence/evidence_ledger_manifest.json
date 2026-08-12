@@ -1,0 +1,23 @@
+{
+  "analysis_families": [
+    "external_baselines_124m",
+    "gpt_scale"
+  ],
+  "claim_eligible": true,
+  "dry_run": false,
+  "mdp_manifest": true,
+  "outputs": {
+    "evidence_ledger.csv": "04f8c74724689180a14fc3121784f16c5986bdb59d9b2ebe0fac17b6389dddb9",
+    "source_ledger.csv": "a98af8f6568232f4e75358b27ed5049fbaff01f4b260685644117ff4abe7a7eb"
+  },
+  "row_count": 64,
+  "scales": [
+    "gpt124m",
+    "gpt275m",
+    "gpt455m"
+  ],
+  "schema_version": "mdp_evidence_ledger_v1",
+  "source_count": 4,
+  "status": "validated",
+  "synthetic": false
+}

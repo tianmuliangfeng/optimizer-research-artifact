@@ -1,0 +1,229 @@
+{
+  "content_policy": "Original command contents remain in the private research archive; the public release retains hashes and sanitized launchers only.",
+  "record_count": 37,
+  "records": [
+    {
+      "filename": "20260727_mech00_llama_followup_full_hash.sh",
+      "original_sha256": "42008c2acc45632a0c626a314d1cc35ee9b381fafa2ca2d2ef131db21835c8b1",
+      "public_path": "commands/26_mech00_inventory/20260727_mech00_llama_followup_full_hash.sh",
+      "public_sha256": "68c0340ec2238eba2013900fac1b3f82980f610dfb21f55c55662ecf9dc184ef"
+    },
+    {
+      "filename": "20260727_mech00_llama_full_hash.sh",
+      "original_sha256": "1ad70b0f7d7189d8f17a314edc574462508cfe540938fa920ca5700805c3f7c1",
+      "public_path": "commands/26_mech00_inventory/20260727_mech00_llama_full_hash.sh",
+      "public_sha256": "81f2899677fe038b1b7deb7737766583685276c5af4a382b7c8dbc6ac8f8f443"
+    },
+    {
+      "filename": "20260727_mech00_r1_full_hash.sh",
+      "original_sha256": "fd5110511f07ee2ea09de3dddba7ca1994fb9b663d94b9879ee09c6fbd0afda7",
+      "public_path": "commands/26_mech00_inventory/20260727_mech00_r1_full_hash.sh",
+      "public_sha256": "a7ac71cf1c57516f14d66d11e8c5d555b290d796d094949ce6707f0579a44ea0"
+    },
+    {
+      "filename": "20260727_mech01_llama_host_remaining.sh",
+      "original_sha256": "4f64aa9582822b53ac26860d336a090434bc05ff7decd2951729393133c58697",
+      "public_path": "commands/27_mech01_unified_k_diagnostics/20260727_mech01_llama_host_remaining.sh",
+      "public_sha256": "ec7bd12b467da3ee9062a0a328f3c6b0db7ee633b7c8494e4333e93db8b36a48"
+    },
+    {
+      "filename": "20260727_mech01_r1_none6200.sh",
+      "original_sha256": "9bd6d5220cf2a73edb655bb519ca642dd664b5f94646c63824b038076a723d0f",
+      "public_path": "commands/27_mech01_unified_k_diagnostics/20260727_mech01_r1_none6200.sh",
+      "public_sha256": "2d69d99464e899c00e14e4792b6569f3397c9fb0aa1c1a105b82b8ecd8b29819"
+    },
+    {
+      "filename": "20260727_mech02_llama_host_endpoint.sh",
+      "original_sha256": "141a000fc56048acc92118b7c1a0ba4c2ba1b3a3a432dd4bc1889350880dd3df",
+      "public_path": "commands/30_mech02_k_geometry/20260727_mech02_llama_host_endpoint.sh",
+      "public_sha256": "ba3b3f6f4c242495fdd2e6aceda4d611e59720ee445c4ab9fccc7b604a40b9d6"
+    },
+    {
+      "filename": "20260727_mech02_r1_endpoint.sh",
+      "original_sha256": "042f6d2bb453a284a1ea8af39c5b9320b6d7f3dd0b48b48af2e0fb6119c6126f",
+      "public_path": "commands/30_mech02_k_geometry/20260727_mech02_r1_endpoint.sh",
+      "public_sha256": "c0dd8eafb4918b2e4ac9fccfd2dc7f7f56872dfa7197831e17d10316b37f9b2c"
+    },
+    {
+      "filename": "20260727_mech03_llama_host_endpoint.sh",
+      "original_sha256": "38995dac0f0567c48d82f97eda9acbebfa4563e4e846fd3384beb2c6d79aef55",
+      "public_path": "commands/31_mech03_crossfit_shadow/20260727_mech03_llama_host_endpoint.sh",
+      "public_sha256": "f9724c6d71ded3f07dfc6ebb66770c30d80a9365ba52f0099609e769085ba7bf"
+    },
+    {
+      "filename": "20260727_mech03_r1_endpoint.sh",
+      "original_sha256": "bd1deb58db6df174e1dd3142eb2cb86a86010b0297a50979ef5fcda4e2870d65",
+      "public_path": "commands/31_mech03_crossfit_shadow/20260727_mech03_r1_endpoint.sh",
+      "public_sha256": "35f5a3541e98a4e9b1c160f157e9fedc0cddaef04337709005b91920b5660da5"
+    },
+    {
+      "filename": "20260727_mech05_freeze_selection_rule.sh",
+      "original_sha256": "456b878a8a51762885149fdb6beb10de24937a6600c7466cdf94e43a8c74faff",
+      "public_path": "commands/32_mech05_frozen_selection_rule/20260727_mech05_freeze_selection_rule.sh",
+      "public_sha256": "af0c2762e522e46ae29cc055d835c394eda0075a8c2a443089a49ab0c2fe42e2"
+    },
+    {
+      "filename": "20260727_mech06_llama1b_confirmation.sh",
+      "original_sha256": "e957b667f07ac20bf8a4f00d30779c465bf6c51d6dbfacafdf3e7e956b5beda0",
+      "public_path": "commands/33_mech06_llama1b_confirmation/20260727_mech06_llama1b_confirmation.sh",
+      "public_sha256": "f5cbdb4411fa3e39f0a01e7a46c5b497efde381492fae60947f2212d2e1443ee"
+    },
+    {
+      "filename": "20260727_mech07_llama1b_family_contrast.sh",
+      "original_sha256": "ff94f483195facfff20bdfb38c0351f88e27e7d5665fac68cd7697be7bd5196f",
+      "public_path": "commands/35_mech07_llama1b_family_contrast/20260727_mech07_llama1b_family_contrast.sh",
+      "public_sha256": "efdcdc1fa895ab1a329a29bde066f7338c0f18a5b1f03adfa84f3a27a5705537"
+    },
+    {
+      "filename": "20260727_mech08_short_horizon_rollout.sh",
+      "original_sha256": "b3386c112ac0d913851cc56176c02d19fb8d9f97504fa9fbd17d94c6993691e6",
+      "public_path": "commands/36_mech08_short_horizon_rollout/20260727_mech08_short_horizon_rollout.sh",
+      "public_sha256": "19d9e67ae8a629650e933bc5a17af0b056943203cc120621b1f877f1ce131b95"
+    },
+    {
+      "filename": "20260727_r1_alpha_block_and_dense_two_gpu.sh",
+      "original_sha256": "27bdb4881e66cc9ca8611dc2fbb9be30787a814a80f3e9bc4949c1b4fb87e80f",
+      "public_path": "commands/_workflows/22_24_r1_alpha_two_gpu/20260727_r1_alpha_block_and_dense_two_gpu.sh",
+      "public_sha256": "eb3a2c35dd35d97cefd1829b7ffef1aa1f4723495fc9295283aa8b0491bfbf06"
+    },
+    {
+      "filename": "20260727_r1_block_alpha_confirmatory_multiseed.sh",
+      "original_sha256": "2f049ca7e60b72be9ac125946429d59c93ce08de6338a74fe8aaa65beda574cb",
+      "public_path": "commands/22_r1_block_alpha/20260727_r1_block_alpha_confirmatory_multiseed.sh",
+      "public_sha256": "7f7403342b26263f4e79d8c8f6d398f86dbcea8e0b04d0bcb3608450a6274616"
+    },
+    {
+      "filename": "20260727_r1_dense_full_alpha_confirmatory_multiseed.sh",
+      "original_sha256": "b3b52cf49a4d7f0aacb79cbd6ea206544a3b0c77332a88af4d7d43095ca87656",
+      "public_path": "commands/24_r1_dense_full_alpha/20260727_r1_dense_full_alpha_confirmatory_multiseed.sh",
+      "public_sha256": "45c1631a0a83f8a1778549bcb2d6efeec71f75542a7ee79b20e464e5847db749"
+    },
+    {
+      "filename": "20260727_selective_primary_comparison.sh",
+      "original_sha256": "76e3ced226ffab0c3895cb93508d28af407984da187c14aff10a6ff3adfd1350",
+      "public_path": "commands/34_selective_primary_comparison/20260727_selective_primary_comparison.sh",
+      "public_sha256": "9ad09595dadd78817465e2e116410d18a74f57efc36205053f4c207f10b44c99"
+    },
+    {
+      "filename": "20260728_mech09_downproj_refresh_mediation.sh",
+      "original_sha256": "981e03ad0114a80c8637e1935287557e0d5001ab7e03f5a8e837d03f01f2fb6d",
+      "public_path": "commands/37_mech09_downproj_refresh_mediation/20260728_mech09_downproj_refresh_mediation.sh",
+      "public_sha256": "b4ae572b5f3cdc88c7315540b34a0a1b095623d1fa3b4e1440c38aa96d5b456b"
+    },
+    {
+      "filename": "20260728_mech09r_causal_tree_repair.sh",
+      "original_sha256": "1f0d4e0c3f35e6a9dbb014d7c77681e3af5cfb676c0a91944825e7f48640f575",
+      "public_path": "commands/37_mech09_downproj_refresh_mediation/20260728_mech09r_causal_tree_repair.sh",
+      "public_sha256": "db4e2515d75e3e91a7a590176b6d55f675a6b76bd26935202623d6d540cc4ae9"
+    },
+    {
+      "filename": "20260729_llama1b_isolated_efficiency.sh",
+      "original_sha256": "968d70adb31a5f9b6913b3c744fdd6e02f0810743030fc4ca7a97387a4744e60",
+      "public_path": "commands/42_llama1b_isolated_efficiency/20260729_llama1b_isolated_efficiency.sh",
+      "public_sha256": "b6e9010fc393c2d416eaae0ba381d49235f20ce27cac9edad34bbc4c9120896f"
+    },
+    {
+      "filename": "20260729_llama_block_partition_invariance_audit.sh",
+      "original_sha256": "f91f89ab20b6a460ee1e36eab5cbded64058b61de16e9f51fa5a57a130e43238",
+      "public_path": "commands/40_llama_block_partition_invariance_audit/20260729_llama_block_partition_invariance_audit.sh",
+      "public_sha256": "5701fe99f42e7687a59f35f72eaf6da43c9a3a1a3f7c41797a91c4bb5ab68bf8"
+    },
+    {
+      "filename": "20260729_r1_isolated_efficiency_followup.sh",
+      "original_sha256": "395dbc5ec6c721b5d7dd6afba1a316b3e5d972e577a6c99db5a68c34d655f7d2",
+      "public_path": "commands/39_submission_efficiency_and_sensitivity/20260729_r1_isolated_efficiency_followup.sh",
+      "public_sha256": "b3609d3f86f7d4c2848f01851638045f62f32397158462309a5bc7ae925abe1a"
+    },
+    {
+      "filename": "20260729_r1_kstate_module_factorial.sh",
+      "original_sha256": "63324c58d51f6c984874fc56e6e239012ac15835e2eddb61e0be5ea6954a7e28",
+      "public_path": "commands/41_r1_kstate_module_factorial/20260729_r1_kstate_module_factorial.sh",
+      "public_sha256": "7a8302c5cdb89766f85a87ff9f11940044fc3e54636d270cb7e9b35f19d09cfd"
+    },
+    {
+      "filename": "20260729_r1_shared_lr_sensitivity_followup.sh",
+      "original_sha256": "e0ca4209b208d49e25f76085d79b3a5f8558d5ec26f1d387e8bd31dc12ab7310",
+      "public_path": "commands/39_submission_efficiency_and_sensitivity/20260729_r1_shared_lr_sensitivity_followup.sh",
+      "public_sha256": "a78a9fcafa24a4dee2d092226893c4f9c231d78d5f50901aa1b7f239af4bc112"
+    },
+    {
+      "filename": "20260729_submission_efficiency_and_sensitivity_audit.sh",
+      "original_sha256": "2356be9f57c22af699fdd9ecb899e06ae02256f8717e4bec2a5698999209d42c",
+      "public_path": "commands/39_submission_efficiency_and_sensitivity/20260729_submission_efficiency_and_sensitivity_audit.sh",
+      "public_sha256": "16b7b9249ed1cf50770830ea3daa043a00c0051b37fdf63d2eae3a5fa51329c5"
+    },
+    {
+      "filename": "20260729_submission_efficiency_and_sensitivity_full.sh",
+      "original_sha256": "fddaf18b9378a649701b31f4f8a466487e50e600d9cf2e46080f7daaf2e21aa4",
+      "public_path": "commands/39_submission_efficiency_and_sensitivity/20260729_submission_efficiency_and_sensitivity_full.sh",
+      "public_sha256": "774935bc527a8093d9e6ca1326126a571d9d4889718bcc330290dfc3932f022b"
+    },
+    {
+      "filename": "20260729_unified_mechanism_synthesis.sh",
+      "original_sha256": "8efef0b3fb73b1beaa36d94d016ebf402d0c32301c8862ded3a612e01eb85718",
+      "public_path": "commands/38_unified_mechanism_synthesis/20260729_unified_mechanism_synthesis.sh",
+      "public_sha256": "c6a0149e47d24a8de98fec06da5163f079b28d43b91db2b12e31e1fbb24d64f9"
+    },
+    {
+      "filename": "20260730_newton_muon_record17_455m.sh",
+      "original_sha256": "bcf2d67a73f13693d24cda39c167d05b641631c2d0e56a544f6912b38d8c421f",
+      "public_path": "commands/44_newton_muon_record17_455m/20260730_newton_muon_record17_455m.sh",
+      "public_sha256": "cfe5c862bf2ddeddb2a77de03cdd391647a732b53ddaffa8ed12500888c775bc"
+    },
+    {
+      "filename": "20260730_newton_muon_record28_275m.sh",
+      "original_sha256": "94047f2ca879a88679a9aa4538a3e30ed794c5da2d78d89f43d7013b179f5ed3",
+      "public_path": "commands/43_newton_muon_record28_275m/20260730_newton_muon_record28_275m.sh",
+      "public_sha256": "14443a6de87c9c34beb049ff212a7c4266c584bd630befc43b49cee8f5371b41"
+    },
+    {
+      "filename": "20260730_r1_mousse_strong_baseline.sh",
+      "original_sha256": "8744c8773a241a908acc476502d27a7b2cc1c3816d1158a7997e5814e97d96c3",
+      "public_path": "commands/45_r1_mousse_strong_baseline/20260730_r1_mousse_strong_baseline.sh",
+      "public_sha256": "c87e2042e855ce4cae9015755e23fdeb76acbeafb41e6e88a0193bb924aa5c7c"
+    },
+    {
+      "filename": "20260803_mdp04_refresh_streaming.sh",
+      "original_sha256": "836fd9cf1f534f799feef0ac3d2f76b318bc5f00143ce043307e793143c5417b",
+      "public_path": "commands/mdp04_refresh_streaming/20260803_mdp04_refresh_streaming.sh",
+      "public_sha256": "776c1d19452c6e8546980dd5ff6689ea5b702450470dd7f1c391b29fe19303a5"
+    },
+    {
+      "filename": "20260804_ex46_mdp05_confirmatory_update_shock.sh",
+      "original_sha256": "6bd145043ea53d6346be3c9199f36c929619b730a4321edc5b2856ddd75c8d04",
+      "public_path": "commands/46_mdp05_confirmatory_update_shock/20260804_ex46_mdp05_confirmatory_update_shock.sh",
+      "public_sha256": "93c95a4bb7bc6a4cd2319732b3095e4f2aad0b5e690ab32d8303de52901985bf"
+    },
+    {
+      "filename": "20260804_ex47_update_geometry_curvature.sh",
+      "original_sha256": "af46f6ef1a09607c5c85c45132c2728eeb634307b9ad5ab5d09fb83bb065bbc2",
+      "public_path": "commands/47_update_geometry_curvature/20260804_ex47_update_geometry_curvature.sh",
+      "public_sha256": "3d4ec54e54108e4c53f0d2484ccf68c25c5fde8c4a052b803de4078184bf42a8"
+    },
+    {
+      "filename": "20260804_ex47b_geo01b_discovery.sh",
+      "original_sha256": "5bfefad51f30ce0d4e54b7385f226e6d97800276fa7ebd8a1ff33ac3e4c25910",
+      "public_path": "commands/47b_geo01b_update_geometry_discovery/20260804_ex47b_geo01b_discovery.sh",
+      "public_sha256": "3015d97960d3b93deec4761b1c884b4b6d4a04e12a9e44037b0d377d7fe673a5"
+    },
+    {
+      "filename": "20260805_ex48_llama1b_10b_multibudget.sh",
+      "original_sha256": "c6beb1264e4ba1d89a86e8a8f295ade1261e621934657a571a4432b9b4da61ab",
+      "public_path": "commands/48_llama1b_10b_multibudget/20260805_ex48_llama1b_10b_multibudget.sh",
+      "public_sha256": "0d4d273adaf289303b1d54770f59b2805759735a6300337374873c1d435ba1c8"
+    },
+    {
+      "filename": "20260806_ex29_r1_depth_kmode.sh",
+      "original_sha256": "312f91a1f7bf1e7ae6a1894d3357ba8dcdfb1de94d25d029d0abb090952b8f99",
+      "public_path": "commands/29_r1_depth_kmode/20260806_ex29_r1_depth_kmode.sh",
+      "public_sha256": "1226f80a79e4d8d9b5fafeee0a7c068fd5f12fa974629ab32a643818f22b371f"
+    },
+    {
+      "filename": "20260807_ex49_r1_malt_strong_baseline.sh",
+      "original_sha256": "1d4a7cb702abcb638d35f94eb48651c90c3dfb9c925807e826e413a3c458c51b",
+      "public_path": "commands/49_r1_malt_strong_baseline/20260807_ex49_r1_malt_strong_baseline.sh",
+      "public_sha256": "49c2ac173c48bba9c8b287c1ca4735102e8355716a1761ab93c8ab4c1e02d98c"
+    }
+  ],
+  "schema_version": 1
+}

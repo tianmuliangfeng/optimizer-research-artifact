@@ -1,0 +1,30 @@
+{
+  "center_preferred_if_within_margin_of_best": true,
+  "center_tie_margin": 0.002,
+  "pilot_manifest": "PRIVATE_PATH_REDACTED__9ff8144dd519",
+  "pilot_manifest_sha256": "61cf1e0d8fae017b2c069db0e3ed87966b006778f403557e3d8a993b7903bef9",
+  "pilot_steps": 1000,
+  "protocol": "mousse_r1_pilot_selection_v1",
+  "ranked_cells": [
+    {
+      "cell_id": "mousse_lr120",
+      "final_val_loss": 3.7349,
+      "matrix_lr": 0.018
+    },
+    {
+      "cell_id": "mousse_lr100",
+      "final_val_loss": 3.7358,
+      "matrix_lr": 0.015
+    },
+    {
+      "cell_id": "mousse_lr080",
+      "final_val_loss": 3.7397,
+      "matrix_lr": 0.012
+    }
+  ],
+  "seed": 2026,
+  "selected_cell_id": "mousse_lr100",
+  "selected_matrix_lr": 0.015,
+  "selection_endpoint": "step-1000 validation loss",
+  "status": "selected"
+}

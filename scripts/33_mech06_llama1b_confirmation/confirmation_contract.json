@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-27.1",
+  "frozen_at_utc": "2026-07-27T07:05:00Z",
+  "title": "MECH-06 LLaMA-1B read-only scale confirmation",
+  "family": "llama1b",
+  "method": "down_none",
+  "seed": 2026,
+  "interpretation": {
+    "diagnostic_features": "prospective relative to MECH-06 artifacts",
+    "existing_llama1b_training_rankings": "retrospective and excluded from prediction generation",
+    "hvp_authorized": false,
+    "new_training": false
+  },
+  "mech05_contract": {
+    "sha256": "be57755f452eb537d3a4ddc19f82c83cbe87155e39e330085cfcba51bb3681d5",
+    "required_unchanged": true
+  },
+  "checkpoints": {
+    "early": {
+      "step": 1000,
+      "sha256": "5a55e42ce98f4ae767b55b5f5baaa370a1512285ec8c8022bb8cd32433ff0aeb"
+    },
+    "late": {
+      "step": 6200,
+      "sha256": "069bc086a79bd71c3723cabeb9f346730b931610c703b3725a7031ad4d1fa8f0"
+    }
+  },
+  "architecture": {
+    "n_layer": 18,
+    "n_embd": 2048,
+    "n_head": 16,
+    "intermediate_size": 5504,
+    "sequence_length": 1024,
+    "target": "layers.{layer}.mlp.down_proj"
+  },
+  "formal": {
+    "geometry_layers": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+    "shadow_layers": [0, 6, 12, 17],
+    "repeats": 4,
+    "geometry_batches_per_repeat": 2,
+    "shadow_batches_per_split": 8,
+    "device_batch_size": 1,
+    "sequence_length": 128,
+    "max_geometry_rows": 256,
+    "max_shadow_rows": 512,
+    "ridge_mult": 0.2,
+    "ridge_eps": 1e-08,
+    "top_k": 32,
+    "momentum": 0.95,
+    "ns_steps": 5,
+    "step_multipliers": [0.0, 0.25, 0.5, 1.0],
+    "candidates": ["none", "diag", "dense_full"],
+    "spectrum_method": "exact_dual_gram_low_rank",
+    "dense_inverse_method": "exact_woodbury_low_rank"
+  },
+  "smoke": {
+    "geometry_layers": [0, 17],
+    "shadow_layers": [0, 17],
+    "repeats": 1,
+    "geometry_batches_per_repeat": 1,
+    "shadow_batches_per_split": 2,
+    "max_geometry_rows": 128,
+    "max_shadow_rows": 256
+  },
+  "decision_boundary": {
+    "geometry_alone_can_select_complex_k": false,
+    "none_requires_longrun_or_scalar_evidence": true,
+    "conflict_or_missing_required_evidence": "uncertain",
+    "early_late_disagreement": "stage_dependent_or_uncertain"
+  },
+  "source_constraints": {
+    "base_source_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "triton_sha256": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f"
+  }
+}

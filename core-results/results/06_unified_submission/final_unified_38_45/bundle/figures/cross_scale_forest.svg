@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="548" viewBox="0 0 980 548">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#111827">
+<text x="20" y="30" font-size="20" font-weight="bold">Scale-stratified paired final-loss contrasts</text>
+<text x="20" y="52" font-size="12" fill="#4b5563">Negative favors method A; 95% paired t intervals; no cross-scale pooling.</text>
+<line x1="652.5" y1="60" x2="652.5" y2="508" stroke="#111827" stroke-width="1"/>
+<rect x="624.6" y="60" width="55.9" height="448" fill="#e5e7eb" opacity="0.55"/>
+<text x="20" y="74" font-size="12">gpt124m: diag − muon</text>
+<line x1="393.8" y1="70" x2="463.3" y2="70" stroke="#2563eb" stroke-width="3"/>
+<line x1="393.8" y1="65" x2="393.8" y2="75" stroke="#2563eb"/>
+<line x1="463.3" y1="65" x2="463.3" y2="75" stroke="#2563eb"/>
+<circle cx="428.6" cy="70" r="4" fill="#2563eb"/>
+<text x="955" y="74" font-size="10">-0.0160</text>
+<text x="20" y="108" font-size="12">gpt124m: diag − original</text>
+<line x1="617.8" y1="104" x2="656.5" y2="104" stroke="#2563eb" stroke-width="3"/>
+<line x1="617.8" y1="99" x2="617.8" y2="109" stroke="#2563eb"/>
+<line x1="656.5" y1="99" x2="656.5" y2="109" stroke="#2563eb"/>
+<circle cx="637.1" cy="104" r="4" fill="#2563eb"/>
+<text x="955" y="108" font-size="10">-0.0011</text>
+<text x="20" y="142" font-size="12">gpt124m: none − muon</text>
+<line x1="488.8" y1="138" x2="523.8" y2="138" stroke="#2563eb" stroke-width="3"/>
+<line x1="488.8" y1="133" x2="488.8" y2="143" stroke="#2563eb"/>
+<line x1="523.8" y1="133" x2="523.8" y2="143" stroke="#2563eb"/>
+<circle cx="506.3" cy="138" r="4" fill="#2563eb"/>
+<text x="955" y="142" font-size="10">-0.0105</text>
+<text x="20" y="176" font-size="12">gpt124m: none − original</text>
+<line x1="697.4" y1="172" x2="732.4" y2="172" stroke="#2563eb" stroke-width="3"/>
+<line x1="697.4" y1="167" x2="697.4" y2="177" stroke="#2563eb"/>
+<line x1="732.4" y1="167" x2="732.4" y2="177" stroke="#2563eb"/>
+<circle cx="714.9" cy="172" r="4" fill="#2563eb"/>
+<text x="955" y="176" font-size="10">+0.0045</text>
+<text x="20" y="210" font-size="12">gpt275m: diag − muon</text>
+<line x1="537.5" y1="206" x2="689.1" y2="206" stroke="#dc2626" stroke-width="3"/>
+<line x1="537.5" y1="201" x2="537.5" y2="211" stroke="#dc2626"/>
+<line x1="689.1" y1="201" x2="689.1" y2="211" stroke="#dc2626"/>
+<circle cx="613.3" cy="206" r="4" fill="#dc2626"/>
+<text x="955" y="210" font-size="10">-0.0028</text>
+<text x="20" y="244" font-size="12">gpt275m: diag − original</text>
+<line x1="617.2" y1="240" x2="692.4" y2="240" stroke="#dc2626" stroke-width="3"/>
+<line x1="617.2" y1="235" x2="617.2" y2="245" stroke="#dc2626"/>
+<line x1="692.4" y1="235" x2="692.4" y2="245" stroke="#dc2626"/>
+<circle cx="654.8" cy="240" r="4" fill="#dc2626"/>
+<text x="955" y="244" font-size="10">+0.0002</text>
+<text x="20" y="278" font-size="12">gpt275m: none − muon</text>
+<line x1="549.3" y1="274" x2="670.5" y2="274" stroke="#dc2626" stroke-width="3"/>
+<line x1="549.3" y1="269" x2="549.3" y2="279" stroke="#dc2626"/>
+<line x1="670.5" y1="269" x2="670.5" y2="279" stroke="#dc2626"/>
+<circle cx="609.9" cy="274" r="4" fill="#dc2626"/>
+<text x="955" y="278" font-size="10">-0.0030</text>
+<text x="20" y="312" font-size="12">gpt275m: none − original</text>
+<line x1="625.4" y1="308" x2="677.5" y2="308" stroke="#dc2626" stroke-width="3"/>
+<line x1="625.4" y1="303" x2="625.4" y2="313" stroke="#dc2626"/>
+<line x1="677.5" y1="303" x2="677.5" y2="313" stroke="#dc2626"/>
+<circle cx="651.5" cy="308" r="4" fill="#dc2626"/>
+<text x="955" y="312" font-size="10">-0.0001</text>
+<text x="20" y="346" font-size="12">gpt455m: diag − muon</text>
+<line x1="630.4" y1="342" x2="649.4" y2="342" stroke="#059669" stroke-width="3"/>
+<line x1="630.4" y1="337" x2="630.4" y2="347" stroke="#059669"/>
+<line x1="649.4" y1="337" x2="649.4" y2="347" stroke="#059669"/>
+<circle cx="639.9" cy="342" r="4" fill="#059669"/>
+<text x="955" y="346" font-size="10">-0.0009</text>
+<text x="20" y="380" font-size="12">gpt455m: diag − original</text>
+<line x1="634.8" y1="376" x2="687.3" y2="376" stroke="#059669" stroke-width="3"/>
+<line x1="634.8" y1="371" x2="634.8" y2="381" stroke="#059669"/>
+<line x1="687.3" y1="371" x2="687.3" y2="381" stroke="#059669"/>
+<circle cx="661.1" cy="376" r="4" fill="#059669"/>
+<text x="955" y="380" font-size="10">+0.0006</text>
+<text x="20" y="414" font-size="12">gpt455m: none − muon</text>
+<line x1="613.9" y1="410" x2="625.9" y2="410" stroke="#059669" stroke-width="3"/>
+<line x1="613.9" y1="405" x2="613.9" y2="415" stroke="#059669"/>
+<line x1="625.9" y1="405" x2="625.9" y2="415" stroke="#059669"/>
+<circle cx="619.9" cy="410" r="4" fill="#059669"/>
+<text x="955" y="414" font-size="10">-0.0023</text>
+<text x="20" y="448" font-size="12">gpt455m: none − original</text>
+<line x1="625.9" y1="444" x2="656.2" y2="444" stroke="#059669" stroke-width="3"/>
+<line x1="625.9" y1="439" x2="625.9" y2="449" stroke="#059669"/>
+<line x1="656.2" y1="439" x2="656.2" y2="449" stroke="#059669"/>
+<circle cx="641.0" cy="444" r="4" fill="#059669"/>
+<text x="955" y="448" font-size="10">-0.0008</text>
+<line x1="355.0" y1="506" x2="355.0" y2="511" stroke="#111827"/>
+<text x="355.0" y="526" text-anchor="middle" font-size="10">-0.0213</text>
+<line x1="503.8" y1="506" x2="503.8" y2="511" stroke="#111827"/>
+<text x="503.8" y="526" text-anchor="middle" font-size="10">-0.0106</text>
+<line x1="652.5" y1="506" x2="652.5" y2="511" stroke="#111827"/>
+<text x="652.5" y="526" text-anchor="middle" font-size="10">+0.0000</text>
+<line x1="801.2" y1="506" x2="801.2" y2="511" stroke="#111827"/>
+<text x="801.2" y="526" text-anchor="middle" font-size="10">+0.0106</text>
+<line x1="950.0" y1="506" x2="950.0" y2="511" stroke="#111827"/>
+<text x="950.0" y="526" text-anchor="middle" font-size="10">+0.0213</text>
+
+</g>
+</svg>

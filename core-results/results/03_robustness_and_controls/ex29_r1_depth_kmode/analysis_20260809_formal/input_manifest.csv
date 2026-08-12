@@ -1,0 +1,11 @@
+kind,file_name,sha256,size_bytes,metric,archived_path,rows,run_columns,bands_duplicate_base
+remote_bundle_zip,29_r1_depth_kmode.zip,f44ec4c7ad50c9d8f4fd94be59767146f3e6fa9871e9ec109167bbf5d3056b20,22750844,,../batches+results (extracted canonical evidence),,,
+wandb_export,wandb_export_2026-08-09T13_17_01.297+08_00.csv,edf6e83afe328ef21ed73cb1d43d13c6f1cfb9292fdd43a6cc04a9c633e782f3,445935,lr/matrix,raw_wandb_exports\wandb_export_2026-08-09T13_17_01.297+08_00.csv,311.0,36.0,True
+wandb_export,wandb_export_2026-08-09T13_17_06.079+08_00.csv,15834a46ca8bb79248995e94af400749e066c309eb25e61bd68ad63ee65e4c3a,413940,lr/adamw,raw_wandb_exports\wandb_export_2026-08-09T13_17_06.079+08_00.csv,311.0,36.0,True
+wandb_export,wandb_export_2026-08-09T13_17_11.363+08_00.csv,edea34f3e7d2ea2efd5fffcf54a8a82765753d41a66db8dde1a12e331ca67790,11353,memory/peak_allocated_mib,raw_wandb_exports\wandb_export_2026-08-09T13_17_11.363+08_00.csv,1.0,36.0,True
+wandb_export,wandb_export_2026-08-09T13_17_15.124+08_00.csv,5947b3e25188f5e271fb888f43e75293fc5a55da385ddad4831cf65cd83ba662,12757,memory/optimizer_state_mib,raw_wandb_exports\wandb_export_2026-08-09T13_17_15.124+08_00.csv,1.0,36.0,True
+wandb_export,wandb_export_2026-08-09T13_17_18.440+08_00.csv,f9b999776b8725434c6ff10329dd6cdd133262627f1967b9f6202708de03ad81,10597,memory/k_state_mib,raw_wandb_exports\wandb_export_2026-08-09T13_17_18.440+08_00.csv,1.0,36.0,True
+wandb_export,wandb_export_2026-08-09T13_17_22.729+08_00.csv,a5caee2bf14dc14d1ad0bc322f88ee8ea533e7ad960031aa0d69b6bf82ff0cd1,342078,performance/step_avg_ms,raw_wandb_exports\wandb_export_2026-08-09T13_17_22.729+08_00.csv,309.0,36.0,True
+wandb_export,wandb_export_2026-08-09T13_17_30.145+08_00.csv,be5c0164c6f4dc6e0cef2dd00721b633ebfb4dd5d3009d1adae052ec93d2147a,371397,time/train_s,raw_wandb_exports\wandb_export_2026-08-09T13_17_30.145+08_00.csv,311.0,36.0,True
+wandb_export,wandb_export_2026-08-09T13_17_34.063+08_00.csv,ee92c25dfce499b2196fab911ac0d136c89e3b4b835d696e6281be86e7c13e11,309134,train/loss_step,raw_wandb_exports\wandb_export_2026-08-09T13_17_34.063+08_00.csv,310.0,36.0,True
+wandb_export,wandb_export_2026-08-09T13_17_37.904+08_00.csv,1fdec5ca28f4fb3a1c93c822a572eaef2195692250fd9f577eb8996d043c6948,69672,val/loss,raw_wandb_exports\wandb_export_2026-08-09T13_17_37.904+08_00.csv,63.0,36.0,True

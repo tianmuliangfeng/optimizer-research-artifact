@@ -1,0 +1,3 @@
+method,aligned_validation_points,bridge_final_val_loss,original_final_val_loss,bridge_minus_original_final,bridge_tail5,original_tail5,bridge_minus_original_tail5,bridge_auc,original_auc,bridge_minus_original_auc,curve_mean_signed_delta,curve_rmse,curve_max_abs_delta
+diag,63,3.262,3.2621,-0.0001,3.27028,3.27028,0.0,3.616995,3.616925,7e-05,6.8e-05,0.00076,0.0033
+none,63,3.2669,3.2671,-0.0002,3.27522,3.2754800000000004,-0.00026,3.625623,3.625599193548388,2.4e-05,2.2e-05,0.000455,0.0014

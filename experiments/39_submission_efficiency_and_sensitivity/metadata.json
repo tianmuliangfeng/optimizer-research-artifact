@@ -1,0 +1,58 @@
+{
+  "code_directory": "scripts/39_submission_efficiency_and_sensitivity",
+  "entrypoints": {
+    "command:20260729_r1_isolated_efficiency_followup": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/39_submission_efficiency_and_sensitivity/20260729_r1_isolated_efficiency_followup.sh"
+    },
+    "command:20260729_r1_shared_lr_sensitivity_followup": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/39_submission_efficiency_and_sensitivity/20260729_r1_shared_lr_sensitivity_followup.sh"
+    },
+    "command:20260729_submission_efficiency_and_sensitivity_audit": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/39_submission_efficiency_and_sensitivity/20260729_submission_efficiency_and_sensitivity_audit.sh"
+    },
+    "command:20260729_submission_efficiency_and_sensitivity_full": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/39_submission_efficiency_and_sensitivity/20260729_submission_efficiency_and_sensitivity_full.sh"
+    },
+    "script:run_r1_lr_sensitivity": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/39_submission_efficiency_and_sensitivity/run_r1_lr_sensitivity.py"
+    }
+  },
+  "experiment_id": "39_submission_efficiency_and_sensitivity",
+  "legacy_result_roots": [
+    "39_submission_efficiency_and_sensitivity"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "39 Submission Efficiency And Sensitivity"
+}

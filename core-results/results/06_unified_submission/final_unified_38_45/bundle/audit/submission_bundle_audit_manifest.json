@@ -1,0 +1,14 @@
+{
+  "claim_eligible": true,
+  "error_count": 0,
+  "errors": [],
+  "manifest_count": 6,
+  "mdp_manifest": true,
+  "outputs": {
+    "BUNDLE_AUDIT.md": "76aefe215e7e1121a3f30ec3a9cd873ecfecc2168568c89ea05a0adfec156109",
+    "manifest_audit.csv": "a28ddfd43e3464b1feeac4b681ae3a828e41f203ae560eaf7c2659fb3151b264"
+  },
+  "schema_version": "mdp_submission_bundle_audit_v1",
+  "status": "passed",
+  "synthetic": false
+}

@@ -1,0 +1,163 @@
+{
+  "accepted_cell_fingerprints": [
+    {
+      "accepted_pointer_sha256": "897beb9fac5a79b93516966d04b9df379dbac26b5c8bac6ab094a3d5efdaf306",
+      "cell_key": "experiment44:formal:seed2024:muon",
+      "method": "muon",
+      "scientific_manifest_sha256": "e6175b41a2cca3c365b662e17ca1b507b7e37d58417ce4598550e13536eba0c3",
+      "seed": 2024
+    },
+    {
+      "accepted_pointer_sha256": "5a0fa5765623978760f20f959367c97828cd53043fd4c61f1cf28eee04024b5d",
+      "cell_key": "experiment44:formal:seed2024:original_newton_muon",
+      "method": "original_newton_muon",
+      "scientific_manifest_sha256": "c3fc7c1b0a183982a1f1ca832efe3ae75a77d8a1e0d27f82fdc7a87a0acdb75a",
+      "seed": 2024
+    },
+    {
+      "accepted_pointer_sha256": "57b2da15245973fae9e155a5fa36057fe908ec34074295c00d7e7879bb6ca362",
+      "cell_key": "experiment44:formal:seed2024:selective_none",
+      "method": "selective_none",
+      "scientific_manifest_sha256": "2c142a20ccfccce9a9223359187c8f147ad47192369339a21dc13e6729dbcefd",
+      "seed": 2024
+    },
+    {
+      "accepted_pointer_sha256": "6bbbd9bcdae16beeab3a63e1248ec466fa20ed6bc5b0d4b6e5b3edf5f2afd8ef",
+      "cell_key": "experiment44:formal:seed2024:selective_diag",
+      "method": "selective_diag",
+      "scientific_manifest_sha256": "c67c389a3e0bf7c015ab65349d3916b679d6adbf67d34fcb854bea8c765e6c1f",
+      "seed": 2024
+    },
+    {
+      "accepted_pointer_sha256": "f4f257d2a88010c0c18aba066d5953fc1bbbc9a24acc48f8632b9f36b04c0c3b",
+      "cell_key": "experiment44:formal:seed2025:muon",
+      "method": "muon",
+      "scientific_manifest_sha256": "3f4fea14fcff82657bfebb359a83845f7deca73f20800aa4b7b66467e3ae7a4d",
+      "seed": 2025
+    },
+    {
+      "accepted_pointer_sha256": "5a4e5c413c1643d22528e808b726e0597b5ed3d629eb3273875a1acfde1d850b",
+      "cell_key": "experiment44:formal:seed2025:original_newton_muon",
+      "method": "original_newton_muon",
+      "scientific_manifest_sha256": "bd770624175082f4506f99057d3b6015643fb28852990aa7b513e19bb63b4084",
+      "seed": 2025
+    },
+    {
+      "accepted_pointer_sha256": "bf09cee7e83d9288664754bd0da4cf665e2a239f608a31244b3a538616495ad8",
+      "cell_key": "experiment44:formal:seed2025:selective_none",
+      "method": "selective_none",
+      "scientific_manifest_sha256": "94c68c00f202af36ded28ddfa7c673b1292195a85a20ff70547e4f7845c69f6b",
+      "seed": 2025
+    },
+    {
+      "accepted_pointer_sha256": "74582f9504422aff38bfdd85e42cec46cf40910a860cebf0590cdb5304f08146",
+      "cell_key": "experiment44:formal:seed2025:selective_diag",
+      "method": "selective_diag",
+      "scientific_manifest_sha256": "b22f8e3a279232b6ccaa2f60dce96da3c6215c476ef97d790fb013ac940b10fb",
+      "seed": 2025
+    },
+    {
+      "accepted_pointer_sha256": "9c4ab8d18c402d1e7871f7e8bf0d62008fa7788505bfe6763a11dbb1b0a93df2",
+      "cell_key": "experiment44:formal:seed2026:muon",
+      "method": "muon",
+      "scientific_manifest_sha256": "4bb9d185cf2e87f4ed4913124f5e51ab8ac2b4b9820942278ac329ae9ca0ce44",
+      "seed": 2026
+    },
+    {
+      "accepted_pointer_sha256": "bdb3bd30202ab01053221b130da004bdd848144faaf0896f0248442790a2c625",
+      "cell_key": "experiment44:formal:seed2026:original_newton_muon",
+      "method": "original_newton_muon",
+      "scientific_manifest_sha256": "49be9defbd5d718a007233fb14e5d5e49d9c578efc308682f1498f1835f4a39e",
+      "seed": 2026
+    },
+    {
+      "accepted_pointer_sha256": "3b57f9dd846135be3677f058f7b7c9ffd2e789784e0f9e37487f42f781579b73",
+      "cell_key": "experiment44:formal:seed2026:selective_none",
+      "method": "selective_none",
+      "scientific_manifest_sha256": "60ed709ea6bdea8674986aeecb8b5a97142fa1fc5faf44c1f3711fe4c4132eff",
+      "seed": 2026
+    },
+    {
+      "accepted_pointer_sha256": "bc1aae0444cc6f2532511dd43b4a8d07b9c0accf455c717e171ee77cd40776c6",
+      "cell_key": "experiment44:formal:seed2026:selective_diag",
+      "method": "selective_diag",
+      "scientific_manifest_sha256": "44406f7d395d6a78d1117d632d1bce1246abf81e6c582a2710d1988173526122",
+      "seed": 2026
+    }
+  ],
+  "accepted_cells_fingerprint_sha256": "c9e2c865e41da09668b0c0586a199ea9493c78ff162ac703e6d21f1877fcda2b",
+  "accepted_formal_cells": 12,
+  "artifact_hashes": {
+    "RECORD17_ANALYSIS_REPORT.md": "bed2941b26bf6a5844784bbf70ebc9c0e8f27f997731818c7c7382113b7543d1",
+    "integrity_checks.json": "b854bd096f2794e29d64a1c7c4d72baaa80ebc9ea9f1aaa3fc6b991c1a759216",
+    "method_summary.csv": "027ce963784a0338c6eea0842d7595f2771158bc11c9b58318d16a46d56cc7b6",
+    "paired_contrasts.csv": "e1b4c30d73a97c573fdef00dee11d593e3d65cba64b4475a2d30bedea49535cc",
+    "paired_deltas_by_seed.csv": "f035856e5f5c3783cbe67ae1548590232f074a8316a0fce500cc877a759096b2",
+    "record17_cells.csv": "cae983d3e8dfe4e92fb8654ae40b93c1a340009dac2147bd35020063d7b08545",
+    "record17_decision.json": "1841120a35c351460e2c1a014391089b0008d6249d4cf33027592bcf38f2e536",
+    "source_audit.json": "f9792f64f28b3676c38b9377927818a2d5366d855906b37d2750c3710fb0298d"
+  },
+  "artifacts": [
+    "record17_cells.csv",
+    "paired_deltas_by_seed.csv",
+    "paired_contrasts.csv",
+    "method_summary.csv",
+    "integrity_checks.json",
+    "source_audit.json",
+    "record17_decision.json",
+    "RECORD17_ANALYSIS_REPORT.md"
+  ],
+  "common_target_crossing_definition": "first downward crossing, linear interpolation between adjacent validation checkpoints",
+  "common_target_loss": 2.95,
+  "contract_path": "PRIVATE_PATH_REDACTED__0d2b6f12b44b",
+  "contract_sha256": "ebdec2e0196fcdf9b42fae7373f75f7f25d02e42daf4062f75075ce49f47dfef",
+  "decision": {
+    "ambiguous_primary_contrasts": [
+      "selective_none_vs_muon",
+      "selective_diag_vs_original"
+    ],
+    "common_target_crossing_definition": "first downward crossing of validation loss 2.95, linearly interpolated between adjacent validation checkpoints",
+    "delta_convention": "candidate_minus_comparator; negative is better",
+    "diag_vs_none_is_primary": false,
+    "original_vs_muon_is_mandatory_benchmark_anchor": true,
+    "practical_margin": 0.002,
+    "primary_classifications": {
+      "selective_diag_vs_muon": "quality_equivalent_within_margin",
+      "selective_diag_vs_original": "direction_candidate_worse_but_practically_unresolved",
+      "selective_none_vs_muon": "direction_candidate_better_but_practically_unresolved",
+      "selective_none_vs_original": "quality_equivalent_within_margin"
+    },
+    "primary_endpoint": "final_val_loss",
+    "seed_append_allowed_automatically": false,
+    "seed_append_rule": "A statistical trigger is necessary but not sufficient.  Additional seeds are allowed only if this uncertainty would change the frozen cross-scale paper claim; if allowed, run all four methods together on the next unused seeds (2027 then 2028), at most two.",
+    "statistical_seed_append_gate_triggered": true,
+    "timing_claim_eligible": false
+  },
+  "expected_formal_cells": 12,
+  "methods": [
+    "muon",
+    "original_newton_muon",
+    "selective_none",
+    "selective_diag"
+  ],
+  "passed": true,
+  "practical_margin": 0.002,
+  "primary_classifications": {
+    "selective_diag_vs_muon": "quality_equivalent_within_margin",
+    "selective_diag_vs_original": "direction_candidate_worse_but_practically_unresolved",
+    "selective_none_vs_muon": "direction_candidate_better_but_practically_unresolved",
+    "selective_none_vs_original": "quality_equivalent_within_margin"
+  },
+  "primary_endpoint": "final_val_loss",
+  "run_dir": "PRIVATE_PATH_REDACTED__de3fccfb80cf",
+  "schema_version": 1,
+  "script_version": "2026-07-30.4",
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "statistical_seed_append_gate_triggered": true,
+  "status": "passed",
+  "timing_eligible": false
+}

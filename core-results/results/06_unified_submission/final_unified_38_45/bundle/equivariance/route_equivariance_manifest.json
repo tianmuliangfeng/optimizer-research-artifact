@@ -1,0 +1,18 @@
+{
+  "all_checks_passed": true,
+  "blocks": 3,
+  "claim_eligible": true,
+  "cross_block_minimum_drift": 1e-05,
+  "input_dim": 12,
+  "invariance_tolerance": 1e-09,
+  "mdp_manifest": true,
+  "numpy_version": "2.3.5",
+  "output_dim": 8,
+  "outputs": {
+    "route_equivariance.csv": "3c61c16ded9f86834a8ee4879ea0c45b1918b56e7751b40751528712666f4f91"
+  },
+  "schema_version": "mdp_route_equivariance_audit_v1",
+  "seed": 20240731,
+  "status": "passed",
+  "synthetic": false
+}

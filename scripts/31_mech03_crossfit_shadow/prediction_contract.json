@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "script_version": "2026-07-27.1",
+  "stage": "MECH-03 cross-fit shadow update",
+  "authorization_source": {
+    "mech02_geometry_gate_candidate_passed": true,
+    "mech03_pre_run_contract_required": true,
+    "mech04_never_auto_authorized": true
+  },
+  "primary_prediction": {
+    "contrast": "llama124_minus_gpt_bridge_same_host",
+    "cell_score": "best_relative_loss_delta_diag_minus_best_relative_loss_delta_none",
+    "cross_architecture_score": "llama124_cell_score_minus_gpt_bridge_cell_score",
+    "predicted_direction": "positive",
+    "interpretation": "LLaMA-124M has a weaker held-out diag-over-none advantage than GPT bridge"
+  },
+  "formal_design": {
+    "checkpoint": "step6200_seed2026_endpoint",
+    "layers": [0, 4, 8, 11],
+    "repeats": 4,
+    "splits": ["A", "B"],
+    "batches_per_split": 8,
+    "sequence_length": 128,
+    "device_batch_size_per_window": 1,
+    "packed_split_batch_size": 8,
+    "offset_stride_tokens": 4096,
+    "directions": ["A_to_B", "B_to_A"],
+    "build_rule": "K, gradient, and production momentum lookahead come only from the build split",
+    "evaluation_rule": "baseline and shadow losses come only from the opposite held-out split",
+    "swap_rule": "evaluate both A_to_B and B_to_A",
+    "step_multipliers": [0.0, 0.25, 0.5, 1.0],
+    "step_base": "checkpoint matrix-optimizer initial_lr with production shape and parameter lr multipliers",
+    "weight_decay": "checkpoint matrix-optimizer weight decay with production parameter multiplier, applied identically to every candidate",
+    "momentum_beta": 0.95,
+    "newton_schulz_steps": 5,
+    "ridge_multiplier": 0.2,
+    "ridge_epsilon": 1e-08
+  },
+  "candidate_sets": {
+    "r1": ["none", "diag", "block4", "dense_full"],
+    "gpt_bridge": ["none", "diag", "block4", "dense_full"],
+    "llama124": ["none", "diag", "dense_full"]
+  },
+  "primary_gate": {
+    "minimum_positive_paired_cells": 24,
+    "paired_cells_total": 32,
+    "minimum_positive_material_layers": 3,
+    "layers_total": 4,
+    "minimum_relative_loss_margin": 1e-06,
+    "material_layer_rule": "mean cross-architecture score exceeds max(GPT repeat SD, LLaMA repeat SD, minimum_relative_loss_margin)",
+    "aggregate_rule": "median paired cross-architecture score exceeds minimum_relative_loss_margin",
+    "all_rules_required": true
+  },
+  "secondary_outputs_not_used_for_gate": [
+    "block4 and dense_full line-search loss",
+    "grouped four-layer shadow loss",
+    "update norm and cosine geometry",
+    "LLaMA gate/up projection output and down-input distribution/stability",
+    "R1-native versus GPT-bridge runtime robustness"
+  ],
+  "failure_policy": {
+    "nonfinite": "fail",
+    "missing_historical_momentum": "fail",
+    "cholesky_failure": "fail",
+    "checkpoint_or_model_mutation": "fail",
+    "batch_contract_mismatch": "fail",
+    "no_positive_step_selected": "retain as valid null result",
+    "primary_gate_failure": "stop architecture-causal escalation and do not run MECH-04"
+  }
+}

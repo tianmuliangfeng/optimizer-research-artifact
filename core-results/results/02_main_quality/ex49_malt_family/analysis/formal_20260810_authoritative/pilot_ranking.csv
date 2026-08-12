@@ -1,0 +1,13 @@
+method,method_role,method_rank,cell_id,matrix_lr,controlled_seed,total_steps,total_tokens,evidence_valid,formal_eligible,final_val_loss,val_loss_step_1000
+malt,formal_candidate,1,malt_lr0125,0.0125,2026,1000,524288000,True,True,3.7649,3.7649
+malt,formal_candidate,2,malt_lr0100,0.01,2026,1000,524288000,True,True,3.7658,3.7658
+malt,formal_candidate,3,malt_lr0090,0.009,2026,1000,524288000,True,True,3.7729,3.7729
+malt,formal_candidate,4,malt_lr0160,0.016,2026,1000,524288000,True,True,3.7746,3.7746
+malt,formal_candidate,5,malt_lr0080,0.008,2026,1000,524288000,True,True,3.7754,3.7754
+malt,formal_candidate,6,malt_lr0064,0.0064,2026,1000,524288000,True,True,3.7916,3.7916
+malter_eq17,formal_candidate,1,malter_eq17_lr015,0.015,2026,1000,524288000,True,True,4.1016,4.1016
+malter_eq17,formal_candidate,2,malter_eq17_lr018,0.018,2026,1000,524288000,True,True,4.102,4.102
+malter_eq17,formal_candidate,3,malter_eq17_lr025,0.025,2026,1000,524288000,True,True,4.1141,4.1141
+malter_eq17,formal_candidate,4,malter_eq17_lr012,0.012,2026,1000,524288000,True,True,4.1218,4.1218
+malter_eq17,formal_candidate,5,malter_eq17_lr009,0.009,2026,1000,524288000,True,True,4.1776,4.1776
+malter_eq17,formal_candidate,6,malter_eq17_lr007,0.007,2026,1000,524288000,True,True,4.2603,4.2603

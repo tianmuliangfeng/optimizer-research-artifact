@@ -1,0 +1,10 @@
+{
+  "claim_eligible": false,
+  "confirmation_authorized": false,
+  "confirmation_candidate": false,
+  "curvature_increment_result": "curvature_increment_not_supported",
+  "llama_10b_triggered": false,
+  "phase": "discovery",
+  "scientific_result": "directional_geometry_not_supported",
+  "status": "completed"
+}

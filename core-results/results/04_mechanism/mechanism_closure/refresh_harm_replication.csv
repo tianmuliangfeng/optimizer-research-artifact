@@ -1,0 +1,5 @@
+source,event_id,unit_count,positive_units,normalized_harm_mean,normalized_harm_median,normalized_harm_min,normalized_harm_max,claim_eligible,interpretation
+GEO-01B,delayed_refresh_64,12,12,0.0023963673994138366,0.002340664269586401,0.0017700769719275478,0.003229759787551245,False,independent discovery replication; supports closure context but is not confirmatory
+MDP-05,delayed_refresh_64,12,12,0.0023248804547182,0.00229160232978975,0.00171071349934726,0.00308779184403196,True,replicated direct refresh harm; quantitative mediator claim not implied
+GEO-01B,production_refresh_32,12,12,0.004579928443003617,0.004526228021556111,0.0029177697269255898,0.006554576551111246,False,independent discovery replication; supports closure context but is not confirmatory
+MDP-05,production_refresh_32,12,12,0.0044842066487064,0.00414313880427047,0.00292907760485517,0.00664136028400475,True,replicated direct refresh harm; quantitative mediator claim not implied

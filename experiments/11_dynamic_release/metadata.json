@@ -1,0 +1,19 @@
+{
+  "code_directory": "scripts/11_dynamic_release",
+  "entrypoints": {},
+  "experiment_id": "11_dynamic_release",
+  "legacy_result_roots": [
+    "11_dynamic_release"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": false,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "planned_not_implemented",
+  "title": "11 Dynamic Release"
+}

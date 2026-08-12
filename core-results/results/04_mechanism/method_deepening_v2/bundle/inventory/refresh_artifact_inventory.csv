@@ -1,0 +1,5 @@
+artifact_type,count,required_count,sufficient_for_mdp04,reason
+formal_replay_units,12,12,false,"audits contain shapes, fingerprints, and 17 sampled values, not full matrices"
+paired_refresh_tensor_files,0,1,false,"no complete before/after K, inverse, and matched-gradient export is local"
+local_origin_checkpoints,0,4,false,all four accepted checkpoints are recorded only as remote Linux paths
+zip_tensor_members,0,1,false,archived handoffs contain no raw tensor payload

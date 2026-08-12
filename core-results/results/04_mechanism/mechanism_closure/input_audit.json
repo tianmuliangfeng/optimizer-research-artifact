@@ -1,0 +1,146 @@
+{
+  "geo01b_handoff_files_verified": 73,
+  "passed": true,
+  "rows": [
+    {
+      "bytes": 3026,
+      "expected_sha256": "634ecfa12cd2ec46e8a72f354989f0dad09155a2489d7fd2f707cfb1c70a5c0d",
+      "input_id": "unified_manifest",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "634ecfa12cd2ec46e8a72f354989f0dad09155a2489d7fd2f707cfb1c70a5c0d",
+      "passed": true
+    },
+    {
+      "bytes": 2424,
+      "expected_sha256": "a1fe373c605401695a1330d7605098927146b8de2f1f1db38c606e62aa2f1130",
+      "input_id": "unified_chain",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "a1fe373c605401695a1330d7605098927146b8de2f1f1db38c606e62aa2f1130",
+      "passed": true
+    },
+    {
+      "bytes": 3065,
+      "expected_sha256": "38ee2dadd55b69a73cbcd4e76a54e05a078b22796a0bf5ae2917af6f93190316",
+      "input_id": "unified_claim_matrix",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "38ee2dadd55b69a73cbcd4e76a54e05a078b22796a0bf5ae2917af6f93190316",
+      "passed": true
+    },
+    {
+      "bytes": 17416,
+      "expected_sha256": "f037f1d0d8c028d9160f8e73de7c8ee2f47b432394dfaaddfad7754956fb90f0",
+      "input_id": "unified_report",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "f037f1d0d8c028d9160f8e73de7c8ee2f47b432394dfaaddfad7754956fb90f0",
+      "passed": true
+    },
+    {
+      "bytes": 12725,
+      "expected_sha256": "d6a2144d1693a93687bf530349f5eaff4c4dff54261097703f7d106f6b286890",
+      "input_id": "mdp04_manifest",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "d6a2144d1693a93687bf530349f5eaff4c4dff54261097703f7d106f6b286890",
+      "passed": true
+    },
+    {
+      "bytes": 3089,
+      "expected_sha256": "a3ccef0e9ceb794d08e19c8437450af48c29f8d83c990d4d01ce31e2fb641608",
+      "input_id": "mdp04_origin_summary",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "a3ccef0e9ceb794d08e19c8437450af48c29f8d83c990d4d01ce31e2fb641608",
+      "passed": true
+    },
+    {
+      "bytes": 6576,
+      "expected_sha256": "4b5026cbbfdf98a2e6ace285fb7541a75d2bdacbfe2ead7b1ab5e28314a8f7cb",
+      "input_id": "mdp04_report",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "4b5026cbbfdf98a2e6ace285fb7541a75d2bdacbfe2ead7b1ab5e28314a8f7cb",
+      "passed": true
+    },
+    {
+      "bytes": 1861,
+      "expected_sha256": "225ef2b148e8b66d1e825c3faca7b968a810aa9df996739fd39abd87f2f4de93",
+      "input_id": "mdp05_acceptance",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "225ef2b148e8b66d1e825c3faca7b968a810aa9df996739fd39abd87f2f4de93",
+      "passed": true
+    },
+    {
+      "bytes": 7847,
+      "expected_sha256": "6cba65232a6192132f348c8958f940f22ba9cf6892944bfe737c86981924c78d",
+      "input_id": "mdp05_manifest",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "6cba65232a6192132f348c8958f940f22ba9cf6892944bfe737c86981924c78d",
+      "passed": true
+    },
+    {
+      "bytes": 1487,
+      "expected_sha256": "7d411f0a786bb8c2d5c0d08059e7fc945805cf82a3be7e8f6d3a3553093cc747",
+      "input_id": "mdp05_primary_tests",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "7d411f0a786bb8c2d5c0d08059e7fc945805cf82a3be7e8f6d3a3553093cc747",
+      "passed": true
+    },
+    {
+      "bytes": 18106,
+      "expected_sha256": "55f090043f8f0e2d251487175d1fef7ed0567fef8c745f1a620f2c6b2166714e",
+      "input_id": "mdp05_joined",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "55f090043f8f0e2d251487175d1fef7ed0567fef8c745f1a620f2c6b2166714e",
+      "passed": true
+    },
+    {
+      "bytes": 5695,
+      "expected_sha256": "4946098964f12636876c0a9dd8e050daca85d9377bc59402f1c2378c562b02b6",
+      "input_id": "mdp05_report",
+      "kind": "local_file",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact frozen input",
+      "observed_sha256": "4946098964f12636876c0a9dd8e050daca85d9377bc59402f1c2378c562b02b6",
+      "passed": true
+    },
+    {
+      "bytes": 13042311,
+      "expected_sha256": "c4e8f6bf9cb260a4d04965389576fcce337e9a4e5526d63ed7acc3a425425aa6",
+      "input_id": "geo01b_zip",
+      "kind": "source_zip",
+      "location": "PRIVATE_PATH_REDACTED",
+      "note": "exact accepted GEO-01B handoff",
+      "observed_sha256": "c4e8f6bf9cb260a4d04965389576fcce337e9a4e5526d63ed7acc3a425425aa6",
+      "passed": true
+    },
+    {
+      "bytes": "",
+      "expected_sha256": "7a4551d26340d181a67cb5039aed2c10121dbf1db8d5f03e0a77f99338834911",
+      "input_id": "geo01a_lineage",
+      "kind": "accepted_lineage_only",
+      "location": "source ZIP not present locally on closure date",
+      "note": "engineering pilot only; excluded from scientific closure and not reverified",
+      "observed_sha256": "",
+      "passed": true
+    }
+  ]
+}

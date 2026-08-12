@@ -1,0 +1,40 @@
+{
+  "archive_sha256": "66786b5bd7f44fddb0eef16b0c132439d47d3a875337ff52e66c06a69e6afede",
+  "artifacts": [
+    {
+      "package_sha256": "58bcd251cb1777f70433e4b90c7039c3d653d7dc8777f388f50c64e0de7e57a8",
+      "path": "results/05_systems/ex42_llama1b_efficiency/independent_review/archive_receipt.json",
+      "sha256": "58bcd251cb1777f70433e4b90c7039c3d653d7dc8777f388f50c64e0de7e57a8",
+      "source_sha256": "dd855ff2fb6024e35e6890129ea8d5e82449ea4854a70b2b7b02045a0850601a"
+    },
+    {
+      "package_sha256": "eb09f95618847a830dc998f117a0b023bd7ca8a4d42e2a14341e61df4ad4e1d7",
+      "path": "results/05_systems/ex42_llama1b_efficiency/independent_review/important_results.json",
+      "sha256": "eb09f95618847a830dc998f117a0b023bd7ca8a4d42e2a14341e61df4ad4e1d7",
+      "source_sha256": "eb09f95618847a830dc998f117a0b023bd7ca8a4d42e2a14341e61df4ad4e1d7"
+    },
+    {
+      "package_sha256": "e01dbf4e520f2ff9dbb2970a20c6daacc0aa75e80b033c9393870b0d98c3e0cc",
+      "path": "results/05_systems/ex42_llama1b_efficiency/independent_review/independent_audit.json",
+      "sha256": "e01dbf4e520f2ff9dbb2970a20c6daacc0aa75e80b033c9393870b0d98c3e0cc",
+      "source_sha256": "e01dbf4e520f2ff9dbb2970a20c6daacc0aa75e80b033c9393870b0d98c3e0cc"
+    },
+    {
+      "package_sha256": "5980a0df933f8901b7b5e3fc9726da7d93880c3b345fde7b252c78cfc7bdd946",
+      "path": "results/05_systems/ex42_llama1b_efficiency/independent_review/README.md",
+      "sha256": "5980a0df933f8901b7b5e3fc9726da7d93880c3b345fde7b252c78cfc7bdd946",
+      "source_sha256": "5980a0df933f8901b7b5e3fc9726da7d93880c3b345fde7b252c78cfc7bdd946"
+    },
+    {
+      "package_sha256": "18de21f07ab1b96911256975a249d1accee65d364397924d72b8d6df99a7e4e1",
+      "path": "results/05_systems/ex42_llama1b_efficiency/independent_review/source_artifact_hashes.csv",
+      "sha256": "18de21f07ab1b96911256975a249d1accee65d364397924d72b8d6df99a7e4e1",
+      "source_sha256": "8229a82304315124c900d108a5cfc37f7698bb12d0b40135b01cf85fa160113d"
+    }
+  ],
+  "data_quality_status": "ready_to_cite_with_scope_caveats",
+  "passed": true,
+  "review_date": "2026-07-30",
+  "run_id": "20260729T105505+0000",
+  "schema_version": 1
+}

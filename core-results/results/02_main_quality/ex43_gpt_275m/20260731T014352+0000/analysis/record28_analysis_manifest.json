@@ -1,0 +1,192 @@
+{
+  "accepted_cell_fingerprints": [
+    {
+      "accepted_pointer_sha256": "26334543ed5d01050a5584af2484049b1df30293db85ee62760e317504f4ad85",
+      "cell_key": "experiment43:formal:seed2024:muon",
+      "method": "muon",
+      "scientific_manifest_sha256": "5c92732208d5335197de4f77243104656746c1e8cdc021233e88be0c461ebbed",
+      "seed": 2024
+    },
+    {
+      "accepted_pointer_sha256": "1fc0c2226b0b9c2505a5a8759933cedcbad4ad62779a025a971e4714790ed6ea",
+      "cell_key": "experiment43:formal:seed2024:original_newton_muon",
+      "method": "original_newton_muon",
+      "scientific_manifest_sha256": "8d9da924c1b78c0f19cc5083d9d092ffbc60529b7739228234a9ee7674b2c379",
+      "seed": 2024
+    },
+    {
+      "accepted_pointer_sha256": "13bf17241e1ac2107f1cc5c1e86b8f483a48124a3069a939abcdee6b0893da34",
+      "cell_key": "experiment43:formal:seed2024:selective_none",
+      "method": "selective_none",
+      "scientific_manifest_sha256": "d46468689a5f4acb8006e671778340501b76be93f9e5bf56d6e82298fe2dff40",
+      "seed": 2024
+    },
+    {
+      "accepted_pointer_sha256": "742286b868665e3dbffc741716565fe7caacb4d6ec97efb12ac7d048bf1530d6",
+      "cell_key": "experiment43:formal:seed2024:selective_diag",
+      "method": "selective_diag",
+      "scientific_manifest_sha256": "cccc1c9ff6a273131cab152060265c90e3659a3bc8a4187d7a74d1c65eb5e841",
+      "seed": 2024
+    },
+    {
+      "accepted_pointer_sha256": "fe975961f9ca6ad84a0d4d624c2607833e8533c123b04bf9c5219e27664bce88",
+      "cell_key": "experiment43:formal:seed2025:muon",
+      "method": "muon",
+      "scientific_manifest_sha256": "1ccc52a0e4d84575615dfb31a6a4212a45e790b8238c53525c7a9d5dcfce6f88",
+      "seed": 2025
+    },
+    {
+      "accepted_pointer_sha256": "03f17546f780f1dade75e95b68784c5d33ecf6c79dd351ab425573d7dd9a89b8",
+      "cell_key": "experiment43:formal:seed2025:original_newton_muon",
+      "method": "original_newton_muon",
+      "scientific_manifest_sha256": "709adb1ab0ff31d29034d0bb82cd2096a130360f465b09301a6aebdc11f04a20",
+      "seed": 2025
+    },
+    {
+      "accepted_pointer_sha256": "bfc7241dfb6b4ad7ab5c6d8dd56b36f66fb29ad0b569a8037713d334b40aaf6d",
+      "cell_key": "experiment43:formal:seed2025:selective_none",
+      "method": "selective_none",
+      "scientific_manifest_sha256": "d9dbfa8be6afb55503d961ee863203f9630c46393f8a3a044b4acc6b08c5940f",
+      "seed": 2025
+    },
+    {
+      "accepted_pointer_sha256": "dd79b9b80661cf18f431a3b04f5cba414f89dc194fc7a8ce2c668aa2b190b793",
+      "cell_key": "experiment43:formal:seed2025:selective_diag",
+      "method": "selective_diag",
+      "scientific_manifest_sha256": "521844f66f7f0e5a9c4e9ed7c419f36cf900855d34999d553ac818eb0956a68e",
+      "seed": 2025
+    },
+    {
+      "accepted_pointer_sha256": "0341d3eaec2d70a67c4b056ced3d6ef0682b38681d15cab8927c8b0d3c6a862c",
+      "cell_key": "experiment43:formal:seed2026:muon",
+      "method": "muon",
+      "scientific_manifest_sha256": "7339ce187a7886ecc191cef0a43bf02642d88b67a023ca9d9a5c31915c1dd4df",
+      "seed": 2026
+    },
+    {
+      "accepted_pointer_sha256": "c38c99cd57af089a310033f06bc2a107ab17fc3e793c6a31fa3f1fc87f153b1a",
+      "cell_key": "experiment43:formal:seed2026:original_newton_muon",
+      "method": "original_newton_muon",
+      "scientific_manifest_sha256": "6021ddcaeec26630e96e2c40a9f34fb24c1cd48938e784422327e604a24d1254",
+      "seed": 2026
+    },
+    {
+      "accepted_pointer_sha256": "351f5182c99fbe4268aea582166b19271477cb6ababb8c3a4f39cd74d396d5cb",
+      "cell_key": "experiment43:formal:seed2026:selective_none",
+      "method": "selective_none",
+      "scientific_manifest_sha256": "2745197b65220e81a556f5b5fac766fe1901d80eaf4d902ac17caebd1351afde",
+      "seed": 2026
+    },
+    {
+      "accepted_pointer_sha256": "1f268f4321def96834d8009bf9b006d0ff6c0d05fc379376984f66c5e05e4e3f",
+      "cell_key": "experiment43:formal:seed2026:selective_diag",
+      "method": "selective_diag",
+      "scientific_manifest_sha256": "c97ae903369ee05269c18b297b2b47c0e6c5f731c3efc4ce3c6ba2415b7de097",
+      "seed": 2026
+    },
+    {
+      "accepted_pointer_sha256": "2e202d1ad0ecc6594e0ac50eccc74b5020d717d57313fe1cdc3db1c95a811f79",
+      "cell_key": "experiment43:formal:seed2027:muon",
+      "method": "muon",
+      "scientific_manifest_sha256": "eb8d9af4ee54eb8c28509cca85e066c7e98cbfab9fe1405fc1f449249ab4c786",
+      "seed": 2027
+    },
+    {
+      "accepted_pointer_sha256": "afb456a63ec5a71990e8e9d8739381a11495ef7cf1a2ba970c4bb80f978b7fd4",
+      "cell_key": "experiment43:formal:seed2027:original_newton_muon",
+      "method": "original_newton_muon",
+      "scientific_manifest_sha256": "59b81a2fea2617de75fb1fc14659f5d98be41cfad23e456aa89766a8a0368f53",
+      "seed": 2027
+    },
+    {
+      "accepted_pointer_sha256": "2ba6847f56881c6f8e822dac75e354ac770ed9b267dbc0b322301112edb93538",
+      "cell_key": "experiment43:formal:seed2027:selective_none",
+      "method": "selective_none",
+      "scientific_manifest_sha256": "2d8c51d2848efddcea908c91c1d28a707e76df2a8635650258b681c6b0def5b7",
+      "seed": 2027
+    },
+    {
+      "accepted_pointer_sha256": "04741026c1d68cb510a641388fe05857b56bc9c6c64611bc41557d3b5c24a492",
+      "cell_key": "experiment43:formal:seed2027:selective_diag",
+      "method": "selective_diag",
+      "scientific_manifest_sha256": "b079c29dcccd315731b5a9d75ab1019d516ae9f81514444f75a4f72e83633e4e",
+      "seed": 2027
+    }
+  ],
+  "accepted_cells_fingerprint_sha256": "ec4b104fb10a9733b946b84163471c108a86f4d3068120250b6987c24c77e89d",
+  "accepted_formal_cells": 16,
+  "artifact_hashes": {
+    "RECORD28_ANALYSIS_REPORT.md": "da0dd0f2d7a574ea64a5377a443641f88cb47d88f304c63d53f319c801bd80e6",
+    "integrity_checks.json": "3cbeb19651c516f327289ba3004ce83b1e02226cbba6ccce858287d5f6a9cc41",
+    "method_summary.csv": "d16c01363997508d61c88fb9884357e00b794bc4a664fe0092a3d16b97c3a9b0",
+    "paired_contrasts.csv": "8001f2d1fb438bfb86762983ca43a0addd0e9253881237fac757fba7a145beb1",
+    "paired_deltas_by_seed.csv": "8819d504216ef69a6e0f9d1ca3e588bda9e0d257c0a8001f4b1a0b27698d0441",
+    "record28_cells.csv": "f2002d9b9d66194b1d4308949a59c48d5513448ce384b1e6f7a41fc3a0a0d030",
+    "record28_decision.json": "971e36fc2aedd7f893ebc76d20861da0dd580514402e648906c30a06fb28179c",
+    "source_audit.json": "7edc2ad07c0bffeae4a25468bcbf054ed8552853cc8de8b56db051ee4d59679f"
+  },
+  "artifacts": [
+    "record28_cells.csv",
+    "paired_deltas_by_seed.csv",
+    "paired_contrasts.csv",
+    "method_summary.csv",
+    "integrity_checks.json",
+    "source_audit.json",
+    "record28_decision.json",
+    "RECORD28_ANALYSIS_REPORT.md"
+  ],
+  "common_target_crossing_definition": "first downward crossing, linear interpolation between adjacent validation checkpoints",
+  "common_target_loss": 3.3,
+  "contract_path": "PRIVATE_PATH_REDACTED__d81c7195865d",
+  "contract_sha256": "dbc333f08605461b47d11622d2c2a4014c6f10aefc9f3cea4dbeef400b20e5ff",
+  "decision": {
+    "ambiguous_primary_contrasts": [
+      "selective_diag_vs_muon",
+      "selective_diag_vs_original"
+    ],
+    "common_target_crossing_definition": "first downward crossing of validation loss 3.30, linearly interpolated between adjacent validation checkpoints",
+    "delta_convention": "candidate_minus_comparator; negative is better",
+    "diag_vs_none_is_primary": false,
+    "original_vs_muon_is_mandatory_benchmark_anchor": true,
+    "practical_margin": 0.002,
+    "primary_classifications": {
+      "selective_diag_vs_muon": "ci_spans_both_practical_boundaries",
+      "selective_diag_vs_original": "ci_spans_both_practical_boundaries",
+      "selective_none_vs_muon": "direction_candidate_better_but_practically_unresolved",
+      "selective_none_vs_original": "quality_equivalent_within_margin"
+    },
+    "primary_endpoint": "final_val_loss",
+    "seed_append_allowed_automatically": false,
+    "seed_append_rule": "A statistical trigger is necessary but not sufficient.  Additional seeds are allowed only if this uncertainty would change the frozen cross-scale paper claim; if allowed, run all four methods together on the next unused seeds (2028 then 2029), at most two.",
+    "statistical_seed_append_gate_triggered": true,
+    "timing_claim_eligible": false
+  },
+  "expected_formal_cells": 16,
+  "methods": [
+    "muon",
+    "original_newton_muon",
+    "selective_none",
+    "selective_diag"
+  ],
+  "passed": true,
+  "practical_margin": 0.002,
+  "primary_classifications": {
+    "selective_diag_vs_muon": "ci_spans_both_practical_boundaries",
+    "selective_diag_vs_original": "ci_spans_both_practical_boundaries",
+    "selective_none_vs_muon": "direction_candidate_better_but_practically_unresolved",
+    "selective_none_vs_original": "quality_equivalent_within_margin"
+  },
+  "primary_endpoint": "final_val_loss",
+  "run_dir": "PRIVATE_PATH_REDACTED__201ecfddffdf",
+  "schema_version": 1,
+  "script_version": "2026-07-30.2",
+  "seeds": [
+    2024,
+    2025,
+    2026,
+    2027
+  ],
+  "statistical_seed_append_gate_triggered": true,
+  "status": "passed",
+  "timing_eligible": false
+}

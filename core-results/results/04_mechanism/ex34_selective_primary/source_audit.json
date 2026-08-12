@@ -1,0 +1,41 @@
+{
+  "comparison_contract": {
+    "baseline": "original Newton-Muon vs Muon",
+    "excluded_from_primary": "diag vs none",
+    "primary": [
+      "each selective proposal vs Muon",
+      "each selective proposal vs original Newton-Muon"
+    ]
+  },
+  "schema_version": 1,
+  "script_version": "2026-07-27.1",
+  "sources": {
+    "llama124": {
+      "coverage_passed": true,
+      "package_sha256": "249bfdca2e15417fc639b134afa4d7b3ded08a32026987c7b024aab38e26f7d7",
+      "relative_path": "results/02_main_quality/ex17_llama_124m/llama_multiseed_run_summary.csv",
+      "rows": 15,
+      "selected_cells": 12,
+      "sha256": "249bfdca2e15417fc639b134afa4d7b3ded08a32026987c7b024aab38e26f7d7",
+      "source_sha256": "249bfdca2e15417fc639b134afa4d7b3ded08a32026987c7b024aab38e26f7d7"
+    },
+    "llama1b": {
+      "coverage_passed": true,
+      "package_sha256": "66fdd4d3619f2b33d0621257c85139e6803058bbe0051d5894720ca0ee687a83",
+      "relative_path": "results/02_main_quality/ex20_llama1b_quality/llama1b_formal_multiseed_run_summary.csv",
+      "rows": 12,
+      "selected_cells": 12,
+      "sha256": "66fdd4d3619f2b33d0621257c85139e6803058bbe0051d5894720ca0ee687a83",
+      "source_sha256": "66fdd4d3619f2b33d0621257c85139e6803058bbe0051d5894720ca0ee687a83"
+    },
+    "r1": {
+      "coverage_passed": true,
+      "package_sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+      "relative_path": "results/02_main_quality/ex15_r1_124m/r1_multiseed_run_summary.csv",
+      "rows": 12,
+      "selected_cells": 12,
+      "sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+      "source_sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3"
+    }
+  }
+}

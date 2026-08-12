@@ -1,0 +1,29 @@
+{
+  "code_directory": "scripts/21_gpt_r1_host_bridge",
+  "default_entrypoint": "script:run_gpt_r1_host_bridge",
+  "entrypoints": {
+    "script:run_gpt_r1_host_bridge": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/21_gpt_r1_host_bridge/run_gpt_r1_host_bridge.py"
+    }
+  },
+  "experiment_id": "21_gpt_r1_host_bridge",
+  "legacy_result_roots": [
+    "21_gpt_r1_host_bridge"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "21 Gpt R1 Host Bridge"
+}

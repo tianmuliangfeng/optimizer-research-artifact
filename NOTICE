@@ -1,0 +1,11 @@
+Copyright (c) 2026 Anonymous Authors
+
+This anonymous submission is released under the MIT License in `LICENSE`.
+That license applies to the authors' contributions; it does not replace or
+relicense third-party material.
+
+The package contains or adapts material associated with NanoGPT,
+Modded-NanoGPT, Newton-Muon, and Mousse, and contains independent compatibility
+implementations used to evaluate NorMuon and Moonlight Muon. The applicable
+attribution, upstream revisions, affected paths, and preserved license notices
+are listed in `THIRD_PARTY_NOTICES.md`.

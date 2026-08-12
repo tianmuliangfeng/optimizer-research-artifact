@@ -1,0 +1,81 @@
+{
+  "code_directory": "scripts/29_r1_depth_kmode",
+  "default_entrypoint": "command:reproduce_full",
+  "entrypoints": {
+    "command:20260806_ex29_r1_depth_kmode": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {},
+      "path": "commands/29_r1_depth_kmode/20260806_ex29_r1_depth_kmode.sh"
+    },
+    "command:reproduce_full": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/29_r1_depth_kmode/reproduce_full.sh"
+    },
+    "script:analyze_r1_depth_kmode_formal": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/29_r1_depth_kmode/analyze_r1_depth_kmode_formal.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--bundle-root",
+            "--batch-id",
+            "--source-zip",
+            "--wandb-inputs",
+            "--reference-results-root",
+            "--output-dir"
+          ]
+        }
+      ]
+    },
+    "script:run_r1_depth_kmode": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/29_r1_depth_kmode/run_r1_depth_kmode.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--smoke-manifest"
+          ]
+        }
+      ]
+    },
+    "script:run_three_seed_batch": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/29_r1_depth_kmode/run_three_seed_batch.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--official-repo",
+            "--python-exe",
+            "--results-dir"
+          ]
+        }
+      ]
+    }
+  },
+  "experiment_id": "29_r1_depth_kmode",
+  "legacy_result_roots": [
+    "29_r1_depth_kmode"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "29 R1 Depth Kmode"
+}

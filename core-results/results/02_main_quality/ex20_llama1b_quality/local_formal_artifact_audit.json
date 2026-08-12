@@ -1,0 +1,28 @@
+{
+  "archive": "PRIVATE_PATH_REDACTED",
+  "archive_sha256": "7225a005515c18ab85cc83fcba0dc666287faea950b151663316fc22b69fdccb",
+  "artifact_root": "PRIVATE_PATH_REDACTED__aa9509e50567",
+  "checkpoint_payloads_present_locally": false,
+  "checks": {
+    "PASS": 169,
+    "WARN": 1
+  },
+  "created_at": "2026-07-27",
+  "files": 100,
+  "local_metrics_wandb_reconciled": true,
+  "methods": [
+    "muon",
+    "down_none",
+    "down_diag",
+    "newton_full"
+  ],
+  "report": "PRIVATE_PATH_REDACTED__e8b2f392fdbc",
+  "runs": 12,
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "selected_remote_checkpoint_hash_required_before_mech02": true,
+  "status": "PASS_WITH_CHECKPOINT_HASH_CAVEAT"
+}

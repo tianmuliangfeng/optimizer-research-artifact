@@ -1,0 +1,73 @@
+check,passed,detail
+seed2024_manifest_status_completed,True,completed
+seed2024_five_methods_completed,True,"down_diag,down_none,newton_full,muon,adamw"
+seed2024_no_failed_methods,True,{}
+seed2024_wandb_complete,True,True
+seed2024_h100_80gb,True,NVIDIA H100 80GB HBM3
+seed2024_fixed_6200_steps,True,6200
+seed2024_down_diag_summary_sha256,True,actual=e7315396d7406743bf80676f2401c3057ef80aa63cf4a5f1a7d14f4007b6e26a; expected=e7315396d7406743bf80676f2401c3057ef80aa63cf4a5f1a7d14f4007b6e26a
+seed2024_down_diag_resume_zero,True,0
+seed2024_down_diag_completed_6200,True,status=completed; steps=6200
+seed2024_down_none_summary_sha256,True,actual=f3f10201200f46aa46cef12a2803aae18130e604f20195a7825afbf3448f0638; expected=f3f10201200f46aa46cef12a2803aae18130e604f20195a7825afbf3448f0638
+seed2024_down_none_resume_zero,True,0
+seed2024_down_none_completed_6200,True,status=completed; steps=6200
+seed2024_newton_full_summary_sha256,True,actual=8c5abcebe3efa0ed47dedf58ea87b74c6d31ca055d710aabbed643d263265760; expected=8c5abcebe3efa0ed47dedf58ea87b74c6d31ca055d710aabbed643d263265760
+seed2024_newton_full_resume_zero,True,0
+seed2024_newton_full_completed_6200,True,status=completed; steps=6200
+seed2024_muon_summary_sha256,True,actual=0d4ff09437570b5fb46b2356638c818bafdbd190c3eac019b33a6fa7c545cc99; expected=0d4ff09437570b5fb46b2356638c818bafdbd190c3eac019b33a6fa7c545cc99
+seed2024_muon_resume_zero,True,0
+seed2024_muon_completed_6200,True,status=completed; steps=6200
+seed2024_adamw_summary_sha256,True,actual=ea3c81976725d1c1a19be79a0494ce9f9e7418adff56aadf8e40d555cd5fbf87; expected=ea3c81976725d1c1a19be79a0494ce9f9e7418adff56aadf8e40d555cd5fbf87
+seed2024_adamw_resume_zero,True,0
+seed2024_adamw_completed_6200,True,status=completed; steps=6200
+seed2025_manifest_status_completed,True,completed
+seed2025_five_methods_completed,True,"down_diag,down_none,newton_full,muon,adamw"
+seed2025_no_failed_methods,True,{}
+seed2025_wandb_complete,True,True
+seed2025_h100_80gb,True,NVIDIA H100 80GB HBM3
+seed2025_fixed_6200_steps,True,6200
+seed2025_down_diag_summary_sha256,True,actual=bac3af96fe5c1d5f3046ec93f82803d995cb4b286d7efb251cac2a5f65887278; expected=bac3af96fe5c1d5f3046ec93f82803d995cb4b286d7efb251cac2a5f65887278
+seed2025_down_diag_resume_zero,True,0
+seed2025_down_diag_completed_6200,True,status=completed; steps=6200
+seed2025_down_none_summary_sha256,True,actual=9a774931c8b336e02f7b4c549945263a2f11e9cb34f1c2fd45619500b387512e; expected=9a774931c8b336e02f7b4c549945263a2f11e9cb34f1c2fd45619500b387512e
+seed2025_down_none_resume_zero,True,0
+seed2025_down_none_completed_6200,True,status=completed; steps=6200
+seed2025_newton_full_summary_sha256,True,actual=c98bfedd4d56b053953b158abf7f3a4af26075d1732195b8ab2e508dee6e9ddb; expected=c98bfedd4d56b053953b158abf7f3a4af26075d1732195b8ab2e508dee6e9ddb
+seed2025_newton_full_resume_zero,True,0
+seed2025_newton_full_completed_6200,True,status=completed; steps=6200
+seed2025_muon_summary_sha256,True,actual=4d00348e125ecc1a273b0093ffddf8630bf2484637898b8e28d2c7732ffe99e7; expected=4d00348e125ecc1a273b0093ffddf8630bf2484637898b8e28d2c7732ffe99e7
+seed2025_muon_resume_zero,True,0
+seed2025_muon_completed_6200,True,status=completed; steps=6200
+seed2025_adamw_summary_sha256,True,actual=fe5dcb6f541b3104f2e96ed34a87cb4a375f326a093ec04113ab2ef2ce6ae057; expected=fe5dcb6f541b3104f2e96ed34a87cb4a375f326a093ec04113ab2ef2ce6ae057
+seed2025_adamw_resume_zero,True,0
+seed2025_adamw_completed_6200,True,status=completed; steps=6200
+seed2024_down_diag_wandb_local_final_match,True,wandb=3.266753435; local=3.266753435; abs_diff=0
+seed2024_down_diag_complete_budget,True,step=6200; tokens=3250585600
+seed2024_down_none_wandb_local_final_match,True,wandb=3.267063618; local=3.267063618; abs_diff=0
+seed2024_down_none_complete_budget,True,step=6200; tokens=3250585600
+seed2024_newton_full_wandb_local_final_match,True,wandb=3.267097235; local=3.267097235; abs_diff=0
+seed2024_newton_full_complete_budget,True,step=6200; tokens=3250585600
+seed2024_muon_wandb_local_final_match,True,wandb=3.268193483; local=3.268193483; abs_diff=0
+seed2024_muon_complete_budget,True,step=6200; tokens=3250585600
+seed2024_adamw_wandb_local_final_match,True,wandb=3.370098591; local=3.370098591; abs_diff=0
+seed2024_adamw_complete_budget,True,step=6200; tokens=3250585600
+seed2025_down_diag_wandb_local_final_match,True,wandb=3.267637014; local=3.267637014; abs_diff=0
+seed2025_down_diag_complete_budget,True,step=6200; tokens=3250585600
+seed2025_newton_full_wandb_local_final_match,True,wandb=3.267860889; local=3.267860889; abs_diff=0
+seed2025_newton_full_complete_budget,True,step=6200; tokens=3250585600
+seed2025_muon_wandb_local_final_match,True,wandb=3.268335819; local=3.268335819; abs_diff=0
+seed2025_muon_complete_budget,True,step=6200; tokens=3250585600
+seed2025_down_none_wandb_local_final_match,True,wandb=3.2688241; local=3.2688241; abs_diff=0
+seed2025_down_none_complete_budget,True,step=6200; tokens=3250585600
+seed2025_adamw_wandb_local_final_match,True,wandb=3.356021881; local=3.356021881; abs_diff=0
+seed2025_adamw_complete_budget,True,step=6200; tokens=3250585600
+seed2026_down_none_wandb_local_final_match,True,wandb=3.265029907; local=3.265029907; abs_diff=0
+seed2026_down_none_complete_budget,True,step=6200; tokens=3250585600
+seed2026_newton_full_wandb_local_final_match,True,wandb=3.265601873; local=3.265601873; abs_diff=0
+seed2026_newton_full_complete_budget,True,step=6200; tokens=3250585600
+seed2026_muon_wandb_local_final_match,True,wandb=3.266204596; local=3.266204596; abs_diff=0
+seed2026_muon_complete_budget,True,step=6200; tokens=3250585600
+seed2026_down_diag_wandb_local_final_match,True,wandb=3.266387224; local=3.266387224; abs_diff=0
+seed2026_down_diag_complete_budget,True,step=6200; tokens=3250585600
+seed2026_adamw_wandb_local_final_match,True,wandb=3.364127874; local=3.364127874; abs_diff=0
+seed2026_adamw_complete_budget,True,step=6200; tokens=3250585600

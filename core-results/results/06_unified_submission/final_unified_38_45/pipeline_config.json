@@ -1,0 +1,22 @@
+{
+  "schema_version": "mdp_local_pipeline_config_v1",
+  "synthetic": false,
+  "catalog": "input_catalog.json",
+  "complexity_config": "routing_complexity.json",
+  "practical_loss_margin": 0.002,
+  "cross_scale_family": "gpt_scale",
+  "equivariance": {
+    "seed": 20240731,
+    "input_dim": 12,
+    "output_dim": 8,
+    "blocks": 3,
+    "tolerance": 1e-09,
+    "cross_block_minimum_drift": 1e-05
+  },
+  "refresh": {
+    "enabled": false,
+    "reason": "Paired K/gradient tensor snapshots are not part of the accepted 38-45 evidence bundle. Refresh analysis is reserved for the separately preregistered method-deepening phase and is not required to close the present final unified evidence analysis.",
+    "ridge_scale": 0.15,
+    "residual_tolerance": 1e-08
+  }
+}

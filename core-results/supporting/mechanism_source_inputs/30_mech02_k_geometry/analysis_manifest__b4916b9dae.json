@@ -1,0 +1,14 @@
+{
+  "artifacts": [
+    "family_layer_summary.csv",
+    "geometry_gate.json",
+    "gpt_runtime_robustness.csv",
+    "input_validation.json",
+    "primary_cross_architecture.csv"
+  ],
+  "geometry_gate_candidate_passed": true,
+  "mech03_authorized": false,
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-27.1"
+}

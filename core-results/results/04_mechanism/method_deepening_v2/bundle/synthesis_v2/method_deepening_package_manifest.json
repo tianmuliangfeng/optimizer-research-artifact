@@ -1,0 +1,50 @@
+{
+  "blocked_component_count": 1,
+  "builder_script_sha256": "a7bffe678a9cc579014059318c2317776d8abf412e24b063b46299cce7fe8682",
+  "claim_eligible": false,
+  "component_status": {
+    "MDP-01": "ready",
+    "MDP-02": "ready",
+    "MDP-03": "ready_with_proof_text_required",
+    "MDP-04": "blocked_data"
+  },
+  "large_training_required": false,
+  "matplotlib_version": "3.10.9",
+  "mdp_manifest": true,
+  "next_action": "deterministic_short_replay_or_streaming_metric_export_on_original_llama_host",
+  "numpy_version": "2.2.6",
+  "outputs": {
+    "alpha_refresh_evidence.svg": "4dfb4230aba3bb31fc489ab7fd51e72e9202b4b09a4167e8f36c5f308a647d44",
+    "claim_evidence_matrix.csv": "021ffd609eeee22913a30bf25ae573345e2875ef4adbac5aae192c99749738b7",
+    "mechanism_evidence_summary.csv": "d86d77a8b54baf024793857d05f2bf1377516596c0b590b8178a23e51084d026",
+    "method_deepening_status.csv": "7040f27de222a2deff931a45ec2469c1e300cafa79fa4442c6e388ede6e25894",
+    "negative_evidence.csv": "bff39f156c7dea6da71d1399bf6716be7516f3c4414d14eef2226be3196ad0e9",
+    "route_equivariance.svg": "664390977b2ca2a5b151559114c8bee35b290aae8c8266aaf648ffaf3786e33e",
+    "routing_state_cost.svg": "fa145bbbbe869d0dbaf626746d136652948f58ad0dcdd94773d7da7ea137ee95",
+    "source_hashes.csv": "c595bc49afbb96a7d141089d919b35ab1c96237188c89bdf2630674cbe8c420f"
+  },
+  "ready_component_count": 3,
+  "schema_version": "mdp_method_deepening_package_v1",
+  "scientific_reason_partial": "paired refresh matrices and matched-gradient snapshots are not available locally",
+  "source_sha256": {
+    "complexity_csv": "4466931a91c3025d18977efc8439dcaf65d5f5f0d6b19c3e28f2fe219c3d5718",
+    "complexity_manifest": "22b4d6eacfb1a282ace7ae065f8c410c3b28982e74bec3897a8d68a9eac70d26",
+    "equivariance_csv": "9d42b4f220374ad7a5d6595412a23b03a4e2da4e6d303f9b0ae6fd3a8af065f2",
+    "equivariance_manifest": "f9eed566ba9427a5d7a677319aa2890c12643f111b9d75559bd62f900bfff576",
+    "ex22_alpha": "c60c89c8caa4adfcf8772e745a8b8d85f20bb68f8b2ee2968c7977a822209acc",
+    "ex22_results": "aa755424bf15dd405581e505282ad791e1f1c899e6461ffe43249463ac724219",
+    "ex37_auc": "e7facec2fd6daaee97f253ee3cec88e2391ee6a6f91dc274673abbeb17a7c1d5",
+    "ex37_decision": "8b18d2ff76e8de016f13a3ae78beb12e772af47445e0a4a36260faf13febab1c",
+    "ex37_manifest": "34b9525c4fcd061cbc3191b6844dd0000c3eac0bf0acc82876025f0ff3ee38d0",
+    "ex37_pairs": "318e0105bc4a52a4eb7fa9c716d87a0b9a7a88251be0df702e17a1fe8c3b8f1b",
+    "ex40_manifest": "ce567bd2aaa59d4bd01f915e3df0fefcc55f6e9d7ba5821d87b2aa7a0590f14e",
+    "ex40_results": "6cad5c6b58c7afba28c11bc82fc3534fc6c4fffd8d4335d9b52baaa6bc928207",
+    "ex41_results": "b5506b6e0902b4c1b338dac2336d24c7e3d2d7e3147e3a39e3f6d42b1357698f",
+    "ex41d_decision": "addd23aa651f0be3803295f95314599d3e9bfa4693f8bb854311caf6ca8af236",
+    "final_claims": "2f9b8a488e322314c4c2975a54ded10b80f6e722b490ac3a7e698ef2fc52bf40",
+    "formulation_manifest": "089cb92283646d08ca728b3955d4f98edee2f54c7ab399af43d7d3726a1c7063",
+    "inventory_manifest": "4027a9a81f28e86af7b5afb37fb124b8007df19b72827fa890c4d4105ecee5ab",
+    "refresh_replay_contract": "115673172b8a672c84e21ef3b152d31fe9c03bfbbc8fd315a73a2337e51ea483"
+  },
+  "status": "partial"
+}

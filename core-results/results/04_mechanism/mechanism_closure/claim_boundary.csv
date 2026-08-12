@@ -1,0 +1,7 @@
+claim_id,status,paper_location,wording,evidence,prohibited_extension
+MC-C01,allowed,main text + appendix,"Under the frozen matched LLaMA-1B replay tree, scheduled down-projection refresh produces a reproducible short-horizon held-out loss impulse.",MECH-09R; MDP-05 12/12 positive at both events; GEO-01B 12/12 positive at both events,universal optimizer or architecture claim
+MC-C02,allowed_descriptive,appendix,"For the tested refresh direction, a full local Taylor expansion accurately reconstructs the immediate counterfactual line-loss change.",GEO-01B full-Taylor median relative error 0.010% production and 0.028% delayed,prediction of multi-step training harm
+MC-C03,required_negative,limitations + appendix,Neither the preconditioned shock scalars nor the local directional-geometry predictors were confirmed as origin-independent quantitative mediators of short-horizon harm.,MDP-05 0/4 primary gates; GEO-01B candidate=false,claiming the mechanism is fully explained
+MC-C04,allowed_descriptive,appendix,Checkpoint origin accounts for most observed between-unit variation in refresh harm in these replay samples.,MDP-05 ~96%; GEO-01B 95.9% production and 98.0% delayed,causal attribution of origin components
+MC-C05,prohibited,none,Local curvature explains or predicts the longer-horizon loss penalty.,GEO-01B origin-centered and incremental gates failed,do not state or imply
+MC-C06,prohibited,none,The discovered geometry supports an automatic layer selector or rescue policy.,No rescue gate passed; GEO-01C not authorized,do not state or imply

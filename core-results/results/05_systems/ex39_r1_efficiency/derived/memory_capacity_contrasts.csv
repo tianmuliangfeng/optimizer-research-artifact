@@ -1,0 +1,7 @@
+priority,contrast,left_role,right_role,peak_allocated_delta_mib,peak_allocated_delta_pct,peak_reserved_delta_mib,optimizer_state_delta_mib,k_state_delta_mib,max_device_batch_delta,max_device_batch_delta_pct,evidence_class,architecture
+primary,selective_diag_vs_muon,selective_diag,muon,2652.7705078125,4.055635381189293,2592.0,1728.755859375,1728.755859375,-2,-5.128205128205132,paper_ready,llama1b
+primary,selective_none_vs_muon,selective_none,muon,2651.6279296875,4.053888573368614,2592.0,1728.0,1728.0,-2,-5.128205128205132,paper_ready,llama1b
+primary,selective_diag_vs_original_newton_muon,selective_diag,original_newton_muon,-6421.29150390625,-8.621086322937044,-6380.0,-4159.494140625,-4159.494140625,3,8.823529411764696,paper_ready,llama1b
+primary,selective_none_vs_original_newton_muon,selective_none,original_newton_muon,-6422.43408203125,-8.622620323478891,-6380.0,-4160.25,-4160.25,3,8.823529411764696,paper_ready,llama1b
+baseline,original_newton_muon_vs_muon,original_newton_muon,muon,9074.06201171875,13.872699065920635,8972.0,5888.25,5888.25,-5,-12.82051282051282,paper_ready,llama1b
+secondary,selective_diag_vs_selective_none,selective_diag,selective_none,1.142578125,0.0016787530429107633,0.0,0.755859375,0.755859375,0,0.0,paper_ready,llama1b

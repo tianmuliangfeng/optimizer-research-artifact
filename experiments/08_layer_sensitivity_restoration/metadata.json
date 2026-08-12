@@ -1,0 +1,29 @@
+{
+  "code_directory": "scripts/08_layer_sensitivity_restoration",
+  "default_entrypoint": "script:run_12l_50m_seed2026_completion",
+  "entrypoints": {
+    "script:run_12l_50m_seed2026_completion": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/08_layer_sensitivity_restoration/run_12l_50m_seed2026_completion.py"
+    }
+  },
+  "experiment_id": "08_layer_sensitivity_restoration",
+  "legacy_result_roots": [
+    "08_layer_sensitivity_restoration"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "08 Layer Sensitivity Restoration"
+}

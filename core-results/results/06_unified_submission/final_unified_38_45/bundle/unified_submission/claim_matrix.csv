@@ -1,0 +1,11 @@
+claim_id,status,scope,claim,primary_evidence,allowed_wording,forbidden_wording
+F01,supported,GPT 124M,Selective diag materially improves final loss over Muon and is the best-supported quality/state route.,15/41D,diag improves over Muon and matches/slightly improves block4 within the practical margin,diag is universally superior
+F02,supported,GPT 275M,Selective none preserves original Newton–Muon endpoint quality at lower state.,43,paired practical equivalence to original,all selective routes significantly beat Muon
+F03,supported,GPT 455M,Selective none preserves original quality and has the best endpoint mean.,44,equivalent to original; directional improvement over Muon,robust material improvement over Muon
+F04,supported,cross-scale,The preferred low-state route is environment dependent.,15/43/44,diag→interchangeable→none pattern across environments,monotonic parameter-scaling law
+F05,supported_with_caveat,GPT 124M,Mousse is a strong external baseline but does not match the selective/original group and is state-heavy.,45,Mousse beats Muon/external neighbors; ranks 4/8 and is optimizer-state dominated,Mousse is weak or universally inferior
+F06,supported,R1 c_proj with c_fc full,Diagonal K recovers block4-level quality at near-none incremental state.,41D,matches block4 within ±0.002 and materially beats none,diag benefit is independent of c_fc K
+F07,supported,R1 allocation,Both c_fc and c_proj K factors benefit quality and are approximately additive.,41,architecture-dependent quality/state allocation,removing c_proj K improves R1 quality
+F08,supported_with_scope_caveats,R1 and LLaMA-1B isolated H100,Selective routes reduce full-K memory/state and recover some full-K throughput overhead.,39/42,report each protocol separately,raw throughput is comparable across experiments or selective beats Muon speed/memory
+F09,supported,LLaMA block4 diagnostic,Contiguous block4 is coordinate-partition dependent and not architecture neutral.,40,newton_full remains the LLaMA full-K control,block4 full-training quality is disproven
+F10,not_supported,cross-scale,Original-over-Muon and none-over-original gains are generally equal.,15/43/44,report the scale-specific decomposition,present the provisional pattern as a replicated law

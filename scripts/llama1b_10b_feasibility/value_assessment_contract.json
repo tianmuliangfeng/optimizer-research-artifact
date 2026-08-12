@@ -1,0 +1,87 @@
+{
+  "schema_version": "llama1b_10b_value_assessment_v1",
+  "assessment_date": "2026-08-05",
+  "status": "decision_assessment_not_launchable",
+  "launch_authorized": false,
+  "decision": "do_not_launch_now_keep_reviewer_triggered_contingency",
+  "decision_scope": "ICLR-oriented value, compute cost, engineering risk, and claim impact after final unified analysis and mechanism closure",
+  "inputs": [
+    {
+      "id": "feasibility_manifest",
+      "path": "${SNM_RESULTS_ROOT}/_shared/analysis/llama1b_10b_feasibility_20260805/feasibility_manifest.json",
+      "sha256": "e67994075a132a60a36c86a9bccef53494ebbdb44b7f55291983db9a2f46b0f9"
+    },
+    {
+      "id": "feasibility_report",
+      "path": "${SNM_RESULTS_ROOT}/_shared/analysis/llama1b_10b_feasibility_20260805/feasibility_report.json",
+      "sha256": "c29d2f91e14d49f75c43d41b3786413f41e59373c1745467d14734edf614a240"
+    },
+    {
+      "id": "llama_multiseed_manifest",
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/analysis/formal6200_multiseed_20260727/analysis_manifest.json",
+      "sha256": "420ca8c5847ddf223d92ed4286a79423224f970e550886bd118c3a0f3b6875fa"
+    },
+    {
+      "id": "final_unified_manifest",
+      "path": "${SNM_RESULTS_ROOT}/_shared/analysis/final_unified_38_45_20260803/bundle/unified_submission/final_unified_analysis_manifest.json",
+      "sha256": "e8f8233a1d7a226b158c7fc8b35e7cd53ee8a7b102ec896fb218703628a776ea"
+    },
+    {
+      "id": "final_unified_report",
+      "path": "${SNM_RESULTS_ROOT}/_shared/analysis/final_unified_38_45_20260803/bundle/unified_submission/FINAL_UNIFIED_ANALYSIS.md",
+      "sha256": "ac1cb5b819ba1b21eb4b4315f509fc560b782119f3ec2021c9e9ae229e68e378"
+    },
+    {
+      "id": "mechanism_closure_manifest",
+      "path": "${SNM_RESULTS_ROOT}/_shared/analysis/mechanism_closure_20260805/closure_manifest.json",
+      "sha256": "f001042a51757a2e901b2a6fcdd12ecc675f58f417b10e46f887ccc46a2bf19a"
+    }
+  ],
+  "all_required_gates": true,
+  "gate_assessment": [
+    {
+      "gate_id": "G1",
+      "question": "Are experiments 43, 44, 45 and the unified submission analysis completed and accepted?",
+      "status": "pass",
+      "rationale": "The final unified manifest is claim-eligible and all pipeline checks pass."
+    },
+    {
+      "gate_id": "G2",
+      "question": "Do the formal multi-seed GPT results define a clear cross-scale branch?",
+      "status": "pass",
+      "rationale": "The accepted branch is environment-dependent: diag at 124M, diag/none equivalent at 275M, and none best by endpoint mean at 455M."
+    },
+    {
+      "gate_id": "G3",
+      "question": "Would the unanswered post-3.25B LLaMA ordering presently change the abstract or central claim?",
+      "status": "fail",
+      "rationale": "The claim-eligible unified analysis already supports a scoped allocation claim and explicitly excludes a universal route ranking."
+    },
+    {
+      "gate_id": "G4",
+      "question": "Is the 275M low-token/parameter GPT counterexample insufficient for an honest regime-dependent conclusion?",
+      "status": "fail",
+      "rationale": "At 2.42 tokens/parameter, below LLaMA-1B's 3.21, low-state routes remain competitive; token scarcity alone is already an inadequate explanation."
+    },
+    {
+      "gate_id": "G5",
+      "question": "Is a fair four-method budget authorized and clearly worth the opportunity cost?",
+      "status": "conditional",
+      "rationale": "The one-seed screen costs about 159.5 raw H100-hours and 3.84 days on two H100s; a result requiring two additional seeds would approach 478.6 raw H100-hours."
+    },
+    {
+      "gate_id": "G6",
+      "question": "Are unique data, no-wrap loading, forced milestones, resume rules and a long-horizon LR schedule frozen and audited?",
+      "status": "fail",
+      "rationale": "Five source blockers remain, the remote 101-shard inventory is unaudited, and the long-horizon LR policy is unresolved."
+    },
+    {
+      "gate_id": "G7",
+      "question": "Is the expected submission gain larger than the engineering and paper-freeze delay?",
+      "status": "fail",
+      "rationale": "A persistent Muon lead strengthens an existing limitation without changing the abstract; a reversal is valuable but would require multi-seed confirmation and substantially delay freezing."
+    }
+  ],
+  "reopen_rule": "Reopen only if a blind paper red-team identifies post-3.25B LLaMA undertraining as a top-tier acceptance blocker that cannot be handled by the current scoped claim and limitation.",
+  "forbidden_trigger": "idle_gpus_or_desire_for_a_more_complete_table"
+}

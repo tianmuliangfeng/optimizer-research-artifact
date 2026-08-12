@@ -1,0 +1,42 @@
+{
+  "created_at": "2026-07-23",
+  "status": "PASS_WITH_CAVEATS",
+  "extended_formal_run_count": 9,
+  "unified_run_count": 21,
+  "methods": [
+    "diag",
+    "block4",
+    "none",
+    "moonlight_r1scale",
+    "muon",
+    "normuon_r1scale",
+    "adamw_low"
+  ],
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "quality_checks": {
+    "PASS": 195
+  },
+  "timing_eligible": false,
+  "caveats": [
+    "W&B CSV cannot prove local source/runtime/init/resume/checkpoint manifests.",
+    "Seed 2026 selected the extended-baseline LR; seeds 2024/2025 are confirmatory.",
+    "Timing is descriptive-only because this was not the isolated R1-PERF protocol."
+  ],
+  "outputs": [
+    "R1_EXTENDED_FORMAL_UNIFIED_ANALYSIS_20260723.md",
+    "data_quality_checks.csv",
+    "extended_formal_history_long.csv",
+    "extended_formal_run_summary.csv",
+    "r1_confirmatory_2024_2025_method_aggregate.csv",
+    "r1_extended_vs_core_curve_comparison.csv",
+    "r1_extended_vs_core_paired_aggregate.csv",
+    "r1_extended_vs_core_paired_seed_deltas.csv",
+    "r1_unified_seven_method_aggregate.csv",
+    "r1_unified_seven_method_run_summary.csv",
+    "source_manifest.csv"
+  ]
+}

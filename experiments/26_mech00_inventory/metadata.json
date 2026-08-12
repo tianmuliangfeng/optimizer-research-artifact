@@ -1,0 +1,50 @@
+{
+  "code_directory": "scripts/26_mech00_inventory",
+  "entrypoints": {
+    "command:20260727_mech00_llama_followup_full_hash": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/26_mech00_inventory/20260727_mech00_llama_followup_full_hash.sh"
+    },
+    "command:20260727_mech00_llama_full_hash": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/26_mech00_inventory/20260727_mech00_llama_full_hash.sh"
+    },
+    "command:20260727_mech00_r1_full_hash": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/26_mech00_inventory/20260727_mech00_r1_full_hash.sh"
+    },
+    "script:run_mech00_inventory": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/26_mech00_inventory/run_mech00_inventory.py"
+    }
+  },
+  "experiment_id": "26_mech00_inventory",
+  "legacy_result_roots": [
+    "26_mech00_inventory"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "26 Mech00 Inventory"
+}

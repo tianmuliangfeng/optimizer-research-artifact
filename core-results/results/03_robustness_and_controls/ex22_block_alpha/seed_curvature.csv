@@ -1,0 +1,4 @@
+seed,final_curvature_c,tail5_curvature_c,auc_curvature_c,alpha0p50_beats_alpha0_final,alpha0p50_beats_alpha1_final,alpha0p50_beats_both_endpoints_final,best_alpha_descriptive,spearman_alpha_vs_final_loss
+2024,-0.0009000000000001229,-0.0009600000000000719,-0.0018266129032253886,True,True,True,0.25,0.3
+2025,-0.0017000000000000348,-0.0016199999999999548,-0.0025532258064520086,True,True,True,0.5,0.1
+2026,-0.0011999999999998678,-0.0010899999999995913,-0.0015491935483868957,True,True,True,0.5,0.4616902584383194

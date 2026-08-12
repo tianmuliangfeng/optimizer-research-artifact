@@ -1,0 +1,157 @@
+{
+  "cases": [
+    {
+      "block_count": 4,
+      "case_id": "r1_124m_cproj_increment",
+      "dtype_bytes": 4,
+      "input_dim": 3072,
+      "layer_count": 12,
+      "measured_state_bytes": {
+        "block": 226492416,
+        "diag": 294912,
+        "none": 0
+      },
+      "measurement_provenance": {
+        "definition": "route_total_k_state_bytes_minus_reference_total_k_state_bytes",
+        "reference_total_k_state_bytes": 169869312,
+        "route_total_k_state_bytes": {
+          "block": 396361728,
+          "diag": 170164224,
+          "none": 169869312
+        },
+        "source_files": [
+          {
+            "path": "PRIVATE_PATH_REDACTED__db51681f233a",
+            "sha256": "8d0276c97c439c471570bbbe065957f4a896e08619e1c96a3d997cf1eea65643"
+          }
+        ]
+      },
+      "required_measured_routes": [
+        "block",
+        "diag",
+        "none"
+      ],
+      "stored_matrices": 2
+    },
+    {
+      "block_count": 4,
+      "case_id": "record28_275m_cproj_increment",
+      "dtype_bytes": 4,
+      "input_dim": 3072,
+      "layer_count": 12,
+      "measured_state_bytes": {
+        "block": 226492416,
+        "diag": 294912,
+        "none": 0
+      },
+      "measurement_provenance": {
+        "definition": "route_total_k_state_bytes_minus_reference_total_k_state_bytes",
+        "reference_total_k_state_bytes": 264241152,
+        "route_total_k_state_bytes": {
+          "block": 490733568,
+          "diag": 264536064,
+          "none": 264241152
+        },
+        "source_files": [
+          {
+            "path": "PRIVATE_PATH_REDACTED__86658f0bffe6",
+            "sha256": "bd6aafaa48f8f541f2dfb89d80a73a0d21c7d81b31946d1761e8e61a1d4b7c97"
+          },
+          {
+            "path": "PRIVATE_PATH_REDACTED__99074dca4cea",
+            "sha256": "d24e8f8c190ac878ee57959026229629d9472f8432f5917337449ec03e326b85"
+          },
+          {
+            "path": "PRIVATE_PATH_REDACTED__18b21ec32fb6",
+            "sha256": "20b214316a5e7043e7fdde3dd20581db5ba5843db95115eba0121c84068d7a08"
+          }
+        ]
+      },
+      "required_measured_routes": [
+        "block",
+        "diag",
+        "none"
+      ],
+      "stored_matrices": 2
+    },
+    {
+      "block_count": 4,
+      "case_id": "record17_455m_cproj_increment",
+      "dtype_bytes": 4,
+      "input_dim": 4096,
+      "layer_count": 16,
+      "measured_state_bytes": {
+        "block": 536870912,
+        "diag": 524288,
+        "none": 0
+      },
+      "measurement_provenance": {
+        "definition": "route_total_k_state_bytes_minus_reference_total_k_state_bytes",
+        "reference_total_k_state_bytes": 637534208,
+        "route_total_k_state_bytes": {
+          "block": 1174405120,
+          "diag": 638058496,
+          "none": 637534208
+        },
+        "source_files": [
+          {
+            "path": "PRIVATE_PATH_REDACTED__1ae7248510a2",
+            "sha256": "ed504de942f03b96b308a2739eb8029790af2984b69faaca26d31266e05feafe"
+          },
+          {
+            "path": "PRIVATE_PATH_REDACTED__6cae9cca065e",
+            "sha256": "cafd3171a2f4bb4920736616738f6d04a45002bfad8351edbce29a29c0088d51"
+          },
+          {
+            "path": "PRIVATE_PATH_REDACTED__47595fcc07aa",
+            "sha256": "ce6019ab3ae7c2620cb01a7ed681cd7511eccc028ba653ce2d8303724b3de6de"
+          }
+        ]
+      },
+      "required_measured_routes": [
+        "block",
+        "diag",
+        "none"
+      ],
+      "stored_matrices": 2
+    },
+    {
+      "block_count": 4,
+      "case_id": "llama1b_downproj_increment",
+      "dtype_bytes": 4,
+      "input_dim": 5504,
+      "layer_count": 18,
+      "measured_state_bytes": {
+        "diag": 792576,
+        "full": 4362338304,
+        "none": 0
+      },
+      "measurement_provenance": {
+        "definition": "route_total_k_state_bytes_minus_reference_total_k_state_bytes",
+        "reference_total_k_state_bytes": 1811939328,
+        "route_total_k_state_bytes": {
+          "diag": 1812731904,
+          "full": 6174277632,
+          "none": 1811939328
+        },
+        "source_files": [
+          {
+            "path": "PRIVATE_PATH_REDACTED__ec85d495197d",
+            "sha256": "b3c2d7f95d16107753e54ecfff3d570ec7bb16d69d8713436821c5bfb6f18362"
+          }
+        ]
+      },
+      "required_measured_routes": [
+        "full",
+        "diag",
+        "none"
+      ],
+      "stored_matrices": 2
+    }
+  ],
+  "measurement_relative_tolerance": 1e-09,
+  "require_measurement_coverage": true,
+  "require_measurement_provenance": true,
+  "schema_version": "mdp_routing_complexity_config_v1",
+  "synthetic": false
+}

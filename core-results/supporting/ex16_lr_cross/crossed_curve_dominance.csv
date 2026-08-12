@@ -1,0 +1,4 @@
+seed,comparison,diag_lower_points,muon_lower_points,tied_points,noninitial_validation_points,persistent_diag_lead_start_step,mean_curve_delta,median_curve_delta
+2024,diag_low_minus_muon_high,57,5,0,62,600,-0.014372580645161323,-0.02265000000000006
+2025,diag_low_minus_muon_high,57,5,0,62,600,-0.013574193548387107,-0.021399999999999864
+2026,diag_low_minus_muon_high,57,5,0,62,600,-0.012788709677419347,-0.020199999999999996

@@ -1,0 +1,83 @@
+{
+  "authorization_blocker": "Freeze an explicit held-out diag-none prediction contract before MECH-03; geometry alone never auto-authorizes MECH-03.",
+  "geometry_gate_candidate_passed": true,
+  "mech03_authorized": false,
+  "metric_gates": [
+    {
+      "material_layers": 7,
+      "metric": "diag_cv",
+      "negative_material_layers": 2,
+      "passed": false,
+      "positive_material_layers": 5,
+      "same_direction_material_layers": 5
+    },
+    {
+      "material_layers": 10,
+      "metric": "diag_p95_over_p05",
+      "negative_material_layers": 1,
+      "passed": true,
+      "positive_material_layers": 9,
+      "same_direction_material_layers": 9
+    },
+    {
+      "material_layers": 9,
+      "metric": "offdiag_energy_fraction",
+      "negative_material_layers": 8,
+      "passed": true,
+      "positive_material_layers": 1,
+      "same_direction_material_layers": 8
+    },
+    {
+      "material_layers": 10,
+      "metric": "log_damped_condition_number",
+      "negative_material_layers": 8,
+      "passed": true,
+      "positive_material_layers": 2,
+      "same_direction_material_layers": 8
+    },
+    {
+      "material_layers": 12,
+      "metric": "damped_effective_rank_fraction",
+      "negative_material_layers": 3,
+      "passed": true,
+      "positive_material_layers": 9,
+      "same_direction_material_layers": 9
+    },
+    {
+      "material_layers": 9,
+      "metric": "damped_top1_mass",
+      "negative_material_layers": 6,
+      "passed": false,
+      "positive_material_layers": 3,
+      "same_direction_material_layers": 6
+    },
+    {
+      "material_layers": 8,
+      "metric": "damped_top10_mass",
+      "negative_material_layers": 5,
+      "passed": false,
+      "positive_material_layers": 3,
+      "same_direction_material_layers": 5
+    },
+    {
+      "material_layers": 7,
+      "metric": "mean_top_eigenspace_overlap",
+      "negative_material_layers": 5,
+      "passed": false,
+      "positive_material_layers": 2,
+      "same_direction_material_layers": 5
+    },
+    {
+      "material_layers": 9,
+      "metric": "mean_covariance_relative_drift",
+      "negative_material_layers": 0,
+      "passed": true,
+      "positive_material_layers": 9,
+      "same_direction_material_layers": 9
+    }
+  ],
+  "minimum_material_same_direction_layers": 8,
+  "primary_contrast": "llama124_minus_gpt_bridge_same_host",
+  "schema_version": 1,
+  "script_version": "2026-07-27.1"
+}

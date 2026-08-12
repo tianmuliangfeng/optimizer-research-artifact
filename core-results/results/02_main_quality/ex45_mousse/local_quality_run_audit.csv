@@ -1,0 +1,7 @@
+phase,run_name,seed,cell_id,status,returncode,wandb_status,train_rows,validation_rows,final_val_loss,optimizer_state_mib,peak_allocated_mib,checkpoint_bytes,checkpoint_in_uploaded_archive,source_hashes_verified,metrics_summary_verified
+pilot,mainconf_r1_mousse_pilot_mousse_lr080_seed2026_20260731T053958+0000,2026,mousse_lr080,completed_valid,0,uploaded,1000,11,3.7397,2887.1074256896973,39985,0,False,True,True
+pilot,mainconf_r1_mousse_pilot_mousse_lr100_seed2026_20260731T053958+0000,2026,mousse_lr100,completed_valid,0,uploaded,1000,11,3.7358,2887.1074256896973,39982,0,False,True,True
+pilot,mainconf_r1_mousse_pilot_mousse_lr120_seed2026_20260731T053958+0000,2026,mousse_lr120,completed_valid,0,uploaded,1000,11,3.7349,2887.1074256896973,39982,0,False,True,True
+formal,mainconf_r1_mousse_formal_mousse_lr100_seed2024_20260731T073826+0000,2024,mousse_lr100,completed_valid,0,uploaded,6200,63,3.2683,2887.1074256896973,39985,3521692565,False,True,True
+formal,mainconf_r1_mousse_formal_mousse_lr100_seed2026_20260731T073826+0000,2026,mousse_lr100,completed_valid,0,uploaded,6200,63,3.268,2887.1074256896973,39985,3521692565,False,True,True
+formal,mainconf_r1_mousse_formal_mousse_lr100_seed2025_20260731T112529+0000,2025,mousse_lr100,completed_valid,0,uploaded,6200,63,3.2678,2887.1074256896973,39985,3521692565,False,True,True

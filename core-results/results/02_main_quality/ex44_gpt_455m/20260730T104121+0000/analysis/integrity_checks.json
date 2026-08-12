@@ -1,0 +1,71 @@
+{
+  "accepted_cells": 12,
+  "contract": {
+    "checks": {
+      "common_target_loss": true,
+      "methods": true,
+      "practical_margin": true,
+      "seeds": true,
+      "tokens_per_update": true,
+      "total_steps": true,
+      "train_tokens": true
+    },
+    "common_target_loss": 2.95,
+    "methods": [
+      "muon",
+      "original_newton_muon",
+      "selective_none",
+      "selective_diag"
+    ],
+    "practical_margin": 0.002,
+    "seeds": [
+      2024,
+      2025,
+      2026
+    ],
+    "tokens_per_update": 524288,
+    "total_steps": 5960,
+    "train_tokens": 3124756480
+  },
+  "initial_cross_source_validation_tolerance": 1e-06,
+  "pairing": {
+    "attempts_unique": true,
+    "derived_source_constant_within_method": {
+      "muon": true,
+      "original_newton_muon": true,
+      "selective_diag": true,
+      "selective_none": true
+    },
+    "derived_source_routing": true,
+    "formal_cell_coverage_12_of_12": true,
+    "init_distinct_across_seeds": true,
+    "init_paired_within_seed": {
+      "2024": true,
+      "2025": true,
+      "2026": true
+    },
+    "initial_validation_max_abs_delta_by_seed": {
+      "2024": 0.0,
+      "2025": 0.0,
+      "2026": 0.0
+    },
+    "initial_validation_paired_within_seed": {
+      "2024": true,
+      "2025": true,
+      "2026": true
+    },
+    "k_state_ordering_within_seed": {
+      "2024": true,
+      "2025": true,
+      "2026": true
+    },
+    "no_unregistered_accepted_pointers": true,
+    "one_data_fingerprint": true,
+    "one_source_snapshot": true,
+    "passed": true,
+    "timing_ineligible_all_cells": true
+  },
+  "passed": true,
+  "quality_recomputed_from_metrics": true,
+  "summary_cross_check_tolerance": 1e-10
+}

@@ -1,0 +1,10 @@
+{
+  "contract_sha256": "6362647488486acd56cc6cfd9648cd6d990a85aa573c8f9ef2dcca20679d5e04",
+  "controller_version": "2026-08-04.1",
+  "created_utc": "2026-08-04T08:31:22.676226+00:00",
+  "dry_run": false,
+  "experiment": "GEO-01B",
+  "experiment_number": 47,
+  "phase": "discovery",
+  "schema_version": "geo01b_run_identity_v1"
+}

@@ -1,0 +1,4 @@
+method,mean_final_val_loss,loss_improvement_vs_none,k_state_mib,k_state_saved_vs_block4_mib,peak_memory_mib,cfc_k_mode,seeds
+none,3.2666666666666666,0.0,162.0,216.0,38304.0,full,3
+diag,3.2611,0.00556666666666672,162.28125,215.71875,38304.0,full,3
+block4,3.2622,0.004466666666666619,378.0,0.0,39168.0,full,3

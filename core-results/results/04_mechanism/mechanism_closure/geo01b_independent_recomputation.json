@@ -1,0 +1,9 @@
+{
+  "cross_event_pearson_harm": 0.9632755221674205,
+  "delayed_origin_eta_squared": 0.9797933270618817,
+  "geometry_rows": 96,
+  "independent_recomputation_passed": true,
+  "outcome_rows": 24,
+  "production_origin_eta_squared": 0.958635080956031,
+  "unit_count": 12
+}

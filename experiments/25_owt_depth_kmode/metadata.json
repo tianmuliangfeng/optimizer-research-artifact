@@ -1,0 +1,38 @@
+{
+  "code_directory": "scripts/25_owt_depth_kmode",
+  "default_entrypoint": "script:run_owt_depth_kmode",
+  "entrypoints": {
+    "script:run_owt_depth_kmode": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/25_owt_depth_kmode/run_owt_depth_kmode.py",
+      "required_user_arguments": [
+        {
+          "one_of": [
+            "--dry-run",
+            "--numerical-smoke",
+            "--formal"
+          ]
+        }
+      ]
+    }
+  },
+  "experiment_id": "25_owt_depth_kmode",
+  "legacy_result_roots": [
+    "25_owt_depth_kmode"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "25 Owt Depth Kmode"
+}

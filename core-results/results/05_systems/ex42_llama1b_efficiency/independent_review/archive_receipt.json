@@ -1,0 +1,29 @@
+{
+  "archive_bytes": 2532707,
+  "archive_entry_count": 533,
+  "archive_extraction_completed": true,
+  "archive_filename": "42_llama1b_isolated_efficiency.zip",
+  "archive_path_received": "PRIVATE_PATH_REDACTED__97263ccde238",
+  "archive_sha256": "66786b5bd7f44fddb0eef16b0c132439d47d3a875337ff52e66c06a69e6afede",
+  "archive_uncompressed_bytes": 11017202,
+  "canonical_run_id": "20260729T105505+0000",
+  "canonical_run_path": "experiment_csv/project-results/42_llama1b_isolated_efficiency/20260729T105505+0000",
+  "canonical_source_bytes_before_independent_review": 9235506,
+  "canonical_source_file_count_before_independent_review": 312,
+  "duplicate_path_count": 0,
+  "entry_at_least_50_mib_count": 0,
+  "notes": [
+    "The received ZIP is retained at the user-provided Downloads path; no second archive copy was created.",
+    "Only the timestamped formal run was retained in the canonical experiment tree.",
+    "No checkpoint is expected: experiment 42 explicitly uses checkpoint_every=0 and resume=never."
+  ],
+  "packaging_residue_excluded_from_canonical_run": [
+    ".experiment42_node.lock",
+    ".preflight_pycache/",
+    "LATEST_RUN_DIR.txt"
+  ],
+  "pt_entry_count": 0,
+  "review_date": "2026-07-30",
+  "schema_version": 1,
+  "unsafe_path_count": 0
+}

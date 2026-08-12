@@ -1,0 +1,31 @@
+{
+  "schema_version": "mdp_routing_complexity_config_v1",
+  "synthetic": false,
+  "measurement_relative_tolerance": 1e-09,
+  "cases": [
+    {
+      "case_id": "r1_124m_mlp_contraction",
+      "input_dim": 3072,
+      "block_count": 4,
+      "layer_count": 12,
+      "stored_matrices": 2,
+      "dtype_bytes": 4
+    },
+    {
+      "case_id": "record28_275m_mlp_contraction",
+      "input_dim": 3072,
+      "block_count": 4,
+      "layer_count": 12,
+      "stored_matrices": 2,
+      "dtype_bytes": 4
+    },
+    {
+      "case_id": "record17_455m_mlp_contraction",
+      "input_dim": 4096,
+      "block_count": 4,
+      "layer_count": 16,
+      "stored_matrices": 2,
+      "dtype_bytes": 4
+    }
+  ]
+}

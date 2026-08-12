@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "script_version": "2026-07-29.4",
+  "experiment_family": "41_r1_kstate_module_factorial",
+  "research_question": "In the fixed R1 Newton recipe, how do c_fc K and c_proj block4 K contribute individually and interact?",
+  "axes": {
+    "c_fc_k": ["none", "full"],
+    "c_proj_k": ["none", "block4"]
+  },
+  "cells": [
+    {
+      "cell": "both",
+      "c_fc_k": "full",
+      "c_proj_k": "block4",
+      "method_label": "original_newton_muon_block4",
+      "source": "reuse_existing"
+    },
+    {
+      "cell": "fc_only",
+      "c_fc_k": "full",
+      "c_proj_k": "none",
+      "method_label": "selective_none",
+      "source": "reuse_existing"
+    },
+    {
+      "cell": "cproj_only",
+      "c_fc_k": "none",
+      "c_proj_k": "block4",
+      "method_label": "module_bridge",
+      "source": "new_training"
+    },
+    {
+      "cell": "neither",
+      "c_fc_k": "none",
+      "c_proj_k": "none",
+      "method_label": "newton_recipe_all_none",
+      "source": "new_training"
+    }
+  ],
+  "seeds": [2024, 2025, 2026],
+  "new_training_cells": ["cproj_only", "neither"],
+  "reused_cells": ["both", "fc_only"],
+  "reused_summary": {
+    "canonical_relative_path": "15_official_newton_muon_r1/analysis/wandb_20260721_multiseed_factorial/r1_multiseed_run_summary.csv",
+    "canonical_sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+    "frozen_reference_path": "scripts/41_r1_kstate_module_factorial/existing_cells_reference.csv",
+    "frozen_reference_sha256": "21737784b9fccc69053bf7e507bd91a0a8a8ea26d02579d5c3d87f512e0ecb13",
+    "methods": {
+      "block4": "both",
+      "none": "fc_only"
+    }
+  },
+  "training_recipe": {
+    "base_script": "train_gpt_newton_muon_1.py",
+    "num_iterations": 6200,
+    "base_learning_rate": 0.004,
+    "matrix_learning_rate": 0.0004,
+    "tokens_per_step": 524288,
+    "sequence_length": 1024,
+    "batch_size_sequences": 512,
+    "device_batch_size_sequences": 64,
+    "warmdown_iters": 1800,
+    "validation_every_steps": 100,
+    "smoke_steps": 34
+  },
+  "expected_k_state_mib": {
+    "both": 378.0,
+    "fc_only": 162.0,
+    "cproj_only": 216.0,
+    "neither": 0.0
+  },
+  "primary_metric": "final_val_loss",
+  "secondary_metrics": ["tail5_val_loss_mean", "normalized_val_auc", "peak_memory_mib", "k_state_mib"],
+  "practical_loss_margin": 0.002,
+  "factorial_effects": {
+    "c_fc_main": "mean(Y_full,* - Y_none,*)",
+    "c_proj_main": "mean(Y_*,block4 - Y_*,none)",
+    "interaction": "Y_full,block4 - Y_full,none - Y_none,block4 + Y_none,none"
+  },
+  "evidence_policy": {
+    "quality_usable": true,
+    "memory_usable": true,
+    "timing_usable": false,
+    "wandb_required_for_formal": true,
+    "all_none_is_muon_baseline": false,
+    "diag_is_part_of_factorial": false
+  },
+  "execution_policy": {
+    "physical_gpus": ["0", "1"],
+    "maximum_concurrent_training_processes": 2,
+    "one_visible_gpu_per_process": true,
+    "timing_usable": false
+  },
+  "follow_up_policy": {
+    "historical_allocation_reproduced": "stop new mechanism training and integrate the architecture-qualified result",
+    "material_interaction": "inspect the two simple effects before considering one targeted diagonal extension",
+    "r1_allocation_diverges": "treat the OWT/WikiText result as architecture-specific; do not rescue it with broad post-hoc sweeps",
+    "inconclusive_within_margin": "decide whether two additional seeds are worth the claim value after the submission audit"
+  }
+}

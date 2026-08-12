@@ -1,0 +1,59 @@
+{
+  "code_directory": "scripts/47b_geo01b_update_geometry_discovery",
+  "default_entrypoint": "command:reproduce_full",
+  "entrypoints": {
+    "command:20260804_ex47b_geo01b_discovery": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "resume"
+          ],
+          "env": {
+            "RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/47b_geo01b_update_geometry_discovery/20260804_ex47b_geo01b_discovery.sh"
+    },
+    "command:reproduce_full": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/47b_geo01b_update_geometry_discovery/reproduce_full.sh"
+    },
+    "script:run_geo01b": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/47b_geo01b_update_geometry_discovery/run_geo01b.py"
+    }
+  },
+  "experiment_id": "47b_geo01b_update_geometry_discovery",
+  "legacy_result_roots": [
+    "47b_geo01b_update_geometry_discovery",
+    "_shared/analysis/method_deepening_geo01b_update_geometry_discovery"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": true,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "47B Geo01B Update Geometry Discovery"
+}

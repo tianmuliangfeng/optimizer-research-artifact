@@ -1,0 +1,1446 @@
+{
+  "checks": [
+    {
+      "check": "batch_completed",
+      "detail": "completed",
+      "passed": true
+    },
+    {
+      "check": "batch_failures_empty",
+      "detail": [],
+      "passed": true
+    },
+    {
+      "check": "exact_six_jobs",
+      "detail": 6,
+      "passed": true
+    },
+    {
+      "check": "exact_seed_shard_grid",
+      "detail": [
+        [
+          2024,
+          0,
+          "completed"
+        ],
+        [
+          2024,
+          1,
+          "completed"
+        ],
+        [
+          2025,
+          0,
+          "completed"
+        ],
+        [
+          2025,
+          1,
+          "completed"
+        ],
+        [
+          2026,
+          0,
+          "completed"
+        ],
+        [
+          2026,
+          1,
+          "completed"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "check": "controller_training_split",
+      "detail": {
+        "controller_python": "PRIVATE_PATH_REDACTED",
+        "interpreters_separate": true,
+        "training_python": "PRIVATE_PATH_REDACTED",
+        "wandb_mode": "online",
+        "wandb_version": "0.28.0"
+      },
+      "passed": true
+    },
+    {
+      "check": "exact_36_formal_runs",
+      "detail": {
+        "extra": [],
+        "missing": [],
+        "observed": 36
+      },
+      "passed": true
+    },
+    {
+      "check": "six_smoke_manifests_passed",
+      "detail": [
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2024,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2024,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2025,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2025,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2026,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2026,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "six_formal_manifests_passed",
+      "detail": [
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2024,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2024,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2025,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2025,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2026,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2026,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "six_formal_wandb_complete",
+      "detail": [
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2024,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2024,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2025,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2025,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2026,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2026,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "formal_init_fingerprints_identical",
+      "detail": [
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2024,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2024,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2025,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2025,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2026,
+          "shard": 0,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        },
+        {
+          "formal_failures": 0,
+          "formal_runs": 6,
+          "formal_status": "completed_valid",
+          "init_identical": true,
+          "seed": 2026,
+          "shard": 1,
+          "smoke_status": "completed_valid_smoke",
+          "wandb_complete": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "all_run_manifests_completed_valid",
+      "detail": [
+        {
+          "evidence_valid": true,
+          "method": "early_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "block4",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "muon",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "block4",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "muon",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "block4",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "muon",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "quality_valid_timing_ineligible",
+      "detail": [
+        {
+          "evidence_valid": true,
+          "method": "early_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "block4",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "muon",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2024_20260806T104711+0000",
+          "seed": 2024,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2025_20260807T062654+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "block4",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "muon",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2025_20260807T062642+0000",
+          "seed": 2025,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "early_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "late_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "edge_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2026_20260808T015558+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "center_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_none",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "all_diag",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "block4",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        },
+        {
+          "evidence_valid": true,
+          "method": "muon",
+          "quality_usable": true,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2026_20260808T015847+0000",
+          "seed": 2026,
+          "status": "completed_valid",
+          "timing_usable": false
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "one_init_hash_per_seed",
+      "detail": {
+        "2024": [
+          "dcd2b4aaa59b03d26ca117c77e518cd588fa907991f73a386629d058431e6176"
+        ],
+        "2025": [
+          "0abcd1466c19b502419173203779819e00d30996f4b235cb131d20641da3696a"
+        ],
+        "2026": [
+          "6fc95ba25ef8a8e8cde42489aa831276600dc31de2c92f558417f5098f6b0324"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "one_source_hash_per_method",
+      "detail": {
+        "all_diag": [
+          "99f649d7e859362cde29a7ea73b15b77550ebf17fe7a14ae1ae4c6397e11df67"
+        ],
+        "all_none": [
+          "ed6a89f2b7dda8727a4105d3bd3c58ff219787c94f0463fd8e1eb79dda3f7375"
+        ],
+        "block4": [
+          "d4368715bb64d6ad89509876c4d7f28773fa4dd567accca09405ff34e74220f5"
+        ],
+        "center_diag": [
+          "00fcabeda94e1ba8aa9b4be765786f5f9f4a340ad588c95184efbf4fbb5129c1"
+        ],
+        "center_none": [
+          "4fc159909505de20aebe3bc3bd45e50b96156a23dcdebd7451d7a5d25f4139db"
+        ],
+        "early_diag": [
+          "3f7f27a18cd858cb3e3fc570bcb24120d8a1cbdd33e82d234c20655ae007c20e"
+        ],
+        "early_none": [
+          "a2042f3eaf5d06d7ea10a10c27923adf0762c61fc6cffb2d9cda94a184eb8e37"
+        ],
+        "edge_diag": [
+          "3d44f091f5746b47fc51eb60917e4e5e7c636bc0db65d57cc9d925ada49705ae"
+        ],
+        "edge_none": [
+          "1bfa2ebda0724eb8adc470c421e9aee7ffda4a304746a9ab6150ab9ab733a10b"
+        ],
+        "late_diag": [
+          "c6c6639cde2be5894ec4cc5b9627ba636fd423ee073d4fdba41d68d0ecaa578d"
+        ],
+        "late_none": [
+          "0ab1cee1103a773d9e97d67d85be27e4118189a82a27829630d70f5fad1b1db6"
+        ],
+        "muon": [
+          "4ceb0c921e9ed1bfd992aa141f7c7b1c447fde753c7f00e8a3ebe3a1165788ea"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "checkpoints_disabled",
+      "detail": [
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2024_20260806T104711+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2025_20260807T062642+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2025_20260807T062642+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2025_20260807T062642+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2025_20260807T062642+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2025_20260807T062642+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2025_20260807T062642+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2025_20260807T062654+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2025_20260807T062654+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2025_20260807T062654+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2025_20260807T062654+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2025_20260807T062654+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2025_20260807T062654+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_block4_seed2026_20260808T015847+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_muon_seed2026_20260808T015847+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_all_diag_seed2026_20260808T015847+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_all_none_seed2026_20260808T015847+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_center_diag_seed2026_20260808T015847+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_center_none_seed2026_20260808T015847+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_early_diag_seed2026_20260808T015558+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_early_none_seed2026_20260808T015558+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_edge_diag_seed2026_20260808T015558+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_edge_none_seed2026_20260808T015558+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_late_diag_seed2026_20260808T015558+0000"
+        },
+        {
+          "checkpoint_bytes": 0,
+          "run_name": "mainconf_r1_depth_kmode_late_none_seed2026_20260808T015558+0000"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "exact_validation_grid",
+      "detail": [],
+      "passed": true
+    },
+    {
+      "check": "summary_final_matches_metrics",
+      "detail": [],
+      "passed": true
+    },
+    {
+      "check": "exact_nine_wandb_metrics",
+      "detail": {
+        "extra": [],
+        "missing": [],
+        "observed": [
+          "lr/adamw",
+          "lr/matrix",
+          "memory/k_state_mib",
+          "memory/optimizer_state_mib",
+          "memory/peak_allocated_mib",
+          "performance/step_avg_ms",
+          "time/train_s",
+          "train/loss_step",
+          "val/loss"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "exact_36_wandb_runs",
+      "detail": {
+        "extra": [],
+        "missing": [],
+        "observed": 36
+      },
+      "passed": true
+    },
+    {
+      "check": "all_wandb_exports_have_36_runs",
+      "detail": [
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+          "metric": "lr/matrix",
+          "rows": 311,
+          "run_columns": 36,
+          "sha256": "edf6e83afe328ef21ed73cb1d43d13c6f1cfb9292fdd43a6cc04a9c633e782f3",
+          "size_bytes": 445935
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+          "metric": "lr/adamw",
+          "rows": 311,
+          "run_columns": 36,
+          "sha256": "15834a46ca8bb79248995e94af400749e066c309eb25e61bd68ad63ee65e4c3a",
+          "size_bytes": 413940
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+          "metric": "memory/peak_allocated_mib",
+          "rows": 1,
+          "run_columns": 36,
+          "sha256": "edea34f3e7d2ea2efd5fffcf54a8a82765753d41a66db8dde1a12e331ca67790",
+          "size_bytes": 11353
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+          "metric": "memory/optimizer_state_mib",
+          "rows": 1,
+          "run_columns": 36,
+          "sha256": "5947b3e25188f5e271fb888f43e75293fc5a55da385ddad4831cf65cd83ba662",
+          "size_bytes": 12757
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+          "metric": "memory/k_state_mib",
+          "rows": 1,
+          "run_columns": 36,
+          "sha256": "f9b999776b8725434c6ff10329dd6cdd133262627f1967b9f6202708de03ad81",
+          "size_bytes": 10597
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+          "metric": "performance/step_avg_ms",
+          "rows": 309,
+          "run_columns": 36,
+          "sha256": "a5caee2bf14dc14d1ad0bc322f88ee8ea533e7ad960031aa0d69b6bf82ff0cd1",
+          "size_bytes": 342078
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+          "metric": "time/train_s",
+          "rows": 311,
+          "run_columns": 36,
+          "sha256": "be5c0164c6f4dc6e0cef2dd00721b633ebfb4dd5d3009d1adae052ec93d2147a",
+          "size_bytes": 371397
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+          "metric": "train/loss_step",
+          "rows": 310,
+          "run_columns": 36,
+          "sha256": "ee92c25dfce499b2196fab911ac0d136c89e3b4b835d696e6281be86e7c13e11",
+          "size_bytes": 309134
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+          "metric": "val/loss",
+          "rows": 63,
+          "run_columns": 36,
+          "sha256": "1fdec5ca28f4fb3a1c93c822a572eaef2195692250fd9f577eb8996d043c6948",
+          "size_bytes": 69672
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "wandb_band_columns_duplicate_base",
+      "detail": [
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+          "metric": "lr/matrix",
+          "rows": 311,
+          "run_columns": 36,
+          "sha256": "edf6e83afe328ef21ed73cb1d43d13c6f1cfb9292fdd43a6cc04a9c633e782f3",
+          "size_bytes": 445935
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+          "metric": "lr/adamw",
+          "rows": 311,
+          "run_columns": 36,
+          "sha256": "15834a46ca8bb79248995e94af400749e066c309eb25e61bd68ad63ee65e4c3a",
+          "size_bytes": 413940
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+          "metric": "memory/peak_allocated_mib",
+          "rows": 1,
+          "run_columns": 36,
+          "sha256": "edea34f3e7d2ea2efd5fffcf54a8a82765753d41a66db8dde1a12e331ca67790",
+          "size_bytes": 11353
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+          "metric": "memory/optimizer_state_mib",
+          "rows": 1,
+          "run_columns": 36,
+          "sha256": "5947b3e25188f5e271fb888f43e75293fc5a55da385ddad4831cf65cd83ba662",
+          "size_bytes": 12757
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+          "metric": "memory/k_state_mib",
+          "rows": 1,
+          "run_columns": 36,
+          "sha256": "f9b999776b8725434c6ff10329dd6cdd133262627f1967b9f6202708de03ad81",
+          "size_bytes": 10597
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+          "metric": "performance/step_avg_ms",
+          "rows": 309,
+          "run_columns": 36,
+          "sha256": "a5caee2bf14dc14d1ad0bc322f88ee8ea533e7ad960031aa0d69b6bf82ff0cd1",
+          "size_bytes": 342078
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+          "metric": "time/train_s",
+          "rows": 311,
+          "run_columns": 36,
+          "sha256": "be5c0164c6f4dc6e0cef2dd00721b633ebfb4dd5d3009d1adae052ec93d2147a",
+          "size_bytes": 371397
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+          "metric": "train/loss_step",
+          "rows": 310,
+          "run_columns": 36,
+          "sha256": "ee92c25dfce499b2196fab911ac0d136c89e3b4b835d696e6281be86e7c13e11",
+          "size_bytes": 309134
+        },
+        {
+          "archived_path": "raw_wandb_exports\\wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+          "bands_duplicate_base": true,
+          "file_name": "wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+          "metric": "val/loss",
+          "rows": 63,
+          "run_columns": 36,
+          "sha256": "1fdec5ca28f4fb3a1c93c822a572eaef2195692250fd9f577eb8996d043c6948",
+          "size_bytes": 69672
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "wandb_local_values_exact",
+      "detail": {
+        "max_abs_error": 1.1368683772161603e-13,
+        "rows": 324
+      },
+      "passed": true
+    }
+  ],
+  "script_version": "2026-08-09.1",
+  "status": "passed"
+}

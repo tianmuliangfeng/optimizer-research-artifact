@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-07-27",
+  "status": "PASS_WITH_CAVEATS",
+  "stage": "formal-6200",
+  "evidence_class": "formal_multiseed_quality_curve_evidence",
+  "methods": [
+    "muon",
+    "down_none",
+    "down_diag",
+    "newton_full"
+  ],
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "steps_per_run": 6200,
+  "tokens_per_run": 3250585600,
+  "approximately_10b_token_extension": false,
+  "quality_curves_usable": true,
+  "fixed_recipe_multiseed_replication_complete": true,
+  "universal_method_claim_ready": false,
+  "formal_local_certificates": "PENDING",
+  "memory_usable_from_current_exports": false,
+  "timing_usable": false,
+  "quality_checks": {
+    "PASS": 235,
+    "WARN": 4
+  },
+  "primary_result": {
+    "muon_final_wins": 3,
+    "seeds": 3,
+    "down_none_minus_muon_final_mean": 0.004470904333333377,
+    "down_diag_minus_muon_final_mean": 0.005622625333333205,
+    "newton_full_minus_muon_final_mean": 0.006586789666666704
+  },
+  "outputs": [
+    "LLAMA1B_FORMAL6200_MULTISEED_ANALYSIS_20260727.md",
+    "data_quality_checks.csv",
+    "final_delta_vs_muon.png",
+    "llama1b_formal_multiseed_method_aggregate.csv",
+    "llama1b_formal_multiseed_pairwise.csv",
+    "llama1b_formal_multiseed_pairwise_aggregate.csv",
+    "llama1b_formal_multiseed_run_summary.csv",
+    "llama1b_formal_multiseed_steps_tokens_to_targets.csv",
+    "newton_minus_muon_by_seed.png",
+    "normalized_history_long.csv",
+    "normalized_history_wide.csv",
+    "source_manifest.csv",
+    "validation_curves_long.csv",
+    "validation_loss_by_seed.png",
+    "validation_loss_mean.png"
+  ]
+}

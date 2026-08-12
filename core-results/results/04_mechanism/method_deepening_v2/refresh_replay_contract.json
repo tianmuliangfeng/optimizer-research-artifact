@@ -1,0 +1,120 @@
+{
+  "schema_version": "mdp_refresh_replay_contract_v2",
+  "status": "frozen_before_replay",
+  "purpose": "deterministic short replay and streaming metric export; not a new optimizer training comparison",
+  "source_experiment": "37_mech09_downproj_refresh_mediation/20260728T075907+0000",
+  "source_contract_sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+  "source_hashes": {
+    "checkpoint_inventory.json": "692370610fe239ae2262c5c26785dd7085a0ee0147b5cb47b60863b0608c11b4",
+    "commands.jsonl": "2db42dc73a3c1d6423ff270476328090796fedc4ab08c7cd97648fb69e8653e8",
+    "formal/formal_manifest.json": "25dafc43f7cfdc3a0e61cd84c9fbc9c94a16c9db5833581130be8d6bf930b3e9",
+    "analysis/mech09r_analysis_manifest.json": "34b9525c4fcd061cbc3191b6844dd0000c3eac0bf0acc82876025f0ff3ee38d0",
+    "independent_review/independent_audit_manifest.json": "3c19990a8bc9d5453f2fdbbb7eb6170af016df7edaa88c9d5608d04bf2869174",
+    "analysis/paired_contrast_summary.csv": "318e0105bc4a52a4eb7fa9c716d87a0b9a7a88251be0df702e17a1fe8c3b8f1b",
+    "analysis/auc_contrasts.csv": "e7facec2fd6daaee97f253ee3cec88e2391ee6a6f91dc274673abbeb17a7c1d5"
+  },
+  "origins": [
+    {
+      "origin": "early_muon",
+      "method": "muon",
+      "checkpoint_step": 1000,
+      "checkpoint_bytes": 8522343395,
+      "checkpoint_sha256": "7561ee5571db825190fa3cc34af8bd9d72f213a69c925322cea6328b688a58d1"
+    },
+    {
+      "origin": "early_newton_full",
+      "method": "newton_full",
+      "checkpoint_step": 1000,
+      "checkpoint_bytes": 17783856619,
+      "checkpoint_sha256": "8d532806cc4a0613b3ad6c5e74096a70be352af941b9c72e6c37997cf1beecd7"
+    },
+    {
+      "origin": "late_muon",
+      "method": "muon",
+      "checkpoint_step": 6200,
+      "checkpoint_bytes": 8522343395,
+      "checkpoint_sha256": "7d48b9846aefe8e03e04305da0bd10e8fc3b889643328e585e70a484e1ad78ec"
+    },
+    {
+      "origin": "late_newton_full",
+      "method": "newton_full",
+      "checkpoint_step": 6200,
+      "checkpoint_bytes": 17783856619,
+      "checkpoint_sha256": "83c9bc4316996deb67ae92b9e2c1c60521f9ed5c56f9690d3e09de399915e7d5"
+    }
+  ],
+  "replicas": [
+    {"replica": 0, "replica_offset": 0, "build_offset": 0, "eval_offset": 1048576},
+    {"replica": 1, "replica_offset": 256, "build_offset": 2000000, "eval_offset": 3048576},
+    {"replica": 2, "replica_offset": 512, "build_offset": 4000000, "eval_offset": 5048576}
+  ],
+  "coverage": {
+    "origin_replica_units": 12,
+    "down_projection_layers": 18,
+    "layer_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+    "post_hoc_layer_selection_forbidden": true,
+    "primary_layer_aggregation": "median_across_all_18_layers_within_origin_replica_event",
+    "secondary_layer_aggregations": ["mean", "maximum", "layerwise_distribution"]
+  },
+  "refresh_events": [
+    {
+      "event_id": "production_refresh_32",
+      "refresh_step": 32,
+      "loss_outcome": "frozen_down_refresh_vs_production_at_step48"
+    },
+    {
+      "event_id": "delayed_refresh_64",
+      "refresh_step": 64,
+      "loss_outcome": "delayed_down_refresh_vs_frozen_down_refresh_at_step80"
+    }
+  ],
+  "matrix_contract": {
+    "k_shape": [5504, 5504],
+    "gradient_shape": [2048, 5504],
+    "ridge_scale": 0.2,
+    "ridge_epsilon": 1e-08,
+    "ridge_must_be_exported_from_runtime": true,
+    "runtime_inverse_must_be_exported": true,
+    "exact_inverse_dtype": "float64",
+    "matched_gradient_semantics": "the exact right-preconditioning input captured once at the boundary and held fixed for before/after inverse application",
+    "raw_gradient_and_momentum_input_exported_separately": true,
+    "k_asymmetry_must_be_reported_before_symmetrization": true
+  },
+  "primary_matrix_metrics": [
+    "relative_k_change",
+    "relative_a_change",
+    "condition_before",
+    "condition_after",
+    "relative_exact_inverse_change",
+    "exact_resolvent_relative_residual",
+    "spectral_resolvent_bound_ratio",
+    "runtime_inverse_residual_before",
+    "runtime_inverse_residual_after",
+    "runtime_inverse_relative_error_before",
+    "runtime_inverse_relative_error_after",
+    "matched_g_preconditioned_gradient_change",
+    "matched_g_preconditioned_gradient_cosine",
+    "exact_svd_polar_factor_change",
+    "exact_svd_polar_factor_cosine"
+  ],
+  "loss_outcomes": {
+    "step48": "accepted experiment-37 paired contrast; do not recompute or replace",
+    "step80": "accepted experiment-37 paired contrast; do not recompute or replace",
+    "auc": "accepted experiment-37 AUC contrast; do not recompute or replace"
+  },
+  "transport": {
+    "preferred": "stream layerwise metrics remotely; transfer CSV, manifest, hashes, and small verification slices",
+    "full_raw_tensor_transfer_required": false,
+    "estimated_raw_size_all_layers_with_inverse_gib": 115.65,
+    "fingerprint_gate": "replayed K and inverse values must match the 17 saved experiment-37 samples for every audited state"
+  },
+  "claim_gates": {
+    "synthetic_data_forbidden": true,
+    "exact_resolvent_and_finite_checks_required": true,
+    "runtime_inverse_fidelity_required": true,
+    "four_by_three_coverage_required": true,
+    "correlations_are_descriptive_nested_not_seed_level": true,
+    "polar_factor_is_not_named_full_optimizer_update": true,
+    "long_horizon_optimizer_ranking_claim_forbidden": true
+  }
+}

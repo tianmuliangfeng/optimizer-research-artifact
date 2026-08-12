@@ -1,0 +1,41 @@
+{
+  "code_directory": "scripts/41_r1_kstate_module_factorial",
+  "default_entrypoint": "command:20260729_r1_kstate_module_factorial",
+  "entrypoints": {
+    "command:20260729_r1_kstate_module_factorial": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/41_r1_kstate_module_factorial/20260729_r1_kstate_module_factorial.sh"
+    },
+    "script:run_r1_module_factorial": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/41_r1_kstate_module_factorial/run_r1_module_factorial.py"
+    },
+    "script:run_r1_module_factorial_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/41_r1_kstate_module_factorial/run_r1_module_factorial_suite.py"
+    }
+  },
+  "experiment_id": "41_r1_kstate_module_factorial",
+  "legacy_result_roots": [
+    "41_r1_kstate_module_factorial"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "41 R1 Kstate Module Factorial"
+}

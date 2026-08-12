@@ -1,0 +1,33 @@
+{
+  "arms": [
+    "production_newton_muon",
+    "delayed_down_refresh",
+    "frozen_down_refresh"
+  ],
+  "artifacts": [
+    "auc_contrasts.csv",
+    "evaluation_all.csv",
+    "integrity_checks.json",
+    "mech09r_analysis_manifest.json",
+    "mediation_decision.json",
+    "paired_contrast_summary.csv",
+    "paired_contrasts.csv",
+    "protocol_amendment.json",
+    "shared_prefix_audit.json",
+    "training_all.csv",
+    "worker_inventory.csv"
+  ],
+  "contract_sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+  "evaluation_rows": 324,
+  "experiment": "MECH-09R",
+  "formal_workers": 12,
+  "hypothesis_classification": "full_support",
+  "integrity_passed": true,
+  "legacy_invalid_run_reused": false,
+  "paired_contrast_rows": 324,
+  "passed": true,
+  "schema_version": 2,
+  "script_version": "2026-07-28.3",
+  "timing_usable_for_paper": false,
+  "training_rows": 4608
+}

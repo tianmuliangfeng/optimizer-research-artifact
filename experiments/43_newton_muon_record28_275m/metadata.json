@@ -1,0 +1,41 @@
+{
+  "code_directory": "scripts/43_newton_muon_record28_275m",
+  "default_entrypoint": "command:20260730_newton_muon_record28_275m",
+  "entrypoints": {
+    "command:20260730_newton_muon_record28_275m": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/43_newton_muon_record28_275m/20260730_newton_muon_record28_275m.sh"
+    },
+    "script:run_record28_cell": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/43_newton_muon_record28_275m/run_record28_cell.py"
+    },
+    "script:run_record28_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/43_newton_muon_record28_275m/run_record28_suite.py"
+    }
+  },
+  "experiment_id": "43_newton_muon_record28_275m",
+  "legacy_result_roots": [
+    "43_newton_muon_record28_275m"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "43 Newton Muon Record28 275M"
+}

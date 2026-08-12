@@ -1,0 +1,101 @@
+check,passed,detail
+run:completed,true,completed
+suite:12_of_12,true,passed=True completed=12 failures=[]
+analysis:frozen_integrity,true,passed=True claim_eligible=True
+analysis_artifact:EX48_FORMAL_ANALYSIS.md,true,expected_sha256=63e169ea0530738c0d0c3eacb495a44e8f34b824882c33180d4301b16d8cb771
+analysis_artifact:classification.json,true,expected_sha256=1e4da4401453e80deea5a8012595b70167ed9f434e95e98321f39d7df4789f58
+analysis_artifact:endpoint_results.csv,true,expected_sha256=35dcf3452316c98253d8563463ff4cb3b61939fce6e934501853b7d194752588
+analysis_artifact:paired_contrasts.csv,true,expected_sha256=c3976c0ae5f7f5b3b912c396eea0165d4105d1b25dbdbd52d04a013fa4b907d3
+unit:down_none:seed2024,true,passed=True completed_phases=6
+phase:down_none:seed2024:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2024:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2024:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2024:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2024:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2024:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:down_none:seed2025,true,passed=True completed_phases=6
+phase:down_none:seed2025:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2025:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2025:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2025:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2025:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2025:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:down_none:seed2026,true,passed=True completed_phases=6
+phase:down_none:seed2026:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2026:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2026:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2026:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2026:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:down_none:seed2026:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:down_diag:seed2024,true,passed=True completed_phases=6
+phase:down_diag:seed2024:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2024:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2024:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2024:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2024:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2024:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:down_diag:seed2025,true,passed=True completed_phases=6
+phase:down_diag:seed2025:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2025:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2025:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2025:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2025:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2025:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:down_diag:seed2026,true,passed=True completed_phases=6
+phase:down_diag:seed2026:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2026:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2026:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2026:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2026:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:down_diag:seed2026:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:newton_full:seed2024,true,passed=True completed_phases=6
+phase:newton_full:seed2024:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2024:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2024:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2024:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2024:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2024:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:newton_full:seed2025,true,passed=True completed_phases=6
+phase:newton_full:seed2025:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2025:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2025:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2025:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2025:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2025:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:newton_full:seed2026,true,passed=True completed_phases=6
+phase:newton_full:seed2026:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2026:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2026:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2026:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2026:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:newton_full:seed2026:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:muon:seed2024,true,passed=True completed_phases=6
+phase:muon:seed2024:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2024:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2024:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2024:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2024:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2024:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:muon:seed2025,true,passed=True completed_phases=6
+phase:muon:seed2025:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2025:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2025:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2025:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2025:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2025:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+unit:muon:seed2026,true,passed=True completed_phases=6
+phase:muon:seed2026:backbone_4400,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2026:cooldown_6200,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2026:backbone_11493,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2026:cooldown_13293,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2026:backbone_17273,true,"manifest, identity, summary hash and metrics hash"
+phase:muon:seed2026:cooldown_19073,true,"manifest, identity, summary hash and metrics hash"
+independent_recompute:endpoints,true,rows=36 failures=[]
+independent_recompute:paired_contrasts,true,rows=18 failures=[]
+independent_recompute:frozen_classification,true,observed=persistent_muon_lead official=persistent_muon_lead
+handoff:core_small_artifact_hashes,true,core_artifacts=294 failures=[]
+advisory:handoff_wandb_cache_archive_exact,false,W&B cache is non-primary and contains latest-run/run-directory aliases that are not portable through the received ZIP; failures=276
+handoff:checkpoint_certificates,true,handoff_passed=True certificates=36 unique=36
+remote:full_checkpoint_rehash_receipt,true,receipts=1 passed=1
+wandb:36_upload_receipts,true,receipts=36 projects=['Selective-Newton-Muon-MainConf-LLaMA-1B-10B-Formal-20260805']
+wandb:received_exports_match_primary,true,coverage=36/36

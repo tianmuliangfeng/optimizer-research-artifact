@@ -1,0 +1,33 @@
+{
+  "analysis": "LLaMA-SwiGLU 124M three-seed analysis",
+  "created": "2026-07-22",
+  "primary_endpoint": "validation loss at optimizer step 6200 / 3,250,585,600 tokens",
+  "secondary_endpoints": [
+    "tail-5 validation loss mean",
+    "normalized trapezoidal validation-loss AUC over steps 0..6200",
+    "paired seed differences",
+    "interpolated steps/tokens to previously used fixed loss targets 4.0, 3.8, 3.6, 3.5, 3.4"
+  ],
+  "paired_seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "methods": [
+    "down_diag",
+    "down_none",
+    "newton_full",
+    "muon",
+    "adamw"
+  ],
+  "quality_checks": {
+    "total": 72,
+    "passed": 72,
+    "failed": 0
+  },
+  "non_inferiority_status": "No practical margin was frozen before seeds2024/2025 results were inspected; results are descriptive and cannot support a preregistered equivalence/non-inferiority claim.",
+  "notes": [
+    "Timing is diagnostic only and excluded from performance claims.",
+    "Seed2026 was previously observed; this is not a fully preregistered analysis."
+  ]
+}

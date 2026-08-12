@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "arm_keys_exact": true,
+    "contract_version": true,
+    "evaluation_rows": true,
+    "finite_evaluation": true,
+    "finite_training": true,
+    "formal_job_cap": true,
+    "formal_worker_count": true,
+    "formal_workers_passed": true,
+    "pre_delayed_refresh_exact": true,
+    "pre_refresh_exact": true,
+    "protocol_amendment_pre_intervention_only": true,
+    "timing_excluded": true,
+    "training_rows": true,
+    "trajectory_cap": true
+  },
+  "passed": true
+}

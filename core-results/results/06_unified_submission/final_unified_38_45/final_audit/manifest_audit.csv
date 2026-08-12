@@ -1,0 +1,8 @@
+manifest,schema_version,status,synthetic,claim_eligible,output_count,hashes_passed
+audit\submission_bundle_audit_manifest.json,mdp_submission_bundle_audit_v1,passed,false,true,2,true
+complexity\routing_complexity_manifest.json,mdp_routing_complexity_audit_v1,passed,false,true,1,true
+cross_scale\cross_scale_analysis_manifest.json,mdp_cross_scale_analysis_v1,passed,false,true,5,true
+equivariance\route_equivariance_manifest.json,mdp_route_equivariance_audit_v1,passed,false,true,1,true
+evidence\evidence_ledger_manifest.json,mdp_evidence_ledger_v1,validated,false,true,2,true
+figures\submission_tables_figures_manifest.json,mdp_submission_tables_figures_v1,passed,false,true,3,true
+local_pipeline_manifest.json,mdp_local_pipeline_run_v1,passed,false,true,0,true

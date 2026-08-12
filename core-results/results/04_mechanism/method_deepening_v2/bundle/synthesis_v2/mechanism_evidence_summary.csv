@@ -1,0 +1,9 @@
+evidence_id,evidence_class,metric,estimate,uncertainty_or_support,unit,interpretation
+M01,empirical_interpolation,mean_final_curvature_c,-0.00126666666667,3/3 seeds negative; SD=0.000404145,validation loss,interior alpha is favored; monotone shrinkage is rejected
+M02,causal_nested_replay,delayed_minus_production_step48,-0.00496271115804,SD=0.00142061; 12/12 negative,held-out loss,delaying the scheduled refresh protects immediately after production refresh
+M03,causal_nested_replay,delayed_minus_frozen_step80,0.00239476529546,SD=0.000507583; 12/12 positive,held-out loss,the delayed arm worsens after its own refresh relative to frozen
+M04,causal_nested_replay,frozen_minus_production_auc,-0.00295632525002,12/12 nested units negative,normalized short-horizon loss AUC,freezing down-projection refresh protects across the replay horizon
+M05,network_boundary_diagnostic,pooled_block4_update_drift_median,0.344722876091,n=48; effect/control=21.64x,relative update drift,fixed contiguous block4 is strongly coordinate-partition dependent
+M06,factorial_empirical,cfc_main_effect,-0.00348333333333,3/3 seeds beneficial,final validation loss,c_fc K contributes useful quality information
+M07,factorial_empirical,cproj_main_effect,-0.00458333333333,3/3 seeds beneficial,final validation loss,c_proj K also contributes useful quality information
+M08,paired_empirical,diag_minus_none,-0.00556666666667,3/3 seeds negative; +0.28125 MiB K state,final validation loss,coordinatewise scale recovers the c_proj benefit at near-none state

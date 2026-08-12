@@ -1,0 +1,18 @@
+{
+  "contract_relative_sources": {
+    "experiment15_run_summary_relative_path": "experiment_csv/project-results/15_official_newton_muon_r1/analysis/wandb_20260721_multiseed_factorial/r1_multiseed_run_summary.csv",
+    "experiment15_run_summary_sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+    "experiment41_acceptance_relative_path": "experiment_csv/project-results/41_r1_kstate_module_factorial/analysis/accepted_20260731/experiment41_key_results.json",
+    "experiment41_acceptance_sha256": "b5506b6e0902b4c1b338dac2336d24c7e3d2d7e3147e3a39e3f6d42b1357698f",
+    "experiment41_reference_relative_path": "project-results/scripts/41_r1_kstate_module_factorial/existing_cells_reference.csv",
+    "experiment41_reference_sha256": "21737784b9fccc69053bf7e507bd91a0a8a8ea26d02579d5c3d87f512e0ecb13"
+  },
+  "schema_version": 1,
+  "script_version": "2026-07-31.1",
+  "source_hashes": {
+    "diag_bridge_contract": "28e2f9bb897ff5b99c3efc0d9af1adacc03232dd2bd3607a2c3af70324def21d",
+    "experiment15_run_summary": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+    "experiment41_acceptance": "b5506b6e0902b4c1b338dac2336d24c7e3d2d7e3147e3a39e3f6d42b1357698f",
+    "experiment41_reference": "21737784b9fccc69053bf7e507bd91a0a8a8ea26d02579d5c3d87f512e0ecb13"
+  }
+}

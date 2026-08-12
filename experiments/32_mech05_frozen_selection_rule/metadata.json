@@ -1,0 +1,35 @@
+{
+  "code_directory": "scripts/32_mech05_frozen_selection_rule",
+  "default_entrypoint": "command:20260727_mech05_freeze_selection_rule",
+  "entrypoints": {
+    "command:20260727_mech05_freeze_selection_rule": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/32_mech05_frozen_selection_rule/20260727_mech05_freeze_selection_rule.sh"
+    },
+    "script:analyze_mech05": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/32_mech05_frozen_selection_rule/analyze_mech05.py"
+    }
+  },
+  "experiment_id": "32_mech05_frozen_selection_rule",
+  "legacy_result_roots": [
+    "32_mech05_frozen_selection_rule"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "analysis_only",
+  "title": "32 Mech05 Frozen Selection Rule"
+}

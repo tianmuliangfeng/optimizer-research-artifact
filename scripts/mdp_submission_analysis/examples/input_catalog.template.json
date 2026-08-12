@@ -1,0 +1,73 @@
+{
+  "schema_version": "mdp_submission_input_catalog_v1",
+  "synthetic": false,
+  "sources": [
+    {
+      "source_id": "r1_core_124m",
+      "schema": "r1_core_run_summary_v1",
+      "analysis_family": "gpt_scale",
+      "scale_id": "gpt124m",
+      "architecture": "Modded-NanoGPT",
+      "model_parameters": 124000000,
+      "train_tokens": 3250585600,
+      "csv": "__REPLACE__/r1_multiseed_run_summary.csv",
+      "manifest": "__REPLACE__/analysis_manifest.json",
+      "manifest_require": {
+        "status": "PASS_WITH_CAVEATS"
+      },
+      "expected_methods": ["muon", "block4", "diag", "none"],
+      "expected_seeds": [2024, 2025, 2026]
+    },
+    {
+      "source_id": "experiment43_record28_275m",
+      "schema": "record_cells_v1",
+      "analysis_family": "gpt_scale",
+      "scale_id": "gpt275m",
+      "architecture": "Modded-NanoGPT near Record #28",
+      "model_parameters": 275743572,
+      "train_tokens": 666501120,
+      "csv": "__REPLACE__/record28_cells.csv",
+      "manifest": "__REPLACE__/record28_analysis_manifest.json",
+      "manifest_require": {
+        "status": "passed",
+        "passed": true
+      },
+      "expected_methods": ["muon", "original_newton_muon", "selective_diag", "selective_none"],
+      "expected_seeds": [2024, 2025, 2026, 2027]
+    },
+    {
+      "source_id": "experiment44_record17_455m",
+      "schema": "record_cells_v1",
+      "analysis_family": "gpt_scale",
+      "scale_id": "gpt455m",
+      "architecture": "Modded-NanoGPT Record #17 single-H100 adaptation",
+      "model_parameters": 454496336,
+      "train_tokens": 3124756480,
+      "csv": "__REPLACE__/record17_cells.csv",
+      "manifest": "__REPLACE__/record17_analysis_manifest.json",
+      "manifest_require": {
+        "status": "passed",
+        "passed": true
+      },
+      "expected_methods": ["muon", "original_newton_muon", "selective_diag", "selective_none"],
+      "expected_seeds": [2024, 2025, 2026]
+    },
+    {
+      "source_id": "experiment45_mousse_124m",
+      "schema": "mousse_unified_run_summary_v1",
+      "analysis_family": "external_baselines_124m",
+      "scale_id": "gpt124m",
+      "architecture": "Modded-NanoGPT R1",
+      "model_parameters": 124000000,
+      "train_tokens": 3250585600,
+      "csv": "__REPLACE__/r1_unified_eight_method_run_summary.csv",
+      "manifest": "__REPLACE__/analysis_manifest.json",
+      "manifest_require": {
+        "status": "completed_valid",
+        "protocol": "mousse_r1_unified_analysis_v1"
+      },
+      "expected_methods": ["muon", "block4", "diag", "none", "mousse", "moonlight", "normuon", "adamw"],
+      "expected_seeds": [2024, 2025, 2026]
+    }
+  ]
+}

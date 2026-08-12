@@ -1,0 +1,8 @@
+{
+  "early_signal": "uncertain",
+  "existing_training_rankings_used": false,
+  "late_signal": "uncertain",
+  "retrospective_ranking_evaluation_required_separately": true,
+  "same_signal": true,
+  "scale_confirmation": "uncertain"
+}

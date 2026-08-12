@@ -1,0 +1,37 @@
+{
+  "code_directory": "scripts/18_r1_performance",
+  "default_entrypoint": "script:run_r1_performance",
+  "entrypoints": {
+    "script:run_r1_performance": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/18_r1_performance/run_r1_performance.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--official-repo",
+            "--python-exe"
+          ]
+        }
+      ]
+    }
+  },
+  "experiment_id": "18_r1_performance",
+  "legacy_result_roots": [
+    "18_r1_performance"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "18 R1 Performance"
+}

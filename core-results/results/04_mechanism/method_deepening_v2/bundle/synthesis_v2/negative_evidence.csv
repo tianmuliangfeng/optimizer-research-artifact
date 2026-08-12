@@ -1,0 +1,6 @@
+evidence_id,finding,implication,source
+NEG-01,alpha=0.5 beats both dense alpha endpoints in all three R1 seeds; mean endpoint curvature is negative,the evidence rejects a simple monotone less-curvature-is-always-better story,experiment 22
+NEG-02,"diag is preferred at 124M, diag/none are interchangeable at 275M, and none has the best mean at 455M",there is no universal static route ranking and no justified automatic selector objective yet,final unified experiments 43-45
+NEG-03,both c_fc and c_proj K factors improve R1 quality with an approximately additive interaction,removing all c_proj curvature is not a universal mechanism claim,experiment 41
+NEG-04,contiguous LLaMA block4 has large drift under a function-preserving hidden-unit permutation,"fixed block boundaries are coordinate choices, not architecture-neutral objects",experiment 40
+NEG-05,no local paired refresh tensors or checkpoints are available,matrix-level refresh mediation is blocked and cannot be filled with synthetic fixtures,MDP inventory

@@ -1,0 +1,5 @@
+method_role,source_method,method_order,device_batch_size,model_parameter_mib,optimizer_state_mib,k_state_mib,preconditioner_workspace_mib,peak_allocated_mib,peak_reserved_mib,reserved_headroom_mib,evidence_class
+muon,muon,1,32,3866.921875,4259.843894958496,0.0,0.0,65409.4921875,67148.0,14075.625,paper_ready
+original_newton_muon,newton_full,2,32,3866.921875,10148.093894958496,5888.25,102.0,74483.55419921875,76120.0,5103.625,paper_ready
+selective_none,down_none,3,32,3866.921875,5987.843894958496,1728.0,59.0,68061.1201171875,69740.0,11483.625,paper_ready
+selective_diag,down_diag,4,32,3866.921875,5988.599754333496,1728.755859375,59.0,68062.2626953125,69740.0,11483.625,paper_ready

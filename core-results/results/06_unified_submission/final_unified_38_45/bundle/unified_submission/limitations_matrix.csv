@@ -1,0 +1,9 @@
+limitation_id,area,limitation,mitigation
+L01,statistics,Only 3–4 paired seeds per scale.,"paired t intervals, direction counts, practical margin, no pooled p-value"
+L02,scaling,"Model size, recipe, and tokens/parameter change together.","call environments replications, not a controlled scaling law"
+L03,external baseline,Mousse is formal only at 124M.,scope the claim to 124M; 275M extension not triggered
+L04,timing,43/44/45 and concurrent 41 timing are ineligible.,use isolated Experiments 39 and 42 only
+L05,mechanism,Refresh evidence is short-horizon and snapshot-limited.,reserve full refresh/stability study for method deepening
+L06,architecture,LLaMA block4 is coordinate dependent.,use newton_full as LLaMA original-family control
+L07,report provenance,Experiment 39's historical report text is stale despite valid numerics.,cite the independent audit JSON and regenerated unified report
+L08,checkpoint payload,Experiment 45 archive omits checkpoint tensors.,"quality is accepted via hashes, complete metrics, W&B exact match, and remote checkpoint metadata; no new checkpoint-dependent claim"

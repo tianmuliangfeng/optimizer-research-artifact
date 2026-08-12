@@ -1,0 +1,50 @@
+{
+  "accepted_experiment_mutation_performed": false,
+  "authoritative_synthesis": "bundle/synthesis_v2",
+  "claim_eligible": false,
+  "completion_blocker": "real paired MECH-09R refresh matrices and matched-gradient export are not local",
+  "component_status": {
+    "MDP-01": "ready",
+    "MDP-02": "ready",
+    "MDP-03": "ready_with_rank_conditions",
+    "MDP-04": "blocked_data"
+  },
+  "handoff_sha256": "76b407da7d779fb719f8c8069f0f68464b5554c065f154585eed251eecd3dd48",
+  "handoff_unchanged": true,
+  "large_training_launched": false,
+  "mdp_manifest": true,
+  "next_action": "deterministic_short_replay_or_streaming_metric_export_on_original_llama_host",
+  "outputs": {
+    "PACKAGE_INDEX.md": "43fc27e93b81a4878906f8cdf6437301cde37f725f15c69779399b19d55c333f",
+    "refresh_replay_contract.json": "115673172b8a672c84e21ef3b152d31fe9c03bfbbc8fd315a73a2337e51ea483",
+    "routing_complexity.json": "791255636609d492d27c619c4e7a94aa66867459d611f5e64fdd42c1d0a05ede"
+  },
+  "regression_errors": 0,
+  "regression_failures": 0,
+  "regression_tests_passed": true,
+  "regression_tests_run": 9,
+  "schema_version": "mdp_method_deepening_root_manifest_v2",
+  "source_sha256": {
+    "component/complexity": "22b4d6eacfb1a282ace7ae065f8c410c3b28982e74bec3897a8d68a9eac70d26",
+    "component/equivariance": "f9eed566ba9427a5d7a677319aa2890c12643f111b9d75559bd62f900bfff576",
+    "component/formulation": "089cb92283646d08ca728b3955d4f98edee2f54c7ab399af43d7d3726a1c7063",
+    "component/inventory": "4027a9a81f28e86af7b5afb37fb124b8007df19b72827fa890c4d4105ecee5ab",
+    "component/synthesis_v2": "9bac5f52cf321151184b4994301c7a2698ab8aaca7e4b31e7329565e5cba58c6",
+    "document/METHOD_DEEPENING_AUDIT.md": "83ce853e30f8ec81add1c8f32d8ec7159c3572a236a0d59f45d41b08cec8cd5a",
+    "document/REFRESH_STABILITY_ANALYSIS.md": "7735127be1eb7cefaab9f9d2aa2f278c1b7505b12147b14c57052630ae345b2b",
+    "document/ROUTING_COMPLEXITY_AND_EQUIVARIANCE.md": "84a0c41bda975cf60d9e2c08987c5f14a1d85d9812a20080da2040941e28f870",
+    "document/SELECTIVE_ROUTING_FORMULATION.md": "e08cb001edaa99e1e59f81bbfb1418cf89fe2a83c4dd37cf13b148279f17ec89",
+    "script/analyze_refresh_stability.py": "131dd2a9bfe5ee6c56f21dca56d4e653133fb58da9c3fc30068138bbc62f601f",
+    "script/audit_method_formulation.py": "2c4a63ca9f2b686ad2aedad704270f643d7d140c869aae7955c95d53e6b68d1f",
+    "script/audit_route_equivariance.py": "2db2ace09b4c26c740ccaa7a98532188a6e6377be97f1dc519e8945ed3fbe3f3",
+    "script/audit_routing_complexity.py": "2e32583a5343c7732598dea995e833f77d448f9198cbe918fb30b2ce1a194581",
+    "script/audit_submission_bundle.py": "a15e9f65b63754e1d02e7cf22b7e07d56cc44d3bf2b0c7ced9a33979dc022f36",
+    "script/build_method_deepening_package.py": "a7bffe678a9cc579014059318c2317776d8abf412e24b063b46299cce7fe8682",
+    "script/finalize_method_deepening_package.py": "a1eb5725262de191111fea999bc2dc75a5a71ebdc762a8591bd6eac020f8b592",
+    "script/inventory_method_deepening_artifacts.py": "b997616870d39138be329eca9091aea3c83e58179f096291b063b89c44f1bfa3",
+    "script/run_local_pipeline.py": "83dad712309ca54ab7b94b11bb19a6c5be34ffb549f0bff41796024727e67e69",
+    "script/test_local_pipeline.py": "766f2bbb8c71b9afae8c665d7879fdbfc059b441acdb15999248b3e73aac2492"
+  },
+  "status": "partial",
+  "supersedes_root_manifest": "method_deepening_root_manifest.json"
+}

@@ -1,0 +1,54 @@
+{
+  "status": "completed_valid",
+  "protocol": "mousse_r1_unified_analysis_v1",
+  "identity_certificate": "identity_reuse_certificate.json",
+  "source_files": [
+    {
+      "path": "45_r1_mousse_strong_baseline/accepted_formal/seed2024/formal_summary.csv",
+      "sha256": "8477fa13f1321a07ddd8f62d6bc936e0229325d9d07674c13c2f129a2ab41323"
+    },
+    {
+      "path": "45_r1_mousse_strong_baseline/accepted_formal/seed2025/formal_summary.csv",
+      "sha256": "bd8271942ef2c12a5e9063a92a36c1a3539862e2b8274ef7fe93ee2fccccd8c2"
+    },
+    {
+      "path": "45_r1_mousse_strong_baseline/accepted_formal/seed2026/formal_summary.csv",
+      "sha256": "5628600fa790bbe5a1e9ca0272e80a7210f3fd76f6ed27f9cd8965fcb86b0133"
+    },
+    {
+      "path": "45_r1_mousse_strong_baseline/accepted_formal/seed2024/formal_manifest.json",
+      "sha256": "7477aadcf2c79e3e52ec039ea17c16b85d40b8224e1b63ab85ef264a80e96bfb"
+    },
+    {
+      "path": "45_r1_mousse_strong_baseline/accepted_formal/seed2025/formal_manifest.json",
+      "sha256": "c2cb542ca4957aebfb1bf9879b3040559b8f8e7ef6a64646fb249281e1386ac8"
+    },
+    {
+      "path": "45_r1_mousse_strong_baseline/accepted_formal/seed2026/formal_manifest.json",
+      "sha256": "bc03529ab2a3b5c7836c21d1f14d4179457af7e2a680bed1927db438d100114e"
+    },
+    {
+      "path": "15_official_newton_muon_r1/accepted/r1_multiseed_run_summary.csv",
+      "sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3"
+    },
+    {
+      "path": "19_r1_extended_baselines/accepted/extended_formal_run_summary.csv",
+      "sha256": "bddc9a3bc4222599d864a836d9c5f0ed8570b81262cc3ea9ea3dc8a812cfdc6a"
+    },
+    {
+      "path": "15_official_newton_muon_r1/accepted/analysis_manifest.json",
+      "sha256": "7b5455a0245768e2d04adf134d7b66cbc4d74bf8c9134beb2dc8b9ac0c7f35ab"
+    },
+    {
+      "path": "19_r1_extended_baselines/accepted/analysis_manifest.json",
+      "sha256": "608e54a9f37e267c19a103de778b9195f50e8751f0112109a780dee33bebc10c"
+    }
+  ],
+  "outputs": [
+    "r1_unified_eight_method_run_summary.csv",
+    "r1_unified_eight_method_aggregate.csv",
+    "r1_mousse_paired_seed_deltas.csv",
+    "r1_mousse_paired_aggregate.csv",
+    "EXPERIMENT_45_ANALYSIS.md"
+  ]
+}

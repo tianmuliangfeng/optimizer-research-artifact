@@ -1,0 +1,63 @@
+{
+  "checkpoint_summaries": [
+    {
+      "checkpoint_label": "early",
+      "checkpoint_step": 1000,
+      "global_block4_update_drift_maximum": 0.5522371548439557,
+      "global_block4_update_drift_mean": 0.3598482021890608,
+      "global_block4_update_drift_median": 0.3105255208424539,
+      "global_block4_update_drift_minimum": 0.21869613584368292,
+      "global_block4_update_drift_n": 24,
+      "global_block4_update_drift_p95": 0.5520233821714875
+    },
+    {
+      "checkpoint_label": "late",
+      "checkpoint_step": 6200,
+      "global_block4_update_drift_maximum": 0.5841121276728609,
+      "global_block4_update_drift_mean": 0.3903871532329027,
+      "global_block4_update_drift_median": 0.39217420020354976,
+      "global_block4_update_drift_minimum": 0.19505939284108892,
+      "global_block4_update_drift_n": 24,
+      "global_block4_update_drift_p95": 0.5823940106255951
+    }
+  ],
+  "classification": "strong_non_invariance",
+  "decision_statistics": {
+    "effect_to_control_multiple": 21.63766740870219,
+    "maximum_equivariant_control_drift": 0.015931609890260972,
+    "maximum_stage_median_update_drift": 0.39217420020354976,
+    "minimum_stage_median_update_drift": 0.3105255208424539,
+    "pooled_global_block4_median_update_drift": 0.34472287609065727
+  },
+  "equivariant_control_update_drift": {
+    "maximum": 0.015931609890260972,
+    "mean": 0.011154900593079584,
+    "median": 0.012696329048220364,
+    "minimum": 0.004848442931457565,
+    "n": 144,
+    "p95": 0.01545615379775318
+  },
+  "global_block4_update_drift": {
+    "maximum": 0.5841121276728609,
+    "mean": 0.3751176777109817,
+    "median": 0.34472287609065727,
+    "minimum": 0.19505939284108892,
+    "n": 48,
+    "p95": 0.5814676693623864
+  },
+  "interpretation": {
+    "block4_is_original_newton_muon": false,
+    "block4_is_primary_baseline": false,
+    "claim_if_supported": "A contiguous four-block LLaMA down-projection approximation depends on an arbitrary hidden-neuron coordinate partition.",
+    "claim_not_authorized": "block4 underperforms or outperforms primary optimizers in full training",
+    "official_original_newton_muon_control": "newton_full"
+  },
+  "within_block_control_update_drift": {
+    "maximum": 0.014801162260735091,
+    "mean": 0.008543839588712092,
+    "median": 0.006717979399303702,
+    "minimum": 0.0055376637044868005,
+    "n": 12,
+    "p95": 0.014662735408615287
+  }
+}

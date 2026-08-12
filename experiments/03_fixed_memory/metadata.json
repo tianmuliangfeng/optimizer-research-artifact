@@ -1,0 +1,29 @@
+{
+  "code_directory": "scripts/03_fixed_memory",
+  "default_entrypoint": "script:run_fixed_memory_batch_sweep",
+  "entrypoints": {
+    "script:run_fixed_memory_batch_sweep": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/03_fixed_memory/run_fixed_memory_batch_sweep.py"
+    }
+  },
+  "experiment_id": "03_fixed_memory",
+  "legacy_result_roots": [
+    "03_fixed_memory"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "03 Fixed Memory"
+}

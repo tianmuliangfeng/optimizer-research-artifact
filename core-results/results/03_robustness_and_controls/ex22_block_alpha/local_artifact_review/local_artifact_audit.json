@@ -1,0 +1,26 @@
+{
+  "archive": {
+    "bytes": 104406441,
+    "entries": 345,
+    "path": "PRIVATE_PATH_REDACTED__302c3e331124",
+    "sha256": "4b759292859e1bae6f6245879ef12c9cc9097de94f44d4b17725c604b9c5952c"
+  },
+  "checkpoint_transfer": {
+    "expected_remote_checkpoints": 8,
+    "partial_entries_removed_from_preserved_tree": true,
+    "policy": "excluded_by_user_due_size",
+    "scientific_result_blocked": false,
+    "usable_local_checkpoints": 0
+  },
+  "checks": 327,
+  "controller_batch_id": "20260727T104042+0000",
+  "delivery_status": "accepted_checkpoint_transfer_excluded",
+  "failed_checks": [],
+  "formal_runs": 8,
+  "passed_checks": 327,
+  "preserved_root": "PRIVATE_PATH_REDACTED",
+  "schema_version": 1,
+  "scientific_evidence_accepted": true,
+  "script_version": "2026-07-29.3",
+  "smoke_runs": 8
+}

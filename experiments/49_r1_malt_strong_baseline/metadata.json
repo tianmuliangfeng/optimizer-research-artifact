@@ -1,0 +1,64 @@
+{
+  "code_directory": "scripts/49_r1_malt_strong_baseline",
+  "default_entrypoint": "command:reproduce_full",
+  "entrypoints": {
+    "command:20260807_ex49_r1_malt_strong_baseline": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX49_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "all"
+          ],
+          "env": {
+            "EX49_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/49_r1_malt_strong_baseline/20260807_ex49_r1_malt_strong_baseline.sh"
+    },
+    "command:reproduce_full": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/49_r1_malt_strong_baseline/reproduce_full.sh"
+    },
+    "script:run_r1_malt": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/49_r1_malt_strong_baseline/run_r1_malt.py"
+    },
+    "script:run_r1_malt_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/49_r1_malt_strong_baseline/run_r1_malt_suite.py"
+    }
+  },
+  "experiment_id": "49_r1_malt_strong_baseline",
+  "legacy_result_roots": [
+    "49_r1_malt_strong_baseline"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "49 R1 MALT Strong Baseline"
+}

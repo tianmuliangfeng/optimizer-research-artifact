@@ -1,0 +1,181 @@
+check,status,details
+lr/matrix: exact step grid,PASS,"rows=311, first=[0, 20], last=[6180, 6200]"
+seed2025 diag lr/matrix: finite,PASS,nonfinite=0
+seed2025 diag lr/matrix: MIN/MAX mirrors,PASS,points=311
+seed2025 none lr/matrix: finite,PASS,nonfinite=0
+seed2025 none lr/matrix: MIN/MAX mirrors,PASS,points=311
+seed2025 block4 lr/matrix: finite,PASS,nonfinite=0
+seed2025 block4 lr/matrix: MIN/MAX mirrors,PASS,points=311
+seed2025 muon lr/matrix: finite,PASS,nonfinite=0
+seed2025 muon lr/matrix: MIN/MAX mirrors,PASS,points=311
+seed2024 muon lr/matrix: finite,PASS,nonfinite=0
+seed2024 muon lr/matrix: MIN/MAX mirrors,PASS,points=311
+seed2024 block4 lr/matrix: finite,PASS,nonfinite=0
+seed2024 block4 lr/matrix: MIN/MAX mirrors,PASS,points=311
+seed2024 none lr/matrix: finite,PASS,nonfinite=0
+seed2024 none lr/matrix: MIN/MAX mirrors,PASS,points=311
+seed2024 diag lr/matrix: finite,PASS,nonfinite=0
+seed2024 diag lr/matrix: MIN/MAX mirrors,PASS,points=311
+lr/matrix: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+lr/adamw: exact step grid,PASS,"rows=311, first=[0, 20], last=[6180, 6200]"
+seed2025 diag lr/adamw: finite,PASS,nonfinite=0
+seed2025 diag lr/adamw: MIN/MAX mirrors,PASS,points=311
+seed2025 none lr/adamw: finite,PASS,nonfinite=0
+seed2025 none lr/adamw: MIN/MAX mirrors,PASS,points=311
+seed2025 block4 lr/adamw: finite,PASS,nonfinite=0
+seed2025 block4 lr/adamw: MIN/MAX mirrors,PASS,points=311
+seed2025 muon lr/adamw: finite,PASS,nonfinite=0
+seed2025 muon lr/adamw: MIN/MAX mirrors,PASS,points=311
+seed2024 muon lr/adamw: finite,PASS,nonfinite=0
+seed2024 muon lr/adamw: MIN/MAX mirrors,PASS,points=311
+seed2024 block4 lr/adamw: finite,PASS,nonfinite=0
+seed2024 block4 lr/adamw: MIN/MAX mirrors,PASS,points=311
+seed2024 none lr/adamw: finite,PASS,nonfinite=0
+seed2024 none lr/adamw: MIN/MAX mirrors,PASS,points=311
+seed2024 diag lr/adamw: finite,PASS,nonfinite=0
+seed2024 diag lr/adamw: MIN/MAX mirrors,PASS,points=311
+lr/adamw: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+memory/peak_allocated_mib: exact step grid,PASS,"rows=1, first=[6200], last=[6200]"
+seed2025 diag memory/peak_allocated_mib: finite,PASS,nonfinite=0
+seed2025 diag memory/peak_allocated_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 none memory/peak_allocated_mib: finite,PASS,nonfinite=0
+seed2025 none memory/peak_allocated_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 block4 memory/peak_allocated_mib: finite,PASS,nonfinite=0
+seed2025 block4 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 muon memory/peak_allocated_mib: finite,PASS,nonfinite=0
+seed2025 muon memory/peak_allocated_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 muon memory/peak_allocated_mib: finite,PASS,nonfinite=0
+seed2024 muon memory/peak_allocated_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 block4 memory/peak_allocated_mib: finite,PASS,nonfinite=0
+seed2024 block4 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 none memory/peak_allocated_mib: finite,PASS,nonfinite=0
+seed2024 none memory/peak_allocated_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 diag memory/peak_allocated_mib: finite,PASS,nonfinite=0
+seed2024 diag memory/peak_allocated_mib: MIN/MAX mirrors,PASS,points=1
+memory/peak_allocated_mib: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+memory/optimizer_state_mib: exact step grid,PASS,"rows=1, first=[6200], last=[6200]"
+seed2025 diag memory/optimizer_state_mib: finite,PASS,nonfinite=0
+seed2025 diag memory/optimizer_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 none memory/optimizer_state_mib: finite,PASS,nonfinite=0
+seed2025 none memory/optimizer_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 block4 memory/optimizer_state_mib: finite,PASS,nonfinite=0
+seed2025 block4 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 muon memory/optimizer_state_mib: finite,PASS,nonfinite=0
+seed2025 muon memory/optimizer_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 muon memory/optimizer_state_mib: finite,PASS,nonfinite=0
+seed2024 muon memory/optimizer_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 block4 memory/optimizer_state_mib: finite,PASS,nonfinite=0
+seed2024 block4 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 none memory/optimizer_state_mib: finite,PASS,nonfinite=0
+seed2024 none memory/optimizer_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 diag memory/optimizer_state_mib: finite,PASS,nonfinite=0
+seed2024 diag memory/optimizer_state_mib: MIN/MAX mirrors,PASS,points=1
+memory/optimizer_state_mib: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+memory/k_state_mib: exact step grid,PASS,"rows=1, first=[6200], last=[6200]"
+seed2025 diag memory/k_state_mib: finite,PASS,nonfinite=0
+seed2025 diag memory/k_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 none memory/k_state_mib: finite,PASS,nonfinite=0
+seed2025 none memory/k_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 block4 memory/k_state_mib: finite,PASS,nonfinite=0
+seed2025 block4 memory/k_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2025 muon memory/k_state_mib: finite,PASS,nonfinite=0
+seed2025 muon memory/k_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 muon memory/k_state_mib: finite,PASS,nonfinite=0
+seed2024 muon memory/k_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 block4 memory/k_state_mib: finite,PASS,nonfinite=0
+seed2024 block4 memory/k_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 none memory/k_state_mib: finite,PASS,nonfinite=0
+seed2024 none memory/k_state_mib: MIN/MAX mirrors,PASS,points=1
+seed2024 diag memory/k_state_mib: finite,PASS,nonfinite=0
+seed2024 diag memory/k_state_mib: MIN/MAX mirrors,PASS,points=1
+memory/k_state_mib: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+performance/step_avg_ms: exact step grid,PASS,"rows=309, first=[40, 60], last=[6180, 6200]"
+seed2025 diag performance/step_avg_ms: finite,PASS,nonfinite=0
+seed2025 diag performance/step_avg_ms: MIN/MAX mirrors,PASS,points=309
+seed2025 none performance/step_avg_ms: finite,PASS,nonfinite=0
+seed2025 none performance/step_avg_ms: MIN/MAX mirrors,PASS,points=309
+seed2025 block4 performance/step_avg_ms: finite,PASS,nonfinite=0
+seed2025 block4 performance/step_avg_ms: MIN/MAX mirrors,PASS,points=309
+seed2025 muon performance/step_avg_ms: finite,PASS,nonfinite=0
+seed2025 muon performance/step_avg_ms: MIN/MAX mirrors,PASS,points=309
+seed2024 muon performance/step_avg_ms: finite,PASS,nonfinite=0
+seed2024 muon performance/step_avg_ms: MIN/MAX mirrors,PASS,points=309
+seed2024 block4 performance/step_avg_ms: finite,PASS,nonfinite=0
+seed2024 block4 performance/step_avg_ms: MIN/MAX mirrors,PASS,points=309
+seed2024 none performance/step_avg_ms: finite,PASS,nonfinite=0
+seed2024 none performance/step_avg_ms: MIN/MAX mirrors,PASS,points=309
+seed2024 diag performance/step_avg_ms: finite,PASS,nonfinite=0
+seed2024 diag performance/step_avg_ms: MIN/MAX mirrors,PASS,points=309
+performance/step_avg_ms: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+time/train_s: exact step grid,PASS,"rows=311, first=[0, 20], last=[6180, 6200]"
+seed2025 diag time/train_s: finite,PASS,nonfinite=0
+seed2025 diag time/train_s: MIN/MAX mirrors,PASS,points=311
+seed2025 none time/train_s: finite,PASS,nonfinite=0
+seed2025 none time/train_s: MIN/MAX mirrors,PASS,points=311
+seed2025 block4 time/train_s: finite,PASS,nonfinite=0
+seed2025 block4 time/train_s: MIN/MAX mirrors,PASS,points=311
+seed2025 muon time/train_s: finite,PASS,nonfinite=0
+seed2025 muon time/train_s: MIN/MAX mirrors,PASS,points=311
+seed2024 muon time/train_s: finite,PASS,nonfinite=0
+seed2024 muon time/train_s: MIN/MAX mirrors,PASS,points=311
+seed2024 block4 time/train_s: finite,PASS,nonfinite=0
+seed2024 block4 time/train_s: MIN/MAX mirrors,PASS,points=311
+seed2024 none time/train_s: finite,PASS,nonfinite=0
+seed2024 none time/train_s: MIN/MAX mirrors,PASS,points=311
+seed2024 diag time/train_s: finite,PASS,nonfinite=0
+seed2024 diag time/train_s: MIN/MAX mirrors,PASS,points=311
+time/train_s: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+train/loss_step: exact step grid,PASS,"rows=310, first=[20, 40], last=[6180, 6200]"
+seed2025 diag train/loss_step: finite,PASS,nonfinite=0
+seed2025 diag train/loss_step: MIN/MAX mirrors,PASS,points=310
+seed2025 none train/loss_step: finite,PASS,nonfinite=0
+seed2025 none train/loss_step: MIN/MAX mirrors,PASS,points=310
+seed2025 block4 train/loss_step: finite,PASS,nonfinite=0
+seed2025 block4 train/loss_step: MIN/MAX mirrors,PASS,points=310
+seed2025 muon train/loss_step: finite,PASS,nonfinite=0
+seed2025 muon train/loss_step: MIN/MAX mirrors,PASS,points=310
+seed2024 muon train/loss_step: finite,PASS,nonfinite=0
+seed2024 muon train/loss_step: MIN/MAX mirrors,PASS,points=310
+seed2024 block4 train/loss_step: finite,PASS,nonfinite=0
+seed2024 block4 train/loss_step: MIN/MAX mirrors,PASS,points=310
+seed2024 none train/loss_step: finite,PASS,nonfinite=0
+seed2024 none train/loss_step: MIN/MAX mirrors,PASS,points=310
+seed2024 diag train/loss_step: finite,PASS,nonfinite=0
+seed2024 diag train/loss_step: MIN/MAX mirrors,PASS,points=310
+train/loss_step: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+val/loss: exact step grid,PASS,"rows=63, first=[0, 100], last=[6100, 6200]"
+seed2025 diag val/loss: finite,PASS,nonfinite=0
+seed2025 diag val/loss: MIN/MAX mirrors,PASS,points=63
+seed2025 none val/loss: finite,PASS,nonfinite=0
+seed2025 none val/loss: MIN/MAX mirrors,PASS,points=63
+seed2025 block4 val/loss: finite,PASS,nonfinite=0
+seed2025 block4 val/loss: MIN/MAX mirrors,PASS,points=63
+seed2025 muon val/loss: finite,PASS,nonfinite=0
+seed2025 muon val/loss: MIN/MAX mirrors,PASS,points=63
+seed2024 muon val/loss: finite,PASS,nonfinite=0
+seed2024 muon val/loss: MIN/MAX mirrors,PASS,points=63
+seed2024 block4 val/loss: finite,PASS,nonfinite=0
+seed2024 block4 val/loss: MIN/MAX mirrors,PASS,points=63
+seed2024 none val/loss: finite,PASS,nonfinite=0
+seed2024 none val/loss: MIN/MAX mirrors,PASS,points=63
+seed2024 diag val/loss: finite,PASS,nonfinite=0
+seed2024 diag val/loss: MIN/MAX mirrors,PASS,points=63
+val/loss: exact seed/method coverage,PASS,2024:block4;2024:diag;2024:muon;2024:none;2025:block4;2025:diag;2025:muon;2025:none
+exact nine-metric coverage,PASS,"lr/adamw,lr/matrix,memory/k_state_mib,memory/optimizer_state_mib,memory/peak_allocated_mib,performance/step_avg_ms,time/train_s,train/loss_step,val/loss"
+exact eight-run coverage,PASS,runs=8
+no duplicate seed/method/metric/step grain,PASS,duplicates=0
+seed2024: identical four-method initialization loss,PASS,"10.9462,10.9462,10.9462,10.9462"
+seed2025: identical four-method initialization loss,PASS,"10.9869,10.9869,10.9869,10.9869"
+seed2026: identical four-method initialization loss,PASS,"10.9790,10.9790,10.9790,10.9790"
+seed2024 block4: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2024 diag: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2024 muon: expected formal LR,PASS,"adamw=0.0036, matrix=0.00036"
+seed2024 none: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2025 block4: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2025 diag: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2025 muon: expected formal LR,PASS,"adamw=0.0036, matrix=0.00036"
+seed2025 none: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2026 diag: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2026 block4: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2026 none: expected formal LR,PASS,"adamw=0.004, matrix=0.0004"
+seed2026 muon: expected formal LR,PASS,"adamw=0.0036, matrix=0.00036"

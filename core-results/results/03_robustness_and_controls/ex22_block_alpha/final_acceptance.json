@@ -1,0 +1,34 @@
+{
+  "checkpoint_transfer": {
+    "partial_checkpoint_fragments_removed_from_preserved_tree": true,
+    "policy": "excluded_by_user_due_size",
+    "remote_checkpoint_count": 8,
+    "scientific_result_blocked": false,
+    "usable_local_checkpoint_count": 0
+  },
+  "controller_batch_id": "20260727T104042+0000",
+  "delivery_status": "accepted_checkpoint_transfer_excluded",
+  "local_artifacts": {
+    "archive_sha256": "4b759292859e1bae6f6245879ef12c9cc9097de94f44d4b17725c604b9c5952c",
+    "checks": 327,
+    "failed_checks": 0,
+    "formal_runs": 8,
+    "manifest": "local_artifact_review/local_artifact_audit_manifest.json",
+    "passed": true,
+    "smoke_runs": 8
+  },
+  "required_caveats": [
+    "Seed2026 is exploratory and is not an independent confirmatory seed.",
+    "Concurrent-node timing is ineligible for paper efficiency claims.",
+    "The eight remote step-6200 checkpoints were not transferred because of size; no local checkpoint-replay claim is made."
+  ],
+  "schema_version": 1,
+  "scientific_classification": "strong_confirmatory_support",
+  "scientific_evidence_accepted": true,
+  "wandb_exports": {
+    "checks": 351,
+    "failed_checks": 0,
+    "new_formal_runs": 8,
+    "passed": true
+  }
+}

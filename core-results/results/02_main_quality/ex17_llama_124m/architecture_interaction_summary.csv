@@ -1,0 +1,4 @@
+estimand,mean,sd,n,ci95_low,ci95_high
+LLaMA(diag-none) mean,-4.66506666667e-05,0.00129251058976,3,,
+GPT(diag-none) mean,-0.00556666666667,0.000513160143945,3,,
+architecture interaction: LLaMA-GPT,0.005520016,0.000780390281399,3,0.00358141907211,0.00745861292789

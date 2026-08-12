@@ -1,0 +1,17 @@
+{
+  "claim_eligible": true,
+  "dry_run": false,
+  "mdp_manifest": true,
+  "outputs": {},
+  "refresh_enabled": false,
+  "schema_version": "mdp_local_pipeline_run_v1",
+  "stage_manifest_sha256": {
+    "complexity\\routing_complexity_manifest.json": "0cc8e9a45d4a7246a52a46e9dc64fd9918ae4ead3ebae92cf4ac07cee4714e58",
+    "cross_scale\\cross_scale_analysis_manifest.json": "fa450211332c0364a5808eda29e93ecc1025822e08a82c9682df1e73901788e3",
+    "equivariance\\route_equivariance_manifest.json": "8c8ac340d0cd21bccc4caa7ad0b867145c1c832f55f82315c3714ebec201a040",
+    "evidence\\evidence_ledger_manifest.json": "6a3587ea2811a31b5e7916edd89ed00ff54f65f409e267728f48e35a27f5c770",
+    "figures\\submission_tables_figures_manifest.json": "61007825a70e22037dfd8b8f61d9d747dcb05617b21071c66b3d0ff15ef8d0c0"
+  },
+  "status": "passed",
+  "synthetic": false
+}

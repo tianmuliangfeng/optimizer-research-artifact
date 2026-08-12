@@ -1,0 +1,88 @@
+{
+  "experiment": 45,
+  "family": "45_r1_mousse_strong_baseline",
+  "protocol_version": "mousse_r1_controlled_v1",
+  "adaptation_label": "Mousse-R1 adaptation",
+  "unchanged_official_reproduction": false,
+  "paper": {
+    "title": "Mousse: Rectifying the Geometry of Muon with Curvature-Aware Preconditioning",
+    "arxiv": "https://arxiv.org/abs/2603.09697v2",
+    "version": "v2"
+  },
+  "upstream": {
+    "repository": "https://github.com/Anti-Entrophic/Mousse",
+    "commit": "d00c1bf17790fbe56424ee5567cce80d8e75f4b2",
+    "commit_date": "2026-04-01T14:08:19+08:00",
+    "license": "MIT",
+    "retrieved_on": "2026-07-31",
+    "sha256": {
+      "LICENSE": "4d86e78ca5fca585db157b58577bd4123242337018d63f81747e4d1ae3d39989",
+      "README.md": "4b3ee944724cafd28d2265ae76ccc4bccc15e4bfd2af98ee6d0c2763b24b0c83",
+      "dion/dion/mousse.py": "29cddc3b76e8beeacb973511f71b43e4152f1f203d4eb5c66ba3012002e6d149",
+      "dion/configs/mousse_160m.yaml": "93021531ca43b9a8eddb7cdda142ef6cb443407683067caaf56df48ade5f18d7",
+      "dion/dion/newton_schulz_triton.py": "036bcd7ec21da3466245bfb062b426bf11fed07aaadd76bf7945c85d53be7383"
+    }
+  },
+  "r1_scaffold": {
+    "repository": "https://github.com/KellerJordan/modded-nanogpt",
+    "commit": "df78af0db523d8bceb25af4919a3e3e7082b80f3",
+    "base_script": "train_gpt_muon_1.py",
+    "base_canonical_sha256": "8e3e990a9a010a9f8ddee0e6d111ac7b83acedc7f41d2d3370de5f404c9aab59",
+    "model": {"parameters_label": "124M", "layers": 12, "heads": 12, "embedding_dim": 768},
+    "data": "FineWeb10B pinned R1 shards and order",
+    "global_batch_sequences": 512,
+    "device_batch_sequences": 64,
+    "sequence_length": 1024,
+    "tokens_per_update": 524288,
+    "formal_updates": 6200,
+    "formal_tokens": 3250585600,
+    "warmup_updates": 0,
+    "formal_terminal_warmdown_updates": 1800,
+    "validation_every_updates": 100,
+    "validation_tokens": 10485760,
+    "auxiliary_route": "tied embedding/lm_head only",
+    "auxiliary_optimizer": "fused AdamW",
+    "auxiliary_lr": 0.0036,
+    "auxiliary_betas": [0.9, 0.95],
+    "auxiliary_weight_decay": 0.0,
+    "packed_qkv": "split into Q, K, V logical 768x768 matrices"
+  },
+  "mousse_hidden_update": {
+    "momentum": 0.95,
+    "nesterov": false,
+    "matrix_weight_decay": 0.01,
+    "factor_beta": 0.95,
+    "factor_epsilon": 0.00001,
+    "factor_alpha": 0.125,
+    "refresh_interval": 10,
+    "refresh_steps_one_based": [1, 11, 21],
+    "bias_correction": true,
+    "trace_normalization": true,
+    "double_sided": true,
+    "grafting": true,
+    "adjust_lr": "spectral_norm",
+    "newton_schulz_epsilon": 1e-8,
+    "state_dtype": "float32 (model/momentum dtype follows R1 master parameters)",
+    "activation_k_state_routes": 0
+  },
+  "pilot": {
+    "seed": 2026,
+    "updates": 1000,
+    "matrix_lr_mapping": "0.06 * (R1 global batch 512 / upstream global batch 2048)",
+    "center_matrix_lr": 0.015,
+    "matrix_lr_multipliers": [0.8, 1.0, 1.2],
+    "matrix_lrs": [0.012, 0.015, 0.018],
+    "selection_endpoint": "step-1000 validation loss",
+    "center_tie_margin": 0.002,
+    "all_other_mousse_hyperparameters_frozen": true
+  },
+  "formal": {
+    "seeds": [2026, 2024, 2025],
+    "single_pilot_selected_matrix_lr": true,
+    "updates": 6200,
+    "terminal_warmdown_updates": 1800,
+    "minimum_exact_shape_smoke_updates": 34,
+    "timing_eligible": false,
+    "local_artifact_before_wandb": true
+  }
+}

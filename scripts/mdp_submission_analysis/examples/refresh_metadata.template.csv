@@ -1,0 +1,4 @@
+unit_id,origin,replica,stage,module_id,layer_index,refresh_event_step,source_method,checkpoint_step,gradient_semantics,ridge_before,ridge_after
+early_muon_replica0_layer0_event32,early_muon,0,early,layers.0.down_input,0,32,muon,1000,pre_polar_optimizer_input,__REPLACE__,__REPLACE__
+early_muon_replica1_layer0_event32,early_muon,1,early,layers.0.down_input,0,32,muon,1000,pre_polar_optimizer_input,__REPLACE__,__REPLACE__
+early_muon_replica2_layer0_event32,early_muon,2,early,layers.0.down_input,0,32,muon,1000,pre_polar_optimizer_input,__REPLACE__,__REPLACE__

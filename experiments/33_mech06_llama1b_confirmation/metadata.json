@@ -1,0 +1,35 @@
+{
+  "code_directory": "scripts/33_mech06_llama1b_confirmation",
+  "default_entrypoint": "command:20260727_mech06_llama1b_confirmation",
+  "entrypoints": {
+    "command:20260727_mech06_llama1b_confirmation": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/33_mech06_llama1b_confirmation/20260727_mech06_llama1b_confirmation.sh"
+    },
+    "script:run_mech06": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/33_mech06_llama1b_confirmation/run_mech06.py"
+    }
+  },
+  "experiment_id": "33_mech06_llama1b_confirmation",
+  "legacy_result_roots": [
+    "33_mech06_llama1b_confirmation"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "33 Mech06 Llama1B Confirmation"
+}

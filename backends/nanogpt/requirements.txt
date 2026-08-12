@@ -1,0 +1,5 @@
+numpy
+requests
+wandb
+datasets
+tiktoken

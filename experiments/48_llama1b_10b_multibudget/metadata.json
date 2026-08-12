@@ -1,0 +1,64 @@
+{
+  "code_directory": "scripts/48_llama1b_10b_multibudget",
+  "default_entrypoint": "command:reproduce_full",
+  "entrypoints": {
+    "command:20260805_ex48_llama1b_10b_multibudget": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX48_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "resume"
+          ],
+          "env": {
+            "EX48_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/48_llama1b_10b_multibudget/20260805_ex48_llama1b_10b_multibudget.sh"
+    },
+    "command:reproduce_full": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/48_llama1b_10b_multibudget/reproduce_full.sh"
+    },
+    "script:audit_received_results": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/48_llama1b_10b_multibudget/audit_received_results.py"
+    },
+    "script:run_formal": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/48_llama1b_10b_multibudget/run_formal.py"
+    }
+  },
+  "experiment_id": "48_llama1b_10b_multibudget",
+  "legacy_result_roots": [
+    "48_llama1b_10b_multibudget"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": true,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "48 Llama1B 10B Multibudget"
+}

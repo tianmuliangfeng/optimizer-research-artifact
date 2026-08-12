@@ -1,0 +1,3 @@
+method,run_name,initial_val_loss,final_val_loss,best_val_loss,final_perplexity,normalized_val_auc,train_time_s,final_step_avg_ms,max_adamw_lr,max_matrix_lr,official_reference_final_val_loss,final_val_loss_minus_reference,official_reference_train_time_s,train_time_s_minus_reference
+muon,mainconf_official_r0_validated_20260718_official_muon_1_formal_20260718T081706+0000,11.0915,3.277,3.277,26.496164853250153,3.6348088709677415,7231.026,1172.35,0.0036,0.00036,3.2793,-0.0022999999999999687,7314.1,-83.07400000000052
+newton_muon_block4,mainconf_official_r0_validated_20260718_official_newton_muon_1_block4_formal_20260718T081706+0000,10.9962,3.2638,3.2638,26.148713699776266,3.619661290322581,7362.329,1193.63,0.004,0.0004,3.2611,0.0026999999999999247,7443.3,-80.97100000000046

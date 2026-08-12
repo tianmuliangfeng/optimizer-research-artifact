@@ -1,0 +1,10 @@
+seed,comparison,left_lower_points,ties,validation_points_excluding_step0,persistent_left_lead_start
+2024,diag_minus_block4,57,0,62,600.0
+2024,diag_minus_none,62,0,62,100.0
+2024,block4_minus_none,62,0,62,100.0
+2025,diag_minus_block4,57,0,62,600.0
+2025,diag_minus_none,62,0,62,100.0
+2025,block4_minus_none,62,0,62,100.0
+2026,diag_minus_block4,53,1,62,1000.0
+2026,diag_minus_none,62,0,62,100.0
+2026,block4_minus_none,62,0,62,100.0

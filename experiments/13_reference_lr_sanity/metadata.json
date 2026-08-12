@@ -1,0 +1,29 @@
+{
+  "code_directory": "scripts/13_reference_lr_sanity",
+  "default_entrypoint": "script:run_reference_lr_sanity",
+  "entrypoints": {
+    "script:run_reference_lr_sanity": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/13_reference_lr_sanity/run_reference_lr_sanity.py"
+    }
+  },
+  "experiment_id": "13_reference_lr_sanity",
+  "legacy_result_roots": [
+    "13_reference_lr_sanity"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "13 Reference Lr Sanity"
+}

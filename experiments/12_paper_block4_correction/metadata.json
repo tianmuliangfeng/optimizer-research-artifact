@@ -1,0 +1,29 @@
+{
+  "code_directory": "scripts/12_paper_block4_correction",
+  "default_entrypoint": "script:run_paper_block4_correction",
+  "entrypoints": {
+    "script:run_paper_block4_correction": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/12_paper_block4_correction/run_paper_block4_correction.py"
+    }
+  },
+  "experiment_id": "12_paper_block4_correction",
+  "legacy_result_roots": [
+    "12_paper_block4_correction"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "12 Paper Block4 Correction"
+}

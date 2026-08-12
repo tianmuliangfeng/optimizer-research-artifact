@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "all_json_parse": true,
+    "experiment_lineage_bound": true,
+    "json_present": true,
+    "legacy_result_root_match": true,
+    "run_dir_within_results_root": true,
+    "sealed_snapshot_declared": true,
+    "sealed_snapshot_required": false,
+    "sealed_snapshot_requirement_satisfied": true,
+    "source_snapshot_manifest_present": true,
+    "source_snapshot_manifests": true
+  },
+  "experiment_id": "48_llama1b_10b_multibudget",
+  "json_errors": [],
+  "json_file_count": 320,
+  "lineage": {
+    "experiment_id": "48_llama1b_10b_multibudget",
+    "matched_legacy_result_root": "48_llama1b_10b_multibudget",
+    "snapshot_manifest_match": true
+  },
+  "passed": true,
+  "results_root": ".",
+  "run_dir": "48_llama1b_10b_multibudget/20260805T061608+0000",
+  "schema_version": "selective_newton_muon_archive_verify_v1",
+  "source_snapshot_manifest_count": 1,
+  "source_snapshot_manifests": [
+    {
+      "checked_files": 10,
+      "errors": [],
+      "experiment_lineage_match": true,
+      "mapping": "files",
+      "passed": true,
+      "path": "source_snapshot/source_snapshot_manifest.json"
+    }
+  ],
+  "verification_scope": "recursive JSON syntax and sealed source-snapshot hashes; experiment-native scientific gates require native-verify"
+}

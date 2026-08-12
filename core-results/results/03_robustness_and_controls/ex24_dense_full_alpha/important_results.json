@@ -1,0 +1,56 @@
+{
+  "classification": "strong_confirmatory_support",
+  "delivery_status": "wandb_complete_local_artifacts_pending",
+  "dense_alpha0_vs_efficient_diag_gate_passed": true,
+  "descriptive_three_seed_aggregate": {
+    "lowest_mean_final_alpha": 0.5,
+    "lowest_mean_final_loss": 3.259733333333333,
+    "warning": "Do not claim universal alpha=0.5 optimality."
+  },
+  "failed_checks": [],
+  "local_artifacts_needed": "run/smoke manifests and dense diagnostic refresh audits for the seed2024/2025 confirmatory batches",
+  "local_artifacts_verified": false,
+  "memory": {
+    "alpha_dependent_difference_observed": false,
+    "k_state_mib": 1026.0,
+    "optimizer_state_mib": 1644.4746131896973,
+    "peak_allocated_mib_per_process": 40788.0
+  },
+  "primary_test": {
+    "all_three_seed_curvatures_negative": true,
+    "definition": "L(alpha=0.5)-0.5*(L(alpha=0)+L(alpha=1)) at validation step6200",
+    "per_seed": [
+      {
+        "alpha0p50_beats_both_endpoints_final": true,
+        "alpha0p50_minus_alpha0_final": -0.001100000000000101,
+        "alpha0p50_minus_alpha1_final": -0.002200000000000202,
+        "final_curvature_c": -0.0016500000000001513,
+        "seed": 2024
+      },
+      {
+        "alpha0p50_beats_both_endpoints_final": true,
+        "alpha0p50_minus_alpha0_final": -0.0014999999999996128,
+        "alpha0p50_minus_alpha1_final": -0.0022999999999999687,
+        "final_curvature_c": -0.0018999999999995687,
+        "seed": 2025
+      },
+      {
+        "alpha0p50_beats_both_endpoints_final": true,
+        "alpha0p50_minus_alpha0_final": -0.0019000000000000128,
+        "alpha0p50_minus_alpha1_final": -0.0027999999999996916,
+        "final_curvature_c": -0.002349999999999852,
+        "seed": 2026
+      }
+    ],
+    "strict_new_seed_confirmation_passed": true
+  },
+  "schema_version": 1,
+  "script_version": "2026-07-29.1",
+  "timing_eligible": false,
+  "topology": {
+    "eligible_cells": 12,
+    "material_effect_cells": 0,
+    "material_effect_records": []
+  },
+  "wandb_audit_passed": true
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": 5,
+  "experiment": 49,
+  "family": "49_r1_malt_strong_baseline",
+  "frozen_at": "2026-08-09",
+  "purpose": "Fresh V4 focused-grid 124M R1 comparison of independently implemented MALT and MALTER-Eq17 with frozen R1 controls",
+  "provenance": {
+    "paper": "MALT: Lightweight Curvature-Aware Muon via Diagonal Preconditioning",
+    "arxiv_id": "2608.05088v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.05088",
+    "algorithm_source": "Algorithms 1-2, Equation (17), Appendix C",
+    "official_code_public_at_freeze": false,
+    "implementation_label": "paper-derived independent implementation",
+    "unchanged_official_reproduction": false
+  },
+  "paper_ambiguities": {
+    "newton_schulz_details_disclosed": false,
+    "packed_qkv_policy_disclosed": false,
+    "weight_decay_order_disclosed": false,
+    "malter_state_symbol": "Algorithm 2 mixes v and nu",
+    "malter_learning_rate": "Algorithm 2 prints eta inside alpha and multiplies by eta again; Equation (17) and prose define alpha without eta",
+    "malter_resolution": "Use Equation (17), exactly one outer eta, and label the arm MALTER-Eq17-R1 adaptation"
+  },
+  "pilot_amendment": {
+    "protocol_revision": "historical v2 post-v1-upper-boundary extension retained inside v3",
+    "trigger_run_id": "20260807T053222+0000",
+    "trigger_scope": "partial-v1 observation containing the six completed MALT cells; no complete v1 aggregate selection certificate was claimed",
+    "trigger": "The raw MALT step-1000 optimum among the original paper-grid cells was the frozen upper endpoint 0.0032",
+    "decision_frozen_before_v2_outcomes": true,
+    "new_learning_rates": [0.004, 0.005, 0.0064, 0.008],
+    "fresh_full_rerun": true,
+    "old_v1_artifacts_merged": false,
+    "nonfinite_policy": "Any non-finite or otherwise invalid pilot cell remains a failed hard gate and blocks formal selection; no infinite-loss imputation is allowed"
+  },
+  "formal_scope_amendment": {
+    "protocol_revision": "v3 dual-method formal confirmation",
+    "trigger_run_id": "20260807T053222+0000",
+    "trigger_evidence": "The complete accepted v1 pilot found an internal MALTER-Eq17 endpoint optimum at lr=0.015 while the MALT optimum remained at its then-upper boundary 0.0032",
+    "decision": "Rerun the complete 16-cell pilot under one fresh source/runtime/init lineage, select MALT and MALTER-Eq17 independently, and run three formal seeds for both methods",
+    "decision_frozen_before_v3_outcomes": true,
+    "fresh_full_rerun": true,
+    "old_v1_or_v2_artifacts_merged": false,
+    "claim_boundary": "MALTER formal evidence applies only to the Equation-(17), single-outer-eta R1 adaptation and is not an official MALTER reproduction"
+  },
+  "v4_focused_grid_amendment": {
+    "protocol_revision": "v4 fresh focused MALT upper-grid rerun with dual-method formal confirmation",
+    "trigger_run_id": "20260807T104741+0000",
+    "trigger_selection_sha256": "97685f123ed5f50aaf12bfe0eb1bbd11b29ec1a60365f7712078e1e01a86fe3a",
+    "trigger_evidence": "The complete accepted V3 pilot had MALT lr=0.0080 as the unique upper-boundary step-1000 optimum (3.7759 versus 3.7907 at lr=0.0064), while MALTER-Eq17 had the internal optimum lr=0.0150",
+    "decision": "Start one fresh V4 lineage; discard the already dominated lower MALT grid, retain lr=0.0064 and lr=0.0080 as lower anchors, add lr=0.0090, 0.0100, 0.0125, and 0.0160, rerun the original six-point MALTER-Eq17 grid, and select each method independently",
+    "decision_frozen_before_v4_outcomes": true,
+    "fresh_full_rerun": true,
+    "old_v1_v2_v3_artifacts_merged": false,
+    "malt_removed_as_already_screened": [0.0005, 0.0009, 0.0013, 0.0018, 0.0025, 0.0032, 0.004, 0.005],
+    "malt_retained_anchors": [0.0064, 0.008],
+    "malt_new_learning_rates": [0.009, 0.01, 0.0125, 0.016],
+    "malter_grid_changed": false,
+    "nonfinite_policy": "Any non-finite or otherwise invalid pilot cell remains a failed hard gate and blocks formal selection; no infinite-loss imputation is allowed"
+  },
+  "r1_environment": {
+    "official_commit": "df78af0db523d8bceb25af4919a3e3e7082b80f3",
+    "official_script": "train_gpt_muon_1.py",
+    "official_script_canonical_sha256": "8e3e990a9a010a9f8ddee0e6d111ac7b83acedc7f41d2d3370de5f404c9aab59",
+    "model": "GPT-2-like 12-layer 12-head 768-wide 124M R1",
+    "dataset": "FineWeb10B frozen R1 shards/order",
+    "training_runtime": {
+      "python": "3.10.12",
+      "torch": "2.8.0+cu126",
+      "torch_cuda": "12.6",
+      "triton": "3.4.0",
+      "numpy": "2.2.6"
+    },
+    "train_shard_selection": "exactly fineweb_train_000001.bin through fineweb_train_000050.bin in lexical/index order",
+    "validation_shard_selection": "exactly fineweb_val_000000.bin",
+    "data_content_gate": "full SHA-256 and byte-size inventory is frozen before preflight and rehashed before every suite stage; later Experiment-48 shards are ignored",
+    "global_batch_sequences": 512,
+    "device_batch_sequences": 64,
+    "sequence_length": 1024,
+    "tokens_per_step": 524288,
+    "formal_steps": 6200,
+    "formal_tokens": 3250585600,
+    "formal_warmdown_steps": 1800,
+    "validation_every_steps": 100,
+    "validation_tokens": 10485760,
+    "formal_seeds": [2024, 2025, 2026],
+    "hidden_parameter_tensors": 48,
+    "packed_qkv_tensors": 12,
+    "logical_hidden_matrices": 72,
+    "auxiliary_route": "tied embedding/lm_head fused AdamW, lr=0.0036, betas=(0.9,0.95), weight_decay=0",
+    "timing_from_quality_runs_claim_eligible": false
+  },
+  "optimizer": {
+    "beta1": 0.95,
+    "beta2": 0.99,
+    "epsilon": 1e-8,
+    "matrix_weight_decay": 0.1,
+    "weight_decay_order": "decoupled W *= (1 - lr_t * wd) before additive Algorithm-1 update",
+    "momentum_bias_correction": false,
+    "row_column_bias_correction": false,
+    "nesterov": false,
+    "left_right_exponent": -0.125,
+    "statistics": "per-optimizer-step row/column sums of squared final accumulated raw gradients",
+    "orthogonalization": "pinned R1 Newton-Schulz backend, 5 iterations; an R1 adaptation choice rather than a disclosed MALT setting",
+    "packed_qkv": "split Q/K/V into three independent logical matrices",
+    "r1_dimension_scale": false,
+    "activation_k_state_routes": 0
+  },
+  "pilot": {
+    "protocol": "malt_r1_focused_grid_pilot_v4",
+    "seed": 2026,
+    "steps": 1000,
+    "selection_endpoint": "step-1000 validation loss",
+    "loss_reporting_precision_decimals": 4,
+    "boundary_tie_policy": "any frozen boundary cell tied at the recorded minimum blocks formal",
+    "method_selection_policies": {
+      "malt": "raw_endpoint_best",
+      "malter_eq17": "paper_center_within_best_plus_0.002"
+    },
+    "malt": {
+      "cells": [0.0064, 0.008, 0.009, 0.01, 0.0125, 0.016],
+      "execution_order": [0.016, 0.0125, 0.01, 0.009, 0.008, 0.0064],
+      "paper_center": null,
+      "center_tie_margin": null,
+      "selection_policy": "Rank by recorded step-1000 endpoint loss, then lower matrix LR, then cell ID; select the first non-boundary result with no legacy paper-center preference because the paper center is outside the focused V4 grid",
+      "formal_eligible": true,
+      "boundary_rule": "Validation loss is reported to four decimals; if either endpoint 0.0064 or 0.016 is among the cells tied at the recorded minimum, block formal and require a separately frozen directional grid amendment"
+    },
+    "malter_eq17": {
+      "cells": [0.007, 0.009, 0.012, 0.015, 0.018, 0.025],
+      "execution_order": [0.007, 0.009, 0.012, 0.015, 0.018, 0.025],
+      "paper_center": 0.012,
+      "center_tie_margin": 0.002,
+      "selection_policy": "Prefer the paper center only when its recorded endpoint is within 0.002 of the raw endpoint best",
+      "formal_eligible": true,
+      "role": "independently selected supporting formal baseline under the Equation-(17), single-eta interpretation",
+      "boundary_rule": "Validation loss is reported to four decimals; if either endpoint 0.007 or 0.025 is among the cells tied at the recorded minimum, block the complete dual-method formal panel and require a separately frozen directional grid amendment"
+    },
+    "total_cells": 12,
+    "selection_protocol": "malt_r1_focused_grid_selection_v4",
+    "analysis_protocol": "malt_r1_pilot_analysis_v4",
+    "grid_design": "fresh_v4_focused_malt_upper_grid_dual_method",
+    "method_coverage": "6 focused MALT formal-candidate cells plus 6 MALTER-Eq17 formal-candidate cells",
+    "panel_gate": "Both methods must obtain an internal, analyzer-certified selection; either boundary result blocks the complete formal panel"
+  },
+  "formal": {
+    "protocol": "malt_r1_selected_6200step_v4",
+    "methods": ["malt", "malter_eq17"],
+    "adaptation_labels": ["MALT-R1 adaptation", "MALTER-Eq17-R1 adaptation"],
+    "requires_complete_pilot": true,
+    "requires_dual_method_selection_certificate": true,
+    "requires_same_seed_exact_shape_smoke": true,
+    "requires_final_checkpoint": true,
+    "formal_unit_count": 6,
+    "analysis_protocol": "malt_r1_ten_method_analysis_v4",
+    "analysis_method_count": 10,
+    "analysis_run_row_count": 30,
+    "analysis_paired_contrast_count": 11,
+    "resume_policy": "reuse locally accepted units and retry upload; incomplete training starts a new attempt"
+  },
+  "historical_control_inputs": {
+    "experiment45_eight_method_summary_sha256": "eda9ba780c934230c641e74c295c59c5105c384d8b5decff4623926fbec5627b",
+    "experiment45_analysis_manifest_sha256": "7e7893d37c4049f327f2da2d4b8d30c8be012f02de614a7504e7b3f384761b59"
+  },
+  "expected_state": {
+    "hidden_momentum_elements_fp32": 84934656,
+    "hidden_momentum_bytes": 339738624,
+    "malt_row_column_elements_fp32": 165888,
+    "malt_row_column_bytes": 663552,
+    "malt_hidden_tensor_state_bytes": 340402176,
+    "malter_additional_scalar_count": 72,
+    "malter_hidden_tensor_state_bytes": 340402464
+  },
+  "claim_boundaries": {
+    "may_claim": [
+      "controlled performance of a paper-derived MALT-R1 adaptation after all formal gates pass",
+      "controlled performance of a paper-derived MALTER-Eq17 single-eta R1 adaptation after all formal gates pass",
+      "state and quality comparisons inside the frozen R1 environment"
+    ],
+    "must_not_claim": [
+      "official MALT reproduction",
+      "author-code equivalence",
+      "official MALTER reproduction or equivalence to the paper authors' undisclosed implementation",
+      "paper-grade wall-clock speedup from concurrent quality runs",
+      "cross-paper comparison of absolute validation loss"
+    ]
+  }
+}

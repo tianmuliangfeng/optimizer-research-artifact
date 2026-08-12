@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-07-30",
+  "run_id": "20260729T105505+0000",
+  "archive_sha256": "66786b5bd7f44fddb0eef16b0c132439d47d3a875337ff52e66c06a69e6afede",
+  "data_quality_status": "ready_to_cite_with_scope_caveats",
+  "evidence_class": "paper_grade_single_host_isolated_throughput_and_memory",
+  "method_summary": [
+    {
+      "method": "muon",
+      "paper_role": "Muon baseline",
+      "technical_repeats": 4,
+      "median_step_ms": 7320.651253859978,
+      "mean_steps_per_s": 0.1366051239586053,
+      "mean_tokens_per_s": 71620.42723000926,
+      "median_tokens_per_s": 71617.67451037491,
+      "tokens_per_s_cv_pct": 0.1109911328854279,
+      "timed_peak_allocated_mib": 26906.24609375,
+      "timed_peak_reserved_mib": 27930.0,
+      "k_state_mib": 0.0,
+      "optimizer_state_mib": 4259.843894958496
+    },
+    {
+      "method": "newton_full",
+      "paper_role": "full-K Newton-Muon-family LLaMA control",
+      "technical_repeats": 4,
+      "median_step_ms": 7731.66840666272,
+      "mean_steps_per_s": 0.12930335723870343,
+      "mean_tokens_per_s": 67792.19855996534,
+      "median_tokens_per_s": 67810.46170230748,
+      "tokens_per_s_cv_pct": 0.06245030606622991,
+      "timed_peak_allocated_mib": 35982.28076171875,
+      "timed_peak_reserved_mib": 36956.0,
+      "k_state_mib": 5888.25,
+      "optimizer_state_mib": 10148.093894958496
+    },
+    {
+      "method": "down_none",
+      "paper_role": "Selective-none",
+      "technical_repeats": 4,
+      "median_step_ms": 7432.820795012958,
+      "mean_steps_per_s": 0.13453468948262245,
+      "mean_tokens_per_s": 70534.92327946516,
+      "median_tokens_per_s": 70536.88203310905,
+      "tokens_per_s_cv_pct": 0.05012807383350542,
+      "timed_peak_allocated_mib": 29559.7724609375,
+      "timed_peak_reserved_mib": 30544.0,
+      "k_state_mib": 1728.0,
+      "optimizer_state_mib": 5987.843894958496
+    },
+    {
+      "method": "down_diag",
+      "paper_role": "Selective-diag",
+      "technical_repeats": 4,
+      "median_step_ms": 7435.941867837755,
+      "mean_steps_per_s": 0.1344820573081617,
+      "mean_tokens_per_s": 70507.32886198148,
+      "median_tokens_per_s": 70507.28390391599,
+      "tokens_per_s_cv_pct": 0.05170669905230752,
+      "timed_peak_allocated_mib": 29560.9150390625,
+      "timed_peak_reserved_mib": 30546.0,
+      "k_state_mib": 1728.755859375,
+      "optimizer_state_mib": 5988.599754333496
+    }
+  ],
+  "primary_tokens_per_s_contrasts": [
+    {
+      "candidate": "down_none",
+      "reference": "muon",
+      "paired_mean_relative_pct": -1.5155690224159883,
+      "descriptive_t_ci95_pct": [
+        -1.6552510885341194,
+        -1.3758869562978573
+      ]
+    },
+    {
+      "candidate": "down_none",
+      "reference": "newton_full",
+      "paired_mean_relative_pct": 4.045791072026711,
+      "descriptive_t_ci95_pct": [
+        3.996711949457285,
+        4.094870194596138
+      ]
+    },
+    {
+      "candidate": "down_diag",
+      "reference": "muon",
+      "paired_mean_relative_pct": -1.5540476152511058,
+      "descriptive_t_ci95_pct": [
+        -1.7847189253642157,
+        -1.3233763051379959
+      ]
+    },
+    {
+      "candidate": "down_diag",
+      "reference": "newton_full",
+      "paired_mean_relative_pct": 4.005092876782634,
+      "descriptive_t_ci95_pct": [
+        3.920151307870025,
+        4.0900344456952435
+      ]
+    },
+    {
+      "candidate": "newton_full",
+      "reference": "muon",
+      "paired_mean_relative_pct": -5.345088337957654,
+      "descriptive_t_ci95_pct": [
+        -5.514547497581901,
+        -5.175629178333407
+      ]
+    }
+  ],
+  "selective_vs_full_k_state_and_memory": {
+    "down_none": {
+      "k_state_reduction_mib": 4160.25,
+      "k_state_reduction_pct": 70.65341994650363,
+      "optimizer_state_reduction_pct": 40.99538339970212,
+      "timed_peak_allocated_reduction_mib": 6422.50830078125,
+      "timed_peak_allocated_reduction_pct": 17.849086174698805,
+      "timed_peak_reserved_reduction_mib": 6412.0,
+      "timed_peak_reserved_reduction_pct": 17.350362593354262
+    },
+    "down_diag": {
+      "k_state_reduction_mib": 4159.494140625,
+      "k_state_reduction_pct": 70.64058320596102,
+      "optimizer_state_reduction_pct": 40.98793511056701,
+      "timed_peak_allocated_reduction_mib": 6421.36572265625,
+      "timed_peak_allocated_reduction_pct": 17.84591078364295,
+      "timed_peak_reserved_reduction_mib": 6410.0,
+      "timed_peak_reserved_reduction_pct": 17.344950752245914
+    }
+  },
+  "selective_vs_muon_memory_overhead": {
+    "down_none": {
+      "timed_peak_allocated_overhead_pct": 9.862120334221892,
+      "timed_peak_reserved_overhead_pct": 9.359112065878982,
+      "optimizer_state_overhead_pct": 40.56486675591751
+    },
+    "down_diag": {
+      "timed_peak_allocated_overhead_pct": 9.866366850517828,
+      "timed_peak_reserved_overhead_pct": 9.366272824919442,
+      "optimizer_state_overhead_pct": 40.5826105839459
+    }
+  },
+  "secondary_diag_vs_none": {
+    "comparison_role": "secondary_ablation_only",
+    "tokens_per_s_relative_pct_diag_vs_none": -0.03910632314111373,
+    "descriptive_t_ci95_pct": [
+      -0.14273881127340082,
+      0.06452616499117336
+    ],
+    "interpretation": "No practically distinguishable throughput difference."
+  },
+  "supported_claim": "On one isolated H100 under the frozen LLaMA-1B benchmark, both Selective methods are about 4.0% faster than the full-K Newton-Muon-family LLaMA control while reducing K-state by about 70.65% and timed allocated peak by about 17.85%; both remain about 1.5% slower than Muon.",
+  "forbidden_claims": [
+    "Experiment 42 establishes optimizer-quality rankings.",
+    "Selective methods are faster or smaller than Muon.",
+    "newton_full is an upstream official Newton-Muon LLaMA baseline.",
+    "The single-host technical-repeat confidence intervals generalize across hardware.",
+    "Raw experiment-42 throughput is directly comparable to experiment 39."
+  ],
+  "checkpoint_required_for_review": false
+}

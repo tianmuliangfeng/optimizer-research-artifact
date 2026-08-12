@@ -1,0 +1,198 @@
+{
+  "schema_version": "mdp05_confirmatory_update_shock_v1",
+  "status": "frozen_before_pilot_or_formal_outcomes",
+  "experiment": "MDP-05",
+  "experiment_number": 46,
+  "purpose": "Independent held-out confirmation that matched-G and actual NS5 update shocks track refresh-induced short-horizon loss harm.",
+  "source_experiment": {
+    "name": "MECH-09R",
+    "experiment_number": 37,
+    "accepted_run_id": "20260728T075907+0000",
+    "accepted_run_path": "${SNM_RESULTS_ROOT}/37_mech09_downproj_refresh_mediation/20260728T075907+0000",
+    "outcomes_used": false,
+    "checkpoint_certificates_only": true
+  },
+  "source_execution_contract": {
+    "relative_path": "scripts/37_mech09_downproj_refresh_mediation/refresh_mediation_repair_contract.json",
+    "sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+    "public_sha256": "dd934586aef857b5f5425c70226e7226d2427443eb95cd9748f26dc47a44c110",
+    "public_change_scope": "host paths only; scientific fields unchanged",
+    "derived_contract_experiment_field": "MECH-09R",
+    "reason": "The accepted worker has a frozen execution-schema identity; MDP-05 claim identity is sealed by this outer contract."
+  },
+  "design": {
+    "origins": [
+      "early_muon",
+      "early_newton_full",
+      "late_muon",
+      "late_newton_full"
+    ],
+    "formal_data_replicas": [3, 4, 5],
+    "formal_optimizer_step_offsets": [768, 1024, 1280],
+    "formal_build_token_offsets": [6000000, 8000000, 10000000],
+    "formal_eval_token_offsets": [7048576, 9048576, 11048576],
+    "pilot_uses_checkpoint_or_outcome_data": false,
+    "smoke_origin": "early_muon",
+    "smoke_data_replica": 6,
+    "smoke_optimizer_step_offset": 1536,
+    "smoke_build_token_offset": 12000000,
+    "smoke_eval_token_offset": 13048576,
+    "rollout_steps": 80,
+    "evaluation_steps": [0, 16, 32, 48, 64, 80],
+    "production_refresh_interval": 32,
+    "expected_global_refresh_completed_steps": [32, 64],
+    "causal_tree": {
+      "shared_all_end_step": 31,
+      "first_branch_step": 32,
+      "shared_no_down_end_step": 63,
+      "second_branch_step": 64
+    },
+    "arms": {
+      "production_newton_muon": [32, 64],
+      "delayed_down_refresh": [64],
+      "frozen_down_refresh": []
+    },
+    "layer_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+    "old_training_windows": [[0, 128], [256, 384], [512, 640]],
+    "old_build_intervals": [[0, 512], [2000000, 2000512], [4000000, 4000512]],
+    "old_eval_intervals": [[1048576, 1179648], [3048576, 3179648], [5048576, 5179648]]
+  },
+  "event_outcomes": [
+    {
+      "event_id": "production_refresh_32",
+      "trajectory_node": "production",
+      "completed_step": 32,
+      "left_arm": "production_newton_muon",
+      "right_arm": "frozen_down_refresh",
+      "endpoint_step": 48,
+      "auc_steps": [32, 48],
+      "positive_means": "refresh is more harmful"
+    },
+    {
+      "event_id": "delayed_refresh_64",
+      "trajectory_node": "delayed",
+      "completed_step": 64,
+      "left_arm": "delayed_down_refresh",
+      "right_arm": "frozen_down_refresh",
+      "endpoint_step": 80,
+      "auc_steps": [64, 80],
+      "positive_means": "refresh is more harmful"
+    }
+  ],
+  "matrix_contract": {
+    "gradient_shape": [2048, 5504],
+    "target_group_pattern": "layers.{layer}.down_input",
+    "ridge_epsilon": 1e-8,
+    "matched_gradient_semantics": "one raw parameter.grad captured after all accumulation backward calls and before any right preconditioning; the identical tensor is multiplied by the before and after runtime inverse",
+    "historical_momentum_reused_for_both_counterfactual_paths": true,
+    "actual_source_pinned_ns5_required": true
+  },
+  "probe_metrics": {
+    "probe_family": "two independent fixed-seed Rademacher banks",
+    "probe_count": 16,
+    "probe_banks": 2,
+    "power_iterations": 24,
+    "base_seed": 2026080505,
+    "diagnostic_only": true
+  },
+  "precision_calibration": {
+    "mode": "fixed_float64_slice_diagnostic",
+    "outcome_blind_selection": true,
+    "origin": "early_newton_full",
+    "replica": 3,
+    "events": ["production_refresh_32", "delayed_refresh_64"],
+    "layers": [0, 3, 8, 17],
+    "coordinate_count": 128,
+    "gradient_row_count": 128,
+    "seed": 2026080517,
+    "full_5504_float64_required": false,
+    "paper_primary_claim_eligible": false,
+    "warning": "inverse of a principal A slice is not the principal slice of the full inverse"
+  },
+  "hard_gates": {
+    "source_and_checkpoint_hashes_exact": true,
+    "runtime_contract_exact": true,
+    "new_training_and_validation_windows_collision_free": true,
+    "within_replay_branch_restore_exact": true,
+    "all_layer_values_finite": true,
+    "all_18_layers_at_both_events": true,
+    "shadow_applied_gradient_fingerprint_exact": true,
+    "shadow_ns5_input_and_output_fingerprints_exact": true,
+    "covariance_refresh_identity_relative_residual_max": 5e-6,
+    "k_asymmetry_relative_max": 2e-6,
+    "inverse_asymmetry_relative_max": 2e-5,
+    "runtime_inverse_backward_residual_max": 5e-4,
+    "runtime_resolvent_relative_residual_is_hard_gate": false,
+    "runtime_resolvent_relative_residual_reported": true,
+    "cross_process_float_fingerprint_is_hard_gate": false,
+    "growing_worker_log_in_scientific_hashes": false
+  },
+  "primary_mediators": [
+    "matched_g_preconditioned_relative_change_layer_median",
+    "runtime_ns5_update_relative_change_layer_median"
+  ],
+  "secondary_mediators": {
+    "layer_aggregates": ["mean", "p90", "max"],
+    "pooled_metrics": [
+      "matched_g_preconditioned_pooled_fro_ratio",
+      "matched_g_preconditioned_pooled_cosine",
+      "runtime_ns5_update_pooled_fro_ratio",
+      "runtime_ns5_update_pooled_cosine"
+    ],
+    "negative_controls": [
+      "relative_k_fro_change_layer_median",
+      "relative_a_fro_change_layer_median",
+      "relative_runtime_inverse_fro_change_layer_median",
+      "condition_proxy_after_layer_median"
+    ]
+  },
+  "statistics": {
+    "independent_unit": "origin x held-out data replica",
+    "layer_rows_are_nested": true,
+    "primary_statistic": "Spearman rho across 12 units",
+    "within_origin_statistic": "Pearson correlation after subtracting each origin mean",
+    "randomization": "enumerate all 6^4=1296 within-origin outcome permutations; one-sided positive association",
+    "multiplicity": "Holm adjustment across 2 events x 2 primary mediators",
+    "alpha": 0.05,
+    "leave_one_origin_out_required_positive": true,
+    "supportive_auc_not_in_success_gate": true
+  },
+  "success_rule": {
+    "all_scientific_integrity_gates": true,
+    "all_four_primary_spearman_positive": true,
+    "all_four_holm_adjusted_randomization_p_at_most": 0.05,
+    "all_four_within_origin_correlations_positive": true,
+    "all_four_leave_one_origin_out_min_positive": true,
+    "otherwise": "partial_or_failed_as_frozen; no added replicas, variants, optimizers, or MDP-06"
+  },
+  "runtime_contract": {
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "numpy": "2.2.6",
+    "gpu_name_contains": "H100",
+    "compute_capability": [9, 0],
+    "minimum_gpu_memory_bytes": 80000000000,
+    "gpu_count": 2,
+    "cublas_workspace_config": ":4096:8"
+  },
+  "execution": {
+    "formal_units": 12,
+    "maximum_formal_units": 12,
+    "maximum_formal_trajectories": 36,
+    "one_formal_attempt": true,
+    "recoverable_same_contract_resume_only": true,
+    "failed_attempts_never_overwritten": true,
+    "contract_change_requires_new_run_directory": true,
+    "wandb_required": false,
+    "timing_eligible_for_paper": false
+  },
+  "claim_boundary": {
+    "conditional_on_four_accepted_checkpoint_origins": true,
+    "not_independent_training_seeds": true,
+    "mdp04_remains_numeric_gate_failed": true,
+    "mdp04_outcomes_or_metrics_used_for_mdp05_decisions": false,
+    "formal_outcomes_must_not_be_read_before_all_12_units_finish": true
+  }
+}

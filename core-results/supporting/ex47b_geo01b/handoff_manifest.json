@@ -1,0 +1,407 @@
+{
+  "confirmation_authorized": false,
+  "discovery_claim_eligible": false,
+  "files": [
+    {
+      "bytes": 329,
+      "package_bytes": 329,
+      "package_sha256": "4bdbfe85bc5bf2d574cf605961f2f6bac6ee19fe0f3ceb4cfbe59a1df4957a7f",
+      "path": "supporting/ex47b_geo01b/run_identity.json",
+      "sha256": "4bdbfe85bc5bf2d574cf605961f2f6bac6ee19fe0f3ceb4cfbe59a1df4957a7f",
+      "source_bytes": 329,
+      "source_sha256": "4bdbfe85bc5bf2d574cf605961f2f6bac6ee19fe0f3ceb4cfbe59a1df4957a7f"
+    },
+    {
+      "bytes": 297,
+      "package_bytes": 297,
+      "package_sha256": "c650c58d58a9783cf9519ee081f5c262a9449753f6d28577ff0fb6321133a3ce",
+      "path": "supporting/ex47b_geo01b/preflight.json",
+      "sha256": "c650c58d58a9783cf9519ee081f5c262a9449753f6d28577ff0fb6321133a3ce",
+      "source_bytes": 297,
+      "source_sha256": "c650c58d58a9783cf9519ee081f5c262a9449753f6d28577ff0fb6321133a3ce"
+    },
+    {
+      "bytes": 1325,
+      "package_bytes": 1325,
+      "package_sha256": "b150431b438b87406ba12ad97137a15c1560741d0bf0726e8e8ba6d050c5f2e0",
+      "path": "supporting/ex47b_geo01b/runtime_preflight.json",
+      "sha256": "b150431b438b87406ba12ad97137a15c1560741d0bf0726e8e8ba6d050c5f2e0",
+      "source_bytes": 1401,
+      "source_sha256": "9b821b4315c4ecb70e43dcc91eab6e1d31d48d4a75aac9ac40b569f21a1a5908"
+    },
+    {
+      "bytes": 3096,
+      "path": "source_snapshot/source_snapshot_manifest.json",
+      "sha256": "fee8c6b08d00848ef4f5278c81673a0247aabd53215f4e8d8d0fac0e8738af52"
+    },
+    {
+      "bytes": 11417,
+      "package_bytes": 11417,
+      "package_sha256": "bacc3e538f9d89f154fd7aba72fedbd873676ddf7bb1016899959b1fc89c0c26",
+      "path": "supporting/ex47b_geo01b/sealed/derived_execution_contract.json",
+      "sha256": "bacc3e538f9d89f154fd7aba72fedbd873676ddf7bb1016899959b1fc89c0c26",
+      "source_bytes": 12092,
+      "source_sha256": "7512f1b762bb66c2d5d83aed8293572face15525ec7363f35084db14b7315719"
+    },
+    {
+      "bytes": 4207,
+      "package_bytes": 4207,
+      "package_sha256": "a6430ea549abee292da4b9924f612c8b4a457b2eca36911c67ecda028637cfe4",
+      "path": "supporting/ex47b_geo01b/sealed/offset_collision_certificate.json",
+      "sha256": "a6430ea549abee292da4b9924f612c8b4a457b2eca36911c67ecda028637cfe4",
+      "source_bytes": 4207,
+      "source_sha256": "a6430ea549abee292da4b9924f612c8b4a457b2eca36911c67ecda028637cfe4"
+    },
+    {
+      "bytes": 2296,
+      "package_bytes": 2296,
+      "package_sha256": "281c705de959762c74347a005f8a1ce308b6cfd12c8edf8493a02420ea9def69",
+      "path": "supporting/ex47b_geo01b/sealed/discovery_plan.json",
+      "sha256": "281c705de959762c74347a005f8a1ce308b6cfd12c8edf8493a02420ea9def69",
+      "source_bytes": 2296,
+      "source_sha256": "281c705de959762c74347a005f8a1ce308b6cfd12c8edf8493a02420ea9def69"
+    },
+    {
+      "bytes": 1908,
+      "path": "smoke/early_muon/replica_12/attempt_001/mech09r_manifest.json",
+      "sha256": "d64abfb43cc8a06ab6c61749dd9cb0cf0c95da36956828036933dad2a493fd50"
+    },
+    {
+      "bytes": 120,
+      "path": "smoke/early_muon/replica_12/attempt_001/worker_log_seal.json",
+      "sha256": "37468b16ccc44bae1d097e13fb8ea8b3a3e446da0121f059d89f1bc8ffdc926e"
+    },
+    {
+      "bytes": 357351,
+      "path": "combined/geometry_rows.jsonl",
+      "sha256": "2bf703ec44d1f6d38346b3861fab33161cc7be80623112b4dd7feebaa6932de4"
+    },
+    {
+      "bytes": 20622,
+      "path": "combined/outcome_rows.jsonl",
+      "sha256": "884144041cd10b10e228e5c8a462b1330f480cf16189962e1c90c65c691d021b"
+    },
+    {
+      "bytes": 6384,
+      "package_bytes": 6384,
+      "package_sha256": "cbc0d231a660079ba891fd90b47dad6935ff0a58cb3ae5aa86177a4c883b2b1c",
+      "path": "supporting/ex47b_geo01b/analysis/analysis_manifest.json",
+      "sha256": "cbc0d231a660079ba891fd90b47dad6935ff0a58cb3ae5aa86177a4c883b2b1c",
+      "source_bytes": 6384,
+      "source_sha256": "cbc0d231a660079ba891fd90b47dad6935ff0a58cb3ae5aa86177a4c883b2b1c"
+    },
+    {
+      "bytes": 643,
+      "package_bytes": 643,
+      "package_sha256": "682af064369b58a0f674bbb4d9bc28cf1997bba5fdeef4506f8f65f63f598696",
+      "path": "supporting/ex47b_geo01b/analysis/event_summary.csv",
+      "sha256": "682af064369b58a0f674bbb4d9bc28cf1997bba5fdeef4506f8f65f63f598696",
+      "source_bytes": 643,
+      "source_sha256": "682af064369b58a0f674bbb4d9bc28cf1997bba5fdeef4506f8f65f63f598696"
+    },
+    {
+      "bytes": 3246,
+      "path": "discovery/early_muon/replica_9/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "5f02624230a4c104a44079a77abe539a9dff4cb720248712ccee7a418e2a8a6a"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/early_muon/replica_9/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/early_muon/replica_9/attempt_001/worker_log_seal.json",
+      "sha256": "b84a0c212c55783e0ac5a2a051034b4de3ae88a421cbd56d4841a572c89daf60"
+    },
+    {
+      "bytes": 29752,
+      "path": "discovery/early_muon/replica_9/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "b5a049f3bc4fb4d58d9a69791bdbf86fa3069705d2637e837acec43fa4bf19ea"
+    },
+    {
+      "bytes": 1700,
+      "path": "discovery/early_muon/replica_9/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "618a05013c2b86ce2f41c5515c36653eeda38fcc285f3b0ba0534d90c8ee51ae"
+    },
+    {
+      "bytes": 3247,
+      "path": "discovery/early_muon/replica_10/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "f5ec92193a65016e2b5e0a105a1e949f37868ab0c606089ab6a4f33e6e5c97a7"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/early_muon/replica_10/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/early_muon/replica_10/attempt_001/worker_log_seal.json",
+      "sha256": "d6716907ff659ddae1588559d077b72aa8b4192ce551e7774d5c6bd2d11775c8"
+    },
+    {
+      "bytes": 29752,
+      "path": "discovery/early_muon/replica_10/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "bbdcc2d21d765bf0f0a0be7de71d7efa4768face2239abab43ab9182a74d7e71"
+    },
+    {
+      "bytes": 1706,
+      "path": "discovery/early_muon/replica_10/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "99fdbf4502bd6192d0207534d957469f684fc9ce38860cb9c420e19a27ea9d2e"
+    },
+    {
+      "bytes": 3247,
+      "path": "discovery/early_muon/replica_11/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "1af1cbd8b8b116b8570f66a8a38e012ba9f3fb8bf922cd685cd7dce0452285dc"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/early_muon/replica_11/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/early_muon/replica_11/attempt_001/worker_log_seal.json",
+      "sha256": "93534274e1446169ee23cdfb6116b7f05995321bc2ecaa44cbbd8b41fed26606"
+    },
+    {
+      "bytes": 29757,
+      "path": "discovery/early_muon/replica_11/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "e222aafcc22c9a537bf75ca18d9b0b8172dba910259bbc03abd502ae0f2f691a"
+    },
+    {
+      "bytes": 1714,
+      "path": "discovery/early_muon/replica_11/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "c0444cbb211ff04d161020cf13cb2445701b5ccaf5b5fe1a3fd405ee627a1d78"
+    },
+    {
+      "bytes": 3253,
+      "path": "discovery/early_newton_full/replica_9/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "a77fba513be55753ddc1fa504e520a6b34022fffd8ecb05e439df44f982347c1"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/early_newton_full/replica_9/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/early_newton_full/replica_9/attempt_001/worker_log_seal.json",
+      "sha256": "e22da3b2c44b67b803e2955ada6cfadf791f221fa06a2720b3a18147e8d5ef07"
+    },
+    {
+      "bytes": 29791,
+      "path": "discovery/early_newton_full/replica_9/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "850420e719e1e34897f90d9a0bb8a422d921e7478c9731d8799375ebfcae302f"
+    },
+    {
+      "bytes": 1722,
+      "path": "discovery/early_newton_full/replica_9/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "4b4d9a0fb93ccb70e5f558f894b920caa0d3d468da0752897e840ada8557741d"
+    },
+    {
+      "bytes": 3254,
+      "path": "discovery/early_newton_full/replica_10/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "4032b92845fce77513d451a86927632037bfdf49242f7c2a6ad4689d7f715c6c"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/early_newton_full/replica_10/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/early_newton_full/replica_10/attempt_001/worker_log_seal.json",
+      "sha256": "5eb7bc1617ec99f0f3a091a15647ec5130bae51998462fc3c44652cd766e4bf6"
+    },
+    {
+      "bytes": 29824,
+      "path": "discovery/early_newton_full/replica_10/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "4c9de318c371508f224292db2b88a2299e33db843bf66b6d3c21b458215c38b2"
+    },
+    {
+      "bytes": 1726,
+      "path": "discovery/early_newton_full/replica_10/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "fc3afa5de994229473783f74883b1bfc2cafc26933b981b173c380f1b4f7353f"
+    },
+    {
+      "bytes": 3254,
+      "path": "discovery/early_newton_full/replica_11/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "84a5ea9dceef9ea245d972c5ec1d5ed1e7485fb5a3b0a285d6d75fd738536677"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/early_newton_full/replica_11/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/early_newton_full/replica_11/attempt_001/worker_log_seal.json",
+      "sha256": "f9129efe55c4f18b65eca4d9ca777c28811cc78ddfe8ecea815f40705094eab6"
+    },
+    {
+      "bytes": 29798,
+      "path": "discovery/early_newton_full/replica_11/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "dd874ae5f340cfed2fb1f72ea332e749bb06ce7611ed604c554bc1c24e4edfff"
+    },
+    {
+      "bytes": 1725,
+      "path": "discovery/early_newton_full/replica_11/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "e77b8a5386171f8970e51d69d26bda8faa7e007e09380937a31910f6e4d3d51d"
+    },
+    {
+      "bytes": 3245,
+      "path": "discovery/late_muon/replica_9/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "e7a49a5db840e5c58124bd17747e03ade3b5b8cc8ffcf7a0daa6a0259b46293a"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/late_muon/replica_9/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/late_muon/replica_9/attempt_001/worker_log_seal.json",
+      "sha256": "ff2004860a8e2134f4a83a7284083deefc4fb261d036af1c323ed677b98cc89d"
+    },
+    {
+      "bytes": 29755,
+      "path": "discovery/late_muon/replica_9/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "00e6812131801f72f6fbac8b0b985a5e46f31d667f40806b27876f3666433bfe"
+    },
+    {
+      "bytes": 1711,
+      "path": "discovery/late_muon/replica_9/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "755094e091f07aff0c5838157e876ce5a4f98d3a863a32ebdab491dd1efa361a"
+    },
+    {
+      "bytes": 3246,
+      "path": "discovery/late_muon/replica_10/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "9a0a5cff23dd6d2463bf874bf919360145dfe3495b6fa7f44161dd0466f08e05"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/late_muon/replica_10/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/late_muon/replica_10/attempt_001/worker_log_seal.json",
+      "sha256": "231a10bef58499bb1216ace664b6014fa80e0aac9a740349b78fcdc6239d8da2"
+    },
+    {
+      "bytes": 29748,
+      "path": "discovery/late_muon/replica_10/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "29758a4ddb9a7fbf3c90efd8bd5d397936276b28231cf516758d53946aa0abd0"
+    },
+    {
+      "bytes": 1718,
+      "path": "discovery/late_muon/replica_10/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "365e44c26bf925efd8106ab1eef0a906cf8aef00c91441e8dc88ef06c82272de"
+    },
+    {
+      "bytes": 3246,
+      "path": "discovery/late_muon/replica_11/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "c4274fd1c299352d5e9272a1d1b101a9674f41b6a4c7ed82216239f8b4034b15"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/late_muon/replica_11/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/late_muon/replica_11/attempt_001/worker_log_seal.json",
+      "sha256": "123ee98eca87216d274d3c7560042c1375d60e3968683322fae3c9e1e6aaf79e"
+    },
+    {
+      "bytes": 29750,
+      "path": "discovery/late_muon/replica_11/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "9461a7d21054a6d72cf750c0307b0a9095fd928657538f482401f3bbe5e5c789"
+    },
+    {
+      "bytes": 1718,
+      "path": "discovery/late_muon/replica_11/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "ccb7a22cd80427c0bbd947ea1d7b3f135f4a074eb1e1dc9af2c14212a71c9c58"
+    },
+    {
+      "bytes": 3252,
+      "path": "discovery/late_newton_full/replica_9/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "de7a5bb4088eacfee8c83ed27ca8b92d6d3956f1a5bad0f2b7a6c528ad84e328"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/late_newton_full/replica_9/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/late_newton_full/replica_9/attempt_001/worker_log_seal.json",
+      "sha256": "4d0ea15a4f6233da8d661fbcafe2ed8a5465260bcb6d07ca1c5d44ada5bfd297"
+    },
+    {
+      "bytes": 29807,
+      "path": "discovery/late_newton_full/replica_9/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "e5066bb1190308ed5e1a8e739cf5e490a936bfcfe36c7c96042d725aab5f5536"
+    },
+    {
+      "bytes": 1724,
+      "path": "discovery/late_newton_full/replica_9/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "ecec3b5c8007470ce8f0624bc1674a9ddc6422e8e213207ef21996b102854053"
+    },
+    {
+      "bytes": 3253,
+      "path": "discovery/late_newton_full/replica_10/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "e6fabe3b196b206950983f656e9a5c791450043449d50274c74f7c1df0d53337"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/late_newton_full/replica_10/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/late_newton_full/replica_10/attempt_001/worker_log_seal.json",
+      "sha256": "a238f75aa6d681f6717201f958a4126e8870a792a65aca0be2a59f793fb63cd5"
+    },
+    {
+      "bytes": 29808,
+      "path": "discovery/late_newton_full/replica_10/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "567ff84a740b0e20da3029dbd24af25089720e56ea49ba376c9599f86bf27f06"
+    },
+    {
+      "bytes": 1730,
+      "path": "discovery/late_newton_full/replica_10/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "29b77c653bb967478ee89f4f69c8feff5527c1e9b7280a0393f991f065b6986a"
+    },
+    {
+      "bytes": 3253,
+      "path": "discovery/late_newton_full/replica_11/attempt_001/geo01b_unit_manifest.json",
+      "sha256": "931c842189f293d96a14d03e85eb924efe53fcc4d8f6addf41c21ee0eec899d9"
+    },
+    {
+      "bytes": 25,
+      "path": "discovery/late_newton_full/replica_11/attempt_001/geo01b_status.json",
+      "sha256": "62a2ec7ea23aed9b55d5588aa911617482704992eeb912b0d6c9a87ea7f781a1"
+    },
+    {
+      "bytes": 120,
+      "path": "discovery/late_newton_full/replica_11/attempt_001/worker_log_seal.json",
+      "sha256": "24685b0d4acca886d789e29228be6a8ef65765a694bfef6b58e342206a305ee9"
+    },
+    {
+      "bytes": 29809,
+      "path": "discovery/late_newton_full/replica_11/attempt_001/geo01b_geometry_rows.jsonl",
+      "sha256": "95e2deb7323dae40746215c568f2d9c6aeeddbdbbeba41d52f1bcc1b791bfba3"
+    },
+    {
+      "bytes": 1728,
+      "path": "discovery/late_newton_full/replica_11/attempt_001/geo01b_outcome_rows.jsonl",
+      "sha256": "9c56f87625997010e1a133a3bd645c86647440f9b1a4578a172e69c5fc87d229"
+    }
+  ],
+  "no_large_files": true,
+  "passed": true,
+  "schema_version": "geo01b_handoff_manifest_v1",
+  "unit_count": 12
+}

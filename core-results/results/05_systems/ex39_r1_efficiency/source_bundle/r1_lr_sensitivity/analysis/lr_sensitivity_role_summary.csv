@@ -1,0 +1,5 @@
+method_role,best_observed_multiplier,best_observed_final_val_loss,loss_range_across_grid,mean_final_val_loss,interpretation
+muon,1.2,3.3884,0.006400000000000183,3.3908666666666667,descriptive grid robustness; no tuned-best claim
+original_newton_muon,1.2,3.3732,0.0040999999999997705,3.374766666666667,descriptive grid robustness; no tuned-best claim
+selective_none,1.0,3.3787,0.0049000000000001265,3.3806666666666665,descriptive grid robustness; no tuned-best claim
+selective_diag,1.0,3.3725,0.0045999999999999375,3.374233333333333,descriptive grid robustness; no tuned-best claim

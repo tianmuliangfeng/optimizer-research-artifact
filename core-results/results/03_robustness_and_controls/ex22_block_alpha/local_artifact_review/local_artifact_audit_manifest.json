@@ -1,0 +1,15 @@
+{
+  "artifacts": [
+    "local_artifact_audit.json",
+    "local_artifact_checks.csv",
+    "local_batch_summary.csv",
+    "local_checkpoint_inventory.csv",
+    "local_formal_run_summary.csv",
+    "local_source_inventory.csv"
+  ],
+  "checkpoint_transfer_policy": "excluded_by_user_due_size",
+  "delivery_status": "accepted_checkpoint_transfer_excluded",
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-29.3"
+}

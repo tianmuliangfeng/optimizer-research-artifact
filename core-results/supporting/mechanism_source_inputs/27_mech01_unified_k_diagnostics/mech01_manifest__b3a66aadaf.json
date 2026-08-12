@@ -1,0 +1,62 @@
+{
+  "artifacts": [
+    "batch_contract.json",
+    "checkpoint_schema.json",
+    "checks.csv",
+    "diagnostics.csv",
+    "diagnostics.json",
+    "momentum_audit.json",
+    "production_path_audit.json",
+    "repeatability.json",
+    "route_audit.json",
+    "runtime.json",
+    "source_runtime_config.json",
+    "state_invariance.json",
+    "status.json",
+    "streaming_contract.json",
+    "tensor_bundle.pt",
+    "tensor_bundle_manifest.json"
+  ],
+  "bundle": {
+    "path": "PRIVATE_PATH_REDACTED__7597393ae895",
+    "sha256": "d6501ad515a816c58e7e03b43058aba649d57464f37e900ff20fd74acf4130aa",
+    "size_bytes": 59772791,
+    "tensor_sha256": {
+      "activation_build": "e59bd602a3cd82a631dce5f4150048106d271783729fe1e5b27f86335c2e7de6",
+      "fresh_covariance": "78abd93281f638ee63bec212c18128747ef4413a7c8847581248b412ea7cab96",
+      "fresh_heldout_gradient": "814296155d915e6393ff072a02bdc59948b8c0be022c677b423b3627cb13c653",
+      "historical_momentum": "06ace885d60dfaceb8250dc7ef6be39db700c5e182093bd076610f9535f87c3d"
+    },
+    "tensor_shapes": {
+      "activation_build": [
+        256,
+        3072
+      ],
+      "fresh_covariance": [
+        3072,
+        3072
+      ],
+      "fresh_heldout_gradient": [
+        768,
+        3072
+      ],
+      "historical_momentum": [
+        768,
+        3072
+      ]
+    }
+  },
+  "checkpoint": "PRIVATE_PATH_REDACTED",
+  "family": "gpt_bridge",
+  "layers": [
+    0,
+    6,
+    11
+  ],
+  "method": "none",
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-27.2",
+  "source_script": "PRIVATE_PATH_REDACTED__221f65b3749e",
+  "stage": "numerical_smoke"
+}

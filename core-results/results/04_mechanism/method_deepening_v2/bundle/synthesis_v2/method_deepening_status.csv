@@ -1,0 +1,5 @@
+module_id,status,paper_eligible,result,remaining_gate
+MDP-01,ready,true,budget-constrained static selective K-state routing is fully specified,copy the frozen formulation into Methods without claiming a learned selector
+MDP-02,ready,true,12 required measured increments reconcile exactly with analytic bytes across four cases,keep persistent state separate from workspace and peak memory
+MDP-03,ready_with_proof_text_required,true,8/8 numerical group checks pass; experiment 40 supplies network-level boundary evidence,retain the formal proposition and rank assumptions; numerical checks are not proofs
+MDP-04,blocked_data,false,"loss-level causal mediation is accepted, but full paired K/inverse/matched-G tensors are absent locally",run deterministic short replay or streaming metrics export on the original LLaMA host

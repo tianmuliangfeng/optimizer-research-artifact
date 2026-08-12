@@ -1,0 +1,171 @@
+check,status,severity_if_failed,evidence
+compact evidence file count excluding pycache,PASS,critical,100
+expected four manifests,PASS,critical,4
+20260724T171841+0000_formal_seed2024: completed formal manifest,PASS,critical,status=completed stage=formal failed={}
+20260724T171841+0000_formal_seed2024: W&B completed and timing ineligible,PASS,critical,wandb_complete=True timing_eligible=False
+20260724T171841+0000_formal_seed2024: frozen formal config,PASS,critical,"{""adamw_matrix_lr"": 0.000576, ""backup_lr"": 0.0036, ""checkpoint_every"": 128, ""device_batch_size"": 8, ""global_batch_size"": 512, ""matrix_lr"": 0.01, ""num_iterations"": 6200, ""sequence_length"": 1024, ""val_every"": 100, ""val_tokens"": 10485760, ""warmdown_iters"": 1800}"
+20260724T171841+0000_formal_seed2024: pinned 1B architecture,PASS,critical,"{""expected_backup_tensors"": 38, ""expected_matrix_tensors"": 126, ""expected_parameter_count"": 1013690368, ""expected_preconditioner_groups"": {""adamw"": 0, ""down_diag"": 72, ""down_none"": 54, ""muon"": 0, ""newton_full"": 72}, ""intermediate_size"": 5504, ""n_embd"": 2048, ""n_head"": 16, ""n_layer"": 18, ""name"": ""llama_swiglu_1b_v1""}"
+seed2024 down_diag: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""80b2f3b6aab65fe9"", ""run_name"": ""llama_swiglu_down_diag_seed2024"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-25T21:20:40.146301+00:00""}"
+seed2024 down_none: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""606df5f2b715c9ca"", ""run_name"": ""llama_swiglu_down_none_seed2024"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-25T07:19:24.490926+00:00""}"
+seed2024 muon: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""1569ce5008f929af"", ""run_name"": ""llama_swiglu_muon_seed2024"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-27T01:49:05.134113+00:00""}"
+seed2024 newton_full: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""d362ce8db61a5a81"", ""run_name"": ""llama_swiglu_newton_full_seed2024"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-26T12:02:17.882481+00:00""}"
+20260724T171844+0000_formal_seed2025: completed formal manifest,PASS,critical,status=completed stage=formal failed={}
+20260724T171844+0000_formal_seed2025: W&B completed and timing ineligible,PASS,critical,wandb_complete=True timing_eligible=False
+20260724T171844+0000_formal_seed2025: frozen formal config,PASS,critical,"{""adamw_matrix_lr"": 0.000576, ""backup_lr"": 0.0036, ""checkpoint_every"": 128, ""device_batch_size"": 8, ""global_batch_size"": 512, ""matrix_lr"": 0.01, ""num_iterations"": 6200, ""sequence_length"": 1024, ""val_every"": 100, ""val_tokens"": 10485760, ""warmdown_iters"": 1800}"
+20260724T171844+0000_formal_seed2025: pinned 1B architecture,PASS,critical,"{""expected_backup_tensors"": 38, ""expected_matrix_tensors"": 126, ""expected_parameter_count"": 1013690368, ""expected_preconditioner_groups"": {""adamw"": 0, ""down_diag"": 72, ""down_none"": 54, ""muon"": 0, ""newton_full"": 72}, ""intermediate_size"": 5504, ""n_embd"": 2048, ""n_head"": 16, ""n_layer"": 18, ""name"": ""llama_swiglu_1b_v1""}"
+seed2025 down_diag: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""8715f436386d4bd9"", ""run_name"": ""llama_swiglu_down_diag_seed2025"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-25T21:16:06.070557+00:00""}"
+seed2025 down_none: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""3d201cdd51fab9af"", ""run_name"": ""llama_swiglu_down_none_seed2025"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-25T07:17:46.672892+00:00""}"
+seed2025 muon: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""e3a3f09c928a9fd8"", ""run_name"": ""llama_swiglu_muon_seed2025"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-27T01:37:45.271765+00:00""}"
+seed2025 newton_full: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""27302d3d8dcdab37"", ""run_name"": ""llama_swiglu_newton_full_seed2025"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-26T11:54:19.116608+00:00""}"
+20260723T025322+0000_formal_seed2026: completed formal manifest,PASS,critical,status=completed stage=formal failed={}
+20260723T025322+0000_formal_seed2026: W&B completed and timing ineligible,PASS,critical,wandb_complete=True timing_eligible=False
+20260723T025322+0000_formal_seed2026: frozen formal config,PASS,critical,"{""adamw_matrix_lr"": 0.000576, ""backup_lr"": 0.0036, ""checkpoint_every"": 128, ""device_batch_size"": 8, ""global_batch_size"": 512, ""matrix_lr"": 0.01, ""num_iterations"": 6200, ""sequence_length"": 1024, ""val_every"": 100, ""val_tokens"": 10485760, ""warmdown_iters"": 1800}"
+20260723T025322+0000_formal_seed2026: pinned 1B architecture,PASS,critical,"{""expected_backup_tensors"": 38, ""expected_matrix_tensors"": 126, ""expected_parameter_count"": 1013690368, ""expected_preconditioner_groups"": {""adamw"": 0, ""down_diag"": 72, ""down_none"": 54, ""muon"": 0, ""newton_full"": 72}, ""intermediate_size"": 5504, ""n_embd"": 2048, ""n_head"": 16, ""n_layer"": 18, ""name"": ""llama_swiglu_1b_v1""}"
+seed2026 down_diag: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""433cb1e3ee1fd6f5"", ""run_name"": ""llama_swiglu_down_diag_seed2026"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-24T07:03:45.065863+00:00""}"
+seed2026 down_none: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""4b32f442518b130f"", ""run_name"": ""llama_swiglu_down_none_seed2026"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-23T17:01:58.506936+00:00""}"
+20260723T025322+0000_formal_seed2026: completed formal manifest,PASS,critical,status=completed stage=formal failed={}
+20260723T025322+0000_formal_seed2026: W&B completed and timing ineligible,PASS,critical,wandb_complete=True timing_eligible=False
+20260723T025322+0000_formal_seed2026: frozen formal config,PASS,critical,"{""adamw_matrix_lr"": 0.000576, ""backup_lr"": 0.0036, ""checkpoint_every"": 128, ""device_batch_size"": 8, ""global_batch_size"": 512, ""matrix_lr"": 0.01, ""num_iterations"": 6200, ""sequence_length"": 1024, ""val_every"": 100, ""val_tokens"": 10485760, ""warmdown_iters"": 1800}"
+20260723T025322+0000_formal_seed2026: pinned 1B architecture,PASS,critical,"{""expected_backup_tensors"": 38, ""expected_matrix_tensors"": 126, ""expected_parameter_count"": 1013690368, ""expected_preconditioner_groups"": {""adamw"": 0, ""down_diag"": 72, ""down_none"": 54, ""muon"": 0, ""newton_full"": 72}, ""intermediate_size"": 5504, ""n_embd"": 2048, ""n_head"": 16, ""n_layer"": 18, ""name"": ""llama_swiglu_1b_v1""}"
+seed2026 muon: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""1fec6c3334443bf6"", ""run_name"": ""llama_swiglu_muon_seed2026"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-24T07:25:16.149554+00:00""}"
+seed2026 newton_full: method result completed/uploaded,PASS,critical,"{""mode"": ""online"", ""project"": ""Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Formal-20260721"", ""run_id"": ""ad236ce3f10580b5"", ""run_name"": ""llama_swiglu_newton_full_seed2026"", ""status"": ""uploaded"", ""uploaded_at"": ""2026-07-23T17:41:41.480161+00:00""}"
+seed2024: exact four-method certificate coverage,PASS,critical,"['down_diag', 'down_none', 'muon', 'newton_full']"
+seed2025: exact four-method certificate coverage,PASS,critical,"['down_diag', 'down_none', 'muon', 'newton_full']"
+seed2026: exact four-method certificate coverage,PASS,critical,"['down_diag', 'down_none', 'muon', 'newton_full']"
+single runtime fingerprint,PASS,critical,"{('PRIVATE_PATH_REDACTED', '2.8.0+cu126', '12.6', '3.4.0', 'NVIDIA H100 80GB HBM3', 'f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f')}"
+single data fingerprint,PASS,critical,{'57d23fdc7fb4c59c3685b0c603deaeaa7d0be6b28c62a9d6a2aa493118ceb8a2'}
+single base trainer hash,PASS,critical,{'b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a'}
+exact twelve method directories,PASS,critical,12
+seed2024 down_none: summary hash matches manifest,PASS,critical,7fd4befc9333b5ad34a63d049fdb361e10c2cc776779a60ad83592111fd707e0
+seed2024 down_none: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2024 down_none: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2024 down_none: expected K-state bytes,PASS,critical,1811939328
+seed2024 down_none: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2024 down_none: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2024 down_none: finite losses,PASS,critical,loss_rows=6263
+seed2024 down_none: summary/local endpoint agreement,PASS,critical,summary_val=2.975529432 local_val=2.975529432
+seed2024 down_none: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2024 down_none: local endpoint agrees with archived analysis,PASS,critical,local=2.975529432 archived=2.975529432
+seed2024 down_none: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2024 down_diag: summary hash matches manifest,PASS,critical,512299fc4fe1c8036736a3cfd04451563ba4bcac390fdbe6c3ca716f57870869
+seed2024 down_diag: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2024 down_diag: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2024 down_diag: expected K-state bytes,PASS,critical,1812731904
+seed2024 down_diag: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2024 down_diag: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2024 down_diag: finite losses,PASS,critical,loss_rows=6263
+seed2024 down_diag: summary/local endpoint agreement,PASS,critical,summary_val=2.976336241 local_val=2.976336241
+seed2024 down_diag: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2024 down_diag: local endpoint agrees with archived analysis,PASS,critical,local=2.976336241 archived=2.976336241
+seed2024 down_diag: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2024 newton_full: summary hash matches manifest,PASS,critical,9ffb997f79ab01faa01087dc35a77964fe37f8182bb225f775b811eb8607caf7
+seed2024 newton_full: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2024 newton_full: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2024 newton_full: expected K-state bytes,PASS,critical,6174277632
+seed2024 newton_full: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2024 newton_full: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2024 newton_full: finite losses,PASS,critical,loss_rows=6263
+seed2024 newton_full: summary/local endpoint agreement,PASS,critical,summary_val=2.976945162 local_val=2.976945162
+seed2024 newton_full: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2024 newton_full: local endpoint agrees with archived analysis,PASS,critical,local=2.976945162 archived=2.976945162
+seed2024 newton_full: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2024 muon: summary hash matches manifest,PASS,critical,e7cb88e9bedcc10826cf6713e2c7d59e66ebd3b6f69c88df481804c180ff608e
+seed2024 muon: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2024 muon: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2024 muon: expected K-state bytes,PASS,critical,0
+seed2024 muon: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2024 muon: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2024 muon: finite losses,PASS,critical,loss_rows=6263
+seed2024 muon: summary/local endpoint agreement,PASS,critical,summary_val=2.971026421 local_val=2.971026421
+seed2024 muon: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2024 muon: local endpoint agrees with archived analysis,PASS,critical,local=2.971026421 archived=2.971026421
+seed2024 muon: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2025 down_none: summary hash matches manifest,PASS,critical,197e1cd94cfd2bf3044e88a449b13ab9a55a94e3f47b1de1300073034a984917
+seed2025 down_none: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2025 down_none: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2025 down_none: expected K-state bytes,PASS,critical,1811939328
+seed2025 down_none: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2025 down_none: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2025 down_none: finite losses,PASS,critical,loss_rows=6263
+seed2025 down_none: summary/local endpoint agreement,PASS,critical,summary_val=2.973872423 local_val=2.973872423
+seed2025 down_none: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2025 down_none: local endpoint agrees with archived analysis,PASS,critical,local=2.973872423 archived=2.973872423
+seed2025 down_none: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2025 down_diag: summary hash matches manifest,PASS,critical,bdea202ce1166aa1bb2c660db62a5e9144730a6866cdf45c1cb1fbb5242dfdd1
+seed2025 down_diag: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2025 down_diag: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2025 down_diag: expected K-state bytes,PASS,critical,1812731904
+seed2025 down_diag: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2025 down_diag: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2025 down_diag: finite losses,PASS,critical,loss_rows=6263
+seed2025 down_diag: summary/local endpoint agreement,PASS,critical,summary_val=2.975097418 local_val=2.975097418
+seed2025 down_diag: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2025 down_diag: local endpoint agrees with archived analysis,PASS,critical,local=2.975097418 archived=2.975097418
+seed2025 down_diag: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2025 newton_full: summary hash matches manifest,PASS,critical,bee0555ef54f08b70dfd59f3b2924d893db86001699c69d77739ecb3c70669d7
+seed2025 newton_full: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2025 newton_full: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2025 newton_full: expected K-state bytes,PASS,critical,6174277632
+seed2025 newton_full: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2025 newton_full: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2025 newton_full: finite losses,PASS,critical,loss_rows=6263
+seed2025 newton_full: summary/local endpoint agreement,PASS,critical,summary_val=2.976119041 local_val=2.976119041
+seed2025 newton_full: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2025 newton_full: local endpoint agrees with archived analysis,PASS,critical,local=2.976119041 archived=2.976119041
+seed2025 newton_full: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2025 muon: summary hash matches manifest,PASS,critical,ad02a5a1cdde790924d2b00207cb48330209fb8403a04a25349a8561cf109345
+seed2025 muon: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2025 muon: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2025 muon: expected K-state bytes,PASS,critical,0
+seed2025 muon: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2025 muon: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2025 muon: finite losses,PASS,critical,loss_rows=6263
+seed2025 muon: summary/local endpoint agreement,PASS,critical,summary_val=2.970222235 local_val=2.970222235
+seed2025 muon: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2025 muon: local endpoint agrees with archived analysis,PASS,critical,local=2.970222235 archived=2.970222235
+seed2025 muon: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2026 down_none: summary hash matches manifest,PASS,critical,65102d3bb6725c8a9c33fa471dfe6443af63d484dec75aa5e9b30efd87840dc3
+seed2026 down_none: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2026 down_none: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2026 down_none: expected K-state bytes,PASS,critical,1811939328
+seed2026 down_none: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2026 down_none: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2026 down_none: finite losses,PASS,critical,loss_rows=6263
+seed2026 down_none: summary/local endpoint agreement,PASS,critical,summary_val=2.9743855 local_val=2.9743855
+seed2026 down_none: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2026 down_none: local endpoint agrees with archived analysis,PASS,critical,local=2.9743855 archived=2.9743855
+seed2026 down_none: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2026 down_diag: summary hash matches manifest,PASS,critical,c94098fd933e48c22f341e6cd8c85de275f5ca030d3a57d4210df4f53c564c1b
+seed2026 down_diag: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2026 down_diag: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2026 down_diag: expected K-state bytes,PASS,critical,1812731904
+seed2026 down_diag: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2026 down_diag: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2026 down_diag: finite losses,PASS,critical,loss_rows=6263
+seed2026 down_diag: summary/local endpoint agreement,PASS,critical,summary_val=2.975808859 local_val=2.975808859
+seed2026 down_diag: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2026 down_diag: local endpoint agrees with archived analysis,PASS,critical,local=2.975808859 archived=2.975808859
+seed2026 down_diag: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2026 newton_full: summary hash matches manifest,PASS,critical,c72edef2fac4add4e121d7805b6f4fc8202edbd47e0e30f52aa5a1ce54a5e00a
+seed2026 newton_full: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2026 newton_full: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2026 newton_full: expected K-state bytes,PASS,critical,6174277632
+seed2026 newton_full: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2026 newton_full: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2026 newton_full: finite losses,PASS,critical,loss_rows=6263
+seed2026 newton_full: summary/local endpoint agreement,PASS,critical,summary_val=2.977070808 local_val=2.977070808
+seed2026 newton_full: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2026 newton_full: local endpoint agrees with archived analysis,PASS,critical,local=2.977070808 archived=2.977070808
+seed2026 newton_full: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+seed2026 muon: summary hash matches manifest,PASS,critical,18998ada5d756d427d964e856bb8ec931fc0f803b9165e21847d6a048c0cc3b2
+seed2026 muon: status/summary completed,PASS,critical,summary=completed status=completed steps=6200
+seed2026 muon: formal budget and clean completion,PASS,critical,steps=6200 tokens=3250585600 resume=0 per-run-timing-comparable=True
+seed2026 muon: expected K-state bytes,PASS,critical,0
+seed2026 muon: saved base trainer matches manifest,PASS,critical,b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a
+seed2026 muon: exact local metrics grain,PASS,critical,rows=6263 train=6200 val=63
+seed2026 muon: finite losses,PASS,critical,loss_rows=6263
+seed2026 muon: summary/local endpoint agreement,PASS,critical,summary_val=2.969125986 local_val=2.969125986
+seed2026 muon: local metrics agree with W&B,PASS,critical,compared=1926 max_abs_diff=6e-17 mismatches=0
+seed2026 muon: local endpoint agrees with archived analysis,PASS,critical,local=2.969125986 archived=2.969125986
+seed2026 muon: remote checkpoint path recorded,PASS,high,PRIVATE_PATH_REDACTED
+checkpoint payload hash and local existence,WARN,high,checkpoint payloads intentionally omitted; verify selected remote files with MECH-01 --hash-checkpoint

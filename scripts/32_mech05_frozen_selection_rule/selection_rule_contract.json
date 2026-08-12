@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-27.1",
+  "frozen_at_utc": "2026-07-27T06:41:47Z",
+  "title": "MECH-05 frozen K-representation selection rule",
+  "purpose": "Generate a conservative, falsifiable choice among diag, full_or_block, none_or_muon_sufficient, and uncertain without new training.",
+  "discovery_scope": {
+    "families": [
+      "r1",
+      "llama124"
+    ],
+    "seed": 2026,
+    "checkpoint_step": 6200,
+    "geometry_source": "MECH-02 endpoint formal",
+    "heldout_source": "MECH-03 endpoint formal layer-scope cross-fit shadow loss",
+    "longrun_source": "existing seed2026 formal run summaries",
+    "gpt_bridge_role": "runtime robustness only; excluded from discovery decisions"
+  },
+  "known_before_freeze_but_excluded_from_rule_generation": [
+    {
+      "dataset": "LLaMA-1B three-seed formal rankings",
+      "status": "already read before MECH-05 freeze",
+      "allowed_use": "retrospective context only",
+      "prohibited_use": "threshold selection or prospective-confirmation claims"
+    }
+  ],
+  "unread_confirmation_sets": [
+    {
+      "name": "MECH-06-L1B diagnostic artifacts",
+      "status": "not generated or read at freeze time",
+      "confirmation_type": "prospective for diagnostic-rule outputs only; existing 1B training rankings remain retrospective"
+    }
+  ],
+  "thresholds": {
+    "relative_shadow_loss_margin": 1e-06,
+    "minimum_positive_cell_fraction": 0.75,
+    "minimum_positive_material_layers": 3,
+    "minimum_diagonal_anisotropy_p95_over_p05": 1.5,
+    "minimum_diagonal_cosine": 0.95,
+    "maximum_covariance_relative_drift": 0.25,
+    "minimum_top_eigenspace_overlap": 0.5,
+    "maximum_scalar_isotropy_p95_over_p05": 1.25,
+    "maximum_scalar_isotropy_offdiag_energy_fraction": 0.1,
+    "longrun_practical_loss_margin": 0.002
+  },
+  "threshold_rationale": {
+    "relative_shadow_loss_margin_and_consistency": "Inherited unchanged from the frozen MECH-03 primary gate: 1e-6, 24/32 cells, and 3/4 material layers.",
+    "diagonal_anisotropy": "p95/p05 >= 1.5 is a conservative non-scalar screen; <= 1.25 defines scalar-like behavior, leaving an explicit dead band.",
+    "repeat_stability": "median diagonal cosine >= 0.95 and covariance relative drift <= 0.25 require close repeat agreement before geometry can vote.",
+    "non_diagonal_subspace": "median top-eigenspace overlap >= 0.5 requires majority overlap rather than merely nonzero overlap.",
+    "longrun_practical_loss": "0.002 is the project-level practical loss margin already used before MECH-05; it is not fitted from LLaMA-1B."
+  },
+  "longrun_method_map": {
+    "r1": {
+      "none": "none",
+      "diag": "diag",
+      "block4": "block4",
+      "dense_full": null,
+      "muon": "muon"
+    },
+    "llama124": {
+      "none": "down_none",
+      "diag": "down_diag",
+      "block4": null,
+      "dense_full": "newton_full",
+      "muon": "muon"
+    }
+  },
+  "decision_rule": {
+    "diag": "Require stable diagonal anisotropy, a stable positive held-out diag-over-none advantage, and no material long-run contradiction.",
+    "full_or_block": "Require stable non-diagonal subspace evidence, a stable positive held-out full/block-over-diag advantage, and no material long-run contradiction.",
+    "none_or_muon_sufficient": "Require scalar-like geometry OR no stable held-out complexity gain together with no K candidate beating none by the long-run practical margin.",
+    "uncertain": "Return uncertain whenever signals conflict or none of the preceding rules is fully satisfied.",
+    "precedence": [
+      "full_or_block",
+      "diag",
+      "none_or_muon_sufficient",
+      "uncertain"
+    ]
+  },
+  "anti_leakage": {
+    "allow_geometry_only_selection": false,
+    "allow_posthoc_layer_selection": false,
+    "allow_threshold_tuning_from_llama1b": false,
+    "allow_mech04_rescue": false
+  }
+}

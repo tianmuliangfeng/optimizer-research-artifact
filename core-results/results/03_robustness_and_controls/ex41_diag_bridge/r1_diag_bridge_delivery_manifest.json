@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "analysis_name": "41D_r1_diag_bridge",
+  "created_at": "2026-07-31",
+  "status": "ready_with_structural_report_qa",
+  "audience": "technical",
+  "delivery_mode": "portable_html",
+  "analysis_manifest_passed": true,
+  "classification": "diag_recovers_block4_quality_at_near_none_state_cost",
+  "new_training_runs": 0,
+  "new_training_recommended": false,
+  "tests": {
+    "diag_bridge_tests_passed": 5,
+    "experiment41_regression_tests_passed": 13
+  },
+  "portable_report_qa": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "structural_only",
+    "blocks": 12,
+    "charts": 2,
+    "tables": 1,
+    "browser_qa": "not_completed",
+    "browser_qa_reason": "The packaged headless-shell runtime was unavailable. A targeted attempt to use installed Microsoft Edge failed the builder's environment check. Exact payload equality, runtime roots, semantic fallback, charts, tables, and source structure passed structural verification.",
+    "source_dialog_interaction": "not_verified"
+  },
+  "source_sha256": {
+    "experiment15_run_summary": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+    "experiment41_reference": "21737784b9fccc69053bf7e507bd91a0a8a8ea26d02579d5c3d87f512e0ecb13",
+    "experiment41_acceptance": "b5506b6e0902b4c1b338dac2336d24c7e3d2d7e3147e3a39e3f6d42b1357698f"
+  },
+  "code_sha256": {
+    "analyze_r1_diag_bridge.py": "8c9375118b5f4417b16163c3c8c8efcf8a4a1b51497a2540d1c5061c6a83f2a9",
+    "test_r1_diag_bridge.py": "141d3ca66fad8d850c5d6258180b926b7f9707370e7b3fae76ec127e87d9166b",
+    "diag_bridge_contract.json": "28e2f9bb897ff5b99c3efc0d9af1adacc03232dd2bd3607a2c3af70324def21d"
+  },
+  "artifact_sha256": {
+    "r1_diag_bridge_analysis_manifest.json": "aa015da673a9feecc968a5513c655aa741ce2d5ed035fd43c533baee2639595a",
+    "artifact.json": "5ad5a3784cfeea5a2875bbf4359070432d4da79ed310b9e442fd2b83d0f058ea",
+    "R1_DIAG_BRIDGE_REPORT.html": "84c0fd247cf2c1e4cb5dfa3c7b608eae4417697fcc905b4835e8813f691c0b59"
+  }
+}

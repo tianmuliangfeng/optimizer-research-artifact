@@ -1,0 +1,253 @@
+{
+  "blocking_methods": [],
+  "boundary_methods": [],
+  "boundary_rule_triggered": false,
+  "boundary_sides": {},
+  "certificate_role": "independent_pilot_analysis_selection",
+  "formal_allowed": true,
+  "formal_eligible": true,
+  "formal_policy": "all_methods_fail_closed",
+  "grid_design": "fresh_v4_focused_malt_upper_grid_dual_method",
+  "malt_execution_order": [
+    0.016,
+    0.0125,
+    0.01,
+    0.009,
+    0.008,
+    0.0064
+  ],
+  "malt_ranked_cells": [
+    {
+      "cell_id": "malt_lr0125",
+      "final_val_loss": 3.7649,
+      "matrix_lr": 0.0125
+    },
+    {
+      "cell_id": "malt_lr0100",
+      "final_val_loss": 3.7658,
+      "matrix_lr": 0.01
+    },
+    {
+      "cell_id": "malt_lr0090",
+      "final_val_loss": 3.7729,
+      "matrix_lr": 0.009
+    },
+    {
+      "cell_id": "malt_lr0160",
+      "final_val_loss": 3.7746,
+      "matrix_lr": 0.016
+    },
+    {
+      "cell_id": "malt_lr0080",
+      "final_val_loss": 3.7754,
+      "matrix_lr": 0.008
+    },
+    {
+      "cell_id": "malt_lr0064",
+      "final_val_loss": 3.7916,
+      "matrix_lr": 0.0064
+    }
+  ],
+  "malt_selection_policy": "raw_endpoint_best",
+  "malter_center_preferred_if_within_margin_of_best": true,
+  "malter_center_tie_margin": 0.002,
+  "malter_eq17_ranked_cells": [
+    {
+      "cell_id": "malter_eq17_lr015",
+      "final_val_loss": 4.1016,
+      "matrix_lr": 0.015
+    },
+    {
+      "cell_id": "malter_eq17_lr018",
+      "final_val_loss": 4.102,
+      "matrix_lr": 0.018
+    },
+    {
+      "cell_id": "malter_eq17_lr025",
+      "final_val_loss": 4.1141,
+      "matrix_lr": 0.025
+    },
+    {
+      "cell_id": "malter_eq17_lr012",
+      "final_val_loss": 4.1218,
+      "matrix_lr": 0.012
+    },
+    {
+      "cell_id": "malter_eq17_lr009",
+      "final_val_loss": 4.1776,
+      "matrix_lr": 0.009
+    },
+    {
+      "cell_id": "malter_eq17_lr007",
+      "final_val_loss": 4.2603,
+      "matrix_lr": 0.007
+    }
+  ],
+  "malter_eq17_role": "formal_candidate",
+  "malter_eq17_selected_cell_id": "malter_eq17_lr015",
+  "malter_eq17_selected_matrix_lr": 0.015,
+  "pilot_manifest": "PRIVATE_PATH_REDACTED__49c5f7a17ef0",
+  "pilot_manifest_sha256": "048a920f00194b051c4ffdd6ba5a8e37aeaa7da522b276ee4693921ac8e251f8",
+  "pilot_steps": 1000,
+  "protocol": "malt_r1_focused_grid_selection_v4",
+  "raw_best_cell_id": "malt_lr0125",
+  "raw_best_final_val_loss": 3.7649,
+  "raw_best_matrix_lr": 0.0125,
+  "required_formal_methods": [
+    "malt",
+    "malter_eq17"
+  ],
+  "scientific_result": "dual_methods_selected",
+  "seed": 2026,
+  "selected_cell_id": "malt_lr0125",
+  "selected_final_val_loss": 3.7649,
+  "selected_matrix_lr": 0.0125,
+  "selected_methods": {
+    "malt": {
+      "cell_id": "malt_lr0125",
+      "final_val_loss": 3.7649,
+      "matrix_lr": 0.0125
+    },
+    "malter_eq17": {
+      "cell_id": "malter_eq17_lr015",
+      "final_val_loss": 4.1016,
+      "matrix_lr": 0.015
+    }
+  },
+  "selection_endpoint": "step-1000 validation loss",
+  "selections": {
+    "malt": {
+      "boundary_rule_triggered": false,
+      "boundary_side": null,
+      "boundary_tie_policy": "any_boundary_at_reported_minimum_blocks_formal",
+      "center_cell_id": null,
+      "center_preferred_if_within_margin_of_best": false,
+      "center_tie_margin": null,
+      "formal_allowed": true,
+      "formal_eligible": true,
+      "lower_boundary_lr": 0.0064,
+      "method": "malt",
+      "minimum_includes_lower_boundary": false,
+      "minimum_includes_upper_boundary": false,
+      "minimum_tied_cell_ids": [
+        "malt_lr0125"
+      ],
+      "paper_center_lr": null,
+      "ranked_cells": [
+        {
+          "cell_id": "malt_lr0125",
+          "final_val_loss": 3.7649,
+          "matrix_lr": 0.0125
+        },
+        {
+          "cell_id": "malt_lr0100",
+          "final_val_loss": 3.7658,
+          "matrix_lr": 0.01
+        },
+        {
+          "cell_id": "malt_lr0090",
+          "final_val_loss": 3.7729,
+          "matrix_lr": 0.009
+        },
+        {
+          "cell_id": "malt_lr0160",
+          "final_val_loss": 3.7746,
+          "matrix_lr": 0.016
+        },
+        {
+          "cell_id": "malt_lr0080",
+          "final_val_loss": 3.7754,
+          "matrix_lr": 0.008
+        },
+        {
+          "cell_id": "malt_lr0064",
+          "final_val_loss": 3.7916,
+          "matrix_lr": 0.0064
+        }
+      ],
+      "raw_best_cell_id": "malt_lr0125",
+      "raw_best_final_val_loss": 3.7649,
+      "raw_best_is_lower_boundary": false,
+      "raw_best_is_upper_boundary": false,
+      "raw_best_matrix_lr": 0.0125,
+      "role": "formal_candidate",
+      "scientific_result": "malt_selected",
+      "selected_cell_id": "malt_lr0125",
+      "selected_final_val_loss": 3.7649,
+      "selected_matrix_lr": 0.0125,
+      "selection_endpoint": "step-1000 validation loss",
+      "selection_performed": true,
+      "selection_policy": "raw_endpoint_best",
+      "selection_reason": "raw_endpoint_best",
+      "status": "selected",
+      "upper_boundary_lr": 0.016
+    },
+    "malter_eq17": {
+      "boundary_rule_triggered": false,
+      "boundary_side": null,
+      "boundary_tie_policy": "any_boundary_at_reported_minimum_blocks_formal",
+      "center_cell_id": "malter_eq17_lr012",
+      "center_preferred_if_within_margin_of_best": true,
+      "center_tie_margin": 0.002,
+      "formal_allowed": true,
+      "formal_eligible": true,
+      "lower_boundary_lr": 0.007,
+      "method": "malter_eq17",
+      "minimum_includes_lower_boundary": false,
+      "minimum_includes_upper_boundary": false,
+      "minimum_tied_cell_ids": [
+        "malter_eq17_lr015"
+      ],
+      "paper_center_lr": 0.012,
+      "ranked_cells": [
+        {
+          "cell_id": "malter_eq17_lr015",
+          "final_val_loss": 4.1016,
+          "matrix_lr": 0.015
+        },
+        {
+          "cell_id": "malter_eq17_lr018",
+          "final_val_loss": 4.102,
+          "matrix_lr": 0.018
+        },
+        {
+          "cell_id": "malter_eq17_lr025",
+          "final_val_loss": 4.1141,
+          "matrix_lr": 0.025
+        },
+        {
+          "cell_id": "malter_eq17_lr012",
+          "final_val_loss": 4.1218,
+          "matrix_lr": 0.012
+        },
+        {
+          "cell_id": "malter_eq17_lr009",
+          "final_val_loss": 4.1776,
+          "matrix_lr": 0.009
+        },
+        {
+          "cell_id": "malter_eq17_lr007",
+          "final_val_loss": 4.2603,
+          "matrix_lr": 0.007
+        }
+      ],
+      "raw_best_cell_id": "malter_eq17_lr015",
+      "raw_best_final_val_loss": 4.1016,
+      "raw_best_is_lower_boundary": false,
+      "raw_best_is_upper_boundary": false,
+      "raw_best_matrix_lr": 0.015,
+      "role": "formal_candidate",
+      "scientific_result": "malter_eq17_selected",
+      "selected_cell_id": "malter_eq17_lr015",
+      "selected_final_val_loss": 4.1016,
+      "selected_matrix_lr": 0.015,
+      "selection_endpoint": "step-1000 validation loss",
+      "selection_performed": true,
+      "selection_policy": "paper_center_within_best_plus_0.002",
+      "selection_reason": "raw_endpoint_best",
+      "status": "selected",
+      "upper_boundary_lr": 0.025
+    }
+  },
+  "status": "selected"
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-07-30",
+  "run_id": "20260729T105505+0000",
+  "passed": true,
+  "data_quality_status": "ready_to_cite_with_scope_caveats",
+  "checks": {
+    "formal_cell_count_16": true,
+    "all_cells_attempt_001": true,
+    "all_cells_unresumed": true,
+    "all_worker_and_trainer_statuses_completed": true,
+    "four_by_four_rotation_exact": true,
+    "each_method_occupies_each_position_once": true,
+    "execution_cell_manifest_hashes_match": true,
+    "cell_linked_artifact_hashes_match": true,
+    "analysis_artifact_hashes_match": true,
+    "raw_metric_formulas_recomputed": true,
+    "official_method_summaries_recomputed": true,
+    "official_primary_contrasts_recomputed": true,
+    "initialization_fingerprint_common": true,
+    "runtime_fingerprint_common": true,
+    "data_fingerprint_common": true,
+    "model_parameter_bytes_exact": true,
+    "optimizer_state_bytes_exact": true,
+    "k_state_bytes_exact": true,
+    "exclusive_before_and_after_pass": true,
+    "continuous_monitor_samples_present": true,
+    "idle_gpu_processes_absent": true,
+    "monitor_query_errors_absent": true,
+    "current_key_sources_match_source_snapshot": true,
+    "analysis_unit_test_passed": true,
+    "controller_unit_tests_passed": true
+  },
+  "audit_counts": {
+    "formal_cells": 16,
+    "attempt_directories": 16,
+    "non_attempt_001_directories": 0,
+    "completed_status_files": 32,
+    "manifest_and_artifact_hash_checks": 102,
+    "independently_recomputed_formula_checks": 48,
+    "continuous_gpu_monitor_samples": 6539,
+    "idle_gpu_process_events": 0,
+    "monitor_query_errors": 0,
+    "distinct_timing_process_pids": 16,
+    "analysis_tests_passed": 1,
+    "controller_tests_passed": 9
+  },
+  "frozen_configuration": {
+    "model": "LLaMA-SwiGLU 1B",
+    "parameter_count": 1013690368,
+    "seed": 2026,
+    "global_batch_size": 512,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "tokens_per_update": 524288,
+    "warmup_updates_excluded": 32,
+    "timed_updates": 512,
+    "total_updates": 544,
+    "physical_timing_gpu": 0,
+    "continuously_idle_gpu": 1,
+    "wandb": "disabled",
+    "checkpoint_every": 0,
+    "resume_policy": "never"
+  },
+  "rotation": [
+    [
+      "muon",
+      "newton_full",
+      "down_none",
+      "down_diag"
+    ],
+    [
+      "newton_full",
+      "down_none",
+      "down_diag",
+      "muon"
+    ],
+    [
+      "down_none",
+      "down_diag",
+      "muon",
+      "newton_full"
+    ],
+    [
+      "down_diag",
+      "muon",
+      "newton_full",
+      "down_none"
+    ]
+  ],
+  "position_effects_tokens_per_s_relative_to_overall_pct": {
+    "position_0": 0.018976228967249043,
+    "position_1": -0.032395796909179264,
+    "position_2": -0.01664890697675725,
+    "position_3": 0.030068474918665267
+  },
+  "common_fingerprints": {
+    "contract_sha256": "6658273d80051ef713b8ea0fa8fd40950823c59effb5cce8bae87e9caa65e646",
+    "execution_manifest_sha256": "fe0d85dbdb87782d9062f2cd88e1baba61637dbbb48459a917c452f8e29f483c",
+    "initialization_sha256": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec",
+    "runtime_fingerprint": "2951a374071707c9de19b1dd8e8406579538e75cc4d12960da0db928fae6cefc",
+    "data_fingerprint": "097478adc4e938305a50d8fa888a9b11508523dc41c403db339f0ba5e9424d0d",
+    "derived_trainer_sha256": "a21f364b73ea859e1ca62bc75600de348b00a0ce5fcbd315ed7e848eb2b4666a",
+    "profile_wrapper_sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+    "official_repo_commit": "df78af0db523d8bceb25af4919a3e3e7082b80f3",
+    "triton_kernels_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+  },
+  "known_integrity_limit": {
+    "continuous_sample_jsonl_hash_in_remote_cell_manifest": false,
+    "impact": "The archived JSONL streams agree with every monitor summary and the independent rescan, but the remote formal cell manifests hash the monitor summaries rather than the raw JSONL streams.",
+    "local_mitigation": "source_artifact_hashes.csv records SHA-256 for every received source artifact, including every gpu_isolation_samples.jsonl file."
+  },
+  "scope_caveats": [
+    "The four timing repeats characterize technical variability on one H100 node, not cross-host or cross-seed generality.",
+    "The official timer excludes compilation setup, validation, checkpoint I/O, and W&B.",
+    "The reported CUDA peaks cover steady-state timed updates 33 through 544 after a reset, not the entire process lifetime.",
+    "Experiment-42 losses are not optimizer-quality evidence; quality remains sourced from experiment 20.",
+    "newton_full is the paper's full-K Newton-Muon-family LLaMA adaptation/control, not an upstream official LLaMA benchmark.",
+    "Raw throughput must not be compared numerically with experiment 39 because the model, host, and configuration differ."
+  ]
+}

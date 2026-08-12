@@ -1,0 +1,5 @@
+sensitivity_type,source,recipe_match,architecture,method_roles,grid,seeds,budget,classification,limitation
+learning_rate,B24 reference LR grid,no,OpenWebText GPT-2 24L/1024,"muon,original_newton_muon,selective_diag,selective_none","0.005,0.01,0.02",2026,3000 train steps; final validation at 2500,historical_only,single seed and non-final architecture/LR scale
+learning_rate,R1 Muon-diag LR cross,partial,final R1,"muon,selective_diag","high_1.0x,low_0.9x","2024,2025,2026",6200 steps,supporting_only,covers Muon and Selective-diag only; no four-method shared grid
+alpha_response,accepted block and dense-full alpha confirmations,yes,final R1,"original_newton_muon,selective_diag","0,0.25,0.5,0.75,1","2024,2025,2026",6200 steps,paper_ready,mechanism alpha response; not a substitute for LR tuning
+learning_rate,PRIVATE_PATH_REDACTED,yes,final R1,"muon,original_newton_muon,selective_diag,selective_none","0.8x,1.0x,1.2x",2026,3000 equal-budget steps,supporting_only,single-seed supporting robustness; no tuned-best claim

@@ -1,0 +1,18 @@
+{
+  "all_checks_passed": true,
+  "analysis_kind": "deterministic_numerical_reference_audit",
+  "blocks": 3,
+  "check_count": 8,
+  "empirical_claim_eligible": false,
+  "input_dim": 12,
+  "mdp_manifest": true,
+  "numpy_version": "2.2.6",
+  "output_dim": 8,
+  "outputs": {
+    "method_formulation_checks.csv": "738f2c5881c3762db7e9648b7a0446e154bfbf44b5846d4deb9fe6aae793b566"
+  },
+  "proof_status": "numerically_checked_not_formal_proof",
+  "schema_version": "mdp_method_formulation_audit_v1",
+  "seed": 20260803,
+  "status": "passed"
+}

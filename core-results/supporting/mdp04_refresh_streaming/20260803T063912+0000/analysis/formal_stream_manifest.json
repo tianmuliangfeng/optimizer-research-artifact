@@ -1,0 +1,185 @@
+{
+  "accepted_loss_outcomes_reused_not_recomputed": true,
+  "accepted_refresh_diagnostics": {
+    "all_17_point_fingerprints_exact": false,
+    "all_17_point_values_within_original_v3_tolerance": false,
+    "hard_gate": false,
+    "reason": "fresh torch.compile/Triton processes are not elementwise portable; metadata, sample count and finiteness remain hard-gated"
+  },
+  "artifacts": {
+    "refresh_layer_event_metrics.csv": "8e36469fba79c6808dcc682145de5f39bde1bda6eee4b8f8d8f52f9da991734a",
+    "refresh_unit_event_joined.csv": "6481fdb461561642a66dadf316ee4ab3a9ecc34e9cdc0b43b81c5790435dfb83",
+    "refresh_unit_event_summary.csv": "ed7eb8ff3811c25e54190135add1a487732995d8c13e963f4761b62502737743",
+    "refresh_unit_outcomes.csv": "0a432df6a860e2671fd6d9ba23c33bb4f7acc73f849a30778bb4c3d9a68da80e",
+    "refresh_validation_slices.csv": "f2fc7562cfb6161f5dca7b7f34f99c3958071600f74b40861377c37e4fc44bcd"
+  },
+  "checks": {
+    "accepted_source_hashes": true,
+    "all_units_passed": true,
+    "boolean_integrity_gates": true,
+    "layer_event_rows": true,
+    "no_large_persisted_files": true,
+    "numeric_integrity_gates": false,
+    "unit_contract_lineage": true,
+    "unit_count": true,
+    "unit_event_rows": true,
+    "unit_outcome_rows": true,
+    "validation_slice_gate": true
+  },
+  "large_files": [],
+  "maxima": {
+    "accepted_refresh_sample_max_abs_error": 0.9645233154296875,
+    "accepted_refresh_sample_max_relative_error": 6.509132317221076,
+    "covariance_refresh_identity_relative_residual": 7.822507164193095e-08,
+    "inverse_asymmetry": 1.4364384008609928e-06,
+    "k_asymmetry": 0.0,
+    "runtime_inverse_backward_residual": 1.0401909447523475e-05,
+    "runtime_resolvent_relative_residual": 0.014926732286117244
+  },
+  "numeric_gate_checks": {
+    "covariance_refresh_identity": true,
+    "inverse_asymmetry": true,
+    "k_asymmetry": true,
+    "runtime_inverse_backward_residual": true,
+    "runtime_resolvent_relative_residual": false
+  },
+  "passed": false,
+  "raw_full_matrices_persisted": false,
+  "rows": {
+    "layer_event": 432,
+    "unit_event": 24,
+    "unit_outcome": 12,
+    "validation_slice": 6
+  },
+  "schema_version": "mdp04_formal_stream_manifest_v1",
+  "script_version": "2026-08-03.4",
+  "selected_attempts": [
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED"
+  ],
+  "source_hash_checks": {
+    "analysis/auc_contrasts.csv": true,
+    "analysis/mech09r_analysis_manifest.json": true,
+    "analysis/paired_contrasts.csv": true,
+    "checkpoint_inventory.json": true,
+    "commands.jsonl": true,
+    "formal/formal_manifest.json": true
+  },
+  "source_run": "PRIVATE_PATH_REDACTED__7bb9a9b142d3",
+  "statistical_unit": "12 nested origin-replica units; 18 layers are aggregated within unit-event",
+  "stream_contract": "PRIVATE_PATH_REDACTED",
+  "stream_contract_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
+  "timing_eligible_for_paper": false,
+  "unit_contract_lineage": [
+    {
+      "data_replica": 0,
+      "lineage": "inherited_stricter_v3",
+      "origin": "early_muon",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 1,
+      "lineage": "inherited_stricter_v3",
+      "origin": "early_muon",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 2,
+      "lineage": "inherited_stricter_v3",
+      "origin": "early_muon",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 0,
+      "lineage": "inherited_stricter_v3",
+      "origin": "early_newton_full",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 1,
+      "lineage": "inherited_stricter_v3",
+      "origin": "early_newton_full",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 2,
+      "lineage": "inherited_stricter_v3",
+      "origin": "early_newton_full",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 0,
+      "lineage": "inherited_stricter_v3",
+      "origin": "late_muon",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 1,
+      "lineage": "inherited_stricter_v3",
+      "origin": "late_muon",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 2,
+      "lineage": "inherited_stricter_v3",
+      "origin": "late_muon",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2"
+    },
+    {
+      "data_replica": 0,
+      "lineage": "current_v4",
+      "origin": "late_newton_full",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61"
+    },
+    {
+      "data_replica": 1,
+      "lineage": "current_v4",
+      "origin": "late_newton_full",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61"
+    },
+    {
+      "data_replica": 2,
+      "lineage": "current_v4",
+      "origin": "late_newton_full",
+      "passed": true,
+      "selected_attempt": "PRIVATE_PATH_REDACTED",
+      "stream_contract_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61"
+    }
+  ],
+  "unit_contract_lineage_counts": {
+    "current_v4": 3,
+    "inherited_stricter_v3": 9
+  }
+}

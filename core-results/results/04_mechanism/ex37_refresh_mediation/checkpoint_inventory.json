@@ -1,0 +1,131 @@
+{
+  "cells": [
+    {
+      "bytes": 8522343395,
+      "cell": "early_muon",
+      "checks": {
+        "expected_bytes": true,
+        "expected_sha256": true,
+        "stable_mtime": true,
+        "stable_size": true
+      },
+      "elapsed_seconds": 35.728259325027466,
+      "expected_bytes": 8522343395,
+      "expected_sha256": "7561ee5571db825190fa3cc34af8bd9d72f213a69c925322cea6328b688a58d1",
+      "method": "muon",
+      "mtime_ns": 1784725394906890909,
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__74f79e2aa2a7",
+      "reuse_checks": {
+        "cell": true,
+        "expected_size": true,
+        "known_hash": true,
+        "mtime": true,
+        "path": true,
+        "size": true,
+        "source_passed": true
+      },
+      "reused_from_mech08": "PRIVATE_PATH_REDACTED",
+      "schema_version": 1,
+      "sha256": "7561ee5571db825190fa3cc34af8bd9d72f213a69c925322cea6328b688a58d1",
+      "stage": "early",
+      "step": 1000
+    },
+    {
+      "bytes": 17783856619,
+      "cell": "early_newton_full",
+      "checks": {
+        "expected_bytes": true,
+        "expected_sha256": true,
+        "stable_mtime": true,
+        "stable_size": true
+      },
+      "elapsed_seconds": 74.78546857833862,
+      "expected_bytes": 17783856619,
+      "expected_sha256": "8d532806cc4a0613b3ad6c5e74096a70be352af941b9c72e6c37997cf1beecd7",
+      "method": "newton_full",
+      "mtime_ns": 1784717222564832722,
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__53c13f268954",
+      "reuse_checks": {
+        "cell": true,
+        "expected_size": true,
+        "known_hash": true,
+        "mtime": true,
+        "path": true,
+        "size": true,
+        "source_passed": true
+      },
+      "reused_from_mech08": "PRIVATE_PATH_REDACTED",
+      "schema_version": 1,
+      "sha256": "8d532806cc4a0613b3ad6c5e74096a70be352af941b9c72e6c37997cf1beecd7",
+      "stage": "early",
+      "step": 1000
+    },
+    {
+      "bytes": 8522343395,
+      "cell": "late_muon",
+      "checks": {
+        "expected_bytes": true,
+        "expected_sha256": true,
+        "stable_mtime": true,
+        "stable_size": true
+      },
+      "elapsed_seconds": 35.99194145202637,
+      "expected_bytes": 8522343395,
+      "expected_sha256": "7d48b9846aefe8e03e04305da0bd10e8fc3b889643328e585e70a484e1ad78ec",
+      "method": "muon",
+      "mtime_ns": 1784877903255615569,
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__b534ee219728",
+      "reuse_checks": {
+        "cell": true,
+        "expected_size": true,
+        "known_hash": true,
+        "mtime": true,
+        "path": true,
+        "size": true,
+        "source_passed": true
+      },
+      "reused_from_mech08": "PRIVATE_PATH_REDACTED",
+      "schema_version": 1,
+      "sha256": "7d48b9846aefe8e03e04305da0bd10e8fc3b889643328e585e70a484e1ad78ec",
+      "stage": "late",
+      "step": 6200
+    },
+    {
+      "bytes": 17783856619,
+      "cell": "late_newton_full",
+      "checks": {
+        "expected_bytes": true,
+        "expected_sha256": true,
+        "stable_mtime": true,
+        "stable_size": true
+      },
+      "elapsed_seconds": 73.63405966758728,
+      "expected_bytes": 17783856619,
+      "expected_sha256": "83c9bc4316996deb67ae92b9e2c1c60521f9ed5c56f9690d3e09de399915e7d5",
+      "method": "newton_full",
+      "mtime_ns": 1784828476126114375,
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__c610d88cb71b",
+      "reuse_checks": {
+        "cell": true,
+        "expected_size": true,
+        "known_hash": true,
+        "mtime": true,
+        "path": true,
+        "size": true,
+        "source_passed": true
+      },
+      "reused_from_mech08": "PRIVATE_PATH_REDACTED",
+      "schema_version": 1,
+      "sha256": "83c9bc4316996deb67ae92b9e2c1c60521f9ed5c56f9690d3e09de399915e7d5",
+      "stage": "late",
+      "step": 6200
+    }
+  ],
+  "contract_sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+  "passed": true,
+  "schema_version": 2
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-27.1",
+  "frozen_at_utc": "2026-07-27T08:45:00Z",
+  "title": "MECH-07 LLaMA-1B Selective-vs-baselines family contrast",
+  "family": "llama1b",
+  "seed": 2026,
+  "purpose": "Explain the early-to-late family reversal without new training.",
+  "interpretation": {
+    "longrun_quality_source": "existing three-seed formal training; not re-estimated here",
+    "checkpoint_diagnostic": "local read-only counterfactual evidence",
+    "causal_family_ranking": false,
+    "new_training": false,
+    "hvp_authorized": false,
+    "existing_training_rankings_used_to_tune_thresholds": false
+  },
+  "comparison_contract": {
+    "primary": [
+      "selective_diag_vs_muon",
+      "selective_none_vs_muon",
+      "selective_diag_vs_original_newton_muon",
+      "selective_none_vs_original_newton_muon"
+    ],
+    "baseline": [
+      "original_newton_muon_vs_muon"
+    ],
+    "excluded_from_primary": [
+      "selective_diag_vs_selective_none"
+    ],
+    "negative_delta_definition": "left candidate has lower held-out shadow loss"
+  },
+  "algorithms": {
+    "muon": {
+      "family_core": "none",
+      "down": "none"
+    },
+    "original_newton_muon": {
+      "family_core": "dense_full",
+      "down": "dense_full"
+    },
+    "selective_diag": {
+      "family_core": "dense_full",
+      "down": "diag"
+    },
+    "selective_none": {
+      "family_core": "dense_full",
+      "down": "none"
+    }
+  },
+  "local_intervention": {
+    "covariance": "fresh build-split covariance for every algorithm candidate",
+    "momentum": "same checkpoint historical momentum for all counterfactual candidates within a cell",
+    "evaluation": "held-out split with build/eval direction reversal",
+    "production_exactness": "not claimed; fresh covariance intentionally equalizes candidate construction",
+    "cross_checkpoint_causality": "not claimed"
+  },
+  "architecture": {
+    "n_layer": 18,
+    "n_embd": 2048,
+    "n_head": 16,
+    "intermediate_size": 5504,
+    "sequence_length": 1024
+  },
+  "targets": {
+    "layers": [0, 6, 12, 17],
+    "kinds": ["q_proj", "o_proj", "gate_proj", "down_proj"],
+    "scopes": ["family_core", "down", "all"]
+  },
+  "formal": {
+    "repeats": 4,
+    "repeat_offsets": [0, 4096, 8192, 12288],
+    "batches_per_split": 4,
+    "device_batch_size": 1,
+    "sequence_length": 128,
+    "max_activation_rows": 512,
+    "ridge_mult": 0.2,
+    "ridge_eps": 1e-08,
+    "momentum": 0.95,
+    "ns_steps": 5,
+    "step_multipliers": [0.0, 0.25, 0.5, 1.0]
+  },
+  "smoke": {
+    "layers": [0, 17],
+    "kinds": ["q_proj", "o_proj", "gate_proj", "down_proj"],
+    "repeats": 1,
+    "repeat_offsets": [0],
+    "batches_per_split": 1,
+    "max_activation_rows": 128
+  },
+  "analysis_thresholds": {
+    "relative_shadow_loss_margin": 1e-06,
+    "minimum_directional_cell_fraction": 0.75
+  },
+  "source_constraints": {
+    "base_source_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "triton_sha256": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f"
+  },
+  "checkpoints": [
+    {
+      "cell": "early_down_none",
+      "stage": "early",
+      "step": 1000,
+      "method": "down_none",
+      "expected_sha256": "5a55e42ce98f4ae767b55b5f5baaa370a1512285ec8c8022bb8cd32433ff0aeb",
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/medium/20260722T034513+0000_formal_seed2026/01_down_none/checkpoint_latest.pt"
+    },
+    {
+      "cell": "early_down_diag",
+      "stage": "early",
+      "step": 1000,
+      "method": "down_diag",
+      "expected_sha256": null,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/medium/20260722T034513+0000_formal_seed2026/02_down_diag/checkpoint_latest.pt"
+    },
+    {
+      "cell": "early_newton_full",
+      "stage": "early",
+      "step": 1000,
+      "method": "newton_full",
+      "expected_sha256": null,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/medium/20260722T034513+0000_formal_seed2026/03_newton_full/checkpoint_latest.pt"
+    },
+    {
+      "cell": "early_muon",
+      "stage": "early",
+      "step": 1000,
+      "method": "muon",
+      "expected_sha256": "7561ee5571db825190fa3cc34af8bd9d72f213a69c925322cea6328b688a58d1",
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/medium/20260722T034513+0000_formal_seed2026/04_muon/checkpoint_latest.pt"
+    },
+    {
+      "cell": "late_down_none",
+      "stage": "late",
+      "step": 6200,
+      "method": "down_none",
+      "expected_sha256": "069bc086a79bd71c3723cabeb9f346730b931610c703b3725a7031ad4d1fa8f0",
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/formal/gpu0_none_diag/20260723T025322+0000_formal_seed2026/01_down_none/checkpoint_latest.pt"
+    },
+    {
+      "cell": "late_down_diag",
+      "stage": "late",
+      "step": 6200,
+      "method": "down_diag",
+      "expected_sha256": null,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/formal/gpu0_none_diag/20260723T025322+0000_formal_seed2026/02_down_diag/checkpoint_latest.pt"
+    },
+    {
+      "cell": "late_newton_full",
+      "stage": "late",
+      "step": 6200,
+      "method": "newton_full",
+      "expected_sha256": null,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/formal/gpu1_full_muon/20260723T025322+0000_formal_seed2026/01_newton_full/checkpoint_latest.pt"
+    },
+    {
+      "cell": "late_muon",
+      "stage": "late",
+      "step": 6200,
+      "method": "muon",
+      "expected_sha256": "7d48b9846aefe8e03e04305da0bd10e8fc3b889643328e585e70a484e1ad78ec",
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/formal/gpu1_full_muon/20260723T025322+0000_formal_seed2026/02_muon/checkpoint_latest.pt"
+    }
+  ]
+}

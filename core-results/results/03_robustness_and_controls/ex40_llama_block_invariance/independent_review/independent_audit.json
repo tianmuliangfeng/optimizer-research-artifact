@@ -1,0 +1,181 @@
+{
+  "analysis_checks": {
+    "classification": true,
+    "control_maximum": true,
+    "control_rows": true,
+    "effect_multiple": true,
+    "global_rows": true,
+    "pooled_median": true,
+    "scientific_result_not_integrity_gate": true,
+    "stage_medians": true,
+    "within_rows": true
+  },
+  "archive": {
+    "bytes": 667407,
+    "checks": {
+      "crc": true,
+      "no_checkpoint_tensors": true,
+      "no_unsafe_paths": true,
+      "nonempty": true,
+      "single_expected_root": true
+    },
+    "entries": 114,
+    "filename": "20260729T044926+0000.zip",
+    "passed": true,
+    "pt_entries": [],
+    "sha256": "9382d9b8602bf45fee155cfe067ac95e8ae64e3a5b22ded9dd4deb0d4f652f73",
+    "uncompressed_bytes": 5607753,
+    "unsafe_entries": []
+  },
+  "classification": "strong_non_invariance",
+  "formal": {
+    "early": {
+      "checks": {
+        "all_worker_checks": true,
+        "checkpoint_file_unchanged": true,
+        "checkpoint_hash_passed": true,
+        "contract_matches_local": true,
+        "control_key_unique": true,
+        "control_row_count": true,
+        "geometry_within_control_exact": true,
+        "global_key_unique": true,
+        "global_row_count": true,
+        "inverse_residual": true,
+        "loss_row_count": true,
+        "manifest_passed": true,
+        "model_content_unchanged": true,
+        "numeric_finite": true,
+        "optimizer_loader_unchanged": true,
+        "partition_row_count": true,
+        "permutation_bijections": true,
+        "preconditioner_controls": true,
+        "preconditioner_within": true,
+        "production_controls": true,
+        "production_within": true,
+        "projection_equivalence": true,
+        "status_passed": true,
+        "summary_row_count": true,
+        "update_row_count": true,
+        "within_row_count": true
+      },
+      "maxima": {
+        "inverse_residual": 1.7799420727607387e-09,
+        "preconditioner_control_drift": 3.6305288606663143e-12,
+        "preconditioner_within_drift": 9.42530669501757e-13,
+        "production_control_drift": 0.014960640331753677,
+        "production_within_drift": 0.011857704060767067,
+        "projection_equivalence_error": 2.0550854711919044e-16
+      },
+      "passed": true
+    },
+    "late": {
+      "checks": {
+        "all_worker_checks": true,
+        "checkpoint_file_unchanged": true,
+        "checkpoint_hash_passed": true,
+        "contract_matches_local": true,
+        "control_key_unique": true,
+        "control_row_count": true,
+        "geometry_within_control_exact": true,
+        "global_key_unique": true,
+        "global_row_count": true,
+        "inverse_residual": true,
+        "loss_row_count": true,
+        "manifest_passed": true,
+        "model_content_unchanged": true,
+        "numeric_finite": true,
+        "optimizer_loader_unchanged": true,
+        "partition_row_count": true,
+        "permutation_bijections": true,
+        "preconditioner_controls": true,
+        "preconditioner_within": true,
+        "production_controls": true,
+        "production_within": true,
+        "projection_equivalence": true,
+        "status_passed": true,
+        "summary_row_count": true,
+        "update_row_count": true,
+        "within_row_count": true
+      },
+      "maxima": {
+        "inverse_residual": 3.8660926318457436e-10,
+        "preconditioner_control_drift": 4.166371025946621e-12,
+        "preconditioner_within_drift": 1.2551910101882643e-12,
+        "production_control_drift": 0.015931609890260972,
+        "production_within_drift": 0.014801162260735091,
+        "projection_equivalence_error": 2.0557257151102136e-16
+      },
+      "passed": true
+    }
+  },
+  "interpretation_boundary": {
+    "block4_primary_baseline": false,
+    "not_supported": "A claim that block4 wins or loses a full training comparison.",
+    "official_original_newton_muon_control": "newton_full",
+    "supported": "The contiguous four-way LLaMA SwiGLU down-projection approximation is strongly coordinate-partition dependent."
+  },
+  "passed": true,
+  "provenance": {
+    "checks": {
+      "analysis_passed": true,
+      "analyzer": true,
+      "contract": true,
+      "controller": true,
+      "root_classification": true,
+      "root_status": true,
+      "worker": true
+    },
+    "local_hashes": {
+      "analyzer": "7fcc3d47398ddc0a43999b78658f86c3bce30ce2d35c1e7ac018be9489a5e50e",
+      "contract": "79c86063cae7bad7a7c2f1839a2e8355827626ce652dcbc6c2cc2bace109b59a",
+      "controller": "14c1e58cd2ac62f1d7437df12d4b3165a6d5be95dee2a3e7fb9ed96768ce6ce6",
+      "worker": "751d6875933c09de9c02d5b1b60c6affd8c8e8dd41832c4d664feb0a8ce76565"
+    },
+    "observed": {
+      "analysis_version": "2026-07-29.2",
+      "analyzer_sha256": "7fcc3d47398ddc0a43999b78658f86c3bce30ce2d35c1e7ac018be9489a5e50e",
+      "contract_sha256": "79c86063cae7bad7a7c2f1839a2e8355827626ce652dcbc6c2cc2bace109b59a",
+      "controller_sha256": "14c1e58cd2ac62f1d7437df12d4b3165a6d5be95dee2a3e7fb9ed96768ce6ce6",
+      "script_version": "2026-07-29.2",
+      "worker_sha256": "751d6875933c09de9c02d5b1b60c6affd8c8e8dd41832c4d664feb0a8ce76565",
+      "worker_version": "2026-07-29.2"
+    },
+    "passed": true
+  },
+  "recomputed": {
+    "effect_to_control_multiple": 21.63766740870219,
+    "equivariant_control_update_drift": {
+      "maximum": 0.015931609890260972,
+      "mean": 0.011154900593079584,
+      "median": 0.012696329048220364,
+      "minimum": 0.004848442931457565,
+      "n": 144,
+      "p95": 0.01545615379775318
+    },
+    "global_block4_update_drift": {
+      "maximum": 0.5841121276728609,
+      "mean": 0.3751176777109817,
+      "median": 0.34472287609065727,
+      "minimum": 0.19505939284108892,
+      "n": 48,
+      "p95": 0.5814676693623864
+    },
+    "maximum_equivariant_control_drift": 0.015931609890260972,
+    "pooled_global_block4_median_update_drift": 0.34472287609065727,
+    "stage_medians": {
+      "early": 0.3105255208424539,
+      "late": 0.39217420020354976
+    },
+    "within_block_control_update_drift": {
+      "maximum": 0.014801162260735091,
+      "mean": 0.008543839588712092,
+      "median": 0.006717979399303702,
+      "minimum": 0.0055376637044868005,
+      "n": 12,
+      "p95": 0.014662735408615287
+    }
+  },
+  "schema_version": 1,
+  "script_version": "2026-07-29.2",
+  "source_artifact_count": 106
+}

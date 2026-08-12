@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-08-05T06:36:29.644525+00:00",
+  "in_place_resume": true,
+  "no_wrap": true,
+  "passed": true,
+  "planned_interrupt_return_code": 75,
+  "retired_pilot_checkpoints": [
+    {
+      "bytes": 8522343843,
+      "path": "PRIVATE_PATH_REDACTED__89d5a9a3800a",
+      "sha256": "0fc3c2b19dd50e0013ac12023ae6032b22634677e156cc23a3bc36b838a85bd8"
+    },
+    {
+      "bytes": 8522343971,
+      "path": "PRIVATE_PATH_REDACTED__2b4d4d31d166",
+      "sha256": "b7fe8686ca6f995cb02fa3611ba468be89911b5e1c9f57a59e10fea186202436"
+    }
+  ],
+  "schema_version": "ex48_engineering_pilot_v1",
+  "source_checkpoint_branch": true
+}

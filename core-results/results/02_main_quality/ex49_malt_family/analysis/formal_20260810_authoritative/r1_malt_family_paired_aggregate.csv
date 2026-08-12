@@ -1,0 +1,12 @@
+contrast,role,left,right,n_seeds,degrees_of_freedom,paired_mean,paired_sample_sd,paired_t_ci95_low,paired_t_ci95_high,ci_interpretation,left_better_count,right_better_count,practical_margin,mean_within_practical_margin,practical_margin_interpretation
+malt_minus_muon,anchor,malt,muon,3,2,-0.0043999999999999595,0.0010148891565093289,-0.00692112442702608,-0.0018788755729738389,descriptive_only_n3,3,0,0.002,False,descriptive_not_equivalence_test
+malt_minus_original_newton_muon,anchor,malt,block4,3,2,0.010533333333333358,0.0019087517736295536,0.0057917310699115345,0.015274935596755182,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malt_minus_selective_none,primary,malt,none,3,2,0.006066666666666738,0.0015176736583778804,0.002296556297618373,0.009836777035715104,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malt_minus_selective_diag,primary,malt,diag,3,2,0.01163333333333331,0.0020033305601757706,0.006656784339511607,0.01660988232715501,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malt_minus_mousse,external_curvature_baseline,malt,mousse,3,2,0.0047000000000001485,0.0010148891565093289,0.002178875572974028,0.007221124427026269,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malter_eq17_minus_muon,anchor,malter_eq17,muon,3,2,0.36879999999999996,0.003117691453624149,0.3610552250861592,0.3765447749138407,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malter_eq17_minus_original_newton_muon,anchor,malter_eq17,block4,3,2,0.38373333333333326,0.0036678785875943983,0.37462181781142584,0.3928448488552407,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malter_eq17_minus_selective_none,primary,malter_eq17,none,3,2,0.37926666666666664,0.0032145502536643786,0.37128128115492204,0.38725205217841124,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malter_eq17_minus_selective_diag,primary,malter_eq17,diag,3,2,0.3848333333333332,0.0032192131543799744,0.37683636453407443,0.39283030213259196,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malter_eq17_minus_mousse,external_curvature_baseline,malter_eq17,mousse,3,2,0.37790000000000007,0.003117691453624149,0.37015522508615933,0.3856447749138408,descriptive_only_n3,0,3,0.002,False,descriptive_not_equivalence_test
+malt_minus_malter_eq17,family_internal,malt,malter_eq17,3,2,-0.3731999999999999,0.003109662361093457,-0.3809248295422933,-0.36547517045770656,descriptive_only_n3,3,0,0.002,False,descriptive_not_equivalence_test

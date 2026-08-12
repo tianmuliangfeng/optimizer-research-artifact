@@ -1,0 +1,3 @@
+topology,seeds,seed_list,mean_final_curvature_c,min_final_curvature_c,max_final_curvature_c,all_seed_curvatures_negative,alpha0p50_beats_both_endpoints_all_seeds,scientific_classification,claim,caveat
+block,3,"2024,2025,2026",-0.0012666666666666753,-0.0017000000000000348,-0.0009000000000001229,True,True,strong_confirmatory_support,nonmonotonic_dose_response_on_tested_grid,does_not_establish_a_universal_optimal_alpha
+dense_full,3,"2024,2025,2026",-0.0019666666666665242,-0.002349999999999852,-0.0016500000000001513,True,True,strong_confirmatory_support,nonmonotonic_dose_response_on_tested_grid,does_not_establish_a_universal_optimal_alpha

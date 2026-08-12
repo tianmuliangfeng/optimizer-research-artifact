@@ -1,0 +1,94 @@
+{
+  "schema_version": "mechanism_closure_contract_v1",
+  "package_id": "mechanism_closure_20260805",
+  "decision_date": "2026-08-05",
+  "geo01b": {
+    "run_id": "20260804T083122+0000",
+    "default_zip": "runs/imports/20260804T083122+0000.zip",
+    "bytes": 13042311,
+    "sha256": "c4e8f6bf9cb260a4d04965389576fcce337e9a4e5526d63ed7acc3a425425aa6",
+    "contract_sha256": "6362647488486acd56cc6cfd9648cd6d990a85aa573c8f9ef2dcca20679d5e04",
+    "expected_units": 12,
+    "expected_outcome_rows": 24,
+    "expected_geometry_rows": 96,
+    "phase": "discovery",
+    "claim_eligible": false
+  },
+  "local_inputs": [
+    {
+      "id": "unified_manifest",
+      "path": "experiment_csv/selective-newton-muon/38_unified_mechanism_synthesis/20260729T071451+0000/unified_mechanism_manifest.json",
+      "sha256": "634ecfa12cd2ec46e8a72f354989f0dad09155a2489d7fd2f707cfb1c70a5c0d"
+    },
+    {
+      "id": "unified_chain",
+      "path": "experiment_csv/selective-newton-muon/38_unified_mechanism_synthesis/20260729T071451+0000/mechanism_chain.csv",
+      "sha256": "a1fe373c605401695a1330d7605098927146b8de2f1f1db38c606e62aa2f1130"
+    },
+    {
+      "id": "unified_claim_matrix",
+      "path": "experiment_csv/selective-newton-muon/38_unified_mechanism_synthesis/20260729T071451+0000/claim_evidence_matrix.csv",
+      "sha256": "38ee2dadd55b69a73cbcd4e76a54e05a078b22796a0bf5ae2917af6f93190316"
+    },
+    {
+      "id": "unified_report",
+      "path": "experiment_csv/selective-newton-muon/38_unified_mechanism_synthesis/20260729T071451+0000/UNIFIED_MECHANISM_SYNTHESIS_REPORT.md",
+      "sha256": "f037f1d0d8c028d9160f8e73de7c8ee2f47b432394dfaaddfad7754956fb90f0"
+    },
+    {
+      "id": "mdp04_manifest",
+      "path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp04_refresh_replay/20260803T063912+0000_local_analysis/mdp04_local_analysis_manifest.json",
+      "sha256": "d6a2144d1693a93687bf530349f5eaff4c4dff54261097703f7d106f6b286890"
+    },
+    {
+      "id": "mdp04_origin_summary",
+      "path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp04_refresh_replay/20260803T063912+0000_local_analysis/origin_event_summary.csv",
+      "sha256": "a3ccef0e9ceb794d08e19c8437450af48c29f8d83c990d4d01ce31e2fb641608"
+    },
+    {
+      "id": "mdp04_report",
+      "path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp04_refresh_replay/20260803T063912+0000_local_analysis/MDP04_FINAL_LOCAL_AUDIT.md",
+      "sha256": "4b5026cbbfdf98a2e6ace285fb7541a75d2bdacbfe2ead7b1ab5e28314a8f7cb"
+    },
+    {
+      "id": "mdp05_acceptance",
+      "path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000_local_acceptance/acceptance_summary.json",
+      "sha256": "225ef2b148e8b66d1e825c3faca7b968a810aa9df996739fd39abd87f2f4de93"
+    },
+    {
+      "id": "mdp05_manifest",
+      "path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000_local_acceptance/accepted_analysis/analysis_manifest.json",
+      "sha256": "6cba65232a6192132f348c8958f940f22ba9cf6892944bfe737c86981924c78d"
+    },
+    {
+      "id": "mdp05_primary_tests",
+      "path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000_local_acceptance/accepted_analysis/primary_confirmatory_tests.csv",
+      "sha256": "7d411f0a786bb8c2d5c0d08059e7fc945805cf82a3be7e8f6d3a3553093cc747"
+    },
+    {
+      "id": "mdp05_joined",
+      "path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000_local_acceptance/accepted_analysis/unit_event_joined.csv",
+      "sha256": "55f090043f8f0e2d251487175d1fef7ed0567fef8c745f1a620f2c6b2166714e"
+    },
+    {
+      "id": "mdp05_report",
+      "path": "experiment_csv/selective-newton-muon/_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000_local_acceptance/ACCEPTANCE_AND_SCIENTIFIC_REPORT.md",
+      "sha256": "4946098964f12636876c0a9dd8e050daca85d9377bc59402f1c2378c562b02b6"
+    }
+  ],
+  "geo01a_lineage": {
+    "run_id": "20260804T070221+0000",
+    "source_zip_sha256": "7a4551d26340d181a67cb5039aed2c10121dbf1db8d5f03e0a77f99338834911",
+    "contract_sha256": "40d230dc7dc08e4388b387f70a7babfa7575a7bed02db8b387d207dc8d9674b3",
+    "analysis_manifest_sha256": "94d015551b502451bcbcf06edf9352ce0b9662ebce89aff5cd812cc5ed26e382",
+    "local_source_available": false,
+    "used_for_scientific_closure": false,
+    "role": "engineering_pilot_only_no_scientific_claim"
+  },
+  "decision": {
+    "mechanism_line_closed": true,
+    "geo01c_authorized": false,
+    "new_gpu_mechanism_work_authorized": false,
+    "llama1b_10b_decision_deferred": true
+  }
+}

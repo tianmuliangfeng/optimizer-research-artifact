@@ -1,0 +1,10 @@
+{
+  "classification": "persistent_muon_lead",
+  "frozen_rules": {
+    "clear_selective_recovery": "At 10B, down_none or down_diag has mean(method-muon) <= -0.002 and at least two of three paired seed differences are negative.",
+    "otherwise": "mixed_or_practically_equivalent",
+    "persistent_muon_lead": "At 10B, both down_none and down_diag have mean(method-muon) >= +0.002 and at least two of three paired seed differences are positive for each method."
+  },
+  "practical_margin": 0.002,
+  "recovery_methods": []
+}

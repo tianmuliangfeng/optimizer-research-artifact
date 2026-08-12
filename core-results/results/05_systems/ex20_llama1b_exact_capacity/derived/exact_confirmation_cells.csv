@@ -1,0 +1,5 @@
+method,device_batch_size,global_batch_size,status,failure_class,completed_steps,peak_allocated_mib,peak_reserved_mib,optimizer_state_bytes,k_state_bytes,baseline_free_bytes
+newton_full,35,280,failed,oom,,,,,,84620541952
+down_none,37,296,completed,,34,76115.9287109375,79234.0,6278709400,1811939328,84620541952
+down_diag,37,296,completed,,34,76117.0048828125,79262.0,6279501976,1812731904,84620541952
+muon,39,312,completed,,34,76677.3359375,80472.0,4466770072,0,84620541952

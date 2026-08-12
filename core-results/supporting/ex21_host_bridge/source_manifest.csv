@@ -1,0 +1,13 @@
+source_file,bytes,sha256,row_count,metric,run_count,source_sha256,package_sha256,source_bytes,package_bytes
+wandb_export_2026-07-22T09_26_38.139+08_00.csv,26987,221a2883b8a683774491560394909bce728ce97a7990b19779f86fdc34dc222c,311,lr/matrix,2,,,,
+wandb_export_2026-07-22T09_26_41.884+08_00.csv,25241,a029d057d923865f9c3b81b111afbd034942ef54a0f51e29e96ec695fe7c8374,311,lr/adamw,2,,,,
+wandb_export_2026-07-22T09_26_46.300+08_00.csv,639,a280896036629e2f33fcadd9a728be266a5a576e4dc3f34b43a4d567fb6dc17d,1,memory/peak_allocated_mib,2,,,,
+wandb_export_2026-07-22T09_26_49.550+08_00.csv,717,d8133eece7dc5631fee5f6ecc3c461f0984d20b81480081b4050e510fb7edd9c,1,memory/optimizer_state_mib,2,,,,
+wandb_export_2026-07-22T09_26_53.269+08_00.csv,603,24495a2503e1ac315cce6dc4b9221413c70da8f959dbc10cc368d4a7cfdfc796,1,memory/k_state_mib,2,,,,
+wandb_export_2026-07-22T09_26_58.421+08_00.csv,20951,ada31115c39f19a581f586962950bcb91adaf44470c3dea9abf213229424188c,309,performance/step_avg_ms,2,,,,
+wandb_export_2026-07-22T09_27_03.515+08_00.csv,22613,e08d96ef83fff29cff2988dc59cadc843e60a877baae24189bfc71ef1c0622be,311,time/train_s,2,,,,
+wandb_export_2026-07-22T09_27_08.070+08_00.csv,19201,84632c51a8c300e0ef7686ef7401566d8d9244eab2277a12859449dba6f518d6,310,train/loss_step,2,,,,
+wandb_export_2026-07-22T09_27_12.455+08_00.csv,4274,77a97c8e06be392efcc29d7d708b099d48a9954b0524fba3f9d1703bdf2d6126,63,val/loss,2,,,,
+reference/gpt_r1_original_seed2026_history_long.csv,921612,cc5f3b1a0cab2570fa4e37524ab25ff49234c2846c3bb4a064aace7eaa1ec02f,6472,reference,,,,,
+supporting/ex21_host_bridge/reference/gpt_r1_original_seed2026_run_summary.csv,1192,4e51e718a37f5ebed82bcf1c4a489e02e224b290a91b2eb7581b68930ab77ac7,4,reference,,4e51e718a37f5ebed82bcf1c4a489e02e224b290a91b2eb7581b68930ab77ac7,4e51e718a37f5ebed82bcf1c4a489e02e224b290a91b2eb7581b68930ab77ac7,1192,1192
+supporting/ex21_host_bridge/reference/llama_swiglu_seed2026_run_summary.csv,3748,587ca67592a4d1d253488413444a26d8525bd4193c7c81e5ee7337e069cda77d,5,reference,,587ca67592a4d1d253488413444a26d8525bd4193c7c81e5ee7337e069cda77d,587ca67592a4d1d253488413444a26d8525bd4193c7c81e5ee7337e069cda77d,3748,3748

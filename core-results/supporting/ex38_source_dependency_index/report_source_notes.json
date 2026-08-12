@@ -1,0 +1,66 @@
+{
+  "audience": "technical",
+  "chart_map": [
+    {
+      "analytical_question": "How do the five frozen contrasts differ across architectures?",
+      "dataset": "formal_training",
+      "delivery": "artifact.json native chart training_chart",
+      "family": "comparison",
+      "fields": [
+        "contrast",
+        "final_delta_mean",
+        "family_label",
+        "final_delta_ci95_low",
+        "final_delta_ci95_high"
+      ],
+      "palette_policy": "relaxed multi-category; architecture is the second categorical dimension",
+      "section": "training_intro",
+      "supported_claim": "Selective methods require both baselines and are architecture dependent.",
+      "type": "grouped bar"
+    }
+  ],
+  "delivery_mode": "portable_html",
+  "omitted_chart_reason": "No cross-stage mechanism chart is created because stages use heterogeneous units and evidence levels. A normalized mechanism score would be misleading.",
+  "required_structure_mapping": {
+    "further_questions": "questions",
+    "key_findings_with_evidence": [
+      "chain_intro",
+      "foundational_intro",
+      "architecture_intro",
+      "training_intro",
+      "rollout_intro",
+      "prediction_intro",
+      "alpha_intro"
+    ],
+    "limitations_robustness": "limitations",
+    "methodology": [
+      "scope",
+      "claim_intro"
+    ],
+    "recommended_next_steps": "next_step",
+    "scope_data_metrics": "scope",
+    "technical_summary": "technical_summary",
+    "title": "title"
+  },
+  "schema_version": 1,
+  "source_registry_sha256": "fb5b109b6e7d9a88f83d8010cea6a38be13123dbfa2543cddcde7e06f1a94f1a",
+  "table_map": [
+    {
+      "analytical_question": "Which c_proj K allocation preserves loss quality and memory efficiency across OWT and WikiText-103?",
+      "datasets": [
+        "foundational_module_structure",
+        "complementary_bridge"
+      ],
+      "section": "foundational_intro",
+      "supported_claim": "Historical useful K contribution is concentrated outside dense c_proj curvature, with an explicit R1 boundary."
+    },
+    {
+      "analytical_question": "Can contiguous block4 be transferred to LLaMA as an architecture-neutral original Newton–Muon baseline?",
+      "datasets": [
+        "architecture_transfer_boundary"
+      ],
+      "section": "architecture_intro",
+      "supported_claim": "No: block4 is strongly coordinate-partition dependent on LLaMA; newton_full remains the original control."
+    }
+  ]
+}

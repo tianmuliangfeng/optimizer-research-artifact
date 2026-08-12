@@ -1,0 +1,18 @@
+{
+  "snapshot_kind": "normalized_config_plus_cryptographic_upstream_manifest",
+  "repository": "https://github.com/Anti-Entrophic/Mousse",
+  "commit": "d00c1bf17790fbe56424ee5567cce80d8e75f4b2",
+  "retrieved_on": "2026-07-31",
+  "normalized_local_files": {
+    "mousse_160m.yaml": "07790dfb3dfb19354e92bebb59b87513ccb0985a7584fc04d1225cb72ea66496"
+  },
+  "verbatim_upstream_sha256": {
+    "LICENSE": "4d86e78ca5fca585db157b58577bd4123242337018d63f81747e4d1ae3d39989",
+    "README.md": "4b3ee944724cafd28d2265ae76ccc4bccc15e4bfd2af98ee6d0c2763b24b0c83",
+    "dion/dion/mousse.py": "29cddc3b76e8beeacb973511f71b43e4152f1f203d4eb5c66ba3012002e6d149",
+    "dion/configs/mousse_160m.yaml": "93021531ca43b9a8eddb7cdda142ef6cb443407683067caaf56df48ade5f18d7",
+    "dion/dion/newton_schulz_triton.py": "036bcd7ec21da3466245bfb062b426bf11fed07aaadd76bf7945c85d53be7383"
+  },
+  "verification_entrypoint": "../verify_mousse_upstream.py",
+  "note": "The adapted executable core is mousse_optimizer.py; it carries the upstream URL, commit, MIT notice, and R1-only layout deviations."
+}

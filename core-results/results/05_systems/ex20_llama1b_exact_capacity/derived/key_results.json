@@ -1,0 +1,50 @@
+{
+  "source_batch_id": "20260722T070855+0000_capacity_exact_seed2026",
+  "evidence_class": "capacity_only",
+  "source_archive_sha256": "f34123fb358007586f1391ce01453a17a0b54d29588d318a2e20d232ef55d486",
+  "source_manifest_sha256": "68b7ad1d9d59a7761d984cacfa594c6c22ccd0fe8829d14aa88dbc1100328b7d",
+  "source_results_sha256": "c6d212a3046e45e6e74445e22310757042b014e20a192c824845b2c705fc40ac",
+  "parent_fine_manifest_sha256": "a93dc05152334ce647025363f9209d562a07065e6fcca3d6f042d3ab34a683e2",
+  "exact_boundaries": {
+    "newton_full": {
+      "max_success_device_batch": 34,
+      "first_oom_device_batch": 35,
+      "capacity_interval": "[34, 35)",
+      "resolved_width": 1,
+      "odd_confirmation": "oom"
+    },
+    "down_none": {
+      "max_success_device_batch": 37,
+      "first_oom_device_batch": 38,
+      "capacity_interval": "[37, 38)",
+      "resolved_width": 1,
+      "odd_confirmation": "completed"
+    },
+    "down_diag": {
+      "max_success_device_batch": 37,
+      "first_oom_device_batch": 38,
+      "capacity_interval": "[37, 38)",
+      "resolved_width": 1,
+      "odd_confirmation": "completed"
+    },
+    "muon": {
+      "max_success_device_batch": 39,
+      "first_oom_device_batch": 40,
+      "capacity_interval": "[39, 40)",
+      "resolved_width": 1,
+      "odd_confirmation": "completed"
+    }
+  },
+  "capacity_gain_vs_newton_full": {
+    "down_none_device_batch": 3,
+    "down_none_pct": 8.823529411764696,
+    "down_diag_device_batch": 3,
+    "down_diag_pct": 8.823529411764696,
+    "muon_device_batch": 5,
+    "muon_pct": 14.705882352941169
+  },
+  "quality_checks": {
+    "passed": 12,
+    "failed": 0
+  }
+}

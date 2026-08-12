@@ -1,0 +1,62 @@
+{
+  "artifacts": [
+    "batch_contract.json",
+    "checkpoint_schema.json",
+    "checks.csv",
+    "diagnostics.csv",
+    "diagnostics.json",
+    "momentum_audit.json",
+    "production_path_audit.json",
+    "repeatability.json",
+    "route_audit.json",
+    "runtime.json",
+    "source_runtime_config.json",
+    "state_invariance.json",
+    "status.json",
+    "streaming_contract.json",
+    "tensor_bundle.pt",
+    "tensor_bundle_manifest.json"
+  ],
+  "bundle": {
+    "path": "PRIVATE_PATH_REDACTED__0e5df90804fa",
+    "sha256": "7eefe8a21275ef8b44f0fa04ce5f163ac27d4b262b7ad8f3abced9f2f358cb83",
+    "size_bytes": 216993783,
+    "tensor_sha256": {
+      "activation_build": "0f7f337692db2cd300054d14fffe75fabaf0afe4bcfd28fd9c6b5580a4b55808",
+      "fresh_covariance": "84ba3f721e56b400677eabbe791140e8d608b2ee97a09484efabc18cdca0ce98",
+      "fresh_heldout_gradient": "049c73b417f6222d3eb524f73ca5f9e2a515d82bff6253d878d94bfc1da04c3c",
+      "historical_momentum": "b95d671b435d331de3310991bd5cde09827d7af577c6c2429569e21e8e15759f"
+    },
+    "tensor_shapes": {
+      "activation_build": [
+        256,
+        5504
+      ],
+      "fresh_covariance": [
+        5504,
+        5504
+      ],
+      "fresh_heldout_gradient": [
+        2048,
+        5504
+      ],
+      "historical_momentum": [
+        2048,
+        5504
+      ]
+    }
+  },
+  "checkpoint": "PRIVATE_PATH_REDACTED",
+  "family": "llama1b",
+  "layers": [
+    0,
+    9,
+    17
+  ],
+  "method": "down_none",
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-27.2",
+  "source_script": "PRIVATE_PATH_REDACTED__3c02707a7eef",
+  "stage": "numerical_smoke"
+}

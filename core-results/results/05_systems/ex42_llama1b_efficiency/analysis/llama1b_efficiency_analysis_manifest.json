@@ -1,0 +1,108 @@
+{
+  "analysis_pass_meaning": "integrity only; not optimizer quality or algorithm superiority",
+  "analysis_tier": "formal",
+  "artifacts": [
+    {
+      "package_sha256": "5686d7b9ba21ae5eda5afdc57a52f10ca9e94e310d5c7c11d4fe6355bfd642a2",
+      "path": "results/05_systems/ex42_llama1b_efficiency/analysis/raw_runs.csv",
+      "sha256": "5686d7b9ba21ae5eda5afdc57a52f10ca9e94e310d5c7c11d4fe6355bfd642a2",
+      "source_sha256": "5686d7b9ba21ae5eda5afdc57a52f10ca9e94e310d5c7c11d4fe6355bfd642a2"
+    },
+    {
+      "package_sha256": "b3c2d7f95d16107753e54ecfff3d570ec7bb16d69d8713436821c5bfb6f18362",
+      "path": "results/05_systems/ex42_llama1b_efficiency/analysis/method_summary.csv",
+      "sha256": "b3c2d7f95d16107753e54ecfff3d570ec7bb16d69d8713436821c5bfb6f18362",
+      "source_sha256": "b3c2d7f95d16107753e54ecfff3d570ec7bb16d69d8713436821c5bfb6f18362"
+    },
+    {
+      "package_sha256": "4b5b651ce3cd9c04b32a474bd2ceb0bf7f0e85ce46a6879a918b906941eed07d",
+      "path": "results/05_systems/ex42_llama1b_efficiency/analysis/paired_contrasts.csv",
+      "sha256": "4b5b651ce3cd9c04b32a474bd2ceb0bf7f0e85ce46a6879a918b906941eed07d",
+      "source_sha256": "4b5b651ce3cd9c04b32a474bd2ceb0bf7f0e85ce46a6879a918b906941eed07d"
+    },
+    {
+      "package_sha256": "c99a6ae6d2ca0e998b12b9fa39831e3e2b6500c26c2536bc323199f7ccad0dbf",
+      "path": "results/05_systems/ex42_llama1b_efficiency/analysis/position_effects.csv",
+      "sha256": "c99a6ae6d2ca0e998b12b9fa39831e3e2b6500c26c2536bc323199f7ccad0dbf",
+      "source_sha256": "c99a6ae6d2ca0e998b12b9fa39831e3e2b6500c26c2536bc323199f7ccad0dbf"
+    },
+    {
+      "package_sha256": "8fcc3aaff16feb90efc930612619d6133203998286a86064da9bd2931400faec",
+      "path": "results/05_systems/ex42_llama1b_efficiency/analysis/integrity_checks.json",
+      "sha256": "8fcc3aaff16feb90efc930612619d6133203998286a86064da9bd2931400faec",
+      "source_sha256": "8fcc3aaff16feb90efc930612619d6133203998286a86064da9bd2931400faec"
+    },
+    {
+      "package_sha256": "33526e7645ebed9a9cc7399c894b5cab5b8ecb40aa0fdf8fd908c9156a2c522f",
+      "path": "results/05_systems/ex42_llama1b_efficiency/analysis/report.md",
+      "sha256": "33526e7645ebed9a9cc7399c894b5cab5b8ecb40aa0fdf8fd908c9156a2c522f",
+      "source_sha256": "33526e7645ebed9a9cc7399c894b5cab5b8ecb40aa0fdf8fd908c9156a2c522f"
+    }
+  ],
+  "common_fingerprints": {
+    "common_init_sha256": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec",
+    "contract_sha256": "6658273d80051ef713b8ea0fa8fd40950823c59effb5cce8bae87e9caa65e646",
+    "data_fingerprint": "097478adc4e938305a50d8fa888a9b11508523dc41c403db339f0ba5e9424d0d",
+    "derived_base_sha256": "a21f364b73ea859e1ca62bc75600de348b00a0ce5fcbd315ed7e848eb2b4666a",
+    "execution_manifest_sha256_actual": "fe0d85dbdb87782d9062f2cd88e1baba61637dbbb48459a917c452f8e29f483c",
+    "preflight_sha256": "d596faf10d655f35e79a3b402d689017ab25d52a15c70ce03becb7a8f4587b2a",
+    "preflight_sha256_actual": "d596faf10d655f35e79a3b402d689017ab25d52a15c70ce03becb7a8f4587b2a",
+    "profile_wrapper_sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+    "runtime_fingerprint": "2951a374071707c9de19b1dd8e8406579538e75cc4d12960da0db928fae6cefc",
+    "source_snapshot_files": {
+      "analyze_llama1b_efficiency.py": "d9e13f2744ab06c79f4f9bd724d87e6a61e3948754f168047233dc15fbb70fce",
+      "certify_exclusive_node.py": "17fbaa71aafe4f7647d4770bce902b1c86a4763a13df8a6539bf894a0b62bac9",
+      "efficiency_common.py": "e765dab66014a973b0f07c9ec81f608b80a4b6ff5786c807a54c6badd31eec45",
+      "efficiency_contract.json": "6658273d80051ef713b8ea0fa8fd40950823c59effb5cce8bae87e9caa65e646",
+      "gpu_isolation_monitor.py": "8910f0eab7dbf81f8a970fcf41c0f5a0699cb5609a988b0e244acc29167eec72",
+      "llama1b_efficiency_worker.py": "eb084f95a10093f53a1e2beede9826d9e9ca2e035e2f2441a390fb57cf4169b1",
+      "run_llama1b_efficiency.py": "2a7c843294110ddeab6b20679f6afab2721e74ee76b10373746f4ed0b56f3483",
+      "source_builder.py": "314f58b3a477a4c84bb6e48f0e887032481140a39d346dce74db6ce06acd05d9",
+      "train_llama_swiglu_1b.py": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+      "train_llama_swiglu_efficiency_base.diff": "8e6b9ea74ee09c85457aa05a1bf82232b99371b711587d51c5e474cc05896045",
+      "train_llama_swiglu_efficiency_base.py": "a21f364b73ea859e1ca62bc75600de348b00a0ce5fcbd315ed7e848eb2b4666a"
+    }
+  },
+  "contract": "PRIVATE_PATH_REDACTED",
+  "contract_sha256": "6658273d80051ef713b8ea0fa8fd40950823c59effb5cce8bae87e9caa65e646",
+  "created_at": "2026-07-30T05:49:47.371174+00:00",
+  "evidence_class": "paper_grade_single_host_isolated_throughput_and_memory",
+  "experiment": "42_llama1b_isolated_efficiency",
+  "formal_rows": 16,
+  "method_order": [
+    "muon",
+    "newton_full",
+    "down_none",
+    "down_diag"
+  ],
+  "method_rows": 4,
+  "paired_contrast_rows": 35,
+  "passed": true,
+  "position_effect_rows": 12,
+  "primary_contrasts": [
+    {
+      "candidate": "down_none",
+      "reference": "muon"
+    },
+    {
+      "candidate": "down_none",
+      "reference": "newton_full"
+    },
+    {
+      "candidate": "down_diag",
+      "reference": "muon"
+    },
+    {
+      "candidate": "down_diag",
+      "reference": "newton_full"
+    },
+    {
+      "candidate": "newton_full",
+      "reference": "muon"
+    }
+  ],
+  "run_dir": "PRIVATE_PATH_REDACTED__2716a6387a64",
+  "schema_version": 1,
+  "script_version": "2026-07-29.1",
+  "status": "passed"
+}

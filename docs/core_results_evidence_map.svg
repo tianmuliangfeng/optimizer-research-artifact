@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">core-results evidence map</title>
+  <desc id="desc">Five evidence workstreams and supporting controls enter the portable core-results package, which feeds paper-facing outputs under explicit claim boundaries and an Experiment 48 finalization gate.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/></marker>
+    <style>
+      .title{font:700 25px Arial,sans-serif;fill:#1f2937}.head{font:700 15px Arial,sans-serif}.body{font:13px Arial,sans-serif;fill:#1f2937}.white{fill:#fff}.line{fill:none;stroke:#4b5563;stroke-width:2;marker-end:url(#arrow)}.dash{fill:none;stroke:#6b7280;stroke-width:2;stroke-dasharray:7 5;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#ffffff"/>
+  <text x="600" y="43" text-anchor="middle" class="title">core-results evidence map</text>
+
+  <g><rect x="40" y="95" width="210" height="70" rx="12" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/><text x="145" y="121" text-anchor="middle" class="head">Discovery</text><text x="145" y="145" text-anchor="middle" class="body">60-run regime map</text></g>
+  <g><rect x="40" y="185" width="210" height="85" rx="12" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/><text x="145" y="211" text-anchor="middle" class="head">Main quality</text><text x="145" y="235" text-anchor="middle" class="body">124M, 275M, 455M</text><text x="145" y="254" text-anchor="middle" class="body">LLaMA 1B, Mousse, MALT</text></g>
+  <g><rect x="40" y="290" width="210" height="80" rx="12" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/><text x="145" y="316" text-anchor="middle" class="head">Robustness and structure</text><text x="145" y="338" text-anchor="middle" class="body">alpha, depth transfer</text><text x="145" y="357" text-anchor="middle" class="body">invariance, module factorial</text></g>
+  <g><rect x="40" y="390" width="210" height="80" rx="12" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/><text x="145" y="416" text-anchor="middle" class="head">Mechanism</text><text x="145" y="441" text-anchor="middle" class="body">mediation, deepening, closure</text></g>
+  <g><rect x="40" y="490" width="210" height="80" rx="12" fill="#d0e0e3" stroke="#0e8088" stroke-width="2"/><text x="145" y="516" text-anchor="middle" class="head">Systems and capacity</text><text x="145" y="541" text-anchor="middle" class="body">capacity and efficiency</text></g>
+
+  <g><rect x="420" y="90" width="260" height="95" rx="12" fill="#f5f5f5" stroke="#666" stroke-width="2"/><text x="550" y="116" text-anchor="middle" class="head">Supporting controls</text><text x="550" y="140" text-anchor="middle" class="body">R0, LR cross, host bridge</text><text x="550" y="160" text-anchor="middle" class="body">MDP-04, MDP-05, GEO-01B</text></g>
+  <g><rect x="420" y="225" width="260" height="150" rx="14" fill="#1f4e78" stroke="#17365d" stroke-width="3"/><text x="550" y="260" text-anchor="middle" class="head white" style="font-size:20px">core-results</text><text x="550" y="292" text-anchor="middle" class="body white">explicit compact whitelist</text><text x="550" y="316" text-anchor="middle" class="body white">source and released hashes</text><text x="550" y="340" text-anchor="middle" class="body white">portable relative paths</text></g>
+  <g><rect x="420" y="415" width="260" height="95" rx="12" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/><text x="550" y="441" text-anchor="middle" class="head">Claim boundaries</text><text x="550" y="465" text-anchor="middle" class="body">timing exclusions and null results</text><text x="550" y="485" text-anchor="middle" class="body">no checkpoint replay claims</text></g>
+
+  <g><rect x="845" y="225" width="260" height="150" rx="14" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/><text x="975" y="258" text-anchor="middle" class="head" style="font-size:17px">Paper-facing outputs</text><text x="975" y="290" text-anchor="middle" class="body">tables and figures</text><text x="975" y="314" text-anchor="middle" class="body">claim and limitations matrices</text><text x="975" y="338" text-anchor="middle" class="body">evidence ledger</text></g>
+  <g><rect x="875" y="430" width="200" height="65" rx="10" fill="#f5f5f5" stroke="#666" stroke-width="2" stroke-dasharray="7 5"/><text x="975" y="456" text-anchor="middle" class="head">Full archive</text><text x="975" y="478" text-anchor="middle" class="body">raw runs, logs, snapshots</text></g>
+
+  <g><rect x="350" y="600" width="500" height="85" rx="14" fill="#f8cecc" stroke="#b85450" stroke-width="2"/><text x="600" y="627" text-anchor="middle" class="head">Experiment 48 final gate</text><text x="600" y="651" text-anchor="middle" class="body">formal + analysis + checkpoint verification + acceptance</text><text x="600" y="672" text-anchor="middle" class="body">remove pending record, then rebuild and validate the whole package</text></g>
+
+  <path d="M250 130 H335 V265 H420" class="line"/><path d="M250 228 H350 V285 H420" class="line"/><path d="M250 330 H420" class="line"/><path d="M250 430 H350 V345 H420" class="line"/><path d="M250 530 H335 V365 H420" class="line"/>
+  <path d="M550 185 V225" class="line"/><path d="M550 415 V375" class="line"/><path d="M680 300 H845" class="line"/><path d="M680 350 H770 V462 H875" class="dash"/><path d="M600 600 V520 H650 V375" class="line"/>
+  <text x="762" y="286" text-anchor="middle" class="body">validated compact evidence</text><text x="760" y="446" text-anchor="middle" class="body">audit fallback</text><text x="625" y="548" class="body">draft to final</text>
+</svg>

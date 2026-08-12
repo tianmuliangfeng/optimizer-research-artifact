@@ -1,0 +1,67 @@
+# OpenWebText GPT-2-tokenized 50M-token subset, tier3 longer-data recheck.
+
+out_dir = "out_openwebtext_gpt2_50m_tier3"
+eval_interval = 500
+eval_iters = 20
+log_interval = 20
+always_save_checkpoint = False
+
+wandb_log = True
+wandb_project = "Selective-Newton-Muon-OWT-50M-Tier3"
+wandb_run_name = "owt_50m_tier3_newton_muon"
+wandb_mode = "online"
+wandb_group = "owt_50m_tier3"
+wandb_tags = "formal,openwebtext_gpt2_50m,tier3,selective_newton_muon,large_data_recheck"
+wandb_log_profile = "paper"
+wandb_log_tables = False
+
+dataset = "openwebtext_gpt2_50m"
+require_real_tiny_shakespeare = False
+gradient_accumulation_steps = 1
+batch_size = 16
+block_size = 512
+
+n_layer = 12
+n_head = 12
+n_embd = 768
+dropout = 0.1
+bias = False
+
+optimizer_type = "newton_muon"
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+weight_decay = 0.1
+beta1 = 0.9
+beta2 = 0.99
+grad_clip = 1.0
+warmup_iters = 100
+
+muon_learning_rate = 0.02
+muon_momentum = 0.95
+muon_ns_steps = 5
+matrix_weight_decay = 0.0
+matrix_eps = 1e-8
+
+input_beta = 0.95
+input_ridge = 0.2
+input_refresh = 32
+input_max_samples = 2048
+
+selective_fraction = 1.0
+selective_min_active = 1
+selective_warmup_steps = 0
+selective_score_interval = 25
+selective_score_beta = 0.9
+selective_score_threshold = 0.0
+selective_score_mode = "gain_logcond_cost_power"
+selective_cond_power = 1.0
+selective_cost_power = 0.25
+selective_freeze_after_warmup = True
+selective_log_diagnostics = False
+selective_release_inactive_k_state = True
+selective_selection_mode = "k_release_budget"
+selective_release_k_fraction = 0.0
+
+diagnostic_interval = 0

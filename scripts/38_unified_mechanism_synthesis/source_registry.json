@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "bundles": [
+    {
+      "id": "mech01_numerical",
+      "evidence_level": "supportive",
+      "files": [
+        {
+          "path": "27_mech01_unified_k_diagnostics/handoff_audit/mech01_r1_20260727T030657/20260727T030657+0000/numerical_smoke/mech01_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "27_mech01_unified_k_diagnostics/handoff_audit/mech01_r1_20260727T030657/replay_delivery_llama_compare/runtime_equivalence_r1_vs_llama/mech01_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "27_mech01_unified_k_diagnostics/handoff_audit/mech01_llama_host_remaining_20260727T045443/20260727T045443+0000/gpt_bridge_seed2026_none6200/numerical_smoke/mech01_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "27_mech01_unified_k_diagnostics/handoff_audit/mech01_llama_host_remaining_20260727T045443/20260727T045443+0000/llama124_seed2026_down_none6200/numerical_smoke/mech01_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "27_mech01_unified_k_diagnostics/handoff_audit/mech01_llama_host_remaining_20260727T045443/20260727T045443+0000/llama1b_seed2026_down_none6200/numerical_smoke/mech01_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        }
+      ]
+    },
+    {
+      "id": "mech02_geometry",
+      "evidence_level": "descriptive",
+      "files": [
+        {
+          "path": "30_mech02_k_geometry/endpoint_20260727_analysis/analysis/analysis_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "30_mech02_k_geometry/endpoint_20260727_analysis/analysis/geometry_gate.json",
+          "kind": "json"
+        },
+        {
+          "path": "30_mech02_k_geometry/endpoint_20260727_analysis/analysis/primary_cross_architecture.csv",
+          "kind": "csv",
+          "required_columns": ["layer", "metric", "llama_minus_gpt", "material_vs_repeat_sd"]
+        }
+      ]
+    },
+    {
+      "id": "mech03_shadow_prediction",
+      "evidence_level": "limiting",
+      "files": [
+        {
+          "path": "31_mech03_crossfit_shadow/endpoint_20260727_analysis/analysis/analysis_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "31_mech03_crossfit_shadow/endpoint_20260727_analysis/analysis/prediction_gate.json",
+          "kind": "json"
+        },
+        {
+          "path": "31_mech03_crossfit_shadow/endpoint_20260727_analysis/analysis/primary_paired_cells.csv",
+          "kind": "csv",
+          "required_columns": ["layer", "repeat", "direction", "predicted_direction"]
+        }
+      ]
+    },
+    {
+      "id": "mech06_llama1b_diagnostic",
+      "evidence_level": "limiting",
+      "files": [
+        {
+          "path": "33_mech06_llama1b_confirmation/20260727T073047+0000/analysis/mech06_analysis_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "33_mech06_llama1b_confirmation/20260727T073047+0000/analysis/trajectory_prediction.json",
+          "kind": "json"
+        },
+        {
+          "path": "33_mech06_llama1b_confirmation/20260727T073047+0000/analysis/checkpoint_summary.csv",
+          "kind": "csv",
+          "required_columns": ["checkpoint_label", "checkpoint_step", "diagnostic_signal"]
+        }
+      ]
+    },
+    {
+      "id": "owt_foundational_module_allocation",
+      "evidence_level": "supportive",
+      "files": [
+        {
+          "path": "06_kstate_spectrum/summaries/combined_all_seeds_comparison.csv",
+          "kind": "csv",
+          "required_columns": [
+            "seed",
+            "mode",
+            "final_val_loss",
+            "peak_memory_mib",
+            "k_state_mib",
+            "cproj_k_state_mib",
+            "non_cproj_k_state_mib"
+          ]
+        },
+        {
+          "path": "01_scale_up/24L_module_bridge_20260715/summaries/bridge_run_summary.csv",
+          "kind": "csv",
+          "required_columns": [
+            "seed",
+            "method",
+            "final_val_loss",
+            "peak_memory_mib",
+            "k_state_mib"
+          ]
+        },
+        {
+          "path": "01_scale_up/24L_12k_lrdecay3k_mulr001_multiseed_20260713/summaries/run_summary.csv",
+          "kind": "csv",
+          "required_columns": [
+            "seed",
+            "muon_learning_rate",
+            "method",
+            "final_val_loss",
+            "peak_memory_mib",
+            "k_state_mib"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wikitext_foundational_module_allocation",
+      "evidence_level": "supportive",
+      "files": [
+        {
+          "path": "06_kstate_spectrum/analysis/wikitext_dual_alpha_20260724/wikitext_dual_alpha_run_summary.csv",
+          "kind": "csv",
+          "required_columns": [
+            "seed",
+            "mode",
+            "final_val_loss",
+            "peak_memory_mib",
+            "k_state_mib",
+            "cproj_k_state_mib",
+            "non_cproj_k_state_mib",
+            "quality_eligible",
+            "memory_eligible"
+          ]
+        },
+        {
+          "path": "04_dataset_generalization/wikitext103_24L_module_bridge_20260715/summaries/bridge_run_summary.csv",
+          "kind": "csv",
+          "required_columns": [
+            "seed",
+            "method",
+            "final_val_loss",
+            "peak_memory_mib",
+            "k_state_mib"
+          ]
+        },
+        {
+          "path": "04_dataset_generalization/wikitext103_24L_12k_lr_sweep_multiseed_20260715/summaries/run_summary.csv",
+          "kind": "csv",
+          "required_columns": [
+            "learning_rate",
+            "seed",
+            "method",
+            "final_val_loss",
+            "peak_memory_mib",
+            "k_state_mib"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "llama_block_partition_invariance",
+      "evidence_level": "limiting",
+      "files": [
+        {
+          "path": "40_llama_block_partition_invariance_audit/20260729T044926+0000/analysis/llama_block_audit_analysis_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "40_llama_block_partition_invariance_audit/20260729T044926+0000/analysis/classification.json",
+          "kind": "json",
+          "acceptance": {
+            "field": "classification",
+            "equals": "strong_non_invariance"
+          }
+        },
+        {
+          "path": "40_llama_block_partition_invariance_audit/20260729T044926+0000/analysis/checkpoint_summary.csv",
+          "kind": "csv",
+          "required_columns": [
+            "checkpoint_label",
+            "checkpoint_step",
+            "global_block4_update_drift_median",
+            "global_block4_update_drift_p95"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formal_primary_training",
+      "evidence_level": "confirmatory",
+      "files": [
+        {
+          "path": "34_selective_primary_comparison/20260727T083000+0000/primary_analysis_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "34_selective_primary_comparison/20260727T083000+0000/primary_contrasts_summary.csv",
+          "kind": "csv",
+          "required_columns": ["family", "priority", "contrast", "seeds", "final_delta_mean", "classification"]
+        }
+      ]
+    },
+    {
+      "id": "mech07_family_shadow",
+      "evidence_level": "supportive",
+      "files": [
+        {
+          "path": "35_mech07_llama1b_family_contrast/20260727T083446+0000/analysis/mech07_analysis_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "35_mech07_llama1b_family_contrast/20260727T083446+0000/analysis/stage_contrast_summary.csv",
+          "kind": "csv",
+          "required_columns": ["checkpoint_stage", "priority", "contrast", "mean_delta", "checkpoint_states_total"]
+        }
+      ]
+    },
+    {
+      "id": "mech08_rollout",
+      "evidence_level": "supportive",
+      "files": [
+        {
+          "path": "36_mech08_short_horizon_rollout/20260727T102506+0000/analysis/mech08_analysis_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "36_mech08_short_horizon_rollout/20260727T102506+0000/analysis/paired_contrasts.csv",
+          "kind": "csv",
+          "required_columns": ["checkpoint_cell", "checkpoint_stage", "data_replica", "contrast", "contrast_class", "metric", "optimizer_step", "delta_left_minus_right"]
+        },
+        {
+          "path": "36_mech08_short_horizon_rollout/20260727T102506+0000/analysis/prediction_alignment.csv",
+          "kind": "csv",
+          "required_columns": ["contrast_scope", "metric", "optimizer_step", "pearson", "spearman", "sign_concordance"]
+        }
+      ]
+    },
+    {
+      "id": "mech09r_refresh_mediation",
+      "evidence_level": "confirmatory",
+      "files": [
+        {
+          "path": "37_mech09_downproj_refresh_mediation/20260728T075907+0000/analysis/mech09r_analysis_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "37_mech09_downproj_refresh_mediation/20260728T075907+0000/analysis/mediation_decision.json",
+          "kind": "json",
+          "acceptance": {"field": "classification", "equals": "full_support"}
+        },
+        {
+          "path": "37_mech09_downproj_refresh_mediation/20260728T075907+0000/analysis/paired_contrast_summary.csv",
+          "kind": "csv",
+          "required_columns": ["contrast", "optimizer_step", "paired_units", "origins", "mean_delta"]
+        }
+      ]
+    },
+    {
+      "id": "r1_block_alpha",
+      "evidence_level": "confirmatory",
+      "files": [
+        {
+          "path": "22_r1_block_alpha/analysis/wandb_20260729_multiseed_confirmation/final_acceptance.json",
+          "kind": "json",
+          "acceptance": {"field": "scientific_evidence_accepted", "equals": true}
+        },
+        {
+          "path": "22_r1_block_alpha/analysis/wandb_20260729_multiseed_confirmation/seed_curvature.csv",
+          "kind": "csv",
+          "required_columns": ["seed", "final_curvature_c", "alpha0p50_beats_both_endpoints_final"]
+        }
+      ]
+    },
+    {
+      "id": "r1_dense_full_alpha",
+      "evidence_level": "confirmatory",
+      "files": [
+        {
+          "path": "24_r1_dense_full_alpha/analysis/wandb_20260729_multiseed_confirmation/final_audit_manifest.json",
+          "kind": "json",
+          "acceptance": {"field": "passed", "equals": true}
+        },
+        {
+          "path": "24_r1_dense_full_alpha/analysis/wandb_20260729_multiseed_confirmation/final_important_results.json",
+          "kind": "json"
+        },
+        {
+          "path": "24_r1_dense_full_alpha/analysis/wandb_20260729_multiseed_confirmation/seed_curvature.csv",
+          "kind": "csv",
+          "required_columns": ["seed", "final_curvature_c", "alpha0p50_beats_both_endpoints_final"]
+        }
+      ]
+    }
+  ]
+}

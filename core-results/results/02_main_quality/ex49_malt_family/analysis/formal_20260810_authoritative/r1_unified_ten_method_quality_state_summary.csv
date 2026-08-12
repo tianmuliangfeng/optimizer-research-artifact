@@ -1,0 +1,11 @@
+rank,method,display_name,n_seeds,final_val_mean,final_val_sample_sd,optimizer_state_mib_mean,peak_memory_mib_mean,primary_paper_role,result_status
+1,diag,Newton-Muon diag,3,3.261100,0.001114,780.755863,38304.000,main_selective_route,accepted
+2,block4,Newton-Muon block4,3,3.262200,0.001136,996.474613,39168.000,main_full_state_control,accepted
+3,none,Newton-Muon none,3,3.266667,0.000666,780.474613,38304.000,main_selective_route,accepted
+4,mousse,Mousse-R1,3,3.268033,0.000252,2887.107426,39985.000,main_external_baseline,accepted
+5,malt,MALT-R1 adaptation,3,3.272733,0.000902,619.107426,37708.667,main_external_baseline,accepted_paper_derived_adaptation
+6,moonlight,Moonlight Muon,3,3.274967,0.000451,618.474613,37703.000,main_external_baseline,accepted
+7,muon,Muon,3,3.277133,0.000252,618.474613,37703.000,main_anchor,accepted
+8,normuon,NorMuon,3,3.334467,0.000924,618.791019,37703.000,appendix_external_baseline,accepted
+9,adamw,AdamW,3,3.400433,0.004692,942.474796,38026.000,appendix_anchor,accepted
+10,malter_eq17,MALTER-Eq17-R1 adaptation,3,3.645933,0.002888,619.107700,37708.000,appendix_supporting_negative,accepted_paper_derived_adaptation

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-29.1",
+  "family": "39_r1_shared_lr_sensitivity",
+  "evidence_class": "supporting_only",
+  "primary_roles": [
+    "muon",
+    "original_newton_muon",
+    "selective_none",
+    "selective_diag"
+  ],
+  "source_methods": [
+    "muon",
+    "block4",
+    "none",
+    "diag"
+  ],
+  "recipe_lr_multipliers": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "seed": 2026,
+  "budget_steps": 3000,
+  "warmdown_steps": 871,
+  "warmdown_rule": "round(3000 * 1800 / 6200)",
+  "tokens_per_step": 524288,
+  "validation_every": 100,
+  "comparison_priority": [
+    "selective_diag_vs_muon",
+    "selective_none_vs_muon",
+    "selective_diag_vs_original_newton_muon",
+    "selective_none_vs_original_newton_muon",
+    "original_newton_muon_vs_muon"
+  ],
+  "forbidden_claims": [
+    "tuned-best superiority",
+    "multi-seed confirmation",
+    "universal optimizer ranking",
+    "primary selective-diag versus selective-none conclusion",
+    "throughput comparison from concurrent sensitivity runs"
+  ]
+}

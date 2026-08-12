@@ -1,0 +1,152 @@
+{
+  "schema_version": "llama1b_10b_feasibility_v1",
+  "status": "planning_only_not_launchable",
+  "purpose": "Audit whether a four-method LLaMA-1B approximately-10B-token screening can be preregistered without data wrap, schedule ambiguity, resume ambiguity, or post-hoc geometry selection.",
+  "launch_authorized": false,
+  "experiment_number_assigned": false,
+  "remote_training_command_allowed": false,
+  "scientific_evidence_class": "none_planning_only",
+  "profile": {
+    "name": "llama_swiglu_1b_v1",
+    "parameters": 1013690368,
+    "seed": 2026,
+    "methods": [
+      "down_none",
+      "down_diag",
+      "newton_full",
+      "muon"
+    ],
+    "global_batch_size": 512,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "tokens_per_update": 524288,
+    "microbatch_tokens": 8192,
+    "gradient_accumulation_steps": 64,
+    "prefetched_train_microbatches": 1
+  },
+  "milestones": [
+    {
+      "id": "accepted_3p2506b_reference",
+      "target_tokens": 3250585600,
+      "step_rule": "exact",
+      "expected_step": 6200,
+      "interpretation": "Existing accepted endpoint reference; a long-horizon trajectory is not schedule-matched here unless the LR policy explicitly proves it."
+    },
+    {
+      "id": "record17_exposure_match",
+      "target_tokens": 6969331313,
+      "step_rule": "nearest_integer_update_half_up",
+      "expected_step": 13293,
+      "interpretation": "Descriptive tokens-per-parameter alignment with experiment 44."
+    },
+    {
+      "id": "approximately_10b_endpoint",
+      "target_tokens": 10000000000,
+      "step_rule": "nearest_integer_update_half_up",
+      "expected_step": 19073,
+      "interpretation": "Single-seed screening endpoint; never a multi-seed population claim by itself."
+    }
+  ],
+  "validation": {
+    "regular_every_steps": 100,
+    "forced_milestone_steps": [6200, 13293, 19073],
+    "tokens_per_evaluation": 10485760,
+    "best_checkpoint_selection_primary": false,
+    "primary_endpoint": "fixed_step_19073_validation_loss"
+  },
+  "data": {
+    "train_pattern": "fineweb_train_*.bin",
+    "validation_pattern": "fineweb_val_*.bin",
+    "header_magic": 20240520,
+    "header_version": 1,
+    "header_bytes": 1024,
+    "token_dtype_bytes": 2,
+    "minimum_contiguous_train_shards": 101,
+    "required_validation_shards": 1,
+    "unique_order_required": true,
+    "wrap_count_required": 0,
+    "full_content_hash_deferred": true,
+    "header_and_inventory_hash_required_now": true
+  },
+  "lr_schedule": {
+    "status": "unresolved_hard_blocker",
+    "accepted_6200_schedule": {
+      "total_steps": 6200,
+      "warmdown_steps": 1800,
+      "zero_lr_at_endpoint": true
+    },
+    "long_horizon_policy_selected": false,
+    "forbidden_shortcut": "continue_from_the_zero_lr_6200_checkpoint",
+    "decision_required_before_launch": "Freeze one from-scratch 19073-step LR policy and explicitly state that step 6200 is or is not schedule-comparable with the accepted run.",
+    "recommended_candidate_for_red_team_not_selected": "Keep the accepted warmup and peak-LR semantics, hold the peak schedule through the longer horizon, then apply one preregistered final 1800-step warmdown; treat the entire 19073-step trajectory as a new schedule and do not compare its step-6200 value as a schedule-matched replication of the accepted run."
+  },
+  "resume": {
+    "checkpoint_every_steps_candidate": 128,
+    "required_payload_keys": [
+      "model",
+      "optimizers",
+      "train_loader",
+      "next_x",
+      "next_y",
+      "completed_steps",
+      "train_s",
+      "steady_train_s",
+      "steady_steps",
+      "peak_allocated_bytes",
+      "resume_count",
+      "rng",
+      "init_sha256"
+    ],
+    "loader_cursor_must_match_tokens": true,
+    "metrics_trim_must_match_completed_steps": true,
+    "timing_after_resume_claim_eligible": false
+  },
+  "geometry_interface": {
+    "status": "placeholder_only_disabled",
+    "enabled": false,
+    "metric_formula_selected": false,
+    "layers_selected": false,
+    "allowed_prelaunch_fields": [
+      "milestone_id",
+      "step",
+      "tokens_seen",
+      "checkpoint_sha256",
+      "future_geometry_contract_sha256"
+    ],
+    "activation_rule": "A separate contract may enable instrumentation only after GEO-01 pilot review and before any 10B outcome is opened."
+  },
+  "budget": {
+    "empirical_step_seconds": {
+      "down_none": 7.4813,
+      "down_diag": 7.4901,
+      "newton_full": 7.7905,
+      "muon": 7.3515
+    },
+    "wall_overhead_factor": 1.15,
+    "checkpoint_bytes": {
+      "down_none": 11240252387,
+      "down_diag": 11241441315,
+      "newton_full": 17783856619,
+      "muon": 8522343395
+    },
+    "retained_milestone_checkpoints_per_method": 3,
+    "disk_headroom_factor": 1.2,
+    "operational_free_disk_target_bytes": 200000000000,
+    "empirical_source": "Accepted LLaMA-1B formal-6200 three-seed summaries and MECH-09R checkpoint inventory."
+  },
+  "known_source_blockers": [
+    "current_controller_requires_exactly_50_train_shards",
+    "current_loader_wraps_with_modulo_and_has_no_wrap_count",
+    "current_formal_stage_is_fixed_to_6200_steps",
+    "current_validation_loop_cannot_force_step_13293",
+    "long_horizon_lr_schedule_is_not_frozen"
+  ],
+  "gate": {
+    "current_decision": "deferred_not_triggered",
+    "requires_explicit_user_authorization_after_feasibility": true,
+    "requires_new_launch_contract": true,
+    "requires_new_remote_controller": true,
+    "requires_paper_red_team_priority": true,
+    "gpu_idleness_is_not_a_trigger": true
+  }
+}

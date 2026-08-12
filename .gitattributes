@@ -1,0 +1,4 @@
+# This review artifact is byte-signed. Disable Git's line-ending conversion so
+# source/provenance hashes and the self-validating evidence package survive a
+# push and clone unchanged. The checked-in shell launchers are already LF.
+* -text

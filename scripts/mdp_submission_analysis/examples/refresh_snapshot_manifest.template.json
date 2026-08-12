@@ -1,0 +1,14 @@
+{
+  "schema_version": "mdp_refresh_snapshot_manifest_v2",
+  "snapshots_sha256": "__REPLACE__",
+  "metadata_sha256": "__REPLACE__",
+  "runtime_contract_sha256": "__REPLACE__",
+  "source_hashes": {
+    "checkpoint_inventory": "__REPLACE__",
+    "source_snapshot": "__REPLACE__",
+    "training_profile": "__REPLACE__"
+  },
+  "production_pipeline_replayed": true,
+  "input_fingerprint_validation_passed": true,
+  "notes": "Formal exports must be produced in the original pinned MECH-09R runtime."
+}

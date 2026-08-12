@@ -1,0 +1,82 @@
+{
+  "all_received_endpoint_values_match_primary_csv": true,
+  "all_received_runs_have_upload_receipts": true,
+  "all_received_trajectory_values_match_formal_metrics": true,
+  "all_received_values_match_primary_csv": true,
+  "archive_receipt_projects": [
+    "Selective-Newton-Muon-MainConf-LLaMA-1B-10B-Formal-20260805"
+  ],
+  "archive_uploaded_receipt_count": 36,
+  "duplicate_observation_conflicts": [],
+  "formal_run_count": 36,
+  "received_export_file_count": 12,
+  "received_export_metrics": [
+    "lr/backup",
+    "lr/matrix",
+    "tokens/per_parameter",
+    "tokens/seen",
+    "train/loss_step",
+    "val/loss"
+  ],
+  "received_missing_runs": [],
+  "received_run_coverage": 36,
+  "received_unexpected_runs": [],
+  "role": "secondary_full_trajectory_reconciliation_not_primary_outcome_source",
+  "trajectory_counts_by_metric": {
+    "lr/backup": {
+      "expected": 23220,
+      "matched": 23220,
+      "mismatched": 0,
+      "missing": 0,
+      "observed": 23220,
+      "unexpected": 0
+    },
+    "lr/matrix": {
+      "expected": 23220,
+      "matched": 23220,
+      "mismatched": 0,
+      "missing": 0,
+      "observed": 23220,
+      "unexpected": 0
+    },
+    "tokens/per_parameter": {
+      "expected": 23220,
+      "matched": 23220,
+      "mismatched": 0,
+      "missing": 0,
+      "observed": 23220,
+      "unexpected": 0
+    },
+    "tokens/seen": {
+      "expected": 23220,
+      "matched": 23220,
+      "mismatched": 0,
+      "missing": 0,
+      "observed": 23220,
+      "unexpected": 0
+    },
+    "train/loss_step": {
+      "expected": 23148,
+      "matched": 23148,
+      "mismatched": 0,
+      "missing": 0,
+      "observed": 23148,
+      "unexpected": 0
+    },
+    "val/loss": {
+      "expected": 4704,
+      "matched": 4704,
+      "mismatched": 0,
+      "missing": 0,
+      "observed": 4704,
+      "unexpected": 0
+    }
+  },
+  "trajectory_expected_value_count": 120732,
+  "trajectory_matched_value_count": 120732,
+  "trajectory_mismatch_examples": [],
+  "trajectory_mismatched_value_count": 0,
+  "trajectory_missing_value_count": 0,
+  "trajectory_observed_value_count": 120732,
+  "trajectory_unexpected_value_count": 0
+}

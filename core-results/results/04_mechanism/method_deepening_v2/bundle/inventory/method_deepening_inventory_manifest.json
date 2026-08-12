@@ -1,0 +1,31 @@
+{
+  "checkpoint_inventory_sha256": "692370610fe239ae2262c5c26785dd7085a0ee0147b5cb47b60863b0608c11b4",
+  "claim_eligible": false,
+  "experiment37_root": "PRIVATE_PATH_REDACTED",
+  "formal_manifest_sha256": "25dafc43f7cfdc3a0e61cd84c9fbc9c94a16c9db5833581130be8d6bf930b3e9",
+  "formal_refresh_audit_count": 12,
+  "local_checkpoint_count": 0,
+  "mdp04_ready": false,
+  "mdp04_status": "blocked_data",
+  "mdp_manifest": true,
+  "outputs": {
+    "checkpoint_inventory.csv": "f3bfc9f33bc5cc4f15ece093930521b17b9a330d439ae994c92883636776155a",
+    "refresh_artifact_inventory.csv": "21ecab0844466f3cea5e4391ea6474a3c9b99a458dfa5962654bd2d278840b8d",
+    "tensor_inventory.csv": "d2c977879eb0510a5b9d394e3aa2f4d939492ec356b4153f77a8afc45933019e"
+  },
+  "remote_checkpoint_count": 4,
+  "required_next_action": "deterministic_short_replay_or_streaming_metric_export_on_original_llama_host",
+  "schema_version": "mdp_method_deepening_inventory_v1",
+  "science_root": "PRIVATE_PATH_REDACTED",
+  "status": "passed_inventory",
+  "tensor_extension_counts": {
+    ".npy": 0,
+    ".npz": 0,
+    ".pt": 4,
+    ".pth": 0,
+    ".safetensors": 0
+  },
+  "tensor_file_count": 4,
+  "zip_file_count": 9,
+  "zip_tensor_member_count": 0
+}

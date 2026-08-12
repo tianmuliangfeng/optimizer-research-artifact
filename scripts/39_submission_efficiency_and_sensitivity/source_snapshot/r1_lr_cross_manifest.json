@@ -1,0 +1,43 @@
+{
+  "status": "PASS_WITH_CAVEATS",
+  "scope": "six crossed runs across seeds 2024/2025/2026 plus complete seed2026 2x2 using formal R1 anchor",
+  "path_base": "SNM_RESULTS_ROOT",
+  "input_files": [
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_58.931+08_00.csv",
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_55.380+08_00.csv",
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_44.123+08_00.csv",
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_39.190+08_00.csv",
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_33.839+08_00.csv",
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_29.787+08_00.csv",
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_25.388+08_00.csv",
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_20.609+08_00.csv",
+    "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/raw_wandb_exports/wandb_export_2026-07-21T09_56_16.608+08_00.csv"
+  ],
+  "formal_r1_analysis": "15_official_newton_muon_r1/analysis/wandb_20260720_seed2026",
+  "methods": [
+    "diag",
+    "muon"
+  ],
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "metrics": [
+    "lr/adamw",
+    "lr/matrix",
+    "memory/k_state_mib",
+    "memory/optimizer_state_mib",
+    "memory/peak_allocated_mib",
+    "performance/step_avg_ms",
+    "time/train_s",
+    "train/loss_step",
+    "val/loss"
+  ],
+  "quality_pass": 144,
+  "quality_warn": 2,
+  "quality_fail": 0,
+  "quality_usable": true,
+  "memory_usable": true,
+  "timing_usable": false
+}

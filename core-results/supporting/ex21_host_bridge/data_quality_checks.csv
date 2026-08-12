@@ -1,0 +1,22 @@
+check,status,severity_if_failed,evidence
+exact_export_file_count,PASS,critical,"observed=9, expected=9"
+expected_metric_set,PASS,critical,"observed=['lr/adamw', 'lr/matrix', 'memory/k_state_mib', 'memory/optimizer_state_mib', 'memory/peak_allocated_mib', 'performance/step_avg_ms', 'time/train_s', 'train/loss_step', 'val/loss']"
+exact_run_set,PASS,critical,"observed=['diag', 'none']"
+single_seed_2026,PASS,critical,observed=[np.int64(2026)]
+all_values_finite,PASS,critical,nonfinite=0
+unique_method_metric_step,PASS,critical,duplicates=0
+coverage_val/loss,PASS,critical,"observed={'diag': 63, 'none': 63}, expected_each=63"
+coverage_train/loss_step,PASS,critical,"observed={'diag': 310, 'none': 310}, expected_each=310"
+coverage_time/train_s,PASS,critical,"observed={'diag': 311, 'none': 311}, expected_each=311"
+coverage_performance/step_avg_ms,PASS,critical,"observed={'diag': 309, 'none': 309}, expected_each=309"
+coverage_memory/k_state_mib,PASS,critical,"observed={'diag': 1, 'none': 1}, expected_each=1"
+coverage_memory/optimizer_state_mib,PASS,critical,"observed={'diag': 1, 'none': 1}, expected_each=1"
+coverage_memory/peak_allocated_mib,PASS,critical,"observed={'diag': 1, 'none': 1}, expected_each=1"
+coverage_lr/adamw,PASS,critical,"observed={'diag': 311, 'none': 311}, expected_each=311"
+coverage_lr/matrix,PASS,critical,"observed={'diag': 311, 'none': 311}, expected_each=311"
+validation_step_grid,PASS,critical,expected 0..6200 inclusive every 100 steps
+identical_initial_validation,PASS,critical,"observed={'diag': 10.979, 'none': 10.979}"
+wandb_min_max_match_base,PASS,critical,all exported MIN/MAX columns equal their base series
+schedule_lr/adamw,PASS,critical,plateau through step 4400 at 0.004; zero at 6200
+schedule_lr/matrix,PASS,critical,plateau through step 4400 at 0.0004; zero at 6200
+local_formal_artifact_audit,CAVEAT,high,"W&B CSVs do not contain the remote formal manifest, checkpoint, source/runtime/init fingerprints, concurrent-workload declaration, or resume count"

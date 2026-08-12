@@ -1,0 +1,2128 @@
+{
+  "experiments": [
+    {
+      "code_directory": "scripts/01_scale_up",
+      "entrypoints": {
+        "script:run_24l_module_bridge": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/01_scale_up/run_24l_module_bridge.py"
+        },
+        "script:run_scale_up_300m": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/01_scale_up/run_scale_up_300m.py"
+        }
+      },
+      "experiment_id": "01_scale_up",
+      "legacy_result_roots": [
+        "01_scale_up"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "01 Scale Up"
+    },
+    {
+      "code_directory": "scripts/02_long_token_budget",
+      "default_entrypoint": "script:run_long_budget_100m",
+      "entrypoints": {
+        "script:run_long_budget_100m": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/02_long_token_budget/run_long_budget_100m.py"
+        }
+      },
+      "experiment_id": "02_long_token_budget",
+      "legacy_result_roots": [
+        "02_long_token_budget"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "02 Long Token Budget"
+    },
+    {
+      "code_directory": "scripts/03_fixed_memory",
+      "default_entrypoint": "script:run_fixed_memory_batch_sweep",
+      "entrypoints": {
+        "script:run_fixed_memory_batch_sweep": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/03_fixed_memory/run_fixed_memory_batch_sweep.py"
+        }
+      },
+      "experiment_id": "03_fixed_memory",
+      "legacy_result_roots": [
+        "03_fixed_memory"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "03 Fixed Memory"
+    },
+    {
+      "code_directory": "scripts/04_dataset_generalization",
+      "entrypoints": {
+        "script:run_wikitext103_100m": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/04_dataset_generalization/run_wikitext103_100m.py"
+        },
+        "script:run_wikitext103_24l_12k_lr_sweep": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/04_dataset_generalization/run_wikitext103_24l_12k_lr_sweep.py"
+        }
+      },
+      "experiment_id": "04_dataset_generalization",
+      "legacy_result_roots": [
+        "04_dataset_generalization"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "04 Dataset Generalization"
+    },
+    {
+      "code_directory": "scripts/05_memory_efficient_baselines",
+      "entrypoints": {},
+      "experiment_id": "05_memory_efficient_baselines",
+      "legacy_result_roots": [
+        "05_memory_efficient_baselines"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": false,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "planned_not_implemented",
+      "title": "05 Memory Efficient Baselines"
+    },
+    {
+      "code_directory": "scripts/06_kstate_spectrum",
+      "entrypoints": {
+        "script:run_cproj_k_structure": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/06_kstate_spectrum/run_cproj_k_structure.py"
+        },
+        "script:run_quadratic_score_probe": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/06_kstate_spectrum/run_quadratic_score_probe.py"
+        },
+        "script:run_quadratic_score_probe_p1": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/06_kstate_spectrum/run_quadratic_score_probe_p1.py"
+        },
+        "script:run_quadratic_score_probe_p2": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/06_kstate_spectrum/run_quadratic_score_probe_p2.py"
+        },
+        "script:run_quadratic_score_probe_p3": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/06_kstate_spectrum/run_quadratic_score_probe_p3.py"
+        },
+        "script:run_targeted_diag_generalization": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/06_kstate_spectrum/run_targeted_diag_generalization.py"
+        }
+      },
+      "experiment_id": "06_kstate_spectrum",
+      "legacy_result_roots": [
+        "06_kstate_spectrum"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "06 Kstate Spectrum"
+    },
+    {
+      "code_directory": "scripts/07_random_irregular_masks",
+      "entrypoints": {},
+      "experiment_id": "07_random_irregular_masks",
+      "legacy_result_roots": [
+        "07_random_irregular_masks"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": false,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "planned_not_implemented",
+      "title": "07 Random Irregular Masks"
+    },
+    {
+      "code_directory": "scripts/08_layer_sensitivity_restoration",
+      "default_entrypoint": "script:run_12l_50m_seed2026_completion",
+      "entrypoints": {
+        "script:run_12l_50m_seed2026_completion": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/08_layer_sensitivity_restoration/run_12l_50m_seed2026_completion.py"
+        }
+      },
+      "experiment_id": "08_layer_sensitivity_restoration",
+      "legacy_result_roots": [
+        "08_layer_sensitivity_restoration"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "08 Layer Sensitivity Restoration"
+    },
+    {
+      "code_directory": "scripts/09_uniformity_vs_irregularity",
+      "entrypoints": {},
+      "experiment_id": "09_uniformity_vs_irregularity",
+      "legacy_result_roots": [
+        "09_uniformity_vs_irregularity"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": false,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "planned_not_implemented",
+      "title": "09 Uniformity Vs Irregularity"
+    },
+    {
+      "code_directory": "scripts/10_budget_aware_rules",
+      "entrypoints": {},
+      "experiment_id": "10_budget_aware_rules",
+      "legacy_result_roots": [
+        "10_budget_aware_rules"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": false,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "planned_not_implemented",
+      "title": "10 Budget Aware Rules"
+    },
+    {
+      "code_directory": "scripts/11_dynamic_release",
+      "entrypoints": {},
+      "experiment_id": "11_dynamic_release",
+      "legacy_result_roots": [
+        "11_dynamic_release"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": false,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "planned_not_implemented",
+      "title": "11 Dynamic Release"
+    },
+    {
+      "code_directory": "scripts/12_paper_block4_correction",
+      "default_entrypoint": "script:run_paper_block4_correction",
+      "entrypoints": {
+        "script:run_paper_block4_correction": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/12_paper_block4_correction/run_paper_block4_correction.py"
+        }
+      },
+      "experiment_id": "12_paper_block4_correction",
+      "legacy_result_roots": [
+        "12_paper_block4_correction"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "12 Paper Block4 Correction"
+    },
+    {
+      "code_directory": "scripts/13_reference_lr_sanity",
+      "default_entrypoint": "script:run_reference_lr_sanity",
+      "entrypoints": {
+        "script:run_reference_lr_sanity": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/13_reference_lr_sanity/run_reference_lr_sanity.py"
+        }
+      },
+      "experiment_id": "13_reference_lr_sanity",
+      "legacy_result_roots": [
+        "13_reference_lr_sanity"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "13 Reference Lr Sanity"
+    },
+    {
+      "code_directory": "scripts/14_official_newton_muon_r0",
+      "default_entrypoint": "script:run_official_newton_muon_r0",
+      "entrypoints": {
+        "script:run_official_newton_muon_r0": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/14_official_newton_muon_r0/run_official_newton_muon_r0.py"
+        }
+      },
+      "experiment_id": "14_official_newton_muon_r0",
+      "legacy_result_roots": [
+        "14_official_newton_muon_r0"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "14 Official Newton Muon R0"
+    },
+    {
+      "code_directory": "scripts/15_official_newton_muon_r1",
+      "default_entrypoint": "script:run_official_newton_muon_r1",
+      "entrypoints": {
+        "script:run_official_newton_muon_r1": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/15_official_newton_muon_r1/run_official_newton_muon_r1.py"
+        }
+      },
+      "experiment_id": "15_official_newton_muon_r1",
+      "legacy_result_roots": [
+        "15_official_newton_muon_r1"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "15 Official Newton Muon R1"
+    },
+    {
+      "code_directory": "scripts/16_official_newton_muon_r1_lr_cross",
+      "entrypoints": {
+        "script:run_all_seeds_gpu1": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/16_official_newton_muon_r1_lr_cross/run_all_seeds_gpu1.sh"
+        },
+        "script:run_official_newton_muon_r1_lr_cross": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/16_official_newton_muon_r1_lr_cross/run_official_newton_muon_r1_lr_cross.py"
+        }
+      },
+      "experiment_id": "16_official_newton_muon_r1_lr_cross",
+      "legacy_result_roots": [
+        "16_official_newton_muon_r1_lr_cross"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "16 Official Newton Muon R1 Lr Cross"
+    },
+    {
+      "code_directory": "scripts/17_llama_swiglu_validation",
+      "default_entrypoint": "script:run_llama_swiglu_validation",
+      "entrypoints": {
+        "script:run_llama_swiglu_validation": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/17_llama_swiglu_validation/run_llama_swiglu_validation.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--official-repo",
+                "--python-exe"
+              ]
+            }
+          ]
+        }
+      },
+      "experiment_id": "17_llama_swiglu_validation",
+      "legacy_result_roots": [
+        "17_llama_swiglu_validation"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "17 Llama Swiglu Validation"
+    },
+    {
+      "code_directory": "scripts/18_r1_performance",
+      "default_entrypoint": "script:run_r1_performance",
+      "entrypoints": {
+        "script:run_r1_performance": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/18_r1_performance/run_r1_performance.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--official-repo",
+                "--python-exe"
+              ]
+            }
+          ]
+        }
+      },
+      "experiment_id": "18_r1_performance",
+      "legacy_result_roots": [
+        "18_r1_performance"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "18 R1 Performance"
+    },
+    {
+      "code_directory": "scripts/19_r1_extended_baselines",
+      "default_entrypoint": "script:run_r1_extended_baselines",
+      "entrypoints": {
+        "script:run_r1_extended_baselines": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/19_r1_extended_baselines/run_r1_extended_baselines.py",
+          "required_user_arguments": [
+            {
+              "one_of": [
+                "--preflight",
+                "--numerical-smoke",
+                "--formal-smoke",
+                "--pilot",
+                "--formal"
+              ]
+            }
+          ]
+        }
+      },
+      "experiment_id": "19_r1_extended_baselines",
+      "legacy_result_roots": [
+        "19_r1_extended_baselines"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "19 R1 Extended Baselines"
+    },
+    {
+      "code_directory": "scripts/20_llama_swiglu_1b",
+      "entrypoints": {
+        "script:run_llama_swiglu_1b": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--stage",
+                "--official-repo",
+                "--python-exe"
+              ]
+            }
+          ]
+        },
+        "script:run_llama_swiglu_1b_capacity": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--official-repo",
+                "--python-exe"
+              ]
+            }
+          ]
+        },
+        "script:run_llama_swiglu_1b_capacity_cell": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity_cell.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--stage",
+                "--official-repo",
+                "--python-exe"
+              ]
+            }
+          ]
+        },
+        "script:run_llama_swiglu_1b_capacity_exact": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity_exact.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--fine-manifest",
+                "--official-repo",
+                "--python-exe"
+              ]
+            }
+          ]
+        },
+        "script:run_llama_swiglu_1b_capacity_fine": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity_fine.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--official-repo",
+                "--python-exe"
+              ]
+            }
+          ]
+        },
+        "script:run_llama_swiglu_1b_capacity_fine_cell": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity_fine_cell.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--stage",
+                "--official-repo",
+                "--python-exe",
+                "--capacity-accumulation-steps",
+                "--device-batch-size"
+              ]
+            }
+          ]
+        }
+      },
+      "experiment_id": "20_llama_swiglu_1b",
+      "legacy_result_roots": [
+        "20_llama_swiglu_1b"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "20 Llama Swiglu 1B"
+    },
+    {
+      "code_directory": "scripts/21_gpt_r1_host_bridge",
+      "default_entrypoint": "script:run_gpt_r1_host_bridge",
+      "entrypoints": {
+        "script:run_gpt_r1_host_bridge": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/21_gpt_r1_host_bridge/run_gpt_r1_host_bridge.py"
+        }
+      },
+      "experiment_id": "21_gpt_r1_host_bridge",
+      "legacy_result_roots": [
+        "21_gpt_r1_host_bridge"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "21 Gpt R1 Host Bridge"
+    },
+    {
+      "code_directory": "scripts/22_r1_block_alpha",
+      "default_entrypoint": "command:20260727_r1_block_alpha_confirmatory_multiseed",
+      "entrypoints": {
+        "command:20260727_r1_block_alpha_confirmatory_multiseed": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/22_r1_block_alpha/20260727_r1_block_alpha_confirmatory_multiseed.sh"
+        },
+        "script:run_confirmatory_batch": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/22_r1_block_alpha/run_confirmatory_batch.py"
+        },
+        "script:run_r1_block_alpha": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/22_r1_block_alpha/run_r1_block_alpha.py"
+        }
+      },
+      "experiment_id": "22_r1_block_alpha",
+      "legacy_result_roots": [
+        "22_r1_block_alpha"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "22 R1 Block Alpha"
+    },
+    {
+      "code_directory": "scripts/23_llama_swiglu_extended_baselines",
+      "entrypoints": {
+        "script:run_llama_swiglu_extended": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/23_llama_swiglu_extended_baselines/run_llama_swiglu_extended.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--official-repo",
+                "--python-exe"
+              ]
+            },
+            {
+              "one_of": [
+                "--dry-run",
+                "--preflight",
+                "--numerical-smoke",
+                "--pilot",
+                "--formal-smoke",
+                "--formal"
+              ]
+            }
+          ]
+        },
+        "script:run_llama_swiglu_extended_capacity": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/23_llama_swiglu_extended_baselines/run_llama_swiglu_extended_capacity.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--official-repo",
+                "--python-exe",
+                "--pilot-manifest"
+              ]
+            }
+          ]
+        }
+      },
+      "experiment_id": "23_llama_swiglu_extended_baselines",
+      "legacy_result_roots": [
+        "23_llama_swiglu_extended_baselines"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "23 Llama Swiglu Extended Baselines"
+    },
+    {
+      "code_directory": "scripts/24_r1_dense_full_alpha",
+      "default_entrypoint": "command:20260727_r1_dense_full_alpha_confirmatory_multiseed",
+      "entrypoints": {
+        "command:20260727_r1_dense_full_alpha_confirmatory_multiseed": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/24_r1_dense_full_alpha/20260727_r1_dense_full_alpha_confirmatory_multiseed.sh"
+        },
+        "script:run_confirmatory_batch": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/24_r1_dense_full_alpha/run_confirmatory_batch.py"
+        },
+        "script:run_r1_dense_full_alpha": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/24_r1_dense_full_alpha/run_r1_dense_full_alpha.py"
+        }
+      },
+      "experiment_id": "24_r1_dense_full_alpha",
+      "legacy_result_roots": [
+        "24_r1_dense_full_alpha"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "24 R1 Dense Full Alpha"
+    },
+    {
+      "code_directory": "scripts/25_owt_depth_kmode",
+      "default_entrypoint": "script:run_owt_depth_kmode",
+      "entrypoints": {
+        "script:run_owt_depth_kmode": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/25_owt_depth_kmode/run_owt_depth_kmode.py",
+          "required_user_arguments": [
+            {
+              "one_of": [
+                "--dry-run",
+                "--numerical-smoke",
+                "--formal"
+              ]
+            }
+          ]
+        }
+      },
+      "experiment_id": "25_owt_depth_kmode",
+      "legacy_result_roots": [
+        "25_owt_depth_kmode"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "25 Owt Depth Kmode"
+    },
+    {
+      "code_directory": "scripts/26_mech00_inventory",
+      "entrypoints": {
+        "command:20260727_mech00_llama_followup_full_hash": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/26_mech00_inventory/20260727_mech00_llama_followup_full_hash.sh"
+        },
+        "command:20260727_mech00_llama_full_hash": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/26_mech00_inventory/20260727_mech00_llama_full_hash.sh"
+        },
+        "command:20260727_mech00_r1_full_hash": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/26_mech00_inventory/20260727_mech00_r1_full_hash.sh"
+        },
+        "script:run_mech00_inventory": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/26_mech00_inventory/run_mech00_inventory.py"
+        }
+      },
+      "experiment_id": "26_mech00_inventory",
+      "legacy_result_roots": [
+        "26_mech00_inventory"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "26 Mech00 Inventory"
+    },
+    {
+      "code_directory": "scripts/27_mech01_unified_k_diagnostics",
+      "entrypoints": {
+        "command:20260727_mech01_llama_host_remaining": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/27_mech01_unified_k_diagnostics/20260727_mech01_llama_host_remaining.sh"
+        },
+        "command:20260727_mech01_r1_none6200": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/27_mech01_unified_k_diagnostics/20260727_mech01_r1_none6200.sh"
+        },
+        "script:run_mech01": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/27_mech01_unified_k_diagnostics/run_mech01.py"
+        }
+      },
+      "experiment_id": "27_mech01_unified_k_diagnostics",
+      "legacy_result_roots": [
+        "27_mech01_unified_k_diagnostics"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "27 Mech01 Unified K Diagnostics"
+    },
+    {
+      "code_directory": "scripts/28_wikitext_depth_kmode",
+      "default_entrypoint": "script:run_wikitext_depth_kmode",
+      "entrypoints": {
+        "script:run_wikitext_depth_kmode": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "scripts/28_wikitext_depth_kmode/run_wikitext_depth_kmode.py",
+          "required_user_arguments": [
+            {
+              "one_of": [
+                "--dry-run",
+                "--numerical-smoke",
+                "--formal"
+              ]
+            }
+          ]
+        }
+      },
+      "experiment_id": "28_wikitext_depth_kmode",
+      "legacy_result_roots": [
+        "28_wikitext_depth_kmode"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "28 Wikitext Depth Kmode"
+    },
+    {
+      "code_directory": "scripts/29_r1_depth_kmode",
+      "default_entrypoint": "command:reproduce_full",
+      "entrypoints": {
+        "command:20260806_ex29_r1_depth_kmode": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {},
+          "path": "commands/29_r1_depth_kmode/20260806_ex29_r1_depth_kmode.sh"
+        },
+        "command:reproduce_full": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/29_r1_depth_kmode/reproduce_full.sh"
+        },
+        "script:analyze_r1_depth_kmode_formal": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/29_r1_depth_kmode/analyze_r1_depth_kmode_formal.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--bundle-root",
+                "--batch-id",
+                "--source-zip",
+                "--wandb-inputs",
+                "--reference-results-root",
+                "--output-dir"
+              ]
+            }
+          ]
+        },
+        "script:run_r1_depth_kmode": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/29_r1_depth_kmode/run_r1_depth_kmode.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--smoke-manifest"
+              ]
+            }
+          ]
+        },
+        "script:run_three_seed_batch": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/29_r1_depth_kmode/run_three_seed_batch.py",
+          "required_user_arguments": [
+            {
+              "all_of": [
+                "--official-repo",
+                "--python-exe",
+                "--results-dir"
+              ]
+            }
+          ]
+        }
+      },
+      "experiment_id": "29_r1_depth_kmode",
+      "legacy_result_roots": [
+        "29_r1_depth_kmode"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "29 R1 Depth Kmode"
+    },
+    {
+      "code_directory": "scripts/30_mech02_k_geometry",
+      "entrypoints": {
+        "command:20260727_mech02_llama_host_endpoint": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/30_mech02_k_geometry/20260727_mech02_llama_host_endpoint.sh"
+        },
+        "command:20260727_mech02_r1_endpoint": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/30_mech02_k_geometry/20260727_mech02_r1_endpoint.sh"
+        },
+        "script:run_mech02": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/30_mech02_k_geometry/run_mech02.py"
+        }
+      },
+      "experiment_id": "30_mech02_k_geometry",
+      "legacy_result_roots": [
+        "30_mech02_k_geometry"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "30 Mech02 K Geometry"
+    },
+    {
+      "code_directory": "scripts/31_mech03_crossfit_shadow",
+      "entrypoints": {
+        "command:20260727_mech03_llama_host_endpoint": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/31_mech03_crossfit_shadow/20260727_mech03_llama_host_endpoint.sh"
+        },
+        "command:20260727_mech03_r1_endpoint": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/31_mech03_crossfit_shadow/20260727_mech03_r1_endpoint.sh"
+        },
+        "script:run_mech03": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/31_mech03_crossfit_shadow/run_mech03.py"
+        }
+      },
+      "experiment_id": "31_mech03_crossfit_shadow",
+      "legacy_result_roots": [
+        "31_mech03_crossfit_shadow"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "31 Mech03 Crossfit Shadow"
+    },
+    {
+      "code_directory": "scripts/32_mech05_frozen_selection_rule",
+      "default_entrypoint": "command:20260727_mech05_freeze_selection_rule",
+      "entrypoints": {
+        "command:20260727_mech05_freeze_selection_rule": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/32_mech05_frozen_selection_rule/20260727_mech05_freeze_selection_rule.sh"
+        },
+        "script:analyze_mech05": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/32_mech05_frozen_selection_rule/analyze_mech05.py"
+        }
+      },
+      "experiment_id": "32_mech05_frozen_selection_rule",
+      "legacy_result_roots": [
+        "32_mech05_frozen_selection_rule"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "analysis_only",
+      "title": "32 Mech05 Frozen Selection Rule"
+    },
+    {
+      "code_directory": "scripts/33_mech06_llama1b_confirmation",
+      "default_entrypoint": "command:20260727_mech06_llama1b_confirmation",
+      "entrypoints": {
+        "command:20260727_mech06_llama1b_confirmation": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/33_mech06_llama1b_confirmation/20260727_mech06_llama1b_confirmation.sh"
+        },
+        "script:run_mech06": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/33_mech06_llama1b_confirmation/run_mech06.py"
+        }
+      },
+      "experiment_id": "33_mech06_llama1b_confirmation",
+      "legacy_result_roots": [
+        "33_mech06_llama1b_confirmation"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "33 Mech06 Llama1B Confirmation"
+    },
+    {
+      "code_directory": "scripts/34_selective_primary_comparison",
+      "default_entrypoint": "command:20260727_selective_primary_comparison",
+      "entrypoints": {
+        "command:20260727_selective_primary_comparison": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/34_selective_primary_comparison/20260727_selective_primary_comparison.sh"
+        },
+        "script:analyze_primary": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/34_selective_primary_comparison/analyze_primary.py"
+        }
+      },
+      "experiment_id": "34_selective_primary_comparison",
+      "legacy_result_roots": [
+        "34_selective_primary_comparison"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "analysis_only",
+      "title": "34 Selective Primary Comparison"
+    },
+    {
+      "code_directory": "scripts/35_mech07_llama1b_family_contrast",
+      "default_entrypoint": "command:20260727_mech07_llama1b_family_contrast",
+      "entrypoints": {
+        "command:20260727_mech07_llama1b_family_contrast": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/35_mech07_llama1b_family_contrast/20260727_mech07_llama1b_family_contrast.sh"
+        },
+        "script:run_mech07": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/35_mech07_llama1b_family_contrast/run_mech07.py"
+        }
+      },
+      "experiment_id": "35_mech07_llama1b_family_contrast",
+      "legacy_result_roots": [
+        "35_mech07_llama1b_family_contrast"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "35 Mech07 Llama1B Family Contrast"
+    },
+    {
+      "code_directory": "scripts/36_mech08_short_horizon_rollout",
+      "default_entrypoint": "command:20260727_mech08_short_horizon_rollout",
+      "entrypoints": {
+        "command:20260727_mech08_short_horizon_rollout": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/36_mech08_short_horizon_rollout/20260727_mech08_short_horizon_rollout.sh"
+        },
+        "script:run_mech08": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/36_mech08_short_horizon_rollout/run_mech08.py"
+        }
+      },
+      "experiment_id": "36_mech08_short_horizon_rollout",
+      "legacy_result_roots": [
+        "36_mech08_short_horizon_rollout"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "36 Mech08 Short Horizon Rollout"
+    },
+    {
+      "code_directory": "scripts/37_mech09_downproj_refresh_mediation",
+      "entrypoints": {
+        "command:20260728_mech09_downproj_refresh_mediation": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/37_mech09_downproj_refresh_mediation/20260728_mech09_downproj_refresh_mediation.sh"
+        },
+        "command:20260728_mech09r_causal_tree_repair": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/37_mech09_downproj_refresh_mediation/20260728_mech09r_causal_tree_repair.sh"
+        },
+        "script:run_mech09": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/37_mech09_downproj_refresh_mediation/run_mech09.py"
+        },
+        "script:run_mech09r": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/37_mech09_downproj_refresh_mediation/run_mech09r.py"
+        }
+      },
+      "experiment_id": "37_mech09_downproj_refresh_mediation",
+      "legacy_result_roots": [
+        "37_mech09_downproj_refresh_mediation"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "37 Mech09 Downproj Refresh Mediation"
+    },
+    {
+      "code_directory": "scripts/38_unified_mechanism_synthesis",
+      "default_entrypoint": "command:20260729_unified_mechanism_synthesis",
+      "entrypoints": {
+        "command:20260729_unified_mechanism_synthesis": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/38_unified_mechanism_synthesis/20260729_unified_mechanism_synthesis.sh"
+        },
+        "script:analyze_unified_mechanism": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/38_unified_mechanism_synthesis/analyze_unified_mechanism.py"
+        },
+        "script:validate_unified_mechanism": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/38_unified_mechanism_synthesis/validate_unified_mechanism.py"
+        }
+      },
+      "experiment_id": "38_unified_mechanism_synthesis",
+      "legacy_result_roots": [
+        "38_unified_mechanism_synthesis"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "legacy_command_or_live_source"
+      },
+      "schema_version": 1,
+      "status": "analysis_only",
+      "title": "38 Unified Mechanism Synthesis"
+    },
+    {
+      "code_directory": "scripts/39_submission_efficiency_and_sensitivity",
+      "entrypoints": {
+        "command:20260729_r1_isolated_efficiency_followup": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/39_submission_efficiency_and_sensitivity/20260729_r1_isolated_efficiency_followup.sh"
+        },
+        "command:20260729_r1_shared_lr_sensitivity_followup": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/39_submission_efficiency_and_sensitivity/20260729_r1_shared_lr_sensitivity_followup.sh"
+        },
+        "command:20260729_submission_efficiency_and_sensitivity_audit": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/39_submission_efficiency_and_sensitivity/20260729_submission_efficiency_and_sensitivity_audit.sh"
+        },
+        "command:20260729_submission_efficiency_and_sensitivity_full": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/39_submission_efficiency_and_sensitivity/20260729_submission_efficiency_and_sensitivity_full.sh"
+        },
+        "script:run_r1_lr_sensitivity": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/39_submission_efficiency_and_sensitivity/run_r1_lr_sensitivity.py"
+        }
+      },
+      "experiment_id": "39_submission_efficiency_and_sensitivity",
+      "legacy_result_roots": [
+        "39_submission_efficiency_and_sensitivity"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": false,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "39 Submission Efficiency And Sensitivity"
+    },
+    {
+      "code_directory": "scripts/40_llama_block_partition_invariance_audit",
+      "default_entrypoint": "command:20260729_llama_block_partition_invariance_audit",
+      "entrypoints": {
+        "command:20260729_llama_block_partition_invariance_audit": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/40_llama_block_partition_invariance_audit/20260729_llama_block_partition_invariance_audit.sh"
+        },
+        "script:run_llama_block_partition_audit": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/40_llama_block_partition_invariance_audit/run_llama_block_partition_audit.py"
+        }
+      },
+      "experiment_id": "40_llama_block_partition_invariance_audit",
+      "legacy_result_roots": [
+        "40_llama_block_partition_invariance_audit"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "40 Llama Block Partition Invariance Audit"
+    },
+    {
+      "code_directory": "scripts/41_r1_kstate_module_factorial",
+      "default_entrypoint": "command:20260729_r1_kstate_module_factorial",
+      "entrypoints": {
+        "command:20260729_r1_kstate_module_factorial": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/41_r1_kstate_module_factorial/20260729_r1_kstate_module_factorial.sh"
+        },
+        "script:run_r1_module_factorial": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/41_r1_kstate_module_factorial/run_r1_module_factorial.py"
+        },
+        "script:run_r1_module_factorial_suite": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/41_r1_kstate_module_factorial/run_r1_module_factorial_suite.py"
+        }
+      },
+      "experiment_id": "41_r1_kstate_module_factorial",
+      "legacy_result_roots": [
+        "41_r1_kstate_module_factorial"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "41 R1 Kstate Module Factorial"
+    },
+    {
+      "code_directory": "scripts/42_llama1b_isolated_efficiency",
+      "default_entrypoint": "command:20260729_llama1b_isolated_efficiency",
+      "entrypoints": {
+        "command:20260729_llama1b_isolated_efficiency": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/42_llama1b_isolated_efficiency/20260729_llama1b_isolated_efficiency.sh"
+        },
+        "script:run_llama1b_efficiency": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/42_llama1b_isolated_efficiency/run_llama1b_efficiency.py"
+        }
+      },
+      "experiment_id": "42_llama1b_isolated_efficiency",
+      "legacy_result_roots": [
+        "42_llama1b_isolated_efficiency"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "42 Llama1B Isolated Efficiency"
+    },
+    {
+      "code_directory": "scripts/43_newton_muon_record28_275m",
+      "default_entrypoint": "command:20260730_newton_muon_record28_275m",
+      "entrypoints": {
+        "command:20260730_newton_muon_record28_275m": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/43_newton_muon_record28_275m/20260730_newton_muon_record28_275m.sh"
+        },
+        "script:run_record28_cell": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/43_newton_muon_record28_275m/run_record28_cell.py"
+        },
+        "script:run_record28_suite": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/43_newton_muon_record28_275m/run_record28_suite.py"
+        }
+      },
+      "experiment_id": "43_newton_muon_record28_275m",
+      "legacy_result_roots": [
+        "43_newton_muon_record28_275m"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "43 Newton Muon Record28 275M"
+    },
+    {
+      "code_directory": "scripts/44_newton_muon_record17_455m",
+      "default_entrypoint": "command:20260730_newton_muon_record17_455m",
+      "entrypoints": {
+        "command:20260730_newton_muon_record17_455m": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/44_newton_muon_record17_455m/20260730_newton_muon_record17_455m.sh"
+        },
+        "script:run_record17_cell": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/44_newton_muon_record17_455m/run_record17_cell.py"
+        },
+        "script:run_record17_suite": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/44_newton_muon_record17_455m/run_record17_suite.py"
+        }
+      },
+      "experiment_id": "44_newton_muon_record17_455m",
+      "legacy_result_roots": [
+        "44_newton_muon_record17_455m"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "44 Newton Muon Record17 455M"
+    },
+    {
+      "code_directory": "scripts/45_r1_mousse_strong_baseline",
+      "default_entrypoint": "command:20260730_r1_mousse_strong_baseline",
+      "entrypoints": {
+        "command:20260730_r1_mousse_strong_baseline": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/45_r1_mousse_strong_baseline/20260730_r1_mousse_strong_baseline.sh"
+        },
+        "script:run_r1_mousse": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/45_r1_mousse_strong_baseline/run_r1_mousse.py"
+        }
+      },
+      "experiment_id": "45_r1_mousse_strong_baseline",
+      "legacy_result_roots": [
+        "45_r1_mousse_strong_baseline"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": false,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "45 R1 Mousse Strong Baseline"
+    },
+    {
+      "code_directory": "scripts/46_mdp05_confirmatory_update_shock",
+      "default_entrypoint": "command:reproduce_full",
+      "entrypoints": {
+        "command:20260804_ex46_mdp05_confirmatory_update_shock": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "MDP05_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "MDP05_RUN_DIR": "{run_dir}"
+              },
+              "required_env": [
+                "MDP05_PILOT_CERTIFICATE"
+              ],
+              "required_env_files": [
+                "MDP05_PILOT_CERTIFICATE"
+              ]
+            }
+          },
+          "path": "commands/46_mdp05_confirmatory_update_shock/20260804_ex46_mdp05_confirmatory_update_shock.sh"
+        },
+        "command:reproduce_full": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/46_mdp05_confirmatory_update_shock/reproduce_full.sh"
+        },
+        "script:run_mdp05": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/46_mdp05_confirmatory_update_shock/run_mdp05.py"
+        }
+      },
+      "experiment_id": "46_mdp05_confirmatory_update_shock",
+      "legacy_result_roots": [
+        "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": true,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "46 Mdp05 Confirmatory Update Shock"
+    },
+    {
+      "code_directory": "scripts/47_update_geometry_curvature",
+      "default_entrypoint": "command:reproduce_full",
+      "entrypoints": {
+        "command:20260804_ex47_update_geometry_curvature": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/47_update_geometry_curvature/20260804_ex47_update_geometry_curvature.sh"
+        },
+        "command:reproduce_full": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/47_update_geometry_curvature/reproduce_full.sh"
+        },
+        "script:run_geo01": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/47_update_geometry_curvature/run_geo01.py"
+        }
+      },
+      "experiment_id": "47_update_geometry_curvature",
+      "legacy_result_roots": [
+        "_shared/analysis/method_deepening_geo01_update_curvature"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": true,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "47 Update Geometry Curvature"
+    },
+    {
+      "code_directory": "scripts/47b_geo01b_update_geometry_discovery",
+      "default_entrypoint": "command:reproduce_full",
+      "entrypoints": {
+        "command:20260804_ex47b_geo01b_discovery": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/47b_geo01b_update_geometry_discovery/20260804_ex47b_geo01b_discovery.sh"
+        },
+        "command:reproduce_full": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/47b_geo01b_update_geometry_discovery/reproduce_full.sh"
+        },
+        "script:run_geo01b": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/47b_geo01b_update_geometry_discovery/run_geo01b.py"
+        }
+      },
+      "experiment_id": "47b_geo01b_update_geometry_discovery",
+      "legacy_result_roots": [
+        "47b_geo01b_update_geometry_discovery",
+        "_shared/analysis/method_deepening_geo01b_update_geometry_discovery"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": true,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "47B Geo01B Update Geometry Discovery"
+    },
+    {
+      "code_directory": "scripts/48_llama1b_10b_multibudget",
+      "default_entrypoint": "command:reproduce_full",
+      "entrypoints": {
+        "command:20260805_ex48_llama1b_10b_multibudget": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "EX48_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "EX48_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/48_llama1b_10b_multibudget/20260805_ex48_llama1b_10b_multibudget.sh"
+        },
+        "command:reproduce_full": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/48_llama1b_10b_multibudget/reproduce_full.sh"
+        },
+        "script:audit_received_results": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/48_llama1b_10b_multibudget/audit_received_results.py"
+        },
+        "script:run_formal": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/48_llama1b_10b_multibudget/run_formal.py"
+        }
+      },
+      "experiment_id": "48_llama1b_10b_multibudget",
+      "legacy_result_roots": [
+        "48_llama1b_10b_multibudget"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": true,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "48 Llama1B 10B Multibudget"
+    },
+    {
+      "code_directory": "scripts/49_r1_malt_strong_baseline",
+      "default_entrypoint": "command:reproduce_full",
+      "entrypoints": {
+        "command:20260807_ex49_r1_malt_strong_baseline": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "EX49_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "all"
+              ],
+              "env": {
+                "EX49_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/49_r1_malt_strong_baseline/20260807_ex49_r1_malt_strong_baseline.sh"
+        },
+        "command:reproduce_full": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "reproduce": []
+          },
+          "path": "commands/49_r1_malt_strong_baseline/reproduce_full.sh"
+        },
+        "script:run_r1_malt": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/49_r1_malt_strong_baseline/run_r1_malt.py"
+        },
+        "script:run_r1_malt_suite": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/49_r1_malt_strong_baseline/run_r1_malt_suite.py"
+        }
+      },
+      "experiment_id": "49_r1_malt_strong_baseline",
+      "legacy_result_roots": [
+        "49_r1_malt_strong_baseline"
+      ],
+      "reproducibility": {
+        "fresh_rerun": true,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": true,
+        "source_freeze": "partial_or_run_specific_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "49 R1 MALT Strong Baseline"
+    },
+    {
+      "code_directory": "scripts/mdp_refresh_streaming",
+      "entrypoints": {
+        "command:20260803_mdp04_refresh_streaming": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "archive-verify"
+              ],
+              "env": {
+                "MDP04_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/mdp04_refresh_streaming/20260803_mdp04_refresh_streaming.sh"
+        },
+        "command:reproduce_archived": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {},
+          "path": "commands/mdp04_refresh_streaming/reproduce_archived.sh"
+        },
+        "script:run_stream_replay": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/mdp_refresh_streaming/run_stream_replay.py"
+        }
+      },
+      "experiment_id": "mdp04_refresh_streaming",
+      "legacy_result_roots": [
+        "_shared/analysis/method_deepening_mdp04_refresh_replay"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": true,
+        "native_resume": false,
+        "native_verify": true,
+        "one_click_rerun": false,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "Mdp-04 Refresh Streaming"
+    }
+  ],
+  "schema_version": 1
+}

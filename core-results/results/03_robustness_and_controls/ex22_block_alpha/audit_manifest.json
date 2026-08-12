@@ -1,0 +1,20 @@
+{
+  "artifacts": [
+    "alpha_run_summary.csv",
+    "canonical_alpha_curve.csv",
+    "confirmatory_history_long.csv",
+    "data_quality_audit.json",
+    "data_quality_checks.csv",
+    "dense_alpha0_vs_efficient_diag.csv",
+    "important_results.json",
+    "matched_sources/",
+    "raw_wandb_exports/",
+    "seed_curvature.csv",
+    "source_manifest.csv"
+  ],
+  "delivery_status": "wandb_complete_local_artifacts_pending",
+  "schema_version": 1,
+  "scientific_classification": "strong_confirmatory_support",
+  "script_version": "2026-07-29.2",
+  "wandb_passed": true
+}

@@ -1,0 +1,28 @@
+{
+  "checkpoint_policy": {
+    "archive_checkpoint_entries": 10,
+    "archive_checkpoint_uncompressed_bytes": 65798144,
+    "checkpoints_read_or_hashed": false,
+    "retained_checkpoint_entries": 0
+  },
+  "classification": "strong_confirmatory_support",
+  "delivery_status": "complete",
+  "failed_checks": [],
+  "local_audit": {
+    "package_sha256": "ee817feca154600db7bc84a609aec95289812350876409f20e78f031663f0f57",
+    "passed": true,
+    "path": "results/03_robustness_and_controls/ex24_dense_full_alpha/local_evidence/local_audit_manifest.json",
+    "sha256": "ee817feca154600db7bc84a609aec95289812350876409f20e78f031663f0f57",
+    "source_sha256": "e70e12c071b3dd95b8c320eeb51f6b71d2138e271ff75f0a672ffdb19fff366c"
+  },
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-29.1",
+  "wandb_audit": {
+    "package_sha256": "e79e5c418a532fab113175382d0ca790d8b77698e843bf0467dc786011f9739e",
+    "passed": true,
+    "path": "results/03_robustness_and_controls/ex24_dense_full_alpha/audit_manifest.json",
+    "sha256": "e79e5c418a532fab113175382d0ca790d8b77698e843bf0467dc786011f9739e",
+    "source_sha256": "e79e5c418a532fab113175382d0ca790d8b77698e843bf0467dc786011f9739e"
+  }
+}

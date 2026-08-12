@@ -1,0 +1,57 @@
+{
+  "schema_version": "mdp05_local_acceptance_v1",
+  "run_id": "20260804T021302+0000",
+  "source_zip": {
+    "name": "20260804T021302+0000.zip",
+    "bytes": 13049790,
+    "sha256": "52189521ca8399ede2e33d1f96a6d9a68dc9d975e27f0e9fa1b3176718f2a1b4"
+  },
+  "integrity": {
+    "passed": true,
+    "selected_units": 12,
+    "selected_attempt": "attempt_002",
+    "unit_event_rows": 24,
+    "layer_rows": 432,
+    "float64_slice_diagnostics": 8,
+    "source_repair_activation_passed": true,
+    "accepted_formal_units_before_repair": 0,
+    "failed_attempts_reused": false
+  },
+  "scientific_result": "partial_or_null",
+  "claim_success": false,
+  "direct_loss_effect": {
+    "production_refresh_32": {
+      "positive_units": 12,
+      "total_units": 12,
+      "mean_normalized_harm": 0.0044842066487064,
+      "median_normalized_harm": 0.00414313880427047,
+      "minimum": 0.00292907760485517,
+      "maximum": 0.00664136028400475
+    },
+    "delayed_refresh_64": {
+      "positive_units": 12,
+      "total_units": 12,
+      "mean_normalized_harm": 0.0023248804547182,
+      "median_normalized_harm": 0.00229160232978975,
+      "minimum": 0.00171071349934726,
+      "maximum": 0.00308779184403196
+    }
+  },
+  "primary_tests_passed": 0,
+  "primary_tests_total": 4,
+  "strongest_primary": {
+    "event_id": "production_refresh_32",
+    "mediator": "matched_g_preconditioned_relative_change_layer_median",
+    "spearman_rho": 0.7832167832167832,
+    "within_origin_centered_pearson_r": 0.3748782896991416,
+    "one_sided_exact_p": 0.1087962962962963,
+    "holm_adjusted_p": 0.4351851851851852,
+    "passed": false
+  },
+  "interpretation": {
+    "loss_level_causal_effect": "confirmed",
+    "origin_independent_quantitative_update_shock_mediation": "not_confirmed",
+    "paper_location": "appendix_and_limitations",
+    "new_remote_gpu_work_triggered": false
+  }
+}

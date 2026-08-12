@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "generated_at": "2026-07-22T06:48:59.195329+00:00",
+  "evidence_class": "capacity_only",
+  "source_batch_id": "20260722T052814+0000_capacity_fine_seed2026",
+  "source_archive_sha256": "1a9b722fe4d0124daf0ec0d09be5c987d1da4e6c3d1e07426e0e8c4e036e92b0",
+  "quality_checks": {
+    "passed": 10,
+    "failed": 0
+  },
+  "primary_result": {
+    "muon": "38 success / 40 OOM",
+    "newton_full": "34 success / 36 OOM",
+    "down_none": "36 success / 38 OOM",
+    "down_diag": "36 success / 38 OOM"
+  }
+}

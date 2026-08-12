@@ -1,0 +1,85 @@
+{
+  "all_down_layers": 18,
+  "claim_eligible": false,
+  "confirmation_authorized": false,
+  "contract_sha256": "6362647488486acd56cc6cfd9648cd6d990a85aa573c8f9ef2dcca20679d5e04",
+  "events_per_unit": 2,
+  "execution_contract_sha256": "7512f1b762bb66c2d5d83aed8293572face15525ec7363f35084db14b7315719",
+  "jobs": [
+    {
+      "data_replica": 9,
+      "label": "discovery/early_muon/replica_9",
+      "origin": "early_muon"
+    },
+    {
+      "data_replica": 10,
+      "label": "discovery/early_muon/replica_10",
+      "origin": "early_muon"
+    },
+    {
+      "data_replica": 11,
+      "label": "discovery/early_muon/replica_11",
+      "origin": "early_muon"
+    },
+    {
+      "data_replica": 9,
+      "label": "discovery/early_newton_full/replica_9",
+      "origin": "early_newton_full"
+    },
+    {
+      "data_replica": 10,
+      "label": "discovery/early_newton_full/replica_10",
+      "origin": "early_newton_full"
+    },
+    {
+      "data_replica": 11,
+      "label": "discovery/early_newton_full/replica_11",
+      "origin": "early_newton_full"
+    },
+    {
+      "data_replica": 9,
+      "label": "discovery/late_muon/replica_9",
+      "origin": "late_muon"
+    },
+    {
+      "data_replica": 10,
+      "label": "discovery/late_muon/replica_10",
+      "origin": "late_muon"
+    },
+    {
+      "data_replica": 11,
+      "label": "discovery/late_muon/replica_11",
+      "origin": "late_muon"
+    },
+    {
+      "data_replica": 9,
+      "label": "discovery/late_newton_full/replica_9",
+      "origin": "late_newton_full"
+    },
+    {
+      "data_replica": 10,
+      "label": "discovery/late_newton_full/replica_10",
+      "origin": "late_newton_full"
+    },
+    {
+      "data_replica": 11,
+      "label": "discovery/late_newton_full/replica_11",
+      "origin": "late_newton_full"
+    }
+  ],
+  "maximum_parallel_jobs": 2,
+  "outcome_blind_until_contract_sealed": true,
+  "passed": true,
+  "schema_version": "geo01b_discovery_plan_v1",
+  "smoke": {
+    "build_token_offset": 24000000,
+    "data_replica": 12,
+    "eval_token_offset": 25048576,
+    "optimizer_step_offset": 3072,
+    "origin": "early_muon",
+    "outcomes_opened": false,
+    "rollout_steps": 4
+  },
+  "source_snapshot_manifest_sha256": "fee8c6b08d00848ef4f5278c81673a0247aabd53215f4e8d8d0fac0e8738af52",
+  "unit_count": 12
+}

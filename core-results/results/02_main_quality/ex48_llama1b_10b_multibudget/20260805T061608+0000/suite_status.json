@@ -1,0 +1,82 @@
+{
+  "completed_units": 12,
+  "expected_units": 12,
+  "failures": [],
+  "passed": true,
+  "results": [
+    {
+      "gpu": 2,
+      "method": "newton_full",
+      "seed": 2026,
+      "status": "passed"
+    },
+    {
+      "gpu": 2,
+      "method": "down_none",
+      "seed": 2025,
+      "status": "passed"
+    },
+    {
+      "gpu": 2,
+      "method": "muon",
+      "seed": 2025,
+      "status": "passed"
+    },
+    {
+      "gpu": 3,
+      "method": "down_diag",
+      "seed": 2024,
+      "status": "passed"
+    },
+    {
+      "gpu": 3,
+      "method": "down_diag",
+      "seed": 2025,
+      "status": "passed"
+    },
+    {
+      "gpu": 3,
+      "method": "down_none",
+      "seed": 2026,
+      "status": "passed"
+    },
+    {
+      "gpu": 1,
+      "method": "newton_full",
+      "seed": 2025,
+      "status": "passed"
+    },
+    {
+      "gpu": 1,
+      "method": "down_none",
+      "seed": 2024,
+      "status": "passed"
+    },
+    {
+      "gpu": 1,
+      "method": "muon",
+      "seed": 2024,
+      "status": "passed"
+    },
+    {
+      "gpu": 0,
+      "method": "newton_full",
+      "seed": 2024,
+      "status": "passed"
+    },
+    {
+      "gpu": 0,
+      "method": "down_diag",
+      "seed": 2026,
+      "status": "passed"
+    },
+    {
+      "gpu": 0,
+      "method": "muon",
+      "seed": 2026,
+      "status": "passed"
+    }
+  ],
+  "schema_version": "ex48_suite_status_v1",
+  "updated_at": "2026-08-11T19:16:21.779173+00:00"
+}

@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-29.2",
+  "portable_snapshot_required": true,
+  "required_files": [
+    {
+      "id": "unified_mechanism_manifest",
+      "path": "38_unified_mechanism_synthesis/20260729T071451+0000/unified_mechanism_manifest.json",
+      "portable_path": "unified_mechanism_manifest.json",
+      "portable_sha256": "634ecfa12cd2ec46e8a72f354989f0dad09155a2489d7fd2f707cfb1c70a5c0d",
+      "kind": "json"
+    },
+    {
+      "id": "unified_alpha",
+      "path": "38_unified_mechanism_synthesis/20260729T071451+0000/alpha_synthesis.csv",
+      "portable_path": "unified_alpha.csv",
+      "portable_sha256": "06662406cfd307d44085a667bb5ac50e00e5785c03fa52c3bd49b79a8571afe4",
+      "kind": "csv",
+      "required_columns": [
+        "topology",
+        "seeds",
+        "all_seed_curvatures_negative",
+        "alpha0p50_beats_both_endpoints_all_seeds"
+      ]
+    },
+    {
+      "id": "capacity_exact_manifest",
+      "path": "20_llama_swiglu_1b/analysis/capacity_exact_20260722_seed2026/derived/analysis_manifest.json",
+      "portable_path": "capacity_exact_manifest.json",
+      "portable_sha256": "82632e1f073d8393477dc2844f68a3d079f2d5a442267e4d0c5ecbc1c4d85e92",
+      "kind": "json"
+    },
+    {
+      "id": "capacity_exact_boundary",
+      "path": "20_llama_swiglu_1b/analysis/capacity_exact_20260722_seed2026/derived/exact_boundaries.csv",
+      "portable_path": "capacity_exact_boundary.csv",
+      "portable_sha256": "b6279d85acb2e2938645b7ed16755bf5aef2a63d231acf4e149a5e0e7c2e220a",
+      "kind": "csv",
+      "required_columns": [
+        "method",
+        "max_success_device_batch",
+        "first_oom_device_batch",
+        "resolved_width"
+      ]
+    },
+    {
+      "id": "capacity_fine_manifest",
+      "path": "20_llama_swiglu_1b/analysis/capacity_fine_20260722_seed2026/derived/analysis_manifest.json",
+      "portable_path": "capacity_fine_manifest.json",
+      "portable_sha256": "a4f0cd4ac1e8878b7e1445a5c807c2c7823a690e8a4656ea1e023c5bb1e4ceac",
+      "kind": "json"
+    },
+    {
+      "id": "capacity_fine_source_manifest",
+      "path": "20_llama_swiglu_1b/analysis/capacity_fine_20260722_seed2026/20260722T052814+0000_capacity_fine_seed2026/capacity_fine_manifest.json",
+      "portable_path": "capacity_fine_source_manifest.json",
+      "historical_sha256": "a93dc05152334ce647025363f9209d562a07065e6fcca3d6f042d3ab34a683e2",
+      "portable_sha256": "d27e0bee9d05a576275f3263f7aa770d463e63b8f8b386a2f4629b06266fc5d4",
+      "public_change_scope": "host paths only",
+      "candidate_paths": [
+        "20_llama_swiglu_1b/capacity_fine/20260722T052814+0000_capacity_fine_seed2026/capacity_fine_manifest.json"
+      ],
+      "fallback_globs": [
+        "20_llama_swiglu_1b/**/capacity_fine_manifest.json"
+      ],
+      "kind": "json"
+    },
+    {
+      "id": "capacity_runtime_plan",
+      "path": "20_llama_swiglu_1b/analysis/capacity_fine_20260722_seed2026/20260722T052814+0000_capacity_fine_seed2026/cells/down_none/batch_32/20260722T055910+0000_smoke_seed2026/llama_plan.json",
+      "portable_path": "capacity_runtime_plan.json",
+      "historical_sha256": "7073a475715b8ac6c28afa6ffa8a6934167cf45d524e78f8d1456c356de43430",
+      "portable_sha256": "c03298ebbc4cf774dad0c57bf623e1bdb38dd1fffcf9b4a495bec73f80f5f597",
+      "public_change_scope": "host paths only",
+      "candidate_paths": [
+        "20_llama_swiglu_1b/capacity_fine/20260722T052814+0000_capacity_fine_seed2026/cells/down_none/batch_32/20260722T055910+0000_smoke_seed2026/llama_plan.json"
+      ],
+      "fallback_globs": [
+        "20_llama_swiglu_1b/capacity_fine/**/cells/down_none/batch_32/**/llama_plan.json"
+      ],
+      "kind": "json"
+    },
+    {
+      "id": "fixed_batch_memory",
+      "path": "20_llama_swiglu_1b/analysis/capacity_fine_20260722_seed2026/derived/state_and_batch32_memory.csv",
+      "portable_path": "fixed_batch_memory.csv",
+      "portable_sha256": "c998ed721e69f1c5131f8ac73210868ecf37945ca19171107bb7c31354b61098",
+      "candidate_paths": [
+        "20_llama_swiglu_1b/capacity_fine/derived/state_and_batch32_memory.csv"
+      ],
+      "fallback_globs": [
+        "20_llama_swiglu_1b/**/state_and_batch32_memory.csv"
+      ],
+      "kind": "csv",
+      "required_columns": [
+        "method",
+        "optimizer_state_mib",
+        "k_state_mib",
+        "peak_allocated_mib_at_batch32",
+        "peak_reserved_mib_at_batch32"
+      ]
+    },
+    {
+      "id": "historical_r1_manifest",
+      "path": "15_official_newton_muon_r1/analysis/wandb_20260721_multiseed_factorial/analysis_manifest.json",
+      "portable_path": "historical_r1_manifest.json",
+      "portable_sha256": "7b5455a0245768e2d04adf134d7b66cbc4d74bf8c9134beb2dc8b9ac0c7f35ab",
+      "fallback_globs": [
+        "15_official_newton_muon_r1/**/wandb_*multiseed_factorial/analysis_manifest.json"
+      ],
+      "kind": "json"
+    },
+    {
+      "id": "historical_r1_summary",
+      "path": "15_official_newton_muon_r1/analysis/wandb_20260721_multiseed_factorial/r1_multiseed_run_summary.csv",
+      "portable_path": "historical_r1_summary.csv",
+      "portable_sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+      "fallback_globs": [
+        "15_official_newton_muon_r1/**/r1_multiseed_run_summary.csv"
+      ],
+      "kind": "csv",
+      "required_columns": [
+        "method",
+        "seed",
+        "train_time_s_descriptive_only",
+        "final_step_avg_ms_descriptive_only"
+      ]
+    },
+    {
+      "id": "historical_b24_lr_grid",
+      "path": "13_reference_lr_sanity/results/b24_reference_lr_grid_seed2026_complete_20260717/b24_lr_grid_seed2026_run_summary.csv",
+      "portable_path": "historical_b24_lr_grid.csv",
+      "portable_sha256": "454129e45829c867bf1ff1c37c09479bf45e818d1117a7174e1894cf6aa30357",
+      "fallback_globs": [
+        "13_reference_lr_sanity/**/b24_lr_grid_seed2026_run_summary.csv"
+      ],
+      "kind": "csv",
+      "required_columns": [
+        "method",
+        "seed",
+        "matrix_lr",
+        "final_val_loss"
+      ]
+    },
+    {
+      "id": "r1_lr_cross_manifest",
+      "path": "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/analysis_manifest.json",
+      "portable_path": "r1_lr_cross_manifest.json",
+      "historical_sha256": "dc9550d980fdd7f1ebe75f58cf4605a87830e140ce0b138aa5209d2a516ba4d3",
+      "portable_sha256": "40cc6f845c2f8967ba8c5c79780769d044f2f06f09fc55ae2d087fac70c0d633",
+      "public_change_scope": "host paths only",
+      "fallback_globs": [
+        "16_official_newton_muon_r1_lr_cross/**/wandb_*crossed_multiseed/analysis_manifest.json"
+      ],
+      "kind": "json"
+    },
+    {
+      "id": "r1_lr_cross_summary",
+      "path": "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed/crossed_run_summary.csv",
+      "portable_path": "r1_lr_cross_summary.csv",
+      "portable_sha256": "1866dc0b09dbf9f00e57758b13d676040f6b75e884e518e4b93e0e28c91158c1",
+      "fallback_globs": [
+        "16_official_newton_muon_r1_lr_cross/**/crossed_run_summary.csv"
+      ],
+      "kind": "csv",
+      "required_columns": [
+        "method",
+        "seed",
+        "lr_level",
+        "final_val_loss"
+      ]
+    },
+    {
+      "id": "llama1b_formal_manifest",
+      "path": "20_llama_swiglu_1b/analysis/formal6200_multiseed_20260727/analysis_manifest.json",
+      "portable_path": "llama1b_formal_manifest.json",
+      "portable_sha256": "420ca8c5847ddf223d92ed4286a79423224f970e550886bd118c3a0f3b6875fa",
+      "candidate_paths": [
+        "20_llama_swiglu_1b/formal/analysis_manifest.json",
+        "20_llama_swiglu_1b/multiseed_followup/analysis_manifest.json"
+      ],
+      "fallback_globs": [
+        "20_llama_swiglu_1b/**/formal6200_multiseed*/analysis_manifest.json"
+      ],
+      "kind": "json"
+    }
+  ],
+  "optional_performance_roots": [
+    "39_submission_efficiency_and_sensitivity/followup/r1_isolated_efficiency",
+    "18_r1_performance/results"
+  ],
+  "optional_sensitivity_root": "39_submission_efficiency_and_sensitivity/followup/r1_shared_lr_sensitivity",
+  "performance_required_roles": [
+    "muon",
+    "block4",
+    "none",
+    "diag"
+  ],
+  "performance_min_timed_steps": 512,
+  "performance_min_repeats": 4,
+  "performance_required_gpu_count": 2,
+  "official_commit": "df78af0db523d8bceb25af4919a3e3e7082b80f3"
+}

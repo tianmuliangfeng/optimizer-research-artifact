@@ -1,0 +1,16 @@
+{
+  "artifacts": [
+    "family_cell_scores.csv",
+    "gpt_runtime_robustness.csv",
+    "input_validation.json",
+    "prediction_gate.json",
+    "primary_layer_summary.csv",
+    "primary_paired_cells.csv"
+  ],
+  "mech04_authorized": false,
+  "passed": true,
+  "prediction_contract_sha256": "9b56e112797103cfc8c98948850a50ba59d672255f305f8dce2c0f5941a25712",
+  "prediction_gate_passed": false,
+  "schema_version": 1,
+  "script_version": "2026-07-27.2"
+}

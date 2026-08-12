@@ -1,0 +1,3 @@
+checkpoint_label,checkpoint_step,global_block4_update_drift_maximum,global_block4_update_drift_mean,global_block4_update_drift_median,global_block4_update_drift_minimum,global_block4_update_drift_n,global_block4_update_drift_p95
+early,1000,0.5522371548439557,0.3598482021890608,0.3105255208424539,0.21869613584368292,24,0.5520233821714875
+late,6200,0.5841121276728609,0.3903871532329027,0.39217420020354976,0.19505939284108892,24,0.5823940106255951

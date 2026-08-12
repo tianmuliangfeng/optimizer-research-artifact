@@ -1,0 +1,474 @@
+{
+  "cells": [
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-30T15:18:48.701748+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2024:muon",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__b43431d9a862",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "e6175b41a2cca3c365b662e17ca1b507b7e37d58417ce4598550e13536eba0c3",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "897beb9fac5a79b93516966d04b9df379dbac26b5c8bac6ab094a3d5efdaf306",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__b43431d9a862",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "1d5c686570d65a538af6d95f5f1d9366a49c972f3e15a8f436a65f5c8896a285",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "muon",
+      "metrics_sha256": "9c93c8192b3657e4856a7f6a0fc4b2d6cf6f68b043848c00751a3c872f761654",
+      "scientific_manifest_sha256": "e6175b41a2cca3c365b662e17ca1b507b7e37d58417ce4598550e13536eba0c3",
+      "seed": 2024,
+      "summary_recomputed": true,
+      "summary_sha256": "675d8f60f1bcb3b8e02b49d5fd6feee000a3808ec2309ba1113b1effb3d00e80"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-30T18:53:09.676921+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2024:original_newton_muon",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__e50ae64b26c9",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "c3fc7c1b0a183982a1f1ca832efe3ae75a77d8a1e0d27f82fdc7a87a0acdb75a",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "5a0fa5765623978760f20f959367c97828cd53043fd4c61f1cf28eee04024b5d",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__e50ae64b26c9",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "a6517ddde90a8fcb60f5bf7ca427580710f0cda8899d9cf7456b4148cbae0d3d",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "original_newton_muon",
+      "metrics_sha256": "7ec20dc891131d46d0c0ee44acdd9a521bcd8bf2068f8c3586348a63e9e70d87",
+      "scientific_manifest_sha256": "c3fc7c1b0a183982a1f1ca832efe3ae75a77d8a1e0d27f82fdc7a87a0acdb75a",
+      "seed": 2024,
+      "summary_recomputed": true,
+      "summary_sha256": "ce6019ab3ae7c2620cb01a7ed681cd7511eccc028ba653ce2d8303724b3de6de"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-30T22:26:05.549794+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2024:selective_none",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__6b1104377518",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "2c142a20ccfccce9a9223359187c8f147ad47192369339a21dc13e6729dbcefd",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "57b2da15245973fae9e155a5fa36057fe908ec34074295c00d7e7879bb6ca362",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__6b1104377518",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "54ab1ec5ce4c2c1a0ca3d56de18b5b04c8db8ca7d6cb29d90d4cfbf8a3e7a2da",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "selective_none",
+      "metrics_sha256": "ab22cfa635bb017965507263349ce5b3ec42a18f5a089520a152cf4fc9a2b90b",
+      "scientific_manifest_sha256": "2c142a20ccfccce9a9223359187c8f147ad47192369339a21dc13e6729dbcefd",
+      "seed": 2024,
+      "summary_recomputed": true,
+      "summary_sha256": "ed504de942f03b96b308a2739eb8029790af2984b69faaca26d31266e05feafe"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-31T01:59:51.478821+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2024:selective_diag",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__8f5a82402fff",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "c67c389a3e0bf7c015ab65349d3916b679d6adbf67d34fcb854bea8c765e6c1f",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "6bbbd9bcdae16beeab3a63e1248ec466fa20ed6bc5b0d4b6e5b3edf5f2afd8ef",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__8f5a82402fff",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "fe5a93c206729873d5804262effb05e3bfdde1436f6f3cd7d0778e42ad306e4b",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "selective_diag",
+      "metrics_sha256": "e0a19b3d173a12637598af0a69a494169e4f02f8220551eac8c80d91871195df",
+      "scientific_manifest_sha256": "c67c389a3e0bf7c015ab65349d3916b679d6adbf67d34fcb854bea8c765e6c1f",
+      "seed": 2024,
+      "summary_recomputed": true,
+      "summary_sha256": "cafd3171a2f4bb4920736616738f6d04a45002bfad8351edbce29a29c0088d51"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-31T16:38:51.740694+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2025:muon",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__7b3575160973",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "3f4fea14fcff82657bfebb359a83845f7deca73f20800aa4b7b66467e3ae7a4d",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "f4f257d2a88010c0c18aba066d5953fc1bbbc9a24acc48f8632b9f36b04c0c3b",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__7b3575160973",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "b5c7317e767f259dc01ed19c9b0883bbb16ddac89be6c4c1f326e818f0a0c923",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "muon",
+      "metrics_sha256": "627a80e1a2b9a08409a244cd2d0e295fb07ac06e04a086bc2956a8f8f1ebe76c",
+      "scientific_manifest_sha256": "3f4fea14fcff82657bfebb359a83845f7deca73f20800aa4b7b66467e3ae7a4d",
+      "seed": 2025,
+      "summary_recomputed": true,
+      "summary_sha256": "a8ecbd9457fb95eed6e0588854e6e1396e6471f7437649bc42ea60a367d56b15"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-31T05:33:42.565749+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2025:original_newton_muon",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__52c2044695ed",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "bd770624175082f4506f99057d3b6015643fb28852990aa7b513e19bb63b4084",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "5a4e5c413c1643d22528e808b726e0597b5ed3d629eb3273875a1acfde1d850b",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__52c2044695ed",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "1733d719635acffe82a0d5f5f5b588e2b0c8c606ff69c0f701bafcee6979f796",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "original_newton_muon",
+      "metrics_sha256": "8269e3baaeb399ad7b68343267ab16c19bd7e9947b34a7fa770de0912cfb758c",
+      "scientific_manifest_sha256": "bd770624175082f4506f99057d3b6015643fb28852990aa7b513e19bb63b4084",
+      "seed": 2025,
+      "summary_recomputed": true,
+      "summary_sha256": "2944ab51011bbb7379f005edddf0618368de85d0a8851633f697674a2c0ab138"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-31T09:12:53.806524+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2025:selective_none",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__e1ec89aa7747",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "94c68c00f202af36ded28ddfa7c673b1292195a85a20ff70547e4f7845c69f6b",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "bf09cee7e83d9288664754bd0da4cf665e2a239f608a31244b3a538616495ad8",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__e1ec89aa7747",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "673ad39d872b4fe83cbd92d5f4667b9db0e83c44418303e83e8e2db6960eb1d3",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "selective_none",
+      "metrics_sha256": "49d5f20604a16d1251a977ce7acd0fe38eee2ad546a6c4b963379b1277e82540",
+      "scientific_manifest_sha256": "94c68c00f202af36ded28ddfa7c673b1292195a85a20ff70547e4f7845c69f6b",
+      "seed": 2025,
+      "summary_recomputed": true,
+      "summary_sha256": "5c34a08ce7b917b93c843b7f7b40b5bab95d9d83ecc16993998bfe785067be83"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-31T12:51:25.043680+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2025:selective_diag",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__d9e7a4061f26",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "b22f8e3a279232b6ccaa2f60dce96da3c6215c476ef97d790fb013ac940b10fb",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "74582f9504422aff38bfdd85e42cec46cf40910a860cebf0590cdb5304f08146",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__d9e7a4061f26",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "8e27b0760232aaf2dcaa92e49d7ba55781857fc8f4b31c96a01fe0fbf839bd7b",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "selective_diag",
+      "metrics_sha256": "e4d1d20da59a5711b877ebaec1cf93a3cb71291d5049c53544d9910af7531a5a",
+      "scientific_manifest_sha256": "b22f8e3a279232b6ccaa2f60dce96da3c6215c476ef97d790fb013ac940b10fb",
+      "seed": 2025,
+      "summary_recomputed": true,
+      "summary_sha256": "4183d1cf6ef7baeb8b0d2be87606f812546f791ae76e0514fb7f92556b5641f9"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-08-01T03:14:39.043974+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2026:muon",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__aeb0a5a60b89",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "4bb9d185cf2e87f4ed4913124f5e51ab8ac2b4b9820942278ac329ae9ca0ce44",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "9c4ab8d18c402d1e7871f7e8bf0d62008fa7788505bfe6763a11dbb1b0a93df2",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__aeb0a5a60b89",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "bcaac1a931812b45fdff84579fef3f3aaefea6eb9587e8da4b2658f8cff979ee",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "muon",
+      "metrics_sha256": "8ddd16ba2923e636d7108d04fc50bcdd88ab61d61fc89e5c7b9fa1e62c204c62",
+      "scientific_manifest_sha256": "4bb9d185cf2e87f4ed4913124f5e51ab8ac2b4b9820942278ac329ae9ca0ce44",
+      "seed": 2026,
+      "summary_recomputed": true,
+      "summary_sha256": "81dbcb1a0217c0019d850ac73816ef0f9fda4e41c3ea341b9d6b5ebe83bf9a46"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-08-01T07:02:10.770464+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2026:original_newton_muon",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__8b0922ebb207",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "49be9defbd5d718a007233fb14e5d5e49d9c578efc308682f1498f1835f4a39e",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "bdb3bd30202ab01053221b130da004bdd848144faaf0896f0248442790a2c625",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__8b0922ebb207",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "6c763c98110e7686f61822d08cc3cdbca5eeec5040abe40a4e69b83d2b8bd1e2",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "original_newton_muon",
+      "metrics_sha256": "866804f02f3345c59d349cd2b6a5b85da6ac0547147d1a0bf2ccfad3927c603a",
+      "scientific_manifest_sha256": "49be9defbd5d718a007233fb14e5d5e49d9c578efc308682f1498f1835f4a39e",
+      "seed": 2026,
+      "summary_recomputed": true,
+      "summary_sha256": "cbe4822b4113c6b9e0d359f033b03ee7718a93e5de753023c0f3b23771de8084"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-31T20:11:12.590457+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2026:selective_none",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__cf2356a10b5c",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "60ed709ea6bdea8674986aeecb8b5a97142fa1fc5faf44c1f3711fe4c4132eff",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "3b57f9dd846135be3677f058f7b7c9ffd2e789784e0f9e37487f42f781579b73",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__cf2356a10b5c",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "bf63a227661caf4345d4f6b03ea705ad6c721600aac3372004eb86f1b9b8bf73",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "selective_none",
+      "metrics_sha256": "cf23bec76d75b053babfd94441ede096f1e07fe54f6182520cb22c4f19d40eb5",
+      "scientific_manifest_sha256": "60ed709ea6bdea8674986aeecb8b5a97142fa1fc5faf44c1f3711fe4c4132eff",
+      "seed": 2026,
+      "summary_recomputed": true,
+      "summary_sha256": "47551b65a1d68e5ec868ecb4f564580ba184d8fc38523f91c04f35c983979b76"
+    },
+    {
+      "accepted_payload": {
+        "accepted_at": "2026-07-31T23:44:38.393324+00:00",
+        "attempt_dir": "attempt_001",
+        "cell_key": "experiment44:formal:seed2026:selective_diag",
+        "remote_attempt_dir": "PRIVATE_PATH_REDACTED__fbbfe0c2616b",
+        "schema_version": 1,
+        "scientific_manifest": "attempt_001/scientific_manifest.json",
+        "scientific_manifest_sha256": "44406f7d395d6a78d1117d632d1bce1246abf81e6c582a2710d1988173526122",
+        "wandb_is_separate_from_scientific_acceptance": true
+      },
+      "accepted_pointer": "PRIVATE_PATH_REDACTED",
+      "accepted_pointer_sha256": "bc1aae0444cc6f2532511dd43b4a8d07b9c0accf455c717e171ee77cd40776c6",
+      "attempt_dir": "PRIVATE_PATH_REDACTED__fbbfe0c2616b",
+      "command_environment_checks": {
+        "cproj_k_mode": true,
+        "method": true
+      },
+      "command_sha256": "7ecb63ed677e2058f5291f90b6023be2b7f9e2b5d7879e9e7fc369f1c9e813c9",
+      "identity_checks": {
+        "cell_key": true,
+        "contract_sha256": true,
+        "cproj_k_mode": true,
+        "method": true,
+        "passed": true,
+        "seed": true,
+        "stage": true,
+        "status": true,
+        "timing_ineligible": true,
+        "total_steps": true,
+        "train_tokens": true
+      },
+      "method": "selective_diag",
+      "metrics_sha256": "cffa5e0182a31aea96aebef2a526752871b1f5a1bf2ff17df6324f0c6a4f7021",
+      "scientific_manifest_sha256": "44406f7d395d6a78d1117d632d1bce1246abf81e6c582a2710d1988173526122",
+      "seed": 2026,
+      "summary_recomputed": true,
+      "summary_sha256": "d2b03704e24cc3129e3f8beb173e5ad8fc88535a9b27f69eda508c5f7e36ea3d"
+    }
+  ],
+  "contract_path": "PRIVATE_PATH_REDACTED__0d2b6f12b44b",
+  "contract_sha256": "ebdec2e0196fcdf9b42fae7373f75f7f25d02e42daf4062f75075ce49f47dfef"
+}

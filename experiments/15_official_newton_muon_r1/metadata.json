@@ -1,0 +1,29 @@
+{
+  "code_directory": "scripts/15_official_newton_muon_r1",
+  "default_entrypoint": "script:run_official_newton_muon_r1",
+  "entrypoints": {
+    "script:run_official_newton_muon_r1": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/15_official_newton_muon_r1/run_official_newton_muon_r1.py"
+    }
+  },
+  "experiment_id": "15_official_newton_muon_r1",
+  "legacy_result_roots": [
+    "15_official_newton_muon_r1"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "15 Official Newton Muon R1"
+}

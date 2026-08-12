@@ -1,0 +1,20 @@
+{
+  "delivery_status": "wandb_complete_local_artifacts_pending",
+  "local_artifacts": {
+    "detail": "Remote confirmatory batch manifests, numerical-smoke certificates, and local result files were not supplied.",
+    "passed": false,
+    "provided": false,
+    "status": "pending"
+  },
+  "matched_official_source_passed": true,
+  "matched_seed2026_source_passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-29.2",
+  "wandb_exports": {
+    "checks": 351,
+    "failed_checks": [],
+    "files": 9,
+    "new_runs": 8,
+    "passed": true
+  }
+}

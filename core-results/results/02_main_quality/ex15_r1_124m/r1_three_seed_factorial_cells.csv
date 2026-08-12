@@ -1,0 +1,13 @@
+seed,method,lr_level,final_val_loss
+2024,diag,low_0.9x,3.2624
+2024,diag,high_1.0x,3.2613
+2024,muon,low_0.9x,3.2774
+2024,muon,high_1.0x,3.2788
+2025,diag,low_0.9x,3.2622
+2025,diag,high_1.0x,3.2599
+2025,muon,low_0.9x,3.2769
+2025,muon,high_1.0x,3.2771
+2026,diag,low_0.9x,3.2628
+2026,diag,high_1.0x,3.2621
+2026,muon,low_0.9x,3.2771
+2026,muon,high_1.0x,3.2769

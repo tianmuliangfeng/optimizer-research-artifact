@@ -1,0 +1,208 @@
+{
+  "checks": {
+    "all_integrity_checks_passed": true,
+    "cell_coordinates_and_contract": true,
+    "cell_evidence_hashes": true,
+    "cell_evidence_locality": true,
+    "cell_manifests_readable": true,
+    "common_data_fingerprint": true,
+    "common_derived_source_fingerprint": true,
+    "common_initialization_fingerprint": true,
+    "common_preflight_fingerprint": true,
+    "common_runtime_fingerprint": true,
+    "common_wrapper_source_fingerprint": true,
+    "continuous_gpu_isolation_monitors": true,
+    "contract_identity": true,
+    "contract_structure": true,
+    "exact_k_state_bytes": true,
+    "exact_model_and_optimizer_state_bytes": true,
+    "exclusive_certificates": true,
+    "exclusive_certificates_readable": true,
+    "execution_manifest_and_cell_hash_inventory": true,
+    "execution_manifest_present": true,
+    "execution_manifest_readable": true,
+    "execution_postflight_data_fingerprint": true,
+    "execution_postflight_data_hash": true,
+    "execution_smoke_manifest_hash": true,
+    "finite_timing_and_memory": true,
+    "formal_cell_inventory": true,
+    "formal_rows_complete": true,
+    "frozen_architecture": true,
+    "frozen_measurement_counts_and_no_resume": true,
+    "frozen_method_and_primary_contrast_priority": true,
+    "frozen_trainer_configuration": true,
+    "gpu_identity_stable_before_during_after": true,
+    "gpu_isolation_monitors_readable": true,
+    "initialization_hash_common_and_valid": true,
+    "initialization_hash_format": true,
+    "preflight_contract_runtime": true,
+    "preflight_data_fingerprint": true,
+    "preflight_exclusive_certificate": true,
+    "preflight_exclusive_certificate_readable": true,
+    "preflight_gpu_inventory": true,
+    "preflight_hash_format": true,
+    "preflight_initialization_fingerprint": true,
+    "preflight_official_source": true,
+    "preflight_readable": true,
+    "preflight_source_snapshot_hashes": true,
+    "root_evidence_present": true,
+    "rotation_exact": true,
+    "rotation_observed_exact": true,
+    "run_contract_matches_analysis_contract": true,
+    "source_hash_pins": true,
+    "summary_runtime_fingerprint": true,
+    "trainer_summaries_readable": true,
+    "worker_derived_throughput_matches": true,
+    "worker_manifest_integrity": true,
+    "worker_manifests_readable": true,
+    "worker_metric_sequence_audit": true,
+    "worker_observed_matches_summary": true,
+    "worker_sealed_artifact_hashes": true
+  },
+  "details": {
+    "common_fingerprints": {
+      "common_init_sha256": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec",
+      "contract_sha256": "6658273d80051ef713b8ea0fa8fd40950823c59effb5cce8bae87e9caa65e646",
+      "data_fingerprint": "097478adc4e938305a50d8fa888a9b11508523dc41c403db339f0ba5e9424d0d",
+      "derived_base_sha256": "a21f364b73ea859e1ca62bc75600de348b00a0ce5fcbd315ed7e848eb2b4666a",
+      "execution_manifest_sha256_actual": "fe0d85dbdb87782d9062f2cd88e1baba61637dbbb48459a917c452f8e29f483c",
+      "preflight_sha256": "d596faf10d655f35e79a3b402d689017ab25d52a15c70ce03becb7a8f4587b2a",
+      "preflight_sha256_actual": "d596faf10d655f35e79a3b402d689017ab25d52a15c70ce03becb7a8f4587b2a",
+      "profile_wrapper_sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+      "runtime_fingerprint": "2951a374071707c9de19b1dd8e8406579538e75cc4d12960da0db928fae6cefc",
+      "source_snapshot_files": {
+        "analyze_llama1b_efficiency.py": "d9e13f2744ab06c79f4f9bd724d87e6a61e3948754f168047233dc15fbb70fce",
+        "certify_exclusive_node.py": "17fbaa71aafe4f7647d4770bce902b1c86a4763a13df8a6539bf894a0b62bac9",
+        "efficiency_common.py": "e765dab66014a973b0f07c9ec81f608b80a4b6ff5786c807a54c6badd31eec45",
+        "efficiency_contract.json": "6658273d80051ef713b8ea0fa8fd40950823c59effb5cce8bae87e9caa65e646",
+        "gpu_isolation_monitor.py": "8910f0eab7dbf81f8a970fcf41c0f5a0699cb5609a988b0e244acc29167eec72",
+        "llama1b_efficiency_worker.py": "eb084f95a10093f53a1e2beede9826d9e9ca2e035e2f2441a390fb57cf4169b1",
+        "run_llama1b_efficiency.py": "2a7c843294110ddeab6b20679f6afab2721e74ee76b10373746f4ed0b56f3483",
+        "source_builder.py": "314f58b3a477a4c84bb6e48f0e887032481140a39d346dce74db6ce06acd05d9",
+        "train_llama_swiglu_1b.py": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+        "train_llama_swiglu_efficiency_base.diff": "8e6b9ea74ee09c85457aa05a1bf82232b99371b711587d51c5e474cc05896045",
+        "train_llama_swiglu_efficiency_base.py": "a21f364b73ea859e1ca62bc75600de348b00a0ce5fcbd315ed7e848eb2b4666a"
+      }
+    },
+    "execution_manifest_sha256": "fe0d85dbdb87782d9062f2cd88e1baba61637dbbb48459a917c452f8e29f483c",
+    "execution_manifest_status": "completed",
+    "expected_formal_rows": 16,
+    "expected_orders": [
+      [
+        "muon",
+        "newton_full",
+        "down_none",
+        "down_diag"
+      ],
+      [
+        "newton_full",
+        "down_none",
+        "down_diag",
+        "muon"
+      ],
+      [
+        "down_none",
+        "down_diag",
+        "muon",
+        "newton_full"
+      ],
+      [
+        "down_diag",
+        "muon",
+        "newton_full",
+        "down_none"
+      ]
+    ],
+    "observed_coordinates": [
+      [
+        0,
+        0,
+        "muon"
+      ],
+      [
+        0,
+        1,
+        "newton_full"
+      ],
+      [
+        0,
+        2,
+        "down_none"
+      ],
+      [
+        0,
+        3,
+        "down_diag"
+      ],
+      [
+        1,
+        0,
+        "newton_full"
+      ],
+      [
+        1,
+        1,
+        "down_none"
+      ],
+      [
+        1,
+        2,
+        "down_diag"
+      ],
+      [
+        1,
+        3,
+        "muon"
+      ],
+      [
+        2,
+        0,
+        "down_none"
+      ],
+      [
+        2,
+        1,
+        "down_diag"
+      ],
+      [
+        2,
+        2,
+        "muon"
+      ],
+      [
+        2,
+        3,
+        "newton_full"
+      ],
+      [
+        3,
+        0,
+        "down_diag"
+      ],
+      [
+        3,
+        1,
+        "muon"
+      ],
+      [
+        3,
+        2,
+        "newton_full"
+      ],
+      [
+        3,
+        3,
+        "down_none"
+      ]
+    ],
+    "pass_meaning": "integrity only; not optimizer quality or algorithm superiority",
+    "preflight_status": true,
+    "t_critical_df3_95": 3.182446,
+    "throughput_practical_band_pct": 1.0,
+    "validated_formal_rows": 16
+  },
+  "errors": [],
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-29.1"
+}

@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "analysis_artifacts": true,
+    "analysis_manifest": true,
+    "contract": true,
+    "data": true,
+    "endpoint_count": true,
+    "handoff": true,
+    "lineage": true,
+    "phase_count": true,
+    "pilot": true,
+    "preflight": true,
+    "retained_checkpoint_count": true,
+    "same_seed_initialization": true,
+    "source_snapshot": true,
+    "suite": true,
+    "unit_count": true
+  },
+  "full_checkpoint_hash": true,
+  "passed": true
+}

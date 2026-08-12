@@ -1,0 +1,9 @@
+workstream,experiments,evidence_class,status,claim_use,boundary
+GPT quality across scale,"15,43,44",formal paired training,passed,primary,stratify by scale; never pool seeds
+124M external neighbors,45,formal paired training,passed_with_caveats,primary at 124M,quality only; Mousse tested at 124M
+Unified mechanism synthesis,38,read-only synthesis plus short-horizon interventions,passed,mechanistic/supporting,does not replace full training
+R1 efficiency and sensitivity,39,isolated H100 repeats,numerical_valid_report_regenerated,efficiency/supporting,source report semantics were stale; use audited JSON and this report
+LLaMA block invariance,40,read-only update diagnostic,ready_to_cite_with_scope_caveats,architecture boundary,not optimizer-quality evidence
+R1 K-state factorial and diag bridge,"41,41D",paired training plus accepted analysis-only bridge,accepted_with_errata,allocation/mechanism,diag bridge fixes c_fc K to full
+LLaMA-1B isolated efficiency,42,single-host technical repeats,ready_to_cite_with_scope_caveats,efficiency,not optimizer-quality evidence; do not compare raw rate to ex39
+Refresh/stability deepening,future,paired tensor snapshot analysis,deferred_by_design,none in current bundle,requires separately preregistered snapshots

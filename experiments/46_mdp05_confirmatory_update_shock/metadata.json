@@ -1,0 +1,64 @@
+{
+  "code_directory": "scripts/46_mdp05_confirmatory_update_shock",
+  "default_entrypoint": "command:reproduce_full",
+  "entrypoints": {
+    "command:20260804_ex46_mdp05_confirmatory_update_shock": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "MDP05_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "resume"
+          ],
+          "env": {
+            "MDP05_RUN_DIR": "{run_dir}"
+          },
+          "required_env": [
+            "MDP05_PILOT_CERTIFICATE"
+          ],
+          "required_env_files": [
+            "MDP05_PILOT_CERTIFICATE"
+          ]
+        }
+      },
+      "path": "commands/46_mdp05_confirmatory_update_shock/20260804_ex46_mdp05_confirmatory_update_shock.sh"
+    },
+    "command:reproduce_full": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/46_mdp05_confirmatory_update_shock/reproduce_full.sh"
+    },
+    "script:run_mdp05": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/46_mdp05_confirmatory_update_shock/run_mdp05.py"
+    }
+  },
+  "experiment_id": "46_mdp05_confirmatory_update_shock",
+  "legacy_result_roots": [
+    "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": true,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "46 Mdp05 Confirmatory Update Shock"
+}

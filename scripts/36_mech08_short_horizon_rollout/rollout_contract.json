@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-27.1",
+  "experiment": "MECH-08",
+  "family": "llama1b",
+  "title": "Matched-start short-horizon causal optimizer rollout",
+  "scientific_question": "Do the one-step MECH-07 family predictions forecast held-out loss improvement after 128 real optimizer steps from matched LLaMA-1B checkpoints?",
+  "architecture": {
+    "vocab_size": 50257,
+    "n_layer": 18,
+    "n_embd": 2048,
+    "target_input_width": 5504,
+    "sequence_length": 1024
+  },
+  "source_constraints": {
+    "base_source_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "profile_script_sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+    "triton_sha256": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f"
+  },
+  "prediction_reference": {
+    "path_basename": "mech07_prediction_reference.csv",
+    "sha256": "f8367f029bb534857001d07f5818e231889d7f4ef626734fb2027e9f2fa4df0b",
+    "mech07_contract_sha256": "4883e1a546ae2733437004865b6ed698fdbd7b7e86d9d8e09930309295000bdc",
+    "primary_prediction_column": "predicted_median_relative_loss_delta_at_multiplier_1",
+    "primary_prediction_step_multiplier": 1.0,
+    "best_line_search_columns_are_secondary_only": true,
+    "source_line_search_sha256": {
+      "early_muon": "8660bc47af8246cfad9510c19d83e22efe65d22a50ead2b3d9434dc31eaf0a38",
+      "early_newton_full": "e148b864ab38a78e8a17381c202ace6dc144cbff2c2eec998ef2086e65354efd",
+      "late_muon": "193769bb4d715978655cf8ed1d02e42c8e247e8092fb8531c634f6295a47845c",
+      "late_newton_full": "1090e997ae3b6b8bd7ad355c102b4b20b950da316c8562496baea98d22c53849"
+    },
+    "source_shadow_losses_sha256": {
+      "early_muon": "40937fed87df073f64eed206712994a292f5be15ff8ded5afd4757fd13cd58a1",
+      "early_newton_full": "4e588be0189f1eebb248c100a45e894f3f1be3e62f2cd674174669f2bb7511af",
+      "late_muon": "550705d5a225fcd276f70b3bd3a62f06650876c571268f952f26e97c603ce573",
+      "late_newton_full": "07690e737909606f4f028069c95ffe3fbe060ae39c7a8d5181b71000368cfb76"
+    }
+  },
+  "algorithms": {
+    "muon": {
+      "source_method": "muon",
+      "family": "muon"
+    },
+    "original_newton_muon": {
+      "source_method": "newton_full",
+      "family": "newton_muon"
+    },
+    "selective_diag": {
+      "source_method": "down_diag",
+      "family": "selective_newton_muon"
+    },
+    "selective_none": {
+      "source_method": "down_none",
+      "family": "selective_newton_muon"
+    }
+  },
+  "checkpoints": [
+    {
+      "cell": "early_muon",
+      "stage": "early",
+      "method": "muon",
+      "step": 1000,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/medium/20260722T034513+0000_formal_seed2026/04_muon/checkpoint_latest.pt",
+      "expected_sha256": "7561ee5571db825190fa3cc34af8bd9d72f213a69c925322cea6328b688a58d1",
+      "expected_bytes": 8522343395
+    },
+    {
+      "cell": "early_newton_full",
+      "stage": "early",
+      "method": "newton_full",
+      "step": 1000,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/medium/20260722T034513+0000_formal_seed2026/03_newton_full/checkpoint_latest.pt",
+      "expected_sha256": "8d532806cc4a0613b3ad6c5e74096a70be352af941b9c72e6c37997cf1beecd7",
+      "expected_bytes": 17783856619
+    },
+    {
+      "cell": "late_muon",
+      "stage": "late",
+      "method": "muon",
+      "step": 6200,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/formal/gpu1_full_muon/20260723T025322+0000_formal_seed2026/02_muon/checkpoint_latest.pt",
+      "expected_sha256": "7d48b9846aefe8e03e04305da0bd10e8fc3b889643328e585e70a484e1ad78ec",
+      "expected_bytes": 8522343395
+    },
+    {
+      "cell": "late_newton_full",
+      "stage": "late",
+      "method": "newton_full",
+      "step": 6200,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/formal/gpu1_full_muon/20260723T025322+0000_formal_seed2026/01_newton_full/checkpoint_latest.pt",
+      "expected_sha256": "83c9bc4316996deb67ae92b9e2c1c60521f9ed5c56f9690d3e09de399915e7d5",
+      "expected_bytes": 17783856619
+    }
+  ],
+  "restart_intervention": {
+    "model_parameters": "all named parameters and common RoPE buffers are copied exactly from the origin checkpoint; algorithm-specific activation-statistic buffers are reset",
+    "backup_adamw_state": "loaded exactly from the origin checkpoint",
+    "matrix_momentum": "copied exactly by matrix-parameter order from the origin checkpoint into every applied algorithm",
+    "origin_preconditioner_state": "never transferred",
+    "candidate_preconditioner_state": "freshly initialized and built from a fixed validation build split before step 1",
+    "learning_rate_schedule": "constant nominal production peak learning rates for the full rollout",
+    "backup_lr": 0.0036,
+    "matrix_lr": 0.01,
+    "matrix_momentum": 0.95,
+    "ns_steps": 5,
+    "newton_input_beta": 0.95,
+    "newton_input_ridge": 0.2,
+    "newton_refresh_steps": 32,
+    "newton_init_scale": 0.001,
+    "weight_decay": 0.0
+  },
+  "smoke": {
+    "origins": [
+      "early_muon"
+    ],
+    "algorithms": [
+      "muon",
+      "original_newton_muon",
+      "selective_diag",
+      "selective_none"
+    ],
+    "data_replicas": [
+      0
+    ],
+    "replica_optimizer_step_offsets": [
+      0
+    ],
+    "rollout_steps": 2,
+    "evaluation_steps": [
+      0,
+      1,
+      2
+    ],
+    "global_batch_size": 8,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "eval_device_batch_size": 1,
+    "eval_sequence_length": 128,
+    "eval_batches": 1,
+    "eval_token_offsets": [
+      1048576
+    ],
+    "build_device_batch_size": 1,
+    "build_sequence_length": 128,
+    "build_batches": 1,
+    "build_token_offsets": [
+      0
+    ]
+  },
+  "formal": {
+    "origins": [
+      "early_muon",
+      "early_newton_full",
+      "late_muon",
+      "late_newton_full"
+    ],
+    "algorithms": [
+      "muon",
+      "original_newton_muon",
+      "selective_diag",
+      "selective_none"
+    ],
+    "data_replicas": [
+      0,
+      1,
+      2
+    ],
+    "replica_optimizer_step_offsets": [
+      0,
+      256,
+      512
+    ],
+    "rollout_steps": 128,
+    "evaluation_steps": [
+      0,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      112,
+      128
+    ],
+    "global_batch_size": 512,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "eval_device_batch_size": 8,
+    "eval_sequence_length": 1024,
+    "eval_batches": 16,
+    "eval_token_offsets": [
+      1048576,
+      3048576,
+      5048576
+    ],
+    "build_device_batch_size": 1,
+    "build_sequence_length": 128,
+    "build_batches": 4,
+    "build_token_offsets": [
+      0,
+      2000000,
+      4000000
+    ]
+  },
+  "comparison_contract": {
+    "primary": [
+      {
+        "name": "selective_diag_vs_muon",
+        "left": "selective_diag",
+        "right": "muon"
+      },
+      {
+        "name": "selective_none_vs_muon",
+        "left": "selective_none",
+        "right": "muon"
+      },
+      {
+        "name": "selective_diag_vs_original_newton_muon",
+        "left": "selective_diag",
+        "right": "original_newton_muon"
+      },
+      {
+        "name": "selective_none_vs_original_newton_muon",
+        "left": "selective_none",
+        "right": "original_newton_muon"
+      }
+    ],
+    "baseline": [
+      {
+        "name": "original_newton_muon_vs_muon",
+        "left": "original_newton_muon",
+        "right": "muon"
+      }
+    ],
+    "excluded_from_primary": [
+      "selective_diag_vs_selective_none"
+    ],
+    "paired_unit": "checkpoint origin x data-order replica",
+    "negative_delta_means": "left algorithm has lower held-out loss and is better"
+  },
+  "analysis_contract": {
+    "primary_endpoints": [
+      "normalized held-out loss AUC over optimizer steps 0..128",
+      "normalized held-out loss delta at optimizer step 128"
+    ],
+    "secondary_endpoints": [
+      "paired held-out loss delta at steps 16, 32, 64, and 128",
+      "MECH-07 multiplier-1 prediction versus realized effect Pearson correlation",
+      "MECH-07 multiplier-1 prediction versus realized effect Spearman correlation",
+      "MECH-07 multiplier-1 prediction versus realized effect sign concordance"
+    ],
+    "integrity_pass_is_not_hypothesis_success": true,
+    "minimum_complete_formal_jobs": 48
+  },
+  "scope_boundary": {
+    "authorized": [
+      "real optimizer updates for the frozen short rollout",
+      "held-out evaluation on frozen validation windows",
+      "paired causal comparison from matched checkpoint parameters and historical optimizer momentum"
+    ],
+    "not_authorized": [
+      "claiming the 128-step ranking is the final 6200-step ranking",
+      "treating diag-versus-none as a primary scientific comparison",
+      "using worker wall-clock measurements as a paper throughput benchmark",
+      "using worker CUDA peak allocation as the final paper peak-memory benchmark",
+      "hyperparameter tuning on MECH-08 held-out outcomes"
+    ],
+    "efficiency_benchmark_excluded": true,
+    "formal_throughput_requires_separate_controlled_benchmark": true,
+    "existing_timing_fields_are_descriptive_only": true
+  }
+}

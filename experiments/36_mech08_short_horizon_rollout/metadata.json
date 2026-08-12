@@ -1,0 +1,35 @@
+{
+  "code_directory": "scripts/36_mech08_short_horizon_rollout",
+  "default_entrypoint": "command:20260727_mech08_short_horizon_rollout",
+  "entrypoints": {
+    "command:20260727_mech08_short_horizon_rollout": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/36_mech08_short_horizon_rollout/20260727_mech08_short_horizon_rollout.sh"
+    },
+    "script:run_mech08": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/36_mech08_short_horizon_rollout/run_mech08.py"
+    }
+  },
+  "experiment_id": "36_mech08_short_horizon_rollout",
+  "legacy_result_roots": [
+    "36_mech08_short_horizon_rollout"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "36 Mech08 Short Horizon Rollout"
+}

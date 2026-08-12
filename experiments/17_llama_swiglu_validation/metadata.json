@@ -1,0 +1,37 @@
+{
+  "code_directory": "scripts/17_llama_swiglu_validation",
+  "default_entrypoint": "script:run_llama_swiglu_validation",
+  "entrypoints": {
+    "script:run_llama_swiglu_validation": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/17_llama_swiglu_validation/run_llama_swiglu_validation.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--official-repo",
+            "--python-exe"
+          ]
+        }
+      ]
+    }
+  },
+  "experiment_id": "17_llama_swiglu_validation",
+  "legacy_result_roots": [
+    "17_llama_swiglu_validation"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "17 Llama Swiglu Validation"
+}

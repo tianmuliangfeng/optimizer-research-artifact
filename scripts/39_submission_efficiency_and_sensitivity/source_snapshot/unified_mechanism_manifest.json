@@ -1,0 +1,63 @@
+{
+  "analysis_kind": "cpu_only_read_only_unified_mechanism_synthesis",
+  "architecture_transfer_boundary_rows": 1,
+  "artifacts": [
+    "source_audit.csv",
+    "source_audit.json",
+    "primary_training_contrasts.csv",
+    "rollout_cluster_bootstrap.csv",
+    "prediction_rollout_alignment.csv",
+    "alpha_synthesis.csv",
+    "foundational_module_structure.csv",
+    "complementary_bridge_summary.csv",
+    "architecture_transfer_boundary.csv",
+    "mechanism_chain.csv",
+    "claim_evidence_matrix.csv",
+    "UNIFIED_MECHANISM_SYNTHESIS_REPORT.md",
+    "artifact.json",
+    "report_source_notes.json"
+  ],
+  "baseline_contrast": "original_newton_muon_vs_muon",
+  "bootstrap": {
+    "inner_unit": "data_replica",
+    "outer_unit": "checkpoint_cell",
+    "samples": 5000,
+    "seed": 20260729
+  },
+  "claims": 9,
+  "complementary_bridge_rows": 2,
+  "contract_sha256": "455e51433dd47017e161a6dd2acf9a07b84c6ebebc72f8d7e86e0825a4097772",
+  "diag_vs_none_primary": false,
+  "formal_training_contrast_rows": 15,
+  "foundational_structure_rows": 10,
+  "input_registry_sha256": "fb5b109b6e7d9a88f83d8010cea6a38be13123dbfa2543cddcde7e06f1a94f1a",
+  "output_sha256": {
+    "UNIFIED_MECHANISM_SYNTHESIS_REPORT.md": "f037f1d0d8c028d9160f8e73de7c8ee2f47b432394dfaaddfad7754956fb90f0",
+    "alpha_synthesis.csv": "06662406cfd307d44085a667bb5ac50e00e5785c03fa52c3bd49b79a8571afe4",
+    "architecture_transfer_boundary.csv": "ab2e0c51d63585d04b808d360fd18916d23c9e605fbe8a0de804783d23fc8ac3",
+    "artifact.json": "217534ad596f2ff36386609675274de3767866318a9602d25093a3542af0666c",
+    "claim_evidence_matrix.csv": "38ee2dadd55b69a73cbcd4e76a54e05a078b22796a0bf5ae2917af6f93190316",
+    "complementary_bridge_summary.csv": "5f4f4ee23edaaa9e795777469e284a5b23ea862cddc07ba89b9a814aeca2b0b2",
+    "foundational_module_structure.csv": "28bbad20200156592b3ce44c54838bc668b830ca3c16c66c3631a802c7468b49",
+    "mechanism_chain.csv": "a1fe373c605401695a1330d7605098927146b8de2f1f1db38c606e62aa2f1130",
+    "prediction_rollout_alignment.csv": "818226a80b889991b0f9c54ee712de5a97b670c82771b9fbf1ffe3f250055f48",
+    "primary_training_contrasts.csv": "51ce415ea5010c82b951731f5a67d00efcb2db6bf107fa242bbc2a0907e62cff",
+    "report_source_notes.json": "66ff3349d825feef874c7ab000fd7d41aff0df86a586b42dca5ce96f07137cd5",
+    "rollout_cluster_bootstrap.csv": "932b552d4f83d3d24d738a12feb16de6a405266dca63168b9f5edb73ee853099",
+    "source_audit.csv": "3d0eda4bc0dd33ce1f8308d3cbfcd584f481e5d8196fa7d7dd8f7bd3bfe38a4a",
+    "source_audit.json": "9cb3ca7d1959087ba5f81f8b639998b85774ae18586f44285c2a071b918df664"
+  },
+  "passed": true,
+  "primary_contrasts": [
+    "selective_diag_vs_muon",
+    "selective_none_vs_muon",
+    "selective_diag_vs_original_newton_muon",
+    "selective_none_vs_original_newton_muon"
+  ],
+  "rollout_bootstrap_rows": 150,
+  "schema_version": 1,
+  "script_version": "2026-07-29.8",
+  "source_bundles": 13,
+  "source_files": 38,
+  "timing_usable_for_paper": false
+}

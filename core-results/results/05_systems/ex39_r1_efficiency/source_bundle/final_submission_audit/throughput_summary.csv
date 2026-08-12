@@ -1,0 +1,5 @@
+method_role,median_step_ms,steps_per_s,median_tokens_per_s,runs,classification
+muon,1176.685,0.8498451157276586,445562.6493865194,4,paper_ready
+original_newton_muon,1200.62,0.8329030001166065,436681.71588040993,4,paper_ready
+selective_none,1197.47,0.8350939898285552,437829.8577159359,4,paper_ready
+selective_diag,1198.46,0.8344041519950604,437467.7418303422,4,paper_ready

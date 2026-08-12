@@ -1,0 +1,42 @@
+{
+  "formal_r1_analysis": "PRIVATE_PATH_REDACTED",
+  "input_files": [
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED",
+    "PRIVATE_PATH_REDACTED"
+  ],
+  "memory_usable": true,
+  "methods": [
+    "diag",
+    "muon"
+  ],
+  "metrics": [
+    "lr/adamw",
+    "lr/matrix",
+    "memory/k_state_mib",
+    "memory/optimizer_state_mib",
+    "memory/peak_allocated_mib",
+    "performance/step_avg_ms",
+    "time/train_s",
+    "train/loss_step",
+    "val/loss"
+  ],
+  "quality_fail": 0,
+  "quality_pass": 144,
+  "quality_usable": true,
+  "quality_warn": 2,
+  "scope": "six crossed runs across seeds 2024/2025/2026 plus complete seed2026 2x2 using formal R1 anchor",
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "status": "PASS_WITH_CAVEATS",
+  "timing_usable": false
+}

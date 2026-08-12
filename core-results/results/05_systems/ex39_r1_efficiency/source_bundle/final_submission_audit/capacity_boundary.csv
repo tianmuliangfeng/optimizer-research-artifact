@@ -1,0 +1,5 @@
+method_role,source_method,method_order,max_success_device_batch,first_oom_device_batch,max_success_global_batch,first_oom_global_batch,resolved_width,gain_vs_original_device_batch,gain_vs_original_pct,evidence_class
+muon,muon,1,39,40,312,320,1,5,14.705882352941169,paper_ready
+original_newton_muon,newton_full,2,34,35,272,280,1,0,0.0,paper_ready
+selective_none,down_none,3,37,38,296,304,1,3,8.823529411764696,paper_ready
+selective_diag,down_diag,4,37,38,296,304,1,3,8.823529411764696,paper_ready

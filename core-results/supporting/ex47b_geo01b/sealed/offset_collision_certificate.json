@@ -1,0 +1,212 @@
+{
+  "checks": {
+    "discovery_replicas_new": true,
+    "discovery_units": true,
+    "smoke_replica_new": true,
+    "training_disjoint": true,
+    "validation_disjoint": true
+  },
+  "passed": true,
+  "schema_version": "geo01b_offset_collision_certificate_v1",
+  "training_collisions": [],
+  "training_intervals": [
+    {
+      "end": 128,
+      "label": "accepted_mech09r_training_0",
+      "start": 0
+    },
+    {
+      "end": 384,
+      "label": "accepted_mech09r_training_1",
+      "start": 256
+    },
+    {
+      "end": 640,
+      "label": "accepted_mech09r_training_2",
+      "start": 512
+    },
+    {
+      "end": 848,
+      "label": "accepted_mdp05_training_0",
+      "start": 768
+    },
+    {
+      "end": 1104,
+      "label": "accepted_mdp05_training_1",
+      "start": 1024
+    },
+    {
+      "end": 1360,
+      "label": "accepted_mdp05_training_2",
+      "start": 1280
+    },
+    {
+      "end": 1540,
+      "label": "accepted_mdp05_smoke",
+      "start": 1536
+    },
+    {
+      "end": 1920,
+      "label": "accepted_geo01a_pilot",
+      "start": 1792
+    },
+    {
+      "end": 2052,
+      "label": "accepted_geo01a_smoke",
+      "start": 2048
+    },
+    {
+      "end": 2432,
+      "label": "geo01b_discovery_replica_9",
+      "start": 2304
+    },
+    {
+      "end": 2688,
+      "label": "geo01b_discovery_replica_10",
+      "start": 2560
+    },
+    {
+      "end": 2944,
+      "label": "geo01b_discovery_replica_11",
+      "start": 2816
+    },
+    {
+      "end": 3076,
+      "label": "geo01b_smoke",
+      "start": 3072
+    }
+  ],
+  "validation_collisions": [],
+  "validation_intervals": [
+    {
+      "end": 512,
+      "label": "accepted_source_build_0",
+      "start": 0
+    },
+    {
+      "end": 2000512,
+      "label": "accepted_source_build_1",
+      "start": 2000000
+    },
+    {
+      "end": 4000512,
+      "label": "accepted_source_build_2",
+      "start": 4000000
+    },
+    {
+      "end": 6000512,
+      "label": "accepted_source_build_3",
+      "start": 6000000
+    },
+    {
+      "end": 8000512,
+      "label": "accepted_source_build_4",
+      "start": 8000000
+    },
+    {
+      "end": 10000512,
+      "label": "accepted_source_build_5",
+      "start": 10000000
+    },
+    {
+      "end": 12000512,
+      "label": "accepted_source_build_6",
+      "start": 12000000
+    },
+    {
+      "end": 1179648,
+      "label": "accepted_source_eval_0",
+      "start": 1048576
+    },
+    {
+      "end": 3179648,
+      "label": "accepted_source_eval_1",
+      "start": 3048576
+    },
+    {
+      "end": 5179648,
+      "label": "accepted_source_eval_2",
+      "start": 5048576
+    },
+    {
+      "end": 7179648,
+      "label": "accepted_source_eval_3",
+      "start": 7048576
+    },
+    {
+      "end": 9179648,
+      "label": "accepted_source_eval_4",
+      "start": 9048576
+    },
+    {
+      "end": 11179648,
+      "label": "accepted_source_eval_5",
+      "start": 11048576
+    },
+    {
+      "end": 13179648,
+      "label": "accepted_source_eval_6",
+      "start": 13048576
+    },
+    {
+      "end": 14000512,
+      "label": "accepted_geo01a_build",
+      "start": 14000000
+    },
+    {
+      "end": 15179648,
+      "label": "accepted_geo01a_eval",
+      "start": 15048576
+    },
+    {
+      "end": 16000128,
+      "label": "accepted_geo01a_smoke_build",
+      "start": 16000000
+    },
+    {
+      "end": 17048704,
+      "label": "accepted_geo01a_smoke_eval",
+      "start": 17048576
+    },
+    {
+      "end": 18000512,
+      "label": "geo01b_build_replica_9",
+      "start": 18000000
+    },
+    {
+      "end": 20000512,
+      "label": "geo01b_build_replica_10",
+      "start": 20000000
+    },
+    {
+      "end": 22000512,
+      "label": "geo01b_build_replica_11",
+      "start": 22000000
+    },
+    {
+      "end": 19179648,
+      "label": "geo01b_eval_replica_9",
+      "start": 19048576
+    },
+    {
+      "end": 21179648,
+      "label": "geo01b_eval_replica_10",
+      "start": 21048576
+    },
+    {
+      "end": 23179648,
+      "label": "geo01b_eval_replica_11",
+      "start": 23048576
+    },
+    {
+      "end": 24000128,
+      "label": "geo01b_smoke_build",
+      "start": 24000000
+    },
+    {
+      "end": 25048704,
+      "label": "geo01b_smoke_eval",
+      "start": 25048576
+    }
+  ]
+}

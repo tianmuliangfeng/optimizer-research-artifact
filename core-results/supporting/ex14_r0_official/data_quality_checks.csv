@@ -1,0 +1,36 @@
+check,status,details
+val/loss: row count,PASS,"observed=63, expected=63"
+val/loss: exact step grid,PASS,"first=[0, 100, 200], last=[6000, 6100, 6200]"
+newton_muon_block4 val/loss: W&B MIN/MAX mirrors,PASS,finite_points=63
+newton_muon_block4 val/loss: finite values,PASS,nonfinite_steps=[]
+muon val/loss: W&B MIN/MAX mirrors,PASS,finite_points=63
+muon val/loss: finite values,PASS,nonfinite_steps=[]
+official/step_avg_ms: row count,PASS,"observed=311, expected=311"
+official/step_avg_ms: exact step grid,PASS,"first=[0, 20, 40], last=[6160, 6180, 6200]"
+newton_muon_block4 official/step_avg_ms: W&B MIN/MAX mirrors,PASS,finite_points=309
+newton_muon_block4 official/step_avg_ms: finite values,WARN,steps 0 and 20 are expected NaN sentinels before the official step-32 timing reset
+muon official/step_avg_ms: W&B MIN/MAX mirrors,PASS,finite_points=309
+muon official/step_avg_ms: finite values,WARN,steps 0 and 20 are expected NaN sentinels before the official step-32 timing reset
+official/train_time_s: row count,PASS,"observed=311, expected=311"
+official/train_time_s: exact step grid,PASS,"first=[0, 20, 40], last=[6160, 6180, 6200]"
+newton_muon_block4 official/train_time_s: W&B MIN/MAX mirrors,PASS,finite_points=311
+newton_muon_block4 official/train_time_s: finite values,PASS,nonfinite_steps=[]
+muon official/train_time_s: W&B MIN/MAX mirrors,PASS,finite_points=311
+muon official/train_time_s: finite values,PASS,nonfinite_steps=[]
+lr/adamw: row count,PASS,"observed=311, expected=311"
+lr/adamw: exact step grid,PASS,"first=[0, 20, 40], last=[6160, 6180, 6200]"
+newton_muon_block4 lr/adamw: W&B MIN/MAX mirrors,PASS,finite_points=311
+newton_muon_block4 lr/adamw: finite values,PASS,nonfinite_steps=[]
+muon lr/adamw: W&B MIN/MAX mirrors,PASS,finite_points=311
+muon lr/adamw: finite values,PASS,nonfinite_steps=[]
+lr/matrix: row count,PASS,"observed=311, expected=311"
+lr/matrix: exact step grid,PASS,"first=[0, 20, 40], last=[6160, 6180, 6200]"
+newton_muon_block4 lr/matrix: W&B MIN/MAX mirrors,PASS,finite_points=311
+newton_muon_block4 lr/matrix: finite values,PASS,nonfinite_steps=[]
+muon lr/matrix: W&B MIN/MAX mirrors,PASS,finite_points=311
+muon lr/matrix: finite values,PASS,nonfinite_steps=[]
+expected metric files present,PASS,"missing=[], extra=[]"
+unique method-metric-step keys,PASS,duplicates=0
+AdamW/matrix LR ratio is exactly 10x,PASS,checked all positive-LR history points
+official train time is monotone after step-32 reset,PASS,checked exported points from step 40 through 6200
+two methods use the same normalized LR schedule shape,PASS,absolute LR differs by the official 10/9 scale factor

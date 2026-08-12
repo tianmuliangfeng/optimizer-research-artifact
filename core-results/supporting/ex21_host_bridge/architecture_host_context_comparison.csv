@@ -1,0 +1,4 @@
+context,architecture,host_runtime,diag_final,none_final,diag_minus_none_final,diag_minus_none_tail5,diag_minus_none_auc
+GPT R1 original host,GPT-2,original R1 host/runtime,3.2621,3.2671,-0.005,-0.0052,-0.008674194
+GPT R1 LLaMA-host bridge,GPT-2,LLaMA host/runtime,3.262,3.2669,-0.0049,-0.00494,-0.008628
+LLaMA/SwiGLU same host,LLaMA/SwiGLU,LLaMA host/runtime,3.266387224,3.265029907,0.001357317,0.00131402,0.001758608

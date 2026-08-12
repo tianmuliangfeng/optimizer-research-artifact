@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-29.2",
+  "frozen_at_utc": "2026-07-29T05:00:00Z",
+  "title": "LLaMA-1B SwiGLU down-projection block-partition invariance audit",
+  "revision": {
+    "supersedes_contract_version": "2026-07-29.1",
+    "superseded_contract_sha256": "d7f7ce4a8e369cb0f2d7e5935995429381422a0a2aecd07be97618dea4e84c4f",
+    "trigger_run": "20260729T043913+0000",
+    "reason": "Production BF16/Triton Newton-Schulz introduces 0.016-0.019 mapped-back update drift in mathematically equivariant none, diag, and dense controls; inverse residuals and projection equivalence remained below 4e-10 and 3e-16.",
+    "scope": "Integrity repair only: add pre-Newton-Schulz equivariance gates and separate the production numerical envelope. Scientific classification thresholds and global block4 observations are unchanged.",
+    "rerun_required": true
+  },
+  "family": "llama1b",
+  "source_method": "down_none",
+  "target": "layers.{layer}.mlp.down_proj",
+  "scientific_scope": {
+    "question": "Does a contiguous four-block approximation define a coordinate-invariant LLaMA SwiGLU optimizer?",
+    "block4_role": "diagnostic arbitrary partition approximation; never a primary baseline or original Newton-Muon label",
+    "official_original_newton_muon_control": "newton_full",
+    "primary_comparison_priority": [
+      "down_none versus muon and newton_full",
+      "down_diag versus muon and newton_full"
+    ],
+    "new_training": false,
+    "checkpoint_mutation": false,
+    "hvp_authorized": false
+  },
+  "checkpoints": {
+    "early": {
+      "step": 1000,
+      "sha256": "5a55e42ce98f4ae767b55b5f5baaa370a1512285ec8c8022bb8cd32433ff0aeb"
+    },
+    "late": {
+      "step": 6200,
+      "sha256": "069bc086a79bd71c3723cabeb9f346730b931610c703b3725a7031ad4d1fa8f0"
+    }
+  },
+  "architecture": {
+    "n_layer": 18,
+    "n_embd": 2048,
+    "intermediate_size": 5504,
+    "block_count": 4,
+    "block_size": 1376,
+    "silu_gate_product": true,
+    "four_semantic_subspaces": false
+  },
+  "source_constraints": {
+    "base_source_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "triton_sha256": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f"
+  },
+  "common": {
+    "device_batch_size": 1,
+    "sequence_length": 128,
+    "ridge_mult": 0.2,
+    "ridge_eps": 1e-08,
+    "momentum": 0.95,
+    "ns_steps": 5,
+    "within_block_seed": 4040,
+    "dense_control_permutation_count": 1,
+    "permutation_convention": "new_coordinate_j_equals_old_coordinate_perm_j"
+  },
+  "smoke": {
+    "layers": [0, 17],
+    "repeats": 1,
+    "batches_per_split": 1,
+    "max_activation_rows": 64,
+    "global_permutation_seeds": [4001],
+    "step_multipliers": [0.0, 1.0]
+  },
+  "formal": {
+    "layers": [0, 8, 17],
+    "repeats": 1,
+    "batches_per_split": 2,
+    "max_activation_rows": 256,
+    "global_permutation_seeds": [4001, 4002, 4003, 4004],
+    "step_multipliers": [0.0, 0.25, 0.5, 1.0]
+  },
+  "integrity_thresholds": {
+    "projection_equivalence_relative": 1e-06,
+    "preconditioner_equivariance_relative": 1e-06,
+    "production_ns_equivariance_relative": 0.04,
+    "inverse_residual_relative": 0.002
+  },
+  "classification_thresholds": {
+    "strong_median_block4_update_drift": 0.05,
+    "detectable_median_block4_update_drift": 0.01,
+    "strong_control_multiple": 10.0,
+    "detectable_control_multiple": 5.0,
+    "negligible_median_block4_update_drift": 0.005,
+    "minimum_global_rows_per_checkpoint": 24,
+    "stage_consensus_required_for_non_invariance": true
+  },
+  "reporting_policy": {
+    "integrity_pass_is_not_scientific_support": true,
+    "global_permutation_effect_is_not_a_worker_pass_condition": true,
+    "smoke_calibrated_integrity_revision_is_disclosed": true,
+    "diag_none_pairwise_ranking_is_secondary": true,
+    "allowed_classifications": [
+      "strong_non_invariance",
+      "detectable_non_invariance",
+      "approximately_invariant_at_tested_resolution",
+      "inconclusive",
+      "invalid"
+    ]
+  }
+}

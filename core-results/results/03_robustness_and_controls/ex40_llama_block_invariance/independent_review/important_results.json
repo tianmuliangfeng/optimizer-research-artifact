@@ -1,0 +1,132 @@
+{
+  "archive_sha256": "9382d9b8602bf45fee155cfe067ac95e8ae64e3a5b22ded9dd4deb0d4f652f73",
+  "checkpoint_summaries": [
+    {
+      "checkpoint_label": "early",
+      "checkpoint_step": 1000,
+      "global_block4_update_drift_maximum": 0.5522371548439557,
+      "global_block4_update_drift_mean": 0.3598482021890608,
+      "global_block4_update_drift_median": 0.3105255208424539,
+      "global_block4_update_drift_minimum": 0.21869613584368292,
+      "global_block4_update_drift_n": 24,
+      "global_block4_update_drift_p95": 0.5520233821714875
+    },
+    {
+      "checkpoint_label": "late",
+      "checkpoint_step": 6200,
+      "global_block4_update_drift_maximum": 0.5841121276728609,
+      "global_block4_update_drift_mean": 0.3903871532329027,
+      "global_block4_update_drift_median": 0.39217420020354976,
+      "global_block4_update_drift_minimum": 0.19505939284108892,
+      "global_block4_update_drift_n": 24,
+      "global_block4_update_drift_p95": 0.5823940106255951
+    }
+  ],
+  "classification": "strong_non_invariance",
+  "data_quality_status": "ready_to_cite_with_scope_caveats",
+  "effect_to_control_multiple": 21.63766740870219,
+  "equivariant_control_observations": 144,
+  "equivariant_control_update_drift": {
+    "maximum": 0.015931609890260972,
+    "mean": 0.011154900593079584,
+    "median": 0.012696329048220364,
+    "minimum": 0.004848442931457565,
+    "n": 144,
+    "p95": 0.01545615379775318
+  },
+  "global_block4_observations": 48,
+  "layer_summaries": [
+    {
+      "checkpoint_label": "early",
+      "checkpoint_step": 1000,
+      "layer": 0,
+      "n": 8,
+      "preconditioner_drift_median": 0.58933163168352,
+      "update_cosine_median": 0.8491842760326864,
+      "update_drift_maximum": 0.5522371548439557,
+      "update_drift_median": 0.5491137141103967,
+      "update_drift_minimum": 0.5467474079430115
+    },
+    {
+      "checkpoint_label": "early",
+      "checkpoint_step": 1000,
+      "layer": 8,
+      "n": 8,
+      "preconditioner_drift_median": 0.5911957525507331,
+      "update_cosine_median": 0.9518029105426591,
+      "update_drift_maximum": 0.3124912816203363,
+      "update_drift_median": 0.3105255208424539,
+      "update_drift_minimum": 0.3088311590011162
+    },
+    {
+      "checkpoint_label": "early",
+      "checkpoint_step": 1000,
+      "layer": 17,
+      "n": 8,
+      "preconditioner_drift_median": 0.5138823088091251,
+      "update_cosine_median": 0.9759127842986748,
+      "update_drift_maximum": 0.22031408578842088,
+      "update_drift_median": 0.21947910576487684,
+      "update_drift_minimum": 0.21869613584368292
+    },
+    {
+      "checkpoint_label": "late",
+      "checkpoint_step": 6200,
+      "layer": 0,
+      "n": 8,
+      "preconditioner_drift_median": 0.554738070904115,
+      "update_cosine_median": 0.8341323917662975,
+      "update_drift_maximum": 0.5841121276728609,
+      "update_drift_median": 0.5757703639773231,
+      "update_drift_minimum": 0.5697584575342531
+    },
+    {
+      "checkpoint_label": "late",
+      "checkpoint_step": 6200,
+      "layer": 8,
+      "n": 8,
+      "preconditioner_drift_median": 0.57786676331347,
+      "update_cosine_median": 0.9230412614580121,
+      "update_drift_maximum": 0.4085245324520142,
+      "update_drift_median": 0.39217420020354976,
+      "update_drift_minimum": 0.37695447056097825
+    },
+    {
+      "checkpoint_label": "late",
+      "checkpoint_step": 6200,
+      "layer": 17,
+      "n": 8,
+      "preconditioner_drift_median": 0.5435920461229959,
+      "update_cosine_median": 0.9795015030353793,
+      "update_drift_maximum": 0.2090971035652986,
+      "update_drift_median": 0.20238113347733278,
+      "update_drift_minimum": 0.19505939284108892
+    }
+  ],
+  "pooled_global_block4_update_drift": {
+    "maximum": 0.5841121276728609,
+    "mean": 0.3751176777109817,
+    "median": 0.34472287609065727,
+    "minimum": 0.19505939284108892,
+    "n": 48,
+    "p95": 0.5814676693623864
+  },
+  "run_id": "20260729T044926+0000",
+  "schema_version": 1,
+  "scope_caveats": [
+    "This is a read-only update and shadow-loss audit, not a full training comparison.",
+    "The result does not claim block4 wins or loses against primary optimizers.",
+    "newton_full remains the original Newton-Muon-family LLaMA control.",
+    "muon remains the optimizer baseline; each Selective method is compared separately with muon and newton_full."
+  ],
+  "supported_claim": "A contiguous four-way LLaMA SwiGLU down-projection approximation is strongly dependent on an arbitrary hidden-neuron coordinate partition.",
+  "within_block_control_observations": 12,
+  "within_block_control_update_drift": {
+    "maximum": 0.014801162260735091,
+    "mean": 0.008543839588712092,
+    "median": 0.006717979399303702,
+    "minimum": 0.0055376637044868005,
+    "n": 12,
+    "p95": 0.014662735408615287
+  }
+}

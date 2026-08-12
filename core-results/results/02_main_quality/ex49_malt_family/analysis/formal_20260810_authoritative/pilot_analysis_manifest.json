@@ -1,0 +1,112 @@
+{
+  "certificate_role": "independent_pilot_analysis_manifest",
+  "checks": {
+    "accepted_aggregate_manifest": true,
+    "all_1000_steps": true,
+    "all_evidence_valid": true,
+    "all_seed_2026": true,
+    "dual_method_fail_closed_rule_applied": true,
+    "exact_method_lr_mapping": true,
+    "exact_twelve_cell_grid": true,
+    "malt_formal_selection_rule_applied": true,
+    "malter_eq17_formal_selection_rule_applied": true,
+    "manifest_csv_exact_match": true
+  },
+  "family": "49_r1_malt_strong_baseline",
+  "formal_allowed": true,
+  "implementation_label": "paper-derived independent implementation",
+  "input_files": [
+    {
+      "path": "PRIVATE_PATH_REDACTED__49c5f7a17ef0",
+      "sha256": "048a920f00194b051c4ffdd6ba5a8e37aeaa7da522b276ee4693921ac8e251f8"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__3f82ee364e33",
+      "sha256": "5d266e242068b54786a45e1dbfe8f6e743e7b3c68120b05aa7ea90db98e22287"
+    }
+  ],
+  "official_author_code_public_at_freeze": false,
+  "outputs": [
+    {
+      "package_sha256": "aaac3e0cef078c3f4627f6ec23483e10626d0b7d5ebbde471116aba66fef96ac",
+      "path": "results/02_main_quality/ex49_malt_family/analysis/formal_20260810_authoritative/pilot_ranking.csv",
+      "sha256": "aaac3e0cef078c3f4627f6ec23483e10626d0b7d5ebbde471116aba66fef96ac",
+      "source_sha256": "aaac3e0cef078c3f4627f6ec23483e10626d0b7d5ebbde471116aba66fef96ac"
+    },
+    {
+      "package_sha256": "2b6a8688d7e891309a9030e97511dd4de5130117764375d50c5753d26c4c3a3b",
+      "path": "results/02_main_quality/ex49_malt_family/analysis/formal_20260810_authoritative/pilot_selection_verified.json",
+      "sha256": "2b6a8688d7e891309a9030e97511dd4de5130117764375d50c5753d26c4c3a3b",
+      "source_sha256": "591348aad2d19f36ca405abe2162d329dc89246bc41fc1fec3cb0581a28fe4ee"
+    }
+  ],
+  "protocol": "malt_r1_pilot_analysis_v4",
+  "runner_selection_crosscheck": {
+    "checks": {
+      "blocking_methods": true,
+      "boundary_rule_triggered": true,
+      "certificate_role": true,
+      "formal_allowed": true,
+      "formal_eligible": true,
+      "grid_design": true,
+      "malt:boundary_rule_triggered": true,
+      "malt:boundary_side": true,
+      "malt:boundary_tie_policy": true,
+      "malt:center_cell_id": true,
+      "malt:center_tie_margin": true,
+      "malt:formal_allowed": true,
+      "malt:formal_eligible": true,
+      "malt:method": true,
+      "malt:minimum_includes_lower_boundary": true,
+      "malt:minimum_includes_upper_boundary": true,
+      "malt:minimum_tied_cell_ids": true,
+      "malt:ranked_cells": true,
+      "malt:raw_best_cell_id": true,
+      "malt:raw_best_matrix_lr": true,
+      "malt:selected_cell_id": true,
+      "malt:selected_matrix_lr": true,
+      "malt:selection_policy": true,
+      "malt:selection_reason": true,
+      "malt:status": true,
+      "malt_execution_order": true,
+      "malt_selection_policy": true,
+      "malt_selection_present": true,
+      "malter_center_preferred_if_within_margin_of_best": true,
+      "malter_center_tie_margin": true,
+      "malter_eq17:boundary_rule_triggered": true,
+      "malter_eq17:boundary_side": true,
+      "malter_eq17:boundary_tie_policy": true,
+      "malter_eq17:center_cell_id": true,
+      "malter_eq17:center_tie_margin": true,
+      "malter_eq17:formal_allowed": true,
+      "malter_eq17:formal_eligible": true,
+      "malter_eq17:method": true,
+      "malter_eq17:minimum_includes_lower_boundary": true,
+      "malter_eq17:minimum_includes_upper_boundary": true,
+      "malter_eq17:minimum_tied_cell_ids": true,
+      "malter_eq17:ranked_cells": true,
+      "malter_eq17:raw_best_cell_id": true,
+      "malter_eq17:raw_best_matrix_lr": true,
+      "malter_eq17:selected_cell_id": true,
+      "malter_eq17:selected_matrix_lr": true,
+      "malter_eq17:selection_policy": true,
+      "malter_eq17:selection_reason": true,
+      "malter_eq17:status": true,
+      "malter_eq17_selection_present": true,
+      "pilot_manifest": true,
+      "pilot_manifest_sha256": true,
+      "pilot_steps": true,
+      "protocol": true,
+      "required_formal_methods": true,
+      "scientific_result": true,
+      "seed": true,
+      "selection_endpoint": true,
+      "status": true
+    },
+    "path": "PRIVATE_PATH_REDACTED__c4fc99c03ca6",
+    "sha256": "5e29ce44c1438602ff887c4c249706e2f9fba384371bd9762e0bfdacaf106af0",
+    "status": "matched"
+  },
+  "scientific_result": "dual_methods_selected",
+  "status": "completed_valid"
+}

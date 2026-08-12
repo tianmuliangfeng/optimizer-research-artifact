@@ -1,0 +1,30 @@
+{
+  "newton_full": {
+    "max_success_device_batch": 34,
+    "first_oom_device_batch": 35,
+    "capacity_interval": "[34, 35)",
+    "resolved_width": 1,
+    "odd_confirmation": "oom"
+  },
+  "down_none": {
+    "max_success_device_batch": 37,
+    "first_oom_device_batch": 38,
+    "capacity_interval": "[37, 38)",
+    "resolved_width": 1,
+    "odd_confirmation": "completed"
+  },
+  "down_diag": {
+    "max_success_device_batch": 37,
+    "first_oom_device_batch": 38,
+    "capacity_interval": "[37, 38)",
+    "resolved_width": 1,
+    "odd_confirmation": "completed"
+  },
+  "muon": {
+    "max_success_device_batch": 39,
+    "first_oom_device_batch": 40,
+    "capacity_interval": "[39, 40)",
+    "resolved_width": 1,
+    "odd_confirmation": "completed"
+  }
+}

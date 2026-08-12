@@ -1,0 +1,37 @@
+{
+  "all_values_finite": true,
+  "cell_seed_coverage": true,
+  "diag_beneficial_over_none": true,
+  "diag_quality_matched_to_block4": true,
+  "experiment41_acceptance_linkage": {
+    "accepted": true,
+    "both_mean": true,
+    "classification_corrected": true,
+    "fc_only_mean": true
+  },
+  "experiment41_reference_linkage": {
+    "block4_seed2024": true,
+    "block4_seed2025": true,
+    "block4_seed2026": true,
+    "none_seed2024": true,
+    "none_seed2025": true,
+    "none_seed2026": true
+  },
+  "initial_loss_equal_within_seed": {
+    "2024": true,
+    "2025": true,
+    "2026": true
+  },
+  "k_state_contract": {
+    "block4": true,
+    "diag": true,
+    "none": true
+  },
+  "new_training_recommended": false,
+  "source_hashes": {
+    "experiment15_run_summary": true,
+    "experiment41_acceptance": true,
+    "experiment41_reference": true
+  },
+  "timing_usable": false
+}

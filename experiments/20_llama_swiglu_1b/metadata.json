@@ -1,0 +1,122 @@
+{
+  "code_directory": "scripts/20_llama_swiglu_1b",
+  "entrypoints": {
+    "script:run_llama_swiglu_1b": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--stage",
+            "--official-repo",
+            "--python-exe"
+          ]
+        }
+      ]
+    },
+    "script:run_llama_swiglu_1b_capacity": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--official-repo",
+            "--python-exe"
+          ]
+        }
+      ]
+    },
+    "script:run_llama_swiglu_1b_capacity_cell": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity_cell.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--stage",
+            "--official-repo",
+            "--python-exe"
+          ]
+        }
+      ]
+    },
+    "script:run_llama_swiglu_1b_capacity_exact": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity_exact.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--fine-manifest",
+            "--official-repo",
+            "--python-exe"
+          ]
+        }
+      ]
+    },
+    "script:run_llama_swiglu_1b_capacity_fine": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity_fine.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--official-repo",
+            "--python-exe"
+          ]
+        }
+      ]
+    },
+    "script:run_llama_swiglu_1b_capacity_fine_cell": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b_capacity_fine_cell.py",
+      "required_user_arguments": [
+        {
+          "all_of": [
+            "--stage",
+            "--official-repo",
+            "--python-exe",
+            "--capacity-accumulation-steps",
+            "--device-batch-size"
+          ]
+        }
+      ]
+    }
+  },
+  "experiment_id": "20_llama_swiglu_1b",
+  "legacy_result_roots": [
+    "20_llama_swiglu_1b"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "20 Llama Swiglu 1B"
+}

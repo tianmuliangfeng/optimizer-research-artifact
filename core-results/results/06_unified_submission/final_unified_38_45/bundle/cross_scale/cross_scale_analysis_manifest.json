@@ -1,0 +1,25 @@
+{
+  "analysis_family": "gpt_scale",
+  "claim_eligible": true,
+  "input_ledger_manifest_sha256": "6a3587ea2811a31b5e7916edd89ed00ff54f65f409e267728f48e35a27f5c770",
+  "input_ledger_sha256": "04f8c74724689180a14fc3121784f16c5986bdb59d9b2ebe0fac17b6389dddb9",
+  "mdp_manifest": true,
+  "outputs": {
+    "CROSS_SCALE_ANALYSIS.md": "0f98890d7d2cc732643d064aba3f12aad14827f2663cc0f1bf145da1609bb7ad",
+    "method_aggregate_by_scale.csv": "7a07216c6faf77977f7346d87e4d72b98908e046ac20cd53b2d22af2ceb521cc",
+    "paired_contrasts_by_scale.csv": "bb93605b9725470e02779a16e365a46ccbfaa46a7f6b56660c7e85e37514fa79",
+    "paired_deltas_by_scale_seed.csv": "773f3e47236cf592974df1052e433bab33a2a4cd21162903fdfb35afdefcef4b",
+    "pareto_frontier_by_scale.csv": "dae9fdea1b256796935070ac11091560ae6ca2f3165edb3e7edb1d4561880cc5"
+  },
+  "practical_loss_margin": 0.002,
+  "scale_count": 3,
+  "scales": [
+    "gpt124m",
+    "gpt275m",
+    "gpt455m"
+  ],
+  "schema_version": "mdp_cross_scale_analysis_v1",
+  "seed_pooling_across_scales": false,
+  "status": "passed",
+  "synthetic": false
+}

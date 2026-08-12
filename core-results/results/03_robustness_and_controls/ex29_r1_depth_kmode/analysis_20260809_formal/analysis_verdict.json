@@ -1,0 +1,64 @@
+{
+  "additional_depth_runs_needed": false,
+  "all_diag_minus_block4_mean": -0.0006666666666668893,
+  "all_none_minus_block4_mean": 0.004699999999999853,
+  "all_rule_mean_diag_minus_none": -0.005366666666666742,
+  "all_rule_negative_seed_count": 3,
+  "all_rule_sd_diag_minus_none": 0.0002886751345947811,
+  "block4_minus_muon_mean": -0.015499999999999995,
+  "claim_boundary": "Across OWT, WikiText-103, and official R1, diag generally and in R1 uniformly improves over none across preregistered depth rules. The magnitude ordering is environment-dependent: the local edge-strong pattern does not transfer to R1, so no universal best depth mask or individual-layer causality is established.",
+  "classification": "uniform_diag_direction_transfer_with_environment_specific_depth_amplitude",
+  "direction_transfer_pass": true,
+  "endpoint_sign_consistency": {
+    "auc_negative": 15,
+    "step6200_negative": 15,
+    "tail5_negative": 15,
+    "total_pairs": 15
+  },
+  "formal_batch_id": "20260806T100702+0000",
+  "formal_run_count": 36,
+  "frozen_magnitude_pattern": {
+    "center_weaker_than_all": {
+      "expected_sign": "positive",
+      "observed_mean": 0.0015333333333333126,
+      "passed": true,
+      "positive_seeds": 3
+    },
+    "edge_stronger_than_all": {
+      "expected_sign": "negative",
+      "negative_seeds": 0,
+      "observed_mean": 0.002066666666666883,
+      "passed": false
+    },
+    "late_weaker_than_all": {
+      "expected_sign": "positive",
+      "observed_mean": 0.002866666666666647,
+      "passed": true,
+      "positive_seeds": 3
+    }
+  },
+  "frozen_magnitude_pattern_full_pass": false,
+  "memory_mean_mib": {
+    "all_diag_k_state": 162.28125,
+    "all_diag_optimizer_state": 780.7558631896973,
+    "all_diag_peak": 38304.0,
+    "all_none_k_state": 162.0,
+    "all_none_optimizer_state": 780.4746131896973,
+    "all_none_peak": 38304.0,
+    "block4_k_state": 378.0,
+    "block4_optimizer_state": 996.4746131896973,
+    "block4_peak": 39168.0,
+    "muon_peak": 37703.0
+  },
+  "paired_contrast_count": 15,
+  "recommended_paper_position": {
+    "experiment_25": "A; contributes to unified S claim",
+    "experiment_28": "A; contributes to unified S claim",
+    "experiment_29": "S + A",
+    "unified_depth_claim": "S in main text; complete 45 paired contrasts in appendix"
+  },
+  "rules_with_3_of_3_negative": 5,
+  "rules_with_negative_means": 5,
+  "status": "valid",
+  "timing_usable": false
+}

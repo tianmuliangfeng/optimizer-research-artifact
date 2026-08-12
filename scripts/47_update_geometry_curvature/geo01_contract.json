@@ -1,0 +1,131 @@
+{
+  "schema_version": "geo01_actual_update_direction_curvature_v1",
+  "status": "pilot_frozen_before_gpu_execution",
+  "experiment": "GEO-01",
+  "experiment_number": 47,
+  "evidence_tier": "exploratory",
+  "current_phase": "pilot",
+  "purpose": "Test whether held-out gradient alignment and directional curvature explain actual refresh-induced update harm beyond update magnitude.",
+  "source_lineage": {
+    "checkpoint_family": "accepted LLaMA-1B MECH-09R origins",
+    "accepted_source_run_id": "20260728T075907+0000",
+    "accepted_execution_contract_sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+    "public_execution_contract_sha256": "dd934586aef857b5f5425c70226e7226d2427443eb95cd9748f26dc47a44c110",
+    "public_contract_change_scope": "host paths only; scientific fields unchanged",
+    "mdp05_run_id": "20260804T021302+0000",
+    "mdp05_outcomes_used_to_select_formula": false,
+    "formula_motivated_by_mdp05_null_scalar_mediation": true,
+    "accepted_source_optimizer_required": true,
+    "accepted_triton_ns5_required": true
+  },
+  "pilot": {
+    "origins": ["early_muon"],
+    "data_replicas": [7],
+    "optimizer_step_offsets": [1792],
+    "build_token_offsets": [14000000],
+    "eval_token_offsets": [15048576],
+    "event_id": "production_refresh_32",
+    "completed_step": 32,
+    "target_layers": [0, 8, 17],
+    "scopes": [
+      {"scope_id": "layer_0", "layers": [0]},
+      {"scope_id": "layer_8", "layers": [8]},
+      {"scope_id": "layer_17", "layers": [17]},
+      {"scope_id": "joint_0_8_17", "layers": [0, 8, 17]}
+    ],
+    "outcome_use": "engineering_and_numerical_calibration_only"
+  },
+  "remote_smoke": {
+    "origin": "early_muon",
+    "data_replica": 8,
+    "optimizer_step_offset": 2048,
+    "build_token_offset": 16000000,
+    "eval_token_offset": 17048576,
+    "rollout_steps": 4,
+    "checkpoint_or_geometry_outcomes_opened": false
+  },
+  "geometry": {
+    "direction": "source_pinned_refresh_minus_frozen_parameter_update",
+    "same_raw_gradient": true,
+    "same_historical_momentum": true,
+    "actual_update_multiplier": 1.0,
+    "exact_directional_hvp": true,
+    "construct_full_hessian": false,
+    "microbatch_size": 1,
+    "sequence_length": 128,
+    "heldout_microbatches": 2,
+    "forward_precision": "float32_tf32_disabled",
+    "hvp_attention_backend": "math_only",
+    "fd_target_relative_parameter_norm": 0.0001,
+    "fd_scale_min": 1.0,
+    "fd_scale_max": 64.0,
+    "reported_terms": [
+      "first_order_alignment",
+      "directional_curvature",
+      "second_order_term",
+      "taylor_actual_delta_loss",
+      "exact_actual_delta_loss",
+      "taylor_residual",
+      "fd_first_order",
+      "fd_directional_curvature"
+    ]
+  },
+  "pilot_hard_gates": {
+    "source_and_checkpoint_hashes_exact": true,
+    "source_pinned_ns5_fingerprint_exact": true,
+    "all_values_finite": true,
+    "direction_nonzero": true,
+    "parameters_unchanged": true,
+    "optimizer_state_unchanged_by_geometry_probe": true,
+    "loader_state_unchanged_by_geometry_probe": true,
+    "baseline_graph_relative_error_max": 1e-6,
+    "peak_allocated_bytes_max": 79000000000,
+    "finite_difference_errors_reported_not_tuned": true
+  },
+  "discovery_gate": {
+    "enabled_after_pilot_only": true,
+    "requires_new_sealed_contract": true,
+    "metric_formula_must_remain": "<g_val,d> + 0.5*<d,H_val d>",
+    "norm_only_baseline_required": true,
+    "discovery_is_claim_eligible": false
+  },
+  "confirmation_gate": {
+    "requires_unseen_checkpoint_or_data_units": true,
+    "requires_frozen_single_predictor": true,
+    "requires_new_contract": true,
+    "prefer_at_least_one_gpt_setting": true,
+    "no_metric_or_layer_selection_after_discovery": true
+  },
+  "claim_boundary": {
+    "mdp05_result_remains_closed": true,
+    "mdp05_scalar_mediation_not_reclassified": true,
+    "pilot_claim_eligible": false,
+    "local_short_horizon_only": true,
+    "not_a_long_horizon_selector": true,
+    "llama_10b_triggered": false
+  },
+  "runtime_contract": {
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "numpy": "2.2.6",
+    "gpu_name_contains": "H100",
+    "compute_capability": [9, 0],
+    "minimum_gpu_memory_bytes": 80000000000,
+    "gpu_count": 2,
+    "cublas_workspace_config": ":4096:8"
+  },
+  "execution": {
+    "immutable_source_snapshot": true,
+    "contract_change_requires_new_run_directory": true,
+    "failed_attempts_never_overwritten": true,
+    "same_contract_resume_only": true,
+    "persist_full_direction": false,
+    "persist_full_hessian": false,
+    "timing_eligible_for_paper": false,
+    "discovery_enabled": false,
+    "confirmation_enabled": false,
+    "llama_10b_enabled": false
+  }
+}

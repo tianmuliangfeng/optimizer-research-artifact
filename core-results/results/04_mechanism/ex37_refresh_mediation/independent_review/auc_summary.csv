@@ -1,0 +1,4 @@
+contrast,paired_units,origins,mean_auc_delta,sd_auc_delta,left_better_units,left_worse_units,left_better_origins,left_worse_origins
+delayed_down_refresh_vs_frozen_down_refresh,12,4,0.0010544442135148508,0.00017713611008676847,0,12,0,4
+delayed_down_refresh_vs_production,12,4,-0.001901881036502906,0.0004572865625474003,12,0,4,0
+frozen_down_refresh_vs_production,12,4,-0.002956325250017757,0.0006130820432009288,12,0,4,0

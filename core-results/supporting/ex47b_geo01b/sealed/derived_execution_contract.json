@@ -1,0 +1,324 @@
+{
+  "analysis_contract": {
+    "arm_count_per_job": 3,
+    "first_delayed_refresh_completed_step": 64,
+    "first_post_delayed_refresh_evaluation_step": 80,
+    "first_post_production_refresh_evaluation_step": 48,
+    "first_production_refresh_completed_step": 32,
+    "full_support_rules": [
+      "all three arms are exactly identical at step 16 because they share one computed prefix",
+      "delayed and frozen arms are exactly identical at step 48 because they share one no-down-refresh branch through step 63",
+      "delayed and frozen each beat internal production at step 48 in at least 9 of 12 paired units and 3 of 4 origin means",
+      "after delayed refreshes at step 64, delayed is worse than frozen at step 80 in at least 9 of 12 paired units and 3 of 4 origin means"
+    ],
+    "integrity_pass_is_not_hypothesis_success": true,
+    "invalid_rule": "execution integrity or either exact shared-prefix check fails",
+    "minimum_complete_formal_jobs": 12,
+    "not_supported_rule": "execution integrity and both exact shared-prefix checks pass, with fewer than two directional predictions passing",
+    "partial_support_rule": "execution integrity and both exact shared-prefix checks pass, with at least two but not all three directional predictions passing",
+    "pre_delayed_refresh_required_exact": true,
+    "pre_delayed_refresh_shared_step": 48,
+    "pre_refresh_equivalence_step": 16,
+    "pre_refresh_required_exact": true,
+    "supermajority_origins": 3,
+    "supermajority_paired_units": 9
+  },
+  "architecture": {
+    "n_embd": 2048,
+    "n_layer": 18,
+    "sequence_length": 1024,
+    "target_input_width": 5504,
+    "vocab_size": 50257
+  },
+  "arms": {
+    "delayed_down_refresh": {
+      "formal_down_refresh_completed_steps": [
+        64,
+        96,
+        128
+      ],
+      "smoke_down_refresh_completed_steps": [
+        4
+      ],
+      "target_group_suffix": ".down_input"
+    },
+    "frozen_down_refresh": {
+      "formal_down_refresh_completed_steps": [],
+      "smoke_down_refresh_completed_steps": [],
+      "target_group_suffix": ".down_input"
+    },
+    "production_newton_muon": {
+      "formal_down_refresh_completed_steps": [
+        32,
+        64,
+        96,
+        128
+      ],
+      "smoke_down_refresh_completed_steps": [
+        2,
+        4
+      ],
+      "target_group_suffix": ".down_input"
+    }
+  },
+  "checkpoint_certificate_source": {
+    "expected_file_count": 162,
+    "mech08_control_reference_basename": "mech08_control_reference.json",
+    "mech08_control_reference_sha256": "d2d34f5b6fac148e6bc35fbf01df4ec2b7093cd696d25d66df63473a420e427f",
+    "source_run_id": "20260727T102506+0000",
+    "source_run_path": "PRIVATE_PATH_REDACTED__965a289fa111"
+  },
+  "checkpoints": [
+    {
+      "cell": "early_muon",
+      "expected_bytes": 8522343395,
+      "expected_sha256": "7561ee5571db825190fa3cc34af8bd9d72f213a69c925322cea6328b688a58d1",
+      "method": "muon",
+      "path": "PRIVATE_PATH_REDACTED__74f79e2aa2a7",
+      "stage": "early",
+      "step": 1000
+    },
+    {
+      "cell": "early_newton_full",
+      "expected_bytes": 17783856619,
+      "expected_sha256": "8d532806cc4a0613b3ad6c5e74096a70be352af941b9c72e6c37997cf1beecd7",
+      "method": "newton_full",
+      "path": "PRIVATE_PATH_REDACTED__53c13f268954",
+      "stage": "early",
+      "step": 1000
+    },
+    {
+      "cell": "late_muon",
+      "expected_bytes": 8522343395,
+      "expected_sha256": "7d48b9846aefe8e03e04305da0bd10e8fc3b889643328e585e70a484e1ad78ec",
+      "method": "muon",
+      "path": "PRIVATE_PATH_REDACTED__b534ee219728",
+      "stage": "late",
+      "step": 6200
+    },
+    {
+      "cell": "late_newton_full",
+      "expected_bytes": 17783856619,
+      "expected_sha256": "83c9bc4316996deb67ae92b9e2c1c60521f9ed5c56f9690d3e09de399915e7d5",
+      "method": "newton_full",
+      "path": "PRIVATE_PATH_REDACTED__c610d88cb71b",
+      "stage": "late",
+      "step": 6200
+    }
+  ],
+  "comparison_contract": {
+    "negative_delta_means": "left arm has lower held-out loss and is better",
+    "paired_unit": "checkpoint origin x data-order replica inside one shared-prefix worker",
+    "primary": [
+      {
+        "left": "delayed_down_refresh",
+        "name": "delayed_down_refresh_vs_production",
+        "right": "production_newton_muon"
+      },
+      {
+        "left": "frozen_down_refresh",
+        "name": "frozen_down_refresh_vs_production",
+        "right": "production_newton_muon"
+      },
+      {
+        "left": "delayed_down_refresh",
+        "name": "delayed_down_refresh_vs_frozen_down_refresh",
+        "right": "frozen_down_refresh"
+      }
+    ],
+    "selective_diag_vs_selective_none_is_primary": false
+  },
+  "contract_version": "2026-07-28.2",
+  "determinism": {
+    "base_seed": 20260728,
+    "cublas_workspace_config": ":4096:8",
+    "paired_arms_restore_identical_rng_state": true,
+    "shared_prefix_is_primary_protection_against_cross_run_drift": true,
+    "torch_deterministic_algorithms": true
+  },
+  "experiment": "MECH-09R",
+  "family": "llama1b",
+  "formal": {
+    "build_batches": 4,
+    "build_device_batch_size": 1,
+    "build_sequence_length": 128,
+    "build_token_offsets": [
+      18000000,
+      20000000,
+      22000000
+    ],
+    "causal_tree": {
+      "first_branch_step": 32,
+      "second_branch_step": 64,
+      "shared_all_end_step": 31,
+      "shared_no_down_end_step": 63
+    },
+    "data_replicas": [
+      9,
+      10,
+      11
+    ],
+    "device_batch_size": 8,
+    "eval_batches": 16,
+    "eval_device_batch_size": 8,
+    "eval_sequence_length": 1024,
+    "eval_token_offsets": [
+      19048576,
+      21048576,
+      23048576
+    ],
+    "evaluation_steps": [
+      0,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      112,
+      128
+    ],
+    "expected_global_refresh_completed_steps": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "global_batch_size": 512,
+    "origins": [
+      "early_muon",
+      "early_newton_full",
+      "late_muon",
+      "late_newton_full"
+    ],
+    "production_refresh_interval": 32,
+    "replica_optimizer_step_offsets": [
+      2304,
+      2560,
+      2816
+    ],
+    "rollout_steps": 128,
+    "sequence_length": 1024
+  },
+  "geo01b_derivation": {
+    "discovery_claim_eligible": false,
+    "outer_contract_schema": "geo01b_directional_geometry_discovery_v1",
+    "outer_contract_sha256": "6362647488486acd56cc6cfd9648cd6d990a85aa573c8f9ef2dcca20679d5e04",
+    "phase": "discovery",
+    "source_outcomes_used": false
+  },
+  "protocol_amendment": {
+    "invalid_run_id": "20260728T023217+0000",
+    "legacy_results_policy": "Retain as invalid_pre_intervention_equivalence diagnostics only; exclude from confirmatory mechanism claims.",
+    "repair_principle": "Replace independent pre-treatment trajectories with exact shared-prefix forks and add an internal production arm; do not relax thresholds, tune hyperparameters, select units, or use post-treatment outcomes to design the repair.",
+    "supersedes_confirmatory_use_of": "MECH-09 independent-worker protocol 2026-07-28.1",
+    "trigger": {
+      "frozen_tolerance": 2e-06,
+      "maximum_abs_delayed_vs_frozen_delta": 3.98015643259253e-05,
+      "maximum_abs_delayed_vs_legacy_production_delta": 4.79574483154277e-05,
+      "maximum_abs_frozen_vs_legacy_production_delta": 8.25667401829211e-05,
+      "pre_intervention_step": 16
+    },
+    "trigger_uses_pre_intervention_data_only": true
+  },
+  "restart_intervention": {
+    "backup_adamw_state": "loaded exactly from the origin checkpoint",
+    "backup_lr": 0.0036,
+    "candidate_preconditioner_state": "freshly initialized and built from the same frozen validation split used by MECH-08 before optimizer step 1",
+    "learning_rate_schedule": "constant nominal production peak learning rates for the full rollout",
+    "matrix_lr": 0.01,
+    "matrix_momentum": 0.95,
+    "model_parameters": "copied exactly from the origin checkpoint",
+    "newton_init_scale": 0.001,
+    "newton_input_beta": 0.95,
+    "newton_input_ridge": 0.2,
+    "ns_steps": 5,
+    "origin_preconditioner_state": "never transferred",
+    "production_refresh_steps": 32,
+    "source_method": "newton_full",
+    "weight_decay": 0.0
+  },
+  "schema_version": 2,
+  "scientific_question": "Does the production down-projection full-K refresh causally produce the post-refresh short-horizon degradation observed for original Newton-Muon in MECH-08?",
+  "scope_boundary": {
+    "authorized": [
+      "causal manipulation of down-projection full-K refresh timing only",
+      "an internal production arm forked from the exact same state",
+      "held-out evaluation on the frozen MECH-08 validation windows"
+    ],
+    "efficiency_benchmark_excluded": true,
+    "formal_throughput_requires_separate_controlled_benchmark": true,
+    "not_authorized": [
+      "using post-treatment results from the invalid independent-worker run to alter predictions or thresholds",
+      "changing learning rates, ridge, beta, momentum, data order, checkpoint selection, or non-target refresh timing",
+      "treating Selective-diag versus Selective-none as a primary comparison",
+      "using worker timing or CUDA allocation as paper efficiency evidence"
+    ]
+  },
+  "shared_policy": {
+    "all_non_target_groups": "retain the production refresh schedule",
+    "branch_snapshot": "exact CPU clone of model, both optimizer state_dict objects, next training batch, loader state, RNG states, and matrix global step",
+    "restore_audit": "fixed-sample SHA256 over every named model/optimizer tensor plus exact next-batch hashes, loader state, matrix global step, and zero activation-statistic checks",
+    "skipped_statistics_policy": "zero accumulated down-projection activation statistics at each skipped refresh boundary without changing its covariance or inverse"
+  },
+  "smoke": {
+    "build_batches": 1,
+    "build_device_batch_size": 1,
+    "build_sequence_length": 128,
+    "build_token_offsets": [
+      24000000
+    ],
+    "causal_tree": {
+      "first_branch_step": 2,
+      "second_branch_step": 4,
+      "shared_all_end_step": 1,
+      "shared_no_down_end_step": 3
+    },
+    "data_replicas": [
+      12
+    ],
+    "device_batch_size": 8,
+    "eval_batches": 1,
+    "eval_device_batch_size": 1,
+    "eval_sequence_length": 128,
+    "eval_token_offsets": [
+      25048576
+    ],
+    "evaluation_steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "expected_global_refresh_completed_steps": [
+      2,
+      4
+    ],
+    "global_batch_size": 8,
+    "origins": [
+      "early_muon"
+    ],
+    "production_refresh_interval": 2,
+    "replica_optimizer_step_offsets": [
+      3072
+    ],
+    "rollout_steps": 4,
+    "sequence_length": 1024
+  },
+  "source_constraints": {
+    "base_source_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "profile_script_sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+    "triton_sha256": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f"
+  },
+  "stopping_rule": {
+    "do_not_rerun_for_unfavorable_scientific_outcome": true,
+    "engineering_failure_may_resume_the_same_frozen_contract": true,
+    "maximum_new_formal_jobs": 12,
+    "maximum_trajectories": 3,
+    "no_additional_interventions": true,
+    "no_hyperparameter_tuning": true,
+    "no_origin_or_replica_selection": true
+  },
+  "title": "Shared-prefix causal-tree repair for down-projection full-K refresh timing"
+}

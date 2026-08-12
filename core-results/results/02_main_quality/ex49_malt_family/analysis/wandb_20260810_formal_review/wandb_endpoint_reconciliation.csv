@@ -1,0 +1,7 @@
+method,adaptation_label,selected_matrix_lr,seed,val_rows,train_rows,lr_rows,memory_rows,final_val_loss,final_train_loss_diagnostic,zip_endpoint_match,wandb_status,timing_eligible
+malt,MALT-R1 adaptation,0.0125,2024,63,310,311,1,3.2728,3.3639,true,uploaded_online,false
+malt,MALT-R1 adaptation,0.0125,2025,63,310,311,1,3.2736,3.3627,true,uploaded_online,false
+malt,MALT-R1 adaptation,0.0125,2026,63,310,311,1,3.2718,3.3560,true,uploaded_online,false
+malter_eq17,MALTER-Eq17-R1 adaptation,0.015,2024,63,310,311,1,3.6426,3.7345,true,uploaded_online,false
+malter_eq17,MALTER-Eq17-R1 adaptation,0.015,2025,63,310,311,1,3.6475,3.7413,true,uploaded_online,false
+malter_eq17,MALTER-Eq17-R1 adaptation,0.015,2026,63,310,311,1,3.6477,3.7421,true,uploaded_online,false

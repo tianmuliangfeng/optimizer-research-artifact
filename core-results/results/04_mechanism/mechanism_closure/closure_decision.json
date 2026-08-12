@@ -1,0 +1,7 @@
+{
+  "geo01c_authorized": false,
+  "llama1b_10b_decision_deferred": true,
+  "mechanism_line_closed": true,
+  "new_gpu_mechanism_work_authorized": false,
+  "scientific_result": "mechanism_line_closed_with_bounded_positive_and_negative_findings"
+}

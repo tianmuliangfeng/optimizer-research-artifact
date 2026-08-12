@@ -1,0 +1,22 @@
+{
+  "ambiguous_primary_contrasts": [
+    "selective_diag_vs_muon",
+    "selective_diag_vs_original"
+  ],
+  "common_target_crossing_definition": "first downward crossing of validation loss 3.30, linearly interpolated between adjacent validation checkpoints",
+  "delta_convention": "candidate_minus_comparator; negative is better",
+  "diag_vs_none_is_primary": false,
+  "original_vs_muon_is_mandatory_benchmark_anchor": true,
+  "practical_margin": 0.002,
+  "primary_classifications": {
+    "selective_diag_vs_muon": "ci_spans_both_practical_boundaries",
+    "selective_diag_vs_original": "ci_spans_both_practical_boundaries",
+    "selective_none_vs_muon": "direction_candidate_better_but_practically_unresolved",
+    "selective_none_vs_original": "quality_equivalent_within_margin"
+  },
+  "primary_endpoint": "final_val_loss",
+  "seed_append_allowed_automatically": false,
+  "seed_append_rule": "A statistical trigger is necessary but not sufficient.  Additional seeds are allowed only if this uncertainty would change the frozen cross-scale paper claim; if allowed, run all four methods together on the next unused seeds (2028 then 2029), at most two.",
+  "statistical_seed_append_gate_triggered": true,
+  "timing_claim_eligible": false
+}

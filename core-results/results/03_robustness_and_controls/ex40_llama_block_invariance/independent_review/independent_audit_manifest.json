@@ -1,0 +1,16 @@
+{
+  "archive_sha256": "9382d9b8602bf45fee155cfe067ac95e8ae64e3a5b22ded9dd4deb0d4f652f73",
+  "artifacts": [
+    "REPORT.md",
+    "checkpoint_summary.csv",
+    "important_results.json",
+    "independent_audit.json",
+    "layer_summary.csv",
+    "shadow_partition_spread.csv",
+    "source_artifact_hashes.csv"
+  ],
+  "classification": "strong_non_invariance",
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-29.2"
+}

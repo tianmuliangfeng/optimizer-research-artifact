@@ -1,0 +1,13 @@
+{
+  "all_measurements_passed": true,
+  "case_count": 3,
+  "claim_eligible": true,
+  "mdp_manifest": true,
+  "measurement_relative_tolerance": 1e-09,
+  "outputs": {
+    "routing_complexity.csv": "ecc229d520c2d525b8990e410bef564ed4b09c4aa479704bfa33408b21c88b28"
+  },
+  "schema_version": "mdp_routing_complexity_audit_v1",
+  "status": "passed",
+  "synthetic": false
+}

@@ -1,0 +1,39 @@
+{
+  "artifacts": [
+    "lr_sensitivity_runs.csv",
+    "lr_sensitivity_contrasts.csv",
+    "lr_sensitivity_role_summary.csv",
+    "source_manifest.csv"
+  ],
+  "budget_steps": 3000,
+  "contract_sha256": "37b670f41f9345965b1e9b5112ecf2882ebef083cf207a1e8ea503c5ebe0632b",
+  "contrast_rows": 15,
+  "created_at": "2026-07-29T18:31:57.814426+00:00",
+  "diag_vs_none_primary": false,
+  "evidence_class": "supporting_only",
+  "methods": [
+    "muon",
+    "original_newton_muon",
+    "selective_none",
+    "selective_diag"
+  ],
+  "multipliers": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "output_sha256": {
+    "lr_sensitivity_contrasts.csv": "2dcb2e2628fe0e5fad4fe0741e793b2fbd76b4796f52a9e8ee792b9a66522b6b",
+    "lr_sensitivity_role_summary.csv": "3be24f7a78d7982ceb8efd96962e26e442c08efd65b56024e4cb4936c4b6aec2",
+    "lr_sensitivity_runs.csv": "dcb66c7a74ce2cdff937bc0cb84541341979ab15e6d40c60499afe98a9bb1e14",
+    "source_manifest.csv": "7f6fb55a8f6e646adf62f6faa041bb74e859b2a61a2125dfc8ce05177ed36dc1"
+  },
+  "passed": true,
+  "run_cells": 12,
+  "schema_version": 1,
+  "script_version": "2026-07-29.7",
+  "seed": 2026,
+  "submission_claim": "four-method final-recipe LR robustness",
+  "tuned_best_claim_allowed": false,
+  "warmdown_steps": 871
+}

@@ -1,0 +1,11 @@
+checkpoint_stage,priority,contrast,left_algorithm,right_algorithm,cells,mean_delta,median_delta,sd_delta,negative_cells_left_better,positive_cells_left_worse,near_zero_cells,negative_fraction_left_better,positive_fraction_left_worse,checkpoint_states_left_better,checkpoint_states_left_worse,checkpoint_states_total
+early,primary,selective_diag_vs_muon,selective_diag,muon,32,0.0023966300223628866,0.002086366872745943,0.0010596543624858694,0,32,0,0.0,1.0,0,4,4
+early,primary,selective_none_vs_muon,selective_none,muon,32,0.0013599815003376454,0.0012170141716396654,0.0007186863773837573,0,32,0,0.0,1.0,0,4,4
+early,primary,selective_diag_vs_original_newton_muon,selective_diag,original_newton_muon,32,-0.0001723921936721496,-0.00018500078036184464,0.00032724280659953613,22,9,1,0.6875,0.28125,2,0,4
+early,primary,selective_none_vs_original_newton_muon,selective_none,original_newton_muon,32,-0.0012090407156973909,-0.0010663920441676409,0.0005904510616243806,32,0,0,1.0,0.0,4,0,4
+early,baseline,original_newton_muon_vs_muon,original_newton_muon,muon,32,0.0025690222160350364,0.0021647597644866307,0.0012004558249497155,0,32,0,0.0,1.0,0,4,4
+late,primary,selective_diag_vs_muon,selective_diag,muon,32,-2.004514522106542e-05,-7.4100091439512875e-06,0.00016693266478474703,16,14,2,0.5,0.4375,0,0,4
+late,primary,selective_none_vs_muon,selective_none,muon,32,1.2930646957730028e-05,2.503561552774571e-05,0.00015236096794161806,11,19,2,0.34375,0.59375,0,2,4
+late,primary,selective_diag_vs_original_newton_muon,selective_diag,original_newton_muon,32,-3.8916415201596606e-05,-4.071127446848633e-05,0.00016309124851697976,19,9,4,0.59375,0.28125,1,0,4
+late,primary,selective_none_vs_original_newton_muon,selective_none,original_newton_muon,32,-5.940623022801157e-06,-1.7171012659162485e-05,0.00017057899351545567,17,11,4,0.53125,0.34375,0,0,4
+late,baseline,original_newton_muon_vs_muon,original_newton_muon,muon,32,1.8871269980531183e-05,0.0,0.00020238788624595664,15,15,2,0.46875,0.46875,0,0,4

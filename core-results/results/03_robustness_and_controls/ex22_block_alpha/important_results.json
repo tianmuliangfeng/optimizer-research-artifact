@@ -1,0 +1,81 @@
+{
+  "curvature_summary": {
+    "mean_final_curvature_c": -0.0012666666666666753,
+    "negative_seed_count": 3,
+    "positive_seed_count": 0,
+    "sample_sd_final_curvature_c": 0.00040414518843271183,
+    "strict_alpha0p50_beats_both_endpoints_in_both_new_seeds": true
+  },
+  "delivery_status": "wandb_complete_local_artifacts_pending",
+  "dense_alpha0_vs_efficient_diag": [
+    {
+      "contrast": "dense_alpha0_minus_efficient_diag",
+      "final_val_loss_delta": 0.0009,
+      "normalized_val_auc_delta": 0.0002991935,
+      "seed": 2024,
+      "tail5_val_loss_delta": 0.00086
+    },
+    {
+      "contrast": "dense_alpha0_minus_efficient_diag",
+      "final_val_loss_delta": 0.0002,
+      "normalized_val_auc_delta": 0.0003951613,
+      "seed": 2025,
+      "tail5_val_loss_delta": 0.00026
+    },
+    {
+      "contrast": "dense_alpha0_minus_efficient_diag",
+      "final_val_loss_delta": -0.0002,
+      "normalized_val_auc_delta": -0.000683871,
+      "seed": 2026,
+      "tail5_val_loss_delta": -0.00024
+    }
+  ],
+  "experiment": "R1 block-alpha multi-seed confirmation",
+  "memory_claim": "No alpha-dependent memory claim: all dense alpha cells store the same block-local dense state.",
+  "primary_endpoint": "validation loss at step 6200",
+  "required_caveats": [
+    "Seed2026 is exploratory and motivated the confirmation; it is not an independent confirmatory seed.",
+    "The best alpha selected from the same five points is descriptive, not universally optimal.",
+    "Concurrent-node timing is ineligible for paper efficiency claims.",
+    "Formal delivery remains open until remote local manifests and smoke/hash certificates are audited."
+  ],
+  "schema_version": 1,
+  "scientific_classification": "strong_confirmatory_support",
+  "script_version": "2026-07-29.2",
+  "seed_curvature": [
+    {
+      "alpha0p50_beats_alpha0_final": true,
+      "alpha0p50_beats_alpha1_final": true,
+      "alpha0p50_beats_both_endpoints_final": true,
+      "auc_curvature_c": -0.0018266129,
+      "best_alpha_descriptive": 0.25,
+      "final_curvature_c": -0.0009,
+      "seed": 2024,
+      "spearman_alpha_vs_final_loss": 0.3,
+      "tail5_curvature_c": -0.00096
+    },
+    {
+      "alpha0p50_beats_alpha0_final": true,
+      "alpha0p50_beats_alpha1_final": true,
+      "alpha0p50_beats_both_endpoints_final": true,
+      "auc_curvature_c": -0.0025532258,
+      "best_alpha_descriptive": 0.5,
+      "final_curvature_c": -0.0017,
+      "seed": 2025,
+      "spearman_alpha_vs_final_loss": 0.1,
+      "tail5_curvature_c": -0.00162
+    },
+    {
+      "alpha0p50_beats_alpha0_final": true,
+      "alpha0p50_beats_alpha1_final": true,
+      "alpha0p50_beats_both_endpoints_final": true,
+      "auc_curvature_c": -0.0015491935,
+      "best_alpha_descriptive": 0.5,
+      "final_curvature_c": -0.0012,
+      "seed": 2026,
+      "spearman_alpha_vs_final_loss": 0.4616902584,
+      "tail5_curvature_c": -0.00109
+    }
+  ],
+  "timing_eligible": false
+}

@@ -1,0 +1,183 @@
+{
+  "batch_id": "20260722T070855+0000_capacity_exact_seed2026",
+  "capacity_trainer_sha256": "ca26fcf62b46df9aad09ea55545f23bb00f62323656e4fe3ebece6543ec100c1",
+  "completed_at": "2026-07-22T07:27:01.164106+00:00",
+  "created_at": "2026-07-22T07:08:55.288751+00:00",
+  "evidence_class": "capacity_only",
+  "exact_boundaries": {
+    "down_diag": {
+      "capacity_interval": "[37, 38)",
+      "first_oom_device_batch": 38,
+      "max_success_device_batch": 37,
+      "odd_confirmation": "completed",
+      "resolved_width": 1
+    },
+    "down_none": {
+      "capacity_interval": "[37, 38)",
+      "first_oom_device_batch": 38,
+      "max_success_device_batch": 37,
+      "odd_confirmation": "completed",
+      "resolved_width": 1
+    },
+    "muon": {
+      "capacity_interval": "[39, 40)",
+      "first_oom_device_batch": 40,
+      "max_success_device_batch": 39,
+      "odd_confirmation": "completed",
+      "resolved_width": 1
+    },
+    "newton_full": {
+      "capacity_interval": "[34, 35)",
+      "first_oom_device_batch": 35,
+      "max_success_device_batch": 34,
+      "odd_confirmation": "oom",
+      "resolved_width": 1
+    }
+  },
+  "exact_controller_sha256": "cdc241b34684e95684ae90c7a9a9bc66fabce552908457540a0035138a8ee1e2",
+  "fine_worker_sha256": "64d6061be8252b336e7a9fcd8a96b0ca80921a02f07a94454820154c8fe940d3",
+  "last_updated_at": "2026-07-22T07:27:01.140656+00:00",
+  "official_repo": "PRIVATE_PATH_REDACTED",
+  "parent_fine_manifest_sha256": "a93dc05152334ce647025363f9209d562a07065e6fcca3d6f042d3ab34a683e2",
+  "plan": {
+    "accumulation_steps": 8,
+    "cells": {
+      "down_diag": {
+        "parent_oom": 38,
+        "parent_success": 36,
+        "test_batch": 37
+      },
+      "down_none": {
+        "parent_oom": 38,
+        "parent_success": 36,
+        "test_batch": 37
+      },
+      "muon": {
+        "parent_oom": 40,
+        "parent_success": 38,
+        "test_batch": 39
+      },
+      "newton_full": {
+        "parent_oom": 36,
+        "parent_success": 34,
+        "test_batch": 35
+      }
+    },
+    "evidence_class": "capacity_only",
+    "global_batch_rule": "device_batch_size * accumulation_steps",
+    "methods": [
+      "newton_full",
+      "down_none",
+      "down_diag",
+      "muon"
+    ],
+    "parent_fine_manifest": "PRIVATE_PATH_REDACTED__5e8c02b22e3d",
+    "protocol": "microbatch_capacity_exact_odd_confirmation_v1",
+    "quality_comparable": false,
+    "seed": 2026,
+    "selection_rule": "the unique odd batch between predeclared success/OOM endpoints",
+    "sequence_length": 1024,
+    "steps_per_cell": 34,
+    "timing_eligible": false
+  },
+  "python_exe": "/usr/bin/python3.10",
+  "rows": [
+    {
+      "accumulation_steps": 8,
+      "baseline_free_bytes": 84620541952,
+      "cell_manifest": "PRIVATE_PATH_REDACTED__bd7682187ebf",
+      "completed_steps": null,
+      "device_batch_size": 35,
+      "error": "return_code=1; see PRIVATE_PATH_REDACTED",
+      "failure_class": "oom",
+      "global_batch_size": 280,
+      "gpu_total_memory_bytes": 85169143808,
+      "k_state_bytes": null,
+      "method": "newton_full",
+      "model_parameter_bytes": null,
+      "optimizer_state_bytes": null,
+      "parent_fine_manifest": "PRIVATE_PATH_REDACTED__5e8c02b22e3d",
+      "peak_allocated_bytes": null,
+      "peak_allocated_mib": null,
+      "peak_reserved_bytes": null,
+      "peak_reserved_mib": null,
+      "preconditioner_workspace_bytes": null,
+      "sequence_length": 1024,
+      "source": "capacity_exact_odd_confirmation",
+      "status": "failed"
+    },
+    {
+      "accumulation_steps": 8,
+      "baseline_free_bytes": 84620541952,
+      "cell_manifest": "PRIVATE_PATH_REDACTED__6758475e8ac8",
+      "completed_steps": 34,
+      "device_batch_size": 37,
+      "error": "",
+      "failure_class": "",
+      "global_batch_size": 296,
+      "gpu_total_memory_bytes": 85169143808,
+      "k_state_bytes": 1811939328,
+      "method": "down_none",
+      "model_parameter_bytes": 4054761472,
+      "optimizer_state_bytes": 6278709400,
+      "parent_fine_manifest": "PRIVATE_PATH_REDACTED__5e8c02b22e3d",
+      "peak_allocated_bytes": 79813336064,
+      "peak_allocated_mib": 76115.9287109375,
+      "peak_reserved_bytes": 83082870784,
+      "peak_reserved_mib": 79234.0,
+      "preconditioner_workspace_bytes": 61865984,
+      "sequence_length": 1024,
+      "source": "capacity_exact_odd_confirmation",
+      "status": "completed"
+    },
+    {
+      "accumulation_steps": 8,
+      "baseline_free_bytes": 84620541952,
+      "cell_manifest": "PRIVATE_PATH_REDACTED__4b2c4df43f2d",
+      "completed_steps": 34,
+      "device_batch_size": 37,
+      "error": "",
+      "failure_class": "",
+      "global_batch_size": 296,
+      "gpu_total_memory_bytes": 85169143808,
+      "k_state_bytes": 1812731904,
+      "method": "down_diag",
+      "model_parameter_bytes": 4054761472,
+      "optimizer_state_bytes": 6279501976,
+      "parent_fine_manifest": "PRIVATE_PATH_REDACTED__5e8c02b22e3d",
+      "peak_allocated_bytes": 79814464512,
+      "peak_allocated_mib": 76117.0048828125,
+      "peak_reserved_bytes": 83112230912,
+      "peak_reserved_mib": 79262.0,
+      "preconditioner_workspace_bytes": 61865984,
+      "sequence_length": 1024,
+      "source": "capacity_exact_odd_confirmation",
+      "status": "completed"
+    },
+    {
+      "accumulation_steps": 8,
+      "baseline_free_bytes": 84620541952,
+      "cell_manifest": "PRIVATE_PATH_REDACTED__709fd88fe5f5",
+      "completed_steps": 34,
+      "device_batch_size": 39,
+      "error": "",
+      "failure_class": "",
+      "global_batch_size": 312,
+      "gpu_total_memory_bytes": 85169143808,
+      "k_state_bytes": 0,
+      "method": "muon",
+      "model_parameter_bytes": 4054761472,
+      "optimizer_state_bytes": 4466770072,
+      "parent_fine_manifest": "PRIVATE_PATH_REDACTED__5e8c02b22e3d",
+      "peak_allocated_bytes": 80402014208,
+      "peak_allocated_mib": 76677.3359375,
+      "peak_reserved_bytes": 84381007872,
+      "peak_reserved_mib": 80472.0,
+      "preconditioner_workspace_bytes": 0,
+      "sequence_length": 1024,
+      "source": "capacity_exact_odd_confirmation",
+      "status": "completed"
+    }
+  ],
+  "status": "completed"
+}

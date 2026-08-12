@@ -1,0 +1,35 @@
+{
+  "code_directory": "scripts/40_llama_block_partition_invariance_audit",
+  "default_entrypoint": "command:20260729_llama_block_partition_invariance_audit",
+  "entrypoints": {
+    "command:20260729_llama_block_partition_invariance_audit": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/40_llama_block_partition_invariance_audit/20260729_llama_block_partition_invariance_audit.sh"
+    },
+    "script:run_llama_block_partition_audit": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/40_llama_block_partition_invariance_audit/run_llama_block_partition_audit.py"
+    }
+  },
+  "experiment_id": "40_llama_block_partition_invariance_audit",
+  "legacy_result_roots": [
+    "40_llama_block_partition_invariance_audit"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "40 Llama Block Partition Invariance Audit"
+}

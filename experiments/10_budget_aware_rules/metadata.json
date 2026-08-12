@@ -1,0 +1,19 @@
+{
+  "code_directory": "scripts/10_budget_aware_rules",
+  "entrypoints": {},
+  "experiment_id": "10_budget_aware_rules",
+  "legacy_result_roots": [
+    "10_budget_aware_rules"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": false,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "planned_not_implemented",
+  "title": "10 Budget Aware Rules"
+}

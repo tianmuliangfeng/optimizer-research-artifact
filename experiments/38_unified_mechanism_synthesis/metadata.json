@@ -1,0 +1,41 @@
+{
+  "code_directory": "scripts/38_unified_mechanism_synthesis",
+  "default_entrypoint": "command:20260729_unified_mechanism_synthesis",
+  "entrypoints": {
+    "command:20260729_unified_mechanism_synthesis": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/38_unified_mechanism_synthesis/20260729_unified_mechanism_synthesis.sh"
+    },
+    "script:analyze_unified_mechanism": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/38_unified_mechanism_synthesis/analyze_unified_mechanism.py"
+    },
+    "script:validate_unified_mechanism": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/38_unified_mechanism_synthesis/validate_unified_mechanism.py"
+    }
+  },
+  "experiment_id": "38_unified_mechanism_synthesis",
+  "legacy_result_roots": [
+    "38_unified_mechanism_synthesis"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "analysis_only",
+  "title": "38 Unified Mechanism Synthesis"
+}

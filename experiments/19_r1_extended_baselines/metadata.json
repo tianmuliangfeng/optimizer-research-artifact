@@ -1,0 +1,40 @@
+{
+  "code_directory": "scripts/19_r1_extended_baselines",
+  "default_entrypoint": "script:run_r1_extended_baselines",
+  "entrypoints": {
+    "script:run_r1_extended_baselines": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/19_r1_extended_baselines/run_r1_extended_baselines.py",
+      "required_user_arguments": [
+        {
+          "one_of": [
+            "--preflight",
+            "--numerical-smoke",
+            "--formal-smoke",
+            "--pilot",
+            "--formal"
+          ]
+        }
+      ]
+    }
+  },
+  "experiment_id": "19_r1_extended_baselines",
+  "legacy_result_roots": [
+    "19_r1_extended_baselines"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "19 R1 Extended Baselines"
+}

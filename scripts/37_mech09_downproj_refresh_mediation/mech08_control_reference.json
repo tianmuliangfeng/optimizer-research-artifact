@@ -1,0 +1,1003 @@
+{
+  "algorithms": [
+    "muon",
+    "original_newton_muon",
+    "selective_diag",
+    "selective_none"
+  ],
+  "cells": [
+    "early_muon",
+    "early_newton_full",
+    "late_muon",
+    "late_newton_full"
+  ],
+  "experiment": "MECH-09",
+  "file_count": 162,
+  "files": [
+    {
+      "bytes": 1329,
+      "relative_path": "analysis/mech08_analysis_manifest.json",
+      "role": "analysis_manifest",
+      "sha256": "e4fd253adbd6052448801698e5b8d46c0cb4cb7839197564c25805c2fc6625ac"
+    },
+    {
+      "bytes": 107974,
+      "relative_path": "analysis/paired_contrasts.csv",
+      "role": "analysis_paired_contrasts",
+      "sha256": "96f497d6e62df8d984cab8c9eb5d6e8cee54b84786ba3bba748f334fe97ea4f1"
+    },
+    {
+      "bytes": 733,
+      "relative_path": "checkpoint_hashes/early_muon.json",
+      "role": "checkpoint_hash_certificate",
+      "sha256": "a667e30a80005831af88e9c541da562949dbfb8e422fbab79d0c038475ddd7de"
+    },
+    {
+      "bytes": 755,
+      "relative_path": "checkpoint_hashes/early_newton_full.json",
+      "role": "checkpoint_hash_certificate",
+      "sha256": "8a472f89bece3dd3c828ca67346ae9069cd767a86f83edfdb288d69904d7bc4c"
+    },
+    {
+      "bytes": 745,
+      "relative_path": "checkpoint_hashes/late_muon.json",
+      "role": "checkpoint_hash_certificate",
+      "sha256": "0d5c23b4a5ecc157098f5ea5a070b47e01293aec97f5a864afbdb7fd41a6b063"
+    },
+    {
+      "bytes": 768,
+      "relative_path": "checkpoint_hashes/late_newton_full.json",
+      "role": "checkpoint_hash_certificate",
+      "sha256": "c63fdf60f51109440b870bb8e521fa4ad869d43e219f789bf9475d12dcb19975"
+    },
+    {
+      "bytes": 1406,
+      "relative_path": "formal/early_muon/muon/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "c31affe4283cb5c5a30b3bbfe474f4b63b2d4fbe8ab73cf38dcc451d34f8dba9"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/muon/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1206,
+      "relative_path": "formal/early_muon/muon/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "ee3dd007cc7ae6106fd6e2ea970c78bfcde156153c015a7dcc6f905f656ecfef"
+    },
+    {
+      "bytes": 1408,
+      "relative_path": "formal/early_muon/muon/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "7e1147d47124cf9e967772e1ee9fc5d19174ab1ce0bc0211deb7190401e5b14f"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/muon/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1207,
+      "relative_path": "formal/early_muon/muon/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "5c5e8ee531af12550448a1604669472e89671e9742e1dd0f8541b4864d6cbcb1"
+    },
+    {
+      "bytes": 1408,
+      "relative_path": "formal/early_muon/muon/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "52a198b814115ec19957e62405a9084bc43306214209a76d20f91b5bac675387"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/muon/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1203,
+      "relative_path": "formal/early_muon/muon/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "eac617a8904930ad706fd37e744b3eed5d36d38817e4435a42061fe73d985342"
+    },
+    {
+      "bytes": 1429,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "59b694dede42e2371ac08acb4bb41dd89d8087e932c54efc3b71d472eeaab5fd"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1417,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "2b5d476c019fedf437eea826d1f071e8f8a0611e1dc8fd4c923c036265a1bef8"
+    },
+    {
+      "bytes": 16933,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_0/training.csv",
+      "role": "production_training",
+      "sha256": "30f887e680fff94243dd04f560dfd5a9ec177fb9953d4689e9013f90e210f73f"
+    },
+    {
+      "bytes": 1431,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "f725240f491af824b225b5def08cf57f60d3845f0482eaefd0619b33498f4448"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1407,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "25208d2c515d7eda758c8299ead225cd20caa0bb2fa8779dd4fe4bbbd386e9a7"
+    },
+    {
+      "bytes": 16922,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_1/training.csv",
+      "role": "production_training",
+      "sha256": "114b743fa86a949b69588eec7f210bcdb01bac73872c1d357ab3ff073546078a"
+    },
+    {
+      "bytes": 1431,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "e2ab31dcb5b565cc5048155450db8005b69275cfbc625dcaebfbbf631727c0f7"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1414,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "acbff0fb0ecc59ae01b3354cf8b2df6fa165f64f098602843049e66351526c70"
+    },
+    {
+      "bytes": 16931,
+      "relative_path": "formal/early_muon/original_newton_muon/replica_2/training.csv",
+      "role": "production_training",
+      "sha256": "a37e3cbff225ec558b96e2441f3e43821e83ef9187ce0ae6591d0393acafc74c"
+    },
+    {
+      "bytes": 1421,
+      "relative_path": "formal/early_muon/selective_diag/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "9439a337fe3e09bbd556d39c04c2b4901155b47a569f150cdcfd9b595ba92cbf"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/selective_diag/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1340,
+      "relative_path": "formal/early_muon/selective_diag/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "82964973224ce640efc0f326630237eff4836f62fef8885a87f30c8ca2d35fc4"
+    },
+    {
+      "bytes": 1423,
+      "relative_path": "formal/early_muon/selective_diag/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "32fc36b99732f3c9f5e3761287a516eb2115b86e29139f8c044365404745c4fc"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/selective_diag/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1344,
+      "relative_path": "formal/early_muon/selective_diag/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "c9fe90eef468da2d5493f5f8c2465eb7e5ee25f26b0c65256cfa3f5c978521cb"
+    },
+    {
+      "bytes": 1423,
+      "relative_path": "formal/early_muon/selective_diag/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "d92eb37f4146a423d0cc490583ce193c2b0161f7fd9e6deec3c2d687c2feea8a"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/selective_diag/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1341,
+      "relative_path": "formal/early_muon/selective_diag/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "316e9f3ad4b5a6b01e6f1065653268cc1a445ee64fa8019209fc63c00c7f900c"
+    },
+    {
+      "bytes": 1421,
+      "relative_path": "formal/early_muon/selective_none/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "c4467a545bc48854c19880d4b6578d10f4471dae2a08ede4ce55b7ece9e1ebe8"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/selective_none/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1341,
+      "relative_path": "formal/early_muon/selective_none/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "d73bc16ab659f39dfac83fdd87d4ce4cd4a42330b2cae739e8e48b5f1b486308"
+    },
+    {
+      "bytes": 1423,
+      "relative_path": "formal/early_muon/selective_none/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "214d33e065e2070f0f57c76a2751dcc748ea86cb6c548961a70a61dddc5baa26"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/selective_none/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1351,
+      "relative_path": "formal/early_muon/selective_none/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "d8a7dd5a358ffb76b19e45a2f5ff0d8a7f4f1c163f0f7e055421f430ae7edb40"
+    },
+    {
+      "bytes": 1423,
+      "relative_path": "formal/early_muon/selective_none/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "6e06caa77cc01ac954b0fdda2633b951d3a263042eec50f2492a84fdc6c4c5a6"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_muon/selective_none/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1346,
+      "relative_path": "formal/early_muon/selective_none/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "c58da49fac26b7c6a64e745344adb7a37f1c00d408bbbf3615e5c9e82020100e"
+    },
+    {
+      "bytes": 1420,
+      "relative_path": "formal/early_newton_full/muon/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "c1095c8d7395111349363f5bcd296a783f407f54ad35ec4b7982cc2f1e7c49bf"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/muon/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1325,
+      "relative_path": "formal/early_newton_full/muon/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "b22aea1b0134b4511d93a0d5ba947dd3dc22414810ae72381c69cf19a8eefa21"
+    },
+    {
+      "bytes": 1422,
+      "relative_path": "formal/early_newton_full/muon/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "6ebdea67cbbb154cf624a8daaa3d9b2ce95916490c506947a882e6ece3789063"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/muon/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1320,
+      "relative_path": "formal/early_newton_full/muon/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "23d8d394d65f0b634913f3bddda69cb33ae8c20af552aace88b117b948e0f303"
+    },
+    {
+      "bytes": 1422,
+      "relative_path": "formal/early_newton_full/muon/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "ee8954ad9a042687b58b0e86ce18f5bce4183b272b69648f7126c6e4ab512123"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/muon/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1323,
+      "relative_path": "formal/early_newton_full/muon/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "328b0548344e423d2daec00656d49da576dc4f220ce89c7f4b5d420cf7ff5df9"
+    },
+    {
+      "bytes": 1443,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "5bc8a413c685e036147e52d9902252f306218d5afdfb312d0dedf6ace50d7634"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1531,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "9fc94daa146f4fbc6a88855e9174d428e3671b29649152ff3d7ceecdb75aa5f3"
+    },
+    {
+      "bytes": 18724,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_0/training.csv",
+      "role": "production_training",
+      "sha256": "47e0a50abdeaeba7e980ed7555a1e017252418d5c144fee9569a9b4111e30d93"
+    },
+    {
+      "bytes": 1445,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "48912621704e73b286d9b60965f3007d3a1639749787b7bd0effcb4faf978140"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1531,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "de7a10746926cb6137ad4bea78920ed80f3a2003d6da9767ff2e120283a34fca"
+    },
+    {
+      "bytes": 18707,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_1/training.csv",
+      "role": "production_training",
+      "sha256": "93b81760e046bd1b5a183d3c3c20d8f28b65bc2902c774769b922a21be69f857"
+    },
+    {
+      "bytes": 1445,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "c533f080ee6fdc9c1aa3a2a5341ecc13aac56ec52bca655fba0afa1806068139"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1527,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "506e5db1975953841761d1fdf6141382b163ce093721361ddfa9dd83059e838f"
+    },
+    {
+      "bytes": 18723,
+      "relative_path": "formal/early_newton_full/original_newton_muon/replica_2/training.csv",
+      "role": "production_training",
+      "sha256": "681b186ca880befe824df4a75ad322c28ad2b9b80e19af14de906f7cb549e8a7"
+    },
+    {
+      "bytes": 1435,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "13d855ba6a33884fea93ec696f5c98c65e46a1ee9a05dc287d5548128525ea36"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1469,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "27ee1e2ab39f2aeb67b195428cbd927d03655d5a25a8f18e8998c98868302cca"
+    },
+    {
+      "bytes": 1437,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "3259557af44acb78533eb7774a3d13b2f8e7c71d83405076879fd3977281ff12"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1461,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "97f7edb23395cd254fea3181193c07922c6f8d26af2be784929453df4d6e2f6b"
+    },
+    {
+      "bytes": 1437,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "e8304f697227d774f54126c45184e954a17074e7f1dc0006ed8463f7768358c6"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1463,
+      "relative_path": "formal/early_newton_full/selective_diag/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "762629f5f5f25b8abf8494a536858a170ba5f8dfc6f1f7ba65a64c525d9b4990"
+    },
+    {
+      "bytes": 1435,
+      "relative_path": "formal/early_newton_full/selective_none/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "f3fb50ead1883346be731bf7e7b99c720b0d74770597852ce3b21dbed99ffc85"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/selective_none/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1464,
+      "relative_path": "formal/early_newton_full/selective_none/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "f51607df5bdf5eac3f05a70add15bee06e0a8e90cd9fdc65fd8e7d262edb4ad0"
+    },
+    {
+      "bytes": 1437,
+      "relative_path": "formal/early_newton_full/selective_none/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "158315fd97a70df34dfb5d7c46c0fa4690f3ace669919b1d3d364773e71244c3"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/selective_none/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1454,
+      "relative_path": "formal/early_newton_full/selective_none/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "fadc0b085b468c66b6d372335476f9ff283f660c656db0052a2641c1587e726a"
+    },
+    {
+      "bytes": 1437,
+      "relative_path": "formal/early_newton_full/selective_none/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "dd0390c1a0fa6c6080bdcf859e5798012236963a8744adcaf70c74375a8da30c"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/early_newton_full/selective_none/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1466,
+      "relative_path": "formal/early_newton_full/selective_none/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "2d9573134466e1add6cb8590a16aa21fedafb7e5afa88567303836c23e9f6ce2"
+    },
+    {
+      "bytes": 1404,
+      "relative_path": "formal/late_muon/muon/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "00a1515c7efb1f6731203d67ea2581ba597e79b8445d96b207c2d7949da671cd"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/muon/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1166,
+      "relative_path": "formal/late_muon/muon/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "f4f2b27285c0b5388f839731b88072bd4701baefa1e5f5b3df5044ed778c49af"
+    },
+    {
+      "bytes": 1406,
+      "relative_path": "formal/late_muon/muon/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "6bcdd155f8df52a0d1417dcc548e9696d52988ebbd078a622159b50db42f2638"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/muon/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1164,
+      "relative_path": "formal/late_muon/muon/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "348ccab404607bba236433d06b61940506f8cb1a0ae1bd3c2c4a9869758b3e49"
+    },
+    {
+      "bytes": 1406,
+      "relative_path": "formal/late_muon/muon/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "299a6ed13d3b27c8a91e289978b9ffefc442bee0943f4b9feb7fdeb57f44afd9"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/muon/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1166,
+      "relative_path": "formal/late_muon/muon/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "351417b0d9812043d2a2d359d54d9fe448a83a973ec33ad2bcbccacac2b16d06"
+    },
+    {
+      "bytes": 1427,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "de079603ce05cc978c41d16ad9aeb2ccd22b8a5d6840414d4d4a9b9e8e351881"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1361,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "5980adc08290bf6de5cbc7df70a54082ffb0277087f9ac7cc0c8331f5e6baa58"
+    },
+    {
+      "bytes": 16671,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_0/training.csv",
+      "role": "production_training",
+      "sha256": "a31d4535b9029a5dfc3fd9d758963e9c9f02d9ea01c0e01270106f854122942e"
+    },
+    {
+      "bytes": 1429,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "946fa4c6ccfb7494b104edec402ce4701798b6d5e0d2855124dc382002acbe22"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1367,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "7459a12b8a4845cec5707b85de8a348e12fc9869d42f5118fe2e81dc58411c23"
+    },
+    {
+      "bytes": 16684,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_1/training.csv",
+      "role": "production_training",
+      "sha256": "144e38225ca09cd1b5e23f98eba1e86b1305d62735af354d519afe3a56374119"
+    },
+    {
+      "bytes": 1429,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "485eb0e6cb72522255804e69d88da483f343cf7c089a2e3f0261583939084858"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1373,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "1495c93adf6b7fa3f60e9d332a0c68b408d5124557618df458aa88c5193fe18a"
+    },
+    {
+      "bytes": 16674,
+      "relative_path": "formal/late_muon/original_newton_muon/replica_2/training.csv",
+      "role": "production_training",
+      "sha256": "b728198a79df5d8026b560ee5de6333921b9f19434b6f0c00a6a2a6ba30d06c1"
+    },
+    {
+      "bytes": 1419,
+      "relative_path": "formal/late_muon/selective_diag/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "6531b91e3ed6cfa6008216403e02df34768bce099f32f596349275b76fea1c1f"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/selective_diag/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1296,
+      "relative_path": "formal/late_muon/selective_diag/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "92ddb6c40539be9539e7d55b9aa8d4534c6a778fa0eafa44a4cac218dc51863d"
+    },
+    {
+      "bytes": 1421,
+      "relative_path": "formal/late_muon/selective_diag/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "8fe9ad355ceb099030e7d4daff627d01646d54fa403b2ae772c94d1202ea811c"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/selective_diag/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1302,
+      "relative_path": "formal/late_muon/selective_diag/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "06a328b3ced13158a16253e3b36e8668294256150d0c032448afa8180955fc93"
+    },
+    {
+      "bytes": 1421,
+      "relative_path": "formal/late_muon/selective_diag/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "d7a07072d64fcdc32f9070c1413cfbd3ae40398e7d72e7604fdabd87976aefe4"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/selective_diag/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1302,
+      "relative_path": "formal/late_muon/selective_diag/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "db670dd161fab9140c1e2a89f2985c5abc076fbcadf11addbf9db320906a6ba7"
+    },
+    {
+      "bytes": 1419,
+      "relative_path": "formal/late_muon/selective_none/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "49bc0ee90aa99658a252047ce16d085d43289d3c8fba3189dc27de071effee57"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/selective_none/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1300,
+      "relative_path": "formal/late_muon/selective_none/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "e450a98e728c45c797cc6c7c6267efe465be133c74ba28d5b832ef93dd7d03a6"
+    },
+    {
+      "bytes": 1421,
+      "relative_path": "formal/late_muon/selective_none/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "76cb28c489fd9e5afda4693de8526d841f83ce0f9628031ff3623575f0950311"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/selective_none/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1299,
+      "relative_path": "formal/late_muon/selective_none/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "0e4eb5f19960c2f388c2c1266e8b5cb41f5135cd4fc4c339bcf9cdc1f0c95927"
+    },
+    {
+      "bytes": 1421,
+      "relative_path": "formal/late_muon/selective_none/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "beb22bdf7a5bbb7510cb341119afd663fe007fcfc6106951a2ca436b880c6963"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_muon/selective_none/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1300,
+      "relative_path": "formal/late_muon/selective_none/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "47ee4f453aee519f2aacdef3b82280b4e035b32b8981e49676581a6f657ff587"
+    },
+    {
+      "bytes": 1418,
+      "relative_path": "formal/late_newton_full/muon/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "1b360277e90037c9ece671add2c063f6ecad06fa5f77035344cec4c50a66f913"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/muon/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1294,
+      "relative_path": "formal/late_newton_full/muon/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "25415a55ce0a082ed0796c8798bdb2149c56198e5973f93b4ccc73c0ac68a3cd"
+    },
+    {
+      "bytes": 1420,
+      "relative_path": "formal/late_newton_full/muon/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "b662c298f3574c381df4430ff3fe416b8f900a9ca1ffe909386c2fa37b05767a"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/muon/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1285,
+      "relative_path": "formal/late_newton_full/muon/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "a4800a5a2c1e5fd26997566d671f4db301cd95500c8770d1fe8eed2d0d690c2f"
+    },
+    {
+      "bytes": 1420,
+      "relative_path": "formal/late_newton_full/muon/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "62fe52b79cb357fe93c31b35c91f4a22bf8f4c2f4ec5a0665feb7b43ed4ede7e"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/muon/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1292,
+      "relative_path": "formal/late_newton_full/muon/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "f94d960cd1e59b187ace1d9ec809a4f332705f75d301f77898bd5a44216af6af"
+    },
+    {
+      "bytes": 1441,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "00ed4e65451b90e2961a098836f39d9fa66e17dc72472c974f5a9d54675c5cbc"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1497,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "c65745791c37ff0304b8c47107ab57ac08c8e1e755738c5441c1a4e692bab3dc"
+    },
+    {
+      "bytes": 18475,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_0/training.csv",
+      "role": "production_training",
+      "sha256": "aa2323660d15ceb6826273bf2cb33dcf0b0d3cc25b9eb02ba7dadc75dba01f4a"
+    },
+    {
+      "bytes": 1443,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "d57e4c0772ca7da1e4ea267e467294bd89fb827c5ce93c29751448e7a51c22b1"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1492,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "91445e27bf68ba09f925d326409649502572b3ae11bbb28b9892281a2a178049"
+    },
+    {
+      "bytes": 18461,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_1/training.csv",
+      "role": "production_training",
+      "sha256": "a5197cc812444367a51dc2e094744b4b297bdb777cdd00327301aaffa675f0d5"
+    },
+    {
+      "bytes": 1443,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "4d86bdf9ef3988618d6ac99af42324890f0e95636b29bc2596a9a27cd3260037"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1499,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "9dfa58cd871526b7e703fe91629b580f641f37239f999866dbd55a3d332653d4"
+    },
+    {
+      "bytes": 18464,
+      "relative_path": "formal/late_newton_full/original_newton_muon/replica_2/training.csv",
+      "role": "production_training",
+      "sha256": "e18cd98ac2ace896ee7757f83c0136fa0a7100148fdaaefa7889e0720585a8ea"
+    },
+    {
+      "bytes": 1433,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "2f25e910f60c0afec84713efdb17862462eb113d5490b5f7de0786025ac413ca"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1419,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "3e988833b83c3ea9cd99819af3df02db5276bbb252425c6df42a4971c9427a66"
+    },
+    {
+      "bytes": 1435,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "102d4b5b250d6d9e3d96de8a4317152eccb12a8a0aad8241c6624d9d1c371989"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1425,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "74846b7c8dd53ca95903ef8be4edb3083606dc9630b0b34b2151b60378170e83"
+    },
+    {
+      "bytes": 1435,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "495e083192647c1ad793c0601a6a4686349791d697fe52dd559a53b3b51ec326"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1423,
+      "relative_path": "formal/late_newton_full/selective_diag/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "9e292171bc395386252064aa944eb77a34a3ee57fa93ec5fc75badaf2841ffc4"
+    },
+    {
+      "bytes": 1433,
+      "relative_path": "formal/late_newton_full/selective_none/replica_0/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "7ff366214980a33a34de14671284d3fc4f9be6a959e50a7f70ffc27ae93d4ec2"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/selective_none/replica_0/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1428,
+      "relative_path": "formal/late_newton_full/selective_none/replica_0/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "a9ab02da0d7dd20bf5713f7f2a5081d947c177813456513445dba0231c5d30d1"
+    },
+    {
+      "bytes": 1435,
+      "relative_path": "formal/late_newton_full/selective_none/replica_1/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "286b18ee409deb7df567b62d18f82c97914b4b2fa8718aa6812bc6d01d61f148"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/selective_none/replica_1/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1430,
+      "relative_path": "formal/late_newton_full/selective_none/replica_1/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "5f002a9b0b63651615bc0fd92222ad356fb8737859b198b6558c35e4800f21b2"
+    },
+    {
+      "bytes": 1435,
+      "relative_path": "formal/late_newton_full/selective_none/replica_2/mech08_manifest.json",
+      "role": "worker_manifest",
+      "sha256": "fa1b98b43c5d0cbf92e750135ea01d1eeda20f8344703feefa8e652dbd023cd0"
+    },
+    {
+      "bytes": 636,
+      "relative_path": "formal/late_newton_full/selective_none/replica_2/checks.json",
+      "role": "worker_checks",
+      "sha256": "5c4ba38e8af11b1e19d0d684f2fb80d2b0101952f96b8ffb84269184ac220de7"
+    },
+    {
+      "bytes": 1421,
+      "relative_path": "formal/late_newton_full/selective_none/replica_2/evaluation.csv",
+      "role": "evaluation",
+      "sha256": "30cd5b616f2bb98753ad2bfe7ecfaccec5bfa1351ef1319e17b8aca6d76579d0"
+    }
+  ],
+  "mech08_analysis_version": "2026-07-27.1",
+  "mech08_contract_sha256": "6055db20194b43e94acc0051b4567473493c27c2c313713cf7bce695bddd7201",
+  "passed": true,
+  "replicas": [
+    0,
+    1,
+    2
+  ],
+  "schema_version": 1,
+  "script_version": "2026-07-28.1",
+  "source_experiment": "MECH-08",
+  "source_run_id": "20260727T102506+0000",
+  "source_run_path": "${SNM_RESULTS_ROOT}/36_mech08_short_horizon_rollout/20260727T102506+0000"
+}

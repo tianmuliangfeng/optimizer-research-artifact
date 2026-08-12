@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-28.1",
+  "experiment": "MECH-09",
+  "family": "llama1b",
+  "title": "Down-projection full-K refresh-timing causal mediation",
+  "scientific_question": "Does the production down-projection full-K refresh causally produce the post-refresh short-horizon degradation observed for original Newton-Muon in MECH-08?",
+  "architecture": {
+    "vocab_size": 50257,
+    "n_layer": 18,
+    "n_embd": 2048,
+    "target_input_width": 5504,
+    "sequence_length": 1024
+  },
+  "source_constraints": {
+    "base_source_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "profile_script_sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+    "triton_sha256": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f"
+  },
+  "mech08_control_reference": {
+    "path_basename": "mech08_control_reference.json",
+    "sha256": "d2d34f5b6fac148e6bc35fbf01df4ec2b7093cd696d25d66df63473a420e427f",
+    "public_sha256": "63464873e00c55c28b120c930ad207aa26fc75646678f9262e03904480c263ac",
+    "public_change_scope": "source_run_path only",
+    "source_run_id": "20260727T102506+0000",
+    "source_run_path": "${SNM_RESULTS_ROOT}/36_mech08_short_horizon_rollout/20260727T102506+0000",
+    "expected_file_count": 162,
+    "expected_mech08_contract_sha256": "6055db20194b43e94acc0051b4567473493c27c2c313713cf7bce695bddd7201",
+    "reused_control_algorithms": [
+      "muon",
+      "original_newton_muon",
+      "selective_diag",
+      "selective_none"
+    ],
+    "reused_control_workers": 48
+  },
+  "checkpoints": [
+    {
+      "cell": "early_muon",
+      "stage": "early",
+      "method": "muon",
+      "step": 1000,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/medium/20260722T034513+0000_formal_seed2026/04_muon/checkpoint_latest.pt",
+      "expected_sha256": "7561ee5571db825190fa3cc34af8bd9d72f213a69c925322cea6328b688a58d1",
+      "expected_bytes": 8522343395
+    },
+    {
+      "cell": "early_newton_full",
+      "stage": "early",
+      "method": "newton_full",
+      "step": 1000,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/medium/20260722T034513+0000_formal_seed2026/03_newton_full/checkpoint_latest.pt",
+      "expected_sha256": "8d532806cc4a0613b3ad6c5e74096a70be352af941b9c72e6c37997cf1beecd7",
+      "expected_bytes": 17783856619
+    },
+    {
+      "cell": "late_muon",
+      "stage": "late",
+      "method": "muon",
+      "step": 6200,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/formal/gpu1_full_muon/20260723T025322+0000_formal_seed2026/02_muon/checkpoint_latest.pt",
+      "expected_sha256": "7d48b9846aefe8e03e04305da0bd10e8fc3b889643328e585e70a484e1ad78ec",
+      "expected_bytes": 8522343395
+    },
+    {
+      "cell": "late_newton_full",
+      "stage": "late",
+      "method": "newton_full",
+      "step": 6200,
+      "path": "${SNM_RESULTS_ROOT}/20_llama_swiglu_1b/formal/gpu1_full_muon/20260723T025322+0000_formal_seed2026/01_newton_full/checkpoint_latest.pt",
+      "expected_sha256": "83c9bc4316996deb67ae92b9e2c1c60521f9ed5c56f9690d3e09de399915e7d5",
+      "expected_bytes": 17783856619
+    }
+  ],
+  "restart_intervention": {
+    "source_method": "newton_full",
+    "model_parameters": "copied exactly from the origin checkpoint",
+    "backup_adamw_state": "loaded exactly from the origin checkpoint",
+    "matrix_momentum": "copied exactly by matrix-parameter order from the origin checkpoint",
+    "origin_preconditioner_state": "never transferred",
+    "candidate_preconditioner_state": "freshly initialized and built from the same frozen validation split used by MECH-08 before optimizer step 1",
+    "learning_rate_schedule": "constant nominal production peak learning rates for the full rollout",
+    "backup_lr": 0.0036,
+    "matrix_lr": 0.01,
+    "matrix_momentum": 0.95,
+    "ns_steps": 5,
+    "newton_input_beta": 0.95,
+    "newton_input_ridge": 0.2,
+    "production_refresh_steps": 32,
+    "newton_init_scale": 0.001,
+    "weight_decay": 0.0
+  },
+  "interventions": {
+    "delayed_down_refresh": {
+      "source_method": "newton_full",
+      "target_group_suffix": ".down_input",
+      "formal_down_refresh_completed_steps": [
+        64,
+        96,
+        128
+      ],
+      "smoke_down_refresh_completed_steps": [
+        4
+      ],
+      "skipped_statistics_policy": "zero accumulated down-projection activation statistics without changing down-projection covariance or inverse state",
+      "all_non_target_groups": "retain the tier production refresh schedule"
+    },
+    "frozen_down_refresh": {
+      "source_method": "newton_full",
+      "target_group_suffix": ".down_input",
+      "formal_down_refresh_completed_steps": [],
+      "smoke_down_refresh_completed_steps": [],
+      "skipped_statistics_policy": "zero accumulated down-projection activation statistics without changing down-projection covariance or inverse state",
+      "all_non_target_groups": "retain the tier production refresh schedule"
+    }
+  },
+  "smoke": {
+    "origins": [
+      "early_muon"
+    ],
+    "interventions": [
+      "delayed_down_refresh",
+      "frozen_down_refresh"
+    ],
+    "data_replicas": [
+      0
+    ],
+    "replica_optimizer_step_offsets": [
+      0
+    ],
+    "rollout_steps": 4,
+    "evaluation_steps": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "other_group_refresh_interval": 2,
+    "expected_other_group_refresh_completed_steps": [
+      2,
+      4
+    ],
+    "global_batch_size": 8,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "eval_device_batch_size": 1,
+    "eval_sequence_length": 128,
+    "eval_batches": 1,
+    "eval_token_offsets": [
+      1048576
+    ],
+    "build_device_batch_size": 1,
+    "build_sequence_length": 128,
+    "build_batches": 1,
+    "build_token_offsets": [
+      0
+    ]
+  },
+  "formal": {
+    "origins": [
+      "early_muon",
+      "early_newton_full",
+      "late_muon",
+      "late_newton_full"
+    ],
+    "interventions": [
+      "delayed_down_refresh",
+      "frozen_down_refresh"
+    ],
+    "data_replicas": [
+      0,
+      1,
+      2
+    ],
+    "replica_optimizer_step_offsets": [
+      0,
+      256,
+      512
+    ],
+    "rollout_steps": 128,
+    "evaluation_steps": [
+      0,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      112,
+      128
+    ],
+    "other_group_refresh_interval": 32,
+    "expected_other_group_refresh_completed_steps": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "global_batch_size": 512,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "eval_device_batch_size": 8,
+    "eval_sequence_length": 1024,
+    "eval_batches": 16,
+    "eval_token_offsets": [
+      1048576,
+      3048576,
+      5048576
+    ],
+    "build_device_batch_size": 1,
+    "build_sequence_length": 128,
+    "build_batches": 4,
+    "build_token_offsets": [
+      0,
+      2000000,
+      4000000
+    ]
+  },
+  "comparison_contract": {
+    "primary": [
+      {
+        "name": "delayed_down_refresh_vs_production",
+        "left": "delayed_down_refresh",
+        "right": "original_newton_muon"
+      },
+      {
+        "name": "frozen_down_refresh_vs_production",
+        "left": "frozen_down_refresh",
+        "right": "original_newton_muon"
+      },
+      {
+        "name": "delayed_down_refresh_vs_frozen_down_refresh",
+        "left": "delayed_down_refresh",
+        "right": "frozen_down_refresh"
+      }
+    ],
+    "context_only": [
+      "selective_diag_vs_muon",
+      "selective_none_vs_muon",
+      "selective_diag_vs_original_newton_muon",
+      "selective_none_vs_original_newton_muon",
+      "original_newton_muon_vs_muon"
+    ],
+    "excluded_from_primary": [
+      "selective_diag_vs_selective_none"
+    ],
+    "paired_unit": "checkpoint origin x data-order replica",
+    "negative_delta_means": "left intervention has lower held-out loss and is better"
+  },
+  "analysis_contract": {
+    "integrity_pass_is_not_hypothesis_success": true,
+    "minimum_complete_formal_jobs": 24,
+    "reused_mech08_control_jobs": 48,
+    "pre_refresh_equivalence_step": 16,
+    "pre_refresh_max_abs_normalized_loss_delta": 0.000002,
+    "first_production_refresh_completed_step": 32,
+    "first_post_production_refresh_evaluation_step": 48,
+    "first_delayed_refresh_completed_step": 64,
+    "first_post_delayed_refresh_evaluation_step": 80,
+    "supermajority_paired_units": 9,
+    "supermajority_origins": 3,
+    "full_support_rules": [
+      "both interventions match the production control at step 16 within the frozen tolerance",
+      "delayed and frozen interventions each beat production at step 48 in at least 9 of 12 paired units and 3 of 4 origin means",
+      "delayed and frozen interventions match each other at step 48 within the frozen tolerance",
+      "after the delayed arm refreshes at step 64, delayed is worse than frozen at step 80 in at least 9 of 12 paired units and 3 of 4 origin means"
+    ],
+    "partial_support_rule": "pre-refresh equivalence passes and at least two but not all three directional mediation predictions pass",
+    "not_supported_rule": "pre-refresh equivalence passes and fewer than two directional mediation predictions pass",
+    "invalid_rule": "execution integrity or pre-refresh equivalence fails",
+    "primary_outputs": [
+      "paired normalized-loss trajectories for the three primary contrasts",
+      "step-48 protection from skipping the production down-projection refresh",
+      "step-80 degradation after the delayed down-projection refresh",
+      "descriptive paired-unit and checkpoint-origin sign counts"
+    ]
+  },
+  "stopping_rule": {
+    "maximum_new_formal_jobs": 24,
+    "no_additional_interventions": true,
+    "no_hyperparameter_tuning": true,
+    "no_origin_or_replica_selection": true,
+    "do_not_rerun_for_unfavorable_scientific_outcome": true,
+    "engineering_failure_may_resume_the_same_frozen_contract": true
+  },
+  "scope_boundary": {
+    "authorized": [
+      "causal manipulation of down-projection full-K refresh timing only",
+      "reuse of hash-frozen MECH-08 production, Muon, Selective-diag, and Selective-none controls",
+      "held-out evaluation on the frozen MECH-08 validation windows"
+    ],
+    "not_authorized": [
+      "changing learning rates, ridge, beta, momentum, data order, or checkpoint selection",
+      "changing refresh timing for attention, output, or gate/up preconditioner groups",
+      "treating diag-versus-none as a primary comparison",
+      "using worker timing or CUDA allocation as a paper efficiency benchmark",
+      "adding rescue interventions after observing MECH-09 outcomes"
+    ],
+    "efficiency_benchmark_excluded": true,
+    "formal_throughput_requires_separate_controlled_benchmark": true,
+    "existing_timing_fields_are_descriptive_only": true
+  }
+}

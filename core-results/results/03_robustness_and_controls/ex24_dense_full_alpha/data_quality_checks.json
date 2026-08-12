@@ -1,0 +1,92 @@
+[
+  {
+    "check": "expected_metric_exports",
+    "evidence": "observed=['lr/adamw', 'lr/matrix', 'memory/k_state_mib', 'memory/optimizer_state_mib', 'memory/peak_allocated_mib', 'performance/step_avg_ms', 'time/train_s', 'train/loss_step', 'val/loss']",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "expected_run_count",
+    "evidence": "observed=10 expected=10",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "run_identity_consistent_across_metrics",
+    "evidence": "metrics=9 runs_per_metric=10",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "complete_seed_method_grid",
+    "evidence": "observed=[(2024, 'fullalpha0'), (2024, 'fullalpha0p25'), (2024, 'fullalpha0p50'), (2024, 'fullalpha0p75'), (2024, 'fullalpha1'), (2025, 'fullalpha0'), (2025, 'fullalpha0p25'), (2025, 'fullalpha0p50'), (2025, 'fullalpha0p75'), (2025, 'fullalpha1')]",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "exact_step_grids",
+    "evidence": "failed=none",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "all_values_finite",
+    "evidence": "failed=none",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "wandb_min_max_bands_equal_base",
+    "evidence": "failed_count=0",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "one_run_stamp_per_seed",
+    "evidence": "{\"2024\": [\"20260727T110129+0000\"], \"2025\": [\"20260728T040112+0000\"]}",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "shared_initial_validation_within_seed",
+    "evidence": "{\"2024\": [10.9462], \"2025\": [10.9869]}",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "learning_rate_curves_identical_within_seed",
+    "evidence": "failed=none",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "dense_full_memory_accounting",
+    "evidence": "expected={'memory/k_state_mib': 1026.0, 'memory/optimizer_state_mib': 1644.4746131896973, 'memory/peak_allocated_mib': 40788.0} failures=none",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "canonical_three_seed_grid",
+    "evidence": "rows=15 seeds=[np.int64(2024), np.int64(2025), np.int64(2026)]",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "seed2026_previous_wandb_audit_usable",
+    "evidence": "statuses=['FAIL_BY_DESIGN', 'NOT_AUDITED', 'PASS', 'PROVISIONAL_PASS']",
+    "passed": true,
+    "severity": "required"
+  },
+  {
+    "check": "frozen_primary_confirmation",
+    "evidence": "alpha=0.5 beats alpha=0 and alpha=1 at step6200 in both new seeds",
+    "passed": true,
+    "severity": "scientific_gate"
+  },
+  {
+    "check": "dense_alpha0_matches_efficient_diag_gate",
+    "evidence": "absolute final and tail5 loss deltas <=0.001 in all three seeds",
+    "passed": true,
+    "severity": "scientific_gate"
+  }
+]

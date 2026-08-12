@@ -1,0 +1,35 @@
+{
+  "code_directory": "scripts/42_llama1b_isolated_efficiency",
+  "default_entrypoint": "command:20260729_llama1b_isolated_efficiency",
+  "entrypoints": {
+    "command:20260729_llama1b_isolated_efficiency": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/42_llama1b_isolated_efficiency/20260729_llama1b_isolated_efficiency.sh"
+    },
+    "script:run_llama1b_efficiency": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/42_llama1b_isolated_efficiency/run_llama1b_efficiency.py"
+    }
+  },
+  "experiment_id": "42_llama1b_isolated_efficiency",
+  "legacy_result_roots": [
+    "42_llama1b_isolated_efficiency"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "42 Llama1B Isolated Efficiency"
+}

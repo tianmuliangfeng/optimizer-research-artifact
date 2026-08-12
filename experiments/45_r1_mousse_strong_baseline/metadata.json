@@ -1,0 +1,35 @@
+{
+  "code_directory": "scripts/45_r1_mousse_strong_baseline",
+  "default_entrypoint": "command:20260730_r1_mousse_strong_baseline",
+  "entrypoints": {
+    "command:20260730_r1_mousse_strong_baseline": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/45_r1_mousse_strong_baseline/20260730_r1_mousse_strong_baseline.sh"
+    },
+    "script:run_r1_mousse": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/45_r1_mousse_strong_baseline/run_r1_mousse.py"
+    }
+  },
+  "experiment_id": "45_r1_mousse_strong_baseline",
+  "legacy_result_roots": [
+    "45_r1_mousse_strong_baseline"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "45 R1 Mousse Strong Baseline"
+}

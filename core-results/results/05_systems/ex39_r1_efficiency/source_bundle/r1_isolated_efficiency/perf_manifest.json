@@ -1,0 +1,36 @@
+{
+  "artifact_dir": "PRIVATE_PATH_REDACTED__d4e0c80903a7",
+  "methods": [
+    "diag",
+    "block4",
+    "none",
+    "muon"
+  ],
+  "protocol": "r1_perf_training_benchmark_v1",
+  "repeats": 4,
+  "runtime": {
+    "gpu_capability": [
+      9,
+      0
+    ],
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017624576,
+    "numpy": "2.2.6",
+    "platform": "Linux-5.14.0-284.25.1.el9_2.x86_64-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]",
+    "python_executable": "PRIVATE_PATH_REDACTED",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "triton_kernels_module": "PRIVATE_PATH_REDACTED",
+    "triton_module": "PRIVATE_PATH_REDACTED"
+  },
+  "source_sha256": {
+    "block4": "d4368715bb64d6ad89509876c4d7f28773fa4dd567accca09405ff34e74220f5",
+    "diag": "d4368715bb64d6ad89509876c4d7f28773fa4dd567accca09405ff34e74220f5",
+    "muon": "4ceb0c921e9ed1bfd992aa141f7c7b1c447fde753c7f00e8a3ebe3a1165788ea",
+    "none": "d4368715bb64d6ad89509876c4d7f28773fa4dd567accca09405ff34e74220f5"
+  },
+  "status": "complete",
+  "timed_steps": 512
+}

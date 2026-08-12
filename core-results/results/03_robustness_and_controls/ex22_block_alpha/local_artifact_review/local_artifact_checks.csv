@@ -1,0 +1,328 @@
+check,passed,severity,detail
+archive_crc,True,required,ZipFile.testzip
+archive_member_paths_safe,True,required,entries=518
+archive_member_names_unique,True,required,entries=518
+archive_single_expected_root,True,required,top_levels=['20260727T104042+0000']
+archive_file_count,True,required,observed=345 expected=345
+archive_uncompressed_bytes,True,required,observed=130532323 expected=130532323
+controller_present,True,required,20260727T104042+0000/confirmatory_controller.json
+controller_protocol,True,required,r1_block_alpha_seeds2024_2025_confirmatory_v1
+controller_batch_id,True,required,20260727T104042+0000
+controller_completed,True,required,completed
+controller_no_failures,True,required,[]
+controller_seed_grid,True,required,"[2024, 2025]"
+controller_seed2024_completed,True,required,completed
+controller_seed2024_wandb_complete,True,required,True
+controller_seed2025_completed,True,required,completed
+controller_seed2025_wandb_complete,True,required,True
+batch_grid,True,required,"[('formal', 2024), ('formal', 2025), ('smoke', 2024), ('smoke', 2025)]"
+smoke_seed2024:family,True,required,22_r1_block_alpha
+smoke_seed2024:kind_seed,True,required,kind=smoke seed=2024
+smoke_seed2024:protocol,True,required,official_newton_muon_1_r1_dense_block_alpha_exact_shape_smoke_v1
+smoke_seed2024:status,True,required,completed_valid_smoke
+smoke_seed2024:methods,True,required,"('alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75')"
+smoke_seed2024:no_failures,True,required,[]
+smoke_seed2024:official_commit,True,required,df78af0db523d8bceb25af4919a3e3e7082b80f3
+smoke_seed2024:initialization_identical,True,required,init_sha256=dcd2b4aaa59b03d26ca117c77e518cd588fa907991f73a386629d058431e6176
+smoke_seed2024:summary_grid,True,required,rows=4
+smoke_seed2024:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2024:resource_isolation,True,required,"{'cuda_visible_devices': '0', 'visible_device_count': 1, 'one_process_one_gpu': True, 'concurrent_node_training': True, 'concurrent_workload': 'dense_full_alpha_gpu1'}"
+smoke_seed2024:wandb_status_grid,True,required,"{'alpha0': 'disabled_for_numerical_smoke', 'alpha0p25': 'disabled_for_numerical_smoke', 'alpha0p50': 'disabled_for_numerical_smoke', 'alpha0p75': 'disabled_for_numerical_smoke'}"
+smoke_seed2024:run_manifest_count,True,required,observed=4
+smoke_seed2024_alpha0p25:identity,True,required,method=alpha0p25 seed=2024
+smoke_seed2024_alpha0p25:status,True,required,status=completed_valid_smoke returncode=0
+smoke_seed2024_alpha0p25:tier,True,required,formal=False profile=exact_shape_numerical_smoke
+smoke_seed2024_alpha0p25:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2024_alpha0p25:required_files,True,required,[]
+smoke_seed2024_alpha0p25:derived_source_hash,True,required,actual=d978965c4397ba193b840c68b3b61149391cd8c97f3e99addfe001fc92209d14 declared=d978965c4397ba193b840c68b3b61149391cd8c97f3e99addfe001fc92209d14
+smoke_seed2024_alpha0p25:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+smoke_seed2024_alpha0p25:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+smoke_seed2024_alpha0p25:alpha_storage,True,required,summary_alpha=0.25 source_alpha=0.25
+smoke_seed2024_alpha0p25:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+smoke_seed2024_alpha0p25:metrics_shape,True,required,rows=36 train=34 validation=2
+smoke_seed2024_alpha0p25:metrics_identity,True,required,rows=36
+smoke_seed2024_alpha0p25:metrics_summary_endpoint,True,required,metrics=6.0834 summary=6.0834
+smoke_seed2024_alpha0p50:identity,True,required,method=alpha0p50 seed=2024
+smoke_seed2024_alpha0p50:status,True,required,status=completed_valid_smoke returncode=0
+smoke_seed2024_alpha0p50:tier,True,required,formal=False profile=exact_shape_numerical_smoke
+smoke_seed2024_alpha0p50:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2024_alpha0p50:required_files,True,required,[]
+smoke_seed2024_alpha0p50:derived_source_hash,True,required,actual=219bae13981f57223a73fa733fbbdfb3bb4768cd032410ae6a4a6468f4ff26d2 declared=219bae13981f57223a73fa733fbbdfb3bb4768cd032410ae6a4a6468f4ff26d2
+smoke_seed2024_alpha0p50:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+smoke_seed2024_alpha0p50:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+smoke_seed2024_alpha0p50:alpha_storage,True,required,summary_alpha=0.5 source_alpha=0.5
+smoke_seed2024_alpha0p50:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+smoke_seed2024_alpha0p50:metrics_shape,True,required,rows=36 train=34 validation=2
+smoke_seed2024_alpha0p50:metrics_identity,True,required,rows=36
+smoke_seed2024_alpha0p50:metrics_summary_endpoint,True,required,metrics=6.0826 summary=6.0826
+smoke_seed2024_alpha0p75:identity,True,required,method=alpha0p75 seed=2024
+smoke_seed2024_alpha0p75:status,True,required,status=completed_valid_smoke returncode=0
+smoke_seed2024_alpha0p75:tier,True,required,formal=False profile=exact_shape_numerical_smoke
+smoke_seed2024_alpha0p75:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2024_alpha0p75:required_files,True,required,[]
+smoke_seed2024_alpha0p75:derived_source_hash,True,required,actual=abef71e208d159351db6cbe43516b77ea786099833172db1a03626d954d4e3e5 declared=abef71e208d159351db6cbe43516b77ea786099833172db1a03626d954d4e3e5
+smoke_seed2024_alpha0p75:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+smoke_seed2024_alpha0p75:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+smoke_seed2024_alpha0p75:alpha_storage,True,required,summary_alpha=0.75 source_alpha=0.75
+smoke_seed2024_alpha0p75:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+smoke_seed2024_alpha0p75:metrics_shape,True,required,rows=36 train=34 validation=2
+smoke_seed2024_alpha0p75:metrics_identity,True,required,rows=36
+smoke_seed2024_alpha0p75:metrics_summary_endpoint,True,required,metrics=6.0816 summary=6.0816
+smoke_seed2024_alpha0:identity,True,required,method=alpha0 seed=2024
+smoke_seed2024_alpha0:status,True,required,status=completed_valid_smoke returncode=0
+smoke_seed2024_alpha0:tier,True,required,formal=False profile=exact_shape_numerical_smoke
+smoke_seed2024_alpha0:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2024_alpha0:required_files,True,required,[]
+smoke_seed2024_alpha0:derived_source_hash,True,required,actual=7e898d9830b808de4cca6f8ac11aa9fa219df24ac677abea6ac52f8d633fcd35 declared=7e898d9830b808de4cca6f8ac11aa9fa219df24ac677abea6ac52f8d633fcd35
+smoke_seed2024_alpha0:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+smoke_seed2024_alpha0:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+smoke_seed2024_alpha0:alpha_storage,True,required,summary_alpha=0.0 source_alpha=0.0
+smoke_seed2024_alpha0:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+smoke_seed2024_alpha0:metrics_shape,True,required,rows=36 train=34 validation=2
+smoke_seed2024_alpha0:metrics_identity,True,required,rows=36
+smoke_seed2024_alpha0:metrics_summary_endpoint,True,required,metrics=6.0879 summary=6.0879
+smoke_seed2024:run_method_grid,True,required,"['alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75']"
+smoke_seed2025:family,True,required,22_r1_block_alpha
+smoke_seed2025:kind_seed,True,required,kind=smoke seed=2025
+smoke_seed2025:protocol,True,required,official_newton_muon_1_r1_dense_block_alpha_exact_shape_smoke_v1
+smoke_seed2025:status,True,required,completed_valid_smoke
+smoke_seed2025:methods,True,required,"('alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75')"
+smoke_seed2025:no_failures,True,required,[]
+smoke_seed2025:official_commit,True,required,df78af0db523d8bceb25af4919a3e3e7082b80f3
+smoke_seed2025:initialization_identical,True,required,init_sha256=0abcd1466c19b502419173203779819e00d30996f4b235cb131d20641da3696a
+smoke_seed2025:summary_grid,True,required,rows=4
+smoke_seed2025:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2025:resource_isolation,True,required,"{'cuda_visible_devices': '0', 'visible_device_count': 1, 'one_process_one_gpu': True, 'concurrent_node_training': True, 'concurrent_workload': 'dense_full_alpha_gpu1'}"
+smoke_seed2025:wandb_status_grid,True,required,"{'alpha0': 'disabled_for_numerical_smoke', 'alpha0p25': 'disabled_for_numerical_smoke', 'alpha0p50': 'disabled_for_numerical_smoke', 'alpha0p75': 'disabled_for_numerical_smoke'}"
+smoke_seed2025:run_manifest_count,True,required,observed=4
+smoke_seed2025_alpha0p25:identity,True,required,method=alpha0p25 seed=2025
+smoke_seed2025_alpha0p25:status,True,required,status=completed_valid_smoke returncode=0
+smoke_seed2025_alpha0p25:tier,True,required,formal=False profile=exact_shape_numerical_smoke
+smoke_seed2025_alpha0p25:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2025_alpha0p25:required_files,True,required,[]
+smoke_seed2025_alpha0p25:derived_source_hash,True,required,actual=d978965c4397ba193b840c68b3b61149391cd8c97f3e99addfe001fc92209d14 declared=d978965c4397ba193b840c68b3b61149391cd8c97f3e99addfe001fc92209d14
+smoke_seed2025_alpha0p25:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+smoke_seed2025_alpha0p25:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+smoke_seed2025_alpha0p25:alpha_storage,True,required,summary_alpha=0.25 source_alpha=0.25
+smoke_seed2025_alpha0p25:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+smoke_seed2025_alpha0p25:metrics_shape,True,required,rows=36 train=34 validation=2
+smoke_seed2025_alpha0p25:metrics_identity,True,required,rows=36
+smoke_seed2025_alpha0p25:metrics_summary_endpoint,True,required,metrics=6.0838 summary=6.0838
+smoke_seed2025_alpha0p50:identity,True,required,method=alpha0p50 seed=2025
+smoke_seed2025_alpha0p50:status,True,required,status=completed_valid_smoke returncode=0
+smoke_seed2025_alpha0p50:tier,True,required,formal=False profile=exact_shape_numerical_smoke
+smoke_seed2025_alpha0p50:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2025_alpha0p50:required_files,True,required,[]
+smoke_seed2025_alpha0p50:derived_source_hash,True,required,actual=219bae13981f57223a73fa733fbbdfb3bb4768cd032410ae6a4a6468f4ff26d2 declared=219bae13981f57223a73fa733fbbdfb3bb4768cd032410ae6a4a6468f4ff26d2
+smoke_seed2025_alpha0p50:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+smoke_seed2025_alpha0p50:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+smoke_seed2025_alpha0p50:alpha_storage,True,required,summary_alpha=0.5 source_alpha=0.5
+smoke_seed2025_alpha0p50:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+smoke_seed2025_alpha0p50:metrics_shape,True,required,rows=36 train=34 validation=2
+smoke_seed2025_alpha0p50:metrics_identity,True,required,rows=36
+smoke_seed2025_alpha0p50:metrics_summary_endpoint,True,required,metrics=6.0835 summary=6.0835
+smoke_seed2025_alpha0p75:identity,True,required,method=alpha0p75 seed=2025
+smoke_seed2025_alpha0p75:status,True,required,status=completed_valid_smoke returncode=0
+smoke_seed2025_alpha0p75:tier,True,required,formal=False profile=exact_shape_numerical_smoke
+smoke_seed2025_alpha0p75:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2025_alpha0p75:required_files,True,required,[]
+smoke_seed2025_alpha0p75:derived_source_hash,True,required,actual=abef71e208d159351db6cbe43516b77ea786099833172db1a03626d954d4e3e5 declared=abef71e208d159351db6cbe43516b77ea786099833172db1a03626d954d4e3e5
+smoke_seed2025_alpha0p75:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+smoke_seed2025_alpha0p75:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+smoke_seed2025_alpha0p75:alpha_storage,True,required,summary_alpha=0.75 source_alpha=0.75
+smoke_seed2025_alpha0p75:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+smoke_seed2025_alpha0p75:metrics_shape,True,required,rows=36 train=34 validation=2
+smoke_seed2025_alpha0p75:metrics_identity,True,required,rows=36
+smoke_seed2025_alpha0p75:metrics_summary_endpoint,True,required,metrics=6.0833 summary=6.0833
+smoke_seed2025_alpha0:identity,True,required,method=alpha0 seed=2025
+smoke_seed2025_alpha0:status,True,required,status=completed_valid_smoke returncode=0
+smoke_seed2025_alpha0:tier,True,required,formal=False profile=exact_shape_numerical_smoke
+smoke_seed2025_alpha0:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+smoke_seed2025_alpha0:required_files,True,required,[]
+smoke_seed2025_alpha0:derived_source_hash,True,required,actual=7e898d9830b808de4cca6f8ac11aa9fa219df24ac677abea6ac52f8d633fcd35 declared=7e898d9830b808de4cca6f8ac11aa9fa219df24ac677abea6ac52f8d633fcd35
+smoke_seed2025_alpha0:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+smoke_seed2025_alpha0:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+smoke_seed2025_alpha0:alpha_storage,True,required,summary_alpha=0.0 source_alpha=0.0
+smoke_seed2025_alpha0:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+smoke_seed2025_alpha0:metrics_shape,True,required,rows=36 train=34 validation=2
+smoke_seed2025_alpha0:metrics_identity,True,required,rows=36
+smoke_seed2025_alpha0:metrics_summary_endpoint,True,required,metrics=6.0906 summary=6.0906
+smoke_seed2025:run_method_grid,True,required,"['alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75']"
+formal_seed2024:family,True,required,22_r1_block_alpha
+formal_seed2024:kind_seed,True,required,kind=formal seed=2024
+formal_seed2024:protocol,True,required,official_newton_muon_1_r1_dense_block_alpha_seeds2024_2025_confirmatory_v1
+formal_seed2024:status,True,required,completed_valid
+formal_seed2024:methods,True,required,"('alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75')"
+formal_seed2024:no_failures,True,required,[]
+formal_seed2024:official_commit,True,required,df78af0db523d8bceb25af4919a3e3e7082b80f3
+formal_seed2024:initialization_identical,True,required,init_sha256=dcd2b4aaa59b03d26ca117c77e518cd588fa907991f73a386629d058431e6176
+formal_seed2024:init_matches_other_tier,True,required,observed=dcd2b4aaa59b03d26ca117c77e518cd588fa907991f73a386629d058431e6176 expected=dcd2b4aaa59b03d26ca117c77e518cd588fa907991f73a386629d058431e6176
+formal_seed2024:summary_grid,True,required,rows=4
+formal_seed2024:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2024:resource_isolation,True,required,"{'cuda_visible_devices': '0', 'visible_device_count': 1, 'one_process_one_gpu': True, 'concurrent_node_training': True, 'concurrent_workload': 'dense_full_alpha_gpu1'}"
+formal_seed2024:wandb_status_grid,True,required,"{'alpha0': 'uploaded', 'alpha0p25': 'uploaded', 'alpha0p50': 'uploaded', 'alpha0p75': 'uploaded'}"
+formal_seed2024:smoke_certificate,True,required,"{'path': 'PRIVATE_PATH_REDACTED', 'validated': True, 'methods': ['alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75'], 'seed': 2024, 'cuda_visible_devices': None}"
+formal_seed2024:run_manifest_count,True,required,observed=4
+formal_seed2024_alpha0p25:identity,True,required,method=alpha0p25 seed=2024
+formal_seed2024_alpha0p25:status,True,required,status=completed_valid returncode=0
+formal_seed2024_alpha0p25:tier,True,required,formal=True profile=formal
+formal_seed2024_alpha0p25:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2024_alpha0p25:required_files,True,required,[]
+formal_seed2024_alpha0p25:derived_source_hash,True,required,actual=d978965c4397ba193b840c68b3b61149391cd8c97f3e99addfe001fc92209d14 declared=d978965c4397ba193b840c68b3b61149391cd8c97f3e99addfe001fc92209d14
+formal_seed2024_alpha0p25:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+formal_seed2024_alpha0p25:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+formal_seed2024_alpha0p25:alpha_storage,True,required,summary_alpha=0.25 source_alpha=0.25
+formal_seed2024_alpha0p25:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+formal_seed2024_alpha0p25:metrics_shape,True,required,rows=6263 train=6200 validation=63
+formal_seed2024_alpha0p25:metrics_identity,True,required,rows=6263
+formal_seed2024_alpha0p25:metrics_summary_endpoint,True,required,metrics=3.261 summary=3.261
+formal_seed2024_alpha0p25:wandb_validation_curve,True,required,local_points=63 wandb_points=63
+formal_seed2024_alpha0p25:wandb_summary_metrics,True,required,final=3.261;tail5=3.2692799999999997;auc=3.6148645161290323
+formal_seed2024_alpha0p25:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0001', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0002', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0002'}"
+formal_seed2024_alpha0p25:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260727T105514+0000_formal_seed2024/mainconf_r1_block_alpha_confirmatory_alpha0p25_seed2024_20260727T105514+0000PRIVATE_PATH_REDACTED']
+formal_seed2024_alpha0p25:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13893632 declared=1539116209
+formal_seed2024_alpha0p50:identity,True,required,method=alpha0p50 seed=2024
+formal_seed2024_alpha0p50:status,True,required,status=completed_valid returncode=0
+formal_seed2024_alpha0p50:tier,True,required,formal=True profile=formal
+formal_seed2024_alpha0p50:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2024_alpha0p50:required_files,True,required,[]
+formal_seed2024_alpha0p50:derived_source_hash,True,required,actual=219bae13981f57223a73fa733fbbdfb3bb4768cd032410ae6a4a6468f4ff26d2 declared=219bae13981f57223a73fa733fbbdfb3bb4768cd032410ae6a4a6468f4ff26d2
+formal_seed2024_alpha0p50:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+formal_seed2024_alpha0p50:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+formal_seed2024_alpha0p50:alpha_storage,True,required,summary_alpha=0.5 source_alpha=0.5
+formal_seed2024_alpha0p50:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+formal_seed2024_alpha0p50:metrics_shape,True,required,rows=6263 train=6200 validation=63
+formal_seed2024_alpha0p50:metrics_identity,True,required,rows=6263
+formal_seed2024_alpha0p50:metrics_summary_endpoint,True,required,metrics=3.2617 summary=3.2617
+formal_seed2024_alpha0p50:wandb_validation_curve,True,required,local_points=63 wandb_points=63
+formal_seed2024_alpha0p50:wandb_summary_metrics,True,required,final=3.2617;tail5=3.2699399999999996;auc=3.6148620967741936
+formal_seed2024_alpha0p50:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0002', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0003', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0003'}"
+formal_seed2024_alpha0p50:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260727T105514+0000_formal_seed2024/mainconf_r1_block_alpha_confirmatory_alpha0p50_seed2024_20260727T105514+0000PRIVATE_PATH_REDACTED']
+formal_seed2024_alpha0p50:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13631488 declared=1539116209
+formal_seed2024_alpha0p75:identity,True,required,method=alpha0p75 seed=2024
+formal_seed2024_alpha0p75:status,True,required,status=completed_valid returncode=0
+formal_seed2024_alpha0p75:tier,True,required,formal=True profile=formal
+formal_seed2024_alpha0p75:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2024_alpha0p75:required_files,True,required,[]
+formal_seed2024_alpha0p75:derived_source_hash,True,required,actual=abef71e208d159351db6cbe43516b77ea786099833172db1a03626d954d4e3e5 declared=abef71e208d159351db6cbe43516b77ea786099833172db1a03626d954d4e3e5
+formal_seed2024_alpha0p75:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+formal_seed2024_alpha0p75:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+formal_seed2024_alpha0p75:alpha_storage,True,required,summary_alpha=0.75 source_alpha=0.75
+formal_seed2024_alpha0p75:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+formal_seed2024_alpha0p75:metrics_shape,True,required,rows=6263 train=6200 validation=63
+formal_seed2024_alpha0p75:metrics_identity,True,required,rows=6263
+formal_seed2024_alpha0p75:metrics_summary_endpoint,True,required,metrics=3.2615 summary=3.2615
+formal_seed2024_alpha0p75:wandb_validation_curve,True,required,local_points=63 wandb_points=63
+formal_seed2024_alpha0p75:wandb_summary_metrics,True,required,final=3.2615;tail5=3.26978;auc=3.6151701612903224
+formal_seed2024_alpha0p75:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0003', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0004', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0004'}"
+formal_seed2024_alpha0p75:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260727T105514+0000_formal_seed2024/mainconf_r1_block_alpha_confirmatory_alpha0p75_seed2024_20260727T105514+0000PRIVATE_PATH_REDACTED']
+formal_seed2024_alpha0p75:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13631488 declared=1539116209
+formal_seed2024_alpha0:identity,True,required,method=alpha0 seed=2024
+formal_seed2024_alpha0:status,True,required,status=completed_valid returncode=0
+formal_seed2024_alpha0:tier,True,required,formal=True profile=formal
+formal_seed2024_alpha0:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2024_alpha0:required_files,True,required,[]
+formal_seed2024_alpha0:derived_source_hash,True,required,actual=7e898d9830b808de4cca6f8ac11aa9fa219df24ac677abea6ac52f8d633fcd35 declared=7e898d9830b808de4cca6f8ac11aa9fa219df24ac677abea6ac52f8d633fcd35
+formal_seed2024_alpha0:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+formal_seed2024_alpha0:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+formal_seed2024_alpha0:alpha_storage,True,required,summary_alpha=0.0 source_alpha=0.0
+formal_seed2024_alpha0:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+formal_seed2024_alpha0:metrics_shape,True,required,rows=6263 train=6200 validation=63
+formal_seed2024_alpha0:metrics_identity,True,required,rows=6263
+formal_seed2024_alpha0:metrics_summary_endpoint,True,required,metrics=3.2622 summary=3.2622
+formal_seed2024_alpha0:wandb_validation_curve,True,required,local_points=63 wandb_points=63
+formal_seed2024_alpha0:wandb_summary_metrics,True,required,final=3.2622;tail5=3.27046;auc=3.6160806451612904
+formal_seed2024_alpha0:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0004', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0005', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0005'}"
+formal_seed2024_alpha0:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260727T105514+0000_formal_seed2024/mainconf_r1_block_alpha_confirmatory_alpha0_seed2024_20260727T105514+0000PRIVATE_PATH_REDACTED']
+formal_seed2024_alpha0:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13631488 declared=1539116145
+formal_seed2024:run_method_grid,True,required,"['alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75']"
+formal_seed2025:family,True,required,22_r1_block_alpha
+formal_seed2025:kind_seed,True,required,kind=formal seed=2025
+formal_seed2025:protocol,True,required,official_newton_muon_1_r1_dense_block_alpha_seeds2024_2025_confirmatory_v1
+formal_seed2025:status,True,required,completed_valid
+formal_seed2025:methods,True,required,"('alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75')"
+formal_seed2025:no_failures,True,required,[]
+formal_seed2025:official_commit,True,required,df78af0db523d8bceb25af4919a3e3e7082b80f3
+formal_seed2025:initialization_identical,True,required,init_sha256=0abcd1466c19b502419173203779819e00d30996f4b235cb131d20641da3696a
+formal_seed2025:init_matches_other_tier,True,required,observed=0abcd1466c19b502419173203779819e00d30996f4b235cb131d20641da3696a expected=0abcd1466c19b502419173203779819e00d30996f4b235cb131d20641da3696a
+formal_seed2025:summary_grid,True,required,rows=4
+formal_seed2025:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2025:resource_isolation,True,required,"{'cuda_visible_devices': '0', 'visible_device_count': 1, 'one_process_one_gpu': True, 'concurrent_node_training': True, 'concurrent_workload': 'dense_full_alpha_gpu1'}"
+formal_seed2025:wandb_status_grid,True,required,"{'alpha0': 'uploaded', 'alpha0p25': 'uploaded', 'alpha0p50': 'uploaded', 'alpha0p75': 'uploaded'}"
+formal_seed2025:smoke_certificate,True,required,"{'path': 'PRIVATE_PATH_REDACTED', 'validated': True, 'methods': ['alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75'], 'seed': 2025, 'cuda_visible_devices': None}"
+formal_seed2025:run_manifest_count,True,required,observed=4
+formal_seed2025_alpha0p25:identity,True,required,method=alpha0p25 seed=2025
+formal_seed2025_alpha0p25:status,True,required,status=completed_valid returncode=0
+formal_seed2025_alpha0p25:tier,True,required,formal=True profile=formal
+formal_seed2025_alpha0p25:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2025_alpha0p25:required_files,True,required,[]
+formal_seed2025_alpha0p25:derived_source_hash,True,required,actual=d978965c4397ba193b840c68b3b61149391cd8c97f3e99addfe001fc92209d14 declared=d978965c4397ba193b840c68b3b61149391cd8c97f3e99addfe001fc92209d14
+formal_seed2025_alpha0p25:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+formal_seed2025_alpha0p25:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+formal_seed2025_alpha0p25:alpha_storage,True,required,summary_alpha=0.25 source_alpha=0.25
+formal_seed2025_alpha0p25:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+formal_seed2025_alpha0p25:metrics_shape,True,required,rows=6263 train=6200 validation=63
+formal_seed2025_alpha0p25:metrics_identity,True,required,rows=6263
+formal_seed2025_alpha0p25:metrics_summary_endpoint,True,required,metrics=3.2598 summary=3.2598
+formal_seed2025_alpha0p25:wandb_validation_curve,True,required,local_points=63 wandb_points=63
+formal_seed2025_alpha0p25:wandb_summary_metrics,True,required,final=3.2598;tail5=3.26802;auc=3.6116008064516127
+formal_seed2025_alpha0p25:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0005', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0006', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0006'}"
+formal_seed2025_alpha0p25:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260728T000933+0000_formal_seed2025/mainconf_r1_block_alpha_confirmatory_alpha0p25_seed2025_20260728T000933+0000PRIVATE_PATH_REDACTED']
+formal_seed2025_alpha0p25:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13369344 declared=1539116209
+formal_seed2025_alpha0p50:identity,True,required,method=alpha0p50 seed=2025
+formal_seed2025_alpha0p50:status,True,required,status=completed_valid returncode=0
+formal_seed2025_alpha0p50:tier,True,required,formal=True profile=formal
+formal_seed2025_alpha0p50:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2025_alpha0p50:required_files,True,required,[]
+formal_seed2025_alpha0p50:derived_source_hash,True,required,actual=219bae13981f57223a73fa733fbbdfb3bb4768cd032410ae6a4a6468f4ff26d2 declared=219bae13981f57223a73fa733fbbdfb3bb4768cd032410ae6a4a6468f4ff26d2
+formal_seed2025_alpha0p50:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+formal_seed2025_alpha0p50:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+formal_seed2025_alpha0p50:alpha_storage,True,required,summary_alpha=0.5 source_alpha=0.5
+formal_seed2025_alpha0p50:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+formal_seed2025_alpha0p50:metrics_shape,True,required,rows=6263 train=6200 validation=63
+formal_seed2025_alpha0p50:metrics_identity,True,required,rows=6263
+formal_seed2025_alpha0p50:metrics_summary_endpoint,True,required,metrics=3.2588 summary=3.2588
+formal_seed2025_alpha0p50:wandb_validation_curve,True,required,local_points=63 wandb_points=63
+formal_seed2025_alpha0p50:wandb_summary_metrics,True,required,final=3.2588;tail5=3.26706;auc=3.6108120967741937
+formal_seed2025_alpha0p50:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0006', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0007', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0007'}"
+formal_seed2025_alpha0p50:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260728T000933+0000_formal_seed2025/mainconf_r1_block_alpha_confirmatory_alpha0p50_seed2025_20260728T000933+0000PRIVATE_PATH_REDACTED']
+formal_seed2025_alpha0p50:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13369344 declared=1539116209
+formal_seed2025_alpha0p75:identity,True,required,method=alpha0p75 seed=2025
+formal_seed2025_alpha0p75:status,True,required,status=completed_valid returncode=0
+formal_seed2025_alpha0p75:tier,True,required,formal=True profile=formal
+formal_seed2025_alpha0p75:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2025_alpha0p75:required_files,True,required,[]
+formal_seed2025_alpha0p75:derived_source_hash,True,required,actual=abef71e208d159351db6cbe43516b77ea786099833172db1a03626d954d4e3e5 declared=abef71e208d159351db6cbe43516b77ea786099833172db1a03626d954d4e3e5
+formal_seed2025_alpha0p75:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+formal_seed2025_alpha0p75:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+formal_seed2025_alpha0p75:alpha_storage,True,required,summary_alpha=0.75 source_alpha=0.75
+formal_seed2025_alpha0p75:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+formal_seed2025_alpha0p75:metrics_shape,True,required,rows=6263 train=6200 validation=63
+formal_seed2025_alpha0p75:metrics_identity,True,required,rows=6263
+formal_seed2025_alpha0p75:metrics_summary_endpoint,True,required,metrics=3.259 summary=3.259
+formal_seed2025_alpha0p75:wandb_validation_curve,True,required,local_points=63 wandb_points=63
+formal_seed2025_alpha0p75:wandb_summary_metrics,True,required,final=3.259;tail5=3.2672199999999996;auc=3.6114540322580644
+formal_seed2025_alpha0p75:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0007', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0008', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0008'}"
+formal_seed2025_alpha0p75:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260728T000933+0000_formal_seed2025/mainconf_r1_block_alpha_confirmatory_alpha0p75_seed2025_20260728T000933+0000PRIVATE_PATH_REDACTED']
+formal_seed2025_alpha0p75:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13369344 declared=1539116209
+formal_seed2025_alpha0:identity,True,required,method=alpha0 seed=2025
+formal_seed2025_alpha0:status,True,required,status=completed_valid returncode=0
+formal_seed2025_alpha0:tier,True,required,formal=True profile=formal
+formal_seed2025_alpha0:eligibility,True,required,"{'quality_usable': True, 'memory_usable': True, 'timing_usable': False, 'reason': 'R1 block-alpha is a quality/mechanism experiment; timing belongs to R1-PERF'}"
+formal_seed2025_alpha0:required_files,True,required,[]
+formal_seed2025_alpha0:derived_source_hash,True,required,actual=7e898d9830b808de4cca6f8ac11aa9fa219df24ac677abea6ac52f8d633fcd35 declared=7e898d9830b808de4cca6f8ac11aa9fa219df24ac677abea6ac52f8d633fcd35
+formal_seed2025_alpha0:official_base_hash,True,required,48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730
+formal_seed2025_alpha0:triton_hash,True,required,b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d
+formal_seed2025_alpha0:alpha_storage,True,required,summary_alpha=0.0 source_alpha=0.0
+formal_seed2025_alpha0:summary_consistency,True,required,"('method', 'controlled_seed', 'init_sha256', 'final_val_step', 'final_val_loss', 'final_train_step', 'final_train_loss', 'derived_script_sha256')"
+formal_seed2025_alpha0:metrics_shape,True,required,rows=6263 train=6200 validation=63
+formal_seed2025_alpha0:metrics_identity,True,required,rows=6263
+formal_seed2025_alpha0:metrics_summary_endpoint,True,required,metrics=3.2601 summary=3.2601
+formal_seed2025_alpha0:wandb_validation_curve,True,required,local_points=63 wandb_points=63
+formal_seed2025_alpha0:wandb_summary_metrics,True,required,final=3.2601;tail5=3.26828;auc=3.6131661290322583
+formal_seed2025_alpha0:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0008', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0009', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0009'}"
+formal_seed2025_alpha0:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260728T000933+0000_formal_seed2025/mainconf_r1_block_alpha_confirmatory_alpha0_seed2025_20260728T000933+0000PRIVATE_PATH_REDACTED']
+formal_seed2025_alpha0:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13369344 declared=1539116145
+formal_seed2025:run_method_grid,True,required,"['alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75']"
+formal_wandb_run_identity_grid,True,required,"local=['mainconf_r1_block_alpha_confirmatory_alpha0_seed2024_20260727T105514+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0_seed2025_20260728T000933+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p25_seed2024_20260727T105514+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p25_seed2025_20260728T000933+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p50_seed2024_20260727T105514+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p50_seed2025_20260728T000933+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p75_seed2024_20260727T105514+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p75_seed2025_20260728T000933+0000'];exports=['mainconf_r1_block_alpha_confirmatory_alpha0_seed2024_20260727T105514+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0_seed2025_20260728T000933+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p25_seed2024_20260727T105514+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p25_seed2025_20260728T000933+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p50_seed2024_20260727T105514+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p50_seed2025_20260728T000933+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p75_seed2024_20260727T105514+0000', 'mainconf_r1_block_alpha_confirmatory_alpha0p75_seed2025_20260728T000933+0000']"
+checkpoint_entry_grid,True,handoff,observed=8

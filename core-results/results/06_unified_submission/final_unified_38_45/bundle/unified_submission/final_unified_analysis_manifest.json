@@ -1,0 +1,219 @@
+{
+  "analysis_date": "2026-08-03",
+  "checks": {
+    "bundle_audit_passed": true,
+    "diag_bridge_passed": true,
+    "external_quality_eligible": true,
+    "external_timing_excluded": true,
+    "factorial_accepted": true,
+    "invariance_audit_passed": true,
+    "llama_efficiency_audit_passed": true,
+    "mechanism_passed": true,
+    "pipeline_passed": true,
+    "r1_efficiency_numerical_valid": true,
+    "r1_efficiency_remote_rerun_not_required": true,
+    "refresh_deferred": true
+  },
+  "claim_eligible": true,
+  "cross_scale_seed_pooling": false,
+  "hash_checks": {
+    "diag_bridge_outputs": 9,
+    "mechanism_outputs": 14
+  },
+  "mousse_275m_extension_triggered": false,
+  "mousse_scope": "124M external-neighbor panel only",
+  "outputs": {
+    "FINAL_UNIFIED_ANALYSIS.md": {
+      "bytes": 8434,
+      "sha256": "ac1cb5b819ba1b21eb4b4315f509fc560b782119f3ec2021c9e9ae229e68e378"
+    },
+    "claim_matrix.csv": {
+      "bytes": 2254,
+      "sha256": "2f9b8a488e322314c4c2975a54ded10b80f6e722b490ac3a7e698ef2fc52bf40"
+    },
+    "evidence_workstream_status.csv": {
+      "bytes": 1257,
+      "sha256": "7a951bfc59570551746e4d353c6b3d66c99496b78c800e7c1137029581bed5e3"
+    },
+    "external_neighbor_124m.csv": {
+      "bytes": 1181,
+      "sha256": "307ec03f41c3e72f28140cc528c6af9779369d276686dc0ccc4f01b78db952df"
+    },
+    "external_neighbor_quality_state.svg": {
+      "bytes": 4148,
+      "sha256": "d7479fbb3f718d8815806fba932a98673b46058884c52f6c91c3013a12c4ade9"
+    },
+    "limitations_matrix.csv": {
+      "bytes": 1105,
+      "sha256": "4415d759b89df5efe4b5fb5a0825adc3b90027861a63a0231e9abc44d0dcb947"
+    }
+  },
+  "practical_loss_margin": 0.002,
+  "refresh_analysis_included": false,
+  "schema_version": "final_unified_analysis_38_45_v1",
+  "source_files": [
+    {
+      "bytes": 40825,
+      "path": "PRIVATE_PATH_REDACTED__ff5590f249cd",
+      "role": "final unified analysis generator",
+      "sha256": "643a7e19db4f6e880c426a7a4386f29229e6c4ffcab21c7595b30f615958ce1f",
+      "status": "passed"
+    },
+    {
+      "bytes": 848,
+      "path": "PRIVATE_PATH_REDACTED__1affefe2af71",
+      "role": "formal analysis pipeline",
+      "sha256": "dd066b0dc8bdb6046b89164f2c2becac3c349a8e9c95b986fd0c790ce63203e1",
+      "status": "passed"
+    },
+    {
+      "bytes": 414,
+      "path": "PRIVATE_PATH_REDACTED__943e28070e91",
+      "role": "formal bundle audit",
+      "sha256": "7a1a76cc36daac98539c7ca717a9de98058c608cadd7b8b583162c0ce20fcc45",
+      "status": "passed"
+    },
+    {
+      "bytes": 3026,
+      "path": "PRIVATE_PATH_REDACTED__8e0ebfdd4ac4",
+      "role": "mechanism synthesis",
+      "sha256": "634ecfa12cd2ec46e8a72f354989f0dad09155a2489d7fd2f707cfb1c70a5c0d",
+      "status": "passed"
+    },
+    {
+      "bytes": 3065,
+      "path": "PRIVATE_PATH_REDACTED__9e50e50b2194",
+      "role": "mechanism claim matrix",
+      "sha256": "38ee2dadd55b69a73cbcd4e76a54e05a078b22796a0bf5ae2917af6f93190316",
+      "status": "passed"
+    },
+    {
+      "bytes": 7394,
+      "path": "PRIVATE_PATH_REDACTED__1f91392176c3",
+      "role": "R1 isolated efficiency audit",
+      "sha256": "94260297e04dae890b76eb4f9857c2ee0ffb67d67246acb4c02277ac10145c51",
+      "status": "numerical_valid_report_regeneration_required"
+    },
+    {
+      "bytes": 4929,
+      "path": "PRIVATE_PATH_REDACTED__e157df93e441",
+      "role": "LLaMA block invariance results",
+      "sha256": "6cad5c6b58c7afba28c11bc82fc3534fc6c4fffd8d4335d9b52baaa6bc928207",
+      "status": "ready_to_cite_with_scope_caveats"
+    },
+    {
+      "bytes": 6474,
+      "path": "PRIVATE_PATH_REDACTED__c82a04525bf8",
+      "role": "LLaMA block invariance audit",
+      "sha256": "f778b55a1d0c62c27f983f195d2072cd1800a3eba9f2214657c42d8eed37a9bf",
+      "status": "ready_to_cite_with_scope_caveats"
+    },
+    {
+      "bytes": 5753,
+      "path": "PRIVATE_PATH_REDACTED__3749f719de16",
+      "role": "R1 module factorial acceptance",
+      "sha256": "b5506b6e0902b4c1b338dac2336d24c7e3d2d7e3147e3a39e3f6d42b1357698f",
+      "status": "accepted_with_analysis_errata"
+    },
+    {
+      "bytes": 1735,
+      "path": "PRIVATE_PATH_REDACTED__bea69408580d",
+      "role": "R1 diag bridge decision",
+      "sha256": "addd23aa651f0be3803295f95314599d3e9bfa4693f8bb854311caf6ca8af236",
+      "status": "passed"
+    },
+    {
+      "bytes": 1740,
+      "path": "PRIVATE_PATH_REDACTED__3560ee2031c9",
+      "role": "R1 diag bridge audit",
+      "sha256": "aa015da673a9feecc968a5513c655aa741ce2d5ed035fd43c533baee2639595a",
+      "status": "passed"
+    },
+    {
+      "bytes": 5982,
+      "path": "PRIVATE_PATH_REDACTED__9f3b1ebf4455",
+      "role": "LLaMA-1B efficiency results",
+      "sha256": "eb09f95618847a830dc998f117a0b023bd7ca8a4d42e2a14341e61df4ad4e1d7",
+      "status": "ready_to_cite_with_scope_caveats"
+    },
+    {
+      "bytes": 4853,
+      "path": "PRIVATE_PATH_REDACTED__553348e12b27",
+      "role": "LLaMA-1B efficiency audit",
+      "sha256": "e01dbf4e520f2ff9dbb2970a20c6daacc0aa75e80b033c9393870b0d98c3e0cc",
+      "status": "ready_to_cite_with_scope_caveats"
+    },
+    {
+      "bytes": 5072,
+      "path": "PRIVATE_PATH_REDACTED__fc1649b647ed",
+      "role": "124M external-neighbor runs",
+      "sha256": "eda9ba780c934230c641e74c295c59c5105c384d8b5decff4623926fbec5627b",
+      "status": "quality_claim_eligible_timing_ineligible"
+    },
+    {
+      "bytes": 540,
+      "path": "PRIVATE_PATH_REDACTED__2a4c5479222e",
+      "role": "124M external-neighbor aggregate",
+      "sha256": "359dfd02f9d8b31280e47cbd4090a6d83290b2572ace694e956d7a4660c576bb",
+      "status": "quality_claim_eligible_timing_ineligible"
+    },
+    {
+      "bytes": 1273,
+      "path": "PRIVATE_PATH_REDACTED__2f0ecacb2f00",
+      "role": "Mousse paired contrasts",
+      "sha256": "ed02254f7caebf5a28668df2f8bc31d0cc51385d282fd6abac25b8e0b1451b92",
+      "status": "quality_claim_eligible_timing_ineligible"
+    },
+    {
+      "bytes": 3013,
+      "path": "PRIVATE_PATH_REDACTED__ba4d6db40a0a",
+      "role": "Experiment 45 analysis manifest",
+      "sha256": "ebda6864bb066cb1102cb2946d9007d8d406b32b6c2e5f00418ba25746fac394",
+      "status": "quality_claim_eligible_timing_ineligible"
+    },
+    {
+      "bytes": 4699,
+      "path": "PRIVATE_PATH_REDACTED__1fe6a922807a",
+      "role": "Experiment 45 local acceptance audit",
+      "sha256": "b36d7c4b9b870ba69a92fb519e1b67b39dc99bf5511ad1eef2d4b967eeefa1ed",
+      "status": "quality_claim_eligible_timing_ineligible"
+    },
+    {
+      "bytes": 2102,
+      "path": "PRIVATE_PATH_REDACTED__d2c47a854b2d",
+      "role": "cross-scale method aggregate",
+      "sha256": "7a07216c6faf77977f7346d87e4d72b98908e046ac20cd53b2d22af2ceb521cc",
+      "status": "passed"
+    },
+    {
+      "bytes": 3249,
+      "path": "PRIVATE_PATH_REDACTED__35ee1d00e49a",
+      "role": "cross-scale paired contrasts",
+      "sha256": "bb93605b9725470e02779a16e365a46ccbfaa46a7f6b56660c7e85e37514fa79",
+      "status": "passed"
+    },
+    {
+      "bytes": 1118,
+      "path": "PRIVATE_PATH_REDACTED__39b3a62fa41b",
+      "role": "routing state complexity",
+      "sha256": "ecc229d520c2d525b8990e410bef564ed4b09c4aa479704bfa33408b21c88b28",
+      "status": "passed"
+    },
+    {
+      "bytes": 409,
+      "path": "PRIVATE_PATH_REDACTED__808056810a61",
+      "role": "routing equivariance diagnostic",
+      "sha256": "3c61c16ded9f86834a8ee4879ea0c45b1918b56e7751b40751528712666f4f91",
+      "status": "passed"
+    },
+    {
+      "bytes": 2278,
+      "path": "PRIVATE_PATH_REDACTED__15632cde2de8",
+      "role": "deduplicated evidence-source ledger",
+      "sha256": "a98af8f6568232f4e75358b27ed5049fbaff01f4b260685644117ff4abe7a7eb",
+      "status": "passed"
+    }
+  ],
+  "status": "passed_with_caveats",
+  "synthetic": false
+}

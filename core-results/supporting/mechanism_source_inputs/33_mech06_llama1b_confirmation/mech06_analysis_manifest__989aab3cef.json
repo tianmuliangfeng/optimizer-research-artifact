@@ -1,0 +1,23 @@
+{
+  "confirmation_contract_sha256": "7aa4de9ec54d8ab106b46e60831ab4ee6710f8de05208dafc63d1bf7ab7be8fb",
+  "existing_training_rankings_read": false,
+  "mech05_contract_sha256": "be57755f452eb537d3a4ddc19f82c83cbe87155e39e330085cfcba51bb3681d5",
+  "output_sha256": {
+    "MECH06_LLAMA1B_DIAGNOSTIC_REPORT.md": "f8d62a13ffa9064b299a09ec0ab46c6f51bd419196ec0c9cf8217a324b9deb79",
+    "checkpoint_diagnostic_features.json": "fd89f0c21de657b597834bcc0361029540dd5d20e8bd072c1e3da5bb85cad5a5",
+    "checkpoint_summary.csv": "aaa429d40560baaf1fa8a5e73063ae2166666ae19698e5cbf7242fa13ca1fe4e",
+    "input_validation.json": "a589baf7d1a0dbe9ab0487b82dbf15a81fd40b9d29f5f69b0c4c5a64faed2b75",
+    "trajectory_prediction.json": "551d0cb2a2c366c6b65b6f0db772e67a1f2ed49d81a2c2be7b820c8e7697bfe7"
+  },
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-27.1",
+  "trajectory_prediction": {
+    "early_signal": "uncertain",
+    "existing_training_rankings_used": false,
+    "late_signal": "uncertain",
+    "retrospective_ranking_evaluation_required_separately": true,
+    "same_signal": true,
+    "scale_confirmation": "uncertain"
+  }
+}

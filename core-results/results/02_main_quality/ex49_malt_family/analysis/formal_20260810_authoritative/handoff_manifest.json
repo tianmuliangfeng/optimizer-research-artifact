@@ -1,0 +1,141 @@
+{
+  "analysis_manifest": "PRIVATE_PATH_REDACTED__d65d88933d4e",
+  "analysis_manifest_sha256": "855179dee582b418d525431a2d0042911b29a86e81dbb0edf85dbf1f76e0fed7",
+  "claim_labels": [
+    "MALT-R1 adaptation",
+    "MALTER-Eq17-R1 adaptation"
+  ],
+  "contract": "PRIVATE_PATH_REDACTED",
+  "contract_sha256": "6193acbf018d0ae42b7f27749ee73468413e99a51c73357774b639c20b4cb684",
+  "data_inventory": {
+    "path": "PRIVATE_PATH_REDACTED__ee188e79a67e",
+    "sha256": "a1192ce059f053931efc7aaeb8c2dcb9a775abfc67da00234452ad98709b2e56"
+  },
+  "exact_runtime_contract": {
+    "checks": {
+      "numpy": true,
+      "python": true,
+      "torch": true,
+      "torch_cuda": true,
+      "triton": true
+    },
+    "expected": {
+      "numpy": "2.2.6",
+      "python": "3.10.12",
+      "torch": "2.8.0+cu126",
+      "torch_cuda": "12.6",
+      "triton": "3.4.0"
+    },
+    "observed": {
+      "numpy": "2.2.6",
+      "python": "3.10.12",
+      "torch": "2.8.0+cu126",
+      "torch_cuda": "12.6",
+      "triton": "3.4.0"
+    },
+    "python_executable": "PRIVATE_PATH_REDACTED",
+    "status": "passed"
+  },
+  "experiment": 49,
+  "family": "49_r1_malt_strong_baseline",
+  "formal_methods": [
+    "malt",
+    "malter_eq17"
+  ],
+  "formal_units": [
+    {
+      "adaptation_label": "MALT-R1 adaptation",
+      "checkpoint": "PRIVATE_PATH_REDACTED",
+      "checkpoint_bytes": 1143429749,
+      "checkpoint_sha256": "96c541e9d46d7991409a6ab46f81ffa1671f1cec3b4fc964d518c71f29056b45",
+      "manifest": "PRIVATE_PATH_REDACTED__bbbd1e25e3b2",
+      "manifest_sha256": "9a4d86fcbd71f2a61868add4a372347a76c309f3619a208155187f6d6dcf1143",
+      "method": "malt",
+      "seed": 2024,
+      "selected_cell_id": "malt_lr0125",
+      "selected_matrix_lr": 0.0125,
+      "summary": "PRIVATE_PATH_REDACTED",
+      "summary_sha256": "2587ad97b956f35380d5d272821b554f6866bf017a1822fb50588e10b0976600"
+    },
+    {
+      "adaptation_label": "MALT-R1 adaptation",
+      "checkpoint": "PRIVATE_PATH_REDACTED",
+      "checkpoint_bytes": 1143429749,
+      "checkpoint_sha256": "7719728d77cfa74ede52b0f077cea4681d801659a07bc19d6da9a710013336f4",
+      "manifest": "PRIVATE_PATH_REDACTED__b3189eb4d7e1",
+      "manifest_sha256": "c74299629c5bc723b1d7c4da41d4ad395d274852914f0710633e0618650c1d25",
+      "method": "malt",
+      "seed": 2025,
+      "selected_cell_id": "malt_lr0125",
+      "selected_matrix_lr": 0.0125,
+      "summary": "PRIVATE_PATH_REDACTED",
+      "summary_sha256": "7daf81c43de576a9ecca6f72afd080096ffc80c73817aa4498d5c1b4cd1e1978"
+    },
+    {
+      "adaptation_label": "MALT-R1 adaptation",
+      "checkpoint": "PRIVATE_PATH_REDACTED",
+      "checkpoint_bytes": 1143429749,
+      "checkpoint_sha256": "dfcddba83cc84b51924860e3f39072b11b1c0a9eeb13ecfe0930d6e33e313eb1",
+      "manifest": "PRIVATE_PATH_REDACTED__e61d1de0457e",
+      "manifest_sha256": "a8bbebbf149474b23e4eadab82525d5c04524ddeacf402fada4c0fe1b827577c",
+      "method": "malt",
+      "seed": 2026,
+      "selected_cell_id": "malt_lr0125",
+      "selected_matrix_lr": 0.0125,
+      "summary": "PRIVATE_PATH_REDACTED",
+      "summary_sha256": "b3a6620fa06abb4a4bfd829984d8d653a6f525b9931519e31da849616dae2d28"
+    },
+    {
+      "adaptation_label": "MALTER-Eq17-R1 adaptation",
+      "checkpoint": "PRIVATE_PATH_REDACTED",
+      "checkpoint_bytes": 1143450605,
+      "checkpoint_sha256": "e419ad718e116d9ac4ddf5fc7312543d4e1f9405f0185b0dc826a12b7d8f9534",
+      "manifest": "PRIVATE_PATH_REDACTED__2ae5143ec352",
+      "manifest_sha256": "953f590c8ef4bb832e42f419720708d403a403e7fbc71ed5165582306a86ba09",
+      "method": "malter_eq17",
+      "seed": 2024,
+      "selected_cell_id": "malter_eq17_lr015",
+      "selected_matrix_lr": 0.015,
+      "summary": "PRIVATE_PATH_REDACTED",
+      "summary_sha256": "d5e1b12a2f87e44f0682ff0d49cbe850da3cce3710d95bd42aebf3385fe38186"
+    },
+    {
+      "adaptation_label": "MALTER-Eq17-R1 adaptation",
+      "checkpoint": "PRIVATE_PATH_REDACTED",
+      "checkpoint_bytes": 1143450605,
+      "checkpoint_sha256": "01311ee7c186d15eb7cfb5d91566fda525f93c323d2142e07e4e01b3e1f65d79",
+      "manifest": "PRIVATE_PATH_REDACTED__9c438fe0aeb8",
+      "manifest_sha256": "8299b71df912368276779718fd4a1cef0af61911499bbe2670836e9e55a786fa",
+      "method": "malter_eq17",
+      "seed": 2025,
+      "selected_cell_id": "malter_eq17_lr015",
+      "selected_matrix_lr": 0.015,
+      "summary": "PRIVATE_PATH_REDACTED",
+      "summary_sha256": "b471e68987b4fdeb9832f474841ece06d178f04007cd571f8a94678b1c6b7d5b"
+    },
+    {
+      "adaptation_label": "MALTER-Eq17-R1 adaptation",
+      "checkpoint": "PRIVATE_PATH_REDACTED",
+      "checkpoint_bytes": 1143450605,
+      "checkpoint_sha256": "2c0d3619e42d9456af04c5e0a11f655148b89a6cf3a75f601c23627796b5a12c",
+      "manifest": "PRIVATE_PATH_REDACTED__53fea33c1fdc",
+      "manifest_sha256": "970153375fb97cce071de2497b4a27efd56dfde5eed1e99f65e9a849104dd047",
+      "method": "malter_eq17",
+      "seed": 2026,
+      "selected_cell_id": "malter_eq17_lr015",
+      "selected_matrix_lr": 0.015,
+      "summary": "PRIVATE_PATH_REDACTED",
+      "summary_sha256": "1a737f248d8551e676bf7db399ad5cce40d2597517c7296f925cfac1226c41e6"
+    }
+  ],
+  "malter_formula_choice": "Equation (17), exactly one outer eta",
+  "n_formal_units": 6,
+  "official_reproduction": false,
+  "pilot_selection": "PRIVATE_PATH_REDACTED",
+  "pilot_selection_sha256": "591348aad2d19f36ca405abe2162d329dc89246bc41fc1fec3cb0581a28fe4ee",
+  "run_dir": "PRIVATE_PATH_REDACTED__8025cf56c88f",
+  "status": "completed",
+  "suite_plan": "PRIVATE_PATH_REDACTED",
+  "suite_plan_sha256": "466b3633b1d6f02104dcd08bd31c2c26eb24d0dabf0e1340cdf6c6ab963a4a83",
+  "timing_eligible": false
+}

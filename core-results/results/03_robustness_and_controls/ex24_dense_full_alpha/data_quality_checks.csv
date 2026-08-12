@@ -1,0 +1,16 @@
+check,passed,severity,evidence
+expected_metric_exports,True,required,"observed=['lr/adamw', 'lr/matrix', 'memory/k_state_mib', 'memory/optimizer_state_mib', 'memory/peak_allocated_mib', 'performance/step_avg_ms', 'time/train_s', 'train/loss_step', 'val/loss']"
+expected_run_count,True,required,observed=10 expected=10
+run_identity_consistent_across_metrics,True,required,metrics=9 runs_per_metric=10
+complete_seed_method_grid,True,required,"observed=[(2024, 'fullalpha0'), (2024, 'fullalpha0p25'), (2024, 'fullalpha0p50'), (2024, 'fullalpha0p75'), (2024, 'fullalpha1'), (2025, 'fullalpha0'), (2025, 'fullalpha0p25'), (2025, 'fullalpha0p50'), (2025, 'fullalpha0p75'), (2025, 'fullalpha1')]"
+exact_step_grids,True,required,failed=none
+all_values_finite,True,required,failed=none
+wandb_min_max_bands_equal_base,True,required,failed_count=0
+one_run_stamp_per_seed,True,required,"{""2024"": [""20260727T110129+0000""], ""2025"": [""20260728T040112+0000""]}"
+shared_initial_validation_within_seed,True,required,"{""2024"": [10.9462], ""2025"": [10.9869]}"
+learning_rate_curves_identical_within_seed,True,required,failed=none
+dense_full_memory_accounting,True,required,"expected={'memory/k_state_mib': 1026.0, 'memory/optimizer_state_mib': 1644.4746131896973, 'memory/peak_allocated_mib': 40788.0} failures=none"
+canonical_three_seed_grid,True,required,"rows=15 seeds=[np.int64(2024), np.int64(2025), np.int64(2026)]"
+seed2026_previous_wandb_audit_usable,True,required,"statuses=['FAIL_BY_DESIGN', 'NOT_AUDITED', 'PASS', 'PROVISIONAL_PASS']"
+frozen_primary_confirmation,True,scientific_gate,alpha=0.5 beats alpha=0 and alpha=1 at step6200 in both new seeds
+dense_alpha0_matches_efficient_diag_gate,True,scientific_gate,absolute final and tail5 loss deltas <=0.001 in all three seeds

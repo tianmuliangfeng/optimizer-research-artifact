@@ -1,0 +1,13 @@
+case_id,route,input_dim,block_count,layer_count,stored_matrices,dtype_bytes,elements_per_module_matrix,analytic_state_bytes,analytic_state_mib,relative_to_full,measured_state_bytes,relative_error,measurement_passed
+r1_124m_mlp_contraction,full,3072,4,12,2,4,9437184,905969664,864,1,,,
+r1_124m_mlp_contraction,block,3072,4,12,2,4,2359296,226492416,216,0.25,,,
+r1_124m_mlp_contraction,diag,3072,4,12,2,4,3072,294912,0.28125,0.000325520833333,,,
+r1_124m_mlp_contraction,none,3072,4,12,2,4,0,0,0,0,,,
+record28_275m_mlp_contraction,full,3072,4,12,2,4,9437184,905969664,864,1,,,
+record28_275m_mlp_contraction,block,3072,4,12,2,4,2359296,226492416,216,0.25,,,
+record28_275m_mlp_contraction,diag,3072,4,12,2,4,3072,294912,0.28125,0.000325520833333,,,
+record28_275m_mlp_contraction,none,3072,4,12,2,4,0,0,0,0,,,
+record17_455m_mlp_contraction,full,4096,4,16,2,4,16777216,2147483648,2048,1,,,
+record17_455m_mlp_contraction,block,4096,4,16,2,4,4194304,536870912,512,0.25,,,
+record17_455m_mlp_contraction,diag,4096,4,16,2,4,4096,524288,0.5,0.000244140625,,,
+record17_455m_mlp_contraction,none,4096,4,16,2,4,0,0,0,0,,,

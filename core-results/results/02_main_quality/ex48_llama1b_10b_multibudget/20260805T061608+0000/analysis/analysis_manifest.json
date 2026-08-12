@@ -1,0 +1,45 @@
+{
+  "artifacts": {
+    "EX48_FORMAL_ANALYSIS.md": {
+      "bytes": 847,
+      "sha256": "63e169ea0530738c0d0c3eacb495a44e8f34b824882c33180d4301b16d8cb771"
+    },
+    "classification.json": {
+      "bytes": 521,
+      "sha256": "1e4da4401453e80deea5a8012595b70167ed9f434e95e98321f39d7df4789f58"
+    },
+    "endpoint_results.csv": {
+      "bytes": 13928,
+      "sha256": "35dcf3452316c98253d8563463ff4cb3b61939fce6e934501853b7d194752588"
+    },
+    "paired_contrasts.csv": {
+      "bytes": 2544,
+      "sha256": "c3976c0ae5f7f5b3b912c396eea0165d4105d1b25dbdbd52d04a013fa4b907d3"
+    }
+  },
+  "checkpoint_hash_policy": "full hashes recorded at phase completion; final verify mode re-hashes all 36 retained endpoints",
+  "claim_eligible": true,
+  "classification": "persistent_muon_lead",
+  "contract_sha256": "23350854d9136b70d638d6aa37ad72dfa158143c6e9e083be80ac0e700714b4b",
+  "created_at": "2026-08-11T19:16:25.484692+00:00",
+  "data_inventory_sha256": "76848d39697aa6e0a7083e4445185fd7215b4f7ddad411d60a7cd6943c384b21",
+  "formal_phases": 72,
+  "formal_units": 12,
+  "integrity_checks": {
+    "contract": true,
+    "data": true,
+    "endpoint_count": true,
+    "lineage": true,
+    "phase_count": true,
+    "pilot": true,
+    "preflight": true,
+    "retained_checkpoint_count": true,
+    "same_seed_initialization": true,
+    "source_snapshot": true,
+    "suite": true,
+    "unit_count": true
+  },
+  "passed": true,
+  "primary_endpoints": 36,
+  "schema_version": "ex48_analysis_manifest_v1"
+}

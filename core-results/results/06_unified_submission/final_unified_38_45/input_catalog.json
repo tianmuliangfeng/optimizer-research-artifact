@@ -1,0 +1,114 @@
+{
+  "schema_version": "mdp_submission_input_catalog_v1",
+  "sources": [
+    {
+      "analysis_family": "gpt_scale",
+      "architecture": "Modded-NanoGPT R1",
+      "csv": "PRIVATE_PATH_REDACTED__2eba6eb79939",
+      "expected_methods": [
+        "muon",
+        "block4",
+        "diag",
+        "none"
+      ],
+      "expected_seeds": [
+        2024,
+        2025,
+        2026
+      ],
+      "manifest": "PRIVATE_PATH_REDACTED__5adba429aff7",
+      "manifest_require": {
+        "status": "PASS_WITH_CAVEATS"
+      },
+      "model_parameters": 124000000,
+      "scale_id": "gpt124m",
+      "schema": "r1_core_run_summary_v1",
+      "source_id": "r1_core_124m",
+      "train_tokens": 3250585600
+    },
+    {
+      "analysis_family": "gpt_scale",
+      "architecture": "Modded-NanoGPT near Record #28",
+      "csv": "PRIVATE_PATH_REDACTED__76e157dff65f",
+      "expected_methods": [
+        "muon",
+        "original_newton_muon",
+        "selective_diag",
+        "selective_none"
+      ],
+      "expected_seeds": [
+        2024,
+        2025,
+        2026,
+        2027
+      ],
+      "manifest": "PRIVATE_PATH_REDACTED__2e328fcdabf5",
+      "manifest_require": {
+        "passed": true,
+        "status": "passed"
+      },
+      "model_parameters": 275743572,
+      "scale_id": "gpt275m",
+      "schema": "record_cells_v1",
+      "source_id": "experiment43_record28_275m",
+      "train_tokens": 666501120
+    },
+    {
+      "analysis_family": "gpt_scale",
+      "architecture": "Modded-NanoGPT Record #17 single-H100 adaptation",
+      "csv": "PRIVATE_PATH_REDACTED__93c39e47b29c",
+      "expected_methods": [
+        "muon",
+        "original_newton_muon",
+        "selective_diag",
+        "selective_none"
+      ],
+      "expected_seeds": [
+        2024,
+        2025,
+        2026
+      ],
+      "manifest": "PRIVATE_PATH_REDACTED__221033501cd2",
+      "manifest_require": {
+        "passed": true,
+        "status": "passed"
+      },
+      "model_parameters": 454496336,
+      "scale_id": "gpt455m",
+      "schema": "record_cells_v1",
+      "source_id": "experiment44_record17_455m",
+      "train_tokens": 3124756480
+    },
+    {
+      "analysis_family": "external_baselines_124m",
+      "architecture": "Modded-NanoGPT R1",
+      "csv": "PRIVATE_PATH_REDACTED__fc8a4ae7da94",
+      "expected_methods": [
+        "muon",
+        "block4",
+        "diag",
+        "none",
+        "mousse",
+        "moonlight",
+        "normuon",
+        "adamw"
+      ],
+      "expected_seeds": [
+        2024,
+        2025,
+        2026
+      ],
+      "manifest": "PRIVATE_PATH_REDACTED__5c44046297e3",
+      "manifest_require": {
+        "protocol": "mousse_r1_unified_analysis_v1",
+        "status": "completed_valid"
+      },
+      "model_parameters": 124000000,
+      "scale_id": "gpt124m",
+      "schema": "mousse_unified_run_summary_v1",
+      "source_id": "experiment45_mousse_124m",
+      "train_tokens": 3250585600
+    }
+  ],
+  "synthetic": false
+}

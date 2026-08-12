@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-07-30.8",
+  "experiment": "44_newton_muon_record17_455m",
+  "evidence_class": "paper_grade_paired_multiseed_quality_on_record17_single_gpu_adaptation",
+  "claim_boundary": {
+    "primary_question": "Under one frozen single-H100 adaptation of the upstream Modded-NanoGPT Medium Track Record #17 recipe, do Selective-none and Selective-diag improve validation loss relative to both Muon and original Newton-Muon?",
+    "alignment_label": "upstream Modded-NanoGPT Medium Track Record #17 recipe, single-H100 adaptation",
+    "is_unchanged_upstream_reproduction": false,
+    "reasons_not_unchanged": [
+      "the archived upstream run used eight H100 GPUs whereas this experiment preserves the global token budget on one H100 by eight-way gradient accumulation",
+      "for Newton-family cells, K statistics deliberately aggregate all eight sequential single-H100 microbatches and are not claimed equivalent to a hypothetical eight-rank parameter-owner Newton implementation using only owner-local activations",
+      "the experiment adds original Newton-Muon, Selective-none, and Selective-diag to the upstream Muon trainer",
+      "the controlled PyTorch 2.8 execution keeps FlexAttention and torch.compile(model) but uniformly disables the optional compiled-autograd wrapper, which otherwise fails in a nested FX trace before the first counted update",
+      "the experiment freezes three paired seeds and adds local provenance, integrity, checkpoint, and W&B instrumentation"
+    ],
+    "quality_usable": true,
+    "state_memory_usable": true,
+    "timing_usable": false,
+    "forbidden_uses": [
+      "do not call this an unchanged or official Record #17 reproduction",
+      "do not use wall time, tokens/s, or steps/s from these concurrent quality jobs as efficiency evidence",
+      "do not promote Selective-diag versus Selective-none to the primary comparison family",
+      "do not change methods, seeds, target loss, or hyperparameters after observing experiment-44 outcomes"
+    ]
+  },
+  "upstream_record17_provenance": {
+    "repository": "https://github.com/KellerJordan/modded-nanogpt",
+    "commit": "9e7218468ea864a33053142c196d90bbf3ed48e1",
+    "path": "records/track_2_medium/2025-11-12_BlockMaskRedundantOp/train_gpt_medium.py",
+    "git_blob": "8504813a5ba0b1bf981fd6ad9d6348bfa1754b0f",
+    "canonical_lf_sha256": "03d91174eed5e8cbf57063a1e997eb98570dde7a09ba9b2c94aa36e9d5eb94cb",
+    "vendored_path": "upstream/record17_train_gpt_medium.py",
+    "reported_reference_only": {
+      "replicates": 3,
+      "muon_final_validation_losses": [
+        2.919,
+        2.9208,
+        2.919
+      ],
+      "muon_mean": 2.9196,
+      "newton_muon_final_validation_losses": [
+        2.9175,
+        2.9191,
+        2.9181
+      ],
+      "newton_muon_mean": 2.9183,
+      "newton_muon_minus_muon_mean": -0.0013,
+      "use_policy": "context only; never pool upstream runs with experiment-44 seeds"
+    },
+    "archived_execution_environment": {
+      "log_path": "records/track_2_medium/2025-11-12_BlockMaskRedundantOp/000_3b22a9d4-b52e-4916-99bf-3d48b38747a7.txt",
+      "log_git_blob": "b6bbf88f4b204d01af6c1c810baed07fc458d8f5",
+      "python": "3.10.12",
+      "torch": "2.7.0+cu126",
+      "cuda_build": "12.6",
+      "driver": "560.35.03",
+      "evidence_role": "immutable upstream execution-log header at the frozen repository commit"
+    }
+  },
+  "local_newton_provenance": {
+    "repository_name": "Newton-Muon-official-r0",
+    "remote_repository_path": "${SNM_OFFICIAL_REPO}",
+    "commit": "df78af0db523d8bceb25af4919a3e3e7082b80f3",
+    "role": "Newton-Muon optimizer implementation reference and FineWeb10B data provenance; this repository does not contain the archived 455M Record #17 trainer",
+    "canonical_lf_content_sha256": {
+      "README.md": "c0de75168a71988240408cace7a973ec666f6006d07466db9f0d497c7f3fdfa6",
+      "data/cached_fineweb10B.py": "adcc9f7d81ed1ac115a66d08d94d8d3e5c7425cabaf856da1f1fb106af87d09b",
+      "train_gpt_newton_muon_2.py": "d30d31e3a01a18ea19050ea8aba04609d4825af2d26594955c148af83b07c4b6",
+      "triton_kernels.py": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+    }
+  },
+  "methods": {
+    "order": [
+      "muon",
+      "original_newton_muon",
+      "selective_none",
+      "selective_diag"
+    ],
+    "roles": {
+      "muon": "Record #17 Muon baseline with no K state",
+      "original_newton_muon": "same Record #17 model and recipe with Newton-Muon; full K for QKV, O, and MLP expansion, and four aligned 1024-by-1024 K blocks for MLP contraction",
+      "selective_none": "same Newton-Muon recipe as the original control, with only MLP-contraction K removed",
+      "selective_diag": "same Newton-Muon recipe as the original control, with only the four MLP-contraction K blocks replaced by aligned diagonal scales"
+    },
+    "only_allowed_newton_family_difference": "the MLP-contraction proj_w K representation among original_newton_muon, selective_none, and selective_diag",
+    "diag_vs_none_role": "secondary descriptive contrast only"
+  },
+  "paired_design": {
+    "formal_seeds": [
+      2024,
+      2025,
+      2026
+    ],
+    "formal_methods_per_seed": 4,
+    "formal_cells": 12,
+    "pairing_unit": "seed",
+    "same_seed_requirements": [
+      "identical model initialization fingerprint across all four methods",
+      "identical training and validation shard fingerprint",
+      "identical global-batch data order and starting state",
+      "identical architecture and non-contraction optimizer hyperparameters"
+    ],
+    "pre_registered_seed_extension": {
+      "automatic": false,
+      "maximum_additional_seeds": 2,
+      "only_allowed_seed_ids_in_order": [
+        2027,
+        2028
+      ],
+      "rule": "an ambiguous primary confidence interval is necessary but not sufficient; append all four methods together only if the ambiguity would change the frozen cross-scale paper claim"
+    }
+  },
+  "architecture": {
+    "family": "Modded-NanoGPT",
+    "parameter_scale_label": "455M",
+    "exact_parameter_count": 454496336,
+    "vocabulary_size": 50257,
+    "padded_vocabulary_size": 50304,
+    "num_layers": 16,
+    "num_attention_layers": 15,
+    "num_heads": 8,
+    "head_dim": 128,
+    "model_dim": 1024,
+    "mlp_hidden_dim": 4096,
+    "attention_skipped_block_index": 7,
+    "value_embedding_count": 3
+  },
+  "data_contract": {
+    "dataset": "FineWeb10B cached binary shards",
+    "remote_root": "${SNM_OFFICIAL_REPO}/data/fineweb10B",
+    "train_pattern": "fineweb_train_*.bin",
+    "validation_pattern": "fineweb_val_*.bin",
+    "required_train_shards": 50,
+    "required_validation_shards": 1,
+    "validation_tokens": 10485760,
+    "single_gpu_equivalence_rule": "request each original eight-rank global batch from the loader before splitting it into eight contiguous microbatches; repeated local-size loader calls are forbidden because shard-boundary discard semantics differ",
+    "certificate_requirements": [
+      "resolved absolute path for every shard",
+      "sorted shard inventory",
+      "file size and binary header audit",
+      "full SHA-256 for every shard",
+      "one immutable aggregate data fingerprint"
+    ],
+    "formal_policy": "all cells must use one accepted preflight data certificate"
+  },
+  "training_recipe": {
+    "formal_updates": 5960,
+    "train_sequence_length_per_microbatch": 65536,
+    "gradient_accumulation_steps_single_gpu": 8,
+    "tokens_per_update": 524288,
+    "exact_training_tokens": 3124756480,
+    "training_tokens_label": "approximately 3.12B",
+    "instrumentation_compile_warmup_updates": 26,
+    "warmup_restore_policy": "after compile warmup restore exact model, AdamW, Muon, K, activation accumulators, data-loader, gradients, and RNG state; then empty CUDA caches, reset peak statistics, and begin counted training at update zero",
+    "validation_sequence_length_per_microbatch": 262144,
+    "validation_microbatches_per_evaluation": 40,
+    "validation_every_updates": 125,
+    "validation_row_count": 49,
+    "validation_step_rule": "0,125,...,5875,5960",
+    "adamw": {
+      "head_learning_rate": 0.003125,
+      "embedding_learning_rate": 0.3,
+      "scalar_learning_rate": 0.015,
+      "betas": [
+        0.8,
+        0.95
+      ],
+      "epsilon": 1e-10,
+      "weight_decay": 0.0
+    },
+    "matrix_optimizer": {
+      "name": "Muon",
+      "learning_rate": 0.025,
+      "momentum_start": 0.85,
+      "momentum_end": 0.95,
+      "momentum_warmup_updates": 300,
+      "weight_decay": 0.01,
+      "mlp_weight_decay_multiplier": 2.0,
+      "newton_schulz_steps": 5
+    },
+    "learning_rate_schedule": {
+      "constant_fraction": 0.3,
+      "linear_cooldown_fraction": 0.7,
+      "final_multiplier": 0.0,
+      "formal_denominator_updates": 5960
+    },
+        "newton_k_recipe": {
+      "ewma_beta": 0.9,
+      "ridge_multiplier": 0.2,
+      "initial_diagonal": 0.001,
+      "refresh_every_updates": 24,
+      "first_counted_refresh_update_one_based": 24,
+      "expected_formal_refresh_count": 248,
+      "inverse_dtype": "float32",
+      "preconditioner_application_dtype": "float32",
+            "application_order": "apply inverse K to the raw float32 gradient before momentum and Newton-Schulz orthogonalization",
+            "single_h100_statistics_scope": "aggregate activation statistics from all eight sequential microbatches, totaling 524288 tokens per counted update",
+            "strict_hypothetical_eight_rank_owner_local_equivalence_claimed": false
+        },
+    "formal_checkpoint_policy": "save and hash one model-only final checkpoint per completed formal cell as state_step005960.pt; checkpoints may remain on the remote host and need not be included in the analysis handoff",
+    "resume_policy": "never resume a partially trained cell; preserve it as a failed attempt and restart that cell from initialization"
+  },
+  "smoke_gate": {
+    "seed": 2026,
+    "methods": [
+      "muon",
+      "original_newton_muon",
+      "selective_none",
+      "selective_diag"
+    ],
+    "counted_updates": 27,
+    "purpose": "cross the first Newton K refresh at counted update 24 and execute post-refresh updates",
+    "schedule_policy": "the smoke uses the exact 5960-update learning-rate, momentum, and attention-window schedule prefix; shortening the loop must not rescale any schedule",
+    "required_before_formal": true,
+    "quality_evidence": false
+  },
+  "runtime_contract": {
+    "host": "LLaMA H100 host",
+    "execution_domain": "llama-host-h100",
+    "actual_hostname_policy": "the ephemeral container hostname is recorded in suite and cell manifests; the frozen execution identity is this host domain plus the accepted GPU, runtime, source, and data certificates",
+    "pre_formal_host_amendment": "changed from R1 host to the otherwise-idle LLaMA H100 host after read-only preflight and before any experiment-44 smoke or formal outcome; no method, seed, model, data order, hyperparameter, endpoint, or analysis rule changed",
+    "data_path_resolution_policy": "the nominal Newton-Muon-official-r0 data path may resolve to the shared Newton-Muon-official FineWeb directory only when the exact 51-file inventory, headers, and full preflight SHA certificate pass",
+    "required_gpu_name": "NVIDIA H100 80GB HBM3",
+    "default_physical_gpu_lane": "1",
+    "controller_python": "${SNM_CONTROLLER_PYTHON}",
+    "training_python": "${SNM_TRAINING_PYTHON}",
+    "training_runtime_gate": {
+      "python": "3.10.12",
+      "torch": "2.8.0+cu126",
+      "torch_cuda": "12.6",
+      "triton": "3.4.0",
+      "fresh_process_compiled_autograd_default": false,
+      "generated_source_compiled_autograd_enabled": false,
+      "flex_attention_retained": true,
+      "torch_compile_model_retained": true,
+      "rationale": "experiment 44 is a controlled comparison rather than an unchanged upstream reproduction; PyTorch 2.8 is retained for the added FP32 out_dtype GEMM path, while the optional compiled-autograd wrapper is disabled uniformly because it fails around FlexAttention in a nested FX trace before any counted update"
+    },
+    "controller_python_role": "preflight, orchestration, analysis, and post-training W&B upload",
+    "training_python_role": "isolated torch/CUDA training only; W&B import is not required",
+    "result_root": "${SNM_RESULTS_ROOT}/44_newton_muon_record17_455m",
+    "one_visible_physical_gpu_per_training_process": true,
+    "child_logical_device_expected": "cuda:0",
+    "shared_physical_gpu_lock_root": "${SNM_RESULTS_ROOT}/.physical_gpu_locks",
+    "quality_parallelism_policy": "experiment 44 may run on physical GPU1 while experiment 43 runs on physical GPU0; both must honor the shared physical-GPU locks",
+    "timing_policy": "all experiment-44 quality timing is diagnostic and ineligible for efficiency claims"
+  },
+  "source_snapshot_and_recovery": {
+    "bootstrap_policy": "the live repository may only create and seal the first RUN_DIR source snapshot",
+    "snapshot_contents": [
+      "controller, cell runner, analyzer, source builder, common module, tests, contracts, and README",
+      "the recovery launcher, sealed outside the controller directory so snapshot-local tests and recovery never depend on later live-source drift",
+      "the hash-verified vendored Record #17 trainer",
+      "the generated environment-parameterized trainer",
+      "official Newton implementation reference blobs",
+      "a complete file-hash manifest and environment certificate"
+    ],
+    "execution_authority_after_bootstrap": "RUN_DIR/source_snapshot/controller",
+    "recovery_policy": "recover the same RUN_DIR through its sealed snapshot; live-source drift is recorded but cannot block or alter recovery",
+    "completed_cell_policy": "reuse only a cell whose local integrity manifest passes",
+    "incomplete_cell_policy": "preserve the incomplete attempt and start a numbered retry from step zero",
+    "run_lock_required": true,
+    "physical_gpu_lock_required": true
+  },
+  "wandb_contract": {
+    "formal_required": true,
+    "smoke_required": false,
+    "upload_timing": "after local training artifacts, accepted pointer, analysis, and checkpoint hash are sealed",
+    "training_process_imports_wandb": false,
+    "uploader": "controller Python",
+    "deterministic_run_id": true,
+    "resume_mode": "allow",
+    "local_artifacts_are_authoritative": true,
+    "upload_failure_policy": "mark upload pending and provide upload-only recovery; never retrain a valid local cell because W&B failed"
+  },
+  "analysis_contract": {
+    "primary_metric": "final_validation_loss_at_update_5960",
+    "primary_contrasts": [
+      {
+        "candidate": "selective_none",
+        "reference": "muon"
+      },
+      {
+        "candidate": "selective_none",
+        "reference": "original_newton_muon"
+      },
+      {
+        "candidate": "selective_diag",
+        "reference": "muon"
+      },
+      {
+        "candidate": "selective_diag",
+        "reference": "original_newton_muon"
+      }
+    ],
+    "mandatory_benchmark_anchor": {
+      "candidate": "original_newton_muon",
+      "reference": "muon",
+      "primary_selective_claim": false
+    },
+        "secondary_metrics": [
+      "normalized_validation_auc_over_updates_0_to_5960",
+      "tail5_validation_loss_mean",
+      "best_validation_loss",
+      "steps_and_tokens_to_common_target_if_all_methods_are_eligible",
+      "K_state_bytes",
+      "optimizer_state_bytes",
+      "peak_cuda_allocated_bytes",
+            "peak_cuda_reserved_bytes"
+        ],
+        "peak_memory_scope": "counted run after the instrumentation warmup reset, including all scheduled and final validation passes; not a training-step-only peak",
+    "common_target_validation_loss": 2.95,
+    "common_target_role": "secondary trajectory-efficiency endpoint chosen before experiment-44 outcomes so all methods are expected to cross it",
+    "practical_final_loss_margin": 0.002,
+    "difference_sign": "candidate minus reference; negative favors the candidate",
+    "summary_requirements": [
+      "all raw seed-level values",
+      "paired mean difference",
+      "sample standard deviation of paired differences",
+      "two-sided 95% paired t confidence interval with n=3 and df=2",
+      "direction count",
+      "practical-margin classification"
+    ],
+    "diag_vs_none": "secondary descriptive comparison only",
+    "no_post_hoc_method_ranking": true
+  },
+  "acceptance": {
+    "smoke_cells": 4,
+    "formal_cells": 12,
+    "all_cells_finite": true,
+    "all_formal_cells_start_from_update_zero": true,
+    "all_formal_cells_have_exactly_49_validation_rows": true,
+    "all_formal_cells_have_exact_training_tokens": 3124756480,
+    "all_seed_pairing_checks_pass": true,
+    "all_source_runtime_data_and_initialization_fingerprints_pass": true,
+    "all_checkpoint_hashes_pass": true,
+    "all_method_specific_K_state_schema_checks_pass": true,
+    "all_float32_inverse_and_application_checks_pass": true,
+    "all_local_manifests_pass": true,
+    "all_formal_wandb_uploads_complete_or_explicitly_pending_upload_only_retry": true,
+    "analysis_pass_means_integrity_complete_not_algorithm_superiority": true
+  }
+}

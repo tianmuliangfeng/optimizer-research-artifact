@@ -1,0 +1,196 @@
+check,status,severity_if_failed,evidence
+wandb_export_2026-07-23T10_09_14.143+08_00.csv: exactly one metric,PASS,critical,['val/loss']
+val/loss: unique export file,PASS,critical,wandb_export_2026-07-23T10_09_14.143+08_00.csv
+val/loss: exact nine-run coverage,PASS,critical,observed=9
+val/loss: exact step coverage,PASS,critical,"observed_first_last=(0, 100)...(6100, 6200); expected_points=63"
+moonlight_r1scale seed2025 val/loss: MIN/MAX mirrors,PASS,high,points=63
+moonlight_r1scale seed2025 val/loss: finite,PASS,critical,finite=63/63
+normuon_r1scale seed2025 val/loss: MIN/MAX mirrors,PASS,high,points=63
+normuon_r1scale seed2025 val/loss: finite,PASS,critical,finite=63/63
+adamw_low seed2025 val/loss: MIN/MAX mirrors,PASS,high,points=63
+adamw_low seed2025 val/loss: finite,PASS,critical,finite=63/63
+moonlight_r1scale seed2024 val/loss: MIN/MAX mirrors,PASS,high,points=63
+moonlight_r1scale seed2024 val/loss: finite,PASS,critical,finite=63/63
+normuon_r1scale seed2024 val/loss: MIN/MAX mirrors,PASS,high,points=63
+normuon_r1scale seed2024 val/loss: finite,PASS,critical,finite=63/63
+adamw_low seed2024 val/loss: MIN/MAX mirrors,PASS,high,points=63
+adamw_low seed2024 val/loss: finite,PASS,critical,finite=63/63
+moonlight_r1scale seed2026 val/loss: MIN/MAX mirrors,PASS,high,points=63
+moonlight_r1scale seed2026 val/loss: finite,PASS,critical,finite=63/63
+normuon_r1scale seed2026 val/loss: MIN/MAX mirrors,PASS,high,points=63
+normuon_r1scale seed2026 val/loss: finite,PASS,critical,finite=63/63
+adamw_low seed2026 val/loss: MIN/MAX mirrors,PASS,high,points=63
+adamw_low seed2026 val/loss: finite,PASS,critical,finite=63/63
+wandb_export_2026-07-23T10_09_09.832+08_00.csv: exactly one metric,PASS,critical,['train/loss_step']
+train/loss_step: unique export file,PASS,critical,wandb_export_2026-07-23T10_09_09.832+08_00.csv
+train/loss_step: exact nine-run coverage,PASS,critical,observed=9
+train/loss_step: exact step coverage,PASS,critical,"observed_first_last=(20, 40)...(6180, 6200); expected_points=310"
+moonlight_r1scale seed2025 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+moonlight_r1scale seed2025 train/loss_step: finite,PASS,critical,finite=310/310
+normuon_r1scale seed2025 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+normuon_r1scale seed2025 train/loss_step: finite,PASS,critical,finite=310/310
+adamw_low seed2025 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+adamw_low seed2025 train/loss_step: finite,PASS,critical,finite=310/310
+moonlight_r1scale seed2024 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+moonlight_r1scale seed2024 train/loss_step: finite,PASS,critical,finite=310/310
+normuon_r1scale seed2024 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+normuon_r1scale seed2024 train/loss_step: finite,PASS,critical,finite=310/310
+adamw_low seed2024 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+adamw_low seed2024 train/loss_step: finite,PASS,critical,finite=310/310
+moonlight_r1scale seed2026 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+moonlight_r1scale seed2026 train/loss_step: finite,PASS,critical,finite=310/310
+normuon_r1scale seed2026 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+normuon_r1scale seed2026 train/loss_step: finite,PASS,critical,finite=310/310
+adamw_low seed2026 train/loss_step: MIN/MAX mirrors,PASS,high,points=310
+adamw_low seed2026 train/loss_step: finite,PASS,critical,finite=310/310
+wandb_export_2026-07-23T10_09_05.858+08_00.csv: exactly one metric,PASS,critical,['time/train_s']
+time/train_s: unique export file,PASS,critical,wandb_export_2026-07-23T10_09_05.858+08_00.csv
+time/train_s: exact nine-run coverage,PASS,critical,observed=9
+time/train_s: exact step coverage,PASS,critical,"observed_first_last=(0, 20)...(6180, 6200); expected_points=311"
+moonlight_r1scale seed2025 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2025 time/train_s: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2025 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2025 time/train_s: finite,PASS,critical,finite=311/311
+adamw_low seed2025 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2025 time/train_s: finite,PASS,critical,finite=311/311
+moonlight_r1scale seed2024 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2024 time/train_s: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2024 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2024 time/train_s: finite,PASS,critical,finite=311/311
+adamw_low seed2024 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2024 time/train_s: finite,PASS,critical,finite=311/311
+moonlight_r1scale seed2026 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2026 time/train_s: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2026 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2026 time/train_s: finite,PASS,critical,finite=311/311
+adamw_low seed2026 time/train_s: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2026 time/train_s: finite,PASS,critical,finite=311/311
+wandb_export_2026-07-23T10_09_00.811+08_00.csv: exactly one metric,PASS,critical,['performance/step_avg_ms']
+performance/step_avg_ms: unique export file,PASS,critical,wandb_export_2026-07-23T10_09_00.811+08_00.csv
+performance/step_avg_ms: exact nine-run coverage,PASS,critical,observed=9
+performance/step_avg_ms: exact step coverage,PASS,critical,"observed_first_last=(40, 60)...(6180, 6200); expected_points=309"
+moonlight_r1scale seed2025 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+moonlight_r1scale seed2025 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+normuon_r1scale seed2025 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+normuon_r1scale seed2025 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+adamw_low seed2025 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+adamw_low seed2025 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+moonlight_r1scale seed2024 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+moonlight_r1scale seed2024 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+normuon_r1scale seed2024 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+normuon_r1scale seed2024 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+adamw_low seed2024 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+adamw_low seed2024 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+moonlight_r1scale seed2026 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+moonlight_r1scale seed2026 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+normuon_r1scale seed2026 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+normuon_r1scale seed2026 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+adamw_low seed2026 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,points=309
+adamw_low seed2026 performance/step_avg_ms: finite,PASS,critical,finite=309/309
+wandb_export_2026-07-23T10_08_54.834+08_00.csv: exactly one metric,PASS,critical,['memory/optimizer_state_mib']
+memory/optimizer_state_mib: unique export file,PASS,critical,wandb_export_2026-07-23T10_08_54.834+08_00.csv
+memory/optimizer_state_mib: exact nine-run coverage,PASS,critical,observed=9
+memory/optimizer_state_mib: exact step coverage,PASS,critical,"observed_first_last=(6200,)...(6200,); expected_points=1"
+moonlight_r1scale seed2025 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+moonlight_r1scale seed2025 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+normuon_r1scale seed2025 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+normuon_r1scale seed2025 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+adamw_low seed2025 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+adamw_low seed2025 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+moonlight_r1scale seed2024 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+moonlight_r1scale seed2024 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+normuon_r1scale seed2024 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+normuon_r1scale seed2024 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+adamw_low seed2024 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+adamw_low seed2024 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+moonlight_r1scale seed2026 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+moonlight_r1scale seed2026 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+normuon_r1scale seed2026 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+normuon_r1scale seed2026 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+adamw_low seed2026 memory/optimizer_state_mib: MIN/MAX mirrors,PASS,high,points=1
+adamw_low seed2026 memory/optimizer_state_mib: finite,PASS,critical,finite=1/1
+wandb_export_2026-07-23T10_08_50.747+08_00.csv: exactly one metric,PASS,critical,['memory/peak_allocated_mib']
+memory/peak_allocated_mib: unique export file,PASS,critical,wandb_export_2026-07-23T10_08_50.747+08_00.csv
+memory/peak_allocated_mib: exact nine-run coverage,PASS,critical,observed=9
+memory/peak_allocated_mib: exact step coverage,PASS,critical,"observed_first_last=(6200,)...(6200,); expected_points=1"
+moonlight_r1scale seed2025 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+moonlight_r1scale seed2025 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+normuon_r1scale seed2025 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+normuon_r1scale seed2025 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+adamw_low seed2025 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+adamw_low seed2025 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+moonlight_r1scale seed2024 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+moonlight_r1scale seed2024 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+normuon_r1scale seed2024 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+normuon_r1scale seed2024 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+adamw_low seed2024 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+adamw_low seed2024 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+moonlight_r1scale seed2026 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+moonlight_r1scale seed2026 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+normuon_r1scale seed2026 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+normuon_r1scale seed2026 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+adamw_low seed2026 memory/peak_allocated_mib: MIN/MAX mirrors,PASS,high,points=1
+adamw_low seed2026 memory/peak_allocated_mib: finite,PASS,critical,finite=1/1
+wandb_export_2026-07-23T10_08_46.251+08_00.csv: exactly one metric,PASS,critical,['lr/auxiliary']
+lr/auxiliary: unique export file,PASS,critical,wandb_export_2026-07-23T10_08_46.251+08_00.csv
+lr/auxiliary: exact nine-run coverage,PASS,critical,observed=9
+lr/auxiliary: exact step coverage,PASS,critical,"observed_first_last=(0, 20)...(6180, 6200); expected_points=311"
+moonlight_r1scale seed2025 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2025 lr/auxiliary: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2025 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2025 lr/auxiliary: finite,PASS,critical,finite=311/311
+adamw_low seed2025 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2025 lr/auxiliary: finite,PASS,critical,finite=311/311
+moonlight_r1scale seed2024 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2024 lr/auxiliary: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2024 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2024 lr/auxiliary: finite,PASS,critical,finite=311/311
+adamw_low seed2024 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2024 lr/auxiliary: finite,PASS,critical,finite=311/311
+moonlight_r1scale seed2026 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2026 lr/auxiliary: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2026 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2026 lr/auxiliary: finite,PASS,critical,finite=311/311
+adamw_low seed2026 lr/auxiliary: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2026 lr/auxiliary: finite,PASS,critical,finite=311/311
+wandb_export_2026-07-23T10_08_42.320+08_00.csv: exactly one metric,PASS,critical,['lr/matrix']
+lr/matrix: unique export file,PASS,critical,wandb_export_2026-07-23T10_08_42.320+08_00.csv
+lr/matrix: exact nine-run coverage,PASS,critical,observed=9
+lr/matrix: exact step coverage,PASS,critical,"observed_first_last=(0, 20)...(6180, 6200); expected_points=311"
+moonlight_r1scale seed2025 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2025 lr/matrix: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2025 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2025 lr/matrix: finite,PASS,critical,finite=311/311
+adamw_low seed2025 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2025 lr/matrix: finite,PASS,critical,finite=311/311
+moonlight_r1scale seed2024 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2024 lr/matrix: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2024 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2024 lr/matrix: finite,PASS,critical,finite=311/311
+adamw_low seed2024 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2024 lr/matrix: finite,PASS,critical,finite=311/311
+moonlight_r1scale seed2026 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+moonlight_r1scale seed2026 lr/matrix: finite,PASS,critical,finite=311/311
+normuon_r1scale seed2026 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+normuon_r1scale seed2026 lr/matrix: finite,PASS,critical,finite=311/311
+adamw_low seed2026 lr/matrix: MIN/MAX mirrors,PASS,high,points=311
+adamw_low seed2026 lr/matrix: finite,PASS,critical,finite=311/311
+exact expected metric set,PASS,critical,"['lr/auxiliary', 'lr/matrix', 'memory/optimizer_state_mib', 'memory/peak_allocated_mib', 'performance/step_avg_ms', 'time/train_s', 'train/loss_step', 'val/loss']"
+exact expected three methods,PASS,critical,"('adamw_low', 'moonlight_r1scale', 'normuon_r1scale')"
+exact expected three seeds,PASS,critical,"(2024, 2025, 2026)"
+no duplicate method/seed/metric/step grain,PASS,critical,duplicates=0
+seed2024: identical extended initialization loss,PASS,critical,"{'adamw_low': 10.9462, 'moonlight_r1scale': 10.9462, 'normuon_r1scale': 10.9462}"
+seed2025: identical extended initialization loss,PASS,critical,"{'adamw_low': 10.9869, 'moonlight_r1scale': 10.9869, 'normuon_r1scale': 10.9869}"
+seed2026: identical extended initialization loss,PASS,critical,"{'adamw_low': 10.979, 'moonlight_r1scale': 10.979, 'normuon_r1scale': 10.979}"
+adamw_low seed2024: expected frozen LR,PASS,critical,aux=0.0027; matrix=0.000432
+adamw_low seed2025: expected frozen LR,PASS,critical,aux=0.0027; matrix=0.000432
+adamw_low seed2026: expected frozen LR,PASS,critical,aux=0.0027; matrix=0.000432
+normuon_r1scale seed2024: expected frozen LR,PASS,critical,aux=0.0003; matrix=0.01
+normuon_r1scale seed2025: expected frozen LR,PASS,critical,aux=0.0003; matrix=0.01
+normuon_r1scale seed2026: expected frozen LR,PASS,critical,aux=0.0003; matrix=0.01
+moonlight_r1scale seed2024: expected frozen LR,PASS,critical,aux=0.0018; matrix=0.0018
+moonlight_r1scale seed2025: expected frozen LR,PASS,critical,aux=0.0018; matrix=0.0018
+moonlight_r1scale seed2026: expected frozen LR,PASS,critical,aux=0.0018; matrix=0.0018
+seed2024: identical initialization across unified seven methods,PASS,critical,[10.9462]
+seed2025: identical initialization across unified seven methods,PASS,critical,[10.9869]
+seed2026: identical initialization across unified seven methods,PASS,critical,[10.979]

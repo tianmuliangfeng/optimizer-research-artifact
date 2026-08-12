@@ -1,0 +1,24 @@
+{
+  "artifacts": [
+    "MECH07_FAMILY_CONTRAST_REPORT.md",
+    "checkpoint_contrast_summary.csv",
+    "family_contrasts_by_cell.csv",
+    "input_sources.csv",
+    "stage_contrast_summary.csv"
+  ],
+  "baseline_contrasts": 1,
+  "contract_sha256": "4883e1a546ae2733437004865b6ed698fdbd7b7e86d9d8e09930309295000bdc",
+  "diag_vs_none_primary": false,
+  "formal_cells": 8,
+  "output_sha256": {
+    "MECH07_FAMILY_CONTRAST_REPORT.md": "65e79228dc50246cb7901a1e51c170d2c5820656a09bf5b74f46613a41be69df",
+    "checkpoint_contrast_summary.csv": "19c0c957fab403cd8e18a62119238d0930f9313aeb46db511fcb742ccbeaa43d",
+    "family_contrasts_by_cell.csv": "2b82fdfd949d39cc081bd6a3ac9f73159314ec41625ace78cc7929f64fd598f0",
+    "input_sources.csv": "1f5af8df295df3846a3d2a9fb0673d0d387777aae0c886a10d66aff5882b1b7d",
+    "stage_contrast_summary.csv": "fa22cdc318ffa9a8e0d3ebc6d7eab4a4f721466af1a6a4d9a932acfdd86b743c"
+  },
+  "passed": true,
+  "primary_contrasts": 4,
+  "schema_version": 1,
+  "script_version": "2026-07-27.3"
+}

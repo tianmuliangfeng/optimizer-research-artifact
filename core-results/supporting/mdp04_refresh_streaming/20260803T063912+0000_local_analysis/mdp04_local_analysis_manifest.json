@@ -1,0 +1,351 @@
+{
+  "analyzer_source_sha256": "5f784b379555998664752a7783a3b10d92af0e2deddb8c81471518e33f9e63b3",
+  "claim_boundaries": {
+    "associations_are_descriptive_only": true,
+    "experiment37_loss_level_causal_result_is_unchanged": true,
+    "formal_threshold_was_not_changed": true,
+    "layers_are_nested_not_independent": true,
+    "long_horizon_optimizer_ranking_inference_forbidden": true
+  },
+  "computation_complete": true,
+  "coverage": {
+    "layer_event_rows": 432,
+    "lineage_counts": {
+      "current_v4": 3,
+      "inherited_stricter_v3": 9
+    },
+    "selected_units": 12,
+    "unit_event_rows": 24,
+    "validation_slice_rows": 6
+  },
+  "derived_artifacts": {
+    "MDP04_FINAL_LOCAL_AUDIT.md": "4b5026cbbfdf98a2e6ace285fb7541a75d2bdacbfe2ead7b1ab5e28314a8f7cb",
+    "matrix_loss_associations.csv": "33ae4375d379b4abe1061190002335d36fa49e4bc74af20bddb660a67f556b70",
+    "numerical_residual_associations.csv": "13f1ab62bf2eff0ec6cdef72a109a6a6e6a021fc73110bbe67bb9ddb5de23b50",
+    "origin_event_summary.csv": "a3ccef0e9ceb794d08e19c8437450af48c29f8d83c990d4d01ce31e2fb641608",
+    "resolvent_by_stage_method_event_layer.csv": "adf5cdb83c99967210ba797a312a279902b8f2c8f6d60d32f525642f1c85a9b6",
+    "resolvent_threshold_failures.csv": "a00e31878b59a29f727f7aaad2e9ba04a680d95c2fbaa49257a1c27f7c6952cf"
+  },
+  "formal_adjudication": "numeric_gate_failed",
+  "formal_failure": {
+    "above_gate_fraction": 0.013888888888888888,
+    "above_gate_rows": 6,
+    "all_failures_layer": [
+      3
+    ],
+    "all_failures_stage": [
+      "late"
+    ],
+    "failed_gate": "runtime_resolvent_relative_residual_max",
+    "observed_max": 0.0149267322861172,
+    "threshold": 0.01,
+    "total_rows": 432
+  },
+  "formal_manifest_passed": false,
+  "handoff_verification": {
+    "artifact_hash_checks": {
+      "refresh_layer_event_metrics.csv": true,
+      "refresh_unit_event_joined.csv": true,
+      "refresh_unit_event_summary.csv": true,
+      "refresh_unit_outcomes.csv": true,
+      "refresh_validation_slices.csv": true
+    },
+    "checks": {
+      "all_layer_values_finite": true,
+      "artifact_hashes": true,
+      "formal_manifest_exists": true,
+      "joined_coverage_exact": true,
+      "joined_keys_unique": true,
+      "joined_rows_24": true,
+      "layer_coverage_exact": true,
+      "layer_keys_unique": true,
+      "layer_rows_432": true,
+      "outcome_coverage_exact": true,
+      "outcome_keys_unique": true,
+      "outcome_rows_12": true,
+      "selected_units_12": true,
+      "selected_units_passed": true,
+      "unit_event_coverage_exact": true,
+      "unit_event_keys_unique": true,
+      "unit_event_rows_24": true,
+      "validation_slice_rows_6": true
+    },
+    "unit_checks": [
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/early_muon/replica_0/attempt_001",
+        "data_replica": 0,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "early_muon",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/early_muon/replica_1/attempt_001",
+        "data_replica": 1,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "early_muon",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/early_muon/replica_2/attempt_001",
+        "data_replica": 2,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "early_muon",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/early_newton_full/replica_0/attempt_001",
+        "data_replica": 0,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "early_newton_full",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/early_newton_full/replica_1/attempt_001",
+        "data_replica": 1,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "early_newton_full",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/early_newton_full/replica_2/attempt_001",
+        "data_replica": 2,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "early_newton_full",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/late_muon/replica_0/attempt_001",
+        "data_replica": 0,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "late_muon",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/late_muon/replica_1/attempt_001",
+        "data_replica": 1,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "late_muon",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/late_muon/replica_2/attempt_001",
+        "data_replica": 2,
+        "lineage": "inherited_stricter_v3",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "late_muon",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/late_newton_full/replica_0/attempt_002",
+        "data_replica": 0,
+        "lineage": "current_v4",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "late_newton_full",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/late_newton_full/replica_1/attempt_002",
+        "data_replica": 1,
+        "lineage": "current_v4",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "late_newton_full",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      },
+      {
+        "artifact_hash_mismatches": [
+          "worker.log"
+        ],
+        "attempt": "formal/late_newton_full/replica_2/attempt_002",
+        "data_replica": 2,
+        "lineage": "current_v4",
+        "manifest_identity": true,
+        "manifest_layer_event_rows": true,
+        "manifest_passed": true,
+        "origin": "late_newton_full",
+        "scientific_artifact_hashes": true,
+        "selection_attempt": true,
+        "selection_manifest_sha256": true,
+        "selection_passed": true,
+        "status_passed": true,
+        "worker_log_hash_match_diagnostic": false
+      }
+    ]
+  },
+  "handoff_zip": {
+    "bytes": 5445630,
+    "name": "20260803T063912+0000.zip",
+    "sha256": "df7de841e92d00e64687dd026b1aa6630aff176562eeffe1604255ad6c6bb87a"
+  },
+  "matrix_evidence_status": "descriptive_partial_non_claim_eligible",
+  "provenance_diagnostics": {
+    "scientific_artifact_hash_mismatch_units": 0,
+    "worker_log_hash_mismatch_units": 12,
+    "worker_log_role": "diagnostic_only_not_a_scientific_input"
+  },
+  "resolvent_distributions": {
+    "all_432_nested_rows": {
+      "max": 0.0149267322861172,
+      "min": 0.0003296994403758,
+      "p50": 0.0005542690531316001,
+      "p90": 0.0022503219922913407,
+      "p95": 0.005565295197163999
+    },
+    "late_layer3_12_nested_rows": {
+      "max": 0.0149267322861172,
+      "min": 0.0060909425834205,
+      "p50": 0.009577052466586,
+      "p90": 0.01367748934169174,
+      "p95": 0.014301699237672888
+    },
+    "layer3_24_nested_rows": {
+      "max": 0.0149267322861172,
+      "min": 0.0005383695946207,
+      "p50": 0.0034958126819398497,
+      "p90": 0.01245466655975915,
+      "p95": 0.013621079731701107
+    },
+    "non_layer3_408_nested_rows": {
+      "max": 0.0070575808431089,
+      "min": 0.0003296994403758,
+      "p50": 0.0005389357110684499,
+      "p90": 0.0018936692976458003,
+      "p95": 0.0026912173606521146
+    }
+  },
+  "schema_version": "mdp04_local_final_audit_v1",
+  "script_version": "2026-08-03.2",
+  "source_artifacts": {
+    "formal_stream_manifest.json": "17de19a90fbf78386d3f9b0c048d0fd4c8114d3957450cc5e45e7c48a7837c52",
+    "refresh_layer_event_metrics.csv": "8e36469fba79c6808dcc682145de5f39bde1bda6eee4b8f8d8f52f9da991734a",
+    "refresh_stream_contract.json": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
+    "refresh_unit_event_joined.csv": "6481fdb461561642a66dadf316ee4ab3a9ecc34e9cdc0b43b81c5790435dfb83",
+    "refresh_unit_event_summary.csv": "ed7eb8ff3811c25e54190135add1a487732995d8c13e963f4761b62502737743",
+    "refresh_unit_outcomes.csv": "0a432df6a860e2671fd6d9ba23c33bb4f7acc73f849a30778bb4c3d9a68da80e",
+    "refresh_validation_slices.csv": "f2fc7562cfb6161f5dca7b7f34f99c3958071600f74b40861377c37e4fc44bcd"
+  },
+  "source_run_id": "20260803T063912+0000",
+  "source_run_status": "integrity_failed",
+  "validation_slices": {
+    "all_marked_non_claim_eligible": true,
+    "count": 6,
+    "max_float64_resolvent_relative_residual": 1.2891547267627337e-15
+  }
+}

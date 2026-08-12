@@ -1,0 +1,4 @@
+component,delta_change,definition,share_of_observed_shift
+observed GPT-original to LLaMA shift,0.006357317,LLaMA diag-none minus original-host GPT diag-none,1.0
+host/runtime contribution on GPT,0.0001,bridge GPT diag-none minus original-host GPT diag-none,0.01572990618526652
+architecture-associated residual on matched host,0.006257317,LLaMA diag-none minus bridge GPT diag-none on the LLaMA host/runtime,0.9842700938147334

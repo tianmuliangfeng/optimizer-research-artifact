@@ -1,0 +1,151 @@
+{
+  "policy": "Changed public hashes are limited to release path/label portability and explicit public-hash lineage; scientific settings are unchanged.",
+  "record_count": 18,
+  "records": [
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "4883e1a546ae2733437004865b6ed698fdbd7b7e86d9d8e09930309295000bdc",
+      "packaging_changed": true,
+      "public_sha256": "37cd4d7c3ada35d1c47d3574542ed73e98f81a76ae980501d7e1144cd4c7b35c",
+      "relative_path": "35_mech07_llama1b_family_contrast/family_contrast_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "8593152899d03ba598f03e06f757e3e700a072214018c331f082306af45744c1",
+      "packaging_changed": false,
+      "public_sha256": "8593152899d03ba598f03e06f757e3e700a072214018c331f082306af45744c1",
+      "relative_path": "36_mech08_short_horizon_rollout/mech07_prediction_reference_manifest.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "6055db20194b43e94acc0051b4567473493c27c2c313713cf7bce695bddd7201",
+      "packaging_changed": true,
+      "public_sha256": "bc4354ed4b4980cda89a8c5bb2dfc8fecf92dd92a4f2f451ddab7c6be4c8e0d8",
+      "relative_path": "36_mech08_short_horizon_rollout/rollout_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "d2d34f5b6fac148e6bc35fbf01df4ec2b7093cd696d25d66df63473a420e427f",
+      "packaging_changed": true,
+      "public_sha256": "63464873e00c55c28b120c930ad207aa26fc75646678f9262e03904480c263ac",
+      "relative_path": "37_mech09_downproj_refresh_mediation/mech08_control_reference.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "99c08bec8ff1a160f0e318700c3c731af6f233fc88410352ce9e04fe44c68026",
+      "packaging_changed": true,
+      "public_sha256": "bc8caabc374c11480a5744454030a3e2288257c12735133f47899301f5396686",
+      "relative_path": "37_mech09_downproj_refresh_mediation/refresh_mediation_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+      "packaging_changed": true,
+      "public_sha256": "dd934586aef857b5f5425c70226e7226d2427443eb95cd9748f26dc47a44c110",
+      "relative_path": "37_mech09_downproj_refresh_mediation/refresh_mediation_repair_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "37b670f41f9345965b1e9b5112ecf2882ebef083cf207a1e8ea503c5ebe0632b",
+      "packaging_changed": false,
+      "public_sha256": "37b670f41f9345965b1e9b5112ecf2882ebef083cf207a1e8ea503c5ebe0632b",
+      "relative_path": "39_submission_efficiency_and_sensitivity/lr_sensitivity_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "28e2f9bb897ff5b99c3efc0d9af1adacc03232dd2bd3607a2c3af70324def21d",
+      "packaging_changed": true,
+      "public_sha256": "cf721cac8f66c7fde3e3d4695cbe7f0470ab8a29cf3c5391faeeaa364b70b04d",
+      "relative_path": "41_r1_kstate_module_factorial/diag_bridge_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "dbc333f08605461b47d11622d2c2a4014c6f10aefc9f3cea4dbeef400b20e5ff",
+      "packaging_changed": true,
+      "public_sha256": "36dba8719da4bbe07dd81b70712592b9e7c63f20c0bbce119277bcbb68030d9b",
+      "relative_path": "43_newton_muon_record28_275m/record28_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "ebdec2e0196fcdf9b42fae7373f75f7f25d02e42daf4062f75075ce49f47dfef",
+      "packaging_changed": true,
+      "public_sha256": "49ea7e5ebfd689b164f8e98225a851146c79817ca0b3c96667effe429b72f124",
+      "relative_path": "44_newton_muon_record17_455m/record17_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "127883e8a277e77a900d06f3319b66b6418ad9d6d798854a5d083a89097cabce",
+      "packaging_changed": true,
+      "public_sha256": "bc420a88eec82d811cb3469e461a67cce40b4eaf36647d77db7f9119ab9c33b0",
+      "relative_path": "46_mdp05_confirmatory_update_shock/mdp05_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "40d230dc7dc08e4388b387f70a7babfa7575a7bed02db8b387d207dc8d9674b3",
+      "packaging_changed": true,
+      "public_sha256": "b184c0a0ac1382b8fec395b9737c802a6ff59682317ab9071a24cd343dbf8f43",
+      "relative_path": "47_update_geometry_curvature/geo01_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "6362647488486acd56cc6cfd9648cd6d990a85aa573c8f9ef2dcca20679d5e04",
+      "packaging_changed": true,
+      "public_sha256": "6dba091cba2c85e26b7a2fcff59083b24ff3ef623feaf15951cd78edaa26e192",
+      "relative_path": "47b_geo01b_update_geometry_discovery/geo01b_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "23350854d9136b70d638d6aa37ad72dfa158143c6e9e083be80ac0e700714b4b",
+      "packaging_changed": true,
+      "public_sha256": "1f1a9a70302502167821470cd03a40b7f551341546cfdd61f1e40abd7af6c46e",
+      "relative_path": "48_llama1b_10b_multibudget/formal_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "portable_provenance_paths_only",
+      "original_sha256": "ebda6864bb066cb1102cb2946d9007d8d406b32b6c2e5f00418ba25746fac394",
+      "packaging_changed": true,
+      "public_sha256": "7e7893d37c4049f327f2da2d4b8d30c8be012f02de614a7504e7b3f384761b59",
+      "relative_path": "49_r1_malt_strong_baseline/historical_control_snapshot/analysis_manifest.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "portable_dependency_hash_rebind",
+      "original_sha256": "6193acbf018d0ae42b7f27749ee73468413e99a51c73357774b639c20b4cb684",
+      "packaging_changed": true,
+      "public_sha256": "2d12da66444007ccae27355960effa8f4bcb969866b858dbf3f05f5b4572e847",
+      "relative_path": "49_r1_malt_strong_baseline/malt_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
+      "packaging_changed": false,
+      "public_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
+      "relative_path": "mdp_refresh_streaming/refresh_stream_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "a164a6f8597ed94e1532acc8ca3d548524c48f65a8868c1ea94400c5c3775d71",
+      "packaging_changed": true,
+      "public_sha256": "adb07897c131978bb00635800c5a5af57e07f4d2b615eb64571c7bbdd571d6d2",
+      "relative_path": "mechanism_closure/closure_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,9 @@
+manifest,schema_version,status,synthetic,claim_eligible,output_count,hashes_passed
+bundle\complexity\routing_complexity_manifest.json,mdp_routing_complexity_audit_v1,passed,false,true,1,true
+bundle\equivariance\route_equivariance_manifest.json,mdp_route_equivariance_audit_v1,passed,false,false,1,true
+bundle\formulation\method_formulation_manifest.json,mdp_method_formulation_audit_v1,passed,false,false,1,true
+bundle\integrity_audit\submission_bundle_audit_manifest.json,mdp_submission_bundle_audit_v1,passed,false,false,2,true
+bundle\inventory\method_deepening_inventory_manifest.json,mdp_method_deepening_inventory_v1,passed_inventory,false,false,3,true
+bundle\synthesis\method_deepening_package_manifest.json,mdp_method_deepening_package_v1,partial,false,false,8,true
+bundle\synthesis_v2\method_deepening_package_manifest.json,mdp_method_deepening_package_v1,partial,false,false,8,true
+method_deepening_root_manifest.json,mdp_method_deepening_root_manifest_v1,partial,false,false,3,true

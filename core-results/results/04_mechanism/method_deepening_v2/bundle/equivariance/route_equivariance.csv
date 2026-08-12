@@ -1,0 +1,9 @@
+route,transform,relative_update_error,tolerance,expected_invariant,check_passed
+full,arbitrary_orthogonal,1.00144326648e-15,1e-09,true,true
+none,arbitrary_orthogonal,8.98758583894e-16,1e-09,true,true
+diag,signed_permutation,1.09904782221e-15,1e-09,true,true
+diag,arbitrary_orthogonal,0.116071312316,1e-05,false,true
+block,block_preserving_signed_permutation,1.02021661867e-15,1e-09,true,true
+block,block_diagonal_arbitrary_orthogonal,9.15402417723e-16,1e-09,true,true
+block,whole_block_permutation,8.08189462244e-16,1e-09,true,true
+block,cross_block_signed_permutation,0.151879701316,1e-05,false,true

@@ -1,0 +1,5 @@
+method,max_success_device_batch,first_oom_device_batch,max_success_global_batch,first_oom_global_batch,capacity_interval,resolved_width,odd_confirmation,gain_vs_newton_full_device_batch,gain_vs_newton_full_pct,gap_vs_muon_device_batch
+newton_full,34,35,272,280,"[34, 35)",1,oom,0,0.0,-5
+down_none,37,38,296,304,"[37, 38)",1,completed,3,8.823529411764696,-2
+down_diag,37,38,296,304,"[37, 38)",1,completed,3,8.823529411764696,-2
+muon,39,40,312,320,"[39, 40)",1,completed,5,14.705882352941169,0

@@ -1,0 +1,39 @@
+# UTF-8 normalized configuration snapshot from Anti-Entrophic/Mousse at
+# d00c1bf17790fbe56424ee5567cce80d8e75f4b2. The upstream byte hash is frozen
+# separately because its decorative comments contain encoding-corrupted text.
+model_dim: 768
+n_layer: 12
+n_head: 6
+sequence_length: 1024
+batch_size: 2048
+device_batch_size: 32
+num_iterations: 10000
+warmup_ratio: 0.1
+warmdown_ratio: 0.1
+mu: 0.95
+weight_decay: 0.01
+val_loss_every: 125
+val_tokens: 10485760
+save_every: 0
+wandb_project_name: Mousse
+wandb_job_name: null
+no_wandb: false
+dp_size: null
+fs_size: null
+tp_size: null
+debug: false
+no_compile: false
+no_triton: false
+optimizer: mousse
+scalar_opt: lion
+adjust_lr: spectral_norm
+lr: 0.06
+optimizer_debug: false
+shampoo_epsilon: 1.0e-5
+shampoo_update_freq: 10
+shampoo_alpha: 0.125
+shampoo_beta: 0.95
+LR_correction: true
+shampoo_norm: true
+use_LorR: 0
+data_dir: data/fineweb100B

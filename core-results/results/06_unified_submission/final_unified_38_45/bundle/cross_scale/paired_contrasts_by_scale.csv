@@ -1,0 +1,16 @@
+scale_id,architecture,method_a,method_b,contrast_role,n_pairs,mean_delta_final_loss_a_minus_b,sd_delta_final_loss,ci95_low,ci95_high,practical_margin,mean_effect_label,interval_decision
+gpt124m,Modded-NanoGPT R1,diag,muon,primary_quality_gain_vs_muon,3,-0.0160333333333,0.00100166528009,-0.0185216078303,-0.0135450588364,0.002,materially_better,robust_material_improvement
+gpt124m,Modded-NanoGPT R1,diag,original,primary_compression_cost_vs_original,3,-0.0011,0.000556776436283,-0.00248310934247,0.000283109342465,0.002,within_practical_margin,inconclusive
+gpt124m,Modded-NanoGPT R1,none,muon,primary_quality_gain_vs_muon,3,-0.0104666666667,0.000503322295685,-0.0117169885626,-0.00921634477072,0.002,materially_better,robust_material_improvement
+gpt124m,Modded-NanoGPT R1,none,original,primary_compression_cost_vs_original,3,0.00446666666667,0.000503322295685,0.00321634477072,0.00571698856261,0.002,materially_worse,robust_material_degradation
+gpt124m,Modded-NanoGPT R1,diag,none,secondary_diag_vs_none,3,-0.00556666666667,0.000513160143945,-0.00684142713248,-0.00429190620085,0.002,materially_better,robust_material_improvement
+gpt275m,Modded-NanoGPT near Record #28,diag,muon,primary_quality_gain_vs_muon,4,-0.0028085112575,0.00340974534425,-0.0082341769934,0.0026171544784,0.002,materially_better,inconclusive
+gpt275m,Modded-NanoGPT near Record #28,diag,original,primary_compression_cost_vs_original,4,0.0001648664475,0.0016911889943,-0.00252619263548,0.00285592553048,0.002,within_practical_margin,inconclusive
+gpt275m,Modded-NanoGPT near Record #28,none,muon,primary_quality_gain_vs_muon,4,-0.0030477046975,0.00272726702333,-0.00738739512808,0.00129198573308,0.002,materially_better,inconclusive
+gpt275m,Modded-NanoGPT near Record #28,none,original,primary_compression_cost_vs_original,4,-7.43269925e-05,0.0011704574978,-0.00193678606202,0.00178813207702,0.002,within_practical_margin,practical_equivalence_supported
+gpt275m,Modded-NanoGPT near Record #28,diag,none,secondary_diag_vs_none,4,0.00023919344,0.000816288634469,-0.00105970393429,0.00153809081429,0.002,within_practical_margin,practical_equivalence_supported
+gpt455m,Modded-NanoGPT Record #17 single-H100 adaptation,diag,muon,primary_quality_gain_vs_muon,3,-0.000900427496667,0.000274351867912,-0.00158195531808,-0.000218899675257,0.002,within_practical_margin,practical_equivalence_supported
+gpt455m,Modded-NanoGPT Record #17 single-H100 adaptation,diag,original,primary_compression_cost_vs_original,3,0.000613689423333,0.000755854468784,-0.00126395716728,0.00249133601394,0.002,within_practical_margin,inconclusive
+gpt455m,Modded-NanoGPT Record #17 single-H100 adaptation,none,muon,primary_quality_gain_vs_muon,3,-0.00233499209,0.000172898734513,-0.00276449635674,-0.00190548782326,0.002,materially_better,inconclusive
+gpt455m,Modded-NanoGPT Record #17 single-H100 adaptation,none,original,primary_compression_cost_vs_original,3,-0.00082087517,0.000436098278441,-0.00190420334957,0.000262453009568,0.002,within_practical_margin,practical_equivalence_supported
+gpt455m,Modded-NanoGPT Record #17 single-H100 adaptation,diag,none,secondary_diag_vs_none,3,0.00143456459333,0.000382665680738,0.000483970344763,0.0023851588419,0.002,within_practical_margin,inconclusive

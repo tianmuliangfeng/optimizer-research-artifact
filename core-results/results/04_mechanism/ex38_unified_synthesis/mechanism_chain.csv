@@ -1,0 +1,12 @@
+stage_order,stage,source_bundle,evidence_level,status,result,claim_boundary
+1,foundational_module_allocation,owt_foundational_module_allocation;wikitext_foundational_module_allocation,supportive,replicated_across_two_datasets,"top-two modes: OWT=diag,none; WikiText-103=diag,none; cproj-only worse in 6/6 paired seeds",historical 24L GPT evidence; R1 module allocation remains unisolated
+2,architecture_transfer_boundary,llama_block_partition_invariance,limiting,strong_non_invariance,LLaMA contiguous block4 median update drift=0.3447; equivariant-control max=0.0159; effect/control=21.64x,"coordinate-partition dependence, not a full-training performance ranking; official LLaMA original control remains newton_full"
+3,numerical_implementation,mech01_numerical,supportive,passed,fixed-tensor and cross-runtime numerical checks passed,"implementation validity, not optimizer superiority"
+4,k_geometry,mech02_geometry,descriptive,candidate_signal,5/9 geometry metric gates passed,geometry did not authorize the next mechanism stage
+5,one_step_crossfit_prediction,mech03_shadow_prediction,limiting,failed_prediction_gate,0/4 material layers; 19/32 positive paired cells,one-step shadow loss is not a validated long-horizon proxy
+6,llama1b_one_step_confirmation,mech06_llama1b_diagnostic,limiting,uncertain,early=uncertain; late=uncertain,no retrospective ranking was used to rescue the proxy
+7,frozen_checkpoint_family_shadow,mech07_family_shadow,supportive,stage_dependent,early and late checkpoint counterfactual rankings differ,counterfactual shadow steps are not real training trajectories
+8,real_128_step_rollout,mech08_rollout,supportive,mixed_and_stage_dependent,"all-stage primary AUC/step128 rows: 4 left-better, 1 left-worse, 3 uncertain",128 steps do not replace full-budget training
+9,down_projection_refresh_mediation,mech09r_refresh_mediation,confirmatory,full_support,3/3 frozen directional predictions passed,causal within the frozen MECH-09R intervention tree
+10,alpha_dose_response,r1_block_alpha;r1_dense_full_alpha,confirmatory,strong_confirmatory_support,2/2 topologies have negative curvature in all seeds,"tested-grid nonmonotonicity, not universal alpha optimality"
+11,formal_training_outcomes,formal_primary_training,confirmatory,authoritative_for_method_performance,three architectures × three seeds × five frozen contrasts,mechanism evidence explains but does not replace this result

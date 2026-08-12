@@ -1,0 +1,35 @@
+{
+  "code_directory": "scripts/34_selective_primary_comparison",
+  "default_entrypoint": "command:20260727_selective_primary_comparison",
+  "entrypoints": {
+    "command:20260727_selective_primary_comparison": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/34_selective_primary_comparison/20260727_selective_primary_comparison.sh"
+    },
+    "script:analyze_primary": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/34_selective_primary_comparison/analyze_primary.py"
+    }
+  },
+  "experiment_id": "34_selective_primary_comparison",
+  "legacy_result_roots": [
+    "34_selective_primary_comparison"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "analysis_only",
+  "title": "34 Selective Primary Comparison"
+}

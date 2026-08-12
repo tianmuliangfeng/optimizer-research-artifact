@@ -1,0 +1,35 @@
+{
+  "code_directory": "scripts/35_mech07_llama1b_family_contrast",
+  "default_entrypoint": "command:20260727_mech07_llama1b_family_contrast",
+  "entrypoints": {
+    "command:20260727_mech07_llama1b_family_contrast": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/35_mech07_llama1b_family_contrast/20260727_mech07_llama1b_family_contrast.sh"
+    },
+    "script:run_mech07": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/35_mech07_llama1b_family_contrast/run_mech07.py"
+    }
+  },
+  "experiment_id": "35_mech07_llama1b_family_contrast",
+  "legacy_result_roots": [
+    "35_mech07_llama1b_family_contrast"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "35 Mech07 Llama1B Family Contrast"
+}

@@ -1,0 +1,47 @@
+{
+  "code_directory": "scripts/mdp_refresh_streaming",
+  "entrypoints": {
+    "command:20260803_mdp04_refresh_streaming": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "archive-verify"
+          ],
+          "env": {
+            "MDP04_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/mdp04_refresh_streaming/20260803_mdp04_refresh_streaming.sh"
+    },
+    "command:reproduce_archived": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {},
+      "path": "commands/mdp04_refresh_streaming/reproduce_archived.sh"
+    },
+    "script:run_stream_replay": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/mdp_refresh_streaming/run_stream_replay.py"
+    }
+  },
+  "experiment_id": "mdp04_refresh_streaming",
+  "legacy_result_roots": [
+    "_shared/analysis/method_deepening_mdp04_refresh_replay"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": true,
+    "one_click_rerun": false,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "Mdp-04 Refresh Streaming"
+}

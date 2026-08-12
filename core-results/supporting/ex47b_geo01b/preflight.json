@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "accepted_pilot": true,
+    "child_python": true,
+    "contract": true,
+    "outcome_blind_formula": true,
+    "source_commands": true,
+    "source_contract_hash": true,
+    "source_manifest": true,
+    "source_paths": true,
+    "two_unique_gpus": true
+  },
+  "passed": true
+}

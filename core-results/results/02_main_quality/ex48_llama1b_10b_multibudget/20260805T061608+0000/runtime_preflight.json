@@ -1,0 +1,74 @@
+{
+  "checks": {
+    "cuda_available": true,
+    "devices": true,
+    "gpu_count": true,
+    "numpy": true,
+    "nvidia_driver": true,
+    "python": true,
+    "requested_executable": true,
+    "selected_gpu_count": true,
+    "torch": true,
+    "torch_cuda": true,
+    "triton": true,
+    "triton_kernels": true
+  },
+  "devices": [
+    {
+      "compute_capability": [
+        9,
+        0
+      ],
+      "index": 0,
+      "name": "NVIDIA H100 80GB HBM3",
+      "passed": true,
+      "total_memory": 85017624576
+    },
+    {
+      "compute_capability": [
+        9,
+        0
+      ],
+      "index": 1,
+      "name": "NVIDIA H100 80GB HBM3",
+      "passed": true,
+      "total_memory": 85017624576
+    },
+    {
+      "compute_capability": [
+        9,
+        0
+      ],
+      "index": 2,
+      "name": "NVIDIA H100 80GB HBM3",
+      "passed": true,
+      "total_memory": 85017624576
+    },
+    {
+      "compute_capability": [
+        9,
+        0
+      ],
+      "index": 3,
+      "name": "NVIDIA H100 80GB HBM3",
+      "passed": true,
+      "total_memory": 85017624576
+    }
+  ],
+  "observed": {
+    "device_count": 4,
+    "executable": "PRIVATE_PATH_REDACTED",
+    "hostname": "ANONYMIZED_CONTAINER_HOST_0001",
+    "numpy": "2.2.6",
+    "nvidia_driver_versions": [
+      "580.95.05"
+    ],
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "triton_kernels_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+  },
+  "passed": true,
+  "return_code": 0
+}

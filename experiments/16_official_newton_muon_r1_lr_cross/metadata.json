@@ -1,0 +1,36 @@
+{
+  "code_directory": "scripts/16_official_newton_muon_r1_lr_cross",
+  "entrypoints": {
+    "script:run_all_seeds_gpu1": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/16_official_newton_muon_r1_lr_cross/run_all_seeds_gpu1.sh"
+    },
+    "script:run_official_newton_muon_r1_lr_cross": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/16_official_newton_muon_r1_lr_cross/run_official_newton_muon_r1_lr_cross.py"
+    }
+  },
+  "experiment_id": "16_official_newton_muon_r1_lr_cross",
+  "legacy_result_roots": [
+    "16_official_newton_muon_r1_lr_cross"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "16 Official Newton Muon R1 Lr Cross"
+}

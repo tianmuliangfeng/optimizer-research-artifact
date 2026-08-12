@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "script_version": "2026-07-31.1",
+  "analysis_name": "41D_r1_diag_bridge",
+  "analysis_only": true,
+  "research_question": "With c_fc K fixed to full in R1 Modded-NanoGPT, does c_proj diagonal K recover the quality contribution of block4 at near-none state cost?",
+  "fixed_factors": {
+    "architecture": "R1 Modded-NanoGPT",
+    "c_fc_k": "full",
+    "training_steps": 6200,
+    "seeds": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "c_proj_levels": [
+    "none",
+    "diag",
+    "block4"
+  ],
+  "primary_metric": "final_val_loss",
+  "secondary_metrics": [
+    "tail5_val_loss_mean",
+    "normalized_val_auc",
+    "k_state_mib",
+    "peak_memory_mib"
+  ],
+  "practical_loss_margin": 0.002,
+  "source_contract": {
+    "experiment15_run_summary_relative_path": "15_official_newton_muon_r1/analysis/wandb_20260721_multiseed_factorial/r1_multiseed_run_summary.csv",
+    "experiment15_run_summary_sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+    "experiment41_reference_relative_path": "scripts/41_r1_kstate_module_factorial/existing_cells_reference.csv",
+    "experiment41_reference_sha256": "21737784b9fccc69053bf7e507bd91a0a8a8ea26d02579d5c3d87f512e0ecb13",
+    "experiment41_acceptance_relative_path": "41_r1_kstate_module_factorial/analysis/accepted_20260731/experiment41_key_results.json",
+    "experiment41_acceptance_sha256": "b5506b6e0902b4c1b338dac2336d24c7e3d2d7e3147e3a39e3f6d42b1357698f"
+  },
+  "expected_state_mib": {
+    "none": 162.0,
+    "diag": 162.28125,
+    "block4": 378.0
+  },
+  "claim_policy": {
+    "diag_beneficial_over_none": "diag-minus-none mean final loss <= -0.002 with at least two negative seeds",
+    "diag_quality_matched_to_block4": "absolute diag-minus-block4 mean final loss < 0.002",
+    "diag_superior_to_block4": "diag-minus-block4 95% t interval is entirely below zero and mean magnitude >= 0.002",
+    "timing_usable": false
+  },
+  "boundaries": {
+    "does_not_estimate": [
+      "diag effect when c_fc K is none",
+      "diag-by-c_fc interaction",
+      "Muon comparison",
+      "isolated runtime"
+    ],
+    "missing_factorial_cell": "c_fc=none,c_proj=diag",
+    "new_training_required": false
+  }
+}

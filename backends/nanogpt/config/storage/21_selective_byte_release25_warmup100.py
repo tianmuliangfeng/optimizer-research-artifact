@@ -1,0 +1,19 @@
+optimizer_type = "selective_newton_muon"
+out_dir = "out_21_selective_byte_release25_warmup100_exact"
+wandb_run_name = "tiny_shakespeare_real_21_selective_byte_release25_warmup100_exact"
+wandb_tags = "formal,tiny_shakespeare_real,selective_newton_muon,storage_pareto_exact"
+
+selective_selection_mode = "k_release_budget"
+selective_release_k_fraction = 0.25
+selective_fraction = 1.0
+selective_min_active = 1
+selective_warmup_steps = 100
+selective_score_interval = 25
+selective_score_beta = 0.9
+selective_score_mode = "gain_logcond_cost_power"
+selective_cond_power = 1.0
+selective_cost_power = 0.25
+selective_freeze_after_warmup = True
+selective_log_diagnostics = False
+selective_release_inactive_k_state = True
+diagnostic_interval = 0

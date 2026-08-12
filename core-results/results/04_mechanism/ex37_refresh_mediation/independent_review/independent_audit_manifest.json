@@ -1,0 +1,18 @@
+{
+  "artifacts": [
+    "auc_contrasts_recomputed.csv",
+    "auc_summary.csv",
+    "contrast_by_origin.csv",
+    "contrast_trajectory_summary.csv",
+    "data_quality_audit.json",
+    "important_results.json",
+    "independent_audit_manifest.json",
+    "paired_contrasts_recomputed.csv",
+    "worker_audit.csv"
+  ],
+  "classification": "full_support",
+  "passed": true,
+  "run_id": "20260728T075907+0000",
+  "schema_version": 1,
+  "script_version": "2026-07-29.1"
+}

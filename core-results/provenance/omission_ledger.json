@@ -1,0 +1,206 @@
+{
+  "omissions": [
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "29_r1_depth_kmode.zip",
+        "kind": "remote_bundle_zip"
+      },
+      "artifact_class": "byte_complete_remote_bundle",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "29_r1_depth_kmode.zip",
+      "omission_id": "ex29_remote_bundle_zip",
+      "reason": "full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 22750844,
+      "source_relpath": "29_r1_depth_kmode/source_bundle/29_r1_depth_kmode_20260809.zip",
+      "source_sha256": "f44ec4c7ad50c9d8f4fd94be59767146f3e6fa9871e9ec109167bbf5d3056b20",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+      "omission_id": "ex29_wandb_k_state_mib",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 10597,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+      "source_sha256": "f9b999776b8725434c6ff10329dd6cdd133262627f1967b9f6202708de03ad81",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+      "omission_id": "ex29_wandb_lr_adamw",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 413940,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+      "source_sha256": "15834a46ca8bb79248995e94af400749e066c309eb25e61bd68ad63ee65e4c3a",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+      "omission_id": "ex29_wandb_lr_matrix",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 445935,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+      "source_sha256": "edf6e83afe328ef21ed73cb1d43d13c6f1cfb9292fdd43a6cc04a9c633e782f3",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+      "omission_id": "ex29_wandb_optimizer_state_mib",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 12757,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+      "source_sha256": "5947b3e25188f5e271fb888f43e75293fc5a55da385ddad4831cf65cd83ba662",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+      "omission_id": "ex29_wandb_peak_allocated_mib",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 11353,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+      "source_sha256": "edea34f3e7d2ea2efd5fffcf54a8a82765753d41a66db8dde1a12e331ca67790",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+      "omission_id": "ex29_wandb_step_avg_ms",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 342078,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+      "source_sha256": "a5caee2bf14dc14d1ad0bc322f88ee8ea533e7ad960031aa0d69b6bf82ff0cd1",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+      "omission_id": "ex29_wandb_train_loss_step",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 309134,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+      "source_sha256": "ee92c25dfce499b2196fab911ac0d136c89e3b4b835d696e6281be86e7c13e11",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+      "omission_id": "ex29_wandb_train_s",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 371397,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+      "source_sha256": "be5c0164c6f4dc6e0cef2dd00721b633ebfb4dd5d3009d1adae052ec93d2147a",
+      "verified_at_build": true
+    },
+    {
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "file_name": "wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+        "kind": "wandb_export"
+      },
+      "artifact_class": "raw_wandb_export",
+      "bundled": false,
+      "experiment_ids": [
+        "29_r1_depth_kmode"
+      ],
+      "logical_name": "wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+      "omission_id": "ex29_wandb_val_loss",
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "source_alias": "results",
+      "source_bytes": 69672,
+      "source_relpath": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+      "source_sha256": "1fdec5ca28f4fb3a1c93c822a572eaef2195692250fd9f577eb8996d043c6948",
+      "verified_at_build": true
+    }
+  ],
+  "package_name": "core-results",
+  "schema_version": 1
+}

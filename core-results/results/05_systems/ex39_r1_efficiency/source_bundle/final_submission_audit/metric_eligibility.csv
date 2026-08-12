@@ -1,0 +1,10 @@
+metric,classification,source,paper_use,reason,followup_id
+tokens_per_s,paper_ready,PRIVATE_PATH_REDACTED,main efficiency table,complete same-runtime benchmark with >=512 timed steps and 4 balanced rotated repeats,
+steps_per_s,paper_ready,PRIVATE_PATH_REDACTED,main efficiency table,complete same-runtime benchmark with >=512 timed steps and 4 balanced rotated repeats,
+peak_allocated_mib,paper_ready,"LLaMA-1B capacity fine, device batch 32",main efficiency table,same H100/runtime/config with explicit CUDA peak and >=98% pre-cell free GPU,
+peak_reserved_mib,paper_ready,"LLaMA-1B capacity fine, device batch 32",main efficiency table,same H100/runtime/config with explicit CUDA reserved peak,
+optimizer_and_k_state_mib,paper_ready,"LLaMA-1B capacity fine, device batch 32",main efficiency table,exact state byte accounting for all four method roles,
+maximum_device_batch,paper_ready,LLaMA-1B exact capacity confirmation,main capacity table,success/OOM boundary resolved to adjacent integer batches for all roles,
+quality_run_wall_clock,historical_only,formal R1/LLaMA training logs,do not use for efficiency claims,descriptive timing lacks isolated repeated same-order protocol,
+four_method_lr_sensitivity,supporting_only,PRIVATE_PATH_REDACTED,robustness appendix,final-recipe 0.8x/1.0x/1.2x grid covers all four roles at equal budget,
+alpha_response_sensitivity,paper_ready,block and dense-full alpha confirmation,mechanism appendix,three seeds and fixed five-point alpha grid; not LR tuning evidence,

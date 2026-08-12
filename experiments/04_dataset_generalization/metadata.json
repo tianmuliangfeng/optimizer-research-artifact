@@ -1,0 +1,36 @@
+{
+  "code_directory": "scripts/04_dataset_generalization",
+  "entrypoints": {
+    "script:run_wikitext103_100m": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/04_dataset_generalization/run_wikitext103_100m.py"
+    },
+    "script:run_wikitext103_24l_12k_lr_sweep": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "scripts/04_dataset_generalization/run_wikitext103_24l_12k_lr_sweep.py"
+    }
+  },
+  "experiment_id": "04_dataset_generalization",
+  "legacy_result_roots": [
+    "04_dataset_generalization"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "04 Dataset Generalization"
+}

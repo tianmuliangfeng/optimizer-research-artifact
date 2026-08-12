@@ -1,0 +1,1323 @@
+{
+  "schema_version": 1,
+  "package_name": "core-results",
+  "release_status": "final",
+  "release_mode": "final",
+  "selection_date": "2026-08-12",
+  "path_contract": {
+    "source_roots": {
+      "results": "provided explicitly to the builder at run time",
+      "source": "the public source repository supplied to the builder"
+    },
+    "source_path_rule": "Every source_prefix and source anchor is relative to results_root and uses forward slashes.",
+    "package_root": ".",
+    "destination_path_rule": "Every destination_prefix is relative to the movable core-results directory.",
+    "forbidden_in_release": [
+      "drive-qualified paths",
+      "UNC paths",
+      "user-home paths",
+      "remote cluster absolute paths",
+      "file URIs"
+    ]
+  },
+  "copy_policy": {
+    "selection_mode": "explicit_file_whitelist_only",
+    "allow_globs": false,
+    "allow_directory_copy": false,
+    "allow_symlinks": false,
+    "default_text_transform": "relocate_private_absolute_paths",
+    "source_hash_policy": "Verify the source anchor before copying; record the source and released SHA-256 separately whenever relocation changes bytes.",
+    "large_file_policy": "Reject any unlisted file and any checkpoint, optimizer state, raw W&B export, cache, log, or source snapshot unless explicitly whitelisted here."
+  },
+  "direct_files": [
+    {
+      "id": "public_experiment_catalog",
+      "source_root": "source",
+      "source": "experiments/catalog.json",
+      "package_path": "provenance/public_source/catalog.json",
+      "source_sha256": "b8881bcaa0b7f166e88655ab902bcb2da71b24319b1b8a7551e58898f03914b6",
+      "integrity_status": "hash_anchored",
+      "scientific_status": "catalog_snapshot",
+      "claim_eligibility": "provenance_only",
+      "paper_role": "maps_public_experiment_records"
+    },
+    {
+      "id": "accepted_result_anchors",
+      "source_root": "source",
+      "source": "provenance/accepted_result_anchors.json",
+      "package_path": "provenance/public_source/accepted_result_anchors.json",
+      "source_sha256": "925a8c00ac3a838b14e79dd2e25346fdb2b78f614fc507a3d721c4e386c6f778",
+      "integrity_status": "hash_anchored",
+      "scientific_status": "accepted_result_anchor_snapshot",
+      "claim_eligibility": "provenance_only",
+      "paper_role": "binds_public_source_to_accepted_archives"
+    }
+  ],
+  "public_snapshots": {
+    "catalog": "provenance/public_source/catalog.json",
+    "accepted_result_anchors": "provenance/public_source/accepted_result_anchors.json"
+  },
+  "dependency_graphs": [
+    {
+      "id": "ex38_frozen_mechanism_inputs",
+      "source_root": "results",
+      "experiment_ids": [
+        "01_scale_up",
+        "04_dataset_generalization",
+        "06_kstate_spectrum",
+        "27_mech01_unified_k_diagnostics",
+        "30_mech02_k_geometry",
+        "31_mech03_crossfit_shadow",
+        "33_mech06_llama1b_confirmation",
+        "35_mech07_llama1b_family_contrast",
+        "36_mech08_short_horizon_rollout"
+      ],
+      "root_manifest": "38_unified_mechanism_synthesis/20260729T071451+0000/source_audit.csv",
+      "root_manifest_sha256": "3d0eda4bc0dd33ce1f8308d3cbfcd584f481e5d8196fa7d7dd8f7bd3bfe38a4a",
+      "path_column": "relative_path",
+      "hash_column": "sha256",
+      "recursive": false,
+      "flatten_destinations": true,
+      "package_prefix": "supporting/mechanism_source_inputs",
+      "integrity_status": "hash_graph_anchored",
+      "scientific_status": "frozen_inputs_for_unified_mechanism_synthesis",
+      "claim_eligibility": "supporting_only",
+      "paper_role": "compact_inputs_for_experiments_01_04_06_27_30_31_33_35_36"
+    }
+  ],
+  "records": [
+    {
+      "id": "discovery_60run",
+      "tier": "core",
+      "workstream": "discovery_regime_map",
+      "experiment_ids": ["01_scale_up", "02_long_token_budget", "04_dataset_generalization", "12_paper_block4_correction"],
+      "integrity_status": "accepted_compact_analysis",
+      "scientific_status": "multi_experiment_60_run_regime_map",
+      "claim_eligibility": "claim_eligible_with_original_scope",
+      "paper_role": "discovery_and_regime_map",
+      "source_prefix": "paper_evidence_20260720/01_core_evidence/60run_local_reference_pipeline",
+      "destination_prefix": "results/01_discovery_regime_map/60run",
+      "source_anchor": {
+        "file": "batch_metadata.json",
+        "sha256": "91d511e5f1c601405427f541f5f1c0be619951a79f3875c705cca0bcc8e5d428"
+      },
+      "files": [
+        "batch_metadata.json",
+        "COMPLETE_60RUN_ANALYSIS_20260718.md",
+        "data_quality_profile.csv",
+        "method_seed_aggregate.csv",
+        "paired_seed_summary.csv",
+        "pairwise_validation_summary.csv",
+        "run_summary.csv",
+        "source_manifest.csv",
+        "threshold_crossings.csv",
+        "validation_loss_aligned.csv"
+      ]
+    },
+    {
+      "id": "ex15_r1_controlled_multiseed",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["15_official_newton_muon_r1"],
+      "integrity_status": "accepted",
+      "scientific_status": "three_seed_controlled_core",
+      "claim_eligibility": "claim_eligible",
+      "paper_role": "primary_124m_controlled_result",
+      "source_prefix": "15_official_newton_muon_r1/analysis/wandb_20260721_multiseed_factorial",
+      "destination_prefix": "results/02_main_quality/ex15_r1_124m",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "7b5455a0245768e2d04adf134d7b66cbc4d74bf8c9134beb2dc8b9ac0c7f35ab"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "data_quality_checks.csv",
+        "r1_multiseed_curve_dominance.csv",
+        "R1_MULTISEED_FACTORIAL_ANALYSIS_20260721.md",
+        "r1_multiseed_method_aggregate.csv",
+        "r1_multiseed_paired_deltas.csv",
+        "r1_multiseed_run_summary.csv",
+        "r1_multiseed_steps_to_loss.csv",
+        "r1_three_seed_factorial_cells.csv",
+        "r1_three_seed_factorial_effects.csv",
+        "source_manifest.csv"
+      ]
+    },
+    {
+      "id": "ex17_llama124_multiseed",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["17_llama_swiglu_validation"],
+      "integrity_status": "accepted",
+      "scientific_status": "three_seed_architecture_transfer",
+      "claim_eligibility": "descriptive_architecture_evidence_no_prefrozen_equivalence_margin",
+      "paper_role": "llama_124m_transfer",
+      "source_prefix": "17_llama_swiglu_validation/analysis/wandb_20260722_multiseed",
+      "destination_prefix": "results/02_main_quality/ex17_llama_124m",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "e457ea78a27630936395acbda49ef1c4328c34332ce486a568b5fc13d21966f1"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "architecture_interaction_by_seed.csv",
+        "architecture_interaction_summary.csv",
+        "data_quality_checks.csv",
+        "llama_multiseed_fixed_target_summary.csv",
+        "llama_multiseed_mean_validation_curves.csv",
+        "llama_multiseed_method_summary.csv",
+        "llama_multiseed_pairwise_by_seed.csv",
+        "llama_multiseed_pairwise_summary.csv",
+        "llama_multiseed_run_summary.csv",
+        "llama_multiseed_steps_tokens_to_fixed_targets.csv",
+        "LLAMA_SWIGLU_MULTISEED_ANALYSIS_20260722.md",
+        "source_manifest.csv"
+      ]
+    },
+    {
+      "id": "ex20_llama1b_quality",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["20_llama_swiglu_1b"],
+      "integrity_status": "accepted_compact_analysis_without_checkpoint_payload",
+      "scientific_status": "three_seed_6200_step_quality",
+      "claim_eligibility": "quality_claim_eligible_with_budget_scope_no_checkpoint_replay_claim",
+      "paper_role": "llama_1b_quality_and_family_reversal",
+      "source_prefix": "20_llama_swiglu_1b/analysis/formal6200_multiseed_20260727",
+      "destination_prefix": "results/02_main_quality/ex20_llama1b_quality",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "420ca8c5847ddf223d92ed4286a79423224f970e550886bd118c3a0f3b6875fa"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "data_quality_checks.csv",
+        "final_delta_vs_muon.png",
+        "LLAMA1B_FORMAL6200_MULTISEED_ANALYSIS_20260727.md",
+        "llama1b_formal_multiseed_method_aggregate.csv",
+        "llama1b_formal_multiseed_pairwise.csv",
+        "llama1b_formal_multiseed_pairwise_aggregate.csv",
+        "llama1b_formal_multiseed_run_summary.csv",
+        "llama1b_formal_multiseed_steps_tokens_to_targets.csv",
+        "local_formal_artifact_audit.json",
+        "LOCAL_FORMAL_ARTIFACT_AUDIT_20260727.md",
+        "local_formal_artifact_checks.csv",
+        "local_formal_memory_summary.csv",
+        "local_formal_run_summary.csv",
+        "newton_minus_muon_by_seed.png",
+        "source_manifest.csv",
+        "validation_curves_long.csv",
+        "validation_loss_by_seed.png",
+        "validation_loss_mean.png"
+      ]
+    },
+    {
+      "id": "ex20_llama1b_exact_capacity",
+      "tier": "core",
+      "workstream": "systems_and_capacity",
+      "experiment_ids": ["20_llama_swiglu_1b"],
+      "integrity_status": "accepted",
+      "scientific_status": "exact_capacity_boundary",
+      "claim_eligibility": "claim_eligible_for_capacity_only",
+      "paper_role": "memory_capacity_boundary",
+      "source_prefix": "20_llama_swiglu_1b/analysis/capacity_exact_20260722_seed2026",
+      "destination_prefix": "results/05_systems/ex20_llama1b_exact_capacity",
+      "source_anchor": {
+        "file": "derived/analysis_manifest.json",
+        "sha256": "82632e1f073d8393477dc2844f68a3d079f2d5a442267e4d0c5ecbc1c4d85e92"
+      },
+      "files": [
+        "20260722T070855+0000_capacity_exact_seed2026/capacity_exact_boundaries.json",
+        "20260722T070855+0000_capacity_exact_seed2026/capacity_exact_manifest.json",
+        "20260722T070855+0000_capacity_exact_seed2026/capacity_exact_results.csv",
+        "derived/analysis_manifest.json",
+        "derived/data_quality_checks.csv",
+        "derived/exact_boundaries.csv",
+        "derived/exact_confirmation_cells.csv",
+        "derived/key_results.json",
+        "derived/oom_failure_detail.csv",
+        "report/LLAMA1B_CAPACITY_EXACT_REPORT_20260722.md"
+      ]
+    },
+    {
+      "id": "ex22_block_alpha",
+      "tier": "core",
+      "workstream": "robustness_and_controls",
+      "experiment_ids": ["22_r1_block_alpha"],
+      "integrity_status": "accepted_alpha_analysis_checkpoint_transfer_excluded_nonblocking",
+      "scientific_status": "multiseed_alpha_confirmation",
+      "claim_eligibility": "alpha_claim_eligible_checkpoint_transfer_excluded",
+      "paper_role": "block_alpha_response",
+      "source_prefix": "22_r1_block_alpha/analysis/wandb_20260729_multiseed_confirmation",
+      "destination_prefix": "results/03_robustness_and_controls/ex22_block_alpha",
+      "source_anchor": {
+        "file": "final_acceptance.json",
+        "sha256": "3ee45db00eda77495754149d33fc9975af1c1066448a78a9f9fdeade7b9b6c13"
+      },
+      "files": [
+        "alpha_run_summary.csv",
+        "audit_manifest.json",
+        "canonical_alpha_curve.csv",
+        "data_quality_audit.json",
+        "data_quality_checks.csv",
+        "dense_alpha0_vs_efficient_diag.csv",
+        "final_acceptance.json",
+        "important_results.json",
+        "seed_curvature.csv",
+        "source_manifest.csv",
+        "local_artifact_review/local_artifact_audit.json",
+        "local_artifact_review/local_artifact_audit_manifest.json",
+        "local_artifact_review/local_artifact_checks.csv",
+        "local_artifact_review/local_batch_summary.csv",
+        "local_artifact_review/local_formal_run_summary.csv"
+      ]
+    },
+    {
+      "id": "ex24_dense_full_alpha",
+      "tier": "core",
+      "workstream": "robustness_and_controls",
+      "experiment_ids": ["24_r1_dense_full_alpha"],
+      "integrity_status": "accepted",
+      "scientific_status": "multiseed_dense_full_alpha_confirmation",
+      "claim_eligibility": "claim_eligible",
+      "paper_role": "dense_alpha_control",
+      "source_prefix": "24_r1_dense_full_alpha/analysis/wandb_20260729_multiseed_confirmation",
+      "destination_prefix": "results/03_robustness_and_controls/ex24_dense_full_alpha",
+      "source_anchor": {
+        "file": "final_audit_manifest.json",
+        "sha256": "5f1858d7b380991373b169b0cbb9de5448c5fa875d420b160563adafef2b1c88"
+      },
+      "files": [
+        "alpha_aggregate.csv",
+        "audit_manifest.json",
+        "canonical_alpha_curve.csv",
+        "data_quality_checks.csv",
+        "data_quality_checks.json",
+        "dense_alpha0_vs_efficient_diag.csv",
+        "dense_full_alpha_run_summary.csv",
+        "final_audit_manifest.json",
+        "final_important_results.json",
+        "important_results.json",
+        "matched_topology_contrasts.csv",
+        "seed_curvature.csv",
+        "source_manifest.csv",
+        "local_evidence/diagnostic_summary.csv",
+        "local_evidence/local_audit_manifest.json",
+        "local_evidence/local_data_quality_checks.csv",
+        "local_evidence/run_integrity.csv"
+      ]
+    },
+    {
+      "id": "ex29_r1_depth_kmode",
+      "tier": "core",
+      "workstream": "robustness_and_controls",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "integrity_status": "accepted_three_seed_36_of_36_with_wandb_crosscheck",
+      "scientific_status": "uniform_diag_direction_transfer_with_environment_specific_depth_amplitude",
+      "claim_eligibility": "quality_and_state_only_timing_excluded",
+      "paper_role": "main_text_supporting_depth_transfer_and_appendix_full_contrasts",
+      "source_prefix": "29_r1_depth_kmode",
+      "destination_prefix": "results/03_robustness_and_controls/ex29_r1_depth_kmode",
+      "source_anchor": {
+        "file": "analysis_20260809_formal/analysis_manifest.json",
+        "sha256": "a792565b329528bbdcb123186ac163eff95cc8af977b1cd96979958d3aacb3ae"
+      },
+      "files": [
+        "ACCEPTANCE_AND_ARCHIVE_STATUS_20260809.md",
+        "analysis_20260809_formal/analysis_manifest.json",
+        "analysis_20260809_formal/analysis_verdict.json",
+        "analysis_20260809_formal/anchor_summary.csv",
+        "analysis_20260809_formal/cross_environment_depth_deltas.svg",
+        "analysis_20260809_formal/cross_environment_depth_transfer.csv",
+        "analysis_20260809_formal/data_quality_checks.csv",
+        "analysis_20260809_formal/data_quality_checks.json",
+        "analysis_20260809_formal/input_manifest.csv",
+        "analysis_20260809_formal/paired_depth_contrasts.csv",
+        "analysis_20260809_formal/r1_depth_deltas.svg",
+        "analysis_20260809_formal/R1_DEPTH_KMODE_FORMAL_ANALYSIS_20260809.md",
+        "analysis_20260809_formal/remote_bundle_inventory.csv",
+        "analysis_20260809_formal/rule_multiseed_summary.csv",
+        "analysis_20260809_formal/run_summary.csv",
+        "analysis_20260809_formal/wandb_local_crosscheck.csv"
+      ]
+    },
+    {
+      "id": "ex34_selective_primary_comparison",
+      "tier": "core",
+      "workstream": "mechanism",
+      "experiment_ids": ["34_selective_primary_comparison"],
+      "integrity_status": "accepted_analysis_only",
+      "scientific_status": "unified_primary_comparison",
+      "claim_eligibility": "claim_eligible_as_synthesis",
+      "paper_role": "selective_primary_contrast",
+      "source_prefix": "34_selective_primary_comparison/20260727T083000+0000",
+      "destination_prefix": "results/04_mechanism/ex34_selective_primary",
+      "source_anchor": {
+        "file": "primary_analysis_manifest.json",
+        "sha256": "73587cb8f2c57b992aeb930443eb1137bad6c5a776e2e327f016082b6fee4f92"
+      },
+      "files": [
+        "primary_analysis_manifest.json",
+        "primary_contrasts_by_seed.csv",
+        "primary_contrasts_summary.csv",
+        "primary_method_summary.csv",
+        "SELECTIVE_PRIMARY_COMPARISON_REPORT.md",
+        "source_audit.json"
+      ]
+    },
+    {
+      "id": "ex37_refresh_mediation",
+      "tier": "core",
+      "workstream": "mechanism",
+      "experiment_ids": ["37_mech09_downproj_refresh_mediation"],
+      "integrity_status": "accepted_with_independent_review",
+      "scientific_status": "refresh_short_horizon_loss_impulse",
+      "claim_eligibility": "claim_eligible_with_protocol_amendment_disclosure",
+      "paper_role": "causal_refresh_mediation",
+      "source_prefix": "37_mech09_downproj_refresh_mediation/20260728T075907+0000",
+      "destination_prefix": "results/04_mechanism/ex37_refresh_mediation",
+      "source_anchor": {
+        "file": "independent_review/independent_audit_manifest.json",
+        "sha256": "3c19990a8bc9d5453f2fdbbb7eb6170af016df7edaa88c9d5608d04bf2869174"
+      },
+      "files": [
+        "checkpoint_inventory.json",
+        "status.json",
+        "analysis/auc_contrasts.csv",
+        "analysis/evaluation_all.csv",
+        "analysis/integrity_checks.json",
+        "analysis/mech09r_analysis_manifest.json",
+        "analysis/mediation_decision.json",
+        "analysis/paired_contrasts.csv",
+        "analysis/paired_contrast_summary.csv",
+        "analysis/protocol_amendment.json",
+        "analysis/shared_prefix_audit.json",
+        "analysis/worker_inventory.csv",
+        "formal/formal_manifest.json",
+        "independent_review/auc_contrasts_recomputed.csv",
+        "independent_review/auc_summary.csv",
+        "independent_review/contrast_by_origin.csv",
+        "independent_review/contrast_trajectory_summary.csv",
+        "independent_review/data_quality_audit.json",
+        "independent_review/important_results.json",
+        "independent_review/independent_audit_manifest.json",
+        "independent_review/paired_contrasts_recomputed.csv",
+        "independent_review/worker_audit.csv"
+      ]
+    },
+    {
+      "id": "ex38_unified_mechanism",
+      "tier": "core",
+      "workstream": "mechanism",
+      "experiment_ids": ["38_unified_mechanism_synthesis"],
+      "integrity_status": "accepted_analysis_only",
+      "scientific_status": "unified_mechanism_synthesis",
+      "claim_eligibility": "claim_eligible_with_boundary_matrix",
+      "paper_role": "mechanism_evidence_chain",
+      "source_prefix": "38_unified_mechanism_synthesis/20260729T071451+0000",
+      "destination_prefix": "results/04_mechanism/ex38_unified_synthesis",
+      "source_anchor": {
+        "file": "unified_mechanism_manifest.json",
+        "sha256": "634ecfa12cd2ec46e8a72f354989f0dad09155a2489d7fd2f707cfb1c70a5c0d"
+      },
+      "files": [
+        "alpha_synthesis.csv",
+        "architecture_transfer_boundary.csv",
+        "claim_evidence_matrix.csv",
+        "complementary_bridge_summary.csv",
+        "foundational_module_structure.csv",
+        "mechanism_chain.csv",
+        "prediction_rollout_alignment.csv",
+        "primary_training_contrasts.csv",
+        "rollout_cluster_bootstrap.csv",
+        "unified_mechanism_manifest.json",
+        "UNIFIED_MECHANISM_SYNTHESIS_REPORT.md"
+      ]
+    },
+    {
+      "id": "ex39_r1_efficiency_sensitivity",
+      "tier": "core",
+      "workstream": "systems_and_capacity",
+      "experiment_ids": ["39_submission_efficiency_and_sensitivity"],
+      "integrity_status": "accepted_with_independent_review",
+      "scientific_status": "independently_recomputed_isolated_efficiency_and_lr_sensitivity",
+      "claim_eligibility": "independent_recomputation_only_with_metric_scope",
+      "paper_role": "r1_efficiency_and_sensitivity",
+      "source_prefix": "39_submission_efficiency_and_sensitivity/analysis/handoff_20260730_independent_review",
+      "destination_prefix": "results/05_systems/ex39_r1_efficiency",
+      "source_anchor": {
+        "file": "review_manifest.json",
+        "sha256": "e2e4e1a28c93ef718e5a0735695f1136595beca5b299f1f31d288b8e619141d2"
+      },
+      "files": [
+        "review_manifest.json",
+        "derived/efficiency_contrasts.csv",
+        "derived/independent_audit.json",
+        "derived/lr_contrasts.csv",
+        "derived/memory_capacity_contrasts.csv",
+        "derived/method_evidence_summary.csv",
+        "derived/source_hash_audit.csv",
+        "source_bundle/final_submission_audit/capacity_boundary.csv",
+        "source_bundle/final_submission_audit/fixed_batch_memory.csv",
+        "source_bundle/final_submission_audit/gap_matrix.csv",
+        "source_bundle/final_submission_audit/metric_eligibility.csv",
+        "source_bundle/final_submission_audit/sensitivity_coverage.csv",
+        "source_bundle/final_submission_audit/source_inventory.csv",
+        "source_bundle/final_submission_audit/submission_evidence_manifest.json",
+        "source_bundle/final_submission_audit/throughput_summary.csv",
+        "source_bundle/r1_isolated_efficiency/perf_manifest.json",
+        "source_bundle/r1_isolated_efficiency/training_benchmark_runs.csv",
+        "source_bundle/r1_isolated_efficiency/training_benchmark_summary.csv",
+        "source_bundle/r1_lr_sensitivity/analysis/lr_sensitivity_contrasts.csv",
+        "source_bundle/r1_lr_sensitivity/analysis/lr_sensitivity_manifest.json",
+        "source_bundle/r1_lr_sensitivity/analysis/lr_sensitivity_role_summary.csv",
+        "source_bundle/r1_lr_sensitivity/analysis/lr_sensitivity_runs.csv"
+      ]
+    },
+    {
+      "id": "ex40_llama_block_invariance",
+      "tier": "core",
+      "workstream": "robustness_and_controls",
+      "experiment_ids": ["40_llama_block_partition_invariance_audit"],
+      "integrity_status": "accepted_with_independent_review",
+      "scientific_status": "block_partition_invariance_audit",
+      "claim_eligibility": "claim_eligible",
+      "paper_role": "transfer_boundary_control",
+      "source_prefix": "40_llama_block_partition_invariance_audit/20260729T044926+0000",
+      "destination_prefix": "results/03_robustness_and_controls/ex40_llama_block_invariance",
+      "source_anchor": {
+        "file": "independent_review/independent_audit_manifest.json",
+        "sha256": "ce567bd2aaa59d4bd01f915e3df0fefcc55f6e9d7ba5821d87b2aa7a0590f14e"
+      },
+      "files": [
+        "analysis/checkpoint_summary.csv",
+        "analysis/classification.json",
+        "analysis/input_audit.json",
+        "analysis/llama_block_audit_analysis_manifest.json",
+        "analysis/partition_energy_summary.csv",
+        "analysis/REPORT.md",
+        "analysis/shadow_partition_spread.csv",
+        "independent_review/checkpoint_summary.csv",
+        "independent_review/important_results.json",
+        "independent_review/independent_audit.json",
+        "independent_review/independent_audit_manifest.json",
+        "independent_review/layer_summary.csv",
+        "independent_review/REPORT.md",
+        "independent_review/shadow_partition_spread.csv",
+        "independent_review/source_artifact_hashes.csv"
+      ]
+    },
+    {
+      "id": "ex41_module_factorial",
+      "tier": "core",
+      "workstream": "robustness_and_controls",
+      "experiment_ids": ["41_r1_kstate_module_factorial"],
+      "integrity_status": "accepted_with_recorded_errata",
+      "scientific_status": "module_factorial",
+      "claim_eligibility": "quality_state_structure_only_timing_excluded_with_errata_disclosure",
+      "paper_role": "module_structure",
+      "source_prefix": "41_r1_kstate_module_factorial/analysis/accepted_20260731",
+      "destination_prefix": "results/03_robustness_and_controls/ex41_module_factorial",
+      "source_anchor": {
+        "file": "experiment41_key_results.json",
+        "sha256": "b5506b6e0902b4c1b338dac2336d24c7e3d2d7e3147e3a39e3f6d42b1357698f"
+      },
+      "files": [
+        "experiment41_key_results.json",
+        "EXPERIMENT_41_ACCEPTANCE_20260731.md"
+      ]
+    },
+    {
+      "id": "ex41_diag_bridge",
+      "tier": "core",
+      "workstream": "robustness_and_controls",
+      "experiment_ids": ["41_r1_kstate_module_factorial"],
+      "integrity_status": "accepted",
+      "scientific_status": "diag_bridge_analysis",
+      "claim_eligibility": "quality_state_structure_only_timing_excluded",
+      "paper_role": "diag_to_module_factorial_bridge",
+      "source_prefix": "41_r1_kstate_module_factorial/analysis/diag_bridge_20260731",
+      "destination_prefix": "results/03_robustness_and_controls/ex41_diag_bridge",
+      "source_anchor": {
+        "file": "r1_diag_bridge_analysis_manifest.json",
+        "sha256": "aa015da673a9feecc968a5513c655aa741ce2d5ed035fd43c533baee2639595a"
+      },
+      "files": [
+        "checks.json",
+        "diag_bridge_cells.csv",
+        "diag_bridge_decision.json",
+        "diag_bridge_effects_by_seed.csv",
+        "diag_bridge_effects_summary.csv",
+        "diag_bridge_pareto.csv",
+        "r1_diag_bridge_analysis_manifest.json",
+        "r1_diag_bridge_delivery_manifest.json",
+        "R1_DIAG_BRIDGE_REPORT.md",
+        "source_audit.json"
+      ]
+    },
+    {
+      "id": "ex42_llama1b_efficiency",
+      "tier": "core",
+      "workstream": "systems_and_capacity",
+      "experiment_ids": ["42_llama1b_isolated_efficiency"],
+      "integrity_status": "accepted_with_independent_review",
+      "scientific_status": "isolated_llama1b_efficiency",
+      "claim_eligibility": "claim_eligible_with_timing_scope",
+      "paper_role": "llama1b_efficiency",
+      "source_prefix": "42_llama1b_isolated_efficiency/20260729T105505+0000",
+      "destination_prefix": "results/05_systems/ex42_llama1b_efficiency",
+      "source_anchor": {
+        "file": "independent_review/independent_audit_manifest.json",
+        "sha256": "e972b222c9110e62113e8d75a8262af63f63d04e064d9335df9468feec070bd3"
+      },
+      "files": [
+        "controller_status.json",
+        "efficiency_contract.json",
+        "execution_manifest.json",
+        "postflight_data_audit.json",
+        "analysis/integrity_checks.json",
+        "analysis/llama1b_efficiency_analysis_manifest.json",
+        "analysis/method_summary.csv",
+        "analysis/paired_contrasts.csv",
+        "analysis/position_effects.csv",
+        "analysis/raw_runs.csv",
+        "analysis/report.md",
+        "independent_review/archive_receipt.json",
+        "independent_review/important_results.json",
+        "independent_review/independent_audit.json",
+        "independent_review/independent_audit_manifest.json",
+        "independent_review/README.md",
+        "independent_review/source_artifact_hashes.csv"
+      ]
+    },
+    {
+      "id": "ex43_gpt275m",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["43_newton_muon_record28_275m"],
+      "integrity_status": "accepted_12_of_12",
+      "scientific_status": "three_seed_275m_scale_point",
+      "claim_eligibility": "quality_state_only_timing_excluded",
+      "paper_role": "cross_scale_275m",
+      "source_prefix": "43_newton_muon_record28_275m",
+      "destination_prefix": "results/02_main_quality/ex43_gpt_275m",
+      "source_anchor": {
+        "file": "20260731T014352+0000/record28_suite_manifest.json",
+        "sha256": "21e07e4b4b0509fae4c3da6863ef0c1d444d9effef37d546292217ef6c3f5aea"
+      },
+      "files": [
+        "ANALYSIS_GUIDANCE.md",
+        "FORMAL_REVIEW_20260803.md",
+        "20260731T014352+0000/record28_suite_manifest.json",
+        "20260731T014352+0000/status.json",
+        "20260731T014352+0000/analysis/integrity_checks.json",
+        "20260731T014352+0000/analysis/method_summary.csv",
+        "20260731T014352+0000/analysis/paired_contrasts.csv",
+        "20260731T014352+0000/analysis/paired_deltas_by_seed.csv",
+        "20260731T014352+0000/analysis/record28_analysis_manifest.json",
+        "20260731T014352+0000/analysis/RECORD28_ANALYSIS_REPORT.md",
+        "20260731T014352+0000/analysis/record28_cells.csv",
+        "20260731T014352+0000/analysis/record28_decision.json",
+        "20260731T014352+0000/analysis/source_audit.json",
+        "20260731T014352+0000/formal/formal_manifest.json"
+      ]
+    },
+    {
+      "id": "ex44_gpt455m",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["44_newton_muon_record17_455m"],
+      "integrity_status": "accepted_12_of_12",
+      "scientific_status": "three_seed_455m_scale_point",
+      "claim_eligibility": "quality_state_only_timing_excluded",
+      "paper_role": "cross_scale_455m",
+      "source_prefix": "44_newton_muon_record17_455m",
+      "destination_prefix": "results/02_main_quality/ex44_gpt_455m",
+      "source_anchor": {
+        "file": "20260730T104121+0000/record17_suite_manifest.json",
+        "sha256": "be8a2887a95c70d543f1d2938426c1ae3e2ee8677c78dec50b7ff4f9c7bc06fb"
+      },
+      "files": [
+        "ANALYSIS_GUIDANCE.md",
+        "FORMAL_REVIEW_20260803.md",
+        "20260730T104121+0000/record17_suite_manifest.json",
+        "20260730T104121+0000/status.json",
+        "20260730T104121+0000/analysis/integrity_checks.json",
+        "20260730T104121+0000/analysis/method_summary.csv",
+        "20260730T104121+0000/analysis/paired_contrasts.csv",
+        "20260730T104121+0000/analysis/paired_deltas_by_seed.csv",
+        "20260730T104121+0000/analysis/record17_analysis_manifest.json",
+        "20260730T104121+0000/analysis/RECORD17_ANALYSIS_REPORT.md",
+        "20260730T104121+0000/analysis/record17_cells.csv",
+        "20260730T104121+0000/analysis/record17_decision.json",
+        "20260730T104121+0000/analysis/source_audit.json",
+        "20260730T104121+0000/formal/formal_manifest.json"
+      ]
+    },
+    {
+      "id": "ex45_mousse_and_eight_method_panel",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["45_r1_mousse_strong_baseline"],
+      "integrity_status": "accepted_authoritative_local_without_checkpoint_tensors",
+      "scientific_status": "three_seed_external_neighbor_and_eight_method_panel",
+      "claim_eligibility": "quality_state_only_timing_excluded_with_pilot_scope_separated",
+      "paper_role": "external_neighbor_and_baseline_closure",
+      "source_prefix": "45_r1_mousse_strong_baseline/analysis/formal_20260803_authoritative",
+      "destination_prefix": "results/02_main_quality/ex45_mousse",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "ebda6864bb066cb1102cb2946d9007d8d406b32b6c2e5f00418ba25746fac394"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "EXPERIMENT_45_ANALYSIS.md",
+        "identity_reuse_certificate.json",
+        "LOCAL_ARTIFACT_AUDIT.md",
+        "local_artifact_audit_manifest.json",
+        "local_quality_run_audit.csv",
+        "local_wandb_reconciliation.csv",
+        "pilot_selection_local_verified.json",
+        "r1_mousse_paired_aggregate.csv",
+        "r1_mousse_paired_seed_deltas.csv",
+        "r1_unified_eight_method_aggregate.csv",
+        "r1_unified_eight_method_run_summary.csv"
+      ]
+    },
+    {
+      "id": "ex49_malt_family",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["49_r1_malt_strong_baseline"],
+      "integrity_status": "accepted_fresh_v4_six_of_six_with_wandb_reconciliation_without_checkpoint_tensors",
+      "scientific_status": "three_seed_paper_derived_malt_family_and_ten_method_panel",
+      "claim_eligibility": "quality_state_only_malt_main_malter_appendix_timing_excluded_not_official_reproduction",
+      "paper_role": "external_neighbor_extension_and_appendix_negative_control",
+      "source_prefix": "49_r1_malt_strong_baseline",
+      "destination_prefix": "results/02_main_quality/ex49_malt_family",
+      "source_anchor": {
+        "file": "analysis/formal_20260810_authoritative/analysis_manifest.json",
+        "sha256": "855179dee582b418d525431a2d0042911b29a86e81dbb0edf85dbf1f76e0fed7"
+      },
+      "files": [
+        "analysis/formal_20260810_authoritative/analysis_manifest.json",
+        "analysis/formal_20260810_authoritative/analysis_manifest.sha256",
+        "analysis/formal_20260810_authoritative/EXPERIMENT_49_ANALYSIS.md",
+        "analysis/formal_20260810_authoritative/handoff_manifest.json",
+        "analysis/formal_20260810_authoritative/identity_reuse_certificate.json",
+        "analysis/formal_20260810_authoritative/pilot_analysis_manifest.json",
+        "analysis/formal_20260810_authoritative/pilot_analysis_manifest.sha256",
+        "analysis/formal_20260810_authoritative/pilot_ranking.csv",
+        "analysis/formal_20260810_authoritative/pilot_selection_verified.json",
+        "analysis/formal_20260810_authoritative/r1_malt_family_paired_aggregate.csv",
+        "analysis/formal_20260810_authoritative/r1_malt_family_paired_seed_deltas.csv",
+        "analysis/formal_20260810_authoritative/r1_unified_ten_method_aggregate.csv",
+        "analysis/formal_20260810_authoritative/r1_unified_ten_method_quality_state_summary.csv",
+        "analysis/formal_20260810_authoritative/r1_unified_ten_method_run_summary.csv",
+        "analysis/wandb_20260810_formal_review/WANDB_FORMAL_AUDIT.md",
+        "analysis/wandb_20260810_formal_review/wandb_endpoint_reconciliation.csv"
+      ]
+    },
+    {
+      "id": "ex48_llama1b_10b_multibudget",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["48_llama1b_10b_multibudget"],
+      "integrity_status": "accepted_three_seed_three_budget_with_independent_audit_and_remote_full_checkpoint_rehash",
+      "scientific_status": "persistent_muon_lead_through_approximately_10b_tokens",
+      "claim_eligibility": "quality_and_training_stage_claim_eligible_timing_excluded",
+      "paper_role": "llama1b_long_token_training_stage_confirmation",
+      "source_prefix": "48_llama1b_10b_multibudget",
+      "destination_prefix": "results/02_main_quality/ex48_llama1b_10b_multibudget",
+      "source_anchor": {
+        "file": "analysis/final_acceptance_20260812/independent_audit_manifest.json",
+        "sha256": "c6c415dc41b884767bb6a7f93914b87e9c0ce38a8a4e45c129ef5f62e232563b"
+      },
+      "files": [
+        "20260805T061608+0000/analysis/analysis_manifest.json",
+        "20260805T061608+0000/analysis/classification.json",
+        "20260805T061608+0000/analysis/endpoint_results.csv",
+        "20260805T061608+0000/analysis/paired_contrasts.csv",
+        "20260805T061608+0000/analysis/EX48_FORMAL_ANALYSIS.md",
+        "20260805T061608+0000/handoff_manifest.json",
+        "20260805T061608+0000/pilot_manifest.json",
+        "20260805T061608+0000/preflight_manifest.json",
+        "20260805T061608+0000/runtime_preflight.json",
+        "20260805T061608+0000/data_audit.json",
+        "20260805T061608+0000/init_audit.json",
+        "20260805T061608+0000/run_identity.json",
+        "20260805T061608+0000/suite_plan.json",
+        "20260805T061608+0000/suite_status.json",
+        "20260805T061608+0000/source_snapshot/source_snapshot_manifest.json",
+        "analysis/final_acceptance_20260812/independent_audit_manifest.json",
+        "analysis/final_acceptance_20260812/EX48_INDEPENDENT_ANALYSIS_20260812.md",
+        "analysis/final_acceptance_20260812/budget_method_summary.csv",
+        "analysis/final_acceptance_20260812/checkpoint_handoff_scope.json",
+        "analysis/final_acceptance_20260812/efficiency_summary.csv",
+        "analysis/final_acceptance_20260812/endpoint_results_recomputed.csv",
+        "analysis/final_acceptance_20260812/generic_verify_certificate.json",
+        "analysis/final_acceptance_20260812/integrity_checks.csv",
+        "analysis/final_acceptance_20260812/paired_contrasts_recomputed.csv",
+        "analysis/final_acceptance_20260812/remote_full_checkpoint_lineage_certificate.json",
+        "analysis/final_acceptance_20260812/source_inventory.csv",
+        "analysis/final_acceptance_20260812/wandb_reconciliation.csv",
+        "analysis/final_acceptance_20260812/wandb_reconciliation_summary.json",
+        "_received_20260812/full_checkpoint_verify_20260812T031024+0000.json",
+        "_received_20260812/full_checkpoint_verify_20260812T031024+0000.json.sha256"
+      ]
+    },
+    {
+      "id": "final_unified_38_45",
+      "tier": "core",
+      "workstream": "unified_submission",
+      "experiment_ids": ["38_unified_mechanism_synthesis", "39_submission_efficiency_and_sensitivity", "40_llama_block_partition_invariance_audit", "41_r1_kstate_module_factorial", "42_llama1b_isolated_efficiency", "43_newton_muon_record28_275m", "44_newton_muon_record17_455m", "45_r1_mousse_strong_baseline"],
+      "integrity_status": "accepted_and_final_audited",
+      "scientific_status": "unified_submission_analysis",
+      "claim_eligibility": "claim_eligible_with_explicit_scope_caveats",
+      "paper_role": "submission_tables_figures_and_claim_matrix",
+      "source_prefix": "_shared/analysis/final_unified_38_45_20260803",
+      "destination_prefix": "results/06_unified_submission/final_unified_38_45",
+      "source_anchor": {
+        "file": "final_audit/submission_bundle_audit_manifest.json",
+        "sha256": "70b530da26de8fa9be2d77e8912415de411f651458afc1d070f9e3dc1a4225e6"
+      },
+      "files": [
+        "input_catalog.json",
+        "pipeline_config.json",
+        "routing_complexity.json",
+        "bundle/local_pipeline_manifest.json",
+        "bundle/audit/BUNDLE_AUDIT.md",
+        "bundle/audit/manifest_audit.csv",
+        "bundle/audit/submission_bundle_audit_manifest.json",
+        "bundle/complexity/routing_complexity.csv",
+        "bundle/complexity/routing_complexity_manifest.json",
+        "bundle/cross_scale/CROSS_SCALE_ANALYSIS.md",
+        "bundle/cross_scale/cross_scale_analysis_manifest.json",
+        "bundle/cross_scale/method_aggregate_by_scale.csv",
+        "bundle/cross_scale/paired_contrasts_by_scale.csv",
+        "bundle/cross_scale/paired_deltas_by_scale_seed.csv",
+        "bundle/cross_scale/pareto_frontier_by_scale.csv",
+        "bundle/equivariance/route_equivariance.csv",
+        "bundle/equivariance/route_equivariance_manifest.json",
+        "bundle/evidence/evidence_ledger.csv",
+        "bundle/evidence/evidence_ledger_manifest.json",
+        "bundle/evidence/source_ledger.csv",
+        "bundle/figures/cross_scale_forest.svg",
+        "bundle/figures/quality_state_pareto.svg",
+        "bundle/figures/SUBMISSION_TABLES.md",
+        "bundle/figures/submission_tables_figures_manifest.json",
+        "bundle/unified_submission/claim_matrix.csv",
+        "bundle/unified_submission/evidence_workstream_status.csv",
+        "bundle/unified_submission/external_neighbor_124m.csv",
+        "bundle/unified_submission/external_neighbor_quality_state.svg",
+        "bundle/unified_submission/FINAL_UNIFIED_ANALYSIS.md",
+        "bundle/unified_submission/final_unified_analysis_manifest.json",
+        "bundle/unified_submission/limitations_matrix.csv",
+        "final_audit/BUNDLE_AUDIT.md",
+        "final_audit/manifest_audit.csv",
+        "final_audit/submission_bundle_audit_manifest.json"
+      ]
+    },
+    {
+      "id": "method_deepening_v2",
+      "tier": "core",
+      "workstream": "mechanism",
+      "experiment_ids": ["22_r1_block_alpha", "24_r1_dense_full_alpha", "38_unified_mechanism_synthesis", "mdp04_refresh_streaming"],
+      "analysis_ids": ["method_deepening_20260803_v2"],
+      "integrity_status": "accepted_compact_bundle",
+      "scientific_status": "method_formulation_complexity_equivariance_and_negative_evidence",
+      "claim_eligibility": "claim_eligible_by_component",
+      "paper_role": "method_deepening",
+      "source_prefix": "_shared/analysis/method_deepening_20260803_v2",
+      "destination_prefix": "results/04_mechanism/method_deepening_v2",
+      "source_anchor": {
+        "file": "method_deepening_root_manifest_v2.json",
+        "sha256": "2610827460e74f28f9dc365ee7d89c236287e119ce2350219ad2a3cd94a97ecf"
+      },
+      "files": [
+        "method_deepening_root_manifest_v2.json",
+        "PACKAGE_INDEX.md",
+        "refresh_replay_contract.json",
+        "routing_complexity.json",
+        "bundle/complexity/routing_complexity.csv",
+        "bundle/complexity/routing_complexity_manifest.json",
+        "bundle/equivariance/route_equivariance.csv",
+        "bundle/equivariance/route_equivariance_manifest.json",
+        "bundle/formulation/method_formulation_checks.csv",
+        "bundle/formulation/method_formulation_manifest.json",
+        "bundle/integrity_audit_v2/BUNDLE_AUDIT.md",
+        "bundle/integrity_audit_v2/manifest_audit.csv",
+        "bundle/integrity_audit_v2/submission_bundle_audit_manifest.json",
+        "bundle/inventory/checkpoint_inventory.csv",
+        "bundle/inventory/method_deepening_inventory_manifest.json",
+        "bundle/inventory/refresh_artifact_inventory.csv",
+        "bundle/inventory/tensor_inventory.csv",
+        "bundle/synthesis_v2/alpha_refresh_evidence.svg",
+        "bundle/synthesis_v2/claim_evidence_matrix.csv",
+        "bundle/synthesis_v2/mechanism_evidence_summary.csv",
+        "bundle/synthesis_v2/method_deepening_package_manifest.json",
+        "bundle/synthesis_v2/method_deepening_status.csv",
+        "bundle/synthesis_v2/negative_evidence.csv",
+        "bundle/synthesis_v2/route_equivariance.svg",
+        "bundle/synthesis_v2/routing_state_cost.svg",
+        "bundle/synthesis_v2/source_hashes.csv"
+      ]
+    },
+    {
+      "id": "mechanism_closure",
+      "tier": "core",
+      "workstream": "mechanism",
+      "experiment_ids": ["38_unified_mechanism_synthesis", "46_mdp05_confirmatory_update_shock", "47b_geo01b_update_geometry_discovery", "mdp04_refresh_streaming"],
+      "integrity_status": "accepted_and_closed",
+      "scientific_status": "mechanism_line_closed_with_bounded_positive_and_null_results",
+      "claim_eligibility": "claim_eligible_with_claim_boundary",
+      "paper_role": "mechanism_closure",
+      "source_prefix": "_shared/analysis/mechanism_closure_20260805",
+      "destination_prefix": "results/04_mechanism/mechanism_closure",
+      "source_anchor": {
+        "file": "closure_manifest.json",
+        "sha256": "f001042a51757a2e901b2a6fcdd12ecc675f58f417b10e46f887ccc46a2bf19a"
+      },
+      "files": [
+        "claim_boundary.csv",
+        "closure_decision.json",
+        "closure_manifest.json",
+        "fig_predictor_generalization.png",
+        "fig_predictor_generalization.svg",
+        "fig_refresh_harm_replication.png",
+        "fig_refresh_harm_replication.svg",
+        "geo01b_event_summary.csv",
+        "geo01b_independent_recomputation.json",
+        "geo01b_unit_outcomes.csv",
+        "input_audit.csv",
+        "input_audit.json",
+        "MECHANISM_CLOSURE_REPORT.md",
+        "mechanism_evidence_ledger.csv",
+        "predictor_gate_summary.csv",
+        "refresh_harm_replication.csv"
+      ]
+    },
+    {
+      "id": "ex14_r0_official_reproduction",
+      "tier": "supporting",
+      "workstream": "provenance_and_controls",
+      "experiment_ids": ["14_official_newton_muon_r0"],
+      "integrity_status": "accepted",
+      "scientific_status": "official_recipe_reproduction",
+      "claim_eligibility": "supporting_only",
+      "paper_role": "official_r0_anchor",
+      "source_prefix": "14_official_newton_muon_r0/analysis/wandb_20260720",
+      "destination_prefix": "supporting/ex14_r0_official",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "8d7d3a686afea09772311caadd040e249901711e9fb03b497ec39dfe24c68650"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "data_quality_checks.csv",
+        "R0_ANALYSIS_20260720.md",
+        "r0_pairwise_summary.csv",
+        "r0_run_summary.csv",
+        "source_manifest.csv",
+        "time_to_loss_targets.csv",
+        "validation_curves_wide.csv",
+        "validation_milestones.csv"
+      ]
+    },
+    {
+      "id": "ex16_lr_cross",
+      "tier": "supporting",
+      "workstream": "provenance_and_controls",
+      "experiment_ids": ["16_official_newton_muon_r1_lr_cross"],
+      "integrity_status": "accepted",
+      "scientific_status": "crossed_lr_multiseed_control",
+      "claim_eligibility": "supporting_only",
+      "paper_role": "learning_rate_robustness",
+      "source_prefix": "16_official_newton_muon_r1_lr_cross/analysis/wandb_20260721_crossed_multiseed",
+      "destination_prefix": "supporting/ex16_lr_cross",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "dc9550d980fdd7f1ebe75f58cf4605a87830e140ce0b138aa5209d2a516ba4d3"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "crossed_curve_dominance.csv",
+        "crossed_method_aggregate.csv",
+        "crossed_paired_aggregate.csv",
+        "crossed_paired_by_seed.csv",
+        "crossed_run_summary.csv",
+        "data_quality_checks.csv",
+        "R1_LR_CROSS_ANALYSIS_20260721.md",
+        "seed2026_factorial_cells.csv",
+        "seed2026_factorial_effects.csv",
+        "source_manifest.csv",
+        "steps_to_loss_targets.csv"
+      ]
+    },
+    {
+      "id": "ex19_extended_baselines",
+      "tier": "supporting",
+      "workstream": "provenance_and_controls",
+      "experiment_ids": ["19_r1_extended_baselines"],
+      "integrity_status": "accepted",
+      "scientific_status": "seven_method_baseline_panel",
+      "claim_eligibility": "supporting_and_superseded_by_ex45_eight_method_panel",
+      "paper_role": "baseline_provenance",
+      "source_prefix": "19_r1_extended_baselines/analysis/wandb_20260723_formal_multiseed_unified",
+      "destination_prefix": "supporting/ex19_extended_baselines",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "608e54a9f37e267c19a103de778b9195f50e8751f0112109a780dee33bebc10c"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "data_quality_checks.csv",
+        "extended_formal_run_summary.csv",
+        "r1_confirmatory_2024_2025_method_aggregate.csv",
+        "R1_EXTENDED_FORMAL_UNIFIED_ANALYSIS_20260723.md",
+        "r1_extended_vs_core_curve_comparison.csv",
+        "r1_extended_vs_core_paired_aggregate.csv",
+        "r1_extended_vs_core_paired_seed_deltas.csv",
+        "r1_unified_seven_method_aggregate.csv",
+        "r1_unified_seven_method_run_summary.csv",
+        "source_manifest.csv"
+      ]
+    },
+    {
+      "id": "ex21_host_bridge",
+      "tier": "supporting",
+      "workstream": "provenance_and_controls",
+      "experiment_ids": ["21_gpt_r1_host_bridge"],
+      "integrity_status": "accepted",
+      "scientific_status": "host_context_bridge",
+      "claim_eligibility": "supporting_only",
+      "paper_role": "machine_and_host_context_control",
+      "source_prefix": "21_gpt_r1_host_bridge/analysis/wandb_20260722_seed2026",
+      "destination_prefix": "supporting/ex21_host_bridge",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "113124e0aa729621475af939a28d09d3772ea967769c3dd2c8013a8cbd5975de"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "architecture_host_context_comparison.csv",
+        "architecture_host_effect_decomposition.csv",
+        "bridge_run_summary.csv",
+        "bridge_vs_original_gpt.csv",
+        "data_quality_checks.csv",
+        "GPT_R1_HOST_BRIDGE_ANALYSIS_20260722.md",
+        "source_manifest.csv",
+        "reference/gpt_r1_original_seed2026_run_summary.csv",
+        "reference/llama_swiglu_seed2026_run_summary.csv"
+      ]
+    },
+    {
+      "id": "ex38_source_dependency_index",
+      "tier": "supporting",
+      "workstream": "mechanism",
+      "experiment_ids": ["38_unified_mechanism_synthesis"],
+      "integrity_status": "accepted_source_index",
+      "scientific_status": "provenance_only",
+      "claim_eligibility": "not_a_standalone_claim",
+      "paper_role": "indexes_mechanism_inputs_not_individually_republished",
+      "source_prefix": "38_unified_mechanism_synthesis/20260729T071451+0000",
+      "destination_prefix": "supporting/ex38_source_dependency_index",
+      "source_anchor": {
+        "file": "unified_mechanism_manifest.json",
+        "sha256": "634ecfa12cd2ec46e8a72f354989f0dad09155a2489d7fd2f707cfb1c70a5c0d"
+      },
+      "files": [
+        "report_source_notes.json",
+        "source_audit.csv",
+        "source_audit.json"
+      ]
+    },
+    {
+      "id": "mdp04_refresh_streaming",
+      "tier": "supporting",
+      "workstream": "mechanism",
+      "experiment_ids": ["mdp04_refresh_streaming"],
+      "integrity_status": "computation_complete_numeric_hard_gate_failed",
+      "scientific_status": "descriptive_partial_only",
+      "claim_eligibility": "not_formal_paper_evidence",
+      "paper_role": "diagnostic_negative_evidence",
+      "source_prefix": "_shared/analysis/method_deepening_mdp04_refresh_replay",
+      "destination_prefix": "supporting/mdp04_refresh_streaming",
+      "source_anchor": {
+        "file": "20260803T063912+0000_local_analysis/mdp04_local_analysis_manifest.json",
+        "sha256": "d6a2144d1693a93687bf530349f5eaff4c4dff54261097703f7d106f6b286890"
+      },
+      "files": [
+        "20260803T063912+0000/analysis/formal_stream_manifest.json",
+        "20260803T063912+0000/analysis/refresh_unit_event_summary.csv",
+        "20260803T063912+0000/analysis/refresh_unit_outcomes.csv",
+        "20260803T063912+0000/analysis/refresh_validation_slices.csv",
+        "20260803T063912+0000_local_analysis/matrix_loss_associations.csv",
+        "20260803T063912+0000_local_analysis/MDP04_FINAL_LOCAL_AUDIT.md",
+        "20260803T063912+0000_local_analysis/mdp04_local_analysis_manifest.json",
+        "20260803T063912+0000_local_analysis/numerical_residual_associations.csv",
+        "20260803T063912+0000_local_analysis/origin_event_summary.csv",
+        "20260803T063912+0000_local_analysis/resolvent_by_stage_method_event_layer.csv",
+        "20260803T063912+0000_local_analysis/resolvent_threshold_failures.csv"
+      ]
+    },
+    {
+      "id": "mdp05_confirmatory_update_shock",
+      "tier": "supporting",
+      "workstream": "mechanism",
+      "experiment_ids": ["46_mdp05_confirmatory_update_shock"],
+      "integrity_status": "accepted_formal_integrity",
+      "scientific_status": "partial_or_null",
+      "claim_eligibility": "claim_eligible_for_loss_shock_only_not_matched_geometry_mediation",
+      "paper_role": "confirmatory_boundary_result",
+      "source_prefix": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock",
+      "destination_prefix": "supporting/mdp05_confirmatory_update_shock",
+      "source_anchor": {
+        "file": "20260804T021302+0000_local_acceptance/acceptance_summary.json",
+        "sha256": "225ef2b148e8b66d1e825c3faca7b968a810aa9df996739fd39abd87f2f4de93"
+      },
+      "files": [
+        "20260804T021302+0000_local_acceptance/ACCEPTANCE_AND_SCIENTIFIC_REPORT.md",
+        "20260804T021302+0000_local_acceptance/acceptance_summary.json",
+        "20260804T021302+0000_local_acceptance/accepted_analysis/analysis_manifest.json",
+        "20260804T021302+0000_local_acceptance/accepted_analysis/float64_slice_calibration.csv",
+        "20260804T021302+0000_local_acceptance/accepted_analysis/primary_confirmatory_tests.csv",
+        "20260804T021302+0000_local_acceptance/accepted_analysis/resolvent_diagnostics.json",
+        "20260804T021302+0000_local_acceptance/accepted_analysis/supportive_auc_associations.csv",
+        "20260804T021302+0000_local_acceptance/accepted_analysis/unit_event_joined.csv",
+        "20260804T021302+0000_local_acceptance/accepted_analysis/unit_inventory.csv"
+      ]
+    },
+    {
+      "id": "ex47b_geo01b_discovery",
+      "tier": "supporting",
+      "workstream": "mechanism",
+      "experiment_ids": ["47b_geo01b_update_geometry_discovery"],
+      "integrity_status": "accepted_discovery_analysis",
+      "scientific_status": "directional_geometry_increment_unsupported",
+      "claim_eligibility": "supporting_negative_result_not_independent_confirmation",
+      "paper_role": "mechanism_closure_input",
+      "source_prefix": "47b_geo01b_update_geometry_discovery/20260804T083122+0000",
+      "destination_prefix": "supporting/ex47b_geo01b",
+      "source_anchor": {
+        "file": "analysis/analysis_manifest.json",
+        "sha256": "cbc0d231a660079ba891fd90b47dad6935ff0a58cb3ae5aa86177a4c883b2b1c"
+      },
+      "files": [
+        "handoff_manifest.json",
+        "preflight.json",
+        "runtime_preflight.json",
+        "run_identity.json",
+        "status.json",
+        "analysis/analysis_manifest.json",
+        "analysis/event_summary.csv",
+        "sealed/derived_execution_contract.json",
+        "sealed/discovery_plan.json",
+        "sealed/offset_collision_certificate.json"
+      ]
+    }
+  ],
+  "omissions": [
+    {
+      "omission_id": "ex29_remote_bundle_zip",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "byte_complete_remote_bundle",
+      "logical_name": "29_r1_depth_kmode.zip",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/source_bundle/29_r1_depth_kmode_20260809.zip",
+      "source_sha256": "f44ec4c7ad50c9d8f4fd94be59767146f3e6fa9871e9ec109167bbf5d3056b20",
+      "source_bytes": 22750844,
+      "reason": "full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "remote_bundle_zip",
+        "file_name": "29_r1_depth_kmode.zip"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_lr_matrix",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_01.297+08_00.csv",
+      "source_sha256": "edf6e83afe328ef21ed73cb1d43d13c6f1cfb9292fdd43a6cc04a9c633e782f3",
+      "source_bytes": 445935,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_01.297+08_00.csv"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_lr_adamw",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_06.079+08_00.csv",
+      "source_sha256": "15834a46ca8bb79248995e94af400749e066c309eb25e61bd68ad63ee65e4c3a",
+      "source_bytes": 413940,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_06.079+08_00.csv"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_peak_allocated_mib",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_11.363+08_00.csv",
+      "source_sha256": "edea34f3e7d2ea2efd5fffcf54a8a82765753d41a66db8dde1a12e331ca67790",
+      "source_bytes": 11353,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_11.363+08_00.csv"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_optimizer_state_mib",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_15.124+08_00.csv",
+      "source_sha256": "5947b3e25188f5e271fb888f43e75293fc5a55da385ddad4831cf65cd83ba662",
+      "source_bytes": 12757,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_15.124+08_00.csv"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_k_state_mib",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_18.440+08_00.csv",
+      "source_sha256": "f9b999776b8725434c6ff10329dd6cdd133262627f1967b9f6202708de03ad81",
+      "source_bytes": 10597,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_18.440+08_00.csv"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_step_avg_ms",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_22.729+08_00.csv",
+      "source_sha256": "a5caee2bf14dc14d1ad0bc322f88ee8ea533e7ad960031aa0d69b6bf82ff0cd1",
+      "source_bytes": 342078,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_22.729+08_00.csv"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_train_s",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_30.145+08_00.csv",
+      "source_sha256": "be5c0164c6f4dc6e0cef2dd00721b633ebfb4dd5d3009d1adae052ec93d2147a",
+      "source_bytes": 371397,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_30.145+08_00.csv"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_train_loss_step",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_34.063+08_00.csv",
+      "source_sha256": "ee92c25dfce499b2196fab911ac0d136c89e3b4b835d696e6281be86e7c13e11",
+      "source_bytes": 309134,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_34.063+08_00.csv"
+      }
+    },
+    {
+      "omission_id": "ex29_wandb_val_loss",
+      "experiment_ids": ["29_r1_depth_kmode"],
+      "artifact_class": "raw_wandb_export",
+      "logical_name": "wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+      "source_root": "results",
+      "source": "29_r1_depth_kmode/analysis_20260809_formal/raw_wandb_exports/wandb_export_2026-08-09T13_17_37.904+08_00.csv",
+      "source_sha256": "1fdec5ca28f4fb3a1c93c822a572eaef2195692250fd9f577eb8996d043c6948",
+      "source_bytes": 69672,
+      "reason": "raw_wandb_full_archive_only_compact_package_exclusion",
+      "anchor_package_path": "results/03_robustness_and_controls/ex29_r1_depth_kmode/analysis_20260809_formal/input_manifest.csv",
+      "anchor_row": {
+        "kind": "wandb_export",
+        "file_name": "wandb_export_2026-08-09T13_17_37.904+08_00.csv"
+      }
+    }
+  ],
+  "ex48_final_gate": {
+    "experiment_id": "48_llama1b_10b_multibudget",
+    "artifacts": {
+      "analysis_manifest": "results/02_main_quality/ex48_llama1b_10b_multibudget/20260805T061608+0000/analysis/analysis_manifest.json",
+      "generic_verify": "results/02_main_quality/ex48_llama1b_10b_multibudget/analysis/final_acceptance_20260812/generic_verify_certificate.json",
+      "native_verify": "results/02_main_quality/ex48_llama1b_10b_multibudget/_received_20260812/full_checkpoint_verify_20260812T031024+0000.json",
+      "source_data_resume_lineage": "results/02_main_quality/ex48_llama1b_10b_multibudget/20260805T061608+0000/pilot_manifest.json"
+    }
+  },
+  "archive_only": [
+    {
+      "ids": ["03", "08", "13", "18", "23", "25", "26", "28", "32", "47"],
+      "integrity_status": "mixed_historical_or_superseded",
+      "scientific_status": "not_selected_for_compact_release",
+      "claim_eligibility": "consult_full_archive_only",
+      "paper_role": "historical_context_or_superseded_intermediate"
+    }
+  ],
+  "excluded": [
+    {
+      "ids": ["05", "07", "09", "10", "11"],
+      "integrity_status": "planned_or_placeholder",
+      "scientific_status": "no_accepted_result",
+      "claim_eligibility": "excluded",
+      "paper_role": "none"
+    },
+    {
+      "ids": ["raw_wandb_exports", "checkpoints", "optimizer_states", "failed_runs", "smoke_only_runs", "dry_runs", "caches", "logs", "source_snapshots_unless_whitelisted"],
+      "integrity_status": "out_of_scope_for_compact_release",
+      "scientific_status": "not_applicable",
+      "claim_eligibility": "excluded",
+      "paper_role": "full_archive_only"
+    }
+  ],
+  "final_release_certificate": {
+    "status": "ready_for_clean_rebuild",
+    "experiment_48_scientific_status": "accepted_persistent_muon_lead",
+    "required_gate_artifact_count": 4,
+    "selection_policy": "explicit_whitelist_hash_anchored",
+    "timing_eligibility": "excluded_four_gpu_concurrent_execution"
+  }
+}

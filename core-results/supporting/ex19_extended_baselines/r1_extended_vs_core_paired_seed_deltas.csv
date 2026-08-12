@@ -1,0 +1,145 @@
+metric,candidate,candidate_display,reference,reference_display,seed,candidate_value,reference_value,delta_candidate_minus_reference,candidate_better
+final_val_loss,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2024,3.2754,3.2613,0.014100000000000001,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2025,3.275,3.2599,0.015099999999999891,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2026,3.2745,3.2621,0.012399999999999967,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2024,3.2754,3.263,0.012399999999999967,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2025,3.275,3.2609,0.014100000000000001,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2026,3.2745,3.2627,0.011800000000000033,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2024,3.2754,3.267,0.008399999999999963,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2025,3.275,3.2659,0.009100000000000108,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2026,3.2745,3.2671,0.007400000000000073,False
+final_val_loss,moonlight_r1scale,Moonlight Muon,muon,Muon,2024,3.2754,3.2774,-0.002000000000000224,True
+final_val_loss,moonlight_r1scale,Moonlight Muon,muon,Muon,2025,3.275,3.2769,-0.0019000000000000128,True
+final_val_loss,moonlight_r1scale,Moonlight Muon,muon,Muon,2026,3.2745,3.2771,-0.0025999999999997137,True
+final_val_loss,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2024,3.3334,3.2613,0.07210000000000027,False
+final_val_loss,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2025,3.335,3.2599,0.07509999999999994,False
+final_val_loss,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2026,3.335,3.2621,0.07289999999999974,False
+final_val_loss,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2024,3.3334,3.263,0.07040000000000024,False
+final_val_loss,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2025,3.335,3.2609,0.07410000000000005,False
+final_val_loss,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2026,3.335,3.2627,0.07229999999999981,False
+final_val_loss,normuon_r1scale,NorMuon,none,Newton–Muon none,2024,3.3334,3.267,0.06640000000000024,False
+final_val_loss,normuon_r1scale,NorMuon,none,Newton–Muon none,2025,3.335,3.2659,0.06910000000000016,False
+final_val_loss,normuon_r1scale,NorMuon,none,Newton–Muon none,2026,3.335,3.2671,0.06789999999999985,False
+final_val_loss,normuon_r1scale,NorMuon,muon,Muon,2024,3.3334,3.2774,0.05600000000000005,False
+final_val_loss,normuon_r1scale,NorMuon,muon,Muon,2025,3.335,3.2769,0.05810000000000004,False
+final_val_loss,normuon_r1scale,NorMuon,muon,Muon,2026,3.335,3.2771,0.05790000000000006,False
+final_val_loss,adamw_low,AdamW,diag,Newton–Muon diag,2024,3.4045,3.2613,0.14320000000000022,False
+final_val_loss,adamw_low,AdamW,diag,Newton–Muon diag,2025,3.4015,3.2599,0.14159999999999995,False
+final_val_loss,adamw_low,AdamW,diag,Newton–Muon diag,2026,3.3953,3.2621,0.13319999999999999,False
+final_val_loss,adamw_low,AdamW,block4,Newton–Muon block4,2024,3.4045,3.263,0.14150000000000018,False
+final_val_loss,adamw_low,AdamW,block4,Newton–Muon block4,2025,3.4015,3.2609,0.14060000000000006,False
+final_val_loss,adamw_low,AdamW,block4,Newton–Muon block4,2026,3.3953,3.2627,0.13260000000000005,False
+final_val_loss,adamw_low,AdamW,none,Newton–Muon none,2024,3.4045,3.267,0.13750000000000018,False
+final_val_loss,adamw_low,AdamW,none,Newton–Muon none,2025,3.4015,3.2659,0.13560000000000016,False
+final_val_loss,adamw_low,AdamW,none,Newton–Muon none,2026,3.3953,3.2671,0.1282000000000001,False
+final_val_loss,adamw_low,AdamW,muon,Muon,2024,3.4045,3.2774,0.1271,False
+final_val_loss,adamw_low,AdamW,muon,Muon,2025,3.4015,3.2769,0.12460000000000004,False
+final_val_loss,adamw_low,AdamW,muon,Muon,2026,3.3953,3.2771,0.1182000000000003,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2024,3.2800333333333334,3.2645666666666666,0.01546666666666674,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2025,3.2795666666666663,3.263,0.016566666666666396,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2026,3.2791333333333337,3.2652666666666668,0.013866666666666916,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2024,3.2800333333333334,3.266233333333333,0.013800000000000257,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2025,3.2795666666666663,3.2640333333333333,0.015533333333332955,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2026,3.2791333333333337,3.2659333333333334,0.013200000000000323,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2024,3.2800333333333334,3.2702,0.00983333333333336,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2025,3.2795666666666663,3.2691666666666666,0.010399999999999743,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2026,3.2791333333333337,3.2704,0.008733333333333704,False
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,muon,Muon,2024,3.2800333333333334,3.2808,-0.0007666666666668043,True
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,muon,Muon,2025,3.2795666666666663,3.2802333333333333,-0.0006666666666670373,True
+tail3_val_loss_mean,moonlight_r1scale,Moonlight Muon,muon,Muon,2026,3.2791333333333337,3.280466666666667,-0.0013333333333331865,True
+tail3_val_loss_mean,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2024,3.3366000000000002,3.2645666666666666,0.07203333333333362,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2025,3.3382,3.263,0.07520000000000016,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2026,3.3382,3.2652666666666668,0.0729333333333333,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2024,3.3366000000000002,3.266233333333333,0.07036666666666713,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2025,3.3382,3.2640333333333333,0.07416666666666671,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2026,3.3382,3.2659333333333334,0.0722666666666667,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,none,Newton–Muon none,2024,3.3366000000000002,3.2702,0.06640000000000024,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,none,Newton–Muon none,2025,3.3382,3.2691666666666666,0.0690333333333335,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,none,Newton–Muon none,2026,3.3382,3.2704,0.06780000000000008,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,muon,Muon,2024,3.3366000000000002,3.2808,0.05580000000000007,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,muon,Muon,2025,3.3382,3.2802333333333333,0.05796666666666672,False
+tail3_val_loss_mean,normuon_r1scale,NorMuon,muon,Muon,2026,3.3382,3.280466666666667,0.05773333333333319,False
+tail3_val_loss_mean,adamw_low,AdamW,diag,Newton–Muon diag,2024,3.4082666666666666,3.2645666666666666,0.14369999999999994,False
+tail3_val_loss_mean,adamw_low,AdamW,diag,Newton–Muon diag,2025,3.4054,3.263,0.1424000000000003,False
+tail3_val_loss_mean,adamw_low,AdamW,diag,Newton–Muon diag,2026,3.3990666666666667,3.2652666666666668,0.13379999999999992,False
+tail3_val_loss_mean,adamw_low,AdamW,block4,Newton–Muon block4,2024,3.4082666666666666,3.266233333333333,0.14203333333333346,False
+tail3_val_loss_mean,adamw_low,AdamW,block4,Newton–Muon block4,2025,3.4054,3.2640333333333333,0.14136666666666686,False
+tail3_val_loss_mean,adamw_low,AdamW,block4,Newton–Muon block4,2026,3.3990666666666667,3.2659333333333334,0.13313333333333333,False
+tail3_val_loss_mean,adamw_low,AdamW,none,Newton–Muon none,2024,3.4082666666666666,3.2702,0.13806666666666656,False
+tail3_val_loss_mean,adamw_low,AdamW,none,Newton–Muon none,2025,3.4054,3.2691666666666666,0.13623333333333365,False
+tail3_val_loss_mean,adamw_low,AdamW,none,Newton–Muon none,2026,3.3990666666666667,3.2704,0.1286666666666667,False
+tail3_val_loss_mean,adamw_low,AdamW,muon,Muon,2024,3.4082666666666666,3.2808,0.1274666666666664,False
+tail3_val_loss_mean,adamw_low,AdamW,muon,Muon,2025,3.4054,3.2802333333333333,0.12516666666666687,False
+tail3_val_loss_mean,adamw_low,AdamW,muon,Muon,2026,3.3990666666666667,3.280466666666667,0.11859999999999982,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2024,3.28722,3.2696,0.01761999999999997,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2025,3.2866799999999996,3.26802,0.018659999999999677,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2026,3.28628,3.27028,0.016000000000000014,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2024,3.28722,3.2713399999999995,0.01588000000000056,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2025,3.2866799999999996,3.26908,0.017599999999999394,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2026,3.28628,3.27102,0.015260000000000051,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2024,3.28722,3.2752600000000003,0.011959999999999749,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2025,3.2866799999999996,3.27424,0.012439999999999785,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2026,3.28628,3.2754800000000004,0.010799999999999699,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,muon,Muon,2024,3.28722,3.28604,0.001180000000000181,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,muon,Muon,2025,3.2866799999999996,3.28546,0.0012199999999995548,False
+tail5_val_loss_mean,moonlight_r1scale,Moonlight Muon,muon,Muon,2026,3.28628,3.28572,0.000560000000000116,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2024,3.3416400000000004,3.2696,0.07204000000000033,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2025,3.3433,3.26802,0.07528000000000024,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2026,3.3432000000000004,3.27028,0.07292000000000032,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2024,3.3416400000000004,3.2713399999999995,0.07030000000000092,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2025,3.3433,3.26908,0.07421999999999995,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2026,3.3432000000000004,3.27102,0.07218000000000035,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,none,Newton–Muon none,2024,3.3416400000000004,3.2752600000000003,0.0663800000000001,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,none,Newton–Muon none,2025,3.3433,3.27424,0.06906000000000034,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,none,Newton–Muon none,2026,3.3432000000000004,3.2754800000000004,0.06772,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,muon,Muon,2024,3.3416400000000004,3.28604,0.05560000000000054,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,muon,Muon,2025,3.3433,3.28546,0.057840000000000114,False
+tail5_val_loss_mean,normuon_r1scale,NorMuon,muon,Muon,2026,3.3432000000000004,3.28572,0.05748000000000042,False
+tail5_val_loss_mean,adamw_low,AdamW,diag,Newton–Muon diag,2024,3.4141400000000006,3.2696,0.14454000000000056,False
+tail5_val_loss_mean,adamw_low,AdamW,diag,Newton–Muon diag,2025,3.4112400000000003,3.26802,0.14322000000000035,False
+tail5_val_loss_mean,adamw_low,AdamW,diag,Newton–Muon diag,2026,3.4048799999999995,3.27028,0.1345999999999994,False
+tail5_val_loss_mean,adamw_low,AdamW,block4,Newton–Muon block4,2024,3.4141400000000006,3.2713399999999995,0.14280000000000115,False
+tail5_val_loss_mean,adamw_low,AdamW,block4,Newton–Muon block4,2025,3.4112400000000003,3.26908,0.14216000000000006,False
+tail5_val_loss_mean,adamw_low,AdamW,block4,Newton–Muon block4,2026,3.4048799999999995,3.27102,0.13385999999999942,False
+tail5_val_loss_mean,adamw_low,AdamW,none,Newton–Muon none,2024,3.4141400000000006,3.2752600000000003,0.13888000000000034,False
+tail5_val_loss_mean,adamw_low,AdamW,none,Newton–Muon none,2025,3.4112400000000003,3.27424,0.13700000000000045,False
+tail5_val_loss_mean,adamw_low,AdamW,none,Newton–Muon none,2026,3.4048799999999995,3.2754800000000004,0.12939999999999907,False
+tail5_val_loss_mean,adamw_low,AdamW,muon,Muon,2024,3.4141400000000006,3.28604,0.12810000000000077,False
+tail5_val_loss_mean,adamw_low,AdamW,muon,Muon,2025,3.4112400000000003,3.28546,0.12578000000000022,False
+tail5_val_loss_mean,adamw_low,AdamW,muon,Muon,2026,3.4048799999999995,3.28572,0.11915999999999949,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2024,3.652914516129033,3.615781451612903,0.03713306451612963,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2025,3.6514475806451623,3.612770967741936,0.038676612903226104,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,diag,Newton–Muon diag,2026,3.6523830645161293,3.616925,0.035458064516129095,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2024,3.652914516129033,3.617296774193548,0.03561774193548484,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2025,3.6514475806451623,3.613564516129033,0.03788306451612922,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,block4,Newton–Muon block4,2026,3.6523830645161293,3.617042741935485,0.03534032258064412,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2024,3.652914516129033,3.624296774193548,0.02861774193548472,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2025,3.6514475806451623,3.622480645161291,0.028966935483871303,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,none,Newton–Muon none,2026,3.6523830645161293,3.625599193548388,0.02678387096774104,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,muon,Muon,2024,3.652914516129033,3.6334548387096777,0.01945967741935517,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,muon,Muon,2025,3.6514475806451623,3.633295161290323,0.018152419354839466,False
+normalized_val_auc,moonlight_r1scale,Moonlight Muon,muon,Muon,2026,3.6523830645161293,3.633407258064516,0.01897580645161323,False
+normalized_val_auc,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2024,3.7268258064516133,3.615781451612903,0.11104435483871011,False
+normalized_val_auc,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2025,3.728457258064517,3.612770967741936,0.11568629032258082,False
+normalized_val_auc,normuon_r1scale,NorMuon,diag,Newton–Muon diag,2026,3.726946774193549,3.616925,0.11002177419354897,False
+normalized_val_auc,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2024,3.7268258064516133,3.617296774193548,0.10952903225806532,False
+normalized_val_auc,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2025,3.728457258064517,3.613564516129033,0.11489274193548393,False
+normalized_val_auc,normuon_r1scale,NorMuon,block4,Newton–Muon block4,2026,3.726946774193549,3.617042741935485,0.109904032258064,False
+normalized_val_auc,normuon_r1scale,NorMuon,none,Newton–Muon none,2024,3.7268258064516133,3.624296774193548,0.1025290322580652,False
+normalized_val_auc,normuon_r1scale,NorMuon,none,Newton–Muon none,2025,3.728457258064517,3.622480645161291,0.10597661290322602,False
+normalized_val_auc,normuon_r1scale,NorMuon,none,Newton–Muon none,2026,3.726946774193549,3.625599193548388,0.10134758064516092,False
+normalized_val_auc,normuon_r1scale,NorMuon,muon,Muon,2024,3.7268258064516133,3.6334548387096777,0.09337096774193565,False
+normalized_val_auc,normuon_r1scale,NorMuon,muon,Muon,2025,3.728457258064517,3.633295161290323,0.09516209677419418,False
+normalized_val_auc,normuon_r1scale,NorMuon,muon,Muon,2026,3.726946774193549,3.633407258064516,0.0935395161290331,False
+normalized_val_auc,adamw_low,AdamW,diag,Newton–Muon diag,2024,3.8767814516129024,3.615781451612903,0.26099999999999923,False
+normalized_val_auc,adamw_low,AdamW,diag,Newton–Muon diag,2025,3.868917741935484,3.612770967741936,0.2561467741935477,False
+normalized_val_auc,adamw_low,AdamW,diag,Newton–Muon diag,2026,3.8367330645161295,3.616925,0.21980806451612933,False
+normalized_val_auc,adamw_low,AdamW,block4,Newton–Muon block4,2024,3.8767814516129024,3.617296774193548,0.25948467741935444,False
+normalized_val_auc,adamw_low,AdamW,block4,Newton–Muon block4,2025,3.868917741935484,3.613564516129033,0.2553532258064508,False
+normalized_val_auc,adamw_low,AdamW,block4,Newton–Muon block4,2026,3.8367330645161295,3.617042741935485,0.21969032258064436,False
+normalized_val_auc,adamw_low,AdamW,none,Newton–Muon none,2024,3.8767814516129024,3.624296774193548,0.2524846774193543,False
+normalized_val_auc,adamw_low,AdamW,none,Newton–Muon none,2025,3.868917741935484,3.622480645161291,0.2464370967741929,False
+normalized_val_auc,adamw_low,AdamW,none,Newton–Muon none,2026,3.8367330645161295,3.625599193548388,0.21113387096774128,False
+normalized_val_auc,adamw_low,AdamW,muon,Muon,2024,3.8767814516129024,3.6334548387096777,0.24332661290322477,False
+normalized_val_auc,adamw_low,AdamW,muon,Muon,2025,3.868917741935484,3.633295161290323,0.23562258064516106,False
+normalized_val_auc,adamw_low,AdamW,muon,Muon,2026,3.8367330645161295,3.633407258064516,0.20332580645161347,False

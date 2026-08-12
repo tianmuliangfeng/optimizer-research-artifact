@@ -1,0 +1,14 @@
+{
+  "invalid_run_id": "20260728T023217+0000",
+  "legacy_results_policy": "Retain as invalid_pre_intervention_equivalence diagnostics only; exclude from confirmatory mechanism claims.",
+  "repair_principle": "Replace independent pre-treatment trajectories with exact shared-prefix forks and add an internal production arm; do not relax thresholds, tune hyperparameters, select units, or use post-treatment outcomes to design the repair.",
+  "supersedes_confirmatory_use_of": "MECH-09 independent-worker protocol 2026-07-28.1",
+  "trigger": {
+    "frozen_tolerance": 2e-06,
+    "maximum_abs_delayed_vs_frozen_delta": 3.98015643259253e-05,
+    "maximum_abs_delayed_vs_legacy_production_delta": 4.79574483154277e-05,
+    "maximum_abs_frozen_vs_legacy_production_delta": 8.25667401829211e-05,
+    "pre_intervention_step": 16
+  },
+  "trigger_uses_pre_intervention_data_only": true
+}

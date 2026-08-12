@@ -1,0 +1,214 @@
+{
+  "archive": {
+    "bytes": 5680555,
+    "crc_test_passed": true,
+    "duplicate_entries": 0,
+    "entries": 967,
+    "filename": "39_submission_efficiency_and_sensitivity.zip",
+    "sha256": "f8952b3a7541d0f251e36723add480c020afc333b82606251a1373fdee79d983",
+    "unsafe_paths": 0
+  },
+  "comparison_priority": "Selective-none and Selective-diag each versus Muon and original Newton-Muon; diag versus none secondary",
+  "hash_integrity": {
+    "checks": 60,
+    "failures": [],
+    "passed": true
+  },
+  "isolated_efficiency": {
+    "checks": {
+      "clean_official_r0": true,
+      "each_method_each_position_once": true,
+      "four_balanced_repeats": true,
+      "identical_initialization": true,
+      "manifest_complete": true,
+      "no_postflight_compute_processes": true,
+      "no_preflight_compute_processes": true,
+      "postflight_passed": true,
+      "preflight_passed": true,
+      "provided_summary_recomputed": true,
+      "raw_summaries_and_logs_match": true,
+      "same_h100_runtime": true,
+      "sixteen_runs": true,
+      "timed_steps_512": true,
+      "total_updates_544": true,
+      "warmup_32": true
+    },
+    "official_commit": "df78af0db523d8bceb25af4919a3e3e7082b80f3",
+    "passed": true,
+    "protocol": "r1_perf_training_benchmark_v1",
+    "repeats": 4,
+    "runtime": {
+      "gpu_capability": [
+        9,
+        0
+      ],
+      "gpu_name": "NVIDIA H100 80GB HBM3",
+      "gpu_total_memory_bytes": 85017624576,
+      "numpy": "2.2.6",
+      "platform": "Linux-5.14.0-284.25.1.el9_2.x86_64-x86_64-with-glibc2.35",
+      "python": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]",
+      "python_executable": "PRIVATE_PATH_REDACTED",
+      "torch": "2.8.0+cu126",
+      "torch_cuda": "12.6",
+      "triton": "3.4.0",
+      "triton_kernels_module": "PRIVATE_PATH_REDACTED",
+      "triton_module": "PRIVATE_PATH_REDACTED"
+    },
+    "summary": [
+      {
+        "coefficient_of_variation_pct": 0.04399431673027613,
+        "mean_train_time_s": 602.35875,
+        "median_k_state_mib": 0.0,
+        "median_peak_memory_mib": 37703.0,
+        "median_step_ms": 1176.685,
+        "median_tokens_per_s": 445562.6493865194,
+        "median_train_time_s": 602.4639999999999,
+        "method": "muon",
+        "method_role": "muon",
+        "runs": 4,
+        "stdev_train_time_s": 0.26500361632753217,
+        "steps_per_s": 0.849843310139693
+      },
+      {
+        "coefficient_of_variation_pct": 0.0441050734776849,
+        "mean_train_time_s": 614.63,
+        "median_k_state_mib": 378.0,
+        "median_peak_memory_mib": 39168.0,
+        "median_step_ms": 1200.62,
+        "median_tokens_per_s": 436681.71588040993,
+        "median_train_time_s": 614.7165,
+        "method": "block4",
+        "method_role": "original_newton_muon",
+        "runs": 4,
+        "stdev_train_time_s": 0.27108301311589467,
+        "steps_per_s": 0.8329042737587165
+      },
+      {
+        "coefficient_of_variation_pct": 0.043176765801089124,
+        "mean_train_time_s": 613.1935,
+        "median_k_state_mib": 162.0,
+        "median_peak_memory_mib": 38304.0,
+        "median_step_ms": 1197.47,
+        "median_tokens_per_s": 437829.8577159359,
+        "median_train_time_s": 613.1044999999999,
+        "method": "none",
+        "method_role": "selective_none",
+        "runs": 4,
+        "stdev_train_time_s": 0.26475712140250146,
+        "steps_per_s": 0.8350941805189818
+      },
+      {
+        "coefficient_of_variation_pct": 0.12004308071872968,
+        "mean_train_time_s": 613.5935,
+        "median_k_state_mib": 162.28125,
+        "median_peak_memory_mib": 38304.0,
+        "median_step_ms": 1198.46,
+        "median_tokens_per_s": 437467.7418303422,
+        "median_train_time_s": 613.6120000000001,
+        "method": "diag",
+        "method_role": "selective_diag",
+        "runs": 4,
+        "stdev_train_time_s": 0.7365765404898785,
+        "steps_per_s": 0.8344034992796749
+      }
+    ],
+    "timed_steps_per_run": 512,
+    "timed_tokens_per_method": 1073741824,
+    "tokens_per_step": 524288
+  },
+  "lr_sensitivity": {
+    "budget_steps": 3000,
+    "checks": {
+      "cell_count_12": true,
+      "diag_vs_none_not_primary": true,
+      "manifest_passed": true,
+      "multipliers_complete": true,
+      "provided_contrasts_match": true,
+      "raw_manifests_valid": true,
+      "raw_rows_match_analysis": true,
+      "roles_complete": true,
+      "timing_excluded": true,
+      "tuned_best_claim_disallowed": true
+    },
+    "evidence_class": "supporting_only",
+    "passed": true,
+    "role_summary": [
+      {
+        "best_observed_final_val_loss": 3.3884,
+        "best_observed_multiplier": 1.2,
+        "evidence_class": "supporting_only",
+        "loss_range_across_grid": 0.006400000000000183,
+        "mean_final_val_loss": 3.3908666666666667,
+        "method_role": "muon"
+      },
+      {
+        "best_observed_final_val_loss": 3.3732,
+        "best_observed_multiplier": 1.2,
+        "evidence_class": "supporting_only",
+        "loss_range_across_grid": 0.0040999999999997705,
+        "mean_final_val_loss": 3.374766666666667,
+        "method_role": "original_newton_muon"
+      },
+      {
+        "best_observed_final_val_loss": 3.3787,
+        "best_observed_multiplier": 1.0,
+        "evidence_class": "supporting_only",
+        "loss_range_across_grid": 0.0049000000000001265,
+        "mean_final_val_loss": 3.3806666666666665,
+        "method_role": "selective_none"
+      },
+      {
+        "best_observed_final_val_loss": 3.3725,
+        "best_observed_multiplier": 1.0,
+        "evidence_class": "supporting_only",
+        "loss_range_across_grid": 0.0045999999999999375,
+        "mean_final_val_loss": 3.374233333333333,
+        "method_role": "selective_diag"
+      }
+    ],
+    "run_cells": 12,
+    "seed": 2026,
+    "warmdown_steps": 871
+  },
+  "memory_capacity": {
+    "checks": {
+      "adjacent_capacity_boundaries": true,
+      "all_capacity_paper_ready": true,
+      "all_memory_paper_ready": true,
+      "four_capacity_roles": true,
+      "four_memory_roles": true
+    },
+    "passed": true
+  },
+  "overall": {
+    "checkpoint_pt_required": false,
+    "classification": "numerical_evidence_valid_report_regeneration_required",
+    "numerical_evidence_valid": true,
+    "paper_report_regeneration_required": true,
+    "remote_rerun_required": false
+  },
+  "review_kind": "experiment39_independent_handoff_audit",
+  "schema_version": 1,
+  "submission_package_semantics": {
+    "classification": "numerical_evidence_valid_report_regeneration_required",
+    "manifest_facts": {
+      "lr_sensitivity_supporting": true,
+      "manifest_blocking_followups_empty": true,
+      "manifest_missing_metrics_empty": true,
+      "manifest_submission_ready": true,
+      "steps_per_s_paper_ready": true,
+      "tokens_per_s_paper_ready": true
+    },
+    "manifest_internal_gate_passed": true,
+    "semantic_report_consistency_passed": false,
+    "stale_artifact_markers": [
+      true,
+      false
+    ],
+    "stale_report_markers": [
+      true,
+      true,
+      true
+    ]
+  }
+}

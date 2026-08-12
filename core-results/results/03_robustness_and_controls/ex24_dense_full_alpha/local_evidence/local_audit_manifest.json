@@ -1,0 +1,43 @@
+{
+  "archive": {
+    "bytes": 66371112,
+    "entries": 663,
+    "original_path": "PRIVATE_PATH_REDACTED__f4e750ace648",
+    "sha256": "c12304b0bac89d170f448d0d1059ce283e2c2bbfc0fb056d3c9689bb0c15be36"
+  },
+  "checkpoint_policy": {
+    "archive_checkpoint_entries": 10,
+    "archive_checkpoint_uncompressed_bytes": 65798144,
+    "checkpoints_read_or_hashed": false,
+    "retained_checkpoint_entries": 0
+  },
+  "classification": "complete_local_evidence_verified",
+  "coverage": {
+    "controller_manifests": 4,
+    "formal_diagnostic_rows": 140,
+    "formal_runs": 10,
+    "run_manifests": 20,
+    "smoke_diagnostic_rows": 20,
+    "smoke_runs": 10
+  },
+  "diagnostics": {
+    "formal_k_and_inverse_rows": 70,
+    "formal_preconditioned_update_rows": 70,
+    "formal_refresh_steps": [
+      31,
+      1023,
+      2047,
+      3071,
+      4095,
+      5119,
+      6143
+    ],
+    "maximum_cholesky_diagonal_spread": 231.498047,
+    "total_cholesky_failures": 0
+  },
+  "failed_checks": [],
+  "passed": true,
+  "retained_file_count": 103,
+  "schema_version": 1,
+  "script_version": "2026-07-29.1"
+}

@@ -1,0 +1,48 @@
+{
+  "code_directory": "scripts/37_mech09_downproj_refresh_mediation",
+  "entrypoints": {
+    "command:20260728_mech09_downproj_refresh_mediation": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/37_mech09_downproj_refresh_mediation/20260728_mech09_downproj_refresh_mediation.sh"
+    },
+    "command:20260728_mech09r_causal_tree_repair": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/37_mech09_downproj_refresh_mediation/20260728_mech09r_causal_tree_repair.sh"
+    },
+    "script:run_mech09": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/37_mech09_downproj_refresh_mediation/run_mech09.py"
+    },
+    "script:run_mech09r": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/37_mech09_downproj_refresh_mediation/run_mech09r.py"
+    }
+  },
+  "experiment_id": "37_mech09_downproj_refresh_mediation",
+  "legacy_result_roots": [
+    "37_mech09_downproj_refresh_mediation"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "37 Mech09 Downproj Refresh Mediation"
+}

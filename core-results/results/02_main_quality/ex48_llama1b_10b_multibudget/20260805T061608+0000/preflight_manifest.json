@@ -1,0 +1,87 @@
+{
+  "created_at": "2026-08-05T06:20:15.744064+00:00",
+  "data_audit_sha256": "2591cd3226d36403cedfeb80c7b3b5a29d5b968f5d1822acce08ba246e6050c5",
+  "disk": {
+    "free_bytes": 469845598089216,
+    "passed": true,
+    "required_bytes": 600000000000
+  },
+  "identity_sha256": "d7fb377cd0420ac5023619120972548078b89c2f74a99ecb8adf51244b9e1f49",
+  "init_audit_sha256": "09f32d7f795d2092a3a8c58c5e65f6eb9874691876bd861131de9658613895cd",
+  "passed": true,
+  "runtime": {
+    "checks": {
+      "cuda_available": true,
+      "devices": true,
+      "gpu_count": true,
+      "numpy": true,
+      "nvidia_driver": true,
+      "python": true,
+      "requested_executable": true,
+      "selected_gpu_count": true,
+      "torch": true,
+      "torch_cuda": true,
+      "triton": true,
+      "triton_kernels": true
+    },
+    "devices": [
+      {
+        "compute_capability": [
+          9,
+          0
+        ],
+        "index": 0,
+        "name": "NVIDIA H100 80GB HBM3",
+        "passed": true,
+        "total_memory": 85017624576
+      },
+      {
+        "compute_capability": [
+          9,
+          0
+        ],
+        "index": 1,
+        "name": "NVIDIA H100 80GB HBM3",
+        "passed": true,
+        "total_memory": 85017624576
+      },
+      {
+        "compute_capability": [
+          9,
+          0
+        ],
+        "index": 2,
+        "name": "NVIDIA H100 80GB HBM3",
+        "passed": true,
+        "total_memory": 85017624576
+      },
+      {
+        "compute_capability": [
+          9,
+          0
+        ],
+        "index": 3,
+        "name": "NVIDIA H100 80GB HBM3",
+        "passed": true,
+        "total_memory": 85017624576
+      }
+    ],
+    "observed": {
+      "device_count": 4,
+      "executable": "PRIVATE_PATH_REDACTED",
+      "hostname": "ANONYMIZED_CONTAINER_HOST_0001",
+      "numpy": "2.2.6",
+      "nvidia_driver_versions": [
+        "580.95.05"
+      ],
+      "python": "3.10.12",
+      "torch": "2.8.0+cu126",
+      "torch_cuda": "12.6",
+      "triton": "3.4.0",
+      "triton_kernels_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+    },
+    "passed": true,
+    "return_code": 0
+  },
+  "schema_version": "ex48_preflight_v1"
+}

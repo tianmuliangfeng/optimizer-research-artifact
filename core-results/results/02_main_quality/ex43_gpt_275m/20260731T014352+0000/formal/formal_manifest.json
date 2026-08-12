@@ -1,0 +1,175 @@
+{
+  "cells": [
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "605b2f602d50a32b0cd2d6370791eb26c9272b521e2db23456515ef8c98d436a",
+      "method": "muon",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "5c92732208d5335197de4f77243104656746c1e8cdc021233e88be0c461ebbed",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "605b2f602d50a32b0cd2d6370791eb26c9272b521e2db23456515ef8c98d436a",
+      "method": "original_newton_muon",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "8d9da924c1b78c0f19cc5083d9d092ffbc60529b7739228234a9ee7674b2c379",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "605b2f602d50a32b0cd2d6370791eb26c9272b521e2db23456515ef8c98d436a",
+      "method": "selective_none",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "d46468689a5f4acb8006e671778340501b76be93f9e5bf56d6e82298fe2dff40",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "605b2f602d50a32b0cd2d6370791eb26c9272b521e2db23456515ef8c98d436a",
+      "method": "selective_diag",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "cccc1c9ff6a273131cab152060265c90e3659a3bc8a4187d7a74d1c65eb5e841",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "863521c668af8dcce3369abd4aa9cd2fbeea5ba28da32e4f12d283326428fdc5",
+      "method": "muon",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "1ccc52a0e4d84575615dfb31a6a4212a45e790b8238c53525c7a9d5dcfce6f88",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "863521c668af8dcce3369abd4aa9cd2fbeea5ba28da32e4f12d283326428fdc5",
+      "method": "original_newton_muon",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "709adb1ab0ff31d29034d0bb82cd2096a130360f465b09301a6aebdc11f04a20",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "863521c668af8dcce3369abd4aa9cd2fbeea5ba28da32e4f12d283326428fdc5",
+      "method": "selective_none",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "d9dbfa8be6afb55503d961ee863203f9630c46393f8a3a044b4acc6b08c5940f",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "863521c668af8dcce3369abd4aa9cd2fbeea5ba28da32e4f12d283326428fdc5",
+      "method": "selective_diag",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "521844f66f7f0e5a9c4e9ed7c419f36cf900855d34999d553ac818eb0956a68e",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "f42a563ec4ea37aac4b1f53a80fbbb62cd9880a1fb6bb1bbb45afd7826d75e1b",
+      "method": "muon",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "7339ce187a7886ecc191cef0a43bf02642d88b67a023ca9d9a5c31915c1dd4df",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "f42a563ec4ea37aac4b1f53a80fbbb62cd9880a1fb6bb1bbb45afd7826d75e1b",
+      "method": "original_newton_muon",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "6021ddcaeec26630e96e2c40a9f34fb24c1cd48938e784422327e604a24d1254",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "f42a563ec4ea37aac4b1f53a80fbbb62cd9880a1fb6bb1bbb45afd7826d75e1b",
+      "method": "selective_none",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "2745197b65220e81a556f5b5fac766fe1901d80eaf4d902ac17caebd1351afde",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "f42a563ec4ea37aac4b1f53a80fbbb62cd9880a1fb6bb1bbb45afd7826d75e1b",
+      "method": "selective_diag",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "c97ae903369ee05269c18b297b2b47c0e6c5f731c3efc4ce3c6ba2415b7de097",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "cb99a612eef138fa9bee8e6a1990b5ff6e18e70e38d0c4ec1af40b90616393d3",
+      "method": "muon",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "eb8d9af4ee54eb8c28509cca85e066c7e98cbfab9fe1405fc1f449249ab4c786",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "cb99a612eef138fa9bee8e6a1990b5ff6e18e70e38d0c4ec1af40b90616393d3",
+      "method": "original_newton_muon",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "59b81a2fea2617de75fb1fc14659f5d98be41cfad23e456aa89766a8a0368f53",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "cb99a612eef138fa9bee8e6a1990b5ff6e18e70e38d0c4ec1af40b90616393d3",
+      "method": "selective_none",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "2d8c51d2848efddcea908c91c1d28a707e76df2a8635650258b681c6b0def5b7",
+      "step0_val_loss": 10.825837135314941
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "init_sha256": "cb99a612eef138fa9bee8e6a1990b5ff6e18e70e38d0c4ec1af40b90616393d3",
+      "method": "selective_diag",
+      "physical_gpu_index": "0",
+      "physical_gpu_uuid": "GPU-7f5973b4-8273-6ba1-4c91-8a6538019557",
+      "scientific_manifest_sha256": "b079c29dcccd315731b5a9d75ab1019d516ae9f81514444f75a4f72e83633e4e",
+      "step0_val_loss": 10.825837135314941
+    }
+  ],
+  "checks": {
+    "all_cells": true,
+    "data_fingerprint": true,
+    "method_gpu_lane_balance": true,
+    "paired_initialization": true,
+    "paired_step0_validation": true,
+    "snapshot_hash": true
+  },
+  "completed_at": "2026-07-31T11:25:40.313544+00:00",
+  "method_gpu_lane_counts": {
+    "muon": {
+      "0": 4
+    },
+    "original_newton_muon": {
+      "0": 4
+    },
+    "selective_diag": {
+      "0": 4
+    },
+    "selective_none": {
+      "0": 4
+    }
+  },
+  "passed": true,
+  "schema_version": 1,
+  "stage": "formal",
+  "timing_eligible": false
+}

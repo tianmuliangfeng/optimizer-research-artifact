@@ -1,0 +1,5 @@
+{
+  "hard_gate": false,
+  "rows_above_old_mdp04_0p01_threshold": 5,
+  "runtime_resolvent_relative_residual_max": 0.012892672709113536
+}

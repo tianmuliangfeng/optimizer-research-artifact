@@ -1,0 +1,69 @@
+{
+  "contract_sha256": "23350854d9136b70d638d6aa37ad72dfa158143c6e9e083be80ac0e700714b4b",
+  "data_inventory_sha256": "76848d39697aa6e0a7083e4445185fd7215b4f7ddad411d60a7cd6943c384b21",
+  "gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "phase_order": [
+    "backbone_4400",
+    "cooldown_6200",
+    "backbone_11493",
+    "cooldown_13293",
+    "backbone_17273",
+    "cooldown_19073"
+  ],
+  "schema_version": "ex48_suite_plan_v1",
+  "units": [
+    {
+      "method": "newton_full",
+      "seed": 2024
+    },
+    {
+      "method": "newton_full",
+      "seed": 2025
+    },
+    {
+      "method": "newton_full",
+      "seed": 2026
+    },
+    {
+      "method": "down_diag",
+      "seed": 2024
+    },
+    {
+      "method": "down_diag",
+      "seed": 2025
+    },
+    {
+      "method": "down_diag",
+      "seed": 2026
+    },
+    {
+      "method": "down_none",
+      "seed": 2024
+    },
+    {
+      "method": "down_none",
+      "seed": 2025
+    },
+    {
+      "method": "down_none",
+      "seed": 2026
+    },
+    {
+      "method": "muon",
+      "seed": 2024
+    },
+    {
+      "method": "muon",
+      "seed": 2025
+    },
+    {
+      "method": "muon",
+      "seed": 2026
+    }
+  ]
+}

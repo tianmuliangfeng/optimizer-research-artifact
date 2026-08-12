@@ -1,0 +1,256 @@
+{
+  "schema_version": "mdp04_refresh_stream_contract_v4",
+  "status": "cross_run_float_values_demoted_to_diagnostics_before_any_mdp04_layer_metric_was_accepted",
+  "purpose": "stream full-state refresh metrics on the accepted LLaMA host without persisting or transferring full matrices",
+  "not_a_new_optimizer_race": true,
+  "source_experiment": "37_mech09_downproj_refresh_mediation/20260728T075907+0000",
+  "upstream_replay_contract_sha256": "115673172b8a672c84e21ef3b152d31fe9c03bfbbc8fd315a73a2337e51ea483",
+  "source_repair_contract_sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+  "accepted_source_artifact_sha256": {
+    "checkpoint_inventory.json": "692370610fe239ae2262c5c26785dd7085a0ee0147b5cb47b60863b0608c11b4",
+    "commands.jsonl": "2db42dc73a3c1d6423ff270476328090796fedc4ab08c7cd97648fb69e8653e8",
+    "formal/formal_manifest.json": "25dafc43f7cfdc3a0e61cd84c9fbc9c94a16c9db5833581130be8d6bf930b3e9",
+    "analysis/mech09r_analysis_manifest.json": "34b9525c4fcd061cbc3191b6844dd0000c3eac0bf0acc82876025f0ff3ee38d0",
+    "analysis/paired_contrasts.csv": "9e61b39076a63c4c7c56ef46114f73ca7c1451ef410bf5de7460b1e3bce51f49",
+    "analysis/auc_contrasts.csv": "e7facec2fd6daaee97f253ee3cec88e2391ee6a6f91dc274673abbeb17a7c1d5"
+  },
+  "local_posthoc_audit_reference": {
+    "relative_path": "independent_review/independent_audit_manifest.json",
+    "sha256": "3c19990a8bc9d5453f2fdbbb7eb6170af016df7edaa88c9d5608d04bf2869174",
+    "generated_by": "scripts/37_mech09_downproj_refresh_mediation/audit_mech09r_handoff.py",
+    "remote_source_required": false,
+    "used_by_worker": false,
+    "used_by_validator": false,
+    "reason": "This independent review was generated locally after handoff and is not present in the original LLaMA-host experiment-37 run directory."
+  },
+  "resume_compatibility": {
+    "allowed_predecessors": [
+      {
+        "schema_version": "mdp04_refresh_stream_contract_v3",
+        "sha256": "bc8aee5830ec20edc6ed62d65c35118977d148aa1a0523a5e4204e3b714f3dd2",
+        "reuse_scope": "selected passed units only",
+        "proof": "a passed v3 unit satisfied the stricter elementwise 17-point numeric gate as well as every hard gate retained by v4"
+      }
+    ],
+    "failed_or_incomplete_predecessor_attempts_are_never_selected": true,
+    "predecessor_source_snapshot_remains_immutable": true,
+    "v4_workers_use_a_new_sealed_source_snapshot": true,
+    "mixed_contract_lineage_must_be_reported_by_final_validator": true
+  },
+  "pinned_runtime_sources": {
+    "repair_contract": {
+      "relative_path": "scripts/37_mech09_downproj_refresh_mediation/refresh_mediation_repair_contract.json",
+      "sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+      "bytes": 11421,
+      "reason": "The accepted MECH-09R repair contract is part of the replay execution boundary."
+    },
+    "mech08_control_reference": {
+      "relative_path": "scripts/37_mech09_downproj_refresh_mediation/mech08_control_reference.json",
+      "sha256": "d2d34f5b6fac148e6bc35fbf01df4ec2b7093cd696d25d66df63473a420e427f",
+      "bytes": 39796,
+      "reason": "The accepted MECH-08 control reference supplies checkpoint certificates only and must be sealed with the replay."
+    },
+    "triton_kernels": {
+      "relative_path": "scripts/mdp_refresh_streaming/pinned_ex37_runtime/triton_kernels.py",
+      "sha256": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f",
+      "bytes": 19301,
+      "source_contract_field": "source_constraints.triton_sha256",
+      "reason": "The mutable Newton-Muon-official working tree no longer matches the Triton source locked by accepted experiment 37; replay must use this byte-exact source."
+    }
+  },
+  "accepted_worker_source_sha256": {
+    "scripts/37_mech09_downproj_refresh_mediation/mech09r_worker.py": "d1ed0f03c13aa2edb7da681b50c0d039eb4b784fa959ac5de7c61c8422f08717",
+    "scripts/37_mech09_downproj_refresh_mediation/mech09_worker.py": "5ff89beec48e748199903f159871d86a6799793b7003673e8931aa21bc0aee38",
+    "scripts/36_mech08_short_horizon_rollout/mech08_worker.py": "07775b4ad252a43d263578384c449f3c3518faa05b29e38ec98d3d1f79faaf03",
+    "scripts/27_mech01_unified_k_diagnostics/mech01_worker.py": "6953192b08f05a63efd52a418160f8a4960dd638223537a1958206cf58745e71"
+  },
+  "coverage": {
+    "origins": [
+      "early_muon",
+      "early_newton_full",
+      "late_muon",
+      "late_newton_full"
+    ],
+    "replicas": [0, 1, 2],
+    "events": [
+      {
+        "event_id": "production_refresh_32",
+        "trajectory_node": "production",
+        "completed_step": 32,
+        "accepted_loss_contrast": "frozen_down_refresh_vs_production",
+        "accepted_loss_step": 48,
+        "loss_harm_orientation": "negative_of_normalized_loss_delta"
+      },
+      {
+        "event_id": "delayed_refresh_64",
+        "trajectory_node": "delayed",
+        "completed_step": 64,
+        "accepted_loss_contrast": "delayed_down_refresh_vs_frozen_down_refresh",
+        "accepted_loss_step": 80,
+        "loss_harm_orientation": "normalized_loss_delta"
+      }
+    ],
+    "layer_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+    "expected_layer_event_rows": 432,
+    "expected_unit_event_rows": 24,
+    "post_hoc_layer_selection_forbidden": true,
+    "primary_within_unit_aggregation": "median_across_all_18_layers",
+    "secondary_within_unit_aggregations": [
+      "pooled_frobenius_ratio",
+      "mean",
+      "p90",
+      "maximum",
+      "layerwise_distribution"
+    ]
+  },
+  "short_replay": {
+    "production_path": "shared steps 1-31, then production step 32 only",
+    "delayed_path": "restore after step 31, hold down refresh at step 32, run shared-no-down through step 63, then delayed step 64 only",
+    "real_optimizer_steps_per_unit": 65,
+    "accepted_loss_outcomes_are_reused_not_recomputed": true,
+    "torch_compile_must_remain_enabled": true
+  },
+  "runtime_contract": {
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "numpy": "2.2.6",
+    "gpu_count": 2,
+    "gpu_name_contains": "H100",
+    "compute_capability": [9, 0],
+    "minimum_gpu_memory_bytes": 80000000000
+  },
+  "matrix_contract": {
+    "k_shape": [5504, 5504],
+    "gradient_shape": [2048, 5504],
+    "target_group_pattern": "layers.{layer}.down_input",
+    "input_beta": 0.95,
+    "ridge_scale": 0.2,
+    "ridge_epsilon": 1e-08,
+    "matrix_momentum": 0.95,
+    "ns_steps": 5,
+    "matrix_lr": 0.01,
+    "shape_scale": 1.0,
+    "matched_gradient_semantics": "one raw parameter.grad captured after all accumulation backward calls and before any right preconditioning; the identical tensor is multiplied by the before and after runtime inverse",
+    "momentum_semantics": "one historical pre-step momentum tensor is reused for both counterfactual paths",
+    "ridge_semantics": "recomputed exactly from the runtime K with the source formula mean(diag(K))*0.2+1e-8 because ridge is not stored separately",
+    "runtime_inverse_semantics": "state[owner]['precond_inv_apply'] produced by the accepted float32 Cholesky path"
+  },
+  "full_tensor_metrics": [
+    "relative_k_fro_change",
+    "relative_a_fro_change",
+    "relative_runtime_inverse_fro_change",
+    "runtime_inverse_cosine",
+    "k_asymmetry_before",
+    "k_asymmetry_after",
+    "inverse_asymmetry_before",
+    "inverse_asymmetry_after",
+    "covariance_refresh_identity_relative_residual",
+    "matched_g_preconditioned_relative_change",
+    "matched_g_preconditioned_cosine",
+    "runtime_ns5_update_relative_change",
+    "runtime_ns5_update_cosine"
+  ],
+  "probe_metrics": {
+    "probe_family": "two independent fixed-seed Rademacher banks",
+    "probe_count": 16,
+    "probe_banks": 2,
+    "power_iterations": 24,
+    "base_seed": 2026080304,
+    "metrics": [
+      "runtime_inverse_backward_residual_before",
+      "runtime_inverse_backward_residual_after",
+      "runtime_resolvent_relative_residual",
+      "condition_proxy_before",
+      "condition_proxy_after",
+      "spectral_resolvent_bound_ratio_proxy",
+      "probe_bank_relative_disagreement"
+    ],
+    "naming_rule": "all operator norm and condition values are estimates or proxies, never exact quantities"
+  },
+  "full_scale_exclusions": {
+    "float64_dense_inverse": "computationally disproportionate for 432 matrices",
+    "exact_dense_condition_number": "replaced by frozen two-bank power proxies",
+    "exact_full_svd_polar": "not the production optimizer; replaced by the source-hash-pinned NS5 pipeline",
+    "exact_full_matrix_resolvent_product": "replaced by fixed-probe runtime residual plus exact small-slice calibration"
+  },
+  "validation_slices": {
+    "origin": "early_newton_full",
+    "replica": 0,
+    "events": ["production_refresh_32", "delayed_refresh_64"],
+    "layers": [0, 8, 17],
+    "coordinate_count": 128,
+    "gradient_row_count": 128,
+    "seed": 2026080317,
+    "paper_empirical_claim_eligible": false,
+    "warning": "inverse of a principal A slice is not the principal slice of the full inverse"
+  },
+  "cross_run_replay_audit": {
+    "amendment_reason": "The first real H100 canary matched the accepted structure, tensor count, next batches, loader state, matrix step, displayed step-16 loss, source and runtime contracts, but a 697-tensor aggregate SHA differed. The accepted branch SHA was originally an exact within-process snapshot/restore audit and cannot by itself certify a fresh torch.compile/Triton process.",
+    "amended_before_any_mdp04_layer_metric_was_accepted": true,
+    "within_replay_branch_sha256_exact": true,
+    "accepted_branch_sha256_diagnostic_only": true,
+    "accepted_branch_hard_exact_fields": [
+      "structure_sha256",
+      "tensor_count",
+      "sampled_values_finite",
+      "next_x_sha256",
+      "next_y_sha256",
+      "loader_state",
+      "matrix_global_step"
+    ],
+    "stream_hooks_inactive_at_branch_anchors": true,
+    "accepted_refresh_fingerprint_metadata_exact": true,
+    "accepted_refresh_sha256_diagnostic_only": true,
+    "amended_after_cross_run_numeric_gate_failed_before_any_mdp04_metric_was_accepted": true,
+    "accepted_refresh_values_diagnostic_only": true,
+    "accepted_refresh_metadata_count_and_finiteness_hard": true,
+    "v4_amendment_reason": "A later late_newton_full/replica_1 fresh-process replay matched the accepted checkpoint, source, data/loader, structure and step boundary but exceeded the v3 elementwise tolerance by 1.4778e-5 in a covariance sample; the corresponding Cholesky inverse sample amplified this to 0.03382. No MDP-04 event passed or layer metric was accepted. Old float samples are therefore retained as transparent drift diagnostics rather than an invalid cross-process hard certificate; current-replay identities and within-replay exactness remain hard gates.",
+    "accepted_refresh_value_tolerance": {
+      "comparison": "elementwise_abs_le_atol_plus_rtol_abs_expected",
+      "rtol": 0.0001,
+      "atol": 0.000001,
+      "applies_to": "the 17 pre-existing saved float32 values for covariance and runtime inverse, before and after each registered refresh",
+      "selected_before_any_mdp04_layer_metric_or_association_was_observed": true,
+      "v4_role": "diagnostic_only_not_a_pass_fail_gate"
+    }
+  },
+  "hard_gates": {
+    "within_replay_branch_fingerprints_exact": true,
+    "accepted_branch_discrete_fields_exact": true,
+    "stream_hooks_inactive_at_branch_anchors": true,
+    "accepted_refresh_metadata_count_and_finiteness": true,
+    "accepted_refresh_17_point_numeric_match": false,
+    "accepted_refresh_17_point_numeric_match_role": "diagnostic_only",
+    "accepted_cross_run_sha256_is_diagnostic_only": true,
+    "all_values_finite": true,
+    "covariance_refresh_identity_relative_residual_max": 5e-06,
+    "k_asymmetry_relative_max": 2e-06,
+    "inverse_asymmetry_relative_max": 2e-05,
+    "runtime_inverse_backward_residual_max": 5e-04,
+    "runtime_resolvent_relative_residual_max": 1e-02,
+    "shadow_applied_gradient_17_point_fingerprint_exact": true,
+    "shadow_ns5_input_and_output_17_point_fingerprints_exact": true
+  },
+  "transport": {
+    "raw_full_matrices_persisted": false,
+    "files": [
+      "refresh_layer_event_metrics.csv",
+      "refresh_unit_event_summary.csv",
+      "refresh_unit_outcomes.csv",
+      "refresh_unit_event_joined.csv",
+      "formal_stream_manifest.json",
+      "source_snapshot_manifest.json",
+      "small validation slice NPZ files and their manifests"
+    ],
+    "single_file_size_limit_bytes": 2147483648
+  },
+  "claim_boundaries": {
+    "rows_are_nested_not_independent_seeds": true,
+    "event_timing_is_causal_but_matrix_associations_are_descriptive": true,
+    "long_horizon_optimizer_ranking_forbidden": true,
+    "runtime_ns5_must_not_be_called_exact_polar": true,
+    "negative_or_null_matrix_association_must_be_retained": true
+  }
+}

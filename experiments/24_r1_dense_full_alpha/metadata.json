@@ -1,0 +1,41 @@
+{
+  "code_directory": "scripts/24_r1_dense_full_alpha",
+  "default_entrypoint": "command:20260727_r1_dense_full_alpha_confirmatory_multiseed",
+  "entrypoints": {
+    "command:20260727_r1_dense_full_alpha_confirmatory_multiseed": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/24_r1_dense_full_alpha/20260727_r1_dense_full_alpha_confirmatory_multiseed.sh"
+    },
+    "script:run_confirmatory_batch": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/24_r1_dense_full_alpha/run_confirmatory_batch.py"
+    },
+    "script:run_r1_dense_full_alpha": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/24_r1_dense_full_alpha/run_r1_dense_full_alpha.py"
+    }
+  },
+  "experiment_id": "24_r1_dense_full_alpha",
+  "legacy_result_roots": [
+    "24_r1_dense_full_alpha"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": true,
+    "source_freeze": "partial_or_run_specific_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "24 R1 Dense Full Alpha"
+}

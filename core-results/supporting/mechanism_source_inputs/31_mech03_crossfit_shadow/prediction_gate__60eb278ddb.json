@@ -1,0 +1,19 @@
+{
+  "authorization_note": "MECH-03 never auto-authorizes MECH-04; a reviewed mechanism decision is required.",
+  "layers_total": 4,
+  "mech04_authorized": false,
+  "median_paired_cross_architecture_score": 2.7964187059752676e-05,
+  "minimum_relative_loss_margin": 1e-06,
+  "paired_cells_total": 32,
+  "positive_material_layers": 0,
+  "positive_paired_cells": 19,
+  "prediction_gate_passed": false,
+  "primary_contrast": "llama124_minus_gpt_bridge_same_host",
+  "rules": {
+    "aggregate_practical_margin": true,
+    "material_layer_count": false,
+    "paired_direction_consistency": false
+  },
+  "schema_version": 1,
+  "script_version": "2026-07-27.2"
+}

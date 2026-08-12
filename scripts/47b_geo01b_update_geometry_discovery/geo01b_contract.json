@@ -1,0 +1,204 @@
+{
+  "schema_version": "geo01b_directional_geometry_discovery_v1",
+  "status": "frozen_after_accepted_geo01a_before_gpu_discovery",
+  "experiment": "GEO-01B",
+  "experiment_number": 47,
+  "evidence_tier": "exploratory_hypothesis_generating",
+  "current_phase": "discovery",
+  "purpose": "Test on preregistered origin-by-data units whether actual full down-projection refresh directions predict local and short-horizon held-out loss harm beyond an update-norm baseline, and whether directional curvature adds information beyond first-order alignment.",
+  "geo01a_pilot_lineage": {
+    "run_id": "20260804T070221+0000",
+    "zip_sha256": "7a4551d26340d181a67cb5039aed2c10121dbf1db7d5f03e0a77f99338834911",
+    "pilot_contract_sha256": "40d230dc7dc08e4388b387f70a7babfa7575a7bed02db8b387d207dc8d9674b3",
+    "analysis_manifest_sha256": "94d015551b502451bcbcf06edf9352ce0b9662ebce89aff5cd812cc5ed26e382",
+    "engineering_integrity_passed": true,
+    "scientific_claim_eligible": false,
+    "pilot_used_for": [
+      "confirming H100 memory feasibility",
+      "confirming exact-HVP and line-loss numerical closure",
+      "retaining the already frozen Taylor formula"
+    ],
+    "pilot_not_used_for": [
+      "selecting a favorable layer",
+      "selecting a favorable event",
+      "setting a result-dependent statistical threshold",
+      "making a scientific claim"
+    ]
+  },
+  "source_lineage": {
+    "accepted_source_run_id": "20260728T075907+0000",
+    "accepted_execution_contract_sha256": "f7917b229901383b9d45891ce67709d6c5f069c0f51b123498b9ef515914c700",
+    "public_execution_contract_sha256": "dd934586aef857b5f5425c70226e7226d2427443eb95cd9748f26dc47a44c110",
+    "public_contract_change_scope": "host paths only; scientific fields unchanged",
+    "accepted_source_optimizer_required": true,
+    "accepted_triton_ns5_required": true,
+    "mdp05_run_id": "20260804T021302+0000",
+    "mdp05_result_remains": "partial_or_null",
+    "mdp05_outcomes_used_to_select_discovery_units": false,
+    "mdp05_outcomes_used_to_select_formula": false
+  },
+  "discovery": {
+    "origins": [
+      "early_muon",
+      "early_newton_full",
+      "late_muon",
+      "late_newton_full"
+    ],
+    "data_replicas": [9, 10, 11],
+    "optimizer_step_offsets": [2304, 2560, 2816],
+    "build_token_offsets": [18000000, 20000000, 22000000],
+    "eval_token_offsets": [19048576, 21048576, 23048576],
+    "expected_units": 12,
+    "events": [
+      {
+        "event_id": "production_refresh_32",
+        "trajectory": "production",
+        "completed_step": 32,
+        "endpoint_step": 48,
+        "treatment_arm": "production_newton_muon",
+        "treatment_trajectory": "production",
+        "reference_arm": "frozen_down_refresh",
+        "reference_trajectory": "shared_no_down"
+      },
+      {
+        "event_id": "delayed_refresh_64",
+        "trajectory": "delayed",
+        "completed_step": 64,
+        "endpoint_step": 80,
+        "treatment_arm": "delayed_down_refresh",
+        "treatment_trajectory": "delayed",
+        "reference_arm": "frozen_down_refresh",
+        "reference_trajectory": "frozen"
+      }
+    ],
+    "target_layers": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+    "primary_scope": "all_down",
+    "scopes": [
+      {"scope_id": "all_down", "layers": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "role": "primary"},
+      {"scope_id": "layers_0_5", "layers": [0, 1, 2, 3, 4, 5], "role": "supportive_predeclared_stratum"},
+      {"scope_id": "layers_6_11", "layers": [6, 7, 8, 9, 10, 11], "role": "supportive_predeclared_stratum"},
+      {"scope_id": "layers_12_17", "layers": [12, 13, 14, 15, 16, 17], "role": "supportive_predeclared_stratum"}
+    ]
+  },
+  "remote_smoke": {
+    "origin": "early_muon",
+    "data_replica": 12,
+    "optimizer_step_offset": 3072,
+    "build_token_offset": 24000000,
+    "eval_token_offset": 25048576,
+    "rollout_steps": 4,
+    "outcomes_opened": false
+  },
+  "geometry": {
+    "direction": "source_pinned_refresh_minus_frozen_parameter_update",
+    "same_raw_gradient": true,
+    "same_historical_momentum": true,
+    "actual_update_multiplier": 1.0,
+    "predictor_formula": "<g_val,d> + 0.5*<d,H_val d>",
+    "exact_directional_hvp": true,
+    "construct_full_hessian": false,
+    "microbatch_size": 1,
+    "sequence_length": 128,
+    "heldout_microbatches": 4,
+    "heldout_geometry_is_nested_subset_of_evaluation_window": true,
+    "forward_precision": "float32_tf32_disabled",
+    "hvp_attention_backend": "math_only",
+    "fd_target_relative_parameter_norm": 0.0001,
+    "fd_scale_min": 1.0,
+    "fd_scale_max": 64.0,
+    "finite_difference_errors_are_diagnostic_only": true
+  },
+  "predictors": {
+    "norm_only": "relative_direction_fro_norm",
+    "first_order": "first_order_alignment",
+    "full_taylor": "taylor_actual_delta_loss",
+    "local_target": "exact_actual_delta_loss",
+    "short_horizon_target": "endpoint_normalized_loss_harm",
+    "primary_scope_only_for_gate": true
+  },
+  "analysis_unit": "checkpoint_origin_x_data_replica",
+  "analysis": {
+    "no_confirmatory_p_values": true,
+    "report_by_event": true,
+    "report_pooled_spearman": true,
+    "report_within_origin_centered_spearman": true,
+    "report_leave_one_origin_out": true,
+    "report_sign_accuracy": true,
+    "report_local_taylor_closure": true,
+    "outcome_orientation": "positive predictor and positive target mean refresh-induced harm",
+    "finite_floor": 1e-8
+  },
+  "discovery_gate": {
+    "integrity_requires_all_12_units": true,
+    "local_taylor_median_relative_error_max": 0.1,
+    "local_taylor_sign_accuracy_min": 0.9,
+    "short_horizon_full_sign_accuracy_min": 0.75,
+    "short_horizon_full_pooled_spearman_min": 0.5,
+    "short_horizon_full_origin_centered_spearman_min": 0.35,
+    "short_horizon_full_min_leave_one_origin_out_spearman": 0.2,
+    "full_minus_norm_origin_centered_spearman_min": 0.15,
+    "curvature_local_error_reduction_fraction_min": 0.2,
+    "curvature_full_minus_first_origin_centered_spearman_min": 0.05,
+    "both_events_required_for_confirmation_candidate": true,
+    "gate_outcomes": [
+      "directional_geometry_supported",
+      "directional_geometry_partial",
+      "directional_geometry_not_supported",
+      "integrity_failed"
+    ]
+  },
+  "integrity_gates": {
+    "source_and_checkpoint_hashes_exact": true,
+    "source_pinned_ns5_fingerprint_exact": true,
+    "all_values_finite": true,
+    "all_18_target_layers_present": true,
+    "parameters_unchanged": true,
+    "optimizer_state_unchanged_by_geometry_probe": true,
+    "loader_state_unchanged_by_geometry_probe": true,
+    "baseline_graph_relative_error_max": 1e-6,
+    "peak_allocated_bytes_max": 79000000000,
+    "full_direction_not_persisted": true,
+    "full_hessian_not_constructed": true
+  },
+  "stopping_rule": {
+    "maximum_discovery_units": 12,
+    "no_extra_replica_for_unfavorable_outcome": true,
+    "no_layer_or_event_selection": true,
+    "no_formula_or_threshold_change_after_launch": true,
+    "engineering_failure_may_resume_same_contract": true,
+    "contract_change_requires_new_run_directory": true
+  },
+  "claim_boundary": {
+    "discovery_claim_eligible": false,
+    "mdp05_result_remains_closed": true,
+    "pilot_not_reclassified": true,
+    "local_and_short_horizon_only": true,
+    "not_a_long_horizon_selector": true,
+    "confirmation_requires_new_contract": true,
+    "llama_10b_triggered": false
+  },
+  "runtime_contract": {
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "numpy": "2.2.6",
+    "gpu_name_contains": "H100",
+    "compute_capability": [9, 0],
+    "minimum_gpu_memory_bytes": 80000000000,
+    "gpu_count": 2,
+    "cublas_workspace_config": ":4096:8"
+  },
+  "execution": {
+    "immutable_source_snapshot": true,
+    "failed_attempts_never_overwritten": true,
+    "same_contract_resume_only": true,
+    "persist_full_direction": false,
+    "persist_full_hessian": false,
+    "timing_eligible_for_paper": false,
+    "discovery_enabled": true,
+    "confirmation_enabled": false,
+    "llama_10b_enabled": false,
+    "maximum_parallel_jobs": 2
+  }
+}

@@ -1,0 +1,1027 @@
+{
+  "base_trainer_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+  "batch_id": "20260722T055910+0000_smoke_seed2026",
+  "batch_kind": "smoke",
+  "config": {
+    "adamw_matrix_lr": 0.000576,
+    "backup_lr": 0.0036,
+    "checkpoint_every": 0,
+    "device_batch_size": 32,
+    "global_batch_size": 256,
+    "matrix_lr": 0.01,
+    "num_iterations": 34,
+    "sequence_length": 1024,
+    "val_every": 34,
+    "val_tokens": 32768,
+    "warmdown_iters": 1
+  },
+  "created_at": "2026-07-22T05:59:10.216841+00:00",
+  "data_audit": {
+    "data_dir": "${SNM_OFFICIAL_REPO}/data/fineweb10B",
+    "fingerprint": "57d23fdc7fb4c59c3685b0c603deaeaa7d0be6b28c62a9d6a2aa493118ceb8a2",
+    "first_train": {
+      "bytes": 200001024,
+      "name": "fineweb_train_000001.bin",
+      "tokens": 100000000
+    },
+    "last_train": {
+      "bytes": 200001024,
+      "name": "fineweb_train_000050.bin",
+      "tokens": 100000000
+    },
+    "ordered_names": [
+      "fineweb_train_000001.bin",
+      "fineweb_train_000002.bin",
+      "fineweb_train_000003.bin",
+      "fineweb_train_000004.bin",
+      "fineweb_train_000005.bin",
+      "fineweb_train_000006.bin",
+      "fineweb_train_000007.bin",
+      "fineweb_train_000008.bin",
+      "fineweb_train_000009.bin",
+      "fineweb_train_000010.bin",
+      "fineweb_train_000011.bin",
+      "fineweb_train_000012.bin",
+      "fineweb_train_000013.bin",
+      "fineweb_train_000014.bin",
+      "fineweb_train_000015.bin",
+      "fineweb_train_000016.bin",
+      "fineweb_train_000017.bin",
+      "fineweb_train_000018.bin",
+      "fineweb_train_000019.bin",
+      "fineweb_train_000020.bin",
+      "fineweb_train_000021.bin",
+      "fineweb_train_000022.bin",
+      "fineweb_train_000023.bin",
+      "fineweb_train_000024.bin",
+      "fineweb_train_000025.bin",
+      "fineweb_train_000026.bin",
+      "fineweb_train_000027.bin",
+      "fineweb_train_000028.bin",
+      "fineweb_train_000029.bin",
+      "fineweb_train_000030.bin",
+      "fineweb_train_000031.bin",
+      "fineweb_train_000032.bin",
+      "fineweb_train_000033.bin",
+      "fineweb_train_000034.bin",
+      "fineweb_train_000035.bin",
+      "fineweb_train_000036.bin",
+      "fineweb_train_000037.bin",
+      "fineweb_train_000038.bin",
+      "fineweb_train_000039.bin",
+      "fineweb_train_000040.bin",
+      "fineweb_train_000041.bin",
+      "fineweb_train_000042.bin",
+      "fineweb_train_000043.bin",
+      "fineweb_train_000044.bin",
+      "fineweb_train_000045.bin",
+      "fineweb_train_000046.bin",
+      "fineweb_train_000047.bin",
+      "fineweb_train_000048.bin",
+      "fineweb_train_000049.bin",
+      "fineweb_train_000050.bin",
+      "fineweb_val_000000.bin"
+    ],
+    "total_bytes": 10200052224,
+    "train_shard_count": 50,
+    "val_shard_count": 1,
+    "validation": {
+      "bytes": 200001024,
+      "name": "fineweb_val_000000.bin",
+      "tokens": 100000000
+    }
+  },
+  "evidence_class": "screening_only",
+  "execution_stage": "smoke",
+  "family": "llama_swiglu_1b_scale_validation",
+  "init_audit": {
+    "base_trainer_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "common_init_sha256": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec",
+    "expected_k_state_bytes": {
+      "down_none": 1811939328
+    },
+    "methods": {
+      "down_none": {
+        "architecture": {
+          "architecture": "llama_swiglu_1b_v1",
+          "backup_parameter_count": 103002112,
+          "backup_tensor_count": 38,
+          "base_trainer_sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+          "bias_parameter_count": 0,
+          "config": {
+            "intermediate_size": 5504,
+            "n_embd": 2048,
+            "n_head": 16,
+            "n_layer": 18,
+            "rms_norm_eps": 1e-06,
+            "rope_base": 10000.0,
+            "sequence_length": 1024,
+            "vocab_size": 50257
+          },
+          "down_mode": "none",
+          "embedding_head_tied": true,
+          "matrix_parameter_count": 910688256,
+          "matrix_tensor_count": 126,
+          "mlp": "swiglu_gate_up_down",
+          "named_parameter_count": 164,
+          "parameter_count": 1013690368,
+          "preconditioner_group_count": 54,
+          "preconditioner_groups": [
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.0.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.0.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.0.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.1.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.1.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.1.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.2.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.2.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.2.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.3.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.3.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.3.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.4.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.4.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.4.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.5.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.5.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.5.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.6.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.6.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.6.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.7.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.7.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.7.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.8.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.8.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.8.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.9.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.9.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.9.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.10.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.10.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.10.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.11.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.11.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.11.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.12.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.12.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.12.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.13.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.13.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.13.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.14.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.14.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.14.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.15.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.15.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.15.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.16.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.16.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.16.mlp_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ],
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.17.attn_input"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  2048,
+                  2048
+                ]
+              ],
+              "name": "layers.17.attn_output"
+            },
+            {
+              "input_width": 2048,
+              "kind": "dense",
+              "member_shapes": [
+                [
+                  5504,
+                  2048
+                ],
+                [
+                  5504,
+                  2048
+                ]
+              ],
+              "name": "layers.17.mlp_input"
+            }
+          ],
+          "profile": {
+            "expected_parameter_count": 1013690368,
+            "intermediate_size": 5504,
+            "n_embd": 2048,
+            "n_head": 16,
+            "n_layer": 18,
+            "name": "llama_swiglu_1b_v1"
+          },
+          "qkv": "separate_q_k_v_projections",
+          "rmsnorm": "learned_gain_eps_1e-6",
+          "rope": "base_10000_precomputed"
+        },
+        "event": "init_audit",
+        "init_sha256": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec",
+        "method": "down_none",
+        "seed": 2026
+      }
+    },
+    "profile": {
+      "expected_backup_tensors": 38,
+      "expected_matrix_tensors": 126,
+      "expected_parameter_count": 1013690368,
+      "expected_preconditioner_groups": {
+        "adamw": 0,
+        "down_diag": 72,
+        "down_none": 54,
+        "muon": 0,
+        "newton_full": 72
+      },
+      "intermediate_size": 5504,
+      "n_embd": 2048,
+      "n_head": 16,
+      "n_layer": 18,
+      "name": "llama_swiglu_1b_v1"
+    }
+  },
+  "methods": [
+    "down_none"
+  ],
+  "official_repo": "${SNM_OFFICIAL_REPO}",
+  "profile": {
+    "expected_backup_tensors": 38,
+    "expected_matrix_tensors": 126,
+    "expected_parameter_count": 1013690368,
+    "expected_preconditioner_groups": {
+      "adamw": 0,
+      "down_diag": 72,
+      "down_none": 54,
+      "muon": 0,
+      "newton_full": 72
+    },
+    "intermediate_size": 5504,
+    "n_embd": 2048,
+    "n_head": 16,
+    "n_layer": 18,
+    "name": "llama_swiglu_1b_v1"
+  },
+  "python_exe": "${SNM_TRAINING_PYTHON}",
+  "runtime": {
+    "gpu_capability": [
+      9,
+      0
+    ],
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85169143808,
+    "numpy": "2.2.6",
+    "python_executable": "${SNM_TRAINING_PYTHON}",
+    "python_full": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]",
+    "python_version": [
+      3,
+      10,
+      12
+    ],
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "triton_kernels_module": "${SNM_OFFICIAL_REPO}/triton_kernels.py",
+    "triton_kernels_sha256": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f",
+    "triton_module": "${SNM_TRAINING_ENV}/lib/python3.10/site-packages/triton/__init__.py"
+  },
+  "script_sha256": "ca26fcf62b46df9aad09ea55545f23bb00f62323656e4fe3ebece6543ec100c1",
+  "seed": 2026,
+  "smoke_certificate_sha256": null,
+  "timing_eligible": false,
+  "wandb_mode": "disabled",
+  "wandb_project": "Selective-Newton-Muon-MainConf-LLaMA-SwiGLU-1B-Planning-20260721"
+}

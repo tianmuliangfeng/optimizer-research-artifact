@@ -1,0 +1,240 @@
+check,status,severity_if_failed,evidence
+wandb_export_2026-07-27T09_58_52.645+08_00.csv: one metric,PASS,critical,{'lr/matrix'}
+wandb_export_2026-07-27T09_58_52.645+08_00.csv: recognized metric,PASS,critical,lr/matrix
+wandb_export_2026-07-27T09_58_52.645+08_00.csv: exact row step grid,PASS,critical,metric=lr/matrix points=311
+llama_swiglu_muon_seed2024 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2024 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_muon_seed2025 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2025 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2024 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2024 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2025 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2025 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2024 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2024 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2025 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2025 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2024 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2024 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2025 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2025 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+wandb_export_2026-07-27T09_58_52.645+08_00.csv: exact run identities,PASS,critical,"[(2024, 'down_diag'), (2024, 'down_none'), (2024, 'muon'), (2024, 'newton_full'), (2025, 'down_diag'), (2025, 'down_none'), (2025, 'muon'), (2025, 'newton_full')]"
+wandb_export_2026-07-27T09_58_55.813+08_00.csv: one metric,PASS,critical,{'lr/backup'}
+wandb_export_2026-07-27T09_58_55.813+08_00.csv: recognized metric,PASS,critical,lr/backup
+wandb_export_2026-07-27T09_58_55.813+08_00.csv: exact row step grid,PASS,critical,metric=lr/backup points=311
+llama_swiglu_muon_seed2024 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2024 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_muon_seed2025 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2025 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2024 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2024 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2025 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2025 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2024 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2024 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2025 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2025 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2024 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2024 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2025 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2025 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+wandb_export_2026-07-27T09_58_55.813+08_00.csv: exact run identities,PASS,critical,"[(2024, 'down_diag'), (2024, 'down_none'), (2024, 'muon'), (2024, 'newton_full'), (2025, 'down_diag'), (2025, 'down_none'), (2025, 'muon'), (2025, 'newton_full')]"
+wandb_export_2026-07-27T09_58_59.013+08_00.csv: one metric,PASS,critical,{'performance/step_avg_ms'}
+wandb_export_2026-07-27T09_58_59.013+08_00.csv: recognized metric,PASS,critical,performance/step_avg_ms
+wandb_export_2026-07-27T09_58_59.013+08_00.csv: exact row step grid,PASS,critical,metric=performance/step_avg_ms points=311
+llama_swiglu_muon_seed2024 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_muon_seed2024 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_muon_seed2025 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_muon_seed2025 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_newton_full_seed2024 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_newton_full_seed2024 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_newton_full_seed2025 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_newton_full_seed2025 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_down_diag_seed2024 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_down_diag_seed2024 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_down_diag_seed2025 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_down_diag_seed2025 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_down_none_seed2024 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_down_none_seed2024 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_down_none_seed2025 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_down_none_seed2025 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+wandb_export_2026-07-27T09_58_59.013+08_00.csv: exact run identities,PASS,critical,"[(2024, 'down_diag'), (2024, 'down_none'), (2024, 'muon'), (2024, 'newton_full'), (2025, 'down_diag'), (2025, 'down_none'), (2025, 'muon'), (2025, 'newton_full')]"
+wandb_export_2026-07-27T09_59_02.430+08_00.csv: one metric,PASS,critical,{'time/train_s'}
+wandb_export_2026-07-27T09_59_02.430+08_00.csv: recognized metric,PASS,critical,time/train_s
+wandb_export_2026-07-27T09_59_02.430+08_00.csv: exact row step grid,PASS,critical,metric=time/train_s points=311
+llama_swiglu_muon_seed2024 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2024 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_muon_seed2025 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2025 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2024 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2024 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2025 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2025 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2024 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2024 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2025 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2025 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2024 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2024 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2025 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2025 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+wandb_export_2026-07-27T09_59_02.430+08_00.csv: exact run identities,PASS,critical,"[(2024, 'down_diag'), (2024, 'down_none'), (2024, 'muon'), (2024, 'newton_full'), (2025, 'down_diag'), (2025, 'down_none'), (2025, 'muon'), (2025, 'newton_full')]"
+wandb_export_2026-07-27T09_59_08.548+08_00.csv: one metric,PASS,critical,{'tokens/seen'}
+wandb_export_2026-07-27T09_59_08.548+08_00.csv: recognized metric,PASS,critical,tokens/seen
+wandb_export_2026-07-27T09_59_08.548+08_00.csv: exact row step grid,PASS,critical,metric=tokens/seen points=311
+llama_swiglu_muon_seed2024 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2024 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_muon_seed2025 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2025 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2024 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2024 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2025 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2025 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2024 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2024 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2025 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2025 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2024 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2024 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2025 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2025 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+wandb_export_2026-07-27T09_59_08.548+08_00.csv: exact run identities,PASS,critical,"[(2024, 'down_diag'), (2024, 'down_none'), (2024, 'muon'), (2024, 'newton_full'), (2025, 'down_diag'), (2025, 'down_none'), (2025, 'muon'), (2025, 'newton_full')]"
+wandb_export_2026-07-27T09_59_12.042+08_00.csv: one metric,PASS,critical,{'train/loss_step'}
+wandb_export_2026-07-27T09_59_12.042+08_00.csv: recognized metric,PASS,critical,train/loss_step
+wandb_export_2026-07-27T09_59_12.042+08_00.csv: exact row step grid,PASS,critical,metric=train/loss_step points=310
+llama_swiglu_muon_seed2024 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_muon_seed2024 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_muon_seed2025 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_muon_seed2025 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_newton_full_seed2024 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_newton_full_seed2024 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_newton_full_seed2025 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_newton_full_seed2025 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_down_diag_seed2024 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_down_diag_seed2024 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_down_diag_seed2025 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_down_diag_seed2025 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_down_none_seed2024 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_down_none_seed2024 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_down_none_seed2025 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_down_none_seed2025 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+wandb_export_2026-07-27T09_59_12.042+08_00.csv: exact run identities,PASS,critical,"[(2024, 'down_diag'), (2024, 'down_none'), (2024, 'muon'), (2024, 'newton_full'), (2025, 'down_diag'), (2025, 'down_none'), (2025, 'muon'), (2025, 'newton_full')]"
+wandb_export_2026-07-27T09_59_15.437+08_00.csv: one metric,PASS,critical,{'val/loss'}
+wandb_export_2026-07-27T09_59_15.437+08_00.csv: recognized metric,PASS,critical,val/loss
+wandb_export_2026-07-27T09_59_15.437+08_00.csv: exact row step grid,PASS,critical,metric=val/loss points=63
+llama_swiglu_muon_seed2024 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_muon_seed2024 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_muon_seed2025 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_muon_seed2025 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_newton_full_seed2024 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_newton_full_seed2024 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_newton_full_seed2025 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_newton_full_seed2025 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_down_diag_seed2024 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_down_diag_seed2024 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_down_diag_seed2025 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_down_diag_seed2025 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_down_none_seed2024 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_down_none_seed2024 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_down_none_seed2025 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_down_none_seed2025 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+wandb_export_2026-07-27T09_59_15.437+08_00.csv: exact run identities,PASS,critical,"[(2024, 'down_diag'), (2024, 'down_none'), (2024, 'muon'), (2024, 'newton_full'), (2025, 'down_diag'), (2025, 'down_none'), (2025, 'muon'), (2025, 'newton_full')]"
+wandb_export_2026-07-24T15_25_47.200+08_00.csv: one metric,PASS,critical,{'lr/matrix'}
+wandb_export_2026-07-24T15_25_47.200+08_00.csv: recognized metric,PASS,critical,lr/matrix
+wandb_export_2026-07-24T15_25_47.200+08_00.csv: exact row step grid,PASS,critical,metric=lr/matrix points=311
+llama_swiglu_muon_seed2026 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2026 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2026 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2026 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2026 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2026 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2026 lr/matrix: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2026 lr/matrix: MIN/MAX mirrors,PASS,high,finite=311
+wandb_export_2026-07-24T15_25_47.200+08_00.csv: exact run identities,PASS,critical,"[(2026, 'down_diag'), (2026, 'down_none'), (2026, 'muon'), (2026, 'newton_full')]"
+wandb_export_2026-07-24T15_25_50.971+08_00.csv: one metric,PASS,critical,{'lr/backup'}
+wandb_export_2026-07-24T15_25_50.971+08_00.csv: recognized metric,PASS,critical,lr/backup
+wandb_export_2026-07-24T15_25_50.971+08_00.csv: exact row step grid,PASS,critical,metric=lr/backup points=311
+llama_swiglu_muon_seed2026 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2026 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2026 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2026 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2026 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2026 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2026 lr/backup: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2026 lr/backup: MIN/MAX mirrors,PASS,high,finite=311
+wandb_export_2026-07-24T15_25_50.971+08_00.csv: exact run identities,PASS,critical,"[(2026, 'down_diag'), (2026, 'down_none'), (2026, 'muon'), (2026, 'newton_full')]"
+wandb_export_2026-07-24T15_25_54.970+08_00.csv: one metric,PASS,critical,{'performance/step_avg_ms'}
+wandb_export_2026-07-24T15_25_54.970+08_00.csv: recognized metric,PASS,critical,performance/step_avg_ms
+wandb_export_2026-07-24T15_25_54.970+08_00.csv: exact row step grid,PASS,critical,metric=performance/step_avg_ms points=311
+llama_swiglu_muon_seed2026 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_muon_seed2026 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_down_diag_seed2026 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_down_diag_seed2026 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_newton_full_seed2026 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_newton_full_seed2026 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+llama_swiglu_down_none_seed2026 performance/step_avg_ms: expected finite grid,PASS,critical,finite=309
+llama_swiglu_down_none_seed2026 performance/step_avg_ms: MIN/MAX mirrors,PASS,high,finite=309
+wandb_export_2026-07-24T15_25_54.970+08_00.csv: exact run identities,PASS,critical,"[(2026, 'down_diag'), (2026, 'down_none'), (2026, 'muon'), (2026, 'newton_full')]"
+wandb_export_2026-07-24T15_26_02.276+08_00.csv: one metric,PASS,critical,{'time/train_s'}
+wandb_export_2026-07-24T15_26_02.276+08_00.csv: recognized metric,PASS,critical,time/train_s
+wandb_export_2026-07-24T15_26_02.276+08_00.csv: exact row step grid,PASS,critical,metric=time/train_s points=311
+llama_swiglu_muon_seed2026 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2026 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2026 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2026 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2026 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2026 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2026 time/train_s: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2026 time/train_s: MIN/MAX mirrors,PASS,high,finite=311
+wandb_export_2026-07-24T15_26_02.276+08_00.csv: exact run identities,PASS,critical,"[(2026, 'down_diag'), (2026, 'down_none'), (2026, 'muon'), (2026, 'newton_full')]"
+wandb_export_2026-07-24T15_26_06.541+08_00.csv: one metric,PASS,critical,{'tokens/seen'}
+wandb_export_2026-07-24T15_26_06.541+08_00.csv: recognized metric,PASS,critical,tokens/seen
+wandb_export_2026-07-24T15_26_06.541+08_00.csv: exact row step grid,PASS,critical,metric=tokens/seen points=311
+llama_swiglu_muon_seed2026 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_muon_seed2026 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_diag_seed2026 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_diag_seed2026 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_newton_full_seed2026 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_newton_full_seed2026 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+llama_swiglu_down_none_seed2026 tokens/seen: expected finite grid,PASS,critical,finite=311
+llama_swiglu_down_none_seed2026 tokens/seen: MIN/MAX mirrors,PASS,high,finite=311
+wandb_export_2026-07-24T15_26_06.541+08_00.csv: exact run identities,PASS,critical,"[(2026, 'down_diag'), (2026, 'down_none'), (2026, 'muon'), (2026, 'newton_full')]"
+wandb_export_2026-07-24T15_26_11.313+08_00.csv: one metric,PASS,critical,{'train/loss_step'}
+wandb_export_2026-07-24T15_26_11.313+08_00.csv: recognized metric,PASS,critical,train/loss_step
+wandb_export_2026-07-24T15_26_11.313+08_00.csv: exact row step grid,PASS,critical,metric=train/loss_step points=310
+llama_swiglu_muon_seed2026 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_muon_seed2026 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_down_diag_seed2026 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_down_diag_seed2026 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_newton_full_seed2026 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_newton_full_seed2026 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+llama_swiglu_down_none_seed2026 train/loss_step: expected finite grid,PASS,critical,finite=310
+llama_swiglu_down_none_seed2026 train/loss_step: MIN/MAX mirrors,PASS,high,finite=310
+wandb_export_2026-07-24T15_26_11.313+08_00.csv: exact run identities,PASS,critical,"[(2026, 'down_diag'), (2026, 'down_none'), (2026, 'muon'), (2026, 'newton_full')]"
+wandb_export_2026-07-24T15_26_14.766+08_00.csv: one metric,PASS,critical,{'val/loss'}
+wandb_export_2026-07-24T15_26_14.766+08_00.csv: recognized metric,PASS,critical,val/loss
+wandb_export_2026-07-24T15_26_14.766+08_00.csv: exact row step grid,PASS,critical,metric=val/loss points=63
+llama_swiglu_muon_seed2026 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_muon_seed2026 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_down_diag_seed2026 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_down_diag_seed2026 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_newton_full_seed2026 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_newton_full_seed2026 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+llama_swiglu_down_none_seed2026 val/loss: expected finite grid,PASS,critical,finite=63
+llama_swiglu_down_none_seed2026 val/loss: MIN/MAX mirrors,PASS,high,finite=63
+wandb_export_2026-07-24T15_26_14.766+08_00.csv: exact run identities,PASS,critical,"[(2026, 'down_diag'), (2026, 'down_none'), (2026, 'muon'), (2026, 'newton_full')]"
+exact seed identities,PASS,critical,"[np.int64(2024), np.int64(2025), np.int64(2026)]"
+exact method identities,PASS,critical,"['down_diag', 'down_none', 'muon', 'newton_full']"
+exact seven metrics,PASS,critical,"['lr/backup', 'lr/matrix', 'performance/step_avg_ms', 'time/train_s', 'tokens/seen', 'train/loss_step', 'val/loss']"
+unique seed/method/metric/step grain,PASS,critical,duplicates=0
+complete 3 seeds x 4 methods x 7 metrics,PASS,critical,observed=84 expected=84
+seed2024: identical step0 validation loss,PASS,critical,"{""down_diag"": 11.240580559, ""down_none"": 11.240580559, ""muon"": 11.240580559, ""newton_full"": 11.240580559}"
+seed2025: identical step0 validation loss,PASS,critical,"{""down_diag"": 11.243918419, ""down_none"": 11.243918419, ""muon"": 11.243918419, ""newton_full"": 11.243918419}"
+seed2026: identical step0 validation loss,PASS,critical,"{""down_diag"": 11.223670006, ""down_none"": 11.223670006, ""muon"": 11.223670006, ""newton_full"": 11.223670006}"
+tokens equal step * 512 * 1024,PASS,critical,final=3250585600
+lr/backup: identical across all 12 runs,PASS,critical,max_stepwise_spread=0.0
+lr/matrix: identical across all 12 runs,PASS,critical,max_stepwise_spread=0.0
+formal local certificates supplied,WARN,critical,"need seed2024/2025/2026 formal-6200 manifests, plans, summaries, metrics, and checkpoint/resume metadata"
+memory evidence in current W&B exports,WARN,high,no measured optimizer/K-state/peak CUDA memory fields
+timing eligibility,WARN,high,concurrent dual-GPU runs; timing is descriptive only
+universal population claim,WARN,high,"three fixed-recipe seeds support replication, not universality"

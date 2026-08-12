@@ -1,0 +1,72 @@
+{
+  "caveats": [
+    "Historical experiment-15/19 rows are frozen W&B exports plus accepted analysis manifests; their original per-run local source/runtime/checkpoint manifests are not present in this evidence bundle. Quality pairing is accepted at the frozen protocol level, but this limitation must be disclosed and timing comparisons remain prohibited."
+  ],
+  "checks": {
+    "auxiliary_route": "same tied embedding/head fused AdamW",
+    "data_batch_schedule_validation": "same pinned R1 controller contract",
+    "historical_quality_checks": {
+      "core": 180,
+      "extended": 195
+    },
+    "initial_validation_equal_within_print_precision": true,
+    "model": "same pinned 12x12x768 R1 source derivation",
+    "mousse_source_runtime_manifest_consistency": true,
+    "packed_qkv": "same Q/K/V logical split",
+    "seed_coverage": [
+      2024,
+      2025,
+      2026
+    ],
+    "timing_eligible": false
+  },
+  "consequence_if_failed": "historical rows are background-only and paired claims are prohibited",
+  "evidence_level": "Mousse local manifests plus historical W&B exports/frozen analysis manifests",
+  "failures": [],
+  "paired_quality_eligible": true,
+  "protocol": "mousse_r1_historical_identity_reuse_v1",
+  "source_files": [
+    {
+      "path": "PRIVATE_PATH_REDACTED__20e772941b9c",
+      "sha256": "8477fa13f1321a07ddd8f62d6bc936e0229325d9d07674c13c2f129a2ab41323"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__f89ae0e232ed",
+      "sha256": "bd8271942ef2c12a5e9063a92a36c1a3539862e2b8274ef7fe93ee2fccccd8c2"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__7b047962497e",
+      "sha256": "5628600fa790bbe5a1e9ca0272e80a7210f3fd76f6ed27f9cd8965fcb86b0133"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__4588df4501dd",
+      "sha256": "7477aadcf2c79e3e52ec039ea17c16b85d40b8224e1b63ab85ef264a80e96bfb"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__0a5331ceb345",
+      "sha256": "c2cb542ca4957aebfb1bf9879b3040559b8f8e7ef6a64646fb249281e1386ac8"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__2ebf594f8d81",
+      "sha256": "bc03529ab2a3b5c7836c21d1f14d4179457af7e2a680bed1927db438d100114e"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__1615a28f1b72",
+      "sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__523c6cb4ed47",
+      "sha256": "bddc9a3bc4222599d864a836d9c5f0ed8570b81262cc3ea9ea3dc8a812cfdc6a"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__c9d03d49dab6",
+      "sha256": "7b5455a0245768e2d04adf134d7b66cbc4d74bf8c9134beb2dc8b9ac0c7f35ab"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__72c783ed4de7",
+      "sha256": "608e54a9f37e267c19a103de778b9195f50e8751f0112109a780dee33bebc10c"
+    }
+  ],
+  "status": "passed_with_caveats",
+  "strict_per_run_local_manifest_identity": false
+}

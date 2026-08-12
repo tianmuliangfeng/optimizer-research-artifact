@@ -1,0 +1,155 @@
+{
+  "accepted_at": "2026-07-31",
+  "accepted_classification": "r1_allocation_diverges",
+  "cells": {
+    "both": {
+      "cfc_k_mode": "full",
+      "cproj_k_mode": "block4",
+      "k_state_mib": 378.0,
+      "mean_final_val_loss": 3.2622,
+      "peak_memory_mib": 39168.0
+    },
+    "cproj_only": {
+      "cfc_k_mode": "none",
+      "cproj_k_mode": "block4",
+      "k_state_mib": 324.0,
+      "mean_final_val_loss": 3.2655666666666665,
+      "peak_memory_mib": 38923.0
+    },
+    "fc_only": {
+      "cfc_k_mode": "full",
+      "cproj_k_mode": "none",
+      "k_state_mib": 162.0,
+      "mean_final_val_loss": 3.2666666666666666,
+      "peak_memory_mib": 38304.0
+    },
+    "neither": {
+      "cfc_k_mode": "none",
+      "cproj_k_mode": "none",
+      "k_state_mib": 108.0,
+      "mean_final_val_loss": 3.2702666666666667,
+      "peak_memory_mib": 38059.0
+    }
+  },
+  "classification_correction": {
+    "corrected_analyzer_version": "2026-07-31.4",
+    "numeric_results_affected": false,
+    "reason": "The classifier tested c_fc_beneficial before cproj_beneficial, so a both-beneficial result received the c_fc-only label.",
+    "regression_tests_passed": 13,
+    "training_results_affected": false
+  },
+  "final_val_loss_effects": {
+    "cfc_main": {
+      "beneficial_seeds": 3,
+      "ci95_t_df2": [
+        -0.004167411518157312,
+        -0.0027992551485094015
+      ],
+      "mean": -0.003483333333333357
+    },
+    "cproj_main": {
+      "beneficial_seeds": 3,
+      "ci95_t_df2": [
+        -0.005267411518156631,
+        -0.003899255148509989
+      ],
+      "mean": -0.00458333333333331
+    },
+    "interaction": {
+      "ci95_t_df2": [
+        -0.0012222385331979117,
+        0.0016889051998646748
+      ],
+      "material": false,
+      "mean": 0.00023333333333338166
+    }
+  },
+  "k_state_erratum": {
+    "component_mib": {
+      "c_fc_full": 54.0,
+      "c_proj_block4": 216.0,
+      "shared_attention": 108.0
+    },
+    "corrected_total_mib": {
+      "both": 378.0,
+      "cproj_only": 324.0,
+      "fc_only": 162.0,
+      "neither": 108.0
+    },
+    "required": true,
+    "training_or_quality_results_affected": false
+  },
+  "material_interaction": false,
+  "memory_usable": true,
+  "new_training_runs": 6,
+  "practical_loss_margin": 0.002,
+  "quality_memory_tradeoff": {
+    "cfc_loss_benefit_per_k_state_mib": 6.450617283950662e-05,
+    "cfc_to_cproj_benefit_per_k_state_mib_ratio": 3.039707419271869,
+    "cproj_loss_benefit_per_k_state_mib": 2.1219135802469027e-05,
+    "cproj_only_vs_original_block4": {
+      "final_val_loss_delta": 0.003366666666666518,
+      "k_state_saved_mib": 54.0,
+      "k_state_saved_percent": 14.285714285714286,
+      "peak_memory_saved_mib": 245.0,
+      "peak_memory_saved_percent": 0.6255106209150327
+    },
+    "selective_none_vs_original_block4": {
+      "final_val_loss_delta": 0.004466666666666619,
+      "k_state_saved_mib": 216.0,
+      "k_state_saved_percent": 57.142857142857146,
+      "peak_memory_saved_mib": 864.0,
+      "peak_memory_saved_percent": 2.2058823529411766
+    }
+  },
+  "quality_usable": true,
+  "reused_runs": 6,
+  "run_id": "ANONYMIZED_WANDB_RUN_ID_0010",
+  "schema_version": 1,
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "simple_effects_final_val_loss": {
+    "disable_cfc_when_cproj_block4": 0.003366666666666666,
+    "disable_cfc_when_cproj_none": 0.0036000000000000476,
+    "disable_cproj_when_cfc_full": 0.004466666666666619,
+    "disable_cproj_when_cfc_none": 0.0047
+  },
+  "source_sha256": {
+    "corrected_analyzer": "9401b438c7fb6b11e8f5f8db8eaf9edffcc0a9dbd7a408fced9bac479577e5ef",
+    "factorial_contract": "86635002eebf38050208f838840ce6fabb13a545befd504b021f3a727781077e",
+    "frozen_reused_summary": "21737784b9fccc69053bf7e507bd91a0a8a8ea26d02579d5c3d87f512e0ecb13",
+    "regression_tests": "41e3a2c4a19dd6378730b6c375b48fa147d88575a72239223a5058385a2b66ad",
+    "zip": "eb70af40da8345b08536210fbe044cfaa04c89910b7a4b2c1aa574a334b3f360"
+  },
+  "status": "accepted_with_analysis_errata",
+  "superseded_emitted_classification": "partial_non_cproj_support",
+  "timing_usable": false,
+  "training_complete": true,
+  "wandb_export_sha256": {
+    "wandb_export_2026-07-31T10_13_07.141+08_00.csv": "3b705d025e2393bc0319b4ffe7ab452f04c672e2d830ae3098316e7eb3c54e57",
+    "wandb_export_2026-07-31T10_13_11.850+08_00.csv": "6ce32c5269c18aae343afedb9f0fc9bb3a0fe0810c3508b5d46fe5c92d3cdec0",
+    "wandb_export_2026-07-31T10_13_15.494+08_00.csv": "e5d6707a415bce647d14179aca02658f7feebf4cce2f20ce932b107e1cb1951b",
+    "wandb_export_2026-07-31T10_13_18.839+08_00.csv": "8a7c66ef0e787e9d0b6474b171c94c82ac77208c7d8087641e88a6fc597f1363",
+    "wandb_export_2026-07-31T10_13_22.787+08_00.csv": "0ee008696c5cccf17ad7e0f05c99fa712c8b5162f0c23a63bce3cffec177c51b",
+    "wandb_export_2026-07-31T10_13_27.101+08_00.csv": "a9eb2d66b86106cb79fe64028e4da6d8911b4e66379ae8af00b6a1bc1cc4316b",
+    "wandb_export_2026-07-31T10_13_31.867+08_00.csv": "fdf6732d38fd077e52a18c201c174d217c3ed84c149e4b6f11ef6d4bff77770d",
+    "wandb_export_2026-07-31T10_13_36.001+08_00.csv": "b1475f72678e445613229cb3d0e6f39f2cbccb763ffe1e5aaab6ede9dbb4a6db",
+    "wandb_export_2026-07-31T10_13_39.423+08_00.csv": "b784233dd9ec6fb5b2fb80023f350125c0dbe663c529dc0bb4bbc2a535b89067"
+  },
+  "wandb_reconciliation": {
+    "eligible_observations_exactly_matched": 5988,
+    "export_files": 9,
+    "formal_runs": 6,
+    "learning_rate_points_exactly_matched": 3732,
+    "maximum_intermediate_cumulative_time_delta_s": 1.026,
+    "maximum_intermediate_step_average_delta_ms": 0.47,
+    "memory_observations_exactly_matched": 18,
+    "timing_endpoints_exactly_matched": true,
+    "timing_excluded_from_claims": true,
+    "training_loss_points_exactly_matched": 1860,
+    "validation_points_exactly_matched": 378
+  }
+}

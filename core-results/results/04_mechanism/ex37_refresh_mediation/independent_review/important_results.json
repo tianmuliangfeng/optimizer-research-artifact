@@ -1,0 +1,166 @@
+{
+  "auc_summary": [
+    {
+      "contrast": "delayed_down_refresh_vs_frozen_down_refresh",
+      "left_better_origins": 0,
+      "left_better_units": 0,
+      "left_worse_origins": 4,
+      "left_worse_units": 12,
+      "mean_auc_delta": 0.0010544442,
+      "origins": 4,
+      "paired_units": 12,
+      "sd_auc_delta": 0.0001771361
+    },
+    {
+      "contrast": "delayed_down_refresh_vs_production",
+      "left_better_origins": 4,
+      "left_better_units": 12,
+      "left_worse_origins": 0,
+      "left_worse_units": 0,
+      "mean_auc_delta": -0.001901881,
+      "origins": 4,
+      "paired_units": 12,
+      "sd_auc_delta": 0.0004572866
+    },
+    {
+      "contrast": "frozen_down_refresh_vs_production",
+      "left_better_origins": 4,
+      "left_better_units": 12,
+      "left_worse_origins": 0,
+      "left_worse_units": 0,
+      "mean_auc_delta": -0.0029563253,
+      "origins": 4,
+      "paired_units": 12,
+      "sd_auc_delta": 0.000613082
+    }
+  ],
+  "bootstrap_note": "Intervals are descriptive hierarchical bootstrap intervals over four checkpoint origins and three data-order replicas per origin; they are not training-seed confidence intervals.",
+  "classification": "full_support",
+  "design": {
+    "arms": [
+      "production_newton_muon",
+      "delayed_down_refresh",
+      "frozen_down_refresh"
+    ],
+    "checkpoint_origins": [
+      "early_muon",
+      "early_newton_full",
+      "late_muon",
+      "late_newton_full"
+    ],
+    "data_order_replicas_per_origin": 3,
+    "evaluation_steps": [
+      0,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      112,
+      128
+    ],
+    "formal_workers": 12,
+    "rollout_steps": 128,
+    "shared_prefix_all_arms_through_step": 31,
+    "shared_prefix_delayed_and_frozen_through_step": 63
+  },
+  "directional_predictions": {
+    "delayed_protects_after_production_refresh": true,
+    "delayed_worsens_after_its_refresh": true,
+    "frozen_protects_after_production_refresh": true
+  },
+  "experiment": "MECH-09R",
+  "integrity_passed": true,
+  "interpretation": {
+    "not_supported_or_out_of_scope": [
+      "The result does not establish permanent harm beyond the 128-step horizon.",
+      "The result does not establish that every Newton-Muon versus Muon gap is caused by this refresh.",
+      "The three data-order replicas and four checkpoint origins are not independent training seeds.",
+      "Diagnostic timing is excluded from paper efficiency claims.",
+      "Selective-diag versus Selective-none is not a primary comparison."
+    ],
+    "supported": "Under the frozen restart protocol, a down-projection full-K refresh causally induces the acute post-refresh held-out-loss degradation. Delaying the refresh moves the degradation later; never refreshing the target down-projection K avoids it over the 128-step horizon."
+  },
+  "key_endpoints": [
+    {
+      "contrast": "delayed_down_refresh_vs_production",
+      "descriptive_hierarchical_bootstrap_95_high": -0.003747165299326616,
+      "descriptive_hierarchical_bootstrap_95_low": -0.006312838227880116,
+      "left_better_origins": 4,
+      "left_better_units": 12,
+      "left_worse_origins": 0,
+      "left_worse_units": 0,
+      "mean_heldout_loss_delta": -0.016529977321624718,
+      "mean_normalized_loss_delta": -0.004962711158037268,
+      "negative_delta_means": "left arm is better",
+      "optimizer_step": 48,
+      "origins": 4,
+      "paired_units": 12
+    },
+    {
+      "contrast": "frozen_down_refresh_vs_production",
+      "descriptive_hierarchical_bootstrap_95_high": -0.003761627929460554,
+      "descriptive_hierarchical_bootstrap_95_low": -0.00629782072495709,
+      "left_better_origins": 4,
+      "left_better_units": 12,
+      "left_worse_origins": 0,
+      "left_worse_units": 0,
+      "mean_heldout_loss_delta": -0.016529977321624718,
+      "mean_normalized_loss_delta": -0.004962711158037268,
+      "negative_delta_means": "left arm is better",
+      "optimizer_step": 48,
+      "origins": 4,
+      "paired_units": 12
+    },
+    {
+      "contrast": "delayed_down_refresh_vs_frozen_down_refresh",
+      "descriptive_hierarchical_bootstrap_95_high": 0.0028647291187723356,
+      "descriptive_hierarchical_bootstrap_95_low": 0.0019440113703084088,
+      "left_better_origins": 0,
+      "left_better_units": 0,
+      "left_worse_origins": 4,
+      "left_worse_units": 12,
+      "mean_heldout_loss_delta": 0.007931947708129883,
+      "mean_normalized_loss_delta": 0.0023947652954598997,
+      "negative_delta_means": "left arm is better",
+      "optimizer_step": 80,
+      "origins": 4,
+      "paired_units": 12
+    },
+    {
+      "contrast": "delayed_down_refresh_vs_production",
+      "descriptive_hierarchical_bootstrap_95_high": 4.210908329388677e-05,
+      "descriptive_hierarchical_bootstrap_95_low": -0.00039649422310148824,
+      "left_better_origins": 3,
+      "left_better_units": 7,
+      "left_worse_origins": 1,
+      "left_worse_units": 5,
+      "mean_heldout_loss_delta": -0.0004737973213197281,
+      "mean_normalized_loss_delta": -0.0001542300007542722,
+      "negative_delta_means": "left arm is better",
+      "optimizer_step": 128,
+      "origins": 4,
+      "paired_units": 12
+    },
+    {
+      "contrast": "frozen_down_refresh_vs_production",
+      "descriptive_hierarchical_bootstrap_95_high": -0.002026780784791978,
+      "descriptive_hierarchical_bootstrap_95_low": -0.0023628447428600077,
+      "left_better_origins": 4,
+      "left_better_units": 12,
+      "left_worse_origins": 0,
+      "left_worse_units": 0,
+      "mean_heldout_loss_delta": -0.0072048505147299284,
+      "mean_normalized_loss_delta": -0.002205432333794453,
+      "negative_delta_means": "left arm is better",
+      "optimizer_step": 128,
+      "origins": 4,
+      "paired_units": 12
+    }
+  ],
+  "question": "Does the production down-projection full-K refresh causally produce the post-refresh short-horizon degradation observed for original Newton-Muon in MECH-08?",
+  "run_id": "20260728T075907+0000",
+  "schema_version": 1,
+  "script_version": "2026-07-29.1"
+}

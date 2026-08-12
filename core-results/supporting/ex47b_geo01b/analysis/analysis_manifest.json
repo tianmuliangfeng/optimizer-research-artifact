@@ -1,0 +1,166 @@
+{
+  "checks": {
+    "contract": true,
+    "contract_lineage": true,
+    "discovery_not_claim_eligible": true,
+    "geometry_grid": true,
+    "geometry_row_count": true,
+    "numeric_finite": true,
+    "outcome_grid": true,
+    "outcome_row_count": true,
+    "predictor_lineage": true,
+    "row_integrity": true
+  },
+  "claim_eligible": false,
+  "confirmation_authorized": false,
+  "confirmation_candidate": false,
+  "contract_sha256": "6362647488486acd56cc6cfd9648cd6d990a85aa573c8f9ef2dcca20679d5e04",
+  "curvature_increment_result": "curvature_increment_not_supported",
+  "event_results": {
+    "delayed_refresh_64": {
+      "curvature_increment_checks": {
+        "local_error_reduction": true,
+        "short_horizon_increment": false
+      },
+      "curvature_increment_supported": false,
+      "directional_geometry_checks": {
+        "beats_norm_origin_centered": false,
+        "local_taylor_error": true,
+        "local_taylor_sign": true,
+        "short_horizon_loo": true,
+        "short_horizon_origin_centered": false,
+        "short_horizon_pooled": false,
+        "short_horizon_sign": true
+      },
+      "directional_geometry_supported": false,
+      "endpoint_harm_max": 0.003229759787551245,
+      "endpoint_harm_mean": 0.0023963673994138366,
+      "endpoint_harm_min": 0.0017700769719275478,
+      "endpoint_harm_positive_count": 12,
+      "event_id": "delayed_refresh_64",
+      "local_closure": {
+        "curvature_local_error_reduction_fraction": 0.9964606658846604,
+        "first_order_median_relative_error": 0.07772301271980632,
+        "first_order_sign_accuracy": 1.0,
+        "full_taylor_max_relative_error": 0.0037889906939338235,
+        "full_taylor_median_relative_error": 0.0002750877104661832,
+        "full_taylor_sign_accuracy": 1.0
+      },
+      "predictors": {
+        "first_order": {
+          "leave_one_origin_out_spearman": {
+            "early_muon": 0.4666666666666667,
+            "early_newton_full": 0.5,
+            "late_muon": 0.4,
+            "late_newton_full": 0.21666666666666667
+          },
+          "minimum_leave_one_origin_out_spearman": 0.21666666666666667,
+          "origin_centered_spearman": 0.06293706293706294,
+          "pooled_spearman": 0.43356643356643354,
+          "sign_accuracy": 0.9166666666666666
+        },
+        "full_taylor": {
+          "leave_one_origin_out_spearman": {
+            "early_muon": 0.4666666666666667,
+            "early_newton_full": 0.5,
+            "late_muon": 0.4,
+            "late_newton_full": 0.21666666666666667
+          },
+          "minimum_leave_one_origin_out_spearman": 0.21666666666666667,
+          "origin_centered_spearman": 0.06293706293706294,
+          "pooled_spearman": 0.43356643356643354,
+          "sign_accuracy": 0.9166666666666666
+        },
+        "norm_only": {
+          "leave_one_origin_out_spearman": {
+            "early_muon": 0.48333333333333334,
+            "early_newton_full": 0.4666666666666667,
+            "late_muon": 0.6,
+            "late_newton_full": 0.6333333333333333
+          },
+          "minimum_leave_one_origin_out_spearman": 0.4666666666666667,
+          "origin_centered_spearman": 0.34965034965034963,
+          "pooled_spearman": 0.6363636363636364,
+          "sign_accuracy": 1.0
+        }
+      },
+      "unit_count": 12
+    },
+    "production_refresh_32": {
+      "curvature_increment_checks": {
+        "local_error_reduction": true,
+        "short_horizon_increment": false
+      },
+      "curvature_increment_supported": false,
+      "directional_geometry_checks": {
+        "beats_norm_origin_centered": false,
+        "local_taylor_error": true,
+        "local_taylor_sign": true,
+        "short_horizon_loo": true,
+        "short_horizon_origin_centered": false,
+        "short_horizon_pooled": true,
+        "short_horizon_sign": true
+      },
+      "directional_geometry_supported": false,
+      "endpoint_harm_max": 0.006554576551111246,
+      "endpoint_harm_mean": 0.004579928443003617,
+      "endpoint_harm_min": 0.0029177697269255898,
+      "endpoint_harm_positive_count": 12,
+      "event_id": "production_refresh_32",
+      "local_closure": {
+        "curvature_local_error_reduction_fraction": 0.9972834608952853,
+        "first_order_median_relative_error": 0.03834095285368186,
+        "first_order_sign_accuracy": 1.0,
+        "full_taylor_max_relative_error": 0.0014968295277598797,
+        "full_taylor_median_relative_error": 0.00010415469773904847,
+        "full_taylor_sign_accuracy": 1.0
+      },
+      "predictors": {
+        "first_order": {
+          "leave_one_origin_out_spearman": {
+            "early_muon": 0.7333333333333333,
+            "early_newton_full": 0.6833333333333333,
+            "late_muon": 0.8666666666666667,
+            "late_newton_full": 0.85
+          },
+          "minimum_leave_one_origin_out_spearman": 0.6833333333333333,
+          "origin_centered_spearman": 0.1258741258741259,
+          "pooled_spearman": 0.8531468531468531,
+          "sign_accuracy": 1.0
+        },
+        "full_taylor": {
+          "leave_one_origin_out_spearman": {
+            "early_muon": 0.7333333333333333,
+            "early_newton_full": 0.6833333333333333,
+            "late_muon": 0.8666666666666667,
+            "late_newton_full": 0.85
+          },
+          "minimum_leave_one_origin_out_spearman": 0.6833333333333333,
+          "origin_centered_spearman": 0.16783216783216784,
+          "pooled_spearman": 0.8531468531468531,
+          "sign_accuracy": 1.0
+        },
+        "norm_only": {
+          "leave_one_origin_out_spearman": {
+            "early_muon": 0.5333333333333333,
+            "early_newton_full": 0.5333333333333333,
+            "late_muon": 0.7,
+            "late_newton_full": 0.7
+          },
+          "minimum_leave_one_origin_out_spearman": 0.5333333333333333,
+          "origin_centered_spearman": 0.7202797202797203,
+          "pooled_spearman": 0.6853146853146853,
+          "sign_accuracy": 1.0
+        }
+      },
+      "unit_count": 12
+    }
+  },
+  "geometry_input_sha256": "2bf703ec44d1f6d38346b3861fab33161cc7be80623112b4dd7feebaa6932de4",
+  "integrity_passed": true,
+  "no_confirmatory_p_values": true,
+  "outcomes_input_sha256": "884144041cd10b10e228e5c8a462b1330f480cf16189962e1c90c65c691d021b",
+  "phase": "discovery",
+  "schema_version": "geo01b_discovery_analysis_v1",
+  "scientific_result": "directional_geometry_not_supported"
+}

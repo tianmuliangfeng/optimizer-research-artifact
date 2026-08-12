@@ -1,0 +1,2 @@
+method,device_batch_size,exception,requested_allocation_gib,free_at_failure_gib,pytorch_allocated_at_failure_gib,reserved_unallocated_at_failure_gib,log
+newton_full,35,torch.OutOfMemoryError,3.36,2.14,74.1,2.36,20260722T070855+0000_capacity_exact_seed2026\cells\newton_full\batch_35\capacity_fine_cell.log

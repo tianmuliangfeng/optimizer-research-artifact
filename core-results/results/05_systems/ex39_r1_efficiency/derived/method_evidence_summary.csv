@@ -1,0 +1,5 @@
+method_role,r1_median_tokens_per_s,r1_steps_per_s,r1_perf_peak_allocated_mib,r1_perf_k_state_mib,llama1b_batch32_peak_allocated_mib,llama1b_k_state_mib,llama1b_max_device_batch,r1_lr_grid_best_observed_multiplier,r1_lr_grid_best_observed_final_val_loss,r1_lr_grid_loss_range,lr_evidence_class,efficiency_evidence_class
+muon,445562.6493865194,0.849843310139693,37703.0,0.0,65409.4921875,0.0,39,1.2,3.3884,0.006400000000000183,supporting_only,paper_ready
+original_newton_muon,436681.71588040993,0.8329042737587165,39168.0,378.0,74483.55419921875,5888.25,34,1.2,3.3732,0.0040999999999997705,supporting_only,paper_ready
+selective_none,437829.8577159359,0.8350941805189818,38304.0,162.0,68061.1201171875,1728.0,37,1.0,3.3787,0.0049000000000001265,supporting_only,paper_ready
+selective_diag,437467.7418303422,0.8344034992796749,38304.0,162.28125,68062.2626953125,1728.755859375,37,1.0,3.3725,0.0045999999999999375,supporting_only,paper_ready

@@ -1,0 +1,42 @@
+{
+  "code_directory": "scripts/27_mech01_unified_k_diagnostics",
+  "entrypoints": {
+    "command:20260727_mech01_llama_host_remaining": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/27_mech01_unified_k_diagnostics/20260727_mech01_llama_host_remaining.sh"
+    },
+    "command:20260727_mech01_r1_none6200": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "reproduce": []
+      },
+      "path": "commands/27_mech01_unified_k_diagnostics/20260727_mech01_r1_none6200.sh"
+    },
+    "script:run_mech01": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/27_mech01_unified_k_diagnostics/run_mech01.py"
+    }
+  },
+  "experiment_id": "27_mech01_unified_k_diagnostics",
+  "legacy_result_roots": [
+    "27_mech01_unified_k_diagnostics"
+  ],
+  "reproducibility": {
+    "fresh_rerun": true,
+    "generic_artifact_verify": true,
+    "native_resume": false,
+    "native_verify": false,
+    "one_click_rerun": false,
+    "source_freeze": "legacy_command_or_live_source"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "27 Mech01 Unified K Diagnostics"
+}

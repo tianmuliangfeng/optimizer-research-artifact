@@ -1,0 +1,44 @@
+{
+  "analysis_name": "41D_r1_diag_bridge",
+  "analysis_only": true,
+  "artifacts": [
+    "diag_bridge_cells.csv",
+    "diag_bridge_effects_by_seed.csv",
+    "diag_bridge_effects_summary.csv",
+    "diag_bridge_pareto.csv",
+    "diag_bridge_decision.json",
+    "checks.json",
+    "source_audit.json",
+    "R1_DIAG_BRIDGE_REPORT.md",
+    "artifact.json"
+  ],
+  "classification": "diag_recovers_block4_quality_at_near_none_state_cost",
+  "contract_sha256": "28e2f9bb897ff5b99c3efc0d9af1adacc03232dd2bd3607a2c3af70324def21d",
+  "methods": [
+    "none",
+    "diag",
+    "block4"
+  ],
+  "new_training_recommended": false,
+  "new_training_runs": 0,
+  "output_sha256": {
+    "R1_DIAG_BRIDGE_REPORT.md": "4be77b549637365cfad4ec209fee139feb9f1508df50923f544d13b1a4e1aaf2",
+    "artifact.json": "5ad5a3784cfeea5a2875bbf4359070432d4da79ed310b9e442fd2b83d0f058ea",
+    "checks.json": "b860cac41745a0a048543217351da5f3f0c04e867a5827d117f07342ebcd3c17",
+    "diag_bridge_cells.csv": "a8cb5d227319be6831756b833073c98ff5046c761e1695fecbd2b62db4d31cc2",
+    "diag_bridge_decision.json": "addd23aa651f0be3803295f95314599d3e9bfa4693f8bb854311caf6ca8af236",
+    "diag_bridge_effects_by_seed.csv": "268bbf89dffa66777b420a516656f28a7aa7933a8fa65aa94d8a215e1a1725c8",
+    "diag_bridge_effects_summary.csv": "f8fbc7295781416cc8bf5b107137e33159dcac4e474918bc0223ccf124b1ac29",
+    "diag_bridge_pareto.csv": "b7bff72a5173d45f896f77caa6a14bba3b6f65d810ca067420387245b8376871",
+    "source_audit.json": "f9bdec74bf5b98799b21cac27221a26e39e1d5213380fd73a824b4dbb9774d8a"
+  },
+  "passed": true,
+  "schema_version": 1,
+  "script_version": "2026-07-31.1",
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "timing_usable": false
+}

@@ -1,0 +1,286 @@
+{
+  "schema_version": "ex48_llama1b_10b_multibudget_formal_v1",
+  "experiment_number": 48,
+  "status": "preregistered_formal_authorized_by_user_20260805",
+  "family": "llama1b_long_token_multibudget_confirmation",
+  "scientific_evidence_class": "formal_confirmatory_if_all_integrity_gates_pass",
+  "outcome_blind_at_freeze": true,
+  "engineering_amendments_before_formal": [
+    {
+      "date": "2026-08-05",
+      "stage": "runtime_preflight_before_data_audit_initialization_pilot_or_training",
+      "field": "runtime.accepted_triton_kernels_sha256",
+      "old_value": "f092ae994f5a5c1ebacf3938e2bb8d610dc537b928e2a5039438afe1e46a271f",
+      "new_value": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d",
+      "reason": "The old digest was the Windows CRLF byte representation. The corrected digest is the content-identical Linux LF representation present in both accepted remote checkouts.",
+      "scientific_configuration_changed": false,
+      "outcome_observed": false
+    },
+    {
+      "date": "2026-08-05",
+      "stage": "outcome_free_exact_resume_pilot_before_formal",
+      "field": "checkpoint_rng_restore_device_normalization",
+      "old_value": "All checkpoint storages loaded with map_location=cuda, including CPU RNG ByteTensors",
+      "new_value": "Model and optimizer storages remain CUDA-mapped; only torch CPU and CUDA RNG-state ByteTensors are copied back to CPU immediately before RNG restoration",
+      "reason": "PyTorch RNG restoration requires CPU ByteTensors. The outcome-free interruption pilot caught the device mismatch before formal training.",
+      "scientific_configuration_changed": false,
+      "outcome_observed": false
+    },
+    {
+      "date": "2026-08-05",
+      "stage": "after_aborted_unaccepted_formal_before_replacement_preflight",
+      "field": "execution.single_host_gpu_count",
+      "old_value": 2,
+      "new_value": 4,
+      "reason": "The user allocated one fresh 4xH100 host, interrupted the incomplete two-GPU run, and deleted its artifacts. The replacement run uses one physical host to reduce wall-clock without introducing a cross-host method or seed confound.",
+      "scientific_configuration_changed": false,
+      "analysis_rules_changed": false,
+      "prior_run_accepted_as_evidence": false,
+      "prior_run_outcome_used_for_amendment": false,
+      "old_run_resumable": false,
+      "timing_claim_eligible": false
+    }
+  ],
+  "question": "Does the three-seed Muon-over-Newton-family ordering on LLaMA-1B persist when exposure increases from 3.25B to 6.97B and approximately 10B training tokens?",
+  "claim_boundaries": [
+    "This is a within-LLaMA training-stage experiment, not a pure architecture causal test.",
+    "The 6.97B endpoint matches experiment 44 in tokens per parameter descriptively; the architectures, parameter counts and recipes remain different.",
+    "The experiment does not identify the causal origin of refresh harm.",
+    "Timing after any resume is descriptive and not used as a primary claim."
+  ],
+  "profile": {
+    "name": "llama_swiglu_1b_v1",
+    "n_layer": 18,
+    "n_head": 16,
+    "n_embd": 2048,
+    "intermediate_size": 5504,
+    "parameters": 1013690368,
+    "expected_matrix_tensors": 126,
+    "expected_backup_tensors": 38,
+    "expected_preconditioner_groups": {
+      "down_none": 54,
+      "down_diag": 72,
+      "newton_full": 72,
+      "muon": 0
+    }
+  },
+  "grid": {
+    "methods": [
+      "down_none",
+      "down_diag",
+      "newton_full",
+      "muon"
+    ],
+    "seeds": [
+      2024,
+      2025,
+      2026
+    ],
+    "formal_units": 12,
+    "host_count": 1,
+    "gpus": 4
+  },
+  "training": {
+    "global_batch_size": 512,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "gradient_accumulation_steps": 64,
+    "microbatch_tokens": 8192,
+    "tokens_per_update": 524288,
+    "backup_lr": 0.0036,
+    "matrix_lr": 0.01,
+    "adamw_matrix_lr": 0.000576,
+    "checkpoint_every_steps": 128,
+    "cublas_workspace_config": ":4096:8",
+    "preconditioner_global_step_is_absolute": true
+  },
+  "lr_policy": {
+    "name": "forked_equal_1800_step_cooldowns_v1",
+    "from_scratch_required": true,
+    "continuing_accepted_zero_lr_step6200_checkpoint_forbidden": true,
+    "plateau_multiplier": 1.0,
+    "cooldown_steps": 1800,
+    "cooldown_formula": "max(0, (target_step - completed_steps) / (target_step - start_step))",
+    "interpretation": "Each primary budget endpoint has the accepted peak-LR semantics followed by an equal 1800-update linear cooldown. Intermediate endpoints are counterfactual branches, not checkpoints on the final 10B trajectory."
+  },
+  "phases": [
+    {
+      "id": "backbone_4400",
+      "parent": null,
+      "start_step": 0,
+      "target_step": 4400,
+      "schedule": "plateau",
+      "role": "fork_source",
+      "retain_checkpoint": false
+    },
+    {
+      "id": "cooldown_6200",
+      "parent": "backbone_4400",
+      "start_step": 4400,
+      "target_step": 6200,
+      "schedule": "linear_cooldown",
+      "role": "primary_endpoint",
+      "budget_id": "tokens_3p2506b",
+      "actual_tokens": 3250585600,
+      "tokens_per_parameter": 3.206684903609541,
+      "retain_checkpoint": true
+    },
+    {
+      "id": "backbone_11493",
+      "parent": "backbone_4400",
+      "start_step": 4400,
+      "target_step": 11493,
+      "schedule": "plateau",
+      "role": "fork_source",
+      "retain_checkpoint": false
+    },
+    {
+      "id": "cooldown_13293",
+      "parent": "backbone_11493",
+      "start_step": 11493,
+      "target_step": 13293,
+      "schedule": "linear_cooldown",
+      "role": "primary_endpoint",
+      "budget_id": "tokens_6p9694b",
+      "actual_tokens": 6969360384,
+      "tokens_per_parameter": 6.875235874787359,
+      "retain_checkpoint": true
+    },
+    {
+      "id": "backbone_17273",
+      "parent": "backbone_11493",
+      "start_step": 11493,
+      "target_step": 17273,
+      "schedule": "plateau",
+      "role": "fork_source",
+      "retain_checkpoint": false
+    },
+    {
+      "id": "cooldown_19073",
+      "parent": "backbone_17273",
+      "start_step": 17273,
+      "target_step": 19073,
+      "schedule": "linear_cooldown",
+      "role": "primary_endpoint",
+      "budget_id": "tokens_approximately_10b",
+      "actual_tokens": 9999745024,
+      "tokens_per_parameter": 9.86469373653948,
+      "retain_checkpoint": true
+    }
+  ],
+  "validation": {
+    "regular_every_steps": 100,
+    "forced_phase_start_and_target": true,
+    "tokens_per_evaluation": 10485760,
+    "best_checkpoint_selection_primary": false,
+    "primary_outcome": "fixed_target_step_validation_loss"
+  },
+  "data": {
+    "train_pattern": "fineweb_train_*.bin",
+    "validation_pattern": "fineweb_val_*.bin",
+    "header_magic": 20240520,
+    "header_version": 1,
+    "header_bytes": 1024,
+    "token_dtype_bytes": 2,
+    "expected_first_train_index": 1,
+    "minimum_contiguous_train_shards": 101,
+    "required_validation_shards": 1,
+    "unique_order_required": true,
+    "full_content_sha256_required": true,
+    "wrap_count_required": 0,
+    "prefetched_train_microbatches": 1
+  },
+  "resume": {
+    "mode": "same_run_same_contract_only",
+    "atomic_checkpoint_replace": true,
+    "metrics_trim_to_checkpoint": true,
+    "source_checkpoint_sha256_required": true,
+    "required_payload_keys": [
+      "model",
+      "optimizers",
+      "train_loader",
+      "next_x",
+      "next_y",
+      "completed_steps",
+      "rng",
+      "contract_sha256",
+      "data_inventory_sha256",
+      "method",
+      "seed",
+      "phase_id",
+      "init_sha256",
+      "resume_count"
+    ],
+    "loader_cursor_must_match_completed_steps": true,
+    "timing_after_resume_claim_eligible": false
+  },
+  "checkpoint_retention": {
+    "retain_primary_endpoints_only": true,
+    "retained_endpoint_checkpoints_per_unit": 3,
+    "retire_fork_only_after_all_direct_children_pass": true,
+    "retirement_certificate_required": true,
+    "estimated_three_seed_endpoint_bytes": 439091043444,
+    "minimum_free_disk_bytes_at_preflight": 600000000000
+  },
+  "runtime": {
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "numpy": "2.2.6",
+    "nvidia_driver": "580.95.05",
+    "gpu_count": 4,
+    "gpu_name_contains": "H100",
+    "compute_capability": [
+      9,
+      0
+    ],
+    "minimum_gpu_memory_bytes": 80000000000,
+    "accepted_triton_kernels_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+  },
+  "accepted_sources": {
+    "scripts/17_llama_swiglu_validation/train_llama_swiglu.py": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+    "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py": "f55601c5e1d5d898b3f7b51100d02eb552c7a615963828dd26688766b652f7d0"
+  },
+  "public_source_hashes": {
+    "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py": "8ecb634b751017397bc9bd60f032fdd890b2d5c1a4462de7b697e1bdf97ef8c4"
+  },
+  "public_packaging": {
+    "change_scope": "default_result_root_only",
+    "historical_source_hash_retained": true,
+    "scientific_configuration_changed": false
+  },
+  "analysis": {
+    "primary_budgets": [
+      "tokens_3p2506b",
+      "tokens_6p9694b",
+      "tokens_approximately_10b"
+    ],
+    "primary_pairings": [
+      "down_none-minus-muon",
+      "down_diag-minus-muon",
+      "newton_full-minus-muon",
+      "down_none-minus-newton_full",
+      "down_diag-minus-newton_full"
+    ],
+    "practical_loss_margin": 0.002,
+    "clear_selective_recovery_rule": "At 10B, down_none or down_diag has mean(method-muon) <= -0.002 and at least two of three paired seed differences are negative.",
+    "persistent_muon_lead_rule": "At 10B, both down_none and down_diag have mean(method-muon) >= +0.002 and at least two of three paired seed differences are positive for each method.",
+    "otherwise": "mixed_or_practically_equivalent"
+  },
+  "pilot": {
+    "method": "muon",
+    "seed": 480005,
+    "first_target_step": 2,
+    "planned_interrupt_after_new_steps": 1,
+    "branch_target_step": 4,
+    "purpose": "Exercise atomic checkpoint, in-place exact resume, no-wrap cursor audit, and cross-directory source-checkpoint branching without opening formal outcomes."
+  },
+  "wandb": {
+    "project": "Selective-Newton-Muon-MainConf-LLaMA-1B-10B-Formal-20260805",
+    "upload_timing": "post_endpoint_from_local_primary_metrics",
+    "failure_invalidates_scientific_run": false,
+    "train_log_every_steps": 20
+  }
+}

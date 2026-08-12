@@ -1,0 +1,35 @@
+{
+  "artifacts": [
+    "SELECTIVE_PRIMARY_COMPARISON_REPORT.md",
+    "primary_contrasts_by_seed.csv",
+    "primary_contrasts_summary.csv",
+    "primary_method_summary.csv",
+    "report.html",
+    "source_audit.json"
+  ],
+  "baseline_contrasts_per_family": 1,
+  "diag_vs_none_primary": false,
+  "families": [
+    "r1",
+    "llama124",
+    "llama1b"
+  ],
+  "output_sha256": {
+    "SELECTIVE_PRIMARY_COMPARISON_REPORT.md": "1ef0dd1c13386858f87cd02549fd9c62400511a837e1631e6b3d9f06224b77ed",
+    "primary_contrasts_by_seed.csv": "00e4bdefe2d857e3064934a99d2685a79fa93335dac8eecf59822e404ed14839",
+    "primary_contrasts_summary.csv": "f17d484ab6613a1b2a661e461b2a614921f0c5a2f3bc3c69364e484694ed69a4",
+    "primary_method_summary.csv": "2433755f09b404a1aff104919c2160b22227b151b77c13c8aa24ae7912d2357f",
+    "report.html": "c23468bf3c521347beaaf18e2a9845a57c5893fccbcc5bda9c142fb165bf66eb",
+    "source_audit.json": "69b6bb1da29477057f043a8c75ee378d2bd05385344a5ed4866f40993284dc3a"
+  },
+  "passed": true,
+  "practical_margin": 0.002,
+  "primary_contrasts_per_family": 4,
+  "schema_version": 1,
+  "script_version": "2026-07-27.1",
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ]
+}

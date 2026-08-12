@@ -1,0 +1,8 @@
+contrast,role,left,right,n_seeds,paired_mean,paired_sample_sd,paired_t_ci95_low,paired_t_ci95_high,left_better_count,right_better_count,practical_equivalence_margin,mean_within_equivalence_margin
+selective_diag_minus_mousse,primary,diag,mousse,3,-0.006933333333333162,0.0010016652800879074,-0.009421607830244068,-0.004445058836422256,3,0,0.002,False
+selective_none_minus_mousse,primary,none,mousse,3,-0.00136666666666659,0.0005033222956848671,-0.002616988562589141,-0.00011634477074403955,3,0,0.002,True
+mousse_minus_muon,anchor,mousse,muon,3,-0.009100000000000108,0.0,-0.009100000000000108,-0.009100000000000108,3,0,0.002,False
+mousse_minus_original_newton_muon,anchor,mousse,block4,3,0.005833333333333209,0.0009237604307034277,0.0035385852107137966,0.008128081455952622,0,3,0.002,False
+mousse_minus_moonlight,external_background,mousse,moonlight,3,-0.006933333333333458,0.0003785938897198006,-0.00787381269226003,-0.005992853974406886,3,0,0.002,False
+mousse_minus_normuon,external_background,mousse,normuon,3,-0.0664333333333335,0.0011590225767142473,-0.06931250502502767,-0.06355416164163932,3,0,0.002,False
+mousse_minus_adamw,external_background,mousse,adamw,3,-0.1324000000000002,0.0045902069670112336,-0.14380270623192076,-0.12099729376807968,3,0,0.002,False

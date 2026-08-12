@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-07-21",
+  "formal_run_count": 12,
+  "lr_cross_run_count": 6,
+  "outputs": [
+    "R1_MULTISEED_FACTORIAL_ANALYSIS_20260721.md",
+    "analysis_manifest.json",
+    "data_quality_checks.csv",
+    "formal_seed2024_2025_history_long.csv",
+    "r1_multiseed_curve_dominance.csv",
+    "r1_multiseed_method_aggregate.csv",
+    "r1_multiseed_paired_deltas.csv",
+    "r1_multiseed_run_summary.csv",
+    "r1_multiseed_steps_to_loss.csv",
+    "r1_three_seed_factorial_cells.csv",
+    "r1_three_seed_factorial_effects.csv",
+    "source_manifest.csv"
+  ],
+  "quality_checks": {
+    "PASS": 180
+  },
+  "status": "PASS_WITH_CAVEATS"
+}

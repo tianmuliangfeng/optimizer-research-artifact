@@ -1,0 +1,27 @@
+{
+  "schema_version": "mdp_local_pipeline_config_v1",
+  "synthetic": false,
+  "catalog": "input_catalog.template.json",
+  "complexity_config": "routing_complexity.json",
+  "practical_loss_margin": 0.002,
+  "cross_scale_family": "gpt_scale",
+  "equivariance": {
+    "seed": 20240731,
+    "input_dim": 12,
+    "output_dim": 8,
+    "blocks": 3,
+    "tolerance": 1e-09,
+    "cross_block_minimum_drift": 1e-05
+  },
+  "refresh": {
+    "enabled": false,
+    "reason": "Enable after the method-deepening snapshot bundle is exported.",
+    "formal_contract": true,
+    "snapshot_manifest": "refresh_snapshot_manifest.json",
+    "ridge_scale": 0.2,
+    "ridge_epsilon": 1e-08,
+    "residual_tolerance": 1e-08,
+    "runtime_inverse_tolerance": 0.005,
+    "symmetry_tolerance": 1e-06
+  }
+}
