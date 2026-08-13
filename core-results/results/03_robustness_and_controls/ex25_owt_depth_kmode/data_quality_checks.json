@@ -1,0 +1,79 @@
+{
+  "checks": [
+    {
+      "check": "exact_36_run_set",
+      "detail": {
+        "expected": 36,
+        "extra": [],
+        "missing": [],
+        "observed": 36
+      },
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "three_seed_coverage",
+      "detail": {
+        "2024": 12,
+        "2025": 12,
+        "2026": 12
+      },
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "exact_validation_grid_0_to_4500",
+      "detail": [],
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "exact_train_grid_0_to_4980",
+      "detail": [],
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "seed_matched_step0_exact",
+      "detail": [],
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "target_layer_counts_match_rules",
+      "detail": [],
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "none_diag_full_tensor_counts_match",
+      "detail": [],
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "k_state_parts_sum_to_total",
+      "detail": [],
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "released_fraction_matches_anchor_full",
+      "detail": [],
+      "passed": true,
+      "severity": "critical"
+    },
+    {
+      "check": "all_values_finite",
+      "detail": {
+        "rows": 120330
+      },
+      "passed": true,
+      "severity": "critical"
+    }
+  ],
+  "normalized_metric_rows": 120330,
+  "script_version": "2026-07-24.2",
+  "source_file_count": 17,
+  "status": "passed"
+}

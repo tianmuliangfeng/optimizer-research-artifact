@@ -56,6 +56,9 @@ The file policy is explicit-whitelist only. Directory recursion and glob expansi
 - Experiment 16 supplies the crossed learning-rate control.
 - Experiment 19 preserves provenance for the extended baseline panel later superseded by Experiment 45.
 - Experiment 21 is the host-context bridge.
+- Experiments 25 and 28 contribute the compact, accepted per-seed depth-contrast
+  tables used to audit the OpenWebText and WikiText markers in the depth-transfer
+  figure. They remain supporting evidence and do not establish a universal depth law.
 - The Experiment 38 source-audit graph freezes the compact inputs from Experiments 01, 04, 06, 27, 30, 31, 33, 35, and 36 that are not otherwise copied directly.
 - MDP-04 is retained as diagnostic negative evidence with its failed numerical hard gate visible.
 - MDP-05 is retained as the accepted confirmatory boundary result; only its supported loss-shock claim is eligible.
@@ -67,7 +70,7 @@ The dependency graph is non-recursive. The builder reads only the `relative_path
 
 ## Deliberately not in the compact package
 
-Experiments 03, 08, 13, 18, 23, 25, 26, 28, 32, and 47 are archive-only historical, superseded, intermediate, or engineering records. Experiments 05, 07, 09, 10, and 11 are planned or placeholder records and are excluded.
+Experiments 03, 08, 13, 18, 23, 26, 32, and 47 are archive-only historical, superseded, intermediate, or engineering records. Experiments 05, 07, 09, 10, and 11 are planned or placeholder records and are excluded. Experiments 25 and 28 are represented only by four compact, hash-anchored analysis files each; their raw tracking exports and larger analysis artifacts remain in the restricted full archive.
 
 Raw tracking exports, checkpoints, optimizer states, training logs, caches, failed runs, smoke-only runs, dry runs, and unlisted source snapshots are excluded from `core-results`. The compact package also omits large history or layer-level trajectory tables when an accepted aggregate, paired table, audit manifest, or frozen source graph is sufficient. This is a compactness decision, not a deletion policy for the full archive.
 
@@ -129,8 +132,8 @@ the pilot/source/data/resume-lineage manifest. The accepted-result snapshot bind
 all four paths and hashes, while the independent audit and lineage certificate bind
 the native receipt to the exact run and all 36 retained endpoint certificates.
 
-The complete package contains 494 selected artifacts plus generated provenance and
-validation files. It was rebuilt from an empty staging directory; appending an EX48
+The complete package inventory is generated and validated at build time rather than
+hard-coded in this guide. It was rebuilt from an empty staging directory; appending an EX48
 folder to the former draft was not used. Ten full-archive-only inputs remain recorded
 in the omission ledger. The 36 endpoint checkpoint tensors are intentionally absent
 from this compact package; their certified total is 439,092,884,892 bytes.

@@ -1,0 +1,110 @@
+{
+  "artifacts": [
+    "WIKITEXT_DEPTH_KMODE_MULTISEED_ANALYSIS_20260725.md",
+    "analysis_manifest.json",
+    "analysis_verdict.json",
+    "anchor_summary.csv",
+    "cross_dataset_depth_deltas.svg",
+    "cross_dataset_depth_transfer.csv",
+    "data_quality_checks.csv",
+    "data_quality_checks.json",
+    "input_manifest.csv",
+    "paired_depth_contrasts.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_03.081+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_07.518+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_11.814+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_15.952+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_20.326+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_25.213+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_28.806+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_32.694+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_36.711+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_41.906+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_46.026+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_50.865+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_54.724+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_29_58.637+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_30_02.605+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_30_07.537+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-25T13_30_11.938+08_00.csv",
+    "rule_multiseed_summary.csv",
+    "run_summary.csv",
+    "validation_curves_long.csv"
+  ],
+  "schema_version": 1,
+  "script_version": "2026-07-25.1",
+  "source_export_sha256": {
+    "wandb_export_2026-07-25T13_29_03.081+08_00.csv": "5382dce14cd3ae2503987809a9fc3a66d6abe90f61b248bca6c1ce2b0bd0bbe3",
+    "wandb_export_2026-07-25T13_29_07.518+08_00.csv": "7062d894eeb60a4f4d1b00efe4e2e2f5e8bc05c8a647889677280864422eed14",
+    "wandb_export_2026-07-25T13_29_11.814+08_00.csv": "a5ffefaad75a10027f7017c728c217c407b8a752d28b15abeb170032a682cde8",
+    "wandb_export_2026-07-25T13_29_15.952+08_00.csv": "6f897388dafda08acaff936860b271fcb374244f1d918c85bd7d506247e2f503",
+    "wandb_export_2026-07-25T13_29_20.326+08_00.csv": "7a5908784bdea41870a73eb95383eac605569d451b0f725343c442818fe54a68",
+    "wandb_export_2026-07-25T13_29_25.213+08_00.csv": "d0b93a3ffbcb876fbe6e53438588c5a02da6ae4705bebbf5858b81dd0ba3fbea",
+    "wandb_export_2026-07-25T13_29_28.806+08_00.csv": "fe385837abfa7478fd5ceb45f88e6c0453e48395298853bd6c7ba7ec1b9f68dd",
+    "wandb_export_2026-07-25T13_29_32.694+08_00.csv": "922129cc0f17447a6e0a21a74775b348236e96df84f2972afda214fa15079b43",
+    "wandb_export_2026-07-25T13_29_36.711+08_00.csv": "ee141b9bc27910bb529c26c76b33735c4fcf5a2709964ac917adc67a0567d838",
+    "wandb_export_2026-07-25T13_29_41.906+08_00.csv": "d410900d20fa8164ad93cfea821e6c04c99862000830531b0543f20633211cac",
+    "wandb_export_2026-07-25T13_29_46.026+08_00.csv": "592fda6fe31eda8f0d763e45ec72b4f2e2f643f52030b1d7584c2a8b07b139c9",
+    "wandb_export_2026-07-25T13_29_50.865+08_00.csv": "c9fa65de2595d10af7f368e73a7136e507cf0a61766f238ca3cdededbfe832c7",
+    "wandb_export_2026-07-25T13_29_54.724+08_00.csv": "4b463e200a4335781561d1498f46f319ffff55defdd6bf65e448823d62310fa8",
+    "wandb_export_2026-07-25T13_29_58.637+08_00.csv": "9b3d7a34c92a307bef23922851cf5e46f5c88179931e0be80a8c9c98c4eeb1f4",
+    "wandb_export_2026-07-25T13_30_02.605+08_00.csv": "7988cbba8042978ca335845bd91996a92769b94a9a1f008049b0ecf4a7c274ce",
+    "wandb_export_2026-07-25T13_30_07.537+08_00.csv": "b3656b6afc8ed6fcd329ed4cfbc95575ebecbdff781dc8f69a27b0ea82837df1",
+    "wandb_export_2026-07-25T13_30_11.938+08_00.csv": "9fa3332844df9fce728149b279851020183eb3ea915f994637288bae8661c5a9"
+  },
+  "source_exports": 17,
+  "status": "complete",
+  "verdict": {
+    "additional_wikitext_depth_masks_needed": false,
+    "additional_wikitext_seeds_needed": false,
+    "all_diag_minus_full_mean": -0.004015207290649562,
+    "all_none_minus_full_mean": 0.01133322715759233,
+    "all_pair_sign_counts": {
+      "auc_negative": 14,
+      "late3_negative": 14,
+      "step4500_negative": 14,
+      "total_pairs": 15
+    },
+    "all_rule_mean_diag_minus_none": -0.01534843444824189,
+    "all_rule_negative_seed_count": 3,
+    "all_rule_sd_diag_minus_none": 0.006156375129678784,
+    "analysis_date": "2026-07-25",
+    "anchor_full_minus_muon_mean": -0.11910939216613754,
+    "claim_boundary": "The experiment identifies a replicated depth-amplitude pattern for mlp.c_proj in local 12-layer GPT. It does not establish a universal best mask, individual-layer causality, attention/c_fc behavior, or transfer to the official R1/block4 implementation.",
+    "classification": "full_cross_dataset_depth_pattern_replication",
+    "depth_magnitude_pattern_replication_pass": true,
+    "frozen_interaction_checks": {
+      "center": {
+        "mean": 0.0038763682047523083,
+        "negative_seeds": 1,
+        "positive_seeds": 2
+      },
+      "edge": {
+        "mean": -0.005011638005575136,
+        "negative_seeds": 2,
+        "positive_seeds": 1
+      },
+      "late": {
+        "mean": 0.006708542505899621,
+        "negative_seeds": 1,
+        "positive_seeds": 2
+      }
+    },
+    "memory_mib": {
+      "all_diag": 9746.931803385416,
+      "all_none": 9749.797688802084,
+      "anchor_full": 11051.9443359375,
+      "anchor_muon": 8906.74951171875
+    },
+    "paired_contrast_count": 15,
+    "primary_contrast": "diag minus none; negative favors diag",
+    "primary_endpoint": "validation loss at common step 4500",
+    "recommended_next_depth_extension": "R1 seed2026 early/center/late/edge x none/diag screen after layer-routing equivalence audit; add seeds2024/2025 only for the preregistered edge/center confirmation if the screen transfers",
+    "rules_with_3_of_3_negative": 4,
+    "rules_with_negative_means": 5,
+    "run_count": 36,
+    "status": "valid",
+    "timing_usable": false,
+    "uniform_direction_replication_pass": true
+  }
+}

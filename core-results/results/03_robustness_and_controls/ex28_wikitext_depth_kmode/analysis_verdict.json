@@ -1,0 +1,53 @@
+{
+  "additional_wikitext_depth_masks_needed": false,
+  "additional_wikitext_seeds_needed": false,
+  "all_diag_minus_full_mean": -0.004015207290649562,
+  "all_none_minus_full_mean": 0.01133322715759233,
+  "all_pair_sign_counts": {
+    "auc_negative": 14,
+    "late3_negative": 14,
+    "step4500_negative": 14,
+    "total_pairs": 15
+  },
+  "all_rule_mean_diag_minus_none": -0.01534843444824189,
+  "all_rule_negative_seed_count": 3,
+  "all_rule_sd_diag_minus_none": 0.006156375129678784,
+  "analysis_date": "2026-07-25",
+  "anchor_full_minus_muon_mean": -0.11910939216613754,
+  "claim_boundary": "The experiment identifies a replicated depth-amplitude pattern for mlp.c_proj in local 12-layer GPT. It does not establish a universal best mask, individual-layer causality, attention/c_fc behavior, or transfer to the official R1/block4 implementation.",
+  "classification": "full_cross_dataset_depth_pattern_replication",
+  "depth_magnitude_pattern_replication_pass": true,
+  "frozen_interaction_checks": {
+    "center": {
+      "mean": 0.0038763682047523083,
+      "negative_seeds": 1,
+      "positive_seeds": 2
+    },
+    "edge": {
+      "mean": -0.005011638005575136,
+      "negative_seeds": 2,
+      "positive_seeds": 1
+    },
+    "late": {
+      "mean": 0.006708542505899621,
+      "negative_seeds": 1,
+      "positive_seeds": 2
+    }
+  },
+  "memory_mib": {
+    "all_diag": 9746.931803385416,
+    "all_none": 9749.797688802084,
+    "anchor_full": 11051.9443359375,
+    "anchor_muon": 8906.74951171875
+  },
+  "paired_contrast_count": 15,
+  "primary_contrast": "diag minus none; negative favors diag",
+  "primary_endpoint": "validation loss at common step 4500",
+  "recommended_next_depth_extension": "R1 seed2026 early/center/late/edge x none/diag screen after layer-routing equivalence audit; add seeds2024/2025 only for the preregistered edge/center confirmation if the screen transfers",
+  "rules_with_3_of_3_negative": 4,
+  "rules_with_negative_means": 5,
+  "run_count": 36,
+  "status": "valid",
+  "timing_usable": false,
+  "uniform_direction_replication_pass": true
+}

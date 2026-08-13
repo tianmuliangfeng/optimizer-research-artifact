@@ -1,0 +1,55 @@
+{
+  "additional_owt_seed_reason": "The delivered export already contains the preregistered seeds 2024/2025/2026 for all 36 runs.",
+  "additional_owt_seeds_needed": false,
+  "all_rule_mean_diag_minus_none": -0.013930002848306996,
+  "all_rule_means_negative": true,
+  "all_rule_negative_seed_count": 3,
+  "all_rule_sd_diag_minus_none": 0.0010567286297300097,
+  "anchor_full_minus_muon_mean": -0.17136589686075845,
+  "endpoint_sign_consistency": {
+    "auc": 15,
+    "late3": 15,
+    "step4500": 15,
+    "total_pairs": 15
+  },
+  "interaction_sign_counts": {
+    "center": {
+      "negative": 0,
+      "positive": 3
+    },
+    "early": {
+      "negative": 2,
+      "positive": 1
+    },
+    "edge": {
+      "negative": 3,
+      "positive": 0
+    },
+    "late": {
+      "negative": 0,
+      "positive": 3
+    }
+  },
+  "max_abs_mean_interaction_vs_all": 0.0071024894714349545,
+  "mean_delta_range_across_rules": 0.011680285135904949,
+  "paired_contrast_count": 15,
+  "primary_classification": "uniform_diag_benefit",
+  "primary_contrast": "diag minus none; negative favors diag",
+  "primary_endpoint": "validation loss at common step 4500",
+  "r1_depth_replication_reason": "The benefit direction is uniform, while center and edge have opposite 3/3 interaction signs relative to all-depth. R1 should test transfer of the magnitude pattern, not rerun OWT seeds.",
+  "r1_depth_replication_recommended": true,
+  "r1_depth_replication_scope": "seed2026 partial-rule screen (early/center/late/edge x none/diag); reuse all-depth/anchor runs only after numerical-equivalence audit",
+  "replication_execution_order": "If sequential: WikiText seed2026 first as the cheaper gate, then R1 seed2026. If independent hosts are available, run both screens in parallel.",
+  "rules_with_3_of_3_negative": 5,
+  "run_count": 36,
+  "secondary_depth_magnitude_modulation": true,
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "status": "valid",
+  "uniform_contract_pass": true,
+  "wikitext_depth_replication_recommended": true,
+  "wikitext_depth_replication_scope": "seed2026 screen first; prioritize center/edge/all pairs plus matched full/Muon anchors, then expand only if the preregistered interaction transfers"
+}

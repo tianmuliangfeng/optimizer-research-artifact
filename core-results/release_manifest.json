@@ -1,7 +1,7 @@
 {
   "accepted_result_anchors": "provenance/public_source/accepted_result_anchors.json",
   "anonymity_profile": "double_blind_v1",
-  "artifact_count": 494,
+  "artifact_count": 502,
   "artifact_manifest": "artifact_manifest.json",
   "checksums": "SHA256SUMS",
   "evidence_index": "evidence_index.csv",
@@ -39,7 +39,9 @@
     "21_gpt_r1_host_bridge",
     "22_r1_block_alpha",
     "24_r1_dense_full_alpha",
+    "25_owt_depth_kmode",
     "27_mech01_unified_k_diagnostics",
+    "28_wikitext_depth_kmode",
     "29_r1_depth_kmode",
     "30_mech02_k_geometry",
     "31_mech03_crossfit_shadow",
@@ -69,6 +71,6 @@
   "release_mode": "final",
   "schema_version": 1,
   "selection": "provenance/release_selection.json",
-  "selection_sha256": "d0c7604f56ff6cc8595f89d8f6ed67c9cbc2f6b29a69115db5163f1b52c03aae",
+  "selection_sha256": "f3cbb54b3bd54b08bb9791a1a07cc0132d87727ba06f33968f107aff7a3672c6",
   "validator": "tools/validate_core_results_package.py"
 }

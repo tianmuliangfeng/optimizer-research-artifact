@@ -1,0 +1,114 @@
+{
+  "artifacts": [
+    "OWT_DEPTH_KMODE_MULTISEED_ANALYSIS_20260724.md",
+    "analysis_manifest.json",
+    "analysis_verdict.json",
+    "anchor_summary.csv",
+    "data_quality_checks.json",
+    "input_manifest.csv",
+    "owt_depth_multiseed_analysis.ipynb",
+    "paired_depth_contrasts.csv",
+    "paired_depth_deltas.png",
+    "raw_exports\\wandb_export_2026-07-24T14_25_48.591+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_25_53.704+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_25_59.561+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_26_04.211+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_26_08.058+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_26_15.202+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_26_20.193+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_26_24.776+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_26_28.819+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_26_34.221+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_26_39.171+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_27_13.875+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_27_17.709+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_27_28.987+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_27_33.026+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_27_37.958+08_00.csv",
+    "raw_exports\\wandb_export_2026-07-24T14_27_42.126+08_00.csv",
+    "rule_multiseed_summary.csv",
+    "run_summary.csv",
+    "validation_curves_by_rule.png",
+    "validation_curves_long.csv"
+  ],
+  "notebook": "PRIVATE_PATH_REDACTED",
+  "notebook_status": "created_not_executed_missing_runtime",
+  "schema_version": 1,
+  "script_version": "2026-07-24.2",
+  "source_export_sha256": {
+    "wandb_export_2026-07-24T14_25_48.591+08_00.csv": "01336fc7b6793bf772f9dc3ab2f986074fe0a0baccd181de6ef4854726b2dc22",
+    "wandb_export_2026-07-24T14_25_53.704+08_00.csv": "647c62446a68ad034642621c1859759616f2a46da2748fbe3228925f426ac211",
+    "wandb_export_2026-07-24T14_25_59.561+08_00.csv": "37da00379c16aabd458b57265823fd78f148b80e7c69e8be2c65f7fa9f9d5bed",
+    "wandb_export_2026-07-24T14_26_04.211+08_00.csv": "caedd63639695fdf1731731c013ebe6765f6e3f8cad998bd880d46330a1e42e8",
+    "wandb_export_2026-07-24T14_26_08.058+08_00.csv": "58f09162ffdc691e0db460887c7bc44483b3f96fd6327857997f426ef230f005",
+    "wandb_export_2026-07-24T14_26_15.202+08_00.csv": "3c3ead8aced5b757939118d0dbc8fca71bf825957a37d3e5d2e29b368e9c8d6b",
+    "wandb_export_2026-07-24T14_26_20.193+08_00.csv": "7c002580cde47c6ec1268040e391c6e5086f48f99d1fac78d2eb6362dcef3929",
+    "wandb_export_2026-07-24T14_26_24.776+08_00.csv": "ce2d28ef237df133fa680724425a2596f27e46dbf754cbf7e66c7f50d19755d1",
+    "wandb_export_2026-07-24T14_26_28.819+08_00.csv": "ec803c7c89ffe0fee96fbc6817911233ca7f6348d13e7ca749a44ca6dadbb22c",
+    "wandb_export_2026-07-24T14_26_34.221+08_00.csv": "2e032fa4d77be5f6435138e58cdb918ba41e812d5d580b4dddca1d25cf5de89c",
+    "wandb_export_2026-07-24T14_26_39.171+08_00.csv": "eb744711873f0bee26c5f404a45dd799f264c9c24e4c6365c20f3e2b3edf2c45",
+    "wandb_export_2026-07-24T14_27_13.875+08_00.csv": "83ec287b1d8a9eeda5094488fa05f092978efee5002d55c935580938de354b36",
+    "wandb_export_2026-07-24T14_27_17.709+08_00.csv": "06add0763138515b61e5e0a900fdaac5870aff63f9e94a2b8a3b67a11931267f",
+    "wandb_export_2026-07-24T14_27_28.987+08_00.csv": "701e91aef3be7f1db5184b3efc4c0fc58729f985c66bf8e205a316b7d65d0563",
+    "wandb_export_2026-07-24T14_27_33.026+08_00.csv": "20c7f023580420208180c47b54613eb648f63ffa3bed294ccfb67ba6b5dc6003",
+    "wandb_export_2026-07-24T14_27_37.958+08_00.csv": "87b6690d7bf2a07263633d46124abe6983896870acebf4fededcc0e9131f3988",
+    "wandb_export_2026-07-24T14_27_42.126+08_00.csv": "eabf5815f8c868044d6f8a9fd59bd919d637e4a4e2bb1d2e5c01779a44d8029d"
+  },
+  "source_exports": 17,
+  "status": "complete",
+  "verdict": {
+    "additional_owt_seed_reason": "The delivered export already contains the preregistered seeds 2024/2025/2026 for all 36 runs.",
+    "additional_owt_seeds_needed": false,
+    "all_rule_mean_diag_minus_none": -0.013930002848306996,
+    "all_rule_means_negative": true,
+    "all_rule_negative_seed_count": 3,
+    "all_rule_sd_diag_minus_none": 0.0010567286297300097,
+    "anchor_full_minus_muon_mean": -0.17136589686075845,
+    "endpoint_sign_consistency": {
+      "auc": 15,
+      "late3": 15,
+      "step4500": 15,
+      "total_pairs": 15
+    },
+    "interaction_sign_counts": {
+      "center": {
+        "negative": 0,
+        "positive": 3
+      },
+      "early": {
+        "negative": 2,
+        "positive": 1
+      },
+      "edge": {
+        "negative": 3,
+        "positive": 0
+      },
+      "late": {
+        "negative": 0,
+        "positive": 3
+      }
+    },
+    "max_abs_mean_interaction_vs_all": 0.0071024894714349545,
+    "mean_delta_range_across_rules": 0.011680285135904949,
+    "paired_contrast_count": 15,
+    "primary_classification": "uniform_diag_benefit",
+    "primary_contrast": "diag minus none; negative favors diag",
+    "primary_endpoint": "validation loss at common step 4500",
+    "r1_depth_replication_reason": "The benefit direction is uniform, while center and edge have opposite 3/3 interaction signs relative to all-depth. R1 should test transfer of the magnitude pattern, not rerun OWT seeds.",
+    "r1_depth_replication_recommended": true,
+    "r1_depth_replication_scope": "seed2026 partial-rule screen (early/center/late/edge x none/diag); reuse all-depth/anchor runs only after numerical-equivalence audit",
+    "replication_execution_order": "If sequential: WikiText seed2026 first as the cheaper gate, then R1 seed2026. If independent hosts are available, run both screens in parallel.",
+    "rules_with_3_of_3_negative": 5,
+    "run_count": 36,
+    "secondary_depth_magnitude_modulation": true,
+    "seeds": [
+      2024,
+      2025,
+      2026
+    ],
+    "status": "valid",
+    "uniform_contract_pass": true,
+    "wikitext_depth_replication_recommended": true,
+    "wikitext_depth_replication_scope": "seed2026 screen first; prioritize center/edge/all pairs plus matched full/Muon anchors, then expand only if the preregistered interaction transfers"
+  }
+}

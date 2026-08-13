@@ -3,7 +3,7 @@
   "package_name": "core-results",
   "release_status": "final",
   "release_mode": "final",
-  "selection_date": "2026-08-12",
+  "selection_date": "2026-08-13",
   "path_contract": {
     "source_roots": {
       "results": "provided explicitly to the builder at run time",
@@ -305,6 +305,50 @@
         "local_evidence/local_audit_manifest.json",
         "local_evidence/local_data_quality_checks.csv",
         "local_evidence/run_integrity.csv"
+      ]
+    },
+    {
+      "id": "ex25_owt_depth_kmode",
+      "tier": "core",
+      "workstream": "robustness_and_controls",
+      "experiment_ids": ["25_owt_depth_kmode"],
+      "integrity_status": "accepted_multiseed_seed_level_compact_evidence",
+      "scientific_status": "depth_allocation_supporting_seed_level_audit",
+      "claim_eligibility": "supporting_seed_display_with_cross_environment_aggregate_reconciliation_timing_excluded",
+      "paper_role": "main_text_supporting_depth_transfer_and_appendix_seed_audit",
+      "source_prefix": "25_owt_depth_kmode/analysis_20260724_multiseed",
+      "destination_prefix": "results/03_robustness_and_controls/ex25_owt_depth_kmode",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "9544422ccde7d314eeeee973a16185c0c0b44c840b79d1df28e312606b546050"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "analysis_verdict.json",
+        "data_quality_checks.json",
+        "paired_depth_contrasts.csv"
+      ]
+    },
+    {
+      "id": "ex28_wikitext_depth_kmode",
+      "tier": "core",
+      "workstream": "robustness_and_controls",
+      "experiment_ids": ["28_wikitext_depth_kmode"],
+      "integrity_status": "accepted_multiseed_seed_level_compact_evidence",
+      "scientific_status": "depth_allocation_supporting_seed_level_audit",
+      "claim_eligibility": "supporting_seed_display_with_cross_environment_aggregate_reconciliation_timing_excluded",
+      "paper_role": "main_text_supporting_depth_transfer_and_appendix_seed_audit",
+      "source_prefix": "28_wikitext_depth_kmode/analysis_20260725_multiseed",
+      "destination_prefix": "results/03_robustness_and_controls/ex28_wikitext_depth_kmode",
+      "source_anchor": {
+        "file": "analysis_manifest.json",
+        "sha256": "803b7401fdbc7955039912785f5ae76f1dcb588b7dcda4a66dea74f69c37fc0b"
+      },
+      "files": [
+        "analysis_manifest.json",
+        "analysis_verdict.json",
+        "data_quality_checks.json",
+        "paired_depth_contrasts.csv"
       ]
     },
     {
@@ -1290,7 +1334,7 @@
   },
   "archive_only": [
     {
-      "ids": ["03", "08", "13", "18", "23", "25", "26", "28", "32", "47"],
+      "ids": ["03", "08", "13", "18", "23", "26", "32", "47"],
       "integrity_status": "mixed_historical_or_superseded",
       "scientific_status": "not_selected_for_compact_release",
       "claim_eligibility": "consult_full_archive_only",

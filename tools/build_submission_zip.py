@@ -7,7 +7,7 @@ import zipfile
 from pathlib import Path
 
 
-FIXED_TIME = (2026, 8, 12, 0, 0, 0)
+FIXED_TIME = (2026, 8, 13, 0, 0, 0)
 ARCHIVE_ROOT = "selective-newton-muon-anonymous-review"
 
 

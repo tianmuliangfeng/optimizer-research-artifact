@@ -1,0 +1,117 @@
+{
+  "checks": [
+    {
+      "check": "exact_36_run_set",
+      "evidence": {
+        "extra": [],
+        "missing": [],
+        "observed": 36
+      },
+      "passed": true
+    },
+    {
+      "check": "three_seeds_12_cells_each",
+      "evidence": {
+        "2024": 12,
+        "2025": 12,
+        "2026": 12
+      },
+      "passed": true
+    },
+    {
+      "check": "metric_export_counts",
+      "evidence": {
+        "cuda/full_run_max_memory_allocated_mib": 36,
+        "cuda/memory_allocated_mib": 36,
+        "lr/adamw": 36,
+        "lr/matrix": 36,
+        "matrix/cproj_diag_params": 33,
+        "matrix/cproj_full_params": 33,
+        "matrix/cproj_k_state_bytes": 33,
+        "matrix/cproj_mode_applied_params": 33,
+        "matrix/cproj_none_params": 33,
+        "matrix/cproj_target_layer_count": 33,
+        "matrix/cproj_target_layers_all": 33,
+        "matrix/k_state_bytes": 36,
+        "matrix/k_state_released_fraction": 33,
+        "matrix/non_cproj_k_state_bytes": 33,
+        "time_elapsed": 36,
+        "train/loss_step": 36,
+        "val/loss": 36
+      },
+      "passed": true
+    },
+    {
+      "check": "exact_validation_grid",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "exact_training_grid",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "seed_matched_step0",
+      "evidence": {
+        "2024": {
+          "spread": 0.0,
+          "value": 10.971514701843262
+        },
+        "2025": {
+          "spread": 0.0,
+          "value": 10.971673965454102
+        },
+        "2026": {
+          "spread": 0.0,
+          "value": 10.960702896118164
+        }
+      },
+      "passed": true
+    },
+    {
+      "check": "treatment_lr_histories_match",
+      "evidence": "within seed",
+      "passed": true
+    },
+    {
+      "check": "wandb_band_columns_duplicate_base",
+      "evidence": "all 17 exports",
+      "passed": true
+    },
+    {
+      "check": "target_layer_counts_match",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "none_diag_full_counts_match",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "k_state_parts_sum",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "released_fraction_matches_full",
+      "evidence": [],
+      "passed": true
+    },
+    {
+      "check": "all_values_finite",
+      "evidence": 120330,
+      "passed": true
+    },
+    {
+      "check": "pinned_wikitext_fingerprint",
+      "evidence": "passed",
+      "passed": true
+    }
+  ],
+  "normalized_metric_rows": 120330,
+  "script_version": "2026-07-25.1",
+  "source_file_count": 17,
+  "status": "passed"
+}
