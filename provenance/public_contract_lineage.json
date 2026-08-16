@@ -1,6 +1,6 @@
 {
   "policy": "Changed public hashes are limited to release path/label portability and explicit public-hash lineage; scientific settings are unchanged.",
-  "record_count": 18,
+  "record_count": 21,
   "records": [
     {
       "change_class": "path_label_or_public_hash_lineage_only",
@@ -144,6 +144,30 @@
       "packaging_changed": true,
       "public_sha256": "adb07897c131978bb00635800c5a5af57e07f4d2b615eb64571c7bbdd571d6d2",
       "relative_path": "mechanism_closure/closure_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
+      "packaging_changed": false,
+      "public_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
+      "relative_path": "50_r1_global_activation_diag/global_diag_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
+      "packaging_changed": false,
+      "public_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
+      "relative_path": "51_moddedgpt_global_diag_scale/global_diag_scale_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
+      "packaging_changed": true,
+      "public_sha256": "199d4b0a9e0877ca70e557aaea95850202b01281cdd008e0c5d8b8fd51d29997",
+      "relative_path": "52_llama_global_diag_scale/llama_global_diag_contract.json",
       "scientific_contract_changed_by_packaging": false
     }
   ],

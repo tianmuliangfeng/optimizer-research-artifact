@@ -405,6 +405,117 @@
         }
       ],
       "gap_note": "The alternative shared-analysis legacy root is absent locally; the accepted full run is retained under the experiment-specific root."
+    },
+    {
+      "experiment_id": "50_r1_global_activation_diag",
+      "run_ids": ["20260814T045805+0000"],
+      "legacy_result_roots": ["50_r1_global_activation_diag"],
+      "accepted": true,
+      "verified_during_packaging": true,
+      "missing_archive": false,
+      "scientific_status": "accepted_global_diag_worse_than_selective_diag_three_seed",
+      "anchors": [
+        {
+          "role": "primary_scientific_analysis",
+          "path": "50_r1_global_activation_diag/20260814T045805+0000/analysis/analysis_manifest.json",
+          "sha256": "a34f32e82ca9ecb47d77eb61452d6ab2b996d779b736adc82800b9044b6ee62b"
+        },
+        {
+          "role": "handoff_manifest",
+          "path": "50_r1_global_activation_diag/20260814T045805+0000/handoff_manifest.json",
+          "sha256": "2acbc1b8df4fe63617af19df87cee298623ba0094ca5c449d3ddebb0a8abaa9b"
+        },
+        {
+          "role": "formal_manifest",
+          "path": "50_r1_global_activation_diag/20260814T045805+0000/formal_manifest.json",
+          "sha256": "f1fcf8c1c6a957e7061b835168de8e620d0be659f527dc4e65cc45f92e89dd32"
+        },
+        {
+          "role": "source_snapshot_manifest",
+          "path": "50_r1_global_activation_diag/20260814T045805+0000/source_snapshot/source_snapshot_manifest.json",
+          "sha256": "2ade88d8dc2ee388f11cb5d3a82a4f9ff8ef3f53f21793c3de916427ae9b3d4b"
+        },
+        {
+          "role": "wandb_reconciliation",
+          "path": "_shared/analysis/global_diag_wandb_reconciliation_20260816/wandb_audit_manifest.json",
+          "sha256": "9a6a1cc33178aff11dd46edae7b18649cf3e376f3159ae08d6df6a5344ca3dec"
+        }
+      ],
+      "gap_note": "W&B is a pointwise-checked secondary mirror; concurrent timing is excluded."
+    },
+    {
+      "experiment_id": "51_moddedgpt_global_diag_scale",
+      "run_ids": ["20260814T103626+0000"],
+      "legacy_result_roots": ["51_moddedgpt_global_diag_scale"],
+      "accepted": true,
+      "verified_during_packaging": true,
+      "missing_archive": false,
+      "scientific_status": "accepted_moddedgpt_global_diag_scale_confirmation",
+      "anchors": [
+        {
+          "role": "primary_scientific_analysis",
+          "path": "51_moddedgpt_global_diag_scale/20260814T103626+0000/analysis/analysis_manifest.json",
+          "sha256": "aebc409fa4e4ab8f7f3d2d7b7f83d2a05e61c8b91ce759368ea5054501d331e9"
+        },
+        {
+          "role": "handoff_manifest",
+          "path": "51_moddedgpt_global_diag_scale/20260814T103626+0000/handoff_manifest.json",
+          "sha256": "745a03295acb91e10417590bb4158239b3a21802a885bc47a0a3ef929707e805"
+        },
+        {
+          "role": "formal_manifest",
+          "path": "51_moddedgpt_global_diag_scale/20260814T103626+0000/formal/formal_manifest.json",
+          "sha256": "d433011d3d3ac0868554f91ec5783f07dec10be955cfb4c6166464f032b05746"
+        },
+        {
+          "role": "source_snapshot_manifest",
+          "path": "51_moddedgpt_global_diag_scale/20260814T103626+0000/source_snapshot/source_snapshot_manifest.json",
+          "sha256": "a3d8c7edf4f5e0857d41fb922e011af10d422e0dc47bee788adfc07a692c8be7"
+        },
+        {
+          "role": "wandb_reconciliation",
+          "path": "_shared/analysis/global_diag_wandb_reconciliation_20260816/wandb_audit_manifest.json",
+          "sha256": "9a6a1cc33178aff11dd46edae7b18649cf3e376f3159ae08d6df6a5344ca3dec"
+        }
+      ],
+      "gap_note": "W&B is a pointwise-checked secondary mirror; concurrent timing is excluded."
+    },
+    {
+      "experiment_id": "52_llama_global_diag_scale",
+      "run_ids": ["20260814T081710+0000"],
+      "legacy_result_roots": ["52_llama_global_diag_scale"],
+      "accepted": true,
+      "verified_during_packaging": true,
+      "missing_archive": false,
+      "scientific_status": "accepted_llama_global_diag_scale_confirmation",
+      "anchors": [
+        {
+          "role": "primary_scientific_analysis",
+          "path": "52_llama_global_diag_scale/20260814T081710+0000/analysis/analysis_manifest.json",
+          "sha256": "9472b035a994d7e7810933c37383711ef47418a2508217aad053d8ed79056bbd"
+        },
+        {
+          "role": "handoff_manifest",
+          "path": "52_llama_global_diag_scale/20260814T081710+0000/handoff_manifest.json",
+          "sha256": "5b825de88a0d5710174a3fccd1bbc02b7850d14b5f69bf2f10b9abb5c6ad85d2"
+        },
+        {
+          "role": "formal_manifest",
+          "path": "52_llama_global_diag_scale/20260814T081710+0000/formal/formal_manifest.json",
+          "sha256": "396fdf995e7fee379f67c3223191b2a62f27c4ff0410f093bbc4f719958a3a9d"
+        },
+        {
+          "role": "source_snapshot_manifest",
+          "path": "52_llama_global_diag_scale/20260814T081710+0000/source_snapshot/source_snapshot_manifest.json",
+          "sha256": "3b55a132071d2fa340f9ae233fb154d43a46f0de188c16665d86e01d05c01f76"
+        },
+        {
+          "role": "wandb_reconciliation",
+          "path": "_shared/analysis/global_diag_wandb_reconciliation_20260816/wandb_audit_manifest.json",
+          "sha256": "9a6a1cc33178aff11dd46edae7b18649cf3e376f3159ae08d6df6a5344ca3dec"
+        }
+      ],
+      "gap_note": "The reused 1B W&B history stitches screen and formal; accepted local formal CSVs and manifests remain primary. Timing is excluded."
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "accepted_batches": {
+    "2024": "PRIVATE_PATH_REDACTED",
+    "2025": "PRIVATE_PATH_REDACTED",
+    "2026": "PRIVATE_PATH_REDACTED"
+  },
+  "experiment_id": "50_r1_global_activation_diag",
+  "formal_units": 3,
+  "passed": true,
+  "schema_version": 1,
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "timing_usable": false,
+  "wandb_required_for_scientific_validity": false
+}

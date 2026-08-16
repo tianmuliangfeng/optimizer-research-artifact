@@ -1,0 +1,18 @@
+{
+  "analysis": "PRIVATE_PATH_REDACTED",
+  "checks": {
+    "analysis": true,
+    "formal": true,
+    "pilot": true,
+    "preflight": true
+  },
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "passed": true,
+  "schema_version": 1,
+  "status": "completed",
+  "wandb_upload": {
+    "manifest": "PRIVATE_PATH_REDACTED__6fdeb4855b4d",
+    "passed": true,
+    "requested": true
+  }
+}

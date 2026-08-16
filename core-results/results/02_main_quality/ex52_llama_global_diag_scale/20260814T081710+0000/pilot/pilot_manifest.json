@@ -1,0 +1,54 @@
+{
+  "contract_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
+  "data_fingerprint_sha256": "1202c308d21ea690c17b958b98cbe40c65969a21928230950401f777adda8c68",
+  "experiment_id": "52_llama_global_diag_scale",
+  "passed": true,
+  "schema_version": 2,
+  "source_snapshot_manifest_sha256": "3b55a132071d2fa340f9ae233fb154d43a46f0de188c16665d86e01d05c01f76",
+  "stage": "pilot",
+  "unit_count": 6,
+  "units": [
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "f82c73299d996273b30e76168a47ea5ab2afca69659a4f757093211071ec39c9",
+      "controller_stage": "smoke",
+      "scale": "1b",
+      "seed": 2024
+    },
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "54abe5d6fa73fb5de5c326f6b68684b41f4412bee16e8c42573fcd7705edd3fa",
+      "controller_stage": "smoke",
+      "scale": "1b",
+      "seed": 2025
+    },
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "4beb2768f3606f7119532e21a20d08a030a5d526fed836c9cbe9d59c410db502",
+      "controller_stage": "smoke",
+      "scale": "1b",
+      "seed": 2026
+    },
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "64b10e5386f2b10afb2e8624dc43ce497ceb7d5a319be5e2a81efbd4ae5d4ede",
+      "controller_stage": "smoke",
+      "scale": "124m",
+      "seed": 2024
+    },
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "0de3ab8d5869b83ced5dec20b4c107804b58c2211193bf431b5465f0f2193efc",
+      "controller_stage": "smoke",
+      "scale": "124m",
+      "seed": 2025
+    },
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "02a1d1535dc48c3d928e141b380f24c9320b26e2ae1e35534d155c1a7204dc56",
+      "controller_stage": "smoke",
+      "scale": "124m",
+      "seed": 2026
+    }
+  ]
+}

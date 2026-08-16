@@ -1,0 +1,19 @@
+{
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "passed": true,
+  "schema_version": 1,
+  "stage": "pilot",
+  "unit_count": 2,
+  "units": [
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2026
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "455m",
+      "seed": 2026
+    }
+  ]
+}

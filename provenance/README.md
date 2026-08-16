@@ -2,7 +2,7 @@
 
 This directory separates sanitized lineage records from the public API.
 
-- `legacy_command_inventory.json` records hashes of the 37 original launchers
+- `legacy_command_inventory.json` records hashes of the 40 original launchers
   and their sanitized public counterparts. Original contents remain in the
   private research archive because they contained machine-specific paths.
 - `command_path_migration.json` maps every historical launcher path to its
@@ -34,6 +34,10 @@ This directory separates sanitized lineage records from the public API.
   their 439,092,884,892-byte certificate set is bound by the lineage certificate.
   The compact receipt is a semantic verifier certificate, not a forensic process
   execution log, and four-GPU concurrent timing is excluded from efficiency claims.
+- Experiments 50–52 anchor the accepted global-diagonal controls, their formal
+  and handoff manifests, sealed source snapshots, and the joint 111/111 W&B
+  reconciliation. Experiment 52's stitched W&B history is explicitly secondary
+  to its accepted local formal CSVs. Timing is excluded for all three.
 
 Formal result directories and their source snapshots are not rewritten by
 this packaging process.

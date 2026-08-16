@@ -31,6 +31,9 @@ SEALED_SOURCE = {
     "47_update_geometry_curvature",
     "47b_geo01b_update_geometry_discovery",
     "48_llama1b_10b_multibudget",
+    "50_r1_global_activation_diag",
+    "51_moddedgpt_global_diag_scale",
+    "52_llama_global_diag_scale",
     "mdp04_refresh_streaming",
 }
 PARTIAL_SOURCE = {
@@ -93,6 +96,27 @@ NATIVE_MODES = {
             "env": {"EX49_RUN_DIR": "{run_dir}"},
         },
     },
+    "50_r1_global_activation_diag": {
+        "resume": {"args": ["all"], "env": {"EX50_RUN_DIR": "{run_dir}"}},
+        "native-verify": {
+            "args": ["verify"],
+            "env": {"EX50_RUN_DIR": "{run_dir}"},
+        },
+    },
+    "51_moddedgpt_global_diag_scale": {
+        "resume": {"args": ["all"], "env": {"EX51_RUN_DIR": "{run_dir}"}},
+        "native-verify": {
+            "args": ["verify"],
+            "env": {"EX51_RUN_DIR": "{run_dir}"},
+        },
+    },
+    "52_llama_global_diag_scale": {
+        "resume": {"args": ["all"], "env": {"EX52_RUN_DIR": "{run_dir}"}},
+        "native-verify": {
+            "args": ["verify"],
+            "env": {"EX52_RUN_DIR": "{run_dir}"},
+        },
+    },
 }
 
 EXTRA_PYTHON_ENTRYPOINTS = {
@@ -143,6 +167,31 @@ EXPERIMENT_README_SECTIONS = {
         "of all 36 retained endpoints. It is not a forensic execution log: the compact",
         "JSON does not itself record the command, process exit code, host, or Python",
         "environment, so the audit binds its semantics to the hash-frozen verifier.",
+        "",
+    ],
+    "50_r1_global_activation_diag": [
+        "## Accepted result",
+        "",
+        "Three formal seeds establish that global activation diagonals are worse",
+        "than selective contraction diagonals at ModdedGPT 124M. Quality claims",
+        "exclude concurrent-run timing; W&B is a pointwise-checked secondary mirror.",
+        "",
+    ],
+    "51_moddedgpt_global_diag_scale": [
+        "## Accepted result",
+        "",
+        "The 275M and 455M scale confirmation does not reverse the ModdedGPT result:",
+        "global activation diagonals do not beat the accepted selective controls.",
+        "Quality claims exclude concurrent-run timing.",
+        "",
+    ],
+    "52_llama_global_diag_scale": [
+        "## Accepted result",
+        "",
+        "Across LLaMA 124M and 1B, global activation diagonals are a strong low-state",
+        "alternative, while Muon remains marginally best at 1B. The reused 1B W&B",
+        "run history stitches the screen and formal continuation, so formal claims",
+        "remain bound to local accepted CSVs and manifests.",
         "",
     ],
 }

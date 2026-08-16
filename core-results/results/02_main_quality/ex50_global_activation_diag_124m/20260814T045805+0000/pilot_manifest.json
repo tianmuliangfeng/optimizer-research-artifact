@@ -1,0 +1,17 @@
+{
+  "accepted_batches": {
+    "2024": "PRIVATE_PATH_REDACTED",
+    "2025": "PRIVATE_PATH_REDACTED",
+    "2026": "PRIVATE_PATH_REDACTED"
+  },
+  "crosses_first_refresh": true,
+  "experiment_id": "50_r1_global_activation_diag",
+  "passed": true,
+  "schema_version": 1,
+  "seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "steps": 34
+}

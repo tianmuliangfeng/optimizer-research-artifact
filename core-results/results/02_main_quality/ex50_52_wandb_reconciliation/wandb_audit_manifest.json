@@ -1,0 +1,106 @@
+{
+  "artifacts": {
+    "WANDB_AUDIT.md": "73aa98b06ca9b70c7b48824725b6d174c14abdee3474a6af9d89ec503d775d4f",
+    "wandb_export_inventory.csv": "df5f7e65ca06fda497601724c023736fc955df795b790544b1166abc44bd1e1d",
+    "wandb_loss_trajectories.csv": "65b4c48609d7ecd6d1625b3569b4ae578dfbb2a00e2093189ece22109629eaa6",
+    "wandb_reconciliation.csv": "872d86426c92de571a164b15d70be77158b09ff39a70d5778268e2a246678a69"
+  },
+  "audit_script": {
+    "filename": "audit_ex50_52_wandb_exports.py",
+    "sha256": "554fbe6c09855a88830938bf5c4d21d21475ee815cb53d752364c74fa3a80a21"
+  },
+  "checks": {
+    "all_reconciliation_rows_passed": true,
+    "ex50_val_loss_present": true,
+    "ex51_val_loss_present": true,
+    "ex52_auxiliary_metrics_present": true,
+    "ex52_stitched_wandb_lineage_documented": true,
+    "ex52_val_loss_present": true,
+    "timing_excluded_from_scientific_claims": true
+  },
+  "claim_boundary": [
+    "Experiments 50 and 51 include W&B validation-loss mirrors that are checked point-for-point against accepted local CSVs.",
+    "Experiment 52 includes val/loss, but W&B grouped 124M with a reused 1B run id whose history contains the medium screen through step 1000 and the formal continuation thereafter.",
+    "Experiment 52 quality conclusions remain bound to the accepted local formal metrics and analysis manifest; the stitched W&B trajectory is supporting lineage evidence only.",
+    "Concurrent quality-run timing remains ineligible for efficiency claims in all three experiments."
+  ],
+  "experiments": {
+    "50": {
+      "metrics": [
+        "lr/adamw",
+        "lr/matrix",
+        "memory/k_state_mib",
+        "memory/optimizer_state_mib",
+        "memory/peak_allocated_mib",
+        "performance/step_avg_ms",
+        "time/train_s",
+        "train/loss_step",
+        "val/loss"
+      ],
+      "passed_rows": 27,
+      "reconciliation_rows": 27
+    },
+    "51": {
+      "metrics": [
+        "diagnostic/train_time_ms",
+        "train/tokens",
+        "validation/loss"
+      ],
+      "passed_rows": 21,
+      "reconciliation_rows": 21
+    },
+    "52": {
+      "metrics": [
+        "lr/backup__max",
+        "lr/backup__mean",
+        "lr/backup__min",
+        "lr/matrix__max",
+        "lr/matrix__mean",
+        "lr/matrix__min",
+        "performance/step_avg_ms__max",
+        "performance/step_avg_ms__mean",
+        "performance/step_avg_ms__min",
+        "time/train_s__max",
+        "time/train_s__mean",
+        "time/train_s__min",
+        "tokens/seen__max",
+        "tokens/seen__mean",
+        "tokens/seen__min",
+        "train/loss_step__max",
+        "train/loss_step__mean",
+        "train/loss_step__min",
+        "val/loss__max",
+        "val/loss__mean",
+        "val/loss__min"
+      ],
+      "passed_rows": 63,
+      "reconciliation_rows": 63
+    }
+  },
+  "loss_trajectory_rows": 476,
+  "passed": true,
+  "schema_version": "ex50_52_wandb_reconciliation_v1",
+  "script_version": "2026-08-16.1",
+  "source_archives": [
+    {
+      "bytes": 21021,
+      "filename": "50_wandb_exports.zip",
+      "label": "ex50",
+      "sha256": "e56837bdf25a8b3858495008515e04b26cf13fa62af5d887aa0e2f82e3b69d50"
+    },
+    {
+      "bytes": 7220,
+      "filename": "51_wandb_exports.zip",
+      "label": "ex51",
+      "sha256": "2a4a1a38e3130da90856eb5d25dd734d4aebb502bb47834088a59087a9fd6e47"
+    },
+    {
+      "bytes": 67735,
+      "filename": "52_wandb_exports_complete.zip",
+      "label": "ex52",
+      "sha256": "efd2b346491dfb3e03208994e91dc9cf7fc2afc680e21287b5179b34352053da"
+    }
+  ],
+  "source_zip_role": "user_provided_wandb_csv_exports; W&B is a secondary mirror and not the primary scientific record",
+  "status": "passed_with_documented_ex52_stitched_wandb_history"
+}

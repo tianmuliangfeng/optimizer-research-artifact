@@ -1,0 +1,49 @@
+{
+  "code_directory": "scripts/52_llama_global_diag_scale",
+  "entrypoints": {
+    "command:20260814_ex52_llama_global_diag_scale": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX52_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "all"
+          ],
+          "env": {
+            "EX52_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/52_llama_global_diag_scale/20260814_ex52_llama_global_diag_scale.sh"
+    },
+    "script:run_llama_global_diag_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/52_llama_global_diag_scale/run_llama_global_diag_suite.py"
+    }
+  },
+  "experiment_id": "52_llama_global_diag_scale",
+  "legacy_result_roots": [
+    "52_llama_global_diag_scale"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": false,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "52 Llama Global Diag Scale"
+}

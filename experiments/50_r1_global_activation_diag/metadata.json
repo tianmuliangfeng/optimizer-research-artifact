@@ -1,0 +1,55 @@
+{
+  "code_directory": "scripts/50_r1_global_activation_diag",
+  "entrypoints": {
+    "command:20260814_ex50_r1_global_activation_diag": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX50_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "all"
+          ],
+          "env": {
+            "EX50_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/50_r1_global_activation_diag/20260814_ex50_r1_global_activation_diag.sh"
+    },
+    "script:run_global_diag": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/50_r1_global_activation_diag/run_global_diag.py"
+    },
+    "script:run_global_diag_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/50_r1_global_activation_diag/run_global_diag_suite.py"
+    }
+  },
+  "experiment_id": "50_r1_global_activation_diag",
+  "legacy_result_roots": [
+    "50_r1_global_activation_diag"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": false,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "50 R1 Global Activation Diag"
+}

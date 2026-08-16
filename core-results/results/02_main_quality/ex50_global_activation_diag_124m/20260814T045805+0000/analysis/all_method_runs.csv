@@ -1,0 +1,16 @@
+method,seed,final_val_loss,best_val_loss,tail5_val_loss_mean,k_state_mib,source
+block4,2024,3.263,3.263,3.2713399999999995,378.0,frozen_experiment_15_control
+diag,2024,3.2613,3.2613,3.2695999999999996,162.28125,frozen_experiment_15_control
+muon,2024,3.2774,3.2774,3.28604,0.0,frozen_experiment_15_control
+none,2024,3.267,3.267,3.2752600000000003,162.0,frozen_experiment_15_control
+block4,2025,3.2609,3.2609,3.26908,378.0,frozen_experiment_15_control
+diag,2025,3.2599,3.2599,3.26802,162.28125,frozen_experiment_15_control
+muon,2025,3.2769,3.2769,3.2854599999999996,0.0,frozen_experiment_15_control
+none,2025,3.2659,3.2659,3.27424,162.0,frozen_experiment_15_control
+block4,2026,3.2627,3.2627,3.27102,378.0,frozen_experiment_15_control
+diag,2026,3.2621,3.2621,3.27028,162.28125,frozen_experiment_15_control
+muon,2026,3.2771,3.2771,3.28572,0.0,frozen_experiment_15_control
+none,2026,3.2671,3.2671,3.2754800000000004,162.0,frozen_experiment_15_control
+global_diag,2024,3.2699,3.2699,3.27828,0.4921875,experiment_50_formal
+global_diag,2025,3.2691,3.2691,3.2774,0.4921875,experiment_50_formal
+global_diag,2026,3.2699,3.2699,3.27818,0.4921875,experiment_50_formal

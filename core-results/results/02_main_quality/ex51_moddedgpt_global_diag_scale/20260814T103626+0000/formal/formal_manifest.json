@@ -1,0 +1,44 @@
+{
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "passed": true,
+  "schema_version": 1,
+  "stage": "formal",
+  "unit_count": 7,
+  "units": [
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2024
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2025
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2026
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2027
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "455m",
+      "seed": 2024
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "455m",
+      "seed": 2025
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "scale": "455m",
+      "seed": 2026
+    }
+  ]
+}

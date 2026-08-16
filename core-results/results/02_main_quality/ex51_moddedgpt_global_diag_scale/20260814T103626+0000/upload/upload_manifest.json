@@ -1,0 +1,60 @@
+{
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "passed": true,
+  "schema_version": 1,
+  "stage": "upload",
+  "unit_count": 7,
+  "units": [
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "receipt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2024,
+      "status": "completed"
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "receipt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2025,
+      "status": "completed"
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "receipt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2026,
+      "status": "completed"
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "receipt": "PRIVATE_PATH_REDACTED",
+      "scale": "275m",
+      "seed": 2027,
+      "status": "completed"
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "receipt": "PRIVATE_PATH_REDACTED",
+      "scale": "455m",
+      "seed": 2024,
+      "status": "completed"
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "receipt": "PRIVATE_PATH_REDACTED",
+      "scale": "455m",
+      "seed": 2025,
+      "status": "completed"
+    },
+    {
+      "attempt": "PRIVATE_PATH_REDACTED",
+      "receipt": "PRIVATE_PATH_REDACTED",
+      "scale": "455m",
+      "seed": 2026,
+      "status": "completed"
+    }
+  ],
+  "wandb_mode": "online",
+  "wandb_project": "ANONYMIZED_WANDB_PROJECT_0001"
+}

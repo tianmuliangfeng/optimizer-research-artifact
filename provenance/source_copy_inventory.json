@@ -1,6 +1,6 @@
 {
   "path_policy": "Only source-role labels and repository-relative paths are public.",
-  "record_count": 495,
+  "record_count": 525,
   "records": [
     {
       "original_present_at_packaging": true,
@@ -3960,6 +3960,246 @@
       "packaging_changed": false,
       "public_sha256": "ea6e7c68f04e6344e0282eb219d9e01286f1af1004453f47b6b8221651c4d5f2",
       "relative_path": "mechanism_closure/validate_mechanism_closure.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "18b7aff7994c52b8bf348db59a77763d5dac681ce99c1ed6eb9cfc37e3fd508c",
+      "packaging_changed": false,
+      "public_sha256": "18b7aff7994c52b8bf348db59a77763d5dac681ce99c1ed6eb9cfc37e3fd508c",
+      "relative_path": "50_r1_global_activation_diag/analyze_global_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4",
+      "packaging_changed": false,
+      "public_sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4",
+      "relative_path": "50_r1_global_activation_diag/frozen_r1_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
+      "packaging_changed": false,
+      "public_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
+      "relative_path": "50_r1_global_activation_diag/global_diag_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "02e0b84d36637180428b6181f542e334ace02ce56eb60d948ffa2dcb2e28dbb1",
+      "packaging_changed": false,
+      "public_sha256": "02e0b84d36637180428b6181f542e334ace02ce56eb60d948ffa2dcb2e28dbb1",
+      "relative_path": "50_r1_global_activation_diag/global_diag_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0dac076fb13f1f15ad1107b9c19c76d23a2c2dea71d6a7d97d8c68562369b409",
+      "packaging_changed": true,
+      "public_sha256": "3d59cb781e92739e134ed51a5ab9353ea4aee762bcf9beb3ba631c70c865dec8",
+      "relative_path": "50_r1_global_activation_diag/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "698839ce928410a4a484aa2ff98a15ab0c35459f1bbbc8a5a23148ebd3f59b12",
+      "packaging_changed": true,
+      "public_sha256": "5f2d5023a5a830e9e42b66788992f87e30009a31ef414c03387bc2fca283c068",
+      "relative_path": "50_r1_global_activation_diag/run_global_diag_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b5ffbff45f76defa97ec17032cc5412d6682ff19fdadae10efced5a5dd1aa479",
+      "packaging_changed": true,
+      "public_sha256": "74385786f1bb88266dc0934532e003cb6eaf651fe8a781b76d181a5b989ec2fd",
+      "relative_path": "50_r1_global_activation_diag/run_global_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "4d018b6624b8b7959a4fb0aa6bf6edf56f457a509642edfa18b0a4081f402333",
+      "packaging_changed": false,
+      "public_sha256": "4d018b6624b8b7959a4fb0aa6bf6edf56f457a509642edfa18b0a4081f402333",
+      "relative_path": "50_r1_global_activation_diag/test_analyze_global_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "e431a8c0012378db022904655661b8295a1649a3c147eab54506cb5d15b92ffa",
+      "packaging_changed": false,
+      "public_sha256": "e431a8c0012378db022904655661b8295a1649a3c147eab54506cb5d15b92ffa",
+      "relative_path": "50_r1_global_activation_diag/test_global_diag_source.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "da836b08b5f9e123b90104eb41c52d0359851a7c322fd9dbe6a65db381a1927b",
+      "packaging_changed": false,
+      "public_sha256": "da836b08b5f9e123b90104eb41c52d0359851a7c322fd9dbe6a65db381a1927b",
+      "relative_path": "50_r1_global_activation_diag/test_global_diag_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "c877bf41c004d4f49ad178ffb282586e4c51141ffdd3d580be7a2123ead8d448",
+      "packaging_changed": false,
+      "public_sha256": "c877bf41c004d4f49ad178ffb282586e4c51141ffdd3d580be7a2123ead8d448",
+      "relative_path": "51_moddedgpt_global_diag_scale/analyze_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79",
+      "packaging_changed": false,
+      "public_sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79",
+      "relative_path": "51_moddedgpt_global_diag_scale/frozen_scale_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
+      "packaging_changed": false,
+      "public_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
+      "relative_path": "51_moddedgpt_global_diag_scale/global_diag_scale_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0b36f9eff7b941617ba5b23a8bb20ae40bc86b286d9eb9e94ad34025586be6c1",
+      "packaging_changed": false,
+      "public_sha256": "0b36f9eff7b941617ba5b23a8bb20ae40bc86b286d9eb9e94ad34025586be6c1",
+      "relative_path": "51_moddedgpt_global_diag_scale/global_diag_scale_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "3de5126424351064311c99001d73d3595faf9649ca830ad101eb8dfad9305be5",
+      "packaging_changed": false,
+      "public_sha256": "3de5126424351064311c99001d73d3595faf9649ca830ad101eb8dfad9305be5",
+      "relative_path": "51_moddedgpt_global_diag_scale/prepare_frozen51_data_repo.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "bfcf60f45d95b0638a7a2c4dc1c8a0c2067cc4cab001b5009380a82e220c4cd6",
+      "packaging_changed": false,
+      "public_sha256": "bfcf60f45d95b0638a7a2c4dc1c8a0c2067cc4cab001b5009380a82e220c4cd6",
+      "relative_path": "51_moddedgpt_global_diag_scale/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "61927beb2541d577df6b76141f4d94cdcd587a2c133e5d9328ea98d206d1c63b",
+      "packaging_changed": false,
+      "public_sha256": "61927beb2541d577df6b76141f4d94cdcd587a2c133e5d9328ea98d206d1c63b",
+      "relative_path": "51_moddedgpt_global_diag_scale/run_global_diag_scale_cell.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "59429f1b88642809c848de2a39dd9d71319bd7e9168cf180290aa55259dc9a68",
+      "packaging_changed": true,
+      "public_sha256": "0b9258ffb3c950e066029a425a7b16b5848d61cf7222f653c410b7b5488884b2",
+      "relative_path": "51_moddedgpt_global_diag_scale/run_global_diag_scale_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "e9c23e135d411aabeef92d76929a99c5bf4270fd61d4a6612fee366940b9ddcd",
+      "packaging_changed": false,
+      "public_sha256": "e9c23e135d411aabeef92d76929a99c5bf4270fd61d4a6612fee366940b9ddcd",
+      "relative_path": "51_moddedgpt_global_diag_scale/test_analyze_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "d0c055bdd22257c26a4db4daba848611394024970c8ecd3f5b9cfd9f997813fa",
+      "packaging_changed": true,
+      "public_sha256": "9d669a012e7c02de7ced890f0bbc59c2e354cb5d17dcda17d7f3e63774492bd9",
+      "relative_path": "51_moddedgpt_global_diag_scale/test_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0c702c3c26686db1b443002ccbbbdcaf40b11e8536122511a472b5fe4315659e",
+      "packaging_changed": false,
+      "public_sha256": "0c702c3c26686db1b443002ccbbbdcaf40b11e8536122511a472b5fe4315659e",
+      "relative_path": "52_llama_global_diag_scale/analyze_llama_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "e5864fbe5997df2a09c8063705a6fa1117fec73f332ae3780105f944ce7c8474",
+      "packaging_changed": false,
+      "public_sha256": "e5864fbe5997df2a09c8063705a6fa1117fec73f332ae3780105f944ce7c8474",
+      "relative_path": "52_llama_global_diag_scale/frozen_llama_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
+      "packaging_changed": true,
+      "public_sha256": "199d4b0a9e0877ca70e557aaea95850202b01281cdd008e0c5d8b8fd51d29997",
+      "relative_path": "52_llama_global_diag_scale/llama_global_diag_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "184c9c4f8b966adf676348e353ae0ff9100b7f459520e1ef7fe235f073f9bd85",
+      "packaging_changed": true,
+      "public_sha256": "78f4be8b0e810f89112448882d45c478193c199f6b138cbfb4b7a1ca580cbb8a",
+      "relative_path": "52_llama_global_diag_scale/llama_global_diag_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "3fec2d0e27b499284ba28eb9b61532ca8a02e1704a3437f0edb7776d2b1e060a",
+      "packaging_changed": false,
+      "public_sha256": "3fec2d0e27b499284ba28eb9b61532ca8a02e1704a3437f0edb7776d2b1e060a",
+      "relative_path": "52_llama_global_diag_scale/prepare_frozen50_view.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "720e502eb3c05b9756ed9b045866a53c9c40b8ae26b3beb09847f393fb0dfed6",
+      "packaging_changed": false,
+      "public_sha256": "720e502eb3c05b9756ed9b045866a53c9c40b8ae26b3beb09847f393fb0dfed6",
+      "relative_path": "52_llama_global_diag_scale/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "917ca5fa152a13091af9a2d35a4cc286f93c46ac0967a81cb704cd6b1dfa5671",
+      "packaging_changed": true,
+      "public_sha256": "8737e562aae5ca80fa1d24d3110177601c88e3358b8f5a3b14888542c382ab05",
+      "relative_path": "52_llama_global_diag_scale/run_llama_global_diag_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "cb6ced6de2b2816640a355f36a684aaf575fd314f742a5887d7cbcd36a5e751e",
+      "packaging_changed": false,
+      "public_sha256": "cb6ced6de2b2816640a355f36a684aaf575fd314f742a5887d7cbcd36a5e751e",
+      "relative_path": "52_llama_global_diag_scale/test_analyze_llama_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "20671514db193705d97e6882d720e027dcd15becae985cc96c15403a464232d4",
+      "packaging_changed": true,
+      "public_sha256": "e7d75f62396ba5a10c471c93894e95e7c6c58e2f78a04f68383b9408311a75fe",
+      "relative_path": "52_llama_global_diag_scale/test_llama_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "554fbe6c09855a88830938bf5c4d21d21475ee815cb53d752364c74fa3a80a21",
+      "packaging_changed": false,
+      "public_sha256": "554fbe6c09855a88830938bf5c4d21d21475ee815cb53d752364c74fa3a80a21",
+      "relative_path": "analysis/audit_ex50_52_wandb_exports.py",
       "source_role": "legacy_experiment_repo"
     }
   ],

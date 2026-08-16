@@ -1,0 +1,55 @@
+{
+  "code_directory": "scripts/51_moddedgpt_global_diag_scale",
+  "entrypoints": {
+    "command:20260814_ex51_moddedgpt_global_diag_scale": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX51_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "all"
+          ],
+          "env": {
+            "EX51_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/51_moddedgpt_global_diag_scale/20260814_ex51_moddedgpt_global_diag_scale.sh"
+    },
+    "script:run_global_diag_scale_cell": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/51_moddedgpt_global_diag_scale/run_global_diag_scale_cell.py"
+    },
+    "script:run_global_diag_scale_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/51_moddedgpt_global_diag_scale/run_global_diag_scale_suite.py"
+    }
+  },
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "legacy_result_roots": [
+    "51_moddedgpt_global_diag_scale"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": false,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "51 Moddedgpt Global Diag Scale"
+}

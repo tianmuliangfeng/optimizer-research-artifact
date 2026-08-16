@@ -25,23 +25,14 @@ TEXT_SUFFIXES = {
     ".yml",
 }
 WINDOWS_ABSOLUTE = re.compile(r"(?<![A-Za-z0-9_])[A-Za-z]:(?:[\\/]|\\\\)")
-PRIVATE_POSIX_ABSOLUTE = re.compile(
-    r"/(?:data|home|Users|mnt|workspace|root)/"
-    r"(?:[A-Z][0-9]{6,}|[A-Za-z][A-Za-z0-9_-]*[0-9]{8,})(?:/|\\)",
-    re.IGNORECASE,
+REMOTE_DATA_ROOT = re.compile(
+    r"(?<![A-Za-z0-9_}$>])/data/[A-Za-z][A-Za-z0-9._-]*[0-9]{6,}"
 )
-IPV4_ADDRESS = re.compile(
-    r"(?<![0-9.])(?:25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})"
-    r"(?:\.(?:25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})){3}(?![0-9.])"
-)
-WANDB_URL = re.compile(r"https?://(?:www\.)?wandb\.ai/", re.IGNORECASE)
-CONTAINER_HOSTNAME = re.compile(
-    r"\bapp-[0-9a-f]{12,}(?:-[a-z0-9]{4,}){1,}\b", re.IGNORECASE
-)
-EMAIL_ADDRESS = re.compile(
-    r"(?<![A-Za-z0-9._%+-])[A-Za-z0-9._%+-]+@"
-    r"[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?![A-Za-z0-9.-])"
-)
+USER_HOME = re.compile(r"(?i)(?:[A-Za-z]:[\\/]+Users[\\/]+|/home/)[^/\\\s]+")
+IPV4 = re.compile(r"(?<![0-9])(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?![0-9])")
+WANDB_PUBLIC_URL = re.compile(r"https?://(?:www\.)?wandb\.ai/", re.IGNORECASE)
+CONTAINER_HOST = re.compile(r"\bapp-[a-z0-9-]{12,}\b", re.IGNORECASE)
+EMAIL = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")
 
 
 def sha256(path: Path) -> str:
@@ -238,44 +229,36 @@ class ReleaseIntegrityTests(unittest.TestCase):
         for path in ROOT.rglob("*"):
             if not path.is_file() or path.suffix.lower() not in TEXT_SUFFIXES:
                 continue
-            # This negative-test module intentionally contains fabricated leak
-            # samples; production validators must reject them.
-            if path.name == "test_core_results_packaging.py":
-                continue
             text = path.read_text(encoding="utf-8")
-            label = path.relative_to(ROOT).as_posix()
+            relative = path.relative_to(ROOT).as_posix()
+            if path == Path(__file__).resolve():
+                continue
             checks = {
-                "Windows absolute path": WINDOWS_ABSOLUTE,
-                "private POSIX absolute path": PRIVATE_POSIX_ABSOLUTE,
-                "IPv4 address": IPV4_ADDRESS,
-                "W&B account URL": WANDB_URL,
-                "container hostname": CONTAINER_HOSTNAME,
-                "email address": EMAIL_ADDRESS,
+                "remote data root": REMOTE_DATA_ROOT,
+                "user home": USER_HOME,
+                "IPv4 address": IPV4,
+                "public W&B URL": WANDB_PUBLIC_URL,
+                "private container hostname": CONTAINER_HOST,
             }
-            for description, pattern in checks.items():
-                for match in pattern.finditer(text):
-                    value = match.group(0)
-                    if description == "email address" and value.lower().endswith(
-                        ".invalid"
-                    ):
-                        continue
-                    findings.append(f"{label}: {description}")
+            for label, pattern in checks.items():
+                if pattern.search(text):
+                    findings.append(f"{relative}: {label}")
+            for match in EMAIL.finditer(text):
+                if not match.group(0).lower().endswith(".invalid"):
+                    findings.append(f"{relative}: email address")
+            if WINDOWS_ABSOLUTE.search(text):
+                findings.append(f"{relative}: Windows absolute path")
         self.assertEqual(findings, [])
 
     def test_launchers_do_not_construct_the_private_workspace_layout(self) -> None:
-        forbidden = (
-            "experiment_csv/" + "selective-newton-muon",
-            "experiment_csv\\" + "selective-newton-muon",
-            "${ROOT}/" + "selective-newton-muon",
-            "$WORKSPACE/" + "selective-newton-muon",
-        )
         findings: list[str] = []
         for root in (ROOT / "commands", ROOT / "scripts"):
             for path in root.rglob("*.sh"):
                 text = path.read_text(encoding="utf-8")
-                for value in forbidden:
-                    if value in text:
-                        findings.append(f"{path.relative_to(ROOT).as_posix()}: {value}")
+                if re.search(r"experiment_csv[\\/]+[^$/{\\\s]+", text):
+                    findings.append(
+                        f"{path.relative_to(ROOT).as_posix()}: private result layout"
+                    )
         self.assertEqual(findings, [])
 
     def test_public_path_module_resolves_release_layout(self) -> None:

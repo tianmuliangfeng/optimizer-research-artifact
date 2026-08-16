@@ -1,0 +1,10 @@
+{
+  "contract_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
+  "experiment_id": "50_r1_global_activation_diag",
+  "gpu": "0",
+  "log": "PRIVATE_PATH_REDACTED",
+  "passed": true,
+  "return_code": 0,
+  "schema_version": 1,
+  "source_snapshot_manifest_sha256": "2ade88d8dc2ee388f11cb5d3a82a4f9ff8ef3f53f21793c3de916427ae9b3d4b"
+}

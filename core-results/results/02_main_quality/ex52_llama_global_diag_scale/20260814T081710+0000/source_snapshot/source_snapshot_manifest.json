@@ -1,0 +1,102 @@
+{
+  "contract_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
+  "contract_version": "2026-08-14.4",
+  "created_at": "2026-08-14T08:31:59.630198+00:00",
+  "derived_source_sha256": {
+    "scripts/17_llama_swiglu_validation/run_llama_swiglu_validation.py": "dbb634460db85f6a1fd3fb2536aa9aa0df2afa08573851204b5cccf8e4f4c8fc",
+    "scripts/17_llama_swiglu_validation/train_llama_swiglu.py": "6cbc5df4a83f1a4e23bac534e512336ad1ffa192cfbb077ebe7a1dcd8128c91e",
+    "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py": "0bbe38f7923611ef0b4023d2adcdd40847f2ef7b9bcb0511b193cb67d03bcbdf",
+    "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+  },
+  "expected_k_state_bytes": {
+    "124m": 417792,
+    "1b": 1677312
+  },
+  "experiment_id": "52_llama_global_diag_scale",
+  "file_count": 14,
+  "files": [
+    {
+      "bytes": 3936,
+      "path": "commands/20260814_ex52_llama_global_diag_scale.sh",
+      "sha256": "6724cbfb200679a7e8eba3024cb90b582bc84cd9c5f67effca88f268b4fbcc3f"
+    },
+    {
+      "bytes": 37878,
+      "path": "scripts/17_llama_swiglu_validation/run_llama_swiglu_validation.py",
+      "sha256": "dbb634460db85f6a1fd3fb2536aa9aa0df2afa08573851204b5cccf8e4f4c8fc"
+    },
+    {
+      "bytes": 53542,
+      "path": "scripts/17_llama_swiglu_validation/train_llama_swiglu.py",
+      "sha256": "6cbc5df4a83f1a4e23bac534e512336ad1ffa192cfbb077ebe7a1dcd8128c91e"
+    },
+    {
+      "bytes": 19127,
+      "path": "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py",
+      "sha256": "0bbe38f7923611ef0b4023d2adcdd40847f2ef7b9bcb0511b193cb67d03bcbdf"
+    },
+    {
+      "bytes": 3713,
+      "path": "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py",
+      "sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+    },
+    {
+      "bytes": 3126,
+      "path": "scripts/52_llama_global_diag_scale/README.md",
+      "sha256": "720e502eb3c05b9756ed9b045866a53c9c40b8ae26b3beb09847f393fb0dfed6"
+    },
+    {
+      "bytes": 10574,
+      "path": "scripts/52_llama_global_diag_scale/analyze_llama_global_diag_scale.py",
+      "sha256": "0c702c3c26686db1b443002ccbbbdcaf40b11e8536122511a472b5fe4315659e"
+    },
+    {
+      "bytes": 1655,
+      "path": "scripts/52_llama_global_diag_scale/frozen_llama_controls.csv",
+      "sha256": "e5864fbe5997df2a09c8063705a6fa1117fec73f332ae3780105f944ce7c8474"
+    },
+    {
+      "bytes": 3999,
+      "path": "scripts/52_llama_global_diag_scale/llama_global_diag_contract.json",
+      "sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a"
+    },
+    {
+      "bytes": 11516,
+      "path": "scripts/52_llama_global_diag_scale/llama_global_diag_source_builder.py",
+      "sha256": "184c9c4f8b966adf676348e353ae0ff9100b7f459520e1ef7fe235f073f9bd85"
+    },
+    {
+      "bytes": 6092,
+      "path": "scripts/52_llama_global_diag_scale/prepare_frozen50_view.py",
+      "sha256": "3fec2d0e27b499284ba28eb9b61532ca8a02e1704a3437f0edb7776d2b1e060a"
+    },
+    {
+      "bytes": 48329,
+      "path": "scripts/52_llama_global_diag_scale/run_llama_global_diag_suite.py",
+      "sha256": "917ca5fa152a13091af9a2d35a4cc286f93c46ac0967a81cb704cd6b1dfa5671"
+    },
+    {
+      "bytes": 4942,
+      "path": "scripts/52_llama_global_diag_scale/test_analyze_llama_global_diag_scale.py",
+      "sha256": "cb6ced6de2b2816640a355f36a684aaf575fd314f742a5887d7cbcd36a5e751e"
+    },
+    {
+      "bytes": 14922,
+      "path": "scripts/52_llama_global_diag_scale/test_llama_global_diag_scale.py",
+      "sha256": "20671514db193705d97e6882d720e027dcd15becae985cc96c15403a464232d4"
+    }
+  ],
+  "official_r0_source_sha256": {
+    "triton_kernels.py": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+  },
+  "official_repo": "PRIVATE_PATH_REDACTED",
+  "parent_source_sha256": {
+    "scripts/17_llama_swiglu_validation/run_llama_swiglu_validation.py": "9804398a680cb9d2b3553dcba92e104f7c105b0c6a513932d104df1bb2809c1d",
+    "scripts/17_llama_swiglu_validation/train_llama_swiglu.py": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py": "f55601c5e1d5d898b3f7b51100d02eb552c7a615963828dd26688766b652f7d0",
+    "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+  },
+  "passed": true,
+  "repo": "PRIVATE_PATH_REDACTED",
+  "schema_version": 2
+}

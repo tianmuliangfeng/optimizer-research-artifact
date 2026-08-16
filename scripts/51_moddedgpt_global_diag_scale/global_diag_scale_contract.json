@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "contract_version": "2026-08-14.6",
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "method": "global_diag",
+  "scientific_question": "Does replacing every Newton input-covariance factor by its full coordinate-wise diagonal remain competitive as ModdedGPT scales from approximately 275M to 455M parameters?",
+  "formal": {
+    "scales": ["275m", "455m"],
+    "seeds_by_scale": {
+      "275m": [2024, 2025, 2026, 2027],
+      "455m": [2024, 2025, 2026]
+    },
+    "formal_units": 7,
+    "max_concurrent_units": 2
+  },
+  "pilot": {
+    "scales": ["275m", "455m"],
+    "seeds": [2026],
+    "units": 2,
+    "quality_evidence": false
+  },
+  "frozen_recipes": {
+    "275m": {
+      "parent_experiment": "43_newton_muon_record28_275m",
+      "updates": 1695,
+      "tokens_per_update": 393216,
+      "train_tokens": 666501120,
+      "parameter_count": 275743572,
+      "primary_control": "selective_diag"
+    },
+    "455m": {
+      "parent_experiment": "44_newton_muon_record17_455m",
+      "updates": 5960,
+      "tokens_per_update": 524288,
+      "train_tokens": 3124756480,
+      "parameter_count": 454496336,
+      "primary_control": "selective_diag"
+    }
+  },
+  "algorithmic_intervention": {
+    "attention_input_factors": "coordinate-wise diagonal",
+    "attention_output_factors": "coordinate-wise diagonal",
+    "mlp_expansion_input_factors": "coordinate-wise diagonal",
+    "mlp_contraction_input_factors": "coordinate-wise diagonal",
+    "dense_newton_factor_or_workspace_allowed": false,
+    "other_training_recipe_changes_allowed": false
+  },
+  "runtime": {
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "numpy": "2.2.6",
+    "gpu_name_contains": "H100",
+    "compute_capability": [9, 0],
+    "allowed_gpu_counts": [1, 2],
+    "gpu_allocation_frozen_by_preflight": true,
+    "dynamic_gpu_expansion_allowed": false
+  },
+  "data": {
+    "source_repository": "Newton-Muon-official-r0",
+    "accepted_inventory": "Experiment-43/44 frozen FineWeb10B shards 1-50 plus validation shard",
+    "accepted_fingerprint_sha256": "1202c308d21ea690c17b958b98cbe40c65969a21928230950401f777adda8c68",
+    "view_must_be_within_official_r0": true,
+    "full_content_sha256_required": true,
+    "important": "Never expose the 51+ shards added for Experiment 48 to an Experiment-51 worker."
+  },
+  "frozen_controls": {
+    "path": "scripts/51_moddedgpt_global_diag_scale/frozen_scale_controls.csv",
+    "sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79",
+    "rows": 28,
+    "read_only": true
+  },
+  "analysis": {
+    "primary_metric": "final_val_loss",
+    "primary_control": "selective_diag",
+    "descriptive_margin": 0.002,
+    "timing_eligible": false,
+    "pilot_eligible": false
+  },
+  "resume": {
+    "accepted_unit_skip": true,
+    "failed_attempt_preserved": true,
+    "mid_step_resume": false,
+    "same_run_directory_required": true
+  }
+}

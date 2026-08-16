@@ -35,7 +35,7 @@
       "source_root": "source",
       "source": "experiments/catalog.json",
       "package_path": "provenance/public_source/catalog.json",
-      "source_sha256": "b8881bcaa0b7f166e88655ab902bcb2da71b24319b1b8a7551e58898f03914b6",
+      "source_sha256": "5f51610d9ec0788acd213667243e7d93bfb37e7d9b87392c1423b04ac28d52ce",
       "integrity_status": "hash_anchored",
       "scientific_status": "catalog_snapshot",
       "claim_eligibility": "provenance_only",
@@ -46,7 +46,7 @@
       "source_root": "source",
       "source": "provenance/accepted_result_anchors.json",
       "package_path": "provenance/public_source/accepted_result_anchors.json",
-      "source_sha256": "925a8c00ac3a838b14e79dd2e25346fdb2b78f614fc507a3d721c4e386c6f778",
+      "source_sha256": "24b39489dd3697eeb0ca5282159a92151f699d422f78f1c702b3590fa8b5df04",
       "integrity_status": "hash_anchored",
       "scientific_status": "accepted_result_anchor_snapshot",
       "claim_eligibility": "provenance_only",
@@ -808,6 +808,114 @@
         "analysis/final_acceptance_20260812/wandb_reconciliation_summary.json",
         "_received_20260812/full_checkpoint_verify_20260812T031024+0000.json",
         "_received_20260812/full_checkpoint_verify_20260812T031024+0000.json.sha256"
+      ]
+    },
+    {
+      "id": "ex50_global_activation_diag_124m",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["50_r1_global_activation_diag"],
+      "integrity_status": "accepted_three_of_three_with_wandb_reconciliation",
+      "scientific_status": "global_diag_worse_than_selective_diag_at_moddedgpt_124m",
+      "claim_eligibility": "quality_state_only_timing_excluded",
+      "paper_role": "global_vs_selective_diag_ablation",
+      "source_prefix": "50_r1_global_activation_diag",
+      "destination_prefix": "results/02_main_quality/ex50_global_activation_diag_124m",
+      "source_anchor": {
+        "file": "20260814T045805+0000/analysis/analysis_manifest.json",
+        "sha256": "a34f32e82ca9ecb47d77eb61452d6ab2b996d779b736adc82800b9044b6ee62b"
+      },
+      "files": [
+        "20260814T045805+0000/analysis/aggregate_contrasts.csv",
+        "20260814T045805+0000/analysis/all_method_runs.csv",
+        "20260814T045805+0000/analysis/analysis_manifest.json",
+        "20260814T045805+0000/analysis/EXPERIMENT_50_ANALYSIS.md",
+        "20260814T045805+0000/analysis/global_diag_formal_results.csv",
+        "20260814T045805+0000/analysis/method_summary.csv",
+        "20260814T045805+0000/analysis/paired_contrasts.csv",
+        "20260814T045805+0000/formal_manifest.json",
+        "20260814T045805+0000/handoff_manifest.json",
+        "20260814T045805+0000/pilot_manifest.json",
+        "20260814T045805+0000/preflight_manifest.json",
+        "20260814T045805+0000/source_snapshot/source_snapshot_manifest.json"
+      ]
+    },
+    {
+      "id": "ex51_moddedgpt_global_diag_scale",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["51_moddedgpt_global_diag_scale"],
+      "integrity_status": "accepted_seven_of_seven_with_wandb_reconciliation",
+      "scientific_status": "moddedgpt_scale_confirmation_does_not_reverse_selective_result",
+      "claim_eligibility": "quality_state_only_timing_excluded",
+      "paper_role": "global_vs_selective_diag_scale_ablation",
+      "source_prefix": "51_moddedgpt_global_diag_scale",
+      "destination_prefix": "results/02_main_quality/ex51_moddedgpt_global_diag_scale",
+      "source_anchor": {
+        "file": "20260814T103626+0000/analysis/analysis_manifest.json",
+        "sha256": "aebc409fa4e4ab8f7f3d2d7b7f83d2a05e61c8b91ce759368ea5054501d331e9"
+      },
+      "files": [
+        "20260814T103626+0000/analysis/analysis_manifest.json",
+        "20260814T103626+0000/analysis/formal_endpoints.csv",
+        "20260814T103626+0000/analysis/method_summary.csv",
+        "20260814T103626+0000/analysis/paired_contrasts.csv",
+        "20260814T103626+0000/formal/formal_manifest.json",
+        "20260814T103626+0000/handoff_manifest.json",
+        "20260814T103626+0000/pilot/pilot_manifest.json",
+        "20260814T103626+0000/preflight/preflight_manifest.json",
+        "20260814T103626+0000/source_snapshot/source_snapshot_manifest.json",
+        "20260814T103626+0000/upload/upload_manifest.json"
+      ]
+    },
+    {
+      "id": "ex52_llama_global_diag_scale",
+      "tier": "core",
+      "workstream": "main_quality",
+      "experiment_ids": ["52_llama_global_diag_scale"],
+      "integrity_status": "accepted_six_of_six_with_documented_stitched_wandb_lineage",
+      "scientific_status": "global_diag_strong_low_state_llama_alternative",
+      "claim_eligibility": "quality_state_only_local_formal_primary_timing_excluded",
+      "paper_role": "architecture_conditioned_global_diag_ablation",
+      "source_prefix": "52_llama_global_diag_scale",
+      "destination_prefix": "results/02_main_quality/ex52_llama_global_diag_scale",
+      "source_anchor": {
+        "file": "20260814T081710+0000/analysis/analysis_manifest.json",
+        "sha256": "9472b035a994d7e7810933c37383711ef47418a2508217aad053d8ed79056bbd"
+      },
+      "files": [
+        "20260814T081710+0000/analysis/analysis_manifest.json",
+        "20260814T081710+0000/analysis/formal_endpoints.csv",
+        "20260814T081710+0000/analysis/method_summary.csv",
+        "20260814T081710+0000/analysis/paired_contrasts.csv",
+        "20260814T081710+0000/formal/formal_manifest.json",
+        "20260814T081710+0000/handoff_manifest.json",
+        "20260814T081710+0000/pilot/pilot_manifest.json",
+        "20260814T081710+0000/preflight/preflight_manifest.json",
+        "20260814T081710+0000/screen/screen_manifest.json",
+        "20260814T081710+0000/source_snapshot/source_snapshot_manifest.json"
+      ]
+    },
+    {
+      "id": "ex50_52_wandb_reconciliation",
+      "tier": "supporting",
+      "workstream": "main_quality",
+      "experiment_ids": ["50_r1_global_activation_diag", "51_moddedgpt_global_diag_scale", "52_llama_global_diag_scale"],
+      "integrity_status": "accepted_111_of_111_metric_reconciliations",
+      "scientific_status": "secondary_wandb_mirror_with_ex52_stitched_history_boundary",
+      "claim_eligibility": "supporting_lineage_only_timing_excluded",
+      "paper_role": "wandb_crosscheck_and_loss_trajectory_mirror",
+      "source_prefix": "_shared/analysis/global_diag_wandb_reconciliation_20260816",
+      "destination_prefix": "results/02_main_quality/ex50_52_wandb_reconciliation",
+      "source_anchor": {
+        "file": "wandb_audit_manifest.json",
+        "sha256": "9a6a1cc33178aff11dd46edae7b18649cf3e376f3159ae08d6df6a5344ca3dec"
+      },
+      "files": [
+        "wandb_audit_manifest.json",
+        "WANDB_AUDIT.md",
+        "wandb_loss_trajectories.csv",
+        "wandb_reconciliation.csv"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
   "content_policy": "Original command contents remain in the private research archive; the public release retains hashes and sanitized launchers only.",
-  "record_count": 37,
+  "record_count": 40,
   "records": [
     {
       "filename": "20260727_mech00_llama_followup_full_hash.sh",
@@ -223,6 +223,24 @@
       "original_sha256": "1d4a7cb702abcb638d35f94eb48651c90c3dfb9c925807e826e413a3c458c51b",
       "public_path": "commands/49_r1_malt_strong_baseline/20260807_ex49_r1_malt_strong_baseline.sh",
       "public_sha256": "49c2ac173c48bba9c8b287c1ca4735102e8355716a1761ab93c8ab4c1e02d98c"
+    },
+    {
+      "filename": "20260814_ex50_r1_global_activation_diag.sh",
+      "original_sha256": "ebcb6e5e534a87e0c41211c710d2cc24e7212a8903974393584d333708ccd869",
+      "public_path": "commands/50_r1_global_activation_diag/20260814_ex50_r1_global_activation_diag.sh",
+      "public_sha256": "1d8ae0b6556ffafe687c810963e5fb2a1a203453a97c8cbb21127ca078f45a73"
+    },
+    {
+      "filename": "20260814_ex51_moddedgpt_global_diag_scale.sh",
+      "original_sha256": "9818b60cf56d3e3f4652826a77ebf8d050a0ad63d34653df3c03b1ac134170de",
+      "public_path": "commands/51_moddedgpt_global_diag_scale/20260814_ex51_moddedgpt_global_diag_scale.sh",
+      "public_sha256": "b0fc52ed2edb711300f42de76f8844714ec3edaa5ab094563b57d1caff60c024"
+    },
+    {
+      "filename": "20260814_ex52_llama_global_diag_scale.sh",
+      "original_sha256": "6724cbfb200679a7e8eba3024cb90b582bc84cd9c5f67effca88f268b4fbcc3f",
+      "public_path": "commands/52_llama_global_diag_scale/20260814_ex52_llama_global_diag_scale.sh",
+      "public_sha256": "68c7bf1c114a56c03176cfc1917f4547c099f564ad3d32991bfcab373fb0640a"
     }
   ],
   "schema_version": 1

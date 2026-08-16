@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "experiment_id": "50_r1_global_activation_diag",
+  "script_version": "2026-08-14.1",
+  "research_question": "Does the accepted selective c_proj diagonal result persist when every eligible Newton matrix uses an activation-second-moment diagonal?",
+  "method": "global_diag",
+  "seeds": [2024, 2025, 2026],
+  "primary_comparator": "diag",
+  "secondary_comparators": ["block4", "none", "muon"],
+  "primary_metric": "final_val_loss",
+  "paired_delta_definition": "global_diag_minus_comparator; negative favors global_diag",
+  "practical_proximity_margin": 0.002,
+  "formal_equivalence_claim_allowed": false,
+  "training_recipe": {
+    "base_script": "train_gpt_newton_muon_1.py",
+    "num_iterations": 6200,
+    "base_learning_rate": 0.004,
+    "matrix_learning_rate": 0.0004,
+    "tokens_per_step": 524288,
+    "sequence_length": 1024,
+    "batch_size_sequences": 512,
+    "device_batch_size_sequences": 64,
+    "warmdown_iters": 1800,
+    "validation_every_steps": 100,
+    "refresh_period_steps": 32,
+    "pilot_steps": 34,
+    "pilot_seeds": [2024, 2025, 2026]
+  },
+  "global_diag_route": {
+    "eligible_matrix_parameters": 48,
+    "input_diagonal_factors": 84,
+    "n_layer": 12,
+    "d_model": 768,
+    "qkv_shape_per_layer": [768],
+    "attention_output_shape_per_layer": [768],
+    "c_fc_shape_per_layer": [768],
+    "c_proj_shape_per_layer": [4, 768],
+    "expected_k_cov_bytes": 258048,
+    "expected_k_inv_bytes": 258048,
+    "expected_k_state_bytes": 516096,
+    "expected_k_state_mib": 0.4921875,
+    "expected_activation_stat_bytes": 258240,
+    "expected_dense_preconditioner_workspace_bytes": 0,
+    "dense_cholesky_reachable": false
+  },
+  "frozen_controls": {
+    "path": "scripts/50_r1_global_activation_diag/frozen_r1_controls.csv",
+    "source_relative_path": "15_official_newton_muon_r1/analysis/wandb_20260721_multiseed_factorial/r1_multiseed_run_summary.csv",
+    "source_sha256": "ab91afd37db5559c031ed1ffac5441b57856386e62175d94f3f55b3f2568dcc3",
+    "frozen_reference_sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4",
+    "methods": ["block4", "diag", "none", "muon"],
+    "row_count": 12,
+    "read_only": true
+  },
+  "execution_policy": {
+    "physical_gpus": ["0", "1"],
+    "maximum_concurrent_training_processes": 2,
+    "one_visible_gpu_per_process": true,
+    "unit_level_resume": true,
+    "mid_step_resume": false,
+    "wandb_required_for_scientific_validity": false,
+    "timing_usable": false
+  },
+  "classification_policy": {
+    "global_diag_worse_than_selective_diag": "primary mean delta > +0.002",
+    "descriptively_close_not_formal_equivalence": "absolute primary mean delta <= 0.002",
+    "global_diag_better_than_selective_diag": "primary mean delta < -0.002"
+  },
+  "claim_boundaries": {
+    "alternative_module_target_new_training_required": false,
+    "experiment_41_is_frozen_placement_evidence": true,
+    "refresh_long_horizon_in_scope": false,
+    "post_hoc_lr_sweep_allowed": false,
+    "concurrent_timing_claim_allowed": false
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-08-14T04:58:13.615989+00:00",
+  "experiment_id": "50_r1_global_activation_diag",
+  "file_count": 20,
+  "files": [
+    {
+      "bytes": 3354,
+      "path": "commands/20260814_ex50_r1_global_activation_diag.sh",
+      "sha256": "ebcb6e5e534a87e0c41211c710d2cc24e7212a8903974393584d333708ccd869"
+    },
+    {
+      "bytes": 8509,
+      "path": "scripts/14_official_newton_muon_r0/README.md",
+      "sha256": "d06722546a5a116066559643a3dcb545be08b4adc9d6261229053d51a743f2b3"
+    },
+    {
+      "bytes": 45289,
+      "path": "scripts/14_official_newton_muon_r0/run_official_newton_muon_r0.py",
+      "sha256": "f84c7260bc9fdc6209f5cf85589115147802fbabed429b78ca7c0dc21b81c11d"
+    },
+    {
+      "bytes": 7320,
+      "path": "scripts/14_official_newton_muon_r0/test_run_official_newton_muon_r0.py",
+      "sha256": "817019a8683ad7621ed4a6a574ec81015c5ee4f9229163706cc9839ba6447c93"
+    },
+    {
+      "bytes": 7749,
+      "path": "scripts/15_official_newton_muon_r1/README.md",
+      "sha256": "126459d3a4b8c9969e9a64b72dc48bfbdc67793bd2797251be3cd4a3b61ee64b"
+    },
+    {
+      "bytes": 23326,
+      "path": "scripts/15_official_newton_muon_r1/r1_source_builder.py",
+      "sha256": "73801dcb0d7f13b384cf49390bda2fa07d15516a85598038bc6d8e9907e4943c"
+    },
+    {
+      "bytes": 74708,
+      "path": "scripts/15_official_newton_muon_r1/run_official_newton_muon_r1.py",
+      "sha256": "686128ef5a13a02538c270179f8d70197f5811968930e3efc6f978140da80367"
+    },
+    {
+      "bytes": 6045,
+      "path": "scripts/15_official_newton_muon_r1/test_run_official_newton_muon_r1.py",
+      "sha256": "fcf2ebbbc51227661c2c92073067138af3004c854929ebddfa4c8a784e5119de"
+    },
+    {
+      "bytes": 1085,
+      "path": "scripts/50_r1_global_activation_diag/README.md",
+      "sha256": "0dac076fb13f1f15ad1107b9c19c76d23a2c2dea71d6a7d97d8c68562369b409"
+    },
+    {
+      "bytes": 13740,
+      "path": "scripts/50_r1_global_activation_diag/analyze_global_diag.py",
+      "sha256": "18b7aff7994c52b8bf348db59a77763d5dac681ce99c1ed6eb9cfc37e3fd508c"
+    },
+    {
+      "bytes": 1122,
+      "path": "scripts/50_r1_global_activation_diag/frozen_r1_controls.csv",
+      "sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4"
+    },
+    {
+      "bytes": 3040,
+      "path": "scripts/50_r1_global_activation_diag/global_diag_contract.json",
+      "sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38"
+    },
+    {
+      "bytes": 20107,
+      "path": "scripts/50_r1_global_activation_diag/global_diag_source_builder.py",
+      "sha256": "02e0b84d36637180428b6181f542e334ace02ce56eb60d948ffa2dcb2e28dbb1"
+    },
+    {
+      "bytes": 8926,
+      "path": "scripts/50_r1_global_activation_diag/run_global_diag.py",
+      "sha256": "b5ffbff45f76defa97ec17032cc5412d6682ff19fdadae10efced5a5dd1aa479"
+    },
+    {
+      "bytes": 19065,
+      "path": "scripts/50_r1_global_activation_diag/run_global_diag_suite.py",
+      "sha256": "698839ce928410a4a484aa2ff98a15ab0c35459f1bbbc8a5a23148ebd3f59b12"
+    },
+    {
+      "bytes": 4216,
+      "path": "scripts/50_r1_global_activation_diag/test_analyze_global_diag.py",
+      "sha256": "4d018b6624b8b7959a4fb0aa6bf6edf56f457a509642edfa18b0a4081f402333"
+    },
+    {
+      "bytes": 4599,
+      "path": "scripts/50_r1_global_activation_diag/test_global_diag_source.py",
+      "sha256": "e431a8c0012378db022904655661b8295a1649a3c147eab54506cb5d15b92ffa"
+    },
+    {
+      "bytes": 2601,
+      "path": "scripts/50_r1_global_activation_diag/test_global_diag_suite.py",
+      "sha256": "da836b08b5f9e123b90104eb41c52d0359851a7c322fd9dbe6a65db381a1927b"
+    },
+    {
+      "bytes": 1758,
+      "path": "scripts/_shared/project_paths.py",
+      "sha256": "6faeb1069a4d29066478a4437b0f08c816a35bf06bb658e51c5961c1d4e72740"
+    },
+    {
+      "bytes": 8607,
+      "path": "scripts/_shared/runner_utils.py",
+      "sha256": "176f634dc5188da223c569d15c8289ca62770bcdc1671d172325166ff6af6eac"
+    }
+  ],
+  "passed": true,
+  "schema_version": 1
+}

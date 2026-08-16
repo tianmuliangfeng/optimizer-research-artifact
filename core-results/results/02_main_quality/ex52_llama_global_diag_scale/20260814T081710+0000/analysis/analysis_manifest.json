@@ -1,0 +1,26 @@
+{
+  "artifacts": {
+    "formal_endpoints.csv": "48a9d4dc3ce7891dcb097e224ded325cff73844a9fee26d493f1d082872c274c",
+    "method_summary.csv": "9043274caa91f63a076ba827394742e31e1caec56cf984b527c5fdf6bf53d7c8",
+    "paired_contrasts.csv": "e993b3a35852ea1039ded56866859aa0116cf05f1775bb4351ce7f723f05666d"
+  },
+  "checks": {
+    "controls_hash_bound": true,
+    "data_fingerprint_bound": true,
+    "finite": true,
+    "formal_units": true,
+    "primary_contrasts": true,
+    "timing_excluded": true
+  },
+  "contract_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
+  "controls_sha256": "e5864fbe5997df2a09c8063705a6fa1117fec73f332ae3780105f944ce7c8474",
+  "data_fingerprint_sha256": "1202c308d21ea690c17b958b98cbe40c65969a21928230950401f777adda8c68",
+  "experiment_id": "52_llama_global_diag_scale",
+  "passed": true,
+  "schema_version": 2,
+  "scientific_result": {
+    "124m": "descriptively_close",
+    "1b": "global_diag_better"
+  },
+  "source_snapshot_manifest_sha256": "3b55a132071d2fa340f9ae233fb154d43a46f0de188c16665d86e01d05c01f76"
+}

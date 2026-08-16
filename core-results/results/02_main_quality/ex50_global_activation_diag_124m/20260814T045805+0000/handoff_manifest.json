@@ -1,0 +1,12 @@
+{
+  "analysis_manifest": "PRIVATE_PATH_REDACTED__0f08f16d1f84",
+  "analysis_manifest_sha256": "a34f32e82ca9ecb47d77eb61452d6ab2b996d779b736adc82800b9044b6ee62b",
+  "completed_at": "2026-08-16T07:00:31.107717+00:00",
+  "experiment_id": "50_r1_global_activation_diag",
+  "formal_units": 3,
+  "passed": true,
+  "schema_version": 1,
+  "scientific_result": "global_diag_worse_than_selective_diag",
+  "status": "completed",
+  "timing_usable": false
+}

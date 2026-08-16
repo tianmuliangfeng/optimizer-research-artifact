@@ -2,8 +2,8 @@
 
 - [ ] Confirm the paper title, author list, affiliations, and preferred
       citation; then add `CITATION.cff`.
-- [ ] Confirm that the project-level license covers newly authored optimizer
-      and experiment code. The NanoGPT backend retains its upstream MIT notice.
+- [x] Confirm that the project-level MIT license covers newly authored optimizer
+      and experiment code. Third-party MIT notices are retained separately.
 - [ ] Replace any anonymous-review placeholders after the review period.
 - [ ] Publish or document access to the exact accepted result archives.
 - [x] Build and independently validate the relocatable `core-results` package
@@ -15,6 +15,8 @@
 - [x] Accept Experiment 48, rebuild `core-results` in final mode, bind all four
       EX48 gate certificates, and rerun the complete package audit from the
       moved directory.
+- [x] Accept Experiments 50–52, add their 15 result anchors and 111/111 W&B
+      reconciliation, and rebuild the final compact package.
 - [x] Run all CPU tests and `bash -n` over every launcher.
 - [ ] Run native archive verification for every released formal result.
 - [ ] Validate the external Newton-Muon revision and FineWeb inventory on a
@@ -45,3 +47,9 @@ The compact package was rebuilt from empty staging in final mode and validated.
 The endpoint tensors remain external; the receipt is a semantic verifier
 certificate rather than a forensic execution log, and concurrent timing is
 excluded from efficiency claims.
+
+Supplemental-control update on 2026-08-16: Experiments 50–52 passed their
+native analyses; the joint W&B audit reconciled 111/111 metric rows. The public
+Catalog now contains 54 identifiers, the full CPU release suite passes 62/62,
+and all 47 public shell launchers pass syntax validation. Experiment 52's
+stitched W&B history is supporting-only; local formal artifacts remain primary.

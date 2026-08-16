@@ -1,0 +1,25 @@
+{
+  "artifacts": {
+    "formal_endpoints.csv": "6776348027a3cf98a048e70b00cb352cfbce7367d34a89170cd6c46773090102",
+    "method_summary.csv": "472aa48cf9fc2b361b7a0717267b32f73dedee2694a4091c1c11a56795e51ab0",
+    "paired_contrasts.csv": "38f83f4fc8f56b8bf40fc5123bf7fda4c0f08b6566285f5335bc403fcae91554"
+  },
+  "checks": {
+    "all_finite": true,
+    "controls_hash_bound": true,
+    "data_fingerprint_bound": true,
+    "formal_units": true,
+    "primary_contrasts": true,
+    "timing_excluded": true
+  },
+  "contract_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
+  "controls_sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79",
+  "data_fingerprint_sha256": "1202c308d21ea690c17b958b98cbe40c65969a21928230950401f777adda8c68",
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "passed": true,
+  "schema_version": 1,
+  "scientific_result": {
+    "275m": "global_diag_worse",
+    "455m": "global_diag_worse"
+  }
+}

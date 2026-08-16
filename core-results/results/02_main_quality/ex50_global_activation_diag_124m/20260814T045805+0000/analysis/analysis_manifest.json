@@ -1,0 +1,63 @@
+{
+  "artifacts": [
+    {
+      "path": "PRIVATE_PATH_REDACTED__2293d8f1f166",
+      "sha256": "ebe3d99fb4eae9097c3f9457e3892d63a219366ab6ce527ee8edecc4a9ef9573"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__45787f7054ae",
+      "sha256": "2b0c727a84a3d605ab40a3aa1429ca14283fd2b48d8903fd35a6423f6b112a51"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__6c4a0e2d8762",
+      "sha256": "16cb5962024debd4e1df3d9a8cd778ae2b78b0d59993614d9773f9a661773f37"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__ef7790959f10",
+      "sha256": "8544916c3955dd71352819ba29af13ae82ffc0e2417e9b2936b2a04183cbba0c"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__5b4c21fff490",
+      "sha256": "abc5bb1b53b948d3bf1e6683fc4125f3aa91ca3a65f283fd62f6791b99d09c8a"
+    },
+    {
+      "path": "PRIVATE_PATH_REDACTED__c5c098018777",
+      "sha256": "58961efc6eb2d6d4eeaa54a519377c1f13304e8399487da1079adb50358ec904"
+    }
+  ],
+  "checks": {
+    "contract_experiment_id": true,
+    "control_grid": true,
+    "control_source_frozen": true,
+    "derived_source_hash_nonempty": true,
+    "derived_source_one_hash": true,
+    "formal_endpoints": true,
+    "formal_losses_finite": true,
+    "formal_seed_grid": true,
+    "memory_route_exact": true,
+    "no_formal_equivalence_claim": true,
+    "timing_excluded": true
+  },
+  "claim_eligible": true,
+  "classification": "global_diag_worse_than_selective_diag",
+  "completed_at": "2026-08-16T07:00:31.093215+00:00",
+  "contract": "PRIVATE_PATH_REDACTED",
+  "contract_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
+  "controls": "PRIVATE_PATH_REDACTED",
+  "controls_sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4",
+  "experiment_id": "50_r1_global_activation_diag",
+  "passed": true,
+  "primary_contrast": {
+    "ci95_high": 0.01027813432042616,
+    "ci95_low": 0.006788532346240108,
+    "comparator": "diag",
+    "global_diag_better_seed_count": 0,
+    "global_diag_worse_seed_count": 3,
+    "mean_delta_global_minus_comparator": 0.008533333333333134,
+    "n": 3,
+    "sample_sd": 0.0007023769168570037
+  },
+  "schema_version": 1,
+  "script_version": "2026-08-14.1",
+  "status": "completed_valid"
+}

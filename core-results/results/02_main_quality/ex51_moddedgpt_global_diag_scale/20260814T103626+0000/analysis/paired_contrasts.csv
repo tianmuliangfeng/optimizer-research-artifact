@@ -1,0 +1,9 @@
+scale,contrast,n,mean_delta,wins,classification
+275m,global_diag-minus-muon,4,7.253885269165039e-05,2,descriptively_close
+275m,global_diag-minus-original_newton_muon,4,0.0030459165573120117,0,global_diag_worse
+275m,global_diag-minus-selective_none,4,0.003120243549346924,0,global_diag_worse
+275m,global_diag-minus-selective_diag,4,0.0028810501098632812,1,global_diag_worse
+455m,global_diag-minus-muon,3,0.0027227401733398438,0,global_diag_worse
+455m,global_diag-minus-original_newton_muon,3,0.004236857096354167,0,global_diag_worse
+455m,global_diag-minus-selective_none,3,0.005057732264200847,0,global_diag_worse
+455m,global_diag-minus-selective_diag,3,0.0036231676737467446,0,global_diag_worse

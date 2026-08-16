@@ -1,0 +1,33 @@
+{
+  "contract_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
+  "data_fingerprint_sha256": "1202c308d21ea690c17b958b98cbe40c65969a21928230950401f777adda8c68",
+  "experiment_id": "52_llama_global_diag_scale",
+  "passed": true,
+  "schema_version": 2,
+  "source_snapshot_manifest_sha256": "3b55a132071d2fa340f9ae233fb154d43a46f0de188c16665d86e01d05c01f76",
+  "stage": "screen",
+  "unit_count": 3,
+  "units": [
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "216a8bffd25bb4f9622dd26c02c9291ea7205e3a383389f27547b43f56bda6c9",
+      "controller_stage": "medium",
+      "scale": "1b",
+      "seed": 2024
+    },
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "36fec6770668feab9c8fe9286c434feabeb3ac3dc9e7e6b5d9f1aec25c84c080",
+      "controller_stage": "medium",
+      "scale": "1b",
+      "seed": 2025
+    },
+    {
+      "certificate": "PRIVATE_PATH_REDACTED",
+      "certificate_sha256": "0639673d2670c9f9c02029d811fdd1779c91bd7698ae94a8227312c65a654a78",
+      "controller_stage": "medium",
+      "scale": "1b",
+      "seed": 2026
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "checks": {
+    "data_file_count_51": true,
+    "data_fingerprint_exact": true,
+    "data_inventory": true,
+    "data_view_within_official_r0": true,
+    "official_repo": true,
+    "runtime_all_passed": true,
+    "runtime_requested_gpu_count": true,
+    "source_snapshot": true
+  },
+  "data_certificate": "PRIVATE_PATH_REDACTED",
+  "data_certificate_sha256": "7175ff12a4974a3ee5c8c87c545144eac52f8e0f6993a0c10b114cc748ebff77",
+  "data_fingerprint_sha256": "1202c308d21ea690c17b958b98cbe40c65969a21928230950401f777adda8c68",
+  "data_repo_root": "PRIVATE_PATH_REDACTED",
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "gpu_allocation_frozen": true,
+  "official": {
+    "audited_at": "2026-08-14T10:36:28.421225+00:00",
+    "blobs": {
+      "README.md": {
+        "bytes": 3329,
+        "canonical_sha256": "c0de75168a71988240408cace7a973ec666f6006d07466db9f0d497c7f3fdfa6"
+      },
+      "data/cached_fineweb10B.py": {
+        "bytes": 747,
+        "canonical_sha256": "adcc9f7d81ed1ac115a66d08d94d8d3e5c7425cabaf856da1f1fb106af87d09b"
+      },
+      "train_gpt_muon_2.py": {
+        "bytes": 45244,
+        "canonical_sha256": "04e25b21067e55247e603b09c90dcce2616f3418f41b5480dc9bc6ed8ed781c7"
+      },
+      "train_gpt_newton_muon_2.py": {
+        "bytes": 62404,
+        "canonical_sha256": "d30d31e3a01a18ea19050ea8aba04609d4825af2d26594955c148af83b07c4b6"
+      },
+      "triton_kernels.py": {
+        "bytes": 18770,
+        "canonical_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+      }
+    },
+    "commit": "df78af0db523d8bceb25af4919a3e3e7082b80f3",
+    "passed": true,
+    "remote": "https://github.com/zhehangdu/Newton-Muon.git",
+    "repo": "PRIVATE_PATH_REDACTED",
+    "schema_version": 1,
+    "source_from_git_blobs": true,
+    "tracked_changes_are_eol_only": false,
+    "tracked_status": []
+  },
+  "official_repo": "PRIVATE_PATH_REDACTED",
+  "passed": true,
+  "requested_gpu_count": 1,
+  "requested_gpus": [
+    "0"
+  ],
+  "runtime": {
+    "0": {
+      "audited_at": "2026-08-14T10:36:42.252342+00:00",
+      "checks": {
+        "capability": true,
+        "compiled_autograd_default_false": true,
+        "cuda_available": true,
+        "h100": true,
+        "torch": true,
+        "torch_cuda": true,
+        "triton": true,
+        "visible_device_count": true
+      },
+      "passed": true,
+      "payload": {
+        "capability": [
+          9,
+          0
+        ],
+        "compiled_autograd": false,
+        "cuda_available": true,
+        "gpu_name": "NVIDIA H100 80GB HBM3",
+        "logical_device": 0,
+        "numpy": "2.2.6",
+        "python": "3.10.12",
+        "torch": "2.8.0+cu126",
+        "torch_cuda": "12.6",
+        "triton": "3.4.0",
+        "visible_device_count": 1
+      },
+      "physical_gpu_request": "0",
+      "schema_version": 1,
+      "training_python": "PRIVATE_PATH_REDACTED"
+    }
+  },
+  "schema_version": 1,
+  "source_snapshot_manifest_sha256": "a3d8c7edf4f5e0857d41fb922e011af10d422e0dc47bee788adfc07a692c8be7"
+}

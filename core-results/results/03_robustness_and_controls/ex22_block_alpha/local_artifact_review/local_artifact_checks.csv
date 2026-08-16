@@ -178,7 +178,7 @@ formal_seed2024_alpha0p25:metrics_identity,True,required,rows=6263
 formal_seed2024_alpha0p25:metrics_summary_endpoint,True,required,metrics=3.261 summary=3.261
 formal_seed2024_alpha0p25:wandb_validation_curve,True,required,local_points=63 wandb_points=63
 formal_seed2024_alpha0p25:wandb_summary_metrics,True,required,final=3.261;tail5=3.2692799999999997;auc=3.6148645161290323
-formal_seed2024_alpha0p25:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0001', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0002', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0002'}"
+formal_seed2024_alpha0p25:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0001', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0002', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0002/runs/ANONYMIZED_WANDB_RUN_ID_0002'}"
 formal_seed2024_alpha0p25:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260727T105514+0000_formal_seed2024/mainconf_r1_block_alpha_confirmatory_alpha0p25_seed2024_20260727T105514+0000PRIVATE_PATH_REDACTED']
 formal_seed2024_alpha0p25:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13893632 declared=1539116209
 formal_seed2024_alpha0p50:identity,True,required,method=alpha0p50 seed=2024
@@ -196,7 +196,7 @@ formal_seed2024_alpha0p50:metrics_identity,True,required,rows=6263
 formal_seed2024_alpha0p50:metrics_summary_endpoint,True,required,metrics=3.2617 summary=3.2617
 formal_seed2024_alpha0p50:wandb_validation_curve,True,required,local_points=63 wandb_points=63
 formal_seed2024_alpha0p50:wandb_summary_metrics,True,required,final=3.2617;tail5=3.2699399999999996;auc=3.6148620967741936
-formal_seed2024_alpha0p50:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0002', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0003', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0003'}"
+formal_seed2024_alpha0p50:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0002', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0003', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0002/runs/ANONYMIZED_WANDB_RUN_ID_0003'}"
 formal_seed2024_alpha0p50:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260727T105514+0000_formal_seed2024/mainconf_r1_block_alpha_confirmatory_alpha0p50_seed2024_20260727T105514+0000PRIVATE_PATH_REDACTED']
 formal_seed2024_alpha0p50:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13631488 declared=1539116209
 formal_seed2024_alpha0p75:identity,True,required,method=alpha0p75 seed=2024
@@ -214,7 +214,7 @@ formal_seed2024_alpha0p75:metrics_identity,True,required,rows=6263
 formal_seed2024_alpha0p75:metrics_summary_endpoint,True,required,metrics=3.2615 summary=3.2615
 formal_seed2024_alpha0p75:wandb_validation_curve,True,required,local_points=63 wandb_points=63
 formal_seed2024_alpha0p75:wandb_summary_metrics,True,required,final=3.2615;tail5=3.26978;auc=3.6151701612903224
-formal_seed2024_alpha0p75:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0003', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0004', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0004'}"
+formal_seed2024_alpha0p75:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0003', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0004', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0002/runs/ANONYMIZED_WANDB_RUN_ID_0004'}"
 formal_seed2024_alpha0p75:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260727T105514+0000_formal_seed2024/mainconf_r1_block_alpha_confirmatory_alpha0p75_seed2024_20260727T105514+0000PRIVATE_PATH_REDACTED']
 formal_seed2024_alpha0p75:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13631488 declared=1539116209
 formal_seed2024_alpha0:identity,True,required,method=alpha0 seed=2024
@@ -232,7 +232,7 @@ formal_seed2024_alpha0:metrics_identity,True,required,rows=6263
 formal_seed2024_alpha0:metrics_summary_endpoint,True,required,metrics=3.2622 summary=3.2622
 formal_seed2024_alpha0:wandb_validation_curve,True,required,local_points=63 wandb_points=63
 formal_seed2024_alpha0:wandb_summary_metrics,True,required,final=3.2622;tail5=3.27046;auc=3.6160806451612904
-formal_seed2024_alpha0:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0004', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0005', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0005'}"
+formal_seed2024_alpha0:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0004', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0005', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0002/runs/ANONYMIZED_WANDB_RUN_ID_0005'}"
 formal_seed2024_alpha0:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260727T105514+0000_formal_seed2024/mainconf_r1_block_alpha_confirmatory_alpha0_seed2024_20260727T105514+0000PRIVATE_PATH_REDACTED']
 formal_seed2024_alpha0:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13631488 declared=1539116145
 formal_seed2024:run_method_grid,True,required,"['alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75']"
@@ -266,7 +266,7 @@ formal_seed2025_alpha0p25:metrics_identity,True,required,rows=6263
 formal_seed2025_alpha0p25:metrics_summary_endpoint,True,required,metrics=3.2598 summary=3.2598
 formal_seed2025_alpha0p25:wandb_validation_curve,True,required,local_points=63 wandb_points=63
 formal_seed2025_alpha0p25:wandb_summary_metrics,True,required,final=3.2598;tail5=3.26802;auc=3.6116008064516127
-formal_seed2025_alpha0p25:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0005', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0006', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0006'}"
+formal_seed2025_alpha0p25:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0005', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0006', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0002/runs/ANONYMIZED_WANDB_RUN_ID_0006'}"
 formal_seed2025_alpha0p25:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260728T000933+0000_formal_seed2025/mainconf_r1_block_alpha_confirmatory_alpha0p25_seed2025_20260728T000933+0000PRIVATE_PATH_REDACTED']
 formal_seed2025_alpha0p25:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13369344 declared=1539116209
 formal_seed2025_alpha0p50:identity,True,required,method=alpha0p50 seed=2025
@@ -284,7 +284,7 @@ formal_seed2025_alpha0p50:metrics_identity,True,required,rows=6263
 formal_seed2025_alpha0p50:metrics_summary_endpoint,True,required,metrics=3.2588 summary=3.2588
 formal_seed2025_alpha0p50:wandb_validation_curve,True,required,local_points=63 wandb_points=63
 formal_seed2025_alpha0p50:wandb_summary_metrics,True,required,final=3.2588;tail5=3.26706;auc=3.6108120967741937
-formal_seed2025_alpha0p50:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0006', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0007', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0007'}"
+formal_seed2025_alpha0p50:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0006', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0007', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0002/runs/ANONYMIZED_WANDB_RUN_ID_0007'}"
 formal_seed2025_alpha0p50:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260728T000933+0000_formal_seed2025/mainconf_r1_block_alpha_confirmatory_alpha0p50_seed2025_20260728T000933+0000PRIVATE_PATH_REDACTED']
 formal_seed2025_alpha0p50:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13369344 declared=1539116209
 formal_seed2025_alpha0p75:identity,True,required,method=alpha0p75 seed=2025
@@ -302,7 +302,7 @@ formal_seed2025_alpha0p75:metrics_identity,True,required,rows=6263
 formal_seed2025_alpha0p75:metrics_summary_endpoint,True,required,metrics=3.259 summary=3.259
 formal_seed2025_alpha0p75:wandb_validation_curve,True,required,local_points=63 wandb_points=63
 formal_seed2025_alpha0p75:wandb_summary_metrics,True,required,final=3.259;tail5=3.2672199999999996;auc=3.6114540322580644
-formal_seed2025_alpha0p75:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0007', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0008', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0008'}"
+formal_seed2025_alpha0p75:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0007', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0008', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0002/runs/ANONYMIZED_WANDB_RUN_ID_0008'}"
 formal_seed2025_alpha0p75:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260728T000933+0000_formal_seed2025/mainconf_r1_block_alpha_confirmatory_alpha0p75_seed2025_20260728T000933+0000PRIVATE_PATH_REDACTED']
 formal_seed2025_alpha0p75:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13369344 declared=1539116209
 formal_seed2025_alpha0:identity,True,required,method=alpha0 seed=2025
@@ -320,7 +320,7 @@ formal_seed2025_alpha0:metrics_identity,True,required,rows=6263
 formal_seed2025_alpha0:metrics_summary_endpoint,True,required,metrics=3.2601 summary=3.2601
 formal_seed2025_alpha0:wandb_validation_curve,True,required,local_points=63 wandb_points=63
 formal_seed2025_alpha0:wandb_summary_metrics,True,required,final=3.2601;tail5=3.26828;auc=3.6131661290322583
-formal_seed2025_alpha0:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0008', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0009', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0001/runs/ANONYMIZED_WANDB_RUN_ID_0009'}"
+formal_seed2025_alpha0:wandb_identity,True,required,"{'status': 'uploaded', 'mode': 'online', 'run_name': 'ANONYMIZED_WANDB_RUN_NAME_0008', 'run_id': 'ANONYMIZED_WANDB_RUN_ID_0009', 'run_url': 'https://wandb.invalid/ANONYMIZED_WANDB_ENTITY_0001/ANONYMIZED_WANDB_PROJECT_0002/runs/ANONYMIZED_WANDB_RUN_ID_0009'}"
 formal_seed2025_alpha0:checkpoint_entry_count,True,handoff,['20260727T104042+0000/20260728T000933+0000_formal_seed2025/mainconf_r1_block_alpha_confirmatory_alpha0_seed2025_20260728T000933+0000PRIVATE_PATH_REDACTED']
 formal_seed2025_alpha0:checkpoint_exclusion_recorded,True,documented_exclusion,user-confirmed transfer exclusion; bytes=13369344 declared=1539116145
 formal_seed2025:run_method_grid,True,required,"['alpha0', 'alpha0p25', 'alpha0p50', 'alpha0p75']"

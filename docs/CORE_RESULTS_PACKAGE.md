@@ -147,4 +147,15 @@ efficiency claims.
 
 The package supports a bounded paper story: K-state allocation is environment-dependent; the preferred quality/state trade-off changes across model size and architecture; the `diag` direction transfers across the three depth environments while its amplitude does not; Mousse and MALT are useful external neighbors at 124M but do not dominate the selective variants; and refresh interventions have a reproducible short-horizon loss effect while the stronger proposed geometry mediation remains unsupported. Null and partial mechanism findings are retained because they define the claim boundary rather than weakening the integrity of the accepted positive results.
 
+## Global-diagonal supplemental controls
+
+The final selection includes Experiments 50–52. ModdedGPT 124M/275M/455M
+supports selective rather than global diagonal state, whereas LLaMA 124M/1B
+shows global diagonal state as a strong low-state alternative. The compact
+package includes the accepted formal summaries and a 111/111 W&B metric
+reconciliation. It excludes raw exports and all concurrent timing. Because the
+Experiment 52 1B run ID was reused across screen and formal continuation, its
+W&B history is supporting lineage only; local formal CSVs and manifests remain
+primary.
+
 The claim matrix and limitations matrix in `results/06_unified_submission/final_unified_38_45` and the closure documents in `results/04_mechanism/mechanism_closure` are authoritative for wording. No individual CSV should be used to widen a claim beyond those boundaries.

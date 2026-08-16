@@ -1,0 +1,18 @@
+{
+  "analysis_manifest_sha256": "9472b035a994d7e7810933c37383711ef47418a2508217aad053d8ed79056bbd",
+  "checks": {
+    "analysis": true,
+    "analysis_contract": true,
+    "analysis_snapshot": true,
+    "formal": true,
+    "pilot": true,
+    "preflight": true,
+    "screen": true
+  },
+  "contract_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
+  "experiment_id": "52_llama_global_diag_scale",
+  "passed": true,
+  "schema_version": 2,
+  "source_snapshot_manifest_sha256": "3b55a132071d2fa340f9ae233fb154d43a46f0de188c16665d86e01d05c01f76",
+  "status": "completed"
+}

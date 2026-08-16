@@ -12,19 +12,20 @@ and an explicit catalog of implemented, analysis-only, and never-implemented
 plans in a publication-oriented layout. Training data, model checkpoints, W&B
 exports, and private machine paths are not part of the source release.
 
+Newly authored code is released under the MIT license in [`LICENSE`](LICENSE).
+Third-party attributions and preserved license texts are listed in
+[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
 ## Anonymous-review release
 
-This snapshot is prepared for double-blind review. Newly authored code is
-released under the MIT license in [`LICENSE`](LICENSE), with upstream
-attribution and preserved notices in
-[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md). The accompanying compact
-evidence is placed in `core-results/` in the submission repository; the
-internal `full-archive` is intentionally excluded from public distribution.
+This snapshot is prepared for double-blind review. The accompanying compact
+evidence is placed in `core-results/`; the internal `full-archive` is
+intentionally excluded from public distribution.
 
 The repository must be published from a fresh Git history under an anonymous
-URL. During review, do not replace anonymous authorship metadata or add a
-link to an identifiable GitHub account. The paper-facing URL remains
-`{{ANONYMOUS_REPOSITORY_URL}}` until the anonymous mirror is created.
+URL. During review, do not replace anonymous authorship metadata or add a link
+to an identifiable GitHub account. The paper-facing URL is the audited
+Anonymous GitHub mirror documented in the submission, never the private origin.
 
 ## Repository layout
 
@@ -57,7 +58,7 @@ Formal H100 experiments used a stricter frozen environment documented in
 
 ## Reproduction interface
 
-List all 51 registered experiment identifiers:
+List all 54 registered experiment identifiers:
 
 ```bash
 python reproducibility/reproduce.py list
@@ -113,7 +114,7 @@ included in the signed plan receipt.
 
 ## Reproducibility scope
 
-- 43 experiment directories contain runnable training or diagnostic code.
+- 46 experiment directories contain runnable training or diagnostic code.
 - 3 directories are analysis-only.
 - 5 historical identifiers were planning placeholders and are explicitly
   marked `planned_not_implemented`.
@@ -126,6 +127,10 @@ included in the signed plan receipt.
   49 includes the hash-bound MALT-family implementation and accepted-unit
   resume/verification controller. Both retain public-path packaging lineage,
   while their result payloads remain in the separate result packages.
+- Experiments 50–52 close the global-vs-selective diagonal control across
+  ModdedGPT 124M/275M/455M and LLaMA 124M/1B. Each has a portable launcher,
+  native verification, accepted-result anchors, and a W&B reconciliation;
+  concurrent timing remains excluded.
 
 See the generated [experiment index](docs/EXPERIMENT_INDEX.md) for the status
 of every identifier.
@@ -172,3 +177,9 @@ artifacts and accepted-result anchors. The final build remains fail-closed and
 must be rebuilt from an empty staging directory. See
 [`docs/CORE_RESULTS_PACKAGE.md`](docs/CORE_RESULTS_PACKAGE.md) for the evidence
 tiers and release gate.
+
+The final compact package also includes Experiments 50–52 and their joint
+111/111 metric reconciliation. Experiment 52's reused 1B W&B history stitches
+the screen and formal continuation, so accepted local formal CSVs and manifests
+remain the primary scientific record. Raw W&B exports are retained only in the
+restricted audit archive.

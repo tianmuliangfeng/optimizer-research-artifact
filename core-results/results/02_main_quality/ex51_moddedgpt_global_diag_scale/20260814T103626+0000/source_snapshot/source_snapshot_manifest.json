@@ -1,0 +1,202 @@
+{
+  "created_at": "2026-08-14T10:36:28.106764+00:00",
+  "derived_training_sources": {
+    "275m": {
+      "parent_sha256": "ce98952b41fa624a151dcd6858048f5fa21a6f2c455c32c8f0fd719c66bcf4a9",
+      "path": "training/train_global_diag_275m.py",
+      "sha256": "fe38146cbbf9f8eae6fa275362298cfde91b1471fef41593d6a40f94c94761c3"
+    },
+    "455m": {
+      "parent_sha256": "926b2e21d022a8867bc263b9470819cf30a4df2dd45c7b82c11412f7f729df6a",
+      "path": "training/train_global_diag_455m.py",
+      "sha256": "00f4f39eb710f57815ff6eafae80cafeb9b320114adb25500b709a83cca682d3"
+    }
+  },
+  "experiment_id": "51_moddedgpt_global_diag_scale",
+  "file_count": 36,
+  "files": [
+    {
+      "bytes": 3142,
+      "path": "commands/20260814_ex51_moddedgpt_global_diag_scale.sh",
+      "sha256": "9818b60cf56d3e3f4652826a77ebf8d050a0ad63d34653df3c03b1ac134170de"
+    },
+    {
+      "bytes": 3597,
+      "path": "scripts/43_newton_muon_record28_275m/README.md",
+      "sha256": "6e2229b0b927238022b5184ccaa7ac276985439ecfef9be7cfe38523b4822bcd"
+    },
+    {
+      "bytes": 7216,
+      "path": "scripts/43_newton_muon_record28_275m/RECORD28_275M_CONTRACT.md",
+      "sha256": "295710a90b65a4912b9754ec654960315e7faae241ffc5d3efcf0b6a5f8a5bb6"
+    },
+    {
+      "bytes": 45046,
+      "path": "scripts/43_newton_muon_record28_275m/analyze_record28.py",
+      "sha256": "62893104a6c858a2e1ff2f72973b5b44abf678f255403a3af4f8f4a4854f37cf"
+    },
+    {
+      "bytes": 18989,
+      "path": "scripts/43_newton_muon_record28_275m/record28_common.py",
+      "sha256": "4cd1058a8ad17de90f6c93512229d111a19285af369a77357f59e86a78d66539"
+    },
+    {
+      "bytes": 15356,
+      "path": "scripts/43_newton_muon_record28_275m/record28_contract.json",
+      "sha256": "dbc333f08605461b47d11622d2c2a4014c6f10aefc9f3cea4dbeef400b20e5ff"
+    },
+    {
+      "bytes": 38587,
+      "path": "scripts/43_newton_muon_record28_275m/record28_source_builder.py",
+      "sha256": "d363103c9cf4cee2915ff2dca45a83c6e9c8910b7b508be49dba89f769210398"
+    },
+    {
+      "bytes": 34442,
+      "path": "scripts/43_newton_muon_record28_275m/run_record28_cell.py",
+      "sha256": "540abe9853b8105c886559acb1c71c7e0722ee9119c27bcf290e37486b78860f"
+    },
+    {
+      "bytes": 60666,
+      "path": "scripts/43_newton_muon_record28_275m/run_record28_suite.py",
+      "sha256": "7a15c6736ac1c7543584531a07cb68d8257c548b6a336f5f2392afe2435380ef"
+    },
+    {
+      "bytes": 14673,
+      "path": "scripts/43_newton_muon_record28_275m/test_analyze_record28.py",
+      "sha256": "04170dd9dd47c56ad8e0179d2259dca688b3d554acd1faf5dce9c068f0035018"
+    },
+    {
+      "bytes": 14703,
+      "path": "scripts/43_newton_muon_record28_275m/test_record28.py",
+      "sha256": "c17c97b8567b9f0f53a1edd9a0191c5e6679237f37184347f2e0551f9ab7df67"
+    },
+    {
+      "bytes": 4541,
+      "path": "scripts/44_newton_muon_record17_455m/README.md",
+      "sha256": "cc0ee7582d4266b69d45c95379ea756a874304883d2a1849163655a6ff21429d"
+    },
+    {
+      "bytes": 6749,
+      "path": "scripts/44_newton_muon_record17_455m/RECORD17_455M_CONTRACT.md",
+      "sha256": "84c8b0809a8173701e037dbc1b2437053eb0c9fda139d7371dcd699a7fbc1232"
+    },
+    {
+      "bytes": 45622,
+      "path": "scripts/44_newton_muon_record17_455m/analyze_record17.py",
+      "sha256": "1dd0603f5097b36b0366c9b0ee21e27652c606c29a81b76b5ff052480f2cf3a6"
+    },
+    {
+      "bytes": 20837,
+      "path": "scripts/44_newton_muon_record17_455m/record17_common.py",
+      "sha256": "3196df185ec3c250d52a5ddea98f2fc2678c2e8bc47ea2adda84f5c892f1d7c5"
+    },
+    {
+      "bytes": 17351,
+      "path": "scripts/44_newton_muon_record17_455m/record17_contract.json",
+      "sha256": "ebdec2e0196fcdf9b42fae7373f75f7f25d02e42daf4062f75075ce49f47dfef"
+    },
+    {
+      "bytes": 69125,
+      "path": "scripts/44_newton_muon_record17_455m/record17_source_builder.py",
+      "sha256": "6d052d6fdce8b92c72bf17659894854986a0902ee52b7a2f81e8a95c294410ba"
+    },
+    {
+      "bytes": 40305,
+      "path": "scripts/44_newton_muon_record17_455m/run_record17_cell.py",
+      "sha256": "68eb6fe24ca745ce89b0fe7941efac906176d9c0c07e507ca0be07d38387d8d0"
+    },
+    {
+      "bytes": 62080,
+      "path": "scripts/44_newton_muon_record17_455m/run_record17_suite.py",
+      "sha256": "7cc2cfb51288127b50ea74a9c03c9c1af6c3c7013a9c471f37a833dc7b735962"
+    },
+    {
+      "bytes": 15805,
+      "path": "scripts/44_newton_muon_record17_455m/test_analyze_record17.py",
+      "sha256": "476ae37873aab7b45a4ff50c0f8e66976e0c9893b3b977917e3e2a294b08668c"
+    },
+    {
+      "bytes": 19590,
+      "path": "scripts/44_newton_muon_record17_455m/test_record17.py",
+      "sha256": "038687986a73aaafb66dfa3cbc86f17b04bcc833cf24bac4399b5c806f853dee"
+    },
+    {
+      "bytes": 28562,
+      "path": "scripts/44_newton_muon_record17_455m/upstream/record17_train_gpt_medium.py",
+      "sha256": "4771336f5a685774a6892612a6290e34848506f106eef098dfcebe8bc0aefa67"
+    },
+    {
+      "bytes": 2518,
+      "path": "scripts/51_moddedgpt_global_diag_scale/README.md",
+      "sha256": "bfcf60f45d95b0638a7a2c4dc1c8a0c2067cc4cab001b5009380a82e220c4cd6"
+    },
+    {
+      "bytes": 10190,
+      "path": "scripts/51_moddedgpt_global_diag_scale/analyze_global_diag_scale.py",
+      "sha256": "c877bf41c004d4f49ad178ffb282586e4c51141ffdd3d580be7a2123ead8d448"
+    },
+    {
+      "bytes": 3052,
+      "path": "scripts/51_moddedgpt_global_diag_scale/frozen_scale_controls.csv",
+      "sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79"
+    },
+    {
+      "bytes": 2956,
+      "path": "scripts/51_moddedgpt_global_diag_scale/global_diag_scale_contract.json",
+      "sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485"
+    },
+    {
+      "bytes": 20965,
+      "path": "scripts/51_moddedgpt_global_diag_scale/global_diag_scale_source_builder.py",
+      "sha256": "0b36f9eff7b941617ba5b23a8bb20ae40bc86b286d9eb9e94ad34025586be6c1"
+    },
+    {
+      "bytes": 4245,
+      "path": "scripts/51_moddedgpt_global_diag_scale/prepare_frozen51_data_repo.py",
+      "sha256": "3de5126424351064311c99001d73d3595faf9649ca830ad101eb8dfad9305be5"
+    },
+    {
+      "bytes": 7468,
+      "path": "scripts/51_moddedgpt_global_diag_scale/run_global_diag_scale_cell.py",
+      "sha256": "61927beb2541d577df6b76141f4d94cdcd587a2c133e5d9328ea98d206d1c63b"
+    },
+    {
+      "bytes": 21130,
+      "path": "scripts/51_moddedgpt_global_diag_scale/run_global_diag_scale_suite.py",
+      "sha256": "59429f1b88642809c848de2a39dd9d71319bd7e9168cf180290aa55259dc9a68"
+    },
+    {
+      "bytes": 4325,
+      "path": "scripts/51_moddedgpt_global_diag_scale/test_analyze_global_diag_scale.py",
+      "sha256": "e9c23e135d411aabeef92d76929a99c5bf4270fd61d4a6612fee366940b9ddcd"
+    },
+    {
+      "bytes": 8123,
+      "path": "scripts/51_moddedgpt_global_diag_scale/test_global_diag_scale.py",
+      "sha256": "d0c055bdd22257c26a4db4daba848611394024970c8ecd3f5b9cfd9f997813fa"
+    },
+    {
+      "bytes": 13463,
+      "path": "training/train_global_diag_275m.diff",
+      "sha256": "887eeb662b1fd474edd073e62916fbdf7e87ae12b1d6ddb1e2890af37c1d3b57"
+    },
+    {
+      "bytes": 79557,
+      "path": "training/train_global_diag_275m.py",
+      "sha256": "fe38146cbbf9f8eae6fa275362298cfde91b1471fef41593d6a40f94c94761c3"
+    },
+    {
+      "bytes": 10793,
+      "path": "training/train_global_diag_455m.diff",
+      "sha256": "9ffb58189594f11c2dd951548853105903be06b89bd66fb0456c861b362a1e8c"
+    },
+    {
+      "bytes": 72800,
+      "path": "training/train_global_diag_455m.py",
+      "sha256": "00f4f39eb710f57815ff6eafae80cafeb9b320114adb25500b709a83cca682d3"
+    }
+  ],
+  "official_repo": "PRIVATE_PATH_REDACTED",
+  "passed": true,
+  "schema_version": 1
+}
