@@ -1,0 +1,8 @@
+contrast,method_a,method_b,delta_definition,n,mean,sample_sd,ci95_low,ci95_high,negative_seed_count,positive_seed_count,zero_seed_count
+c_fc_diag_minus_all_none,c_fc_diag,all_none,method_a_minus_method_b; negative favors method_a,3,-0.000800000000000208,0.00045825756949563045,-0.001938374910122163,0.00033837491012174697,3,0,0
+c_proj_diag_minus_all_none,c_proj_diag,all_none,method_a_minus_method_b; negative favors method_a,3,-0.004600000000000086,0.00026457513110651385,-0.005257241060797782,-0.00394275893920239,3,0,0
+o_proj_diag_minus_all_none,o_proj_diag,all_none,method_a_minus_method_b; negative favors method_a,3,-0.0008333333333333156,0.0003785938897200548,-0.0017738126922605185,0.00010714602559388738,3,0,0
+c_fc_c_proj_diag_minus_all_none,c_fc_c_proj_diag,all_none,method_a_minus_method_b; negative favors method_a,3,-0.005633333333333527,0.00015275252316527475,-0.006012791636707673,-0.005253875029959382,3,0,0
+c_fc_diag_minus_c_proj_diag,c_fc_diag,c_proj_diag,method_a_minus_method_b; negative favors method_a,3,0.0037999999999998777,0.0007000000000000499,0.002061103601709127,0.0055388963982906285,0,3,0
+c_fc_diag_minus_o_proj_diag,c_fc_diag,o_proj_diag,method_a_minus_method_b; negative favors method_a,3,3.333333333310762e-05,0.0007637626158260346,-0.0018639581835367771,0.0019306248502029924,1,2,0
+c_proj_diag_minus_o_proj_diag,c_proj_diag,o_proj_diag,method_a_minus_method_b; negative favors method_a,3,-0.00376666666666677,0.00041633319989342957,-0.004800895669214622,-0.002732437664118918,3,0,0

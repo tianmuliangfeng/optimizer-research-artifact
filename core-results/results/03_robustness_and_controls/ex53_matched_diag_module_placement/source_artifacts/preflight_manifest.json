@@ -1,0 +1,24 @@
+{
+  "arms": [
+    "all_none",
+    "c_fc_diag",
+    "c_proj_diag",
+    "c_fc_c_proj_diag",
+    "o_proj_diag"
+  ],
+  "contract_sha256": "427263e7f0d1ff353309b83d098707d55873d0bf53495626a6fc577df364f4b3",
+  "data_content_projection_sha256": "f758a95b771b9f21cbff3e80cbcaa9e36a8040f2c298be2c4c76edeac463a126",
+  "data_inventory": "data_inventory.json",
+  "data_inventory_sha256": "540ea4d4540c67510e0ea2dc26d6734cdab701e16ad5a5d8b5496c743172fe40",
+  "derived_script_sha256": "ad217eb67ae3ec5ea0e337d1e2756c11838a86f2bc016ddc8d4f6a5e3511981b",
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "gpu": "0",
+  "log": "PRIVATE_PATH_REDACTED",
+  "official_base_canonical_sha256": "48383e333334e4f29bbae3365ac4142226c27750ede5739ab53c0dafbbcb7730",
+  "official_base_script": "train_gpt_newton_muon_1.py",
+  "passed": true,
+  "pilot_seed": 2053,
+  "return_code": 0,
+  "schema_version": 1,
+  "source_snapshot_manifest_sha256": "076f31273d99f3312d1e8d7e1bcaf4486434e9dc2870e346a65f530c71214d50"
+}

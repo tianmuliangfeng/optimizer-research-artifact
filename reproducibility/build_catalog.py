@@ -34,6 +34,11 @@ SEALED_SOURCE = {
     "50_r1_global_activation_diag",
     "51_moddedgpt_global_diag_scale",
     "52_llama_global_diag_scale",
+    "53_r1_matched_diag_module_placement",
+    "54_llama_moonlight_multiscale_multibudget",
+    "55_r1_fresh_seed_baseline_fairness",
+    "56_llama1b_10b_global_diag",
+    "57_llama1b_10b_moonlight",
     "mdp04_refresh_streaming",
 }
 PARTIAL_SOURCE = {
@@ -117,6 +122,26 @@ NATIVE_MODES = {
             "env": {"EX52_RUN_DIR": "{run_dir}"},
         },
     },
+    "53_r1_matched_diag_module_placement": {
+        "resume": {"args": ["resume"], "env": {"EX53_RUN_DIR": "{run_dir}"}},
+        "native-verify": {"args": ["verify"], "env": {"EX53_RUN_DIR": "{run_dir}"}},
+    },
+    "54_llama_moonlight_multiscale_multibudget": {
+        "resume": {"args": ["resume"], "env": {"EX54_RESUME_RUN_DIR": "{run_dir}"}},
+        "native-verify": {"args": ["verify"], "env": {"EX54_RESUME_RUN_DIR": "{run_dir}"}},
+    },
+    "55_r1_fresh_seed_baseline_fairness": {
+        "resume": {"args": ["resume"], "env": {"EX55_RUN_DIR": "{run_dir}"}},
+        "native-verify": {"args": ["verify"], "env": {"EX55_RUN_DIR": "{run_dir}"}},
+    },
+    "56_llama1b_10b_global_diag": {
+        "resume": {"args": ["resume"], "env": {"EX56_RUN_DIR": "{run_dir}"}},
+        "native-verify": {"args": ["verify"], "env": {"EX56_RUN_DIR": "{run_dir}"}},
+    },
+    "57_llama1b_10b_moonlight": {
+        "resume": {"args": ["resume"], "env": {"EX57_RESUME_RUN_DIR": "{run_dir}"}},
+        "native-verify": {"args": ["verify"], "env": {"EX57_RESUME_RUN_DIR": "{run_dir}"}},
+    },
 }
 
 EXTRA_PYTHON_ENTRYPOINTS = {
@@ -193,6 +218,33 @@ EXPERIMENT_README_SECTIONS = {
         "run history stitches the screen and formal continuation, so formal claims",
         "remain bound to local accepted CSVs and manifests.",
         "",
+    ],
+    "53_r1_matched_diag_module_placement": [
+        "## Accepted result", "",
+        "A representation-matched diagonal factorial isolates feed-forward module",
+        "placement at Modded GPT 124M. The accepted three-seed analysis supports",
+        "placement-specific attribution without conflating full and block-4 state.", "",
+    ],
+    "54_llama_moonlight_multiscale_multibudget": [
+        "## Accepted result", "",
+        "Moonlight is strong at LLaMA 124M but does not preserve that ordering at",
+        "LLaMA 1B. Timing is excluded and the 1B result is not pooled with EX57.", "",
+    ],
+    "55_r1_fresh_seed_baseline_fairness": [
+        "## Accepted result", "",
+        "A fresh-seed controlled panel confirms that the principal baseline",
+        "comparisons are not artifacts of reusing the earlier formal seeds.", "",
+    ],
+    "56_llama1b_10b_global_diag": [
+        "## Accepted result", "",
+        "Across three long-budget LLaMA-1B checkpoints and three seeds, global",
+        "diagonal beats the local curvature-state routes in every paired endpoint;",
+        "Muon remains better than global diagonal in every paired endpoint.", "",
+    ],
+    "57_llama1b_10b_moonlight": [
+        "## Accepted result", "",
+        "At the same long LLaMA-1B budgets, Moonlight trails Muon at every paired",
+        "endpoint and trails all core curvature-state routes at the two longer budgets.", "",
     ],
 }
 

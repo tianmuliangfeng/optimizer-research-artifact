@@ -1,0 +1,23 @@
+{
+  "accepted_ex48_legacy_trainer_key": "scripts/17_llama_swiglu_validation/train_llama_swiglu.py",
+  "actual_base_trainer_path": "PRIVATE_PATH_REDACTED__4938686625d8",
+  "actual_base_trainer_sha256": "55c0a3e228c6dd084f0631f029da44d5af530963f69c49c8909f00e56dee8318",
+  "amended_adapter_path": "PRIVATE_PATH_REDACTED__5610bb68646c",
+  "amended_adapter_sha256": "0f387bda098b593f4e319d3d23c966b999d41a47fdd24cbb6a3ca19ca38227a6",
+  "compatibility_was_built_into_frozen_adapter": true,
+  "created_at": "2026-08-20T09:22:01.569171+00:00",
+  "injected_worker_view_keys": [
+    "profile",
+    "grid",
+    "accepted_sources"
+  ],
+  "method_hyperparameter_seed_data_or_schedule_changed": false,
+  "original_adapter_sha256": "0f387bda098b593f4e319d3d23c966b999d41a47fdd24cbb6a3ca19ca38227a6",
+  "original_source_snapshot_manifest_sha256": "b74311165b07eae365c1bbf78402f2cc6babbe6a355c072db974daa638d77379",
+  "outcome_based_change": false,
+  "passed": true,
+  "reason": "supply_ex48_profile_grid_and_actual_derived_trainer_source_binding_in_memory",
+  "schema_version": "ex54_long_worker_contract_compatibility_amendment_v3",
+  "scientific_training_contract_changed": false,
+  "selected_contract_bytes_changed": false
+}

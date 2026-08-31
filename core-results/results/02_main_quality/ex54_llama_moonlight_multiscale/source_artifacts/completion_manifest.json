@@ -1,0 +1,16 @@
+{
+  "analysis_manifest": "PRIVATE_PATH_REDACTED__f286cde88bac",
+  "analysis_manifest_sha256": "18f1eadbbbc909af70866f040ff3f8b5e17b8a287bb7fd18ca979c31daecddb4",
+  "formal_manifest_sha256": "69ab0de84079c968f1eb4e93a4baa560031015d99c303ca1092c7623ff986f0a",
+  "formal_units": 6,
+  "full_checkpoint_hash_verified": true,
+  "independent_of_ex57": true,
+  "passed": true,
+  "schema_version": "ex54_moonlight_completion_v1",
+  "scope": "124m_and_1b_through_6p97b",
+  "status": "completed",
+  "timing_usable": false,
+  "verification_manifest": "PRIVATE_PATH_REDACTED__f4283b84562b",
+  "verification_manifest_sha256": "cdb6029d89b383d567437c9d8a92cebb2384b13bc0afaeb6cc96514ff1ac8b01",
+  "wandb_required": false
+}

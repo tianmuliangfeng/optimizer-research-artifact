@@ -17,6 +17,9 @@
       moved directory.
 - [x] Accept Experiments 50–52, add their 15 result anchors and 111/111 W&B
       reconciliation, and rebuild the final compact package.
+- [x] Accept Experiments 53–57, publish their sealed controllers and portable
+      launchers, add compact independent-review and verification evidence, and
+      rebuild the final compact package without checkpoints or raw W&B exports.
 - [x] Run all CPU tests and `bash -n` over every launcher.
 - [ ] Run native archive verification for every released formal result.
 - [ ] Validate the external Newton-Muon revision and FineWeb inventory on a
@@ -53,3 +56,9 @@ native analyses; the joint W&B audit reconciled 111/111 metric rows. The public
 Catalog now contains 54 identifiers, the full CPU release suite passes 62/62,
 and all 47 public shell launchers pass syntax validation. Experiment 52's
 stitched W&B history is supporting-only; local formal artifacts remain primary.
+
+Post-review supplement on 2026-08-31: Experiments 53–57 passed independent
+acceptance review. The public Catalog contains 59 identifiers. Experiments 53
+and 55 retain compact W&B reconciliation while raw exports remain restricted;
+Experiments 54, 56, and 57 have no W&B dependency. All supplemental timing is
+excluded, and EX54/EX57 are not pooled.

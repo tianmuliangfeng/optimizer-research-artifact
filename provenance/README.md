@@ -2,7 +2,7 @@
 
 This directory separates sanitized lineage records from the public API.
 
-- `legacy_command_inventory.json` records hashes of the 40 original launchers
+- `legacy_command_inventory.json` records hashes of the 46 original launchers
   and their sanitized public counterparts. Original contents remain in the
   private research archive because they contained machine-specific paths.
 - `command_path_migration.json` maps every historical launcher path to its
@@ -38,6 +38,11 @@ This directory separates sanitized lineage records from the public API.
   and handoff manifests, sealed source snapshots, and the joint 111/111 W&B
   reconciliation. Experiment 52's stitched W&B history is explicitly secondary
   to its accepted local formal CSVs. Timing is excluded for all three.
+- Experiments 53–57 anchor the matched-diagonal placement control, fresh-seed
+  fairness panel, Moonlight scale/budget controls, and long-budget LLaMA-1B
+  global-diagonal result. Their compact records include independent-review and
+  native-verification lineage; checkpoints, raw W&B exports, and timing claims
+  remain outside the public compact package.
 
 Formal result directories and their source snapshots are not rewritten by
 this packaging process.

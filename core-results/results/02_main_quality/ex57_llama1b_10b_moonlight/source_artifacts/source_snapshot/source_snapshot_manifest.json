@@ -1,0 +1,120 @@
+{
+  "created_at": "2026-08-20T04:30:47.358576+00:00",
+  "derived": {
+    "ex48_train_segment_parent.py": {
+      "bytes": 35485,
+      "sha256": "e6d973d21dddc7832ccb32dc98707935fa757efdce38e8d98c28892d38fede6a"
+    },
+    "moonlight_optimizer.py": {
+      "bytes": 8113,
+      "sha256": "b9217bf432431c72ff6c0cebe9485c18fb6b409f16446b850a6e4867ce863d20"
+    },
+    "train_llama_moonlight.py": {
+      "bytes": 55120,
+      "sha256": "503b78a772de97447ff7ebca13852b1040214e240a6a0a6b82aece7c413802a1"
+    },
+    "train_llama_moonlight_1b.py": {
+      "bytes": 3713,
+      "sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+    }
+  },
+  "files": {
+    "commands/20260819_ex57_llama1b_10b_moonlight.sh": {
+      "bytes": 8518,
+      "sha256": "b0edeee71f29f8436e6e02040ed5962eeff6a736adbce35d07aeaa4286347f6e"
+    },
+    "derived/ex48_train_segment_parent.py": {
+      "bytes": 35485,
+      "sha256": "e6d973d21dddc7832ccb32dc98707935fa757efdce38e8d98c28892d38fede6a"
+    },
+    "derived/moonlight_optimizer.py": {
+      "bytes": 8113,
+      "sha256": "b9217bf432431c72ff6c0cebe9485c18fb6b409f16446b850a6e4867ce863d20"
+    },
+    "derived/train_llama_moonlight.py": {
+      "bytes": 55120,
+      "sha256": "503b78a772de97447ff7ebca13852b1040214e240a6a0a6b82aece7c413802a1"
+    },
+    "derived/train_llama_moonlight_1b.py": {
+      "bytes": 3713,
+      "sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+    },
+    "scripts/17_llama_swiglu_validation/train_llama_swiglu.py": {
+      "bytes": 52409,
+      "sha256": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a"
+    },
+    "scripts/19_r1_extended_baselines/extended_optimizers.py": {
+      "bytes": 14930,
+      "sha256": "bf39d7e1b435ef737833046c564ce8770d858d1aa474c9d7f11a914057253655"
+    },
+    "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": {
+      "bytes": 3713,
+      "sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+    },
+    "scripts/48_llama1b_10b_multibudget/train_segment.py": {
+      "bytes": 34853,
+      "sha256": "ab7fd5acd809cc6233be05469cbff922bd7d7a9f5703af107f62455963f0d02f"
+    },
+    "scripts/57_llama1b_10b_moonlight/README.md": {
+      "bytes": 3508,
+      "sha256": "6b1679fd57923c7062c145b8c0557a44f75443186585cc353c33a1163230fbac"
+    },
+    "scripts/57_llama1b_10b_moonlight/accepted_ex48_data_projection.json": {
+      "bytes": 42722,
+      "sha256": "4de6c759ad9e862b2aacd5fe8d668c9ef6e52988d3d3159ef641d2d01963c985"
+    },
+    "scripts/57_llama1b_10b_moonlight/analyze.py": {
+      "bytes": 14468,
+      "sha256": "b8ede24b6c312e104f4e56870da748736269441f4bc141124c41f73d26c2cfb9"
+    },
+    "scripts/57_llama1b_10b_moonlight/ex57_contract.json": {
+      "bytes": 12548,
+      "sha256": "eba75924e703a0ae1552ac2df2250bd3456f21638da3ccffb25ddd106b7b350f"
+    },
+    "scripts/57_llama1b_10b_moonlight/frozen_controls.csv": {
+      "bytes": 3688,
+      "sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3"
+    },
+    "scripts/57_llama1b_10b_moonlight/legacy_ex57_contract_fair_parallel_v2.json": {
+      "bytes": 11710,
+      "sha256": "2e561fb977f9624fac66590074d942ed1a8484d678b0ae6bdb19febebd0f0e3b"
+    },
+    "scripts/57_llama1b_10b_moonlight/long_worker.py": {
+      "bytes": 3450,
+      "sha256": "1e11ed84cb8a847e87b200731197fdb71058cded89285f237943e64b76fa1e0c"
+    },
+    "scripts/57_llama1b_10b_moonlight/moonlight_optimizer.py": {
+      "bytes": 8113,
+      "sha256": "b9217bf432431c72ff6c0cebe9485c18fb6b409f16446b850a6e4867ce863d20"
+    },
+    "scripts/57_llama1b_10b_moonlight/protocol.py": {
+      "bytes": 23383,
+      "sha256": "801eeb0001f9383d6bdc5a4e24e284a366dacbdc942d1db75cc6a378b3a7927f"
+    },
+    "scripts/57_llama1b_10b_moonlight/run_suite.py": {
+      "bytes": 37611,
+      "sha256": "cc5b5f58eaa0ebe0bcd9a694e6ed7dab918eeef5d06a2d45bad07299f9a83c56"
+    },
+    "scripts/57_llama1b_10b_moonlight/runtime.py": {
+      "bytes": 93861,
+      "sha256": "023fd9e6799b9200bbb2d762030362a7b1d34b460abd7c41be660ff0619a1e6f"
+    },
+    "scripts/57_llama1b_10b_moonlight/source_builder.py": {
+      "bytes": 15571,
+      "sha256": "a5d67cbaec69a2949517f525eb5f6415aa67715c714af25149978664a9c2fe31"
+    },
+    "scripts/57_llama1b_10b_moonlight/test_compile_cache_contract_compat.py": {
+      "bytes": 4972,
+      "sha256": "1fbd44fdd3b1e8f5247d3af9f6e65378e9c1c2b7e087cddb990d36e8894c676a"
+    },
+    "scripts/57_llama1b_10b_moonlight/test_ex57_contract.py": {
+      "bytes": 11702,
+      "sha256": "8e7805090f2dde653c38153d8cd4d1da01c5d40e020bffbf48779c1cd599bb8a"
+    },
+    "scripts/57_llama1b_10b_moonlight/test_parallel_atomic_io.py": {
+      "bytes": 1295,
+      "sha256": "9c65b3f4ef11ac5e5871cc1e1fef746dc5f71d45dd63db16e4a27babe24e50e1"
+    }
+  },
+  "schema_version": "ex57_moonlight_source_snapshot_v1"
+}

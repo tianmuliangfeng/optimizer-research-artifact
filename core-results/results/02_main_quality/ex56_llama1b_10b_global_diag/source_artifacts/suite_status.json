@@ -1,0 +1,28 @@
+{
+  "completed_units": 3,
+  "expected_units": 3,
+  "failures": [],
+  "passed": true,
+  "results": [
+    {
+      "gpu": 3,
+      "method": "global_diag",
+      "seed": 2024,
+      "status": "passed"
+    },
+    {
+      "gpu": 3,
+      "method": "global_diag",
+      "seed": 2025,
+      "status": "passed"
+    },
+    {
+      "gpu": 3,
+      "method": "global_diag",
+      "seed": 2026,
+      "status": "passed"
+    }
+  ],
+  "schema_version": "ex56_suite_status_v1",
+  "updated_at": "2026-08-23T15:38:57.332285+00:00"
+}

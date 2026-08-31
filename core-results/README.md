@@ -1,7 +1,7 @@
 # core-results
 
 This directory is the compact, portable evidence release for the paper.
-It contains 538 explicitly selected artifacts plus integrity metadata.
+It contains 658 explicitly selected artifacts plus integrity metadata.
 Every package reference is relative to this directory; source-machine roots are not retained.
 
 ## Validation

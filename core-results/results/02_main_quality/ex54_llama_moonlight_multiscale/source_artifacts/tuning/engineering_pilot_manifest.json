@@ -1,0 +1,29 @@
+{
+  "124m": {
+    "bytes": 1144295999,
+    "path": "PRIVATE_PATH_REDACTED__ba6b560f2ee1",
+    "resume_count": 1,
+    "retirement_sha256": "9be1c7259acf9ac9a6e079ced944643ed367e0acb4da56b835f3439f376470d2",
+    "sha256": "065c3c5d3cf1b2176c096a2a946da495086bceb7dd9116069eaa449fbed8d4eb"
+  },
+  "1b_retired": [
+    {
+      "bytes": 8522343971,
+      "path": "PRIVATE_PATH_REDACTED__18ac37e63428",
+      "retained": false,
+      "sha256": "6592651ebf1e20de92b50e8ff294cd9fe7616a33840515b2e176a8c2e6a9c7b7"
+    },
+    {
+      "bytes": 8522344035,
+      "path": "PRIVATE_PATH_REDACTED__eaf5c52cd80b",
+      "retained": false,
+      "sha256": "864604c6e489568d4ceedff1ae3c9d33a97b30f6f02e49ddebbd85dbf9e31129"
+    }
+  ],
+  "passed": true,
+  "quality_eligible": false,
+  "schema_version": "ex54_engineering_pilot_v1",
+  "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+  "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+  "timing_eligible": false
+}

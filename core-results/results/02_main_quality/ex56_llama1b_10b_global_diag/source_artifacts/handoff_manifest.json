@@ -1,0 +1,83 @@
+{
+  "analysis_manifest_sha256": "1cdd8cf50f7530cd81c8135ba32b0ae136285450d3da68c56a33ce8c09e1c0c4",
+  "experiment_id": "56_llama1b_10b_global_diag",
+  "external_retained_checkpoints": [
+    {
+      "budget_id": "tokens_3p2506b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__c5b0519e5c92",
+      "seed": 2024,
+      "sha256": "cfd18ca6dec838c6705bc3555cca3ba0163c3681f7a9cc8f52fd47d4264d4f59"
+    },
+    {
+      "budget_id": "tokens_6p9694b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__67f0cc3beb12",
+      "seed": 2024,
+      "sha256": "24264f48c7f3a1560ea7221a3e24ae0154ddf9c7f1bbf254cb333c4a14c0e69d"
+    },
+    {
+      "budget_id": "tokens_approximately_10b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__183b3aa2cc60",
+      "seed": 2024,
+      "sha256": "dd8a087227656431a13b0d76958ee2f61a7953f32917f7a225bf741f64f7456b"
+    },
+    {
+      "budget_id": "tokens_3p2506b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__6735067a25b5",
+      "seed": 2025,
+      "sha256": "19a163ed66def599d4fa91370cdf1513a50a650d085939edab8a75a7417d888f"
+    },
+    {
+      "budget_id": "tokens_6p9694b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__7af0a843c026",
+      "seed": 2025,
+      "sha256": "05d1acfaaa1c00678c0d514d5702f4218c33f64575184edbd61567ad566d19e9"
+    },
+    {
+      "budget_id": "tokens_approximately_10b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__5f683093e8ad",
+      "seed": 2025,
+      "sha256": "71f5c36e4ef0c588719f8b0211f327cec9582729e7c6633eb303fe0744fdacbd"
+    },
+    {
+      "budget_id": "tokens_3p2506b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__80502a1998c9",
+      "seed": 2026,
+      "sha256": "1a3aa99baea5e1ccb30cafd2a3d18bdfd2a89b19ac9eda6c4d099c2879e25ae6"
+    },
+    {
+      "budget_id": "tokens_6p9694b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__53f473add960",
+      "seed": 2026,
+      "sha256": "fff730d028f05ac61fcd834bb7e1dd74f887be1f0070de1cc49c6f3934eab430"
+    },
+    {
+      "budget_id": "tokens_approximately_10b",
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__3fb68dbb5946",
+      "seed": 2026,
+      "sha256": "96e0082d7bbff4d4324c7821c46ccc5d6c797cb594b3e0c23e264b29e96ef75c"
+    }
+  ],
+  "formal_units": 3,
+  "native_full_checkpoint_verify": {
+    "full_checkpoint_hash": true,
+    "passed": true,
+    "path": "PRIVATE_PATH_REDACTED__9b7c42e343c0",
+    "retained_checkpoint_count": 9,
+    "sha256": "6becd343a650d22cbfa15b61d7ba4f6da98e38ff7d6203f14c1157fb6781c59e"
+  },
+  "passed": true,
+  "primary_endpoints": 9,
+  "schema_version": "ex56_handoff_manifest_v1",
+  "scientific_result": "mixed_or_practically_equivalent_at_10b",
+  "status": "completed",
+  "timing_usable": false
+}

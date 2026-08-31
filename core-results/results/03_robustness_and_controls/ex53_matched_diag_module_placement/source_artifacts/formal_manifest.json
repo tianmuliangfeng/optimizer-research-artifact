@@ -1,0 +1,40 @@
+{
+  "accepted_batches": {
+    "seed2024/all_none": "formal/seed2024/all_none/20260817T014803+0000_formal_seed2024/r1_manifest.json",
+    "seed2024/c_fc_c_proj_diag": "formal/seed2024/c_fc_c_proj_diag/20260817T112847+0000_formal_seed2024/r1_manifest.json",
+    "seed2024/c_fc_diag": "formal/seed2024/c_fc_diag/20260817T050200+0000_formal_seed2024/r1_manifest.json",
+    "seed2024/c_proj_diag": "formal/seed2024/c_proj_diag/20260817T081542+0000_formal_seed2024/r1_manifest.json",
+    "seed2024/o_proj_diag": "formal/seed2024/o_proj_diag/20260817T144145+0000_formal_seed2024/r1_manifest.json",
+    "seed2025/all_none": "formal/seed2025/all_none/20260817T175443+0000_formal_seed2025/r1_manifest.json",
+    "seed2025/c_fc_c_proj_diag": "formal/seed2025/c_fc_c_proj_diag/20260818T033552+0000_formal_seed2025/r1_manifest.json",
+    "seed2025/c_fc_diag": "formal/seed2025/c_fc_diag/20260817T210826+0000_formal_seed2025/r1_manifest.json",
+    "seed2025/c_proj_diag": "formal/seed2025/c_proj_diag/20260818T002154+0000_formal_seed2025/r1_manifest.json",
+    "seed2025/o_proj_diag": "formal/seed2025/o_proj_diag/20260818T064948+0000_formal_seed2025/r1_manifest.json",
+    "seed2026/all_none": "formal/seed2026/all_none/20260818T100355+0000_formal_seed2026/r1_manifest.json",
+    "seed2026/c_fc_c_proj_diag": "formal/seed2026/c_fc_c_proj_diag/20260818T194459+0000_formal_seed2026/r1_manifest.json",
+    "seed2026/c_fc_diag": "formal/seed2026/c_fc_diag/20260818T131737+0000_formal_seed2026/r1_manifest.json",
+    "seed2026/c_proj_diag": "formal/seed2026/c_proj_diag/20260818T163126+0000_formal_seed2026/r1_manifest.json",
+    "seed2026/o_proj_diag": "formal/seed2026/o_proj_diag/20260818T225847+0000_formal_seed2026/r1_manifest.json"
+  },
+  "arms": [
+    "all_none",
+    "c_fc_diag",
+    "c_proj_diag",
+    "c_fc_c_proj_diag",
+    "o_proj_diag"
+  ],
+  "data_inventory_sha256": "540ea4d4540c67510e0ea2dc26d6734cdab701e16ad5a5d8b5496c743172fe40",
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "formal_seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "formal_units": 15,
+  "passed": true,
+  "pilot_seed": 2053,
+  "schema_version": 1,
+  "source_snapshot_manifest_sha256": "076f31273d99f3312d1e8d7e1bcaf4486434e9dc2870e346a65f530c71214d50",
+  "timing_usable": false,
+  "wandb_required_for_scientific_validity": false
+}

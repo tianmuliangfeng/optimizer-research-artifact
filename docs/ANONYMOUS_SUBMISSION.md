@@ -11,8 +11,8 @@ restricted internal `full-archive` is not part of this distribution.
 - Do not expose the private upstream GitHub origin in the manuscript, README,
   issues, releases, or repository metadata.
 - The only paper-facing repository address is
-  `{{ANONYMOUS_REPOSITORY_URL}}`. Replace this placeholder only after an
-  anonymous mirror has been created and audited.
+  `https://anonymous.4open.science/r/optimizer-research-artifact-B032/`.
+  The identifiable origin must not appear in the manuscript during review.
 - Keep all original W&B projects private or inaccessible during review. The
   compact evidence package pseudonymizes W&B identities and container hosts.
 

@@ -1,0 +1,19 @@
+{
+  "amended_adapter_path": "PRIVATE_PATH_REDACTED__fe98c820413a",
+  "amended_adapter_sha256": "1e11ed84cb8a847e87b200731197fdb71058cded89285f237943e64b76fa1e0c",
+  "compatibility_was_built_into_frozen_adapter": true,
+  "created_at": "2026-08-20T07:06:21.128820+00:00",
+  "injected_worker_view_keys": [
+    "profile",
+    "grid"
+  ],
+  "method_hyperparameter_seed_data_or_schedule_changed": false,
+  "original_adapter_sha256": "1e11ed84cb8a847e87b200731197fdb71058cded89285f237943e64b76fa1e0c",
+  "original_source_snapshot_manifest_sha256": "e4ec8bb45d31e0d1722d665b8fbea4bf35be367aa620d19f76708732a7b89cc1",
+  "outcome_based_change": false,
+  "passed": true,
+  "reason": "supply_complete_1b_profile_and_formal_grid_to_accepted_ex48_worker_in_memory",
+  "schema_version": "ex57_long_worker_contract_compatibility_amendment_v2",
+  "scientific_training_contract_changed": false,
+  "selected_contract_bytes_changed": false
+}

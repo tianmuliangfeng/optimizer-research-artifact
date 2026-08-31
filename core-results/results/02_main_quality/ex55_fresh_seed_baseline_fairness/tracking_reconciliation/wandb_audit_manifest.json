@@ -1,0 +1,252 @@
+{
+  "schema_version": "wandb_wide_export_reconciliation_v1",
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "status": "passed",
+  "passed": true,
+  "evidence_role": "secondary_mirror_only",
+  "source_zip": {
+    "name": "55.zip",
+    "bytes": 54455,
+    "sha256": "2dad85e745d2d3397886b1ac886644adba84e8513dffd150e35a6f69814746bf"
+  },
+  "formal_run_count": 10,
+  "wandb_run_count": 10,
+  "wandb_csv_count": 11,
+  "validation_point_count": 630,
+  "training_point_count": 3100,
+  "comparable_exported_point_count": 15247,
+  "matching_exported_point_count": 15247,
+  "failed_exported_point_count": 0,
+  "missing_runs": [],
+  "extra_runs": [],
+  "unsupported_metrics": [],
+  "checks": {
+    "source_zip_sha256": true,
+    "wandb_csv_inventory_nonempty": true,
+    "wandb_min_max_columns_match_base": true,
+    "run_identity_exact": true,
+    "primary_validation_and_training_trajectories_exact": true,
+    "all_comparable_exported_points_exact": true
+  },
+  "metric_summary": [
+    {
+      "metric": "lr/adamw",
+      "wandb_runs": 4,
+      "wandb_points": 1244,
+      "comparable_points": 1244,
+      "matching_points": 1244,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "lr/auxiliary",
+      "wandb_runs": 6,
+      "wandb_points": 1866,
+      "comparable_points": 1866,
+      "matching_points": 1866,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "lr/matrix",
+      "wandb_runs": 10,
+      "wandb_points": 3110,
+      "comparable_points": 3110,
+      "matching_points": 3110,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "memory/k_state_mib",
+      "wandb_runs": 4,
+      "wandb_points": 4,
+      "comparable_points": 4,
+      "matching_points": 4,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "memory/optimizer_state_mib",
+      "wandb_runs": 10,
+      "wandb_points": 10,
+      "comparable_points": 10,
+      "matching_points": 10,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "memory/peak_allocated_mib",
+      "wandb_runs": 10,
+      "wandb_points": 10,
+      "comparable_points": 10,
+      "matching_points": 10,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "performance/step_avg_ms",
+      "wandb_runs": 7,
+      "wandb_points": 2163,
+      "comparable_points": 2163,
+      "matching_points": 2163,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "time/train_s",
+      "wandb_runs": 7,
+      "wandb_points": 2177,
+      "comparable_points": 2177,
+      "matching_points": 2177,
+      "max_absolute_error": 9.094947017729282e-13,
+      "passed": true
+    },
+    {
+      "metric": "tokens/seen",
+      "wandb_runs": 3,
+      "wandb_points": 933,
+      "comparable_points": 933,
+      "matching_points": 933,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "train/loss_step",
+      "wandb_runs": 10,
+      "wandb_points": 3100,
+      "comparable_points": 3100,
+      "matching_points": 3100,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "val/loss",
+      "wandb_runs": 10,
+      "wandb_points": 630,
+      "comparable_points": 630,
+      "matching_points": 630,
+      "max_absolute_error": 0.0,
+      "passed": true
+    }
+  ],
+  "csv_inventory": [
+    {
+      "path": "wandb_export_2026-08-20T12_58_09.689+08_00.csv",
+      "sha256": "50487001407b367d58f48e91d5fd61095250cf9434700cc935afa980a5a65285",
+      "bytes": 117481,
+      "row_count": 311,
+      "base_run_columns": 10,
+      "metrics": [
+        "lr/matrix"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_14.627+08_00.csv",
+      "sha256": "b2de8b1d854ab0e5a0035bf3509a4f08f5e0110b87e82ee6c026e1df166000be",
+      "bytes": 65391,
+      "row_count": 311,
+      "base_run_columns": 6,
+      "metrics": [
+        "lr/auxiliary"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_21.083+08_00.csv",
+      "sha256": "fc79960e90589b3246bdb79fc78ba540e0b32bd576b11aa7764509355f38eb6f",
+      "bytes": 46816,
+      "row_count": 311,
+      "base_run_columns": 4,
+      "metrics": [
+        "lr/adamw"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_31.970+08_00.csv",
+      "sha256": "6badc658a1c2c5e3398eda4a489facaa95f937945a62a5774a63c324ec3f73ef",
+      "bytes": 3257,
+      "row_count": 1,
+      "base_run_columns": 10,
+      "metrics": [
+        "memory/peak_allocated_mib"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_35.564+08_00.csv",
+      "sha256": "8c952b4445df4bc6d499503b63953e27ad8774a4fec1050f2ffbb5a30277cb76",
+      "bytes": 3647,
+      "row_count": 1,
+      "base_run_columns": 10,
+      "metrics": [
+        "memory/optimizer_state_mib"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_39.261+08_00.csv",
+      "sha256": "0bf1e5323e5f58898df0a03083adf48f3fb6e903b829aa4d7fc7be4504d2e049",
+      "bytes": 1067,
+      "row_count": 1,
+      "base_run_columns": 4,
+      "metrics": [
+        "memory/k_state_mib"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_43.392+08_00.csv",
+      "sha256": "2dff653b4a25ee799bf3762760362677ce918511f618ff6fe262e42a09274436",
+      "bytes": 68218,
+      "row_count": 309,
+      "base_run_columns": 7,
+      "metrics": [
+        "performance/step_avg_ms"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_49.805+08_00.csv",
+      "sha256": "92fa49912f4ba43dc3f41d36796c0be8d67ab41e0919893948758bb3338a7c85",
+      "bytes": 73822,
+      "row_count": 311,
+      "base_run_columns": 7,
+      "metrics": [
+        "time/train_s"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_54.105+08_00.csv",
+      "sha256": "008d31767d821b549197a1d2f9d2d08721080da10cb18b3cc6af6ac6d05405b4",
+      "bytes": 38367,
+      "row_count": 311,
+      "base_run_columns": 3,
+      "metrics": [
+        "tokens/seen"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_58_58.918+08_00.csv",
+      "sha256": "df985784fece3815eaa4f9b9dbc7392db32eb18a47b5f82fd70652259b642cbb",
+      "bytes": 87423,
+      "row_count": 310,
+      "base_run_columns": 10,
+      "metrics": [
+        "train/loss_step"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T12_59_12.874+08_00.csv",
+      "sha256": "cccd75bef2ce579e157e52857237e919e0f23bb497403a2de212cfeb132c4879",
+      "bytes": 19795,
+      "row_count": 63,
+      "base_run_columns": 10,
+      "metrics": [
+        "val/loss"
+      ]
+    }
+  ],
+  "outputs": {
+    "wandb_metric_reconciliation.csv": "2c0be832fa66925280da6793f7b4a182f08c48494d24ff898c635d745cedd402",
+    "wandb_metric_summary.csv": "b1bdc0512323550867baaee60491073c17c6cd2f8b1edaa817831af4f916e869"
+  },
+  "limitations": [
+    "W&B is a secondary mirror; frozen local result artifacts remain authoritative.",
+    "Concurrency makes formal wall-clock and throughput metrics scientifically ineligible even when mirrored exactly."
+  ]
+}

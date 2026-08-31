@@ -1,0 +1,26 @@
+{
+  "accepted_batches": {
+    "all_none": "pilot/seed2053/all_none/20260817T013511+0000_smoke_seed2053/r1_manifest.json",
+    "c_fc_c_proj_diag": "pilot/seed2053/c_fc_c_proj_diag/20260817T014234+0000_smoke_seed2053/r1_manifest.json",
+    "c_fc_diag": "pilot/seed2053/c_fc_diag/20260817T013729+0000_smoke_seed2053/r1_manifest.json",
+    "c_proj_diag": "pilot/seed2053/c_proj_diag/20260817T014003+0000_smoke_seed2053/r1_manifest.json",
+    "o_proj_diag": "pilot/seed2053/o_proj_diag/20260817T014515+0000_smoke_seed2053/r1_manifest.json"
+  },
+  "arms": [
+    "all_none",
+    "c_fc_diag",
+    "c_proj_diag",
+    "c_fc_c_proj_diag",
+    "o_proj_diag"
+  ],
+  "configuration_selection_allowed": false,
+  "data_inventory_sha256": "540ea4d4540c67510e0ea2dc26d6734cdab701e16ad5a5d8b5496c743172fe40",
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "formal_seed_independent": true,
+  "outcome_eligible": false,
+  "passed": true,
+  "schema_version": 1,
+  "seed": 2053,
+  "source_snapshot_manifest_sha256": "076f31273d99f3312d1e8d7e1bcaf4486434e9dc2870e346a65f530c71214d50",
+  "steps": 34
+}

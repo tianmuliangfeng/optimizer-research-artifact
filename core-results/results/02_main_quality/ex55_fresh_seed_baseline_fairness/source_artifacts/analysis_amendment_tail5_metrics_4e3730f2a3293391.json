@@ -1,0 +1,31 @@
+{
+  "accepted_formal_artifacts_reused": true,
+  "aggregate_manifests_modified": false,
+  "amended_analyzer": {
+    "bytes": 35462,
+    "path": "PRIVATE_PATH_REDACTED__f8c13d30890b",
+    "sha256": "4e3730f2a3293391c269e67a38edc807096827e233575bbbd553ec207f3709ee"
+  },
+  "created_at": "2026-08-19T02:17:12.997266+00:00",
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "formal_training_rerun_required": false,
+  "method_or_hyperparameter_changed": false,
+  "metrics_files_modified": false,
+  "original_analyzer": {
+    "bytes": 21439,
+    "path": "PRIVATE_PATH_REDACTED__d05eb05f9069",
+    "sha256": "31c348418487f0cbb73e7f321abfeeeaf94a52269598805b4e31d4b227b6aea6"
+  },
+  "outcome_based_change": false,
+  "passed": true,
+  "reason": "reconstruct_tail5_from_hash_bound_accepted_formal_child_metrics",
+  "receipt_path": "PRIVATE_PATH_REDACTED__981889e719e9",
+  "schema_version": "ex55_analysis_amendment_v1",
+  "scientific_training_contract_changed": false,
+  "seed_changed": false,
+  "source_snapshot_manifest": {
+    "bytes": 12019,
+    "path": "PRIVATE_PATH_REDACTED__aafdb219a888",
+    "sha256": "aea2bed59e788f72c4fba227560bb73e102ccbcbd5b901048cd2399045cea239"
+  }
+}

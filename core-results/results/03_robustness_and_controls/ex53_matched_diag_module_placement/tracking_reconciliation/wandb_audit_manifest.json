@@ -1,0 +1,214 @@
+{
+  "schema_version": "wandb_wide_export_reconciliation_v1",
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "status": "passed",
+  "passed": true,
+  "evidence_role": "secondary_mirror_only",
+  "source_zip": {
+    "name": "53.zip",
+    "bytes": 67386,
+    "sha256": "073ee2287dcaf201b277215c887b8b29eb4ffd07f195b2ad3738e06576287b04"
+  },
+  "formal_run_count": 15,
+  "wandb_run_count": 15,
+  "wandb_csv_count": 9,
+  "validation_point_count": 945,
+  "training_point_count": 4650,
+  "comparable_exported_point_count": 24270,
+  "matching_exported_point_count": 24270,
+  "failed_exported_point_count": 0,
+  "missing_runs": [],
+  "extra_runs": [],
+  "unsupported_metrics": [],
+  "checks": {
+    "source_zip_sha256": true,
+    "wandb_csv_inventory_nonempty": true,
+    "wandb_min_max_columns_match_base": true,
+    "run_identity_exact": true,
+    "primary_validation_and_training_trajectories_exact": true,
+    "all_comparable_exported_points_exact": true
+  },
+  "metric_summary": [
+    {
+      "metric": "lr/adamw",
+      "wandb_runs": 15,
+      "wandb_points": 4665,
+      "comparable_points": 4665,
+      "matching_points": 4665,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "lr/matrix",
+      "wandb_runs": 15,
+      "wandb_points": 4665,
+      "comparable_points": 4665,
+      "matching_points": 4665,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "memory/k_state_mib",
+      "wandb_runs": 15,
+      "wandb_points": 15,
+      "comparable_points": 15,
+      "matching_points": 15,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "memory/optimizer_state_mib",
+      "wandb_runs": 15,
+      "wandb_points": 15,
+      "comparable_points": 15,
+      "matching_points": 15,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "memory/peak_allocated_mib",
+      "wandb_runs": 15,
+      "wandb_points": 15,
+      "comparable_points": 15,
+      "matching_points": 15,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "performance/step_avg_ms",
+      "wandb_runs": 15,
+      "wandb_points": 4635,
+      "comparable_points": 4635,
+      "matching_points": 4635,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "time/train_s",
+      "wandb_runs": 15,
+      "wandb_points": 4665,
+      "comparable_points": 4665,
+      "matching_points": 4665,
+      "max_absolute_error": 9.094947017729282e-13,
+      "passed": true
+    },
+    {
+      "metric": "train/loss_step",
+      "wandb_runs": 15,
+      "wandb_points": 4650,
+      "comparable_points": 4650,
+      "matching_points": 4650,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "metric": "val/loss",
+      "wandb_runs": 15,
+      "wandb_points": 945,
+      "comparable_points": 945,
+      "matching_points": 945,
+      "max_absolute_error": 0.0,
+      "passed": true
+    }
+  ],
+  "csv_inventory": [
+    {
+      "path": "wandb_export_2026-08-20T13_01_01.542+08_00.csv",
+      "sha256": "2f685cb0dabbc062d4cc089aea9d7d7de9ff0546a28bd66e5e523c71642158e4",
+      "bytes": 189207,
+      "row_count": 311,
+      "base_run_columns": 15,
+      "metrics": [
+        "lr/matrix"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T13_01_06.146+08_00.csv",
+      "sha256": "471a6546d2a647b046616d74c60f857c4cd50a74264d940c1be9c890d37ebe24",
+      "bytes": 176112,
+      "row_count": 311,
+      "base_run_columns": 15,
+      "metrics": [
+        "lr/adamw"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T13_01_09.591+08_00.csv",
+      "sha256": "67fe7fb3b3e9576da04d2260630a5ee0249e17e38708de56750fd15db21dd971",
+      "bytes": 5338,
+      "row_count": 1,
+      "base_run_columns": 15,
+      "metrics": [
+        "memory/peak_allocated_mib"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T13_01_13.123+08_00.csv",
+      "sha256": "34a6485b46c25d1fc73bf3a9257a0cd4f4784454376003bed0a954b04f9888a4",
+      "bytes": 5923,
+      "row_count": 1,
+      "base_run_columns": 15,
+      "metrics": [
+        "memory/optimizer_state_mib"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T13_01_16.860+08_00.csv",
+      "sha256": "956912864cf8d4c7c8ee4954b58a60478607ae8e9a67d2da670f755379cc285f",
+      "bytes": 5113,
+      "row_count": 1,
+      "base_run_columns": 15,
+      "metrics": [
+        "memory/k_state_mib"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T13_01_20.462+08_00.csv",
+      "sha256": "a711e13a65934f4a6605629ac152ae5e356dee4e8fe1ae1ba4246e07ffd57b3f",
+      "bytes": 144381,
+      "row_count": 309,
+      "base_run_columns": 15,
+      "metrics": [
+        "performance/step_avg_ms"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T13_01_23.648+08_00.csv",
+      "sha256": "e38683b22f477290c809167989fa099c9ac1f7b70084ff01fcdaf95f9f9128d4",
+      "bytes": 156438,
+      "row_count": 311,
+      "base_run_columns": 15,
+      "metrics": [
+        "time/train_s"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T13_01_27.115+08_00.csv",
+      "sha256": "910b6b0b86f6fc97389485b6726232efc3aa8ed5cc27e176607c6689ce8dfadb",
+      "bytes": 130664,
+      "row_count": 310,
+      "base_run_columns": 15,
+      "metrics": [
+        "train/loss_step"
+      ]
+    },
+    {
+      "path": "wandb_export_2026-08-20T13_01_31.053+08_00.csv",
+      "sha256": "981d7d08163c2bc23add9b293d20f0fe8dadfa9cf438ff0bf5e478421666c34e",
+      "bytes": 29901,
+      "row_count": 63,
+      "base_run_columns": 15,
+      "metrics": [
+        "val/loss"
+      ]
+    }
+  ],
+  "outputs": {
+    "wandb_metric_reconciliation.csv": "4966ed8ec94290409682de05589c38e285b238bfa263ea97a9e1ed858067df86",
+    "wandb_metric_summary.csv": "fb7b55817bee706ff22010dc34aa3137beaf1ed087befb684ac303e43608a613"
+  },
+  "limitations": [
+    "W&B is a secondary mirror; frozen local result artifacts remain authoritative.",
+    "Concurrency makes formal wall-clock and throughput metrics scientifically ineligible even when mirrored exactly."
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "accepted_result_anchors": "provenance/public_source/accepted_result_anchors.json",
   "anonymity_profile": "double_blind_v1",
-  "artifact_count": 538,
+  "artifact_count": 658,
   "artifact_manifest": "artifact_manifest.json",
   "checksums": "SHA256SUMS",
   "evidence_index": "evidence_index.csv",
@@ -65,6 +65,11 @@
     "50_r1_global_activation_diag",
     "51_moddedgpt_global_diag_scale",
     "52_llama_global_diag_scale",
+    "53_r1_matched_diag_module_placement",
+    "54_llama_moonlight_multiscale_multibudget",
+    "55_r1_fresh_seed_baseline_fairness",
+    "56_llama1b_10b_global_diag",
+    "57_llama1b_10b_moonlight",
     "mdp04_refresh_streaming"
   ],
   "omission_count": 10,
@@ -74,6 +79,6 @@
   "release_mode": "final",
   "schema_version": 1,
   "selection": "provenance/release_selection.json",
-  "selection_sha256": "1a65463c14aad081b8f80e6872fa5ccf0d7d700c21b0ffc9dda043174aab3b66",
+  "selection_sha256": "bebefd896ca9364d84736c03e11b240ce813fdfdc6e6f8d316b59b5b364e107b",
   "validator": "tools/validate_core_results_package.py"
 }

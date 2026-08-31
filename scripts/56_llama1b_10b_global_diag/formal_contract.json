@@ -1,0 +1,255 @@
+{
+  "schema_version": "ex56_llama1b_10b_global_diag_formal_v1",
+  "experiment_number": 56,
+  "status": "preregistered_formal_authorized_by_user_20260817",
+  "family": "llama1b_long_token_global_diagonal_scope_confirmation",
+  "scientific_evidence_class": "formal_supplemental_if_all_integrity_gates_pass",
+  "outcome_blind_at_freeze": true,
+  "question": "Does an all-eligible-matrix diagonal curvature-state route remain competitive at longer LLaMA-1B training budgets?",
+  "claim_boundaries": [
+    "The new formal arm is global_diag only; the four comparison routes are frozen read-only Experiment 48 controls.",
+    "This is a LLaMA-1B scope extension, not a universal optimizer ranking or a pure architecture causal test.",
+    "Every formal trajectory starts from the frozen initialization and data cursor; Experiment 52 checkpoints are forbidden.",
+    "Timing is descriptive only because execution concurrency differs from Experiment 48."
+  ],
+  "profile": {
+    "name": "llama_swiglu_1b_v1",
+    "n_layer": 18,
+    "n_head": 16,
+    "n_embd": 2048,
+    "intermediate_size": 5504,
+    "parameters": 1013690368,
+    "expected_matrix_tensors": 126,
+    "expected_backup_tensors": 38,
+    "expected_preconditioner_groups": {
+      "global_diag": 72
+    },
+    "expected_global_diag_k_state_bytes": 1677312
+  },
+  "accepted_ex48_initialization_sha256": {
+    "2024": "a9d4dd25e7d7992e4c6f922a0b688b8398f15ee04645a8b90ebf5a9954e44024",
+    "2025": "2143f088e467eeeb03311f17856e5d2fd88274a2f725adfcccdd79861221ea8e",
+    "2026": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec"
+  },
+  "grid": {
+    "methods": [
+      "global_diag"
+    ],
+    "seeds": [
+      2024,
+      2025,
+      2026
+    ],
+    "formal_units": 3,
+    "host_count": 1,
+    "gpus": 1,
+    "physical_gpus": [3],
+    "maximum_concurrent_training_processes": 1
+  },
+  "training": {
+    "global_batch_size": 512,
+    "device_batch_size": 8,
+    "sequence_length": 1024,
+    "gradient_accumulation_steps": 64,
+    "microbatch_tokens": 8192,
+    "tokens_per_update": 524288,
+    "backup_lr": 0.0036,
+    "matrix_lr": 0.01,
+    "adamw_matrix_lr": 0.000576,
+    "checkpoint_every_steps": 128,
+    "cublas_workspace_config": ":4096:8",
+    "preconditioner_global_step_is_absolute": true
+  },
+  "lr_policy": {
+    "name": "ex48_matched_forked_equal_1800_step_cooldowns_v1",
+    "from_scratch_required": true,
+    "ex52_checkpoint_resume_forbidden": true,
+    "plateau_multiplier": 1.0,
+    "cooldown_steps": 1800,
+    "cooldown_formula": "max(0, (target_step - completed_steps) / (target_step - start_step))",
+    "interpretation": "Each primary endpoint reproduces the Experiment 48 peak-LR and equal-cooldown semantics; endpoints are counterfactual branches, not one concatenated schedule."
+  },
+  "phases": [
+    {
+      "id": "backbone_4400",
+      "parent": null,
+      "start_step": 0,
+      "target_step": 4400,
+      "schedule": "plateau",
+      "role": "fork_source",
+      "retain_checkpoint": false
+    },
+    {
+      "id": "cooldown_6200",
+      "parent": "backbone_4400",
+      "start_step": 4400,
+      "target_step": 6200,
+      "schedule": "linear_cooldown",
+      "role": "primary_endpoint",
+      "budget_id": "tokens_3p2506b",
+      "actual_tokens": 3250585600,
+      "tokens_per_parameter": 3.206684903609541,
+      "retain_checkpoint": true
+    },
+    {
+      "id": "backbone_11493",
+      "parent": "backbone_4400",
+      "start_step": 4400,
+      "target_step": 11493,
+      "schedule": "plateau",
+      "role": "fork_source",
+      "retain_checkpoint": false
+    },
+    {
+      "id": "cooldown_13293",
+      "parent": "backbone_11493",
+      "start_step": 11493,
+      "target_step": 13293,
+      "schedule": "linear_cooldown",
+      "role": "primary_endpoint",
+      "budget_id": "tokens_6p9694b",
+      "actual_tokens": 6969360384,
+      "tokens_per_parameter": 6.875235874787359,
+      "retain_checkpoint": true
+    },
+    {
+      "id": "backbone_17273",
+      "parent": "backbone_11493",
+      "start_step": 11493,
+      "target_step": 17273,
+      "schedule": "plateau",
+      "role": "fork_source",
+      "retain_checkpoint": false
+    },
+    {
+      "id": "cooldown_19073",
+      "parent": "backbone_17273",
+      "start_step": 17273,
+      "target_step": 19073,
+      "schedule": "linear_cooldown",
+      "role": "primary_endpoint",
+      "budget_id": "tokens_approximately_10b",
+      "actual_tokens": 9999745024,
+      "tokens_per_parameter": 9.86469373653948,
+      "retain_checkpoint": true
+    }
+  ],
+  "validation": {
+    "regular_every_steps": 100,
+    "forced_phase_start_and_target": true,
+    "tokens_per_evaluation": 10485760,
+    "best_checkpoint_selection_primary": false,
+    "primary_outcome": "fixed_target_step_validation_loss"
+  },
+  "data": {
+    "train_pattern": "fineweb_train_*.bin",
+    "validation_pattern": "fineweb_val_*.bin",
+    "header_magic": 20240520,
+    "header_version": 1,
+    "header_bytes": 1024,
+    "token_dtype_bytes": 2,
+    "expected_first_train_index": 1,
+    "minimum_contiguous_train_shards": 101,
+    "required_validation_shards": 1,
+    "unique_order_required": true,
+    "full_content_sha256_required": true,
+    "accepted_ex48_inventory_sha256": "76848d39697aa6e0a7083e4445185fd7215b4f7ddad411d60a7cd6943c384b21",
+    "accepted_ex48_content_projection_sha256": "2820057bcdfa76afd9523c612c7e6846b3c5f545c98066c129c8b9d4c06a9b10",
+    "wrap_count_required": 0,
+    "prefetched_train_microbatches": 1
+  },
+  "resume": {
+    "mode": "same_run_same_contract_only",
+    "atomic_checkpoint_replace": true,
+    "metrics_trim_to_checkpoint": true,
+    "source_checkpoint_sha256_required": true,
+    "required_payload_keys": [
+      "model",
+      "optimizers",
+      "train_loader",
+      "next_x",
+      "next_y",
+      "completed_steps",
+      "rng",
+      "contract_sha256",
+      "data_inventory_sha256",
+      "method",
+      "seed",
+      "phase_id",
+      "init_sha256",
+      "resume_count"
+    ],
+    "loader_cursor_must_match_completed_steps": true,
+    "timing_after_resume_claim_eligible": false
+  },
+  "checkpoint_retention": {
+    "retain_primary_endpoints_only": true,
+    "retained_endpoint_checkpoints_per_unit": 3,
+    "retire_fork_only_after_all_direct_children_pass": true,
+    "retirement_certificate_required": true,
+    "estimated_three_seed_endpoint_bytes": 109772760861,
+    "minimum_free_disk_bytes_at_preflight": 250000000000
+  },
+  "runtime": {
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0",
+    "numpy": "2.2.6",
+    "nvidia_driver": "580.95.05",
+    "gpu_count": 1,
+    "gpu_name_contains": "H100",
+    "compute_capability": [
+      9,
+      0
+    ],
+    "minimum_gpu_memory_bytes": 80000000000,
+    "accepted_triton_kernels_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+  },
+  "accepted_sources": {
+    "scripts/17_llama_swiglu_validation/train_llama_swiglu.py": "6cbc5df4a83f1a4e23bac534e512336ad1ffa192cfbb077ebe7a1dcd8128c91e",
+    "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+  },
+  "source_lineage": {
+    "global_diag_builder_parent": "52_llama_global_diag_scale",
+    "long_token_worker_parent": "48_llama1b_10b_multibudget",
+    "global_diag_trainer_sha256": "6cbc5df4a83f1a4e23bac534e512336ad1ffa192cfbb077ebe7a1dcd8128c91e",
+    "ex48_control_source_sha256": "35dcf3452316c98253d8563463ff4cb3b61939fce6e934501853b7d194752588",
+    "frozen_control_csv_sha256": "0fc60d42e9711ca00aaf72f88f290be9cf4a52c211740dad51315c766b8185c6"
+  },
+  "analysis": {
+    "primary_budgets": [
+      "tokens_3p2506b",
+      "tokens_6p9694b",
+      "tokens_approximately_10b"
+    ],
+    "comparators": [
+      "down_none",
+      "down_diag",
+      "newton_full",
+      "muon"
+    ],
+    "primary_pairings": [
+      "global_diag-minus-down_none",
+      "global_diag-minus-down_diag",
+      "global_diag-minus-newton_full",
+      "global_diag-minus-muon"
+    ],
+    "practical_loss_margin": 0.002,
+    "classification_rule": "Report budget-wise paired mean deltas and seed directions; no universal winner is inferred across environments."
+  },
+  "pilot": {
+    "method": "global_diag",
+    "seed": 5601,
+    "first_target_step": 2,
+    "planned_interrupt_after_new_steps": 1,
+    "branch_target_step": 4,
+    "purpose": "Outcome-free atomic checkpoint, in-place exact-resume, no-wrap cursor, and source-branch audit."
+  },
+  "wandb": {
+    "project": "Selective-Newton-Muon-MainConf-LLaMA-1B-10B-Global-Diag-20260817",
+    "upload_timing": "post_endpoint_from_local_primary_metrics",
+    "failure_invalidates_scientific_run": false,
+    "train_log_every_steps": 20
+  }
+}

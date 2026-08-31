@@ -1,0 +1,9 @@
+{
+  "data_content_projection_sha256": "f758a95b771b9f21cbff3e80cbcaa9e36a8040f2c298be2c4c76edeac463a126",
+  "data_inventory_sha256": "540ea4d4540c67510e0ea2dc26d6734cdab701e16ad5a5d8b5496c743172fe40",
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "full_content_rehash": true,
+  "passed": true,
+  "schema_version": 1,
+  "verified_at": "2026-08-19T02:12:35.490123+00:00"
+}

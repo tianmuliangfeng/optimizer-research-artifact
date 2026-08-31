@@ -39,7 +39,13 @@
     "commands/20260804_ex47b_geo01b_discovery.sh": "commands/47b_geo01b_update_geometry_discovery/20260804_ex47b_geo01b_discovery.sh",
     "commands/20260805_ex48_llama1b_10b_multibudget.sh": "commands/48_llama1b_10b_multibudget/20260805_ex48_llama1b_10b_multibudget.sh",
     "commands/20260806_ex29_r1_depth_kmode.sh": "commands/29_r1_depth_kmode/20260806_ex29_r1_depth_kmode.sh",
-    "commands/20260807_ex49_r1_malt_strong_baseline.sh": "commands/49_r1_malt_strong_baseline/20260807_ex49_r1_malt_strong_baseline.sh"
+    "commands/20260807_ex49_r1_malt_strong_baseline.sh": "commands/49_r1_malt_strong_baseline/20260807_ex49_r1_malt_strong_baseline.sh",
+    "commands/20260817_ex53_r1_matched_diag_module_placement.sh": "commands/53_r1_matched_diag_module_placement/20260817_ex53_r1_matched_diag_module_placement.sh",
+    "commands/20260817_ex55_r1_fresh_seed_baseline_fairness.sh": "commands/55_r1_fresh_seed_baseline_fairness/20260817_ex55_r1_fresh_seed_baseline_fairness.sh",
+    "commands/20260817_ex56_llama1b_10b_global_diag.sh": "commands/56_llama1b_10b_global_diag/20260817_ex56_llama1b_10b_global_diag.sh",
+    "commands/20260819_ex54_llama_moonlight_multiscale_multibudget.sh": "commands/54_llama_moonlight_multiscale_multibudget/20260819_ex54_llama_moonlight_multiscale_multibudget.sh",
+    "commands/20260819_ex55_repair_tail5_analysis.sh": "commands/55_r1_fresh_seed_baseline_fairness/20260819_ex55_repair_tail5_analysis.sh",
+    "commands/20260819_ex57_llama1b_10b_moonlight.sh": "commands/57_llama1b_10b_moonlight/20260819_ex57_llama1b_10b_moonlight.sh"
   },
   "schema_version": 1,
   "scientific_contract_changed": false

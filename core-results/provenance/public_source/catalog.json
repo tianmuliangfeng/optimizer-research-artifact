@@ -2236,6 +2236,280 @@
       "title": "52 Llama Global Diag Scale"
     },
     {
+      "code_directory": "scripts/53_r1_matched_diag_module_placement",
+      "entrypoints": {
+        "command:20260817_ex53_r1_matched_diag_module_placement": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "EX53_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "EX53_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/53_r1_matched_diag_module_placement/20260817_ex53_r1_matched_diag_module_placement.sh"
+        },
+        "script:run_matched_diag": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/53_r1_matched_diag_module_placement/run_matched_diag.py"
+        },
+        "script:run_matched_diag_suite": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/53_r1_matched_diag_module_placement/run_matched_diag_suite.py"
+        }
+      },
+      "experiment_id": "53_r1_matched_diag_module_placement",
+      "legacy_result_roots": [
+        "53_r1_matched_diag_module_placement"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": false,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "53 R1 Matched Diag Module Placement"
+    },
+    {
+      "code_directory": "scripts/54_llama_moonlight_multiscale_multibudget",
+      "entrypoints": {
+        "command:20260819_ex54_llama_moonlight_multiscale_multibudget": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "EX54_RESUME_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "EX54_RESUME_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/54_llama_moonlight_multiscale_multibudget/20260819_ex54_llama_moonlight_multiscale_multibudget.sh"
+        },
+        "script:run_suite": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/54_llama_moonlight_multiscale_multibudget/run_suite.py"
+        }
+      },
+      "experiment_id": "54_llama_moonlight_multiscale_multibudget",
+      "legacy_result_roots": [
+        "54_llama_moonlight_multiscale_multibudget"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": false,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "54 Llama Moonlight Multiscale Multibudget"
+    },
+    {
+      "code_directory": "scripts/55_r1_fresh_seed_baseline_fairness",
+      "entrypoints": {
+        "command:20260817_ex55_r1_fresh_seed_baseline_fairness": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "EX55_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "EX55_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/55_r1_fresh_seed_baseline_fairness/20260817_ex55_r1_fresh_seed_baseline_fairness.sh"
+        },
+        "command:20260819_ex55_repair_tail5_analysis": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "EX55_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "EX55_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/55_r1_fresh_seed_baseline_fairness/20260819_ex55_repair_tail5_analysis.sh"
+        },
+        "script:run_fresh_seed_suite": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/55_r1_fresh_seed_baseline_fairness/run_fresh_seed_suite.py"
+        }
+      },
+      "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+      "legacy_result_roots": [
+        "55_r1_fresh_seed_baseline_fairness"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": false,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "55 R1 Fresh Seed Baseline Fairness"
+    },
+    {
+      "code_directory": "scripts/56_llama1b_10b_global_diag",
+      "entrypoints": {
+        "command:20260817_ex56_llama1b_10b_global_diag": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "EX56_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "EX56_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/56_llama1b_10b_global_diag/20260817_ex56_llama1b_10b_global_diag.sh"
+        },
+        "script:run_formal": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/56_llama1b_10b_global_diag/run_formal.py"
+        }
+      },
+      "experiment_id": "56_llama1b_10b_global_diag",
+      "legacy_result_roots": [
+        "56_llama1b_10b_global_diag"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": false,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "56 Llama1B 10B Global Diag"
+    },
+    {
+      "code_directory": "scripts/57_llama1b_10b_moonlight",
+      "entrypoints": {
+        "command:20260819_ex57_llama1b_10b_moonlight": {
+          "args": [],
+          "kind": "shell",
+          "native_modes": {
+            "native-verify": {
+              "args": [
+                "verify"
+              ],
+              "env": {
+                "EX57_RESUME_RUN_DIR": "{run_dir}"
+              }
+            },
+            "resume": {
+              "args": [
+                "resume"
+              ],
+              "env": {
+                "EX57_RESUME_RUN_DIR": "{run_dir}"
+              }
+            }
+          },
+          "path": "commands/57_llama1b_10b_moonlight/20260819_ex57_llama1b_10b_moonlight.sh"
+        },
+        "script:run_suite": {
+          "args": [],
+          "kind": "python",
+          "native_modes": {},
+          "path": "scripts/57_llama1b_10b_moonlight/run_suite.py"
+        }
+      },
+      "experiment_id": "57_llama1b_10b_moonlight",
+      "legacy_result_roots": [
+        "57_llama1b_10b_moonlight"
+      ],
+      "reproducibility": {
+        "fresh_rerun": false,
+        "generic_artifact_verify": true,
+        "native_resume": true,
+        "native_verify": true,
+        "one_click_rerun": false,
+        "source_freeze": "sealed_source_snapshot"
+      },
+      "schema_version": 1,
+      "status": "implemented",
+      "title": "57 Llama1B 10B Moonlight"
+    },
+    {
       "code_directory": "scripts/mdp_refresh_streaming",
       "entrypoints": {
         "command:20260803_mdp04_refresh_streaming": {

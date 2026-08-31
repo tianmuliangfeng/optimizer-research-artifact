@@ -1,0 +1,49 @@
+{
+  "code_directory": "scripts/56_llama1b_10b_global_diag",
+  "entrypoints": {
+    "command:20260817_ex56_llama1b_10b_global_diag": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX56_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "resume"
+          ],
+          "env": {
+            "EX56_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/56_llama1b_10b_global_diag/20260817_ex56_llama1b_10b_global_diag.sh"
+    },
+    "script:run_formal": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/56_llama1b_10b_global_diag/run_formal.py"
+    }
+  },
+  "experiment_id": "56_llama1b_10b_global_diag",
+  "legacy_result_roots": [
+    "56_llama1b_10b_global_diag"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": false,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "56 Llama1B 10B Global Diag"
+}

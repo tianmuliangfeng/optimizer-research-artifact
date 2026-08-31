@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "analysis_artifacts": true,
+    "analysis_counts": true,
+    "analysis_identity": true,
+    "analysis_passed": true,
+    "endpoint_count": true,
+    "handoff": true,
+    "handoff_hash": true,
+    "retained_checkpoint_count": true,
+    "run_audit": true
+  },
+  "full_checkpoint_hash": true,
+  "passed": true,
+  "persisted_at": "2026-08-23T15:44:39.151892+00:00",
+  "run_id": "20260817T065720+0000",
+  "schema_version": "ex56_native_verify_v1"
+}

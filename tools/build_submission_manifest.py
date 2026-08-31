@@ -71,7 +71,7 @@ def build(root: Path) -> None:
         "license": "MIT",
         "payload_bytes": sum(record["bytes"] for record in records),
         "payload_file_count": len(records),
-        "release_date": "2026-08-16",
+        "release_date": "2026-08-31",
         "schema_version": 1,
         "files": records,
     }

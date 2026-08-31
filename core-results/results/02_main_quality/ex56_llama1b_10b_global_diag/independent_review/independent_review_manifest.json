@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "experiment_id": 56,
+  "review_date": "2026-08-31",
+  "source_run": "remote-results-20260820T124850/selective-newton-muon-experiments-no-pt/56_llama1b_10b_global_diag/20260817T065720+0000",
+  "audit_status": "passed",
+  "scientific_acceptance": "accepted",
+  "formal_units": 3,
+  "verified": {
+    "suite_status": true,
+    "analysis_hash_chain": true,
+    "source_snapshot_hash_chain": true,
+    "native_full_checkpoint_verify": true,
+    "integrity_checks_passed": 648,
+    "independent_statistical_recomputation": true,
+    "sealed_analysis_files": 5,
+    "source_snapshot_files": 11,
+    "recomputed_statistical_fields": 72
+  },
+  "sha256": {
+    "analysis_manifest": "1cdd8cf50f7530cd81c8135ba32b0ae136285450d3da68c56a33ce8c09e1c0c4",
+    "native_verify_full": "6becd343a650d22cbfa15b61d7ba4f6da98e38ff7d6203f14c1157fb6781c59e",
+    "handoff_manifest": "cbfb1afc0271617d94974276204909f4ecbae07394102bbd7900a2cca137d04c"
+  },
+  "classification": "mixed_or_practically_equivalent_at_10b",
+  "endpoint_mean_sample_sd": [
+    {"budget_tokens": 3250585600, "mean": 2.9712653160, "sample_sd": 0.0003875579},
+    {"budget_tokens": 6969360384, "mean": 2.8601007463, "sample_sd": 0.0001978255},
+    {"budget_tokens": 9999745024, "mean": 2.8151388963, "sample_sd": 0.0003738222}
+  ],
+  "state": {"k_state_bytes": 1677312, "k_state_mib": 1.599609375},
+  "primary_interpretation": "Global diagonal beats the three tested curvature-state routes at every seed and budget, while Muon remains better in every paired comparison.",
+  "direction_counts": {
+    "global_diag_better_than_local_diag": "9/9",
+    "global_diag_better_than_identity": "9/9",
+    "global_diag_better_than_full": "9/9",
+    "muon_better_than_global_diag": "9/9"
+  },
+  "boundaries": {
+    "timing_usable": false,
+    "wandb_required": false,
+    "equivalence_test_prespecified": false
+  }
+}

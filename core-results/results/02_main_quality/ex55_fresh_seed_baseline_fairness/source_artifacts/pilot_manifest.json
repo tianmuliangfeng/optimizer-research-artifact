@@ -1,0 +1,17 @@
+{
+  "accepted_batches": {
+    "core": "PRIVATE_PATH_REDACTED",
+    "extended": "PRIVATE_PATH_REDACTED",
+    "malt": "PRIVATE_PATH_REDACTED",
+    "malter_eq17": "PRIVATE_PATH_REDACTED",
+    "mousse": "PRIVATE_PATH_REDACTED"
+  },
+  "configuration_selection_performed": false,
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "formal_methods_dropped": [],
+  "passed": true,
+  "schema_version": 1,
+  "seed": 5501,
+  "seed_role": "outcome_free_engineering_only",
+  "steps": 34
+}

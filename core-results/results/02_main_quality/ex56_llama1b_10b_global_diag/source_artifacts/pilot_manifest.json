@@ -1,0 +1,23 @@
+{
+  "completed_at": "2026-08-17T07:16:00.372173+00:00",
+  "in_place_resume": true,
+  "no_wrap": true,
+  "passed": true,
+  "planned_interrupt_return_code": 75,
+  "retired_pilot_checkpoints": [
+    {
+      "bytes": 8524966147,
+      "path": "PRIVATE_PATH_REDACTED__ea77a8393bb5",
+      "sha256": "18df0d71e4995a2bfddc167a0d78893ed0e7a68d2493fa6d9b9fc047eb1d53f3"
+    },
+    {
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__77c00afb5350",
+      "sha256": "4220bc46a0dd918e3866645f1f4a69b7b5cc170f2e8f2f1cca3337e4d6db0734"
+    }
+  ],
+  "retirement_completed_at": "2026-08-17T07:17:02.674397+00:00",
+  "retirement_prepared_at": "2026-08-17T07:16:00.372137+00:00",
+  "schema_version": "ex56_engineering_pilot_v1",
+  "source_checkpoint_branch": true
+}

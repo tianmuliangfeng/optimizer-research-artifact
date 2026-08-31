@@ -1,0 +1,47 @@
+{
+  "archive": {
+    "bytes": 9330079,
+    "path": "archive/53_r1_matched_diag_module_placement.zip",
+    "sha256": "af51dbb9582f439d0f81c1d7f1c03856827d3dd7589008a259717d07985c266d"
+  },
+  "checks": {
+    "analysis_artifact_hashes_7_of_7": true,
+    "analysis_manifest_handoff_hash": true,
+    "analysis_manifest_passed": true,
+    "checkpoint_hashes_verified_by_frozen_analyzer": true,
+    "data_full_content_rehash": true,
+    "formal_grid_15_of_15": true,
+    "handoff_manifest_passed": true,
+    "independent_aggregate_fields_50_of_50": true,
+    "paired_initialization_within_seed": true,
+    "preflight_passed": true,
+    "safe_archive_paths": true,
+    "source_snapshot_hashes_29_of_29": true,
+    "timing_excluded": true,
+    "wandb_all_comparable_points_24270_of_24270": true,
+    "wandb_run_identity_15_of_15": true,
+    "wandb_training_points_4650_of_4650": true,
+    "wandb_validation_points_945_of_945": true
+  },
+  "claim_boundary": "One Modded GPT 124M environment; representation is matched, but input dimensions and retained-state bytes differ by module.",
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "remote_run_id": "20260817T013015+0000",
+  "review_date": "2026-08-20",
+  "schema_version": 1,
+  "scientific_result": "matched_diagonal_placement_supports_c_proj_in_tested_environment",
+  "status": "accepted_remote_result",
+  "timing_usable": false,
+  "wandb_reconciliation": {
+    "all_comparable_points": 24270,
+    "archive_bytes": 67386,
+    "archive_path": "PRIVATE_PATH_REDACTED__8836d501a6a5",
+    "archive_sha256": "073ee2287dcaf201b277215c887b8b29eb4ffd07f195b2ad3738e06576287b04",
+    "csv_count": 9,
+    "failed_points": 0,
+    "manifest_path": "PRIVATE_PATH_REDACTED__ecc6cfac280e",
+    "run_count": 15,
+    "status": "passed_exact_secondary_mirror",
+    "training_points": 4650,
+    "validation_points": 945
+  }
+}

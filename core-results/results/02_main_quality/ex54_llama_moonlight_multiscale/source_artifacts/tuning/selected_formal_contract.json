@@ -1,0 +1,404 @@
+{
+  "accepted_init_sha256": {
+    "124m": {
+      "2024": "26a4e4571ccd96bef512216ca882a49a1200e53186268f481f492ba3a5e94680",
+      "2025": "05c4943819e6b8c14ffedc439a3e50f1e618f7ce9f355228edd441b0d4175eed",
+      "2026": "a10054c8ab0a610dfe5f2cac3e21c1d44ab838df1ec4ad131e4646f6b919818d"
+    },
+    "1b": {
+      "2024": "a9d4dd25e7d7992e4c6f922a0b688b8398f15ee04645a8b90ebf5a9954e44024",
+      "2025": "2143f088e467eeeb03311f17856e5d2fd88274a2f725adfcccdd79861221ea8e",
+      "2026": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec"
+    }
+  },
+  "accepted_sources": {
+    "parent/scripts/17_llama_swiglu_validation/train_llama_swiglu.py": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "parent/scripts/19_r1_extended_baselines/extended_optimizers.py": "bf39d7e1b435ef737833046c564ce8770d858d1aa474c9d7f11a914057253655",
+    "parent/scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401",
+    "parent/scripts/48_llama1b_10b_multibudget/train_segment.py": "ab7fd5acd809cc6233be05469cbff922bd7d7a9f5703af107f62455963f0d02f"
+  },
+  "analysis": {
+    "paired_seeds_required": true,
+    "practical_loss_margin": 0.002,
+    "primary_comparator": "muon",
+    "primary_metric": "final_val_loss",
+    "secondary_comparators": [
+      "newton_full",
+      "down_diag",
+      "down_none"
+    ],
+    "supporting_metrics": [
+      "tail5_val_loss",
+      "normalized_val_auc"
+    ]
+  },
+  "checkpoint_retention": {
+    "minimum_free_disk_bytes": 600000000000,
+    "retain_primary_endpoints_only": true,
+    "retained_endpoint_checkpoints_per_1b_unit": 2,
+    "retire_fork_only_after_children_pass": true,
+    "retirement_certificate_required": true
+  },
+  "claim_boundaries": [
+    "Tuning is scale-specific and uses only seeds 5401 (124M) and 5402 (1B); formal seeds 2024/2025/2026 are never used for tuning or retuning.",
+    "The selected configuration for each scale is frozen before all formal endpoints for that scale.",
+    "Quality-run timing is ineligible; only isolated future efficiency experiments may support throughput claims.",
+    "Moonlight is an architecture-adapted transfer of the Experiment-19 audited Moonlight Muon rule: hidden 2D matrices use Moonlight while the tied embedding/head and non-matrix parameters remain on the accepted LLaMA backup AdamW route.",
+    "The 1B track restores the Experiment-48 microbatch geometry: device batch 8, accumulation 64, global batch 512, and 524288 tokens per update.",
+    "GPU 0/1 execute independent tuning/formal jobs concurrently. Parallelism changes wall-clock time only; no DDP is used and per-run optimization geometry is unchanged.",
+    "Experiment 54 is self-contained and has no runtime, checkpoint, selection, or contract dependency on Experiment 57."
+  ],
+  "controls": {
+    "path": "frozen_controls.csv",
+    "rows": 48,
+    "sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+    "sources": [
+      17,
+      48
+    ]
+  },
+  "data": {
+    "124m": {
+      "accepted_full_content_fingerprint_sha256": "1202c308d21ea690c17b958b98cbe40c65969a21928230950401f777adda8c68",
+      "exact_train_shards": 50
+    },
+    "1b": {
+      "accepted_projection_inventory_sha256": "ca91ddb7f70ce6b20220369ba3ad40eee396b15d0f4b0e4f9684673922881c9e",
+      "accepted_projection_path": "accepted_ex48_data_projection.json",
+      "accepted_projection_sha256": "95cb8a7186f4d27dd5fd490b04a564a11f4dc2e1801ab62f51be31b23b513a7a",
+      "exact_train_shards": 103,
+      "no_wrap_required": true,
+      "source_ex48_data_audit_sha256": "2591cd3226d36403cedfeb80c7b3b5a29d5b968f5d1822acce08ba246e6050c5",
+      "source_ex48_inventory_sha256": "76848d39697aa6e0a7083e4445185fd7215b4f7ddad411d60a7cd6943c384b21"
+    },
+    "prefetched_train_microbatches": 1,
+    "train_pattern": "fineweb_train_*.bin",
+    "validation_pattern": "fineweb_val_*.bin"
+  },
+  "execution": {
+    "compile_cache_policy": "per_physical_gpu",
+    "compile_cache_reason": "avoid cross-worker torch.compile cache contention; quality/timing remains ineligible",
+    "compile_cache_root": "RUN_DIR/_compile_cache/gpu{physical_gpu}",
+    "ddp": false,
+    "formal_parallel_workers": 2,
+    "host_count": 1,
+    "maximum_concurrent_training_processes": 2,
+    "note": "EX54 is its own comparison family on a separate host. Physical GPUs 0 and 1 execute independent single-GPU tuning and formal units concurrently; no DDP and no timing claim.",
+    "parallelism": "independent_single_gpu_jobs",
+    "physical_gpus": [
+      0,
+      1
+    ],
+    "quality_timing_eligible": false,
+    "tuning_parallel_workers": 2
+  },
+  "experiment_id": "54_llama_moonlight_multiscale_multibudget",
+  "experiment_number": 54,
+  "fairness": {
+    "backup_adamw_betas": [
+      0.9,
+      0.95
+    ],
+    "backup_adamw_eps": 1e-08,
+    "backup_adamw_weight_decay": 0.0,
+    "device_batch_size_124m": 64,
+    "device_batch_size_1b": 8,
+    "formal_seeds": [
+      2024,
+      2025,
+      2026
+    ],
+    "global_batch_size": 512,
+    "gradient_accumulation_steps_124m": 8,
+    "gradient_accumulation_steps_1b": 64,
+    "reference_experiment": 48,
+    "same_data_projection_as_ex48": true,
+    "same_microbatch_geometry_as_ex48": true,
+    "timing_eligible": false,
+    "tokens_per_update": 524288,
+    "tuning_cells_per_scale": 3,
+    "tuning_formal_seed_disjoint": true,
+    "tuning_seeds": {
+      "124m": 5401,
+      "1b": 5402
+    },
+    "tuning_updates_per_cell": 1000
+  },
+  "formal": {
+    "accepted_1b_budget_ids": [
+      "tokens_3p2506b",
+      "tokens_6p9694b"
+    ],
+    "all_results_reported": true,
+    "independent_of_ex57": true,
+    "primary_comparator": "muon",
+    "retune_after_formal_forbidden": true,
+    "secondary_comparators": [
+      "newton_full",
+      "down_diag",
+      "down_none"
+    ],
+    "seeds": [
+      2024,
+      2025,
+      2026
+    ],
+    "timing_eligible": false,
+    "tracks": [
+      "124m_3p25b",
+      "1b_multibudget_non10b"
+    ],
+    "units": 6
+  },
+  "formal_grid_per_scale": {
+    "formal_units_per_scale": 3,
+    "methods": [
+      "moonlight"
+    ],
+    "seeds": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "method": "moonlight",
+  "moonlight": {
+    "activation_k_state_routes": 0,
+    "adjust_lr": "0.2*sqrt(max(rows,cols))",
+    "all_hidden_2d_matrices": true,
+    "backup_lr_policy": "same_base_lr_as_matrix",
+    "backup_route": "accepted_llama_adamw",
+    "backup_route_scope": "tied_embedding_head_norm_and_nonmatrix_parameters",
+    "factor_or_eigendecomposition_state": false,
+    "momentum": 0.95,
+    "nesterov": true,
+    "newton_schulz_coefficients": [
+      3.4445,
+      -4.775,
+      2.0315
+    ],
+    "newton_schulz_steps": 5,
+    "transfer_source_experiment": 19,
+    "transfer_source_sha256": "bf39d7e1b435ef737833046c564ce8770d858d1aa474c9d7f11a914057253655",
+    "upstream_authority": "MoonshotAI/Moonlight examples/toy_train.py",
+    "weight_decay": 0.1,
+    "weight_decay_uses_unadjusted_base_lr": true
+  },
+  "outcome_blind_at_freeze": true,
+  "phases": [
+    {
+      "id": "backbone_4400",
+      "parent": null,
+      "retain_checkpoint": false,
+      "role": "fork_source",
+      "schedule": "plateau",
+      "start_step": 0,
+      "target_step": 4400
+    },
+    {
+      "actual_tokens": 3250585600,
+      "budget_id": "tokens_3p2506b",
+      "id": "cooldown_6200",
+      "parent": "backbone_4400",
+      "retain_checkpoint": true,
+      "role": "primary_endpoint",
+      "schedule": "linear_cooldown",
+      "start_step": 4400,
+      "target_step": 6200,
+      "tokens_per_parameter": 3.206684903609541
+    },
+    {
+      "id": "backbone_11493",
+      "parent": "backbone_4400",
+      "retain_checkpoint": false,
+      "role": "fork_source",
+      "schedule": "plateau",
+      "start_step": 4400,
+      "target_step": 11493
+    },
+    {
+      "actual_tokens": 6969360384,
+      "budget_id": "tokens_6p9694b",
+      "id": "cooldown_13293",
+      "parent": "backbone_11493",
+      "retain_checkpoint": true,
+      "role": "primary_endpoint",
+      "schedule": "linear_cooldown",
+      "start_step": 11493,
+      "target_step": 13293,
+      "tokens_per_parameter": 6.875235874787359
+    }
+  ],
+  "pilot": {
+    "branch_target_step": 4,
+    "first_target_step": 2,
+    "method": "moonlight",
+    "planned_interrupt_after_new_steps": 1,
+    "quality_eligible": false,
+    "seed": 5402
+  },
+  "profile": {
+    "expected_backup_tensors": 38,
+    "expected_matrix_tensors": 126,
+    "expected_preconditioner_groups": {
+      "moonlight": 0
+    },
+    "name": "llama_swiglu_1b_v1",
+    "parameters": 1013690368
+  },
+  "profiles": {
+    "124m": {
+      "expected_backup_tensors": 26,
+      "expected_matrix_tensors": 84,
+      "expected_preconditioner_groups": 0,
+      "name": "llama_swiglu_parameter_matched_r1",
+      "parameters": 123551232
+    },
+    "1b": {
+      "expected_backup_tensors": 38,
+      "expected_matrix_tensors": 126,
+      "expected_preconditioner_groups": 0,
+      "name": "llama_swiglu_1b_v1",
+      "parameters": 1013690368
+    }
+  },
+  "question": "How does a fairly tuned Moonlight Muon baseline position on accepted LLaMA-124M and LLaMA-1B protocols at the 3.25B and 6.97B token horizons?",
+  "resume": {
+    "atomic_checkpoint_replace": true,
+    "full_checkpoint_sha256_required": true,
+    "loader_cursor_must_match_completed_steps": true,
+    "metrics_trim_to_checkpoint": true,
+    "same_run_same_contract_only": true,
+    "source_checkpoint_sha256_required": true,
+    "timing_after_resume_claim_eligible": false
+  },
+  "runtime": {
+    "accepted_triton_kernels_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d",
+    "compute_capability": [
+      9,
+      0
+    ],
+    "gpu_name_contains": "H100",
+    "minimum_gpu_memory_bytes": 80000000000,
+    "numpy": "2.2.6",
+    "python": "3.10.12",
+    "torch": "2.8.0+cu126",
+    "torch_cuda": "12.6",
+    "triton": "3.4.0"
+  },
+  "schema_version": "ex54_llama_moonlight_multiscale_multibudget_v2",
+  "selected_configs": {
+    "124m": {
+      "backup_lr": 0.003,
+      "id": "lr0030",
+      "matrix_lr": 0.003,
+      "weight_decay": 0.1
+    },
+    "1b": {
+      "backup_lr": 0.001,
+      "id": "lr0010",
+      "matrix_lr": 0.001,
+      "weight_decay": 0.1
+    }
+  },
+  "selection_manifest_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+  "source_derivation": {
+    "algorithm_subtree_exact_match_required": true,
+    "derived_hashes_sealed_in_source_snapshot_manifest": true,
+    "deterministic_from_pinned_parents": true,
+    "local_moonlight_optimizer_snapshot_required": true,
+    "pinned_ex19_optimizer_source_sha256": "bf39d7e1b435ef737833046c564ce8770d858d1aa474c9d7f11a914057253655",
+    "source_optimizer_transfer": "Experiment 19 Moonlight Muon rule"
+  },
+  "status": "preregistered_authorized_20260819",
+  "training": {
+    "124m_terminal_warmdown": 1800,
+    "124m_updates": 6200,
+    "adamw_matrix_lr": 0.000576,
+    "backup_lr": 0.001,
+    "checkpoint_every_steps": 128,
+    "cublas_workspace_config": ":4096:8",
+    "device_batch_size": 8,
+    "device_batch_size_124m": 64,
+    "device_batch_size_1b": 8,
+    "global_batch_size": 512,
+    "gradient_accumulation_steps": 64,
+    "gradient_accumulation_steps_1b": 64,
+    "matrix_lr": 0.001,
+    "microbatch_tokens": 8192,
+    "sequence_length": 1024,
+    "tokens_per_update": 524288,
+    "validation_every_steps": 100,
+    "validation_tokens": 10485760
+  },
+  "tuning": {
+    "124m": {
+      "cells": [
+        {
+          "backup_lr": 0.001,
+          "id": "lr0010",
+          "matrix_lr": 0.001,
+          "weight_decay": 0.1
+        },
+        {
+          "backup_lr": 0.0018,
+          "id": "lr0018",
+          "matrix_lr": 0.0018,
+          "weight_decay": 0.1
+        },
+        {
+          "backup_lr": 0.003,
+          "id": "lr0030",
+          "matrix_lr": 0.003,
+          "weight_decay": 0.1
+        }
+      ],
+      "center_cell": "lr0018",
+      "center_source": "Experiment-19 selected Moonlight r1scale prior; transferred before observing LLaMA outcomes",
+      "seed": 5401,
+      "updates": 1000
+    },
+    "1b": {
+      "cells": [
+        {
+          "backup_lr": 0.001,
+          "id": "lr0010",
+          "matrix_lr": 0.001,
+          "weight_decay": 0.1
+        },
+        {
+          "backup_lr": 0.0018,
+          "id": "lr0018",
+          "matrix_lr": 0.0018,
+          "weight_decay": 0.1
+        },
+        {
+          "backup_lr": 0.003,
+          "id": "lr0030",
+          "matrix_lr": 0.003,
+          "weight_decay": 0.1
+        }
+      ],
+      "center_cell": "lr0018",
+      "center_source": "Experiment-19 selected Moonlight r1scale prior; transferred before observing LLaMA outcomes",
+      "seed": 5402,
+      "updates": 1000
+    },
+    "center_tie_margin": 0.002,
+    "formal_outcomes_may_not_trigger_retuning": true,
+    "selection_endpoint": "fixed step-1000 validation loss",
+    "winner_rule": "select center if center <= minimum + 0.002; otherwise select unique lowest loss with lexical cell-id tie break"
+  },
+  "validation": {
+    "best_checkpoint_selection_primary": false,
+    "forced_phase_start_and_target": true,
+    "primary_outcome": "fixed_target_step_validation_loss",
+    "regular_every_steps": 100,
+    "tokens_per_evaluation": 10485760
+  },
+  "wandb": {
+    "failure_invalidates_scientific_run": false,
+    "project": "ANONYMIZED_WANDB_PROJECT_0002",
+    "upload_timing": "post_training_from_validated_local_metrics"
+  }
+}

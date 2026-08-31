@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "script_version": "2026-08-17.3",
+  "research_question": "Under one frozen Modded-GPT-124M R1 protocol, where does the same activation-second-moment diagonal state provide the best quality-state return?",
+  "primary_metric": "final_val_loss",
+  "supporting_metrics": [
+    "tail5_val_loss_mean",
+    "normalized_val_auc",
+    "k_state_bytes",
+    "optimizer_state_bytes",
+    "peak_memory_allocated_mib"
+  ],
+  "pilot": {
+    "seed": 2053,
+    "steps": 34,
+    "outcome_eligible": false,
+    "configuration_selection_allowed": false,
+    "purpose": "engineering-only first-refresh, finite-value, state-inventory, and execution-path check"
+  },
+  "formal_seeds": [2024, 2025, 2026],
+  "arms": [
+    {
+      "arm": "all_none",
+      "c_fc": "none",
+      "c_proj": "none",
+      "o_proj": "none",
+      "qkv": "none",
+      "role": "state_free_anchor"
+    },
+    {
+      "arm": "c_fc_diag",
+      "c_fc": "diag",
+      "c_proj": "none",
+      "o_proj": "none",
+      "qkv": "none",
+      "role": "mlp_expansion_placement"
+    },
+    {
+      "arm": "c_proj_diag",
+      "c_fc": "none",
+      "c_proj": "diag",
+      "o_proj": "none",
+      "qkv": "none",
+      "role": "mlp_contraction_placement"
+    },
+    {
+      "arm": "c_fc_c_proj_diag",
+      "c_fc": "diag",
+      "c_proj": "diag",
+      "o_proj": "none",
+      "qkv": "none",
+      "role": "factorial_joint_placement"
+    },
+    {
+      "arm": "o_proj_diag",
+      "c_fc": "none",
+      "c_proj": "none",
+      "o_proj": "diag",
+      "qkv": "none",
+      "role": "attention_output_placement"
+    }
+  ],
+  "training_recipe": {
+    "base_script": "train_gpt_newton_muon_1.py",
+    "num_iterations": 6200,
+    "base_learning_rate": 0.004,
+    "matrix_learning_rate": 0.0004,
+    "tokens_per_step": 524288,
+    "sequence_length": 1024,
+    "batch_size_sequences": 512,
+    "device_batch_size_sequences": 64,
+    "warmdown_iters": 1800,
+    "validation_every_steps": 100,
+    "refresh_period_steps": 32
+  },
+  "matched_diagonal_representation": {
+    "statistic": "coordinatewise_activation_second_moment",
+    "initial_diagonal": 0.001,
+    "ewma_beta": 0.95,
+    "ridge_multiplier": 0.2,
+    "epsilon": 1e-08,
+    "ridge_reduction": "one_mean_over_all_input_coordinates_of_each_matrix",
+    "layer_coverage": "all_12_transformer_layers",
+    "module_dimension_changes_state_bytes_but_not_representation_or_training_budget": true
+  },
+  "expected_memory_bytes": {
+    "all_none": {
+      "k_cov_bytes": 0,
+      "k_inv_bytes": 0,
+      "k_state_bytes": 0,
+      "activation_stat_bytes": 0,
+      "precond_workspace_bytes": 0
+    },
+    "c_fc_diag": {
+      "k_cov_bytes": 36864,
+      "k_inv_bytes": 36864,
+      "k_state_bytes": 73728,
+      "activation_stat_bytes": 36912,
+      "precond_workspace_bytes": 0
+    },
+    "c_proj_diag": {
+      "k_cov_bytes": 147456,
+      "k_inv_bytes": 147456,
+      "k_state_bytes": 294912,
+      "activation_stat_bytes": 147504,
+      "precond_workspace_bytes": 0
+    },
+    "c_fc_c_proj_diag": {
+      "k_cov_bytes": 184320,
+      "k_inv_bytes": 184320,
+      "k_state_bytes": 368640,
+      "activation_stat_bytes": 184416,
+      "precond_workspace_bytes": 0
+    },
+    "o_proj_diag": {
+      "k_cov_bytes": 36864,
+      "k_inv_bytes": 36864,
+      "k_state_bytes": 73728,
+      "activation_stat_bytes": 36912,
+      "precond_workspace_bytes": 0
+    }
+  },
+  "prespecified_contrasts": [
+    "c_fc_diag_minus_all_none",
+    "c_proj_diag_minus_all_none",
+    "o_proj_diag_minus_all_none",
+    "c_fc_c_proj_diag_minus_all_none",
+    "factorial_interaction_both_minus_c_fc_minus_c_proj_plus_none",
+    "all_pairwise_single_module_placements"
+  ],
+  "execution_policy": {
+    "physical_gpus": ["0"],
+    "maximum_concurrent_training_processes": 1,
+    "one_visible_gpu_per_process": true,
+    "host_colocation_policy": "GPU 1 is reserved for a different suite; Experiment 53 never schedules work there",
+    "pilot_units": 5,
+    "formal_units": 15,
+    "unit_level_resume": true,
+    "source_snapshot": true,
+    "local_evidence_primary": true,
+    "wandb_secondary": true,
+    "timing_usable": false
+  },
+  "hard_gates": {
+    "dense_activation_workspace_forbidden": true,
+    "dense_preconditioner_refresh_forbidden": true,
+    "qkv_state_forbidden": true,
+    "post_hoc_arm_or_lr_selection_forbidden": true,
+    "all_arms_reported_regardless_of_outcome": true
+  }
+}

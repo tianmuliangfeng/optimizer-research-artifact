@@ -1,0 +1,25 @@
+{
+  "classification": "mixed_or_practically_equivalent_at_10b",
+  "ten_billion_token_contrasts": {
+    "down_diag": {
+      "better_seed_count": 3,
+      "mean_global_minus_comparator": -0.002976656,
+      "worse_seed_count": 0
+    },
+    "down_none": {
+      "better_seed_count": 3,
+      "mean_global_minus_comparator": -0.002650102,
+      "worse_seed_count": 0
+    },
+    "muon": {
+      "better_seed_count": 0,
+      "mean_global_minus_comparator": 0.001071056,
+      "worse_seed_count": 3
+    },
+    "newton_full": {
+      "better_seed_count": 3,
+      "mean_global_minus_comparator": -0.003568649,
+      "worse_seed_count": 0
+    }
+  }
+}

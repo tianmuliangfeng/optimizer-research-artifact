@@ -1,0 +1,49 @@
+{
+  "code_directory": "scripts/54_llama_moonlight_multiscale_multibudget",
+  "entrypoints": {
+    "command:20260819_ex54_llama_moonlight_multiscale_multibudget": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX54_RESUME_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "resume"
+          ],
+          "env": {
+            "EX54_RESUME_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/54_llama_moonlight_multiscale_multibudget/20260819_ex54_llama_moonlight_multiscale_multibudget.sh"
+    },
+    "script:run_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/54_llama_moonlight_multiscale_multibudget/run_suite.py"
+    }
+  },
+  "experiment_id": "54_llama_moonlight_multiscale_multibudget",
+  "legacy_result_roots": [
+    "54_llama_moonlight_multiscale_multibudget"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": false,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "54 Llama Moonlight Multiscale Multibudget"
+}

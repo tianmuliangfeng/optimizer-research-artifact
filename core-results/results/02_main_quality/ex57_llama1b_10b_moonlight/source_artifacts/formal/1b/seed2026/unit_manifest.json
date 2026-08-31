@@ -1,0 +1,66 @@
+{
+  "completed_phase_ids": [
+    "backbone_4400",
+    "cooldown_6200",
+    "backbone_11493",
+    "cooldown_13293",
+    "backbone_17273",
+    "cooldown_19073"
+  ],
+  "data_inventory_sha256": "56dbf1841b18a4462698946fe865877f329e9fb4b8f343fb05cd78bfb079806a",
+  "endpoints": {
+    "tokens_3p2506b": {
+      "bytes": 8522344035,
+      "path": "PRIVATE_PATH_REDACTED__2676accc9452",
+      "retained": true,
+      "sha256": "eb4be46b089fe3222db26ada63d2ce58db5d857956f84718efa89aebe5b1275e"
+    },
+    "tokens_6p9694b": {
+      "bytes": 8522344035,
+      "path": "PRIVATE_PATH_REDACTED__d289e4872463",
+      "retained": true,
+      "sha256": "e8a2c7f0a06b7947670766a2485e94e2afd20bbad5a3f6a42ca349494fea4d73"
+    },
+    "tokens_approximately_10b": {
+      "bytes": 8522344035,
+      "path": "PRIVATE_PATH_REDACTED__f968c2cea5e5",
+      "retained": true,
+      "sha256": "445bbbc0773062b89c7976fd45ed3ad464af03ea9e483d5695ead082861d3b78"
+    }
+  },
+  "passed": true,
+  "phases": {
+    "backbone_11493": {
+      "manifest_sha256": "969df60a76005b6f53af1d22571607cd3bb7df3f58308016db21ef5acb641e67",
+      "summary_sha256": "f32b473542b05ada62f5dfd90b612dccc2e8d6af71996e7b84faf293e556d36b"
+    },
+    "backbone_17273": {
+      "manifest_sha256": "2d0c9c49371046045b8c109d2de09cd9453c99db5ac400e8fd399712f85d8b1a",
+      "summary_sha256": "44551f80c4f129ea5a84792048fa5a825b24ee8d5e21aabe5d86a3a5617bbf2c"
+    },
+    "backbone_4400": {
+      "manifest_sha256": "c95e99d7b88926ad1c43acb6d5a6eee2aa8bac03d53fcfab1c869f1ba1c8c5fb",
+      "summary_sha256": "e51d5ac902bde7dc44c94c3169b77eacd57b23094a743af60b74a15dc4e81b3a"
+    },
+    "cooldown_13293": {
+      "manifest_sha256": "08a60b2e783e289d1528aa49d2c47cf2aaf4193c9e63e8f47aa085b29881f8bb",
+      "summary_sha256": "0a3cb2869b9f3b1e4fa4d604acae5d685881ef2b959bbb11f5c8f33581877edd"
+    },
+    "cooldown_19073": {
+      "manifest_sha256": "3214307fa2d7554c9af17d3f62f1b2e1064f99150ade229903df377fa64a8503",
+      "summary_sha256": "306d750f5b0b9137dabb4de898ee485b8f8a6d69de02bb07bfe2403094f6365c"
+    },
+    "cooldown_6200": {
+      "manifest_sha256": "d2a36c11d4de48e5fd5cbda927c47af88c0689fe0f32b278a1b2b15a3425f2a2",
+      "summary_sha256": "fc709663d850ce4d8a4bc707c79bf58fc368fb85e66d0c33b04f809b834fcebf"
+    }
+  },
+  "physical_gpu": 2,
+  "scale": "1b",
+  "schema_version": "ex57_llama1b_moonlight_unit_v1",
+  "seed": 2026,
+  "selected_contract_sha256": "2352597132ebaeaf6cd6eb4de08bb4a90a2e70b0cbc876a6dd0687b870d4fd48",
+  "selection_sha256": "54ec954990e6d386f21ced1ca6800e982eb892b61d709de7fa419847111539f6",
+  "stage": "formal",
+  "timing_eligible": false
+}

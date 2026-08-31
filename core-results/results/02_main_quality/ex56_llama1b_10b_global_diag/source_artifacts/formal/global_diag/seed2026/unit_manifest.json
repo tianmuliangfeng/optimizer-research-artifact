@@ -1,0 +1,67 @@
+{
+  "completed_phases": [
+    "backbone_4400",
+    "cooldown_6200",
+    "backbone_11493",
+    "cooldown_13293",
+    "backbone_17273",
+    "cooldown_19073"
+  ],
+  "method": "global_diag",
+  "passed": true,
+  "phases": {
+    "backbone_11493": {
+      "manifest_sha256": "8853563a8b297f1242e1b0082651c7615eed4512aa1657f8e45897d7efcc1d47",
+      "metrics_sha256": "75ee4bea2e17ac2b3458be9374c830b721c34c958e70429c390ccf3112c5aa7f",
+      "summary_sha256": "8d883a62091bdcbc1d07bebbedf1436575d6e90e2c74cff2c9301ba07450c18e"
+    },
+    "backbone_17273": {
+      "manifest_sha256": "ef74859aaf26cdff58c64212f09e16bb1c23e431ce1258cf23c1c0c056d10deb",
+      "metrics_sha256": "a6c31f25088ad35189b31db0adaefa619a85c01b772bb16704de127af66d2205",
+      "summary_sha256": "3f8f60abb0264eb35c22923f2e21058123c9fd1aaed0c59169a19259cf8625da"
+    },
+    "backbone_4400": {
+      "manifest_sha256": "cd1bd2581a12d57f0292ecde0f8e8554eda2a7ee1e5ca96dd5533ff3e0d0562a",
+      "metrics_sha256": "275acf0eedcb55ddc9dd7d17b25909041db04ca271ed697077fb96a9c16389a1",
+      "summary_sha256": "116e05da0b215eb35a1c5ac8f55c8a10b7a01440dcc14a8ac1ac0ac40d9eea9e"
+    },
+    "cooldown_13293": {
+      "manifest_sha256": "daea6125d5853b4fe78c292db57c1625edd131dc24980f2d9343c8e6ff501561",
+      "metrics_sha256": "3ad5dc42ec57c36dbe9ed4dbc5d237632d5fe9f1936ce0473a44b5ea5465f98d",
+      "summary_sha256": "fd1fe97e64773f8eed0d36e0e400caf15572599c2352df4dc619ac296c12caa9"
+    },
+    "cooldown_19073": {
+      "manifest_sha256": "abbf1f6643134ec7493cbbf0f0256ae308378db87a15bdd3a1c45fa842559666",
+      "metrics_sha256": "b4761b797af03dad8648b2aa8c47a87d310f2ddde3c49b027a94c4c8a04b64cf",
+      "summary_sha256": "c3f578eab9ce20aab3a85d6b95e5d08ee2755c1adf4568ee064fb4593863046b"
+    },
+    "cooldown_6200": {
+      "manifest_sha256": "c395367be33bfc722eb21bf5d64a10868b5edcabdadf484f56ebdcecb05212b1",
+      "metrics_sha256": "57884a9bf276e5158ce28f6c9df30ed0fde5d103ade0a458960141cb74b85b7d",
+      "summary_sha256": "8459de8cb667adedc79fa8b7228c355f1c9b8a9566df66803bc2fa08a0611c04"
+    }
+  },
+  "retained_endpoints": {
+    "tokens_3p2506b": {
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__80502a1998c9",
+      "retained": true,
+      "sha256": "1a3aa99baea5e1ccb30cafd2a3d18bdfd2a89b19ac9eda6c4d099c2879e25ae6"
+    },
+    "tokens_6p9694b": {
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__53f473add960",
+      "retained": true,
+      "sha256": "fff730d028f05ac61fcd834bb7e1dd74f887be1f0070de1cc49c6f3934eab430"
+    },
+    "tokens_approximately_10b": {
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__3fb68dbb5946",
+      "retained": true,
+      "sha256": "96e0082d7bbff4d4324c7821c46ccc5d6c797cb594b3e0c23e264b29e96ef75c"
+    }
+  },
+  "schema_version": "ex56_llama1b_global_diag_unit_manifest_v1",
+  "sealed_at": "2026-08-23T15:38:57.320255+00:00",
+  "seed": 2026
+}

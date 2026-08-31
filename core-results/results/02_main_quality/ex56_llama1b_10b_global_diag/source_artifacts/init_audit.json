@@ -1,0 +1,3195 @@
+{
+  "accepted_ex48_initialization_sha256": {
+    "2024": "a9d4dd25e7d7992e4c6f922a0b688b8398f15ee04645a8b90ebf5a9954e44024",
+    "2025": "2143f088e467eeeb03311f17856e5d2fd88274a2f725adfcccdd79861221ea8e",
+    "2026": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec"
+  },
+  "checks": {
+    "accepted_ex48_seed_hashes": true,
+    "all_formal_seeds": true,
+    "parameter_count": true
+  },
+  "passed": true,
+  "seeds": {
+    "2024": {
+      "architecture": {
+        "architecture": "llama_swiglu_1b_v1",
+        "backup_parameter_count": 103002112,
+        "backup_tensor_count": 38,
+        "base_trainer_sha256": "6cbc5df4a83f1a4e23bac534e512336ad1ffa192cfbb077ebe7a1dcd8128c91e",
+        "bias_parameter_count": 0,
+        "config": {
+          "intermediate_size": 5504,
+          "n_embd": 2048,
+          "n_head": 16,
+          "n_layer": 18,
+          "rms_norm_eps": 1e-06,
+          "rope_base": 10000.0,
+          "sequence_length": 1024,
+          "vocab_size": 50257
+        },
+        "dense_k_workspace_allowed": false,
+        "down_mode": "diag",
+        "embedding_head_tied": true,
+        "global_diag_route": true,
+        "matrix_parameter_count": 910688256,
+        "matrix_tensor_count": 126,
+        "mlp": "swiglu_gate_up_down",
+        "named_parameter_count": 164,
+        "parameter_count": 1013690368,
+        "preconditioner_group_count": 72,
+        "preconditioner_groups": [
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.0.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.0.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.0.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.0.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.1.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.1.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.1.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.1.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.2.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.2.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.2.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.2.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.3.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.3.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.3.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.3.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.4.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.4.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.4.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.4.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.5.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.5.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.5.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.5.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.6.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.6.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.6.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.6.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.7.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.7.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.7.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.7.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.8.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.8.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.8.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.8.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.9.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.9.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.9.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.9.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.10.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.10.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.10.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.10.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.11.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.11.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.11.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.11.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.12.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.12.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.12.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.12.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.13.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.13.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.13.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.13.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.14.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.14.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.14.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.14.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.15.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.15.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.15.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.15.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.16.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.16.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.16.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.16.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.17.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.17.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.17.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.17.down_input"
+          }
+        ],
+        "profile": {
+          "expected_backup_tensors": 38,
+          "expected_global_diag_k_state_bytes": 1677312,
+          "expected_matrix_tensors": 126,
+          "expected_preconditioner_groups": {
+            "global_diag": 72
+          },
+          "intermediate_size": 5504,
+          "n_embd": 2048,
+          "n_head": 16,
+          "n_layer": 18,
+          "name": "llama_swiglu_1b_v1",
+          "parameters": 1013690368
+        },
+        "qkv": "separate_q_k_v_projections",
+        "rmsnorm": "learned_gain_eps_1e-6",
+        "rope": "base_10000_precomputed"
+      },
+      "init_sha256": "a9d4dd25e7d7992e4c6f922a0b688b8398f15ee04645a8b90ebf5a9954e44024",
+      "method": "global_diag",
+      "phase_id": "backbone_4400",
+      "seed": 2024
+    },
+    "2025": {
+      "architecture": {
+        "architecture": "llama_swiglu_1b_v1",
+        "backup_parameter_count": 103002112,
+        "backup_tensor_count": 38,
+        "base_trainer_sha256": "6cbc5df4a83f1a4e23bac534e512336ad1ffa192cfbb077ebe7a1dcd8128c91e",
+        "bias_parameter_count": 0,
+        "config": {
+          "intermediate_size": 5504,
+          "n_embd": 2048,
+          "n_head": 16,
+          "n_layer": 18,
+          "rms_norm_eps": 1e-06,
+          "rope_base": 10000.0,
+          "sequence_length": 1024,
+          "vocab_size": 50257
+        },
+        "dense_k_workspace_allowed": false,
+        "down_mode": "diag",
+        "embedding_head_tied": true,
+        "global_diag_route": true,
+        "matrix_parameter_count": 910688256,
+        "matrix_tensor_count": 126,
+        "mlp": "swiglu_gate_up_down",
+        "named_parameter_count": 164,
+        "parameter_count": 1013690368,
+        "preconditioner_group_count": 72,
+        "preconditioner_groups": [
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.0.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.0.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.0.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.0.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.1.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.1.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.1.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.1.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.2.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.2.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.2.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.2.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.3.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.3.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.3.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.3.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.4.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.4.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.4.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.4.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.5.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.5.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.5.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.5.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.6.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.6.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.6.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.6.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.7.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.7.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.7.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.7.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.8.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.8.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.8.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.8.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.9.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.9.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.9.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.9.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.10.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.10.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.10.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.10.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.11.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.11.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.11.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.11.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.12.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.12.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.12.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.12.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.13.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.13.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.13.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.13.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.14.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.14.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.14.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.14.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.15.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.15.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.15.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.15.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.16.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.16.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.16.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.16.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.17.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.17.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.17.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.17.down_input"
+          }
+        ],
+        "profile": {
+          "expected_backup_tensors": 38,
+          "expected_global_diag_k_state_bytes": 1677312,
+          "expected_matrix_tensors": 126,
+          "expected_preconditioner_groups": {
+            "global_diag": 72
+          },
+          "intermediate_size": 5504,
+          "n_embd": 2048,
+          "n_head": 16,
+          "n_layer": 18,
+          "name": "llama_swiglu_1b_v1",
+          "parameters": 1013690368
+        },
+        "qkv": "separate_q_k_v_projections",
+        "rmsnorm": "learned_gain_eps_1e-6",
+        "rope": "base_10000_precomputed"
+      },
+      "init_sha256": "2143f088e467eeeb03311f17856e5d2fd88274a2f725adfcccdd79861221ea8e",
+      "method": "global_diag",
+      "phase_id": "backbone_4400",
+      "seed": 2025
+    },
+    "2026": {
+      "architecture": {
+        "architecture": "llama_swiglu_1b_v1",
+        "backup_parameter_count": 103002112,
+        "backup_tensor_count": 38,
+        "base_trainer_sha256": "6cbc5df4a83f1a4e23bac534e512336ad1ffa192cfbb077ebe7a1dcd8128c91e",
+        "bias_parameter_count": 0,
+        "config": {
+          "intermediate_size": 5504,
+          "n_embd": 2048,
+          "n_head": 16,
+          "n_layer": 18,
+          "rms_norm_eps": 1e-06,
+          "rope_base": 10000.0,
+          "sequence_length": 1024,
+          "vocab_size": 50257
+        },
+        "dense_k_workspace_allowed": false,
+        "down_mode": "diag",
+        "embedding_head_tied": true,
+        "global_diag_route": true,
+        "matrix_parameter_count": 910688256,
+        "matrix_tensor_count": 126,
+        "mlp": "swiglu_gate_up_down",
+        "named_parameter_count": 164,
+        "parameter_count": 1013690368,
+        "preconditioner_group_count": 72,
+        "preconditioner_groups": [
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.0.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.0.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.0.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.0.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.1.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.1.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.1.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.1.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.2.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.2.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.2.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.2.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.3.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.3.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.3.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.3.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.4.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.4.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.4.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.4.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.5.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.5.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.5.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.5.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.6.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.6.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.6.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.6.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.7.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.7.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.7.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.7.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.8.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.8.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.8.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.8.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.9.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.9.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.9.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.9.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.10.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.10.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.10.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.10.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.11.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.11.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.11.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.11.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.12.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.12.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.12.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.12.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.13.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.13.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.13.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.13.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.14.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.14.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.14.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.14.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.15.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.15.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.15.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.15.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.16.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.16.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.16.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.16.down_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ],
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.17.attn_input"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                2048
+              ]
+            ],
+            "name": "layers.17.attn_output"
+          },
+          {
+            "input_width": 2048,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                5504,
+                2048
+              ],
+              [
+                5504,
+                2048
+              ]
+            ],
+            "name": "layers.17.mlp_input"
+          },
+          {
+            "input_width": 5504,
+            "kind": "diag",
+            "member_shapes": [
+              [
+                2048,
+                5504
+              ]
+            ],
+            "name": "layers.17.down_input"
+          }
+        ],
+        "profile": {
+          "expected_backup_tensors": 38,
+          "expected_global_diag_k_state_bytes": 1677312,
+          "expected_matrix_tensors": 126,
+          "expected_preconditioner_groups": {
+            "global_diag": 72
+          },
+          "intermediate_size": 5504,
+          "n_embd": 2048,
+          "n_head": 16,
+          "n_layer": 18,
+          "name": "llama_swiglu_1b_v1",
+          "parameters": 1013690368
+        },
+        "qkv": "separate_q_k_v_projections",
+        "rmsnorm": "learned_gain_eps_1e-6",
+        "rope": "base_10000_precomputed"
+      },
+      "init_sha256": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec",
+      "method": "global_diag",
+      "phase_id": "backbone_4400",
+      "seed": 2026
+    }
+  }
+}

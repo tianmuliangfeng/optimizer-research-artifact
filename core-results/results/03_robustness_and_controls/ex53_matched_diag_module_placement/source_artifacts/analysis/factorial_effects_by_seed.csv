@@ -1,0 +1,4 @@
+seed,c_fc_main_effect,c_proj_main_effect,factorial_interaction,effect_definition
+2024,-0.00045000000000006146,-0.005049999999999999,-0.0002999999999997449,retained_diag_minus_removed_diag; negative lowers loss
+2025,-0.0010500000000002174,-0.004550000000000054,-0.000300000000000189,retained_diag_minus_removed_diag; negative lowers loss
+2026,-0.0012500000000001954,-0.004550000000000054,-9.999999999976694e-05,retained_diag_minus_removed_diag; negative lowers loss

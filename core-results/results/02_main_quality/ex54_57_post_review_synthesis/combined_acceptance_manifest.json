@@ -1,0 +1,39 @@
+{
+  "accepted_experiments": [
+    54,
+    56,
+    57
+  ],
+  "audit_script": "project-results/scripts/analysis/audit_ex54_ex56_ex57_received.py",
+  "checkpoint_material": {
+    "checkpoint_bytes_in_received_package": false,
+    "package_variant": "no-pt",
+    "remote_full_checkpoint_hash_receipts_present": true
+  },
+  "cross_experiment_boundaries": {
+    "ex54_ex57_are_independent": true,
+    "overlapping_budgets_may_be_reported_as_replication": true,
+    "overlapping_budgets_must_not_be_pooled_as_n6": true
+  },
+  "independent_statistical_recomputation": {
+    "difference_convention": "first method minus comparator; lower validation loss is better",
+    "interval": "two-sided 95% Student-t interval over three paired seeds",
+    "recomputed_fields": 216,
+    "status": "passed"
+  },
+  "overall_status": "passed",
+  "paper_ready_conclusions": [
+    "Moonlight is strong at LLaMA-124M but does not preserve that ranking at LLaMA-1B as training extends.",
+    "At LLaMA-1B, global diagonal beats local diagonal, identity, and full-K routes in all 27 paired seed-budget comparisons.",
+    "Muon beats global diagonal in all nine paired LLaMA-1B comparisons, with mean gaps inside the descriptive +/-0.002 practical band at each budget; this is not a formal equivalence claim.",
+    "The accepted evidence supports environment- and training-stage-conditioned state allocation rather than a universal route ranking."
+  ],
+  "review_date": "2026-08-31",
+  "schema_version": 1,
+  "timing_usable": false,
+  "wandb": {
+    "impact_on_scientific_acceptance": "none",
+    "provided": false,
+    "required_by_frozen_contracts": false
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "aggregate_contrasts": 12,
+  "classification": "moonlight_positioned_against_accepted_llama_controls",
+  "endpoint_rows": 9,
+  "files": {
+    "endpoint_results.csv": "b295e0db23ebc7d7636066388944dd85e52f477d14076a9e52152d5ee73e50cc",
+    "frozen_controls.csv": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+    "paired_contrasts.csv": "b27a4f2ebab68a5af0b253a66b7922790b0f4fd58b77a3bd7484c5882296adfd",
+    "paired_seed_deltas.csv": "ccfa992bfb23b24b85f7781de2a68eb86e203607f6342b7592d6918c509e2ea9"
+  },
+  "paired_seed_rows": 36,
+  "passed": true,
+  "practical_margin": 0.002,
+  "primary_muon_contrasts": [
+    {
+      "budget_id": "tokens_3p2506b",
+      "ci95_high": -0.013350008976916593,
+      "ci95_low": -0.018591245689750194,
+      "comparator": "muon",
+      "mean_delta_moonlight_minus_comparator": -0.015970627333333393,
+      "moonlight_better_seed_count": 3,
+      "moonlight_worse_seed_count": 0,
+      "n": 3,
+      "sample_sd": 0.001054940852885225,
+      "scale": "124m"
+    },
+    {
+      "budget_id": "tokens_3p2506b",
+      "ci95_high": 0.005898002652135215,
+      "ci95_low": -0.0004464819854685235,
+      "comparator": "muon",
+      "mean_delta_moonlight_minus_comparator": 0.0027257603333333455,
+      "moonlight_better_seed_count": 0,
+      "moonlight_worse_seed_count": 3,
+      "n": 3,
+      "sample_sd": 0.0012769993803795193,
+      "scale": "1b"
+    },
+    {
+      "budget_id": "tokens_6p9694b",
+      "ci95_high": 0.008670030607836067,
+      "ci95_low": 0.004542172725497142,
+      "comparator": "muon",
+      "mean_delta_moonlight_minus_comparator": 0.006606101666666604,
+      "moonlight_better_seed_count": 0,
+      "moonlight_worse_seed_count": 3,
+      "n": 3,
+      "sample_sd": 0.0008308432062075948,
+      "scale": "1b"
+    }
+  ],
+  "schema_version": "ex54_moonlight_analysis_manifest_v1",
+  "scope": "non10b",
+  "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+  "timing_eligible": false
+}

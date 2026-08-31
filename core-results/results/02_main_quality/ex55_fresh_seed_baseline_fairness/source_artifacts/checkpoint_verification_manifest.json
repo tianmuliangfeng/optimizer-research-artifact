@@ -1,0 +1,82 @@
+{
+  "checkpoints": [
+    {
+      "bytes": 1539115569,
+      "method": "block4",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__bc66b6fcb224",
+      "sha256": "0aa83f9875c5fb52cd2ebdaf9f33c83efc28d0b6ddcd0724ff156a338a43a841"
+    },
+    {
+      "bytes": 1312917809,
+      "method": "diag",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__f9ffa2603fcd",
+      "sha256": "4de339752ede3104a2271ae91dd3dd11623f651980102b022b6bd2edf30752b7"
+    },
+    {
+      "bytes": 1312617750,
+      "method": "none",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__49fc77978c0b",
+      "sha256": "7280ba5ac0c3b8c12fd6cfe88ab997e8be44e1effe1b56f270bedc1e35c766a8"
+    },
+    {
+      "bytes": 1142717829,
+      "method": "muon",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__f72d6cf645a6",
+      "sha256": "ee52b78c9a72f503d1561dcb73a401a34ddde6d644100b44a6a6af4ecf9ebc84"
+    },
+    {
+      "bytes": 1482478757,
+      "method": "adamw",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__906aed59d865",
+      "sha256": "a316c10bd3180ebaac32432eb829e56a994efe7886151ae35508917ec8aefd76"
+    },
+    {
+      "bytes": 1143058709,
+      "method": "normuon",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__508466a8c1cd",
+      "sha256": "9db4a2f2da742a5acde5412795deb9c5a547e249b17517ce1deeb9e1872d42de"
+    },
+    {
+      "bytes": 1142712645,
+      "method": "moonlight",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__94cc936254b7",
+      "sha256": "97c8b3c1ff99c12858d84a89d3ff3b8abc3904f8c1bb618991c60adb964765ac"
+    },
+    {
+      "bytes": 3521692565,
+      "method": "mousse",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__8b338d32c8e9",
+      "sha256": "276830f356b115f620c594013e2dbb07f08b7c59c4e2531bac5e95afdff89115"
+    },
+    {
+      "bytes": 1143429749,
+      "method": "malt",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__bed9b90ee1b2",
+      "sha256": "4546529eb6c573c2326308141f0fa804888f1dcf660499947b9db3c8d499b2dc"
+    },
+    {
+      "bytes": 1143450605,
+      "method": "malter_eq17",
+      "passed": true,
+      "path": "PRIVATE_PATH_REDACTED__1530bb7d08d1",
+      "sha256": "9d48b806100fdfecc8bae0dfa59031711b77f72d98d3bed9082fcf56c65b335d"
+    }
+  ],
+  "data_inventory": "PRIVATE_PATH_REDACTED",
+  "data_inventory_sha256": "a1192ce059f053931efc7aaeb8c2dcb9a775abfc67da00234452ad98709b2e56",
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "formal_units": 10,
+  "full_data_content_reverified": true,
+  "passed": true,
+  "schema_version": 1,
+  "verified_at": "2026-08-19T02:17:12.968115+00:00"
+}

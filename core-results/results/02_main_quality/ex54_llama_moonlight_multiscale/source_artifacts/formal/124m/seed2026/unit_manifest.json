@@ -1,0 +1,18 @@
+{
+  "checkpoint_bytes": 1144295999,
+  "checkpoint_sha256": "00c25762ea92572ffe9c2ce06ec4dd6b2b739c61263f2277ec3a3d0b75f63fd3",
+  "data_inventory_sha256": "ec55b5f4be02ae5999bdd974508d5180625690f41c9ae1b32902c062c59d3695",
+  "final_val_loss": 3.250757933,
+  "metrics_sha256": "c3df7760379caa7345ca0cdea7448fa4d05f31a92278a64515c75f8ddbd5e018",
+  "optimizer_state_bytes": 648671336,
+  "passed": true,
+  "peak_allocated_bytes": 37142450688,
+  "physical_gpu": 1,
+  "scale": "124m",
+  "schema_version": "ex54_llama_moonlight_unit_v1",
+  "seed": 2026,
+  "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+  "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+  "summary_sha256": "56f9191092fa026d03a884005e41b5119f9d2efaec4d0565b72d29086c1ec5de",
+  "timing_eligible": false
+}

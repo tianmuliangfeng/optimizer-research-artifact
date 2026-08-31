@@ -1,0 +1,30 @@
+{
+  "contract_sha256": "faae34be426e99b6e0af4593cd6f26c5ccbfa2e8afbfaac4a50a611fc141819a",
+  "data_inventory_sha256": "76848d39697aa6e0a7083e4445185fd7215b4f7ddad411d60a7cd6943c384b21",
+  "gpus": [
+    3
+  ],
+  "phase_order": [
+    "backbone_4400",
+    "cooldown_6200",
+    "backbone_11493",
+    "cooldown_13293",
+    "backbone_17273",
+    "cooldown_19073"
+  ],
+  "schema_version": "ex56_suite_plan_v1",
+  "units": [
+    {
+      "method": "global_diag",
+      "seed": 2024
+    },
+    {
+      "method": "global_diag",
+      "seed": 2025
+    },
+    {
+      "method": "global_diag",
+      "seed": 2026
+    }
+  ]
+}

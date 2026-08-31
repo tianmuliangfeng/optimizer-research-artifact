@@ -18,14 +18,13 @@ Third-party attributions and preserved license texts are listed in
 
 ## Anonymous-review release
 
-This snapshot is prepared for double-blind review. The accompanying compact
-evidence is placed in `core-results/`; the internal `full-archive` is
-intentionally excluded from public distribution.
+This snapshot is prepared for double-blind review. The accompanying compact,
+self-validating evidence is in `core-results/`; the internal `full-archive`,
+raw W&B exports, checkpoints, and private Git history are intentionally absent.
 
-The repository must be published from a fresh Git history under an anonymous
-URL. During review, do not replace anonymous authorship metadata or add a link
-to an identifiable GitHub account. The paper-facing URL is the audited
-Anonymous GitHub mirror documented in the submission, never the private origin.
+During review, cite and share only the audited anonymous mirror:
+`https://anonymous.4open.science/r/optimizer-research-artifact-B032/`.
+Do not cite the identifiable origin repository in the manuscript.
 
 ## Repository layout
 
@@ -38,7 +37,7 @@ Anonymous GitHub mirror documented in the submission, never the private origin.
 | `experiments/<experiment>/` | Reproduction metadata and experiment-specific instructions. |
 | `reproducibility/` | Guarded rerun, resume, and artifact-verification tools. |
 | `provenance/` | Sanitized migration records and hashes of private-era sources. |
-| `core-results/` | Compact, anonymized, self-validating evidence shipped in the review repository. |
+| `core-results/` | Compact, anonymized, self-validating reviewer evidence. |
 | `runs/` | Local result root; generated artifacts are ignored by version control. |
 
 ## Install the optimizer package
@@ -58,7 +57,7 @@ Formal H100 experiments used a stricter frozen environment documented in
 
 ## Reproduction interface
 
-List all 54 registered experiment identifiers:
+List all 59 registered experiment identifiers:
 
 ```bash
 python reproducibility/reproduce.py list
@@ -114,7 +113,7 @@ included in the signed plan receipt.
 
 ## Reproducibility scope
 
-- 46 experiment directories contain runnable training or diagnostic code.
+- 51 experiment directories contain runnable training or diagnostic code.
 - 3 directories are analysis-only.
 - 5 historical identifiers were planning placeholders and are explicitly
   marked `planned_not_implemented`.
@@ -131,6 +130,10 @@ included in the signed plan receipt.
   ModdedGPT 124M/275M/455M and LLaMA 124M/1B. Each has a portable launcher,
   native verification, accepted-result anchors, and a W&B reconciliation;
   concurrent timing remains excluded.
+- Experiments 53–57 add the representation-matched module-placement control,
+  a fresh-seed baseline-fairness panel, Moonlight scale/budget controls, and
+  the long-budget LLaMA-1B global-diagonal test. All five expose portable
+  launchers and native resume/verification modes; compact claims exclude timing.
 
 See the generated [experiment index](docs/EXPERIMENT_INDEX.md) for the status
 of every identifier.
@@ -183,3 +186,11 @@ The final compact package also includes Experiments 50–52 and their joint
 the screen and formal continuation, so accepted local formal CSVs and manifests
 remain the primary scientific record. Raw W&B exports are retained only in the
 restricted audit archive.
+
+The 2026-08-31 supplement adds Experiments 53–57. Raw W&B exports for
+Experiments 53 and 55 remain outside the compact package, while their compact
+reconciliation manifests are included. Experiments 54, 56, and 57 were
+accepted from checkpoint-free transport bundles with native verification
+receipts; the package preserves their accepted analyses, unit manifests,
+source-snapshot manifests, and independent review certificates. Timing is not
+used for any of these claims.

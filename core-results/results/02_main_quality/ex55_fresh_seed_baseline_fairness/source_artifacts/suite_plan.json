@@ -1,0 +1,44 @@
+{
+  "contract_sha256": "b91df4bb3612cd1fdb89173f8fc9bf7ffc2de7b3f8073c8162d4adf36d2ce659",
+  "controller_python": "PRIVATE_PATH_REDACTED",
+  "engineering_seed": 5501,
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "formal_seed": 2027,
+  "gpus": [
+    "1"
+  ],
+  "methods": [
+    "block4",
+    "diag",
+    "none",
+    "muon",
+    "adamw",
+    "normuon",
+    "moonlight",
+    "mousse",
+    "malt",
+    "malter_eq17"
+  ],
+  "official_repo": "PRIVATE_PATH_REDACTED",
+  "repo": "PRIVATE_PATH_REDACTED",
+  "retuning_performed": false,
+  "run_dir": "PRIVATE_PATH_REDACTED__14a1ce4bb5a3",
+  "schema_version": 1,
+  "script_version": "2026-08-19.1",
+  "selected_cells": {
+    "adamw": "adamw_low",
+    "block4": "block4",
+    "diag": "diag",
+    "malt": "malt_lr0125",
+    "malter_eq17": "malter_eq17_lr015",
+    "moonlight": "moonlight_r1scale",
+    "mousse": "mousse_lr100",
+    "muon": "muon",
+    "none": "none",
+    "normuon": "normuon_r1scale"
+  },
+  "stage_requested": "verify",
+  "timing_usable": false,
+  "training_python": "PRIVATE_PATH_REDACTED",
+  "wandb_mode": "disabled"
+}

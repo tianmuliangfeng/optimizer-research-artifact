@@ -1,0 +1,67 @@
+{
+  "completed_phases": [
+    "backbone_4400",
+    "cooldown_6200",
+    "backbone_11493",
+    "cooldown_13293",
+    "backbone_17273",
+    "cooldown_19073"
+  ],
+  "method": "global_diag",
+  "passed": true,
+  "phases": {
+    "backbone_11493": {
+      "manifest_sha256": "50276a0b63374fb10c536d8897290bd0a13047606aca6e49d0203f81aaa2e42a",
+      "metrics_sha256": "05adf4d4524586416fce511d4a7b0468eab4a5e7a07ebad655061811a12cc683",
+      "summary_sha256": "127c4e9b5f41238d278a31d12614d715fadb674e3d9f87c20a789fdedc41f59b"
+    },
+    "backbone_17273": {
+      "manifest_sha256": "9876fdee50339dcf393ce238cb7a2b632fc4f57cf8a873036a10ab776384278c",
+      "metrics_sha256": "9f51fca1050deefcb3d3954c0cf2c9829818f799029bbb71fd3520ef8a985349",
+      "summary_sha256": "6f4b5a41e55b125401344500a6819d8fef685d37a0a3cd113f23fc61295b6fb7"
+    },
+    "backbone_4400": {
+      "manifest_sha256": "36ba9dbdf8e84cca1ca41445af48f4946f8e6173114d6abb0accdf6f80f25294",
+      "metrics_sha256": "cd565d25829347de76f52c2372c83588ea7d400ddf0e9a6fcd197771cce64a13",
+      "summary_sha256": "5481dbaba46d56b2ba0a72d31ea485b045bcdde575bf4fec0584831bfc709ef2"
+    },
+    "cooldown_13293": {
+      "manifest_sha256": "02f258398cfeb909cbb61f6f26b5a4b93dcf952c77fdcdea948851cd9c62cd80",
+      "metrics_sha256": "486674f954ab8b894526bc61c574bea9af218b4c1968e16b718c5ab4d63fdd22",
+      "summary_sha256": "bcfc5bc4271bedf451753b1d03e879fab3683fbdceca0b540b397f9311b9cabf"
+    },
+    "cooldown_19073": {
+      "manifest_sha256": "aa3e06d7ac67d02806f0fed3c71b856e075afec49e06277f5ae5e29293ed1ff8",
+      "metrics_sha256": "9463c896c78ae193b88d9ade460ea5ef868bd327046629d3cc364cca36efb836",
+      "summary_sha256": "ed34fc8ce5cdae3d5f91399edd7875e3f38d30d226d7eb57c78db2a08da6d71e"
+    },
+    "cooldown_6200": {
+      "manifest_sha256": "9c977a8839034ef2989443d1ac0fe710b3c1b11692ae39502c4b4269da77e37d",
+      "metrics_sha256": "39552a59be4fd9b6fa646acf0e0b85299b1564e00d27bc249abfd91a82892409",
+      "summary_sha256": "474809c7683353d4d79f0b4aff1a7f6441a50d24e81eb9d3885e12d2ca8909f8"
+    }
+  },
+  "retained_endpoints": {
+    "tokens_3p2506b": {
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__c5b0519e5c92",
+      "retained": true,
+      "sha256": "cfd18ca6dec838c6705bc3555cca3ba0163c3681f7a9cc8f52fd47d4264d4f59"
+    },
+    "tokens_6p9694b": {
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__67f0cc3beb12",
+      "retained": true,
+      "sha256": "24264f48c7f3a1560ea7221a3e24ae0154ddf9c7f1bbf254cb333c4a14c0e69d"
+    },
+    "tokens_approximately_10b": {
+      "bytes": 8524966211,
+      "path": "PRIVATE_PATH_REDACTED__183b3aa2cc60",
+      "retained": true,
+      "sha256": "dd8a087227656431a13b0d76958ee2f61a7953f32917f7a225bf741f64f7456b"
+    }
+  },
+  "schema_version": "ex56_llama1b_global_diag_unit_manifest_v1",
+  "sealed_at": "2026-08-19T10:02:06.170531+00:00",
+  "seed": 2024
+}

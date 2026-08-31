@@ -1,0 +1,231 @@
+{
+  "budget_ids": [
+    "tokens_3p2506b",
+    "tokens_6p9694b",
+    "tokens_approximately_10b"
+  ],
+  "compile_cache_compatibility_receipt": null,
+  "compile_cache_compatibility_receipt_sha256": null,
+  "compile_cache_policy": "per_physical_gpu",
+  "compile_cache_policy_source": "frozen_contract",
+  "created_at": "2026-08-22T09:50:52.903566+00:00",
+  "ddp": false,
+  "fairness_protocol": "ex57_moonlight_exact_ex48_geometry_v1",
+  "formal_gpus_used": [
+    0,
+    1,
+    2
+  ],
+  "independent_of_ex54": true,
+  "one_seed_per_gpu": {
+    "2024": 0,
+    "2025": 1,
+    "2026": 2
+  },
+  "parallel_single_gpu_jobs": true,
+  "passed": true,
+  "schema_version": "ex57_moonlight_formal_manifest_v1",
+  "selected_contract_sha256": "2352597132ebaeaf6cd6eb4de08bb4a90a2e70b0cbc876a6dd0687b870d4fd48",
+  "selection_sha256": "54ec954990e6d386f21ced1ca6800e982eb892b61d709de7fa419847111539f6",
+  "timing_eligible": false,
+  "units": [
+    {
+      "completed_phase_ids": [
+        "backbone_4400",
+        "cooldown_6200",
+        "backbone_11493",
+        "cooldown_13293",
+        "backbone_17273",
+        "cooldown_19073"
+      ],
+      "data_inventory_sha256": "56dbf1841b18a4462698946fe865877f329e9fb4b8f343fb05cd78bfb079806a",
+      "endpoints": {
+        "tokens_3p2506b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__2dd1847fd40f",
+          "retained": true,
+          "sha256": "8aa66ea502a3c33b332eb05a0552ac64bd0d11c01a83c195a329873b46388918"
+        },
+        "tokens_6p9694b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__5f247a051821",
+          "retained": true,
+          "sha256": "b533fd5d61dca0d211149e7b1eba8c439f41b4d087350be181cedd3bcb94ea17"
+        },
+        "tokens_approximately_10b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__748e3e54f1fc",
+          "retained": true,
+          "sha256": "7f2e37e11abec48b845cf53b34dcf84a747e29ab5d3e4664b77849b54e777a95"
+        }
+      },
+      "passed": true,
+      "phases": {
+        "backbone_11493": {
+          "manifest_sha256": "eeffa666a6a46648c711c712aec1bfe5d4e1f8a34a9f8c3e93848b1116669d68",
+          "summary_sha256": "ed34d7d94820fd3cb71d7bdbef8d213d467ac38f45150aab228692ab77c3a207"
+        },
+        "backbone_17273": {
+          "manifest_sha256": "44843a2d8c50dbd6ce04c24a83752ebdd66cab1ed08b8c3e985ae813bcd3b1aa",
+          "summary_sha256": "a928d6a12a611f8d0a3f05c4fcaecd318887b4e701af374d74f76559bc46e569"
+        },
+        "backbone_4400": {
+          "manifest_sha256": "9283e470b2e2b72be6cd0d13a42eb27baf5ac65ac6c506143842585a7b308210",
+          "summary_sha256": "8a0e6c9c1e4dde91bd5b9842c6635de18af7d5e0c89b47f37ed66034a6ecd599"
+        },
+        "cooldown_13293": {
+          "manifest_sha256": "01d7b6447fa9d95d598d591b0968583006164cb6e0660d96f99972dd2e3ebad8",
+          "summary_sha256": "02584d4ebcbb731db5f44b980747fd50f069c61e06fac6c2ab956ee3ecedb4fd"
+        },
+        "cooldown_19073": {
+          "manifest_sha256": "a2d3a7654295f24f82512016d3882c5de058cf1e064c4da8f37a5c260461db80",
+          "summary_sha256": "3a550f222896485b4d979f5a18e75691b87e60194f3075db8e6e52342d8d0a8b"
+        },
+        "cooldown_6200": {
+          "manifest_sha256": "0557237b6058662e3ec7b71b4a78100c87e2010189d0ef4a931d17c803405d3d",
+          "summary_sha256": "770cf158485c2a72eb25ab01710ff9131a663e7010b277d59177fa66ad2e0d64"
+        }
+      },
+      "physical_gpu": 0,
+      "scale": "1b",
+      "schema_version": "ex57_llama1b_moonlight_unit_v1",
+      "seed": 2024,
+      "selected_contract_sha256": "2352597132ebaeaf6cd6eb4de08bb4a90a2e70b0cbc876a6dd0687b870d4fd48",
+      "selection_sha256": "54ec954990e6d386f21ced1ca6800e982eb892b61d709de7fa419847111539f6",
+      "stage": "formal",
+      "timing_eligible": false
+    },
+    {
+      "completed_phase_ids": [
+        "backbone_4400",
+        "cooldown_6200",
+        "backbone_11493",
+        "cooldown_13293",
+        "backbone_17273",
+        "cooldown_19073"
+      ],
+      "data_inventory_sha256": "56dbf1841b18a4462698946fe865877f329e9fb4b8f343fb05cd78bfb079806a",
+      "endpoints": {
+        "tokens_3p2506b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__3a365b4e2df2",
+          "retained": true,
+          "sha256": "a2fccdd9c1b96452aaac246010278fbb8925227fc542ac3ae32f573101b98a65"
+        },
+        "tokens_6p9694b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__2d70d6459fe2",
+          "retained": true,
+          "sha256": "8c69d589bbd51b367d224bfbd82d0a831198a3a2c144214bf423cfa9fc376c5f"
+        },
+        "tokens_approximately_10b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__9cbdfe54b9c4",
+          "retained": true,
+          "sha256": "40f41405d29d5bf3694e271f0d21474d650cbdcdd30a334ef271463d906c5cbd"
+        }
+      },
+      "passed": true,
+      "phases": {
+        "backbone_11493": {
+          "manifest_sha256": "812bb9cd1113af637036efd4acffd7883b4921ea10d7412c2595218b1fea328e",
+          "summary_sha256": "2c434139defeb108a706f823f61911a3073de99de1a1b782155a86a494426060"
+        },
+        "backbone_17273": {
+          "manifest_sha256": "044e5893a2447a3b48e987b41c80e67fedd07c17e88f61065a7d93832db3afe0",
+          "summary_sha256": "deba08be438479fc32aeef9be4cac39d07b895b07c66da0c265dc59de8fe7ccd"
+        },
+        "backbone_4400": {
+          "manifest_sha256": "2de811c98c0cb5e8791e11c8330cc36a81f6b5c84ad7520dd9f98003a5bde2bc",
+          "summary_sha256": "64ab25f6857b5829129a19e67271b4b320f6d9e21e8202eca7d66bac6d7f89c1"
+        },
+        "cooldown_13293": {
+          "manifest_sha256": "c4f887ef427c2da73f3b69d8d56ed73efa5c79a71e33ae7106a8ab0776324e44",
+          "summary_sha256": "c69f4f2ce0f4b4fb0cda165c72bb12bf68b14f389e86d3a89d91c698079e927e"
+        },
+        "cooldown_19073": {
+          "manifest_sha256": "02585dc6b93fbd348384da964ddc29f06e12d66862a0ad4d558e933af6a767b2",
+          "summary_sha256": "a7b8832ba6bb411c54d216be56095dd4cc3f3fec0ac48483113abcf3adfa58bd"
+        },
+        "cooldown_6200": {
+          "manifest_sha256": "089c2c99ef3a27c956c4d6773b8ea7d56d86c07abed31c540ba4eead3752b7ee",
+          "summary_sha256": "0a3dd55a1feaf82679a22390b65f57a0057de3d103f6d37785bee0abe92a511f"
+        }
+      },
+      "physical_gpu": 1,
+      "scale": "1b",
+      "schema_version": "ex57_llama1b_moonlight_unit_v1",
+      "seed": 2025,
+      "selected_contract_sha256": "2352597132ebaeaf6cd6eb4de08bb4a90a2e70b0cbc876a6dd0687b870d4fd48",
+      "selection_sha256": "54ec954990e6d386f21ced1ca6800e982eb892b61d709de7fa419847111539f6",
+      "stage": "formal",
+      "timing_eligible": false
+    },
+    {
+      "completed_phase_ids": [
+        "backbone_4400",
+        "cooldown_6200",
+        "backbone_11493",
+        "cooldown_13293",
+        "backbone_17273",
+        "cooldown_19073"
+      ],
+      "data_inventory_sha256": "56dbf1841b18a4462698946fe865877f329e9fb4b8f343fb05cd78bfb079806a",
+      "endpoints": {
+        "tokens_3p2506b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__2676accc9452",
+          "retained": true,
+          "sha256": "eb4be46b089fe3222db26ada63d2ce58db5d857956f84718efa89aebe5b1275e"
+        },
+        "tokens_6p9694b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__d289e4872463",
+          "retained": true,
+          "sha256": "e8a2c7f0a06b7947670766a2485e94e2afd20bbad5a3f6a42ca349494fea4d73"
+        },
+        "tokens_approximately_10b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__f968c2cea5e5",
+          "retained": true,
+          "sha256": "445bbbc0773062b89c7976fd45ed3ad464af03ea9e483d5695ead082861d3b78"
+        }
+      },
+      "passed": true,
+      "phases": {
+        "backbone_11493": {
+          "manifest_sha256": "969df60a76005b6f53af1d22571607cd3bb7df3f58308016db21ef5acb641e67",
+          "summary_sha256": "f32b473542b05ada62f5dfd90b612dccc2e8d6af71996e7b84faf293e556d36b"
+        },
+        "backbone_17273": {
+          "manifest_sha256": "2d0c9c49371046045b8c109d2de09cd9453c99db5ac400e8fd399712f85d8b1a",
+          "summary_sha256": "44551f80c4f129ea5a84792048fa5a825b24ee8d5e21aabe5d86a3a5617bbf2c"
+        },
+        "backbone_4400": {
+          "manifest_sha256": "c95e99d7b88926ad1c43acb6d5a6eee2aa8bac03d53fcfab1c869f1ba1c8c5fb",
+          "summary_sha256": "e51d5ac902bde7dc44c94c3169b77eacd57b23094a743af60b74a15dc4e81b3a"
+        },
+        "cooldown_13293": {
+          "manifest_sha256": "08a60b2e783e289d1528aa49d2c47cf2aaf4193c9e63e8f47aa085b29881f8bb",
+          "summary_sha256": "0a3cb2869b9f3b1e4fa4d604acae5d685881ef2b959bbb11f5c8f33581877edd"
+        },
+        "cooldown_19073": {
+          "manifest_sha256": "3214307fa2d7554c9af17d3f62f1b2e1064f99150ade229903df377fa64a8503",
+          "summary_sha256": "306d750f5b0b9137dabb4de898ee485b8f8a6d69de02bb07bfe2403094f6365c"
+        },
+        "cooldown_6200": {
+          "manifest_sha256": "d2a36c11d4de48e5fd5cbda927c47af88c0689fe0f32b278a1b2b15a3425f2a2",
+          "summary_sha256": "fc709663d850ce4d8a4bc707c79bf58fc368fb85e66d0c33b04f809b834fcebf"
+        }
+      },
+      "physical_gpu": 2,
+      "scale": "1b",
+      "schema_version": "ex57_llama1b_moonlight_unit_v1",
+      "seed": 2026,
+      "selected_contract_sha256": "2352597132ebaeaf6cd6eb4de08bb4a90a2e70b0cbc876a6dd0687b870d4fd48",
+      "selection_sha256": "54ec954990e6d386f21ced1ca6800e982eb892b61d709de7fa419847111539f6",
+      "stage": "formal",
+      "timing_eligible": false
+    }
+  ]
+}

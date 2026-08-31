@@ -1,6 +1,6 @@
 {
   "content_policy": "Original command contents remain in the private research archive; the public release retains hashes and sanitized launchers only.",
-  "record_count": 40,
+  "record_count": 46,
   "records": [
     {
       "filename": "20260727_mech00_llama_followup_full_hash.sh",
@@ -241,6 +241,42 @@
       "original_sha256": "6724cbfb200679a7e8eba3024cb90b582bc84cd9c5f67effca88f268b4fbcc3f",
       "public_path": "commands/52_llama_global_diag_scale/20260814_ex52_llama_global_diag_scale.sh",
       "public_sha256": "68c7bf1c114a56c03176cfc1917f4547c099f564ad3d32991bfcab373fb0640a"
+    },
+    {
+      "filename": "20260817_ex53_r1_matched_diag_module_placement.sh",
+      "original_sha256": "e732bb0090369675a617bd8e5839b6300891e26165a727d0d3c0f10ee2daf092",
+      "public_path": "commands/53_r1_matched_diag_module_placement/20260817_ex53_r1_matched_diag_module_placement.sh",
+      "public_sha256": "117ec08444660f9cf70915ecb7cd2e5a0ca2ed96597c31239f9359f14a8f4305"
+    },
+    {
+      "filename": "20260817_ex55_r1_fresh_seed_baseline_fairness.sh",
+      "original_sha256": "8732c78152652c8cc745e45dc50ba7f998574011f2429670db66ea548a67175f",
+      "public_path": "commands/55_r1_fresh_seed_baseline_fairness/20260817_ex55_r1_fresh_seed_baseline_fairness.sh",
+      "public_sha256": "0c17ba0b20202bc4c027f22493d7f73ccf72a8dbbc12bb1acd9fbb17377c5b72"
+    },
+    {
+      "filename": "20260817_ex56_llama1b_10b_global_diag.sh",
+      "original_sha256": "a6584234e4e86588abc6576fc18af890ccd06f20d01fd35f6625756325747caf",
+      "public_path": "commands/56_llama1b_10b_global_diag/20260817_ex56_llama1b_10b_global_diag.sh",
+      "public_sha256": "470e9d6bb03331d8d46617babee608e54d172b0091c5d7ae23f3b3891fe0beac"
+    },
+    {
+      "filename": "20260819_ex54_llama_moonlight_multiscale_multibudget.sh",
+      "original_sha256": "8fb793d301b4e984231f1f231b46468ecd71023c32f402c42e973b8fbb172421",
+      "public_path": "commands/54_llama_moonlight_multiscale_multibudget/20260819_ex54_llama_moonlight_multiscale_multibudget.sh",
+      "public_sha256": "639a23d13df9d7611ae00a69424f92609327940b560ff52213b6222d6e53cd25"
+    },
+    {
+      "filename": "20260819_ex55_repair_tail5_analysis.sh",
+      "original_sha256": "ac4e10aa61d2d6fb82a6361cdb59efb034469596c12bcc7c58b38d880b6c5298",
+      "public_path": "commands/55_r1_fresh_seed_baseline_fairness/20260819_ex55_repair_tail5_analysis.sh",
+      "public_sha256": "25b66659016a52f41b2526b59d46a7de76c3a7aa3c2e4fc6e223534bcee06dba"
+    },
+    {
+      "filename": "20260819_ex57_llama1b_10b_moonlight.sh",
+      "original_sha256": "b0edeee71f29f8436e6e02040ed5962eeff6a736adbce35d07aeaa4286347f6e",
+      "public_path": "commands/57_llama1b_10b_moonlight/20260819_ex57_llama1b_10b_moonlight.sh",
+      "public_sha256": "5e965496c9e456e1e378ee5b19fe52591c312839f3b9ad82d42aa07f538cec4a"
     }
   ],
   "schema_version": 1

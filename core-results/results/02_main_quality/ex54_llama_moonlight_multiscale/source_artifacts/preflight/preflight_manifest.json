@@ -1,0 +1,408 @@
+{
+  "accepted_ex48_data_projection_inventory_sha256": "ca91ddb7f70ce6b20220369ba3ad40eee396b15d0f4b0e4f9684673922881c9e",
+  "accepted_ex48_data_projection_sha256": "95cb8a7186f4d27dd5fd490b04a564a11f4dc2e1801ab62f51be31b23b513a7a",
+  "checks": {
+    "accepted_ex48_data_projection_contract": true,
+    "accepted_ex48_data_projection_file": true,
+    "data124": true,
+    "data1b": true,
+    "disk": true,
+    "ex48_microbatch_geometry": true,
+    "init": true,
+    "runtime": true,
+    "small_matrix": true,
+    "snapshot": true
+  },
+  "contract_sha256": "8903cbd214ad983094acacf83d824e95384cb38302440daaaf5cd2fa659ec5b9",
+  "created_at": "2026-08-20T04:36:28.061547+00:00",
+  "data_124m_audit_sha256": "c32eb014c9d0fd9a95351526ee69030112e680179a29753cdea6af663ed7e745",
+  "data_1b_audit_sha256": "8d8f34fcc807fd68f566db8da306800fed604de2a690ddaa503e5025404631d1",
+  "fairness_protocol": "ex54_moonlight_ex48_geometry_v1",
+  "free_bytes": 318023201030144,
+  "gpus": [
+    0,
+    1
+  ],
+  "init_audit": {
+    "passed": true,
+    "units": {
+      "124m/seed2024": {
+        "checks": {
+          "backup_tensors": true,
+          "init": true,
+          "matrix_tensors": true,
+          "no_activation_k": true,
+          "parameters": true
+        },
+        "payload": {
+          "architecture": {
+            "architecture": "llama_swiglu_parameter_matched_r1",
+            "backup_parameter_count": 38616576,
+            "backup_tensor_count": 26,
+            "bias_parameter_count": 0,
+            "config": {
+              "intermediate_size": 2048,
+              "n_embd": 768,
+              "n_head": 12,
+              "n_layer": 12,
+              "rms_norm_eps": 1e-06,
+              "rope_base": 10000.0,
+              "sequence_length": 1024,
+              "vocab_size": 50257
+            },
+            "down_mode": "none",
+            "embedding_head_tied": true,
+            "matrix_parameter_count": 84934656,
+            "matrix_tensor_count": 84,
+            "mlp": "swiglu_gate_up_down",
+            "named_parameter_count": 110,
+            "parameter_count": 123551232,
+            "preconditioner_group_count": 0,
+            "preconditioner_groups": [],
+            "qkv": "separate_q_k_v_projections",
+            "rmsnorm": "learned_gain_eps_1e-6",
+            "rope": "base_10000_precomputed"
+          },
+          "event": "init_audit",
+          "init_sha256": "26a4e4571ccd96bef512216ca882a49a1200e53186268f481f492ba3a5e94680",
+          "method": "moonlight",
+          "seed": 2024
+        }
+      },
+      "124m/seed2025": {
+        "checks": {
+          "backup_tensors": true,
+          "init": true,
+          "matrix_tensors": true,
+          "no_activation_k": true,
+          "parameters": true
+        },
+        "payload": {
+          "architecture": {
+            "architecture": "llama_swiglu_parameter_matched_r1",
+            "backup_parameter_count": 38616576,
+            "backup_tensor_count": 26,
+            "bias_parameter_count": 0,
+            "config": {
+              "intermediate_size": 2048,
+              "n_embd": 768,
+              "n_head": 12,
+              "n_layer": 12,
+              "rms_norm_eps": 1e-06,
+              "rope_base": 10000.0,
+              "sequence_length": 1024,
+              "vocab_size": 50257
+            },
+            "down_mode": "none",
+            "embedding_head_tied": true,
+            "matrix_parameter_count": 84934656,
+            "matrix_tensor_count": 84,
+            "mlp": "swiglu_gate_up_down",
+            "named_parameter_count": 110,
+            "parameter_count": 123551232,
+            "preconditioner_group_count": 0,
+            "preconditioner_groups": [],
+            "qkv": "separate_q_k_v_projections",
+            "rmsnorm": "learned_gain_eps_1e-6",
+            "rope": "base_10000_precomputed"
+          },
+          "event": "init_audit",
+          "init_sha256": "05c4943819e6b8c14ffedc439a3e50f1e618f7ce9f355228edd441b0d4175eed",
+          "method": "moonlight",
+          "seed": 2025
+        }
+      },
+      "124m/seed2026": {
+        "checks": {
+          "backup_tensors": true,
+          "init": true,
+          "matrix_tensors": true,
+          "no_activation_k": true,
+          "parameters": true
+        },
+        "payload": {
+          "architecture": {
+            "architecture": "llama_swiglu_parameter_matched_r1",
+            "backup_parameter_count": 38616576,
+            "backup_tensor_count": 26,
+            "bias_parameter_count": 0,
+            "config": {
+              "intermediate_size": 2048,
+              "n_embd": 768,
+              "n_head": 12,
+              "n_layer": 12,
+              "rms_norm_eps": 1e-06,
+              "rope_base": 10000.0,
+              "sequence_length": 1024,
+              "vocab_size": 50257
+            },
+            "down_mode": "none",
+            "embedding_head_tied": true,
+            "matrix_parameter_count": 84934656,
+            "matrix_tensor_count": 84,
+            "mlp": "swiglu_gate_up_down",
+            "named_parameter_count": 110,
+            "parameter_count": 123551232,
+            "preconditioner_group_count": 0,
+            "preconditioner_groups": [],
+            "qkv": "separate_q_k_v_projections",
+            "rmsnorm": "learned_gain_eps_1e-6",
+            "rope": "base_10000_precomputed"
+          },
+          "event": "init_audit",
+          "init_sha256": "a10054c8ab0a610dfe5f2cac3e21c1d44ab838df1ec4ad131e4646f6b919818d",
+          "method": "moonlight",
+          "seed": 2026
+        }
+      },
+      "1b/seed2024": {
+        "checks": {
+          "backup_tensors": true,
+          "init": true,
+          "matrix_tensors": true,
+          "no_activation_k": true,
+          "parameters": true
+        },
+        "payload": {
+          "architecture": {
+            "architecture": "llama_swiglu_1b_v1",
+            "backup_parameter_count": 103002112,
+            "backup_tensor_count": 38,
+            "base_trainer_sha256": "55c0a3e228c6dd084f0631f029da44d5af530963f69c49c8909f00e56dee8318",
+            "bias_parameter_count": 0,
+            "config": {
+              "intermediate_size": 5504,
+              "n_embd": 2048,
+              "n_head": 16,
+              "n_layer": 18,
+              "rms_norm_eps": 1e-06,
+              "rope_base": 10000.0,
+              "sequence_length": 1024,
+              "vocab_size": 50257
+            },
+            "down_mode": "none",
+            "embedding_head_tied": true,
+            "matrix_parameter_count": 910688256,
+            "matrix_tensor_count": 126,
+            "mlp": "swiglu_gate_up_down",
+            "named_parameter_count": 164,
+            "parameter_count": 1013690368,
+            "preconditioner_group_count": 0,
+            "preconditioner_groups": [],
+            "profile": {
+              "expected_parameter_count": 1013690368,
+              "intermediate_size": 5504,
+              "n_embd": 2048,
+              "n_head": 16,
+              "n_layer": 18,
+              "name": "llama_swiglu_1b_v1"
+            },
+            "qkv": "separate_q_k_v_projections",
+            "rmsnorm": "learned_gain_eps_1e-6",
+            "rope": "base_10000_precomputed"
+          },
+          "event": "init_audit",
+          "init_sha256": "a9d4dd25e7d7992e4c6f922a0b688b8398f15ee04645a8b90ebf5a9954e44024",
+          "method": "moonlight",
+          "seed": 2024
+        }
+      },
+      "1b/seed2025": {
+        "checks": {
+          "backup_tensors": true,
+          "init": true,
+          "matrix_tensors": true,
+          "no_activation_k": true,
+          "parameters": true
+        },
+        "payload": {
+          "architecture": {
+            "architecture": "llama_swiglu_1b_v1",
+            "backup_parameter_count": 103002112,
+            "backup_tensor_count": 38,
+            "base_trainer_sha256": "55c0a3e228c6dd084f0631f029da44d5af530963f69c49c8909f00e56dee8318",
+            "bias_parameter_count": 0,
+            "config": {
+              "intermediate_size": 5504,
+              "n_embd": 2048,
+              "n_head": 16,
+              "n_layer": 18,
+              "rms_norm_eps": 1e-06,
+              "rope_base": 10000.0,
+              "sequence_length": 1024,
+              "vocab_size": 50257
+            },
+            "down_mode": "none",
+            "embedding_head_tied": true,
+            "matrix_parameter_count": 910688256,
+            "matrix_tensor_count": 126,
+            "mlp": "swiglu_gate_up_down",
+            "named_parameter_count": 164,
+            "parameter_count": 1013690368,
+            "preconditioner_group_count": 0,
+            "preconditioner_groups": [],
+            "profile": {
+              "expected_parameter_count": 1013690368,
+              "intermediate_size": 5504,
+              "n_embd": 2048,
+              "n_head": 16,
+              "n_layer": 18,
+              "name": "llama_swiglu_1b_v1"
+            },
+            "qkv": "separate_q_k_v_projections",
+            "rmsnorm": "learned_gain_eps_1e-6",
+            "rope": "base_10000_precomputed"
+          },
+          "event": "init_audit",
+          "init_sha256": "2143f088e467eeeb03311f17856e5d2fd88274a2f725adfcccdd79861221ea8e",
+          "method": "moonlight",
+          "seed": 2025
+        }
+      },
+      "1b/seed2026": {
+        "checks": {
+          "backup_tensors": true,
+          "init": true,
+          "matrix_tensors": true,
+          "no_activation_k": true,
+          "parameters": true
+        },
+        "payload": {
+          "architecture": {
+            "architecture": "llama_swiglu_1b_v1",
+            "backup_parameter_count": 103002112,
+            "backup_tensor_count": 38,
+            "base_trainer_sha256": "55c0a3e228c6dd084f0631f029da44d5af530963f69c49c8909f00e56dee8318",
+            "bias_parameter_count": 0,
+            "config": {
+              "intermediate_size": 5504,
+              "n_embd": 2048,
+              "n_head": 16,
+              "n_layer": 18,
+              "rms_norm_eps": 1e-06,
+              "rope_base": 10000.0,
+              "sequence_length": 1024,
+              "vocab_size": 50257
+            },
+            "down_mode": "none",
+            "embedding_head_tied": true,
+            "matrix_parameter_count": 910688256,
+            "matrix_tensor_count": 126,
+            "mlp": "swiglu_gate_up_down",
+            "named_parameter_count": 164,
+            "parameter_count": 1013690368,
+            "preconditioner_group_count": 0,
+            "preconditioner_groups": [],
+            "profile": {
+              "expected_parameter_count": 1013690368,
+              "intermediate_size": 5504,
+              "n_embd": 2048,
+              "n_head": 16,
+              "n_layer": 18,
+              "name": "llama_swiglu_1b_v1"
+            },
+            "qkv": "separate_q_k_v_projections",
+            "rmsnorm": "learned_gain_eps_1e-6",
+            "rope": "base_10000_precomputed"
+          },
+          "event": "init_audit",
+          "init_sha256": "521d734608ff08ab6a191c4c1a41412c40bf53985ee3cbcefc3ab15457d39fec",
+          "method": "moonlight",
+          "seed": 2026
+        }
+      }
+    }
+  },
+  "passed": true,
+  "paths": {
+    "data124": "PRIVATE_PATH_REDACTED",
+    "data1b": "PRIVATE_PATH_REDACTED",
+    "official_repo": "PRIVATE_PATH_REDACTED",
+    "training_python": "PRIVATE_PATH_REDACTED"
+  },
+  "runtime": {
+    "checks": {
+      "count": true,
+      "cuda": true,
+      "devices": true,
+      "kernel": true,
+      "numpy": true,
+      "python": true,
+      "requested_executable": true,
+      "torch": true,
+      "torch_cuda": true,
+      "triton": true
+    },
+    "observed": {
+      "device_count": 2,
+      "devices": [
+        {
+          "compute_capability": [
+            9,
+            0
+          ],
+          "index": 0,
+          "name": "NVIDIA H100 80GB HBM3",
+          "total_memory": 85169143808
+        },
+        {
+          "compute_capability": [
+            9,
+            0
+          ],
+          "index": 1,
+          "name": "NVIDIA H100 80GB HBM3",
+          "total_memory": 85169143808
+        }
+      ],
+      "executable": "PRIVATE_PATH_REDACTED",
+      "numpy": "2.2.6",
+      "python": "3.10.12",
+      "torch": "2.8.0+cu126",
+      "torch_cuda": "12.6",
+      "triton": "3.4.0",
+      "triton_kernels_sha256": "b51ac50c699b05306619d92cb9ec6edadd266d8118c53f5b9726db76480ea16d"
+    },
+    "passed": true,
+    "return_code": 0
+  },
+  "schema_version": "ex54_moonlight_preflight_v1",
+  "small_matrix_audit": {
+    "base_lr_weight_decay": true,
+    "logical_qkv_shapes": [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "momentum": 0.95,
+    "nesterov": true,
+    "ns_steps": 5,
+    "packed_vs_split_distinct": true,
+    "passed": true,
+    "reference": "MoonshotAI/Moonlight:examples/toy_train.py",
+    "scale_rule": "0.2*sqrt(max(rows,cols))",
+    "state_bytes": {
+      "momentum_buffer_bytes": 192,
+      "optimizer_state_bytes": 192
+    },
+    "state_schema": {
+      "contains_activation_k_state": false,
+      "contains_factor_or_eigendecomposition_state": false,
+      "logical_matrix_parameters": 1,
+      "optimizer": "R1MoonlightMuon",
+      "tensor_state_keys": [
+        "momentum_buffer"
+      ]
+    }
+  },
+  "source_snapshot_manifest_sha256": "b74311165b07eae365c1bbf78402f2cc6babbe6a355c072db974daa638d77379"
+}

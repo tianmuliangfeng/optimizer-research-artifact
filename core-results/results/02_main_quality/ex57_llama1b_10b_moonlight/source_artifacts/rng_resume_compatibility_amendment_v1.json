@@ -1,0 +1,16 @@
+{
+  "amended_trainer_path": "PRIVATE_PATH_REDACTED__61d08b9feef2",
+  "amended_trainer_sha256": "503b78a772de97447ff7ebca13852b1040214e240a6a0a6b82aece7c413802a1",
+  "compatibility_was_built_into_frozen_trainer": true,
+  "created_at": "2026-08-20T04:34:26.842334+00:00",
+  "method_or_hyperparameter_changed": false,
+  "model_and_optimizer_checkpoint_tensors_remain_cuda_resident": true,
+  "original_source_snapshot_manifest_sha256": "e4ec8bb45d31e0d1722d665b8fbea4bf35be367aa620d19f76708732a7b89cc1",
+  "original_trainer_sha256": "503b78a772de97447ff7ebca13852b1040214e240a6a0a6b82aece7c413802a1",
+  "outcome_based_change": false,
+  "passed": true,
+  "reason": "normalize_cuda_mapped_rng_states_to_cpu_bytetensors",
+  "schema_version": "ex57_rng_resume_compatibility_amendment_v1",
+  "scientific_training_contract_changed": false,
+  "seed_data_step_or_schedule_changed": false
+}

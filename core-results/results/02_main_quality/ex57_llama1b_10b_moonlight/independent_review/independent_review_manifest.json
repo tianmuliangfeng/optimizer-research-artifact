@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "experiment_id": 57,
+  "review_date": "2026-08-31",
+  "source_run": "remote-results-20260820T124850/selective-newton-muon-experiments-no-pt/57_llama1b_10b_moonlight/20260820T043038+0000",
+  "audit_status": "passed",
+  "scientific_acceptance": "accepted",
+  "formal_units": 3,
+  "verified": {
+    "completion_manifest": true,
+    "analysis_hash_chain": true,
+    "source_snapshot_hash_chain": true,
+    "full_checkpoint_hashes": true,
+    "independent_statistical_recomputation": true,
+    "sealed_analysis_files": 4,
+    "source_snapshot_files": 24,
+    "recomputed_statistical_fields": 72
+  },
+  "sha256": {
+    "analysis_manifest": "9ed007a81efc2ed7dbda10ddf1de972a4291fba693ad92e659293ec7ce0a7bcc",
+    "verification_manifest": "17d3bb269bbdd935e2f9826195a27f52d674234396099174f6e02092df9a0944",
+    "formal_manifest": "65609fcf80909d31bc3370e9f58ba270eebeacb9b9c673075408ff6c340b8c16"
+  },
+  "selection": {
+    "llama_1b": "lr0010",
+    "formal_seed_overlap_with_tuning": false
+  },
+  "endpoint_mean_sample_sd": [
+    {"budget_tokens": 3250585600, "mean": 2.9724847477, "sample_sd": 0.0004714957},
+    {"budget_tokens": 6969360384, "mean": 2.8655621210, "sample_sd": 0.0001856625},
+    {"budget_tokens": 9999745024, "mean": 2.8246178627, "sample_sd": 0.0002814438}
+  ],
+  "state": {
+    "optimizer_state_bytes": 4466770072,
+    "optimizer_state_mib": 4259.8448486328125,
+    "moonlight_matrix_state_bytes": 3642753024,
+    "moonlight_matrix_state_mib": 3474.0
+  },
+  "primary_interpretation": "Moonlight loses to Muon at every tested LLaMA-1B budget and loses to all four core comparators by the two longer budgets.",
+  "boundaries": {
+    "timing_usable": false,
+    "wandb_required": false,
+    "independent_of_ex54": true,
+    "pool_with_ex54": false
+  }
+}

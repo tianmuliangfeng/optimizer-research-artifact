@@ -1,0 +1,10 @@
+metric,wandb_runs,wandb_points,comparable_points,matching_points,max_absolute_error,passed
+lr/adamw,15,4665,4665,4665,0.0,True
+lr/matrix,15,4665,4665,4665,0.0,True
+memory/k_state_mib,15,15,15,15,0.0,True
+memory/optimizer_state_mib,15,15,15,15,0.0,True
+memory/peak_allocated_mib,15,15,15,15,0.0,True
+performance/step_avg_ms,15,4635,4635,4635,0.0,True
+time/train_s,15,4665,4665,4665,9.094947017729282e-13,True
+train/loss_step,15,4650,4650,4650,0.0,True
+val/loss,15,945,945,945,0.0,True

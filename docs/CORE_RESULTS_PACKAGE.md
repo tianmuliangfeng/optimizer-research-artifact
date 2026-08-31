@@ -47,6 +47,11 @@ The file policy is explicit-whitelist only. Directory recursion and glob expansi
 - Main quality: Experiment 15 at 124M, Experiment 17 on LLaMA 124M, Experiment 20 on LLaMA 1B, Experiments 43 and 44 at 275M and 455M, Experiment 45 with Mousse and the unified eight-method panel, and Experiment 49 with the independent MALT-family adaptations and unified ten-method panel.
 - Capacity and systems: the exact LLaMA 1B capacity boundary from Experiment 20, isolated R1 efficiency and sensitivity from Experiment 39, and isolated LLaMA 1B efficiency from Experiment 42.
 - Robustness and structure: Experiments 22 and 24 for the two alpha families, Experiment 29 for three-seed cross-environment depth-direction transfer, Experiment 40 for LLaMA block-partition invariance, and Experiment 41 plus its diagonal bridge for module structure. The Experiment 29 compact whitelist contains exactly 16 files, including `analysis_20260809_formal/input_manifest.csv` as its input-provenance anchor.
+- Post-review controls: Experiment 53 provides the representation-matched
+  diagonal module-placement factorial; Experiment 55 provides the fresh-seed
+  baseline-fairness panel; Experiments 54 and 57 bound Moonlight transfer across
+  architecture, scale, and token budget; and Experiment 56 tests global diagonal
+  state through the long LLaMA-1B budgets.
 - Mechanism: Experiment 34, the accepted refresh-mediation result from Experiment 37, the unified synthesis from Experiment 38, method-deepening v2, and the final mechanism-closure package.
 - Submission synthesis: the final unified Experiment 38-45 analysis, including cross-scale tables, Pareto summaries, evidence and source ledgers, figures, claim matrix, and limitations matrix.
 
@@ -157,5 +162,23 @@ reconciliation. It excludes raw exports and all concurrent timing. Because the
 Experiment 52 1B run ID was reused across screen and formal continuation, its
 W&B history is supporting lineage only; local formal CSVs and manifests remain
 primary.
+
+## Post-review supplemental experiments
+
+Experiments 53–57 are included as explicit, independently reviewed records.
+Experiment 53 separates module placement from the earlier full-versus-block-4
+representation contrast. Experiment 55 repeats the baseline panel with a fresh
+formal seed. Experiment 56 shows global diagonal outperforming all local
+curvature-state routes at 27/27 long-budget LLaMA-1B paired endpoints, while
+Muon remains better than global diagonal at 9/9; this is an ordering result, not
+an equivalence claim. Experiments 54 and 57 show that Moonlight's 124M strength
+does not transfer to the tested LLaMA-1B settings, and those experiments are not
+pooled. No supplemental timing claim is eligible.
+
+The compact payload omits raw W&B exports and all checkpoint tensors. For
+Experiments 53 and 55 it retains only the accepted W&B reconciliation tables and
+manifests. Experiments 54, 56, and 57 have no W&B dependency and are represented
+by accepted analyses, manifests, native receipts, and independent reviews from
+their checkpoint-free transport bundles.
 
 The claim matrix and limitations matrix in `results/06_unified_submission/final_unified_38_45` and the closure documents in `results/04_mechanism/mechanism_closure` are authoritative for wording. No individual CSV should be used to widen a claim beyond those boundaries.

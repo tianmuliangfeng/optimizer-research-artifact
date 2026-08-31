@@ -1,0 +1,171 @@
+{
+  "analysis_amendment": {
+    "bytes": 1763,
+    "path": "PRIVATE_PATH_REDACTED__981889e719e9",
+    "sha256": "f06e7b837899a5336040b4f43ebac5491a67495ea71ccce577f80970324eafdd"
+  },
+  "analyzer": {
+    "bytes": 35462,
+    "path": "PRIVATE_PATH_REDACTED__f8c13d30890b",
+    "sha256": "4e3730f2a3293391c269e67a38edc807096827e233575bbbd553ec207f3709ee"
+  },
+  "analyzer_version": "2026-08-19.1",
+  "artifacts": [
+    {
+      "bytes": 15878,
+      "package_bytes": 15878,
+      "package_sha256": "f5b9b96ac5490d9e93b260874b1ff60f58b3cec6a0f0a49fa00706c2d77ac3c8",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/formal_metrics_tail5_lineage.json",
+      "sha256": "f5b9b96ac5490d9e93b260874b1ff60f58b3cec6a0f0a49fa00706c2d77ac3c8",
+      "source_bytes": 24925,
+      "source_sha256": "6719b966115d77f8886cd90ba749400f1ab8707bdba8ea549481763c0fa0f23a"
+    },
+    {
+      "bytes": 1345,
+      "package_bytes": 1345,
+      "package_sha256": "0e40d6c295eb227213d3ba1143f707c20d641a20de6c0d648eab8a758c57798b",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/fresh_seed2027_paired_deltas.csv",
+      "sha256": "0e40d6c295eb227213d3ba1143f707c20d641a20de6c0d648eab8a758c57798b",
+      "source_bytes": 1345,
+      "source_sha256": "0e40d6c295eb227213d3ba1143f707c20d641a20de6c0d648eab8a758c57798b"
+    },
+    {
+      "bytes": 4755,
+      "package_bytes": 4755,
+      "package_sha256": "a5677b8b042fb949a05e1591979f436b91a4f210c070de20b300092ca8940c6d",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/fresh_seed2027_panel.csv",
+      "sha256": "a5677b8b042fb949a05e1591979f436b91a4f210c070de20b300092ca8940c6d",
+      "source_bytes": 9173,
+      "source_sha256": "ca990eecca566450f1e5d749a38983be25f18fe3baf96890dd6f4ea2a52b7920"
+    },
+    {
+      "bytes": 5862,
+      "package_bytes": 5862,
+      "package_sha256": "19d196a9b66f5a84ddfb55690727b14c08b600e57c61fee66482e31d0ee830f8",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/historical_2024_2025_2026_panel_annotated.csv",
+      "sha256": "19d196a9b66f5a84ddfb55690727b14c08b600e57c61fee66482e31d0ee830f8",
+      "source_bytes": 5862,
+      "source_sha256": "19d196a9b66f5a84ddfb55690727b14c08b600e57c61fee66482e31d0ee830f8"
+    },
+    {
+      "bytes": 7562,
+      "package_bytes": 7562,
+      "package_sha256": "6da83e28c832c145676128e761de4309f49b04fe48f845a411c23043c2a8c42a",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/historical_2024_2025_2026_panel_source.csv",
+      "sha256": "6da83e28c832c145676128e761de4309f49b04fe48f845a411c23043c2a8c42a",
+      "source_bytes": 7562,
+      "source_sha256": "6da83e28c832c145676128e761de4309f49b04fe48f845a411c23043c2a8c42a"
+    },
+    {
+      "bytes": 1256,
+      "package_bytes": 1256,
+      "package_sha256": "387f1945e9ba74588fed1af91cd0c5721c9e10ce0db2f86434872c158c96c6ae",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/leave_selection_seed_out_2024_2025.csv",
+      "sha256": "387f1945e9ba74588fed1af91cd0c5721c9e10ce0db2f86434872c158c96c6ae",
+      "source_bytes": 1256,
+      "source_sha256": "387f1945e9ba74588fed1af91cd0c5721c9e10ce0db2f86434872c158c96c6ae"
+    },
+    {
+      "bytes": 8656,
+      "package_bytes": 8656,
+      "package_sha256": "2485c97a892890d7e1195f2759a1dec33465237582c52b9ad21dc78977213364",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/repaired_fresh_panel_2024_2025_2027.csv",
+      "sha256": "2485c97a892890d7e1195f2759a1dec33465237582c52b9ad21dc78977213364",
+      "source_bytes": 13074,
+      "source_sha256": "45e1c79eafab4d35caec17f77d882213290740b85bcb84e381090b19f713ae9f"
+    },
+    {
+      "bytes": 1572,
+      "package_bytes": 1572,
+      "package_sha256": "47d6c04c5b4b8bfaa2fec0182156705cf39fc6c2e2839a6d38c277c2a6970f67",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/repaired_panel_method_summary.csv",
+      "sha256": "47d6c04c5b4b8bfaa2fec0182156705cf39fc6c2e2839a6d38c277c2a6970f67",
+      "source_bytes": 1572,
+      "source_sha256": "47d6c04c5b4b8bfaa2fec0182156705cf39fc6c2e2839a6d38c277c2a6970f67"
+    },
+    {
+      "bytes": 1939,
+      "package_bytes": 1939,
+      "package_sha256": "64b6902b6364308f57154686d6c5dc30c8aab3aff5b275060ec3c27574fb280a",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/repaired_panel_paired_aggregate.csv",
+      "sha256": "64b6902b6364308f57154686d6c5dc30c8aab3aff5b275060ec3c27574fb280a",
+      "source_bytes": 1939,
+      "source_sha256": "64b6902b6364308f57154686d6c5dc30c8aab3aff5b275060ec3c27574fb280a"
+    },
+    {
+      "bytes": 3898,
+      "package_bytes": 3898,
+      "package_sha256": "9cdc08bac333034c5e336ac7409f7556dff981ddaca89e4dc2dbf4162f77a951",
+      "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/repaired_panel_paired_deltas.csv",
+      "sha256": "9cdc08bac333034c5e336ac7409f7556dff981ddaca89e4dc2dbf4162f77a951",
+      "source_bytes": 3898,
+      "source_sha256": "9cdc08bac333034c5e336ac7409f7556dff981ddaca89e4dc2dbf4162f77a951"
+    }
+  ],
+  "checks": {
+    "all_methods_retained": true,
+    "formal_metrics_path_bytes_sha256_recorded_for_all_methods": true,
+    "fresh_initial_validation_identical": true,
+    "fresh_initialization_sha_identical": true,
+    "fresh_seed2027_10_methods": true,
+    "fresh_tail5_reconstructed_from_hash_bound_formal_metrics": true,
+    "historical_panel_30_rows": true,
+    "historical_panel_exact_hash": true,
+    "leave_out_is_descriptive_n2_only": true,
+    "repaired_panel_30_rows": true,
+    "timing_excluded": true
+  },
+  "classification": "fresh_seed_fairness_panel_completed",
+  "contract_sha256": "b91df4bb3612cd1fdb89173f8fc9bf7ffc2de7b3f8073c8162d4adf36d2ce659",
+  "created_at": "2026-08-19T02:17:13.824843+00:00",
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "formal_metrics_lineage": {
+    "bytes": 15878,
+    "package_bytes": 15878,
+    "package_sha256": "f5b9b96ac5490d9e93b260874b1ff60f58b3cec6a0f0a49fa00706c2d77ac3c8",
+    "path": "results/02_main_quality/ex55_fresh_seed_baseline_fairness/source_artifacts/analysis/formal_metrics_tail5_lineage.json",
+    "sha256": "f5b9b96ac5490d9e93b260874b1ff60f58b3cec6a0f0a49fa00706c2d77ac3c8",
+    "source_bytes": 24925,
+    "source_sha256": "6719b966115d77f8886cd90ba749400f1ab8707bdba8ea549481763c0fa0f23a"
+  },
+  "formal_units_sha256": "a7c6a4967a81d619205957d1d81fac6e014c3838552ab158e8c0ca6b2fdb2e90",
+  "fresh_init_sha256": "b328c4699491699620a5979160450eac4f41f9107cd73fb42974db9d8e4ed7b4",
+  "fresh_initial_val_loss": 10.9937,
+  "historical_panel_sha256": "6da83e28c832c145676128e761de4309f49b04fe48f845a411c23043c2a8c42a",
+  "historical_seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "leave_out_ranking_by_two_seed_mean": [
+    "diag",
+    "block4",
+    "none",
+    "mousse",
+    "malt",
+    "moonlight",
+    "muon",
+    "normuon",
+    "adamw",
+    "malter_eq17"
+  ],
+  "method_ranking_by_repaired_mean_final_loss": [
+    "diag",
+    "block4",
+    "none",
+    "mousse",
+    "malt",
+    "moonlight",
+    "muon",
+    "normuon",
+    "adamw",
+    "malter_eq17"
+  ],
+  "passed": true,
+  "repaired_seeds": [
+    2024,
+    2025,
+    2027
+  ],
+  "schema_version": 1
+}

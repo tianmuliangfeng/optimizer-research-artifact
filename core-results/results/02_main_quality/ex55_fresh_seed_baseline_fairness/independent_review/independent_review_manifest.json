@@ -1,0 +1,48 @@
+{
+  "archive": {
+    "bytes": 6461770,
+    "path": "archive/55_r1_fresh_seed_baseline_fairness.zip",
+    "sha256": "e03fb2327decaa93baabdf31286feac2d569e4b8119dcafef2a8394f03d085e3"
+  },
+  "checks": {
+    "analysis_artifact_hashes_10_of_10": true,
+    "analysis_manifest_handoff_hash": true,
+    "analysis_manifest_passed": true,
+    "data_full_content_rehash": true,
+    "formal_units_10_of_10": true,
+    "fresh_initialization_identical_10_of_10": true,
+    "handoff_manifest_passed": true,
+    "independent_aggregate_fields_100_of_100": true,
+    "preflight_passed": true,
+    "repaired_panel_exact_10_methods_x_3_seeds": true,
+    "retained_checkpoint_full_hashes_10_of_10": true,
+    "safe_archive_paths": true,
+    "source_snapshot_hashes_60_of_60": true,
+    "timing_excluded": true,
+    "wandb_all_comparable_points_15247_of_15247": true,
+    "wandb_run_identity_10_of_10": true,
+    "wandb_training_points_3100_of_3100": true,
+    "wandb_validation_points_630_of_630": true
+  },
+  "claim_boundary": "Top-two diag versus block-4 ordering is descriptive: seed 2027 favors block-4 by 0.0003, while the repaired three-seed mean favors diag by 0.0008.",
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "remote_run_id": "20260817T021952+0000",
+  "review_date": "2026-08-20",
+  "schema_version": 1,
+  "scientific_result": "fresh_seed_fairness_panel_preserves_broad_ranking",
+  "status": "accepted_remote_result",
+  "timing_usable": false,
+  "wandb_reconciliation": {
+    "all_comparable_points": 15247,
+    "archive_bytes": 54455,
+    "archive_path": "PRIVATE_PATH_REDACTED__b162fe99ac88",
+    "archive_sha256": "2dad85e745d2d3397886b1ac886644adba84e8513dffd150e35a6f69814746bf",
+    "csv_count": 11,
+    "failed_points": 0,
+    "manifest_path": "PRIVATE_PATH_REDACTED__ecc6cfac280e",
+    "run_count": 10,
+    "status": "passed_exact_secondary_mirror",
+    "training_points": 3100,
+    "validation_points": 630
+  }
+}

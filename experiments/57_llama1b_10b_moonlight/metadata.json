@@ -1,0 +1,49 @@
+{
+  "code_directory": "scripts/57_llama1b_10b_moonlight",
+  "entrypoints": {
+    "command:20260819_ex57_llama1b_10b_moonlight": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX57_RESUME_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "resume"
+          ],
+          "env": {
+            "EX57_RESUME_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/57_llama1b_10b_moonlight/20260819_ex57_llama1b_10b_moonlight.sh"
+    },
+    "script:run_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/57_llama1b_10b_moonlight/run_suite.py"
+    }
+  },
+  "experiment_id": "57_llama1b_10b_moonlight",
+  "legacy_result_roots": [
+    "57_llama1b_10b_moonlight"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": false,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "57 Llama1B 10B Moonlight"
+}

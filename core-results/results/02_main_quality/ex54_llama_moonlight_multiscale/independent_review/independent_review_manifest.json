@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": 54,
+  "review_date": "2026-08-31",
+  "source_run": "remote-results-20260820T124850/selective-newton-muon-experiments-no-pt/54_llama_moonlight_multiscale_multibudget/20260820T043013+0000",
+  "audit_status": "passed",
+  "scientific_acceptance": "accepted",
+  "formal_units": 6,
+  "verified": {
+    "completion_manifest": true,
+    "analysis_hash_chain": true,
+    "source_snapshot_hash_chain": true,
+    "full_checkpoint_hashes": true,
+    "independent_statistical_recomputation": true,
+    "sealed_analysis_files": 4,
+    "source_snapshot_files": 28,
+    "recomputed_statistical_fields": 72
+  },
+  "sha256": {
+    "analysis_manifest": "18f1eadbbbc909af70866f040ff3f8b5e17b8a287bb7fd18ca979c31daecddb4",
+    "verification_manifest": "cdb6029d89b383d567437c9d8a92cebb2384b13bc0afaeb6cc96514ff1ac8b01",
+    "formal_manifest": "69ab0de84079c968f1eb4e93a4baa560031015d99c303ca1092c7623ff986f0a"
+  },
+  "selection": {
+    "llama_124m": "lr0030",
+    "llama_1b": "lr0010",
+    "formal_seed_overlap_with_tuning": false
+  },
+  "endpoint_mean_sample_sd": [
+    {"scale": "124m", "budget_tokens": 3250585600, "mean": 3.2516073387, "sample_sd": 0.0011478776},
+    {"scale": "1b", "budget_tokens": 3250585600, "mean": 2.9726152420, "sample_sd": 0.0007074114},
+    {"scale": "1b", "budget_tokens": 6969360384, "mean": 2.8654046853, "sample_sd": 0.0003737091}
+  ],
+  "primary_interpretation": "Moonlight is strong at LLaMA-124M, but its LLaMA-1B advantage does not persist to the longer tested budget.",
+  "boundaries": {
+    "timing_usable": false,
+    "wandb_required": false,
+    "independent_of_ex57": true,
+    "pool_with_ex57": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "code_directory": "scripts/53_r1_matched_diag_module_placement",
+  "entrypoints": {
+    "command:20260817_ex53_r1_matched_diag_module_placement": {
+      "args": [],
+      "kind": "shell",
+      "native_modes": {
+        "native-verify": {
+          "args": [
+            "verify"
+          ],
+          "env": {
+            "EX53_RUN_DIR": "{run_dir}"
+          }
+        },
+        "resume": {
+          "args": [
+            "resume"
+          ],
+          "env": {
+            "EX53_RUN_DIR": "{run_dir}"
+          }
+        }
+      },
+      "path": "commands/53_r1_matched_diag_module_placement/20260817_ex53_r1_matched_diag_module_placement.sh"
+    },
+    "script:run_matched_diag": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/53_r1_matched_diag_module_placement/run_matched_diag.py"
+    },
+    "script:run_matched_diag_suite": {
+      "args": [],
+      "kind": "python",
+      "native_modes": {},
+      "path": "scripts/53_r1_matched_diag_module_placement/run_matched_diag_suite.py"
+    }
+  },
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "legacy_result_roots": [
+    "53_r1_matched_diag_module_placement"
+  ],
+  "reproducibility": {
+    "fresh_rerun": false,
+    "generic_artifact_verify": true,
+    "native_resume": true,
+    "native_verify": true,
+    "one_click_rerun": false,
+    "source_freeze": "sealed_source_snapshot"
+  },
+  "schema_version": 1,
+  "status": "implemented",
+  "title": "53 R1 Matched Diag Module Placement"
+}

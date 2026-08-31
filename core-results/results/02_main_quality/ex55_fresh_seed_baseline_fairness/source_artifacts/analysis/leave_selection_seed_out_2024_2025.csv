@@ -1,0 +1,11 @@
+method,display_name,n,seeds,seed2024_final_val_loss,seed2025_final_val_loss,two_seed_descriptive_mean,two_seed_range,inferential_ci_or_p_value,rank_by_two_seed_mean
+block4,Local block-4,2,2024;2025,3.263,3.2609,3.2619499999999997,0.0020999999999999908,not_reported_n2_sensitivity_only,2
+diag,Local diag,2,2024;2025,3.2613,3.2599,3.2606,0.0013999999999998458,not_reported_n2_sensitivity_only,1
+none,Local none,2,2024;2025,3.267,3.2659,3.26645,0.001100000000000101,not_reported_n2_sensitivity_only,3
+muon,Muon,2,2024;2025,3.2774,3.2769,3.27715,0.000500000000000167,not_reported_n2_sensitivity_only,7
+adamw,AdamW,2,2024;2025,3.4045,3.4015,3.403,0.0030000000000001137,not_reported_n2_sensitivity_only,9
+normuon,NorMuon,2,2024;2025,3.3334,3.335,3.3342,0.0015999999999998238,not_reported_n2_sensitivity_only,8
+moonlight,Moonlight,2,2024;2025,3.2754,3.275,3.2752,0.00039999999999995595,not_reported_n2_sensitivity_only,6
+mousse,Mousse,2,2024;2025,3.2683,3.2678,3.2680499999999997,0.000500000000000167,not_reported_n2_sensitivity_only,4
+malt,MALT,2,2024;2025,3.2728,3.2736,3.2732,0.0007999999999999119,not_reported_n2_sensitivity_only,5
+malter_eq17,MALTER-Eq17,2,2024;2025,3.6426,3.6475,3.64505,0.0049000000000001265,not_reported_n2_sensitivity_only,10

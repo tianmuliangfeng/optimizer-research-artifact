@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-08-17T06:57:21.168192+00:00",
+  "files": {
+    "scripts/17_llama_swiglu_validation/train_llama_swiglu.py": {
+      "bytes": 53542,
+      "sha256": "6cbc5df4a83f1a4e23bac534e512336ad1ffa192cfbb077ebe7a1dcd8128c91e"
+    },
+    "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": {
+      "bytes": 3713,
+      "sha256": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+    },
+    "scripts/56_llama1b_10b_global_diag/README.md": {
+      "bytes": 3730,
+      "sha256": "70a45a4684a1577d4e6dbeec94f11da7b07d15f79adc262835f0e313c3235a05"
+    },
+    "scripts/56_llama1b_10b_global_diag/analyze_formal.py": {
+      "bytes": 28004,
+      "sha256": "d75ba8de6f720afeaddc15ab662bff40bfc89f908ffd7dda6464b2fd42edc1e7"
+    },
+    "scripts/56_llama1b_10b_global_diag/formal_contract.json": {
+      "bytes": 8702,
+      "sha256": "faae34be426e99b6e0af4593cd6f26c5ccbfa2e8afbfaac4a50a611fc141819a"
+    },
+    "scripts/56_llama1b_10b_global_diag/frozen_ex48_controls.csv": {
+      "bytes": 4174,
+      "sha256": "0fc60d42e9711ca00aaf72f88f290be9cf4a52c211740dad51315c766b8185c6"
+    },
+    "scripts/56_llama1b_10b_global_diag/llama_global_diag_source_builder.py": {
+      "bytes": 11516,
+      "sha256": "184c9c4f8b966adf676348e353ae0ff9100b7f459520e1ef7fe235f073f9bd85"
+    },
+    "scripts/56_llama1b_10b_global_diag/protocol.py": {
+      "bytes": 15903,
+      "sha256": "188589e9bae2401411f984468d3224066b9da5f6cc37ae34496735b605d30bb9"
+    },
+    "scripts/56_llama1b_10b_global_diag/run_formal.py": {
+      "bytes": 45373,
+      "sha256": "3320cc8f2d1312d292e571979bea9f798ce0e4a43944b85228ed1e44a4e31c18"
+    },
+    "scripts/56_llama1b_10b_global_diag/train_segment.py": {
+      "bytes": 35604,
+      "sha256": "41d0acf8d152d20d46ce6a8317d3b78cc5fc20ae2d15342b65b0814029eb6c0f"
+    },
+    "scripts/56_llama1b_10b_global_diag/upload_wandb.py": {
+      "bytes": 6900,
+      "sha256": "f66e48dad7b5f637451f123c770097732d9f34cdb821d76eb047ef55fb0576c2"
+    }
+  },
+  "parent_source_sha256": {
+    "scripts/17_llama_swiglu_validation/run_llama_swiglu_validation.py": "9804398a680cb9d2b3553dcba92e104f7c105b0c6a513932d104df1bb2809c1d",
+    "scripts/17_llama_swiglu_validation/train_llama_swiglu.py": "b72eb0d2a1dfa91b61cd49b4784b3e0739ecebc2fd3228b8f719cec125706f2a",
+    "scripts/20_llama_swiglu_1b/run_llama_swiglu_1b.py": "f55601c5e1d5d898b3f7b51100d02eb552c7a615963828dd26688766b652f7d0",
+    "scripts/20_llama_swiglu_1b/train_llama_swiglu_1b.py": "043c758f3d5eb5d1abc9e1f9029a8d085a238cf169ef69ba86580014699dc401"
+  },
+  "schema_version": "ex56_source_snapshot_v1"
+}

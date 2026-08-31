@@ -1,0 +1,33 @@
+{
+  "arms": [
+    "all_none",
+    "c_fc_diag",
+    "c_proj_diag",
+    "c_fc_c_proj_diag",
+    "o_proj_diag"
+  ],
+  "contract_sha256": "427263e7f0d1ff353309b83d098707d55873d0bf53495626a6fc577df364f4b3",
+  "controller_python": "PRIVATE_PATH_REDACTED",
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "formal_seeds": [
+    2024,
+    2025,
+    2026
+  ],
+  "formal_units": 15,
+  "gpus": [
+    "0"
+  ],
+  "official_repo": "PRIVATE_PATH_REDACTED",
+  "pilot_seed": 2053,
+  "pilot_units": 5,
+  "repo": "PRIVATE_PATH_REDACTED",
+  "run_dir": "PRIVATE_PATH_REDACTED__3ea0cebb4fb3",
+  "schema_version": 1,
+  "script_version": "2026-08-17.3",
+  "stage_requested": "all",
+  "timing_usable": false,
+  "training_python": "PRIVATE_PATH_REDACTED",
+  "wandb_mode": "online",
+  "wandb_secondary": true
+}

@@ -1,0 +1,234 @@
+{
+  "compile_cache_policy": "per_physical_gpu",
+  "completed_1b_budget_ids": [
+    "tokens_3p2506b",
+    "tokens_6p9694b"
+  ],
+  "ddp": false,
+  "experiment_scope_complete": true,
+  "formal_gpus_used": [
+    0,
+    1
+  ],
+  "gpu_assignment": {
+    "124m/seed2024": 1,
+    "124m/seed2025": 1,
+    "124m/seed2026": 1,
+    "1b/seed2024": 0,
+    "1b/seed2025": 1,
+    "1b/seed2026": 0
+  },
+  "independent_of_ex57": true,
+  "parallel_single_gpu_jobs": true,
+  "passed": true,
+  "schema_version": "ex54_moonlight_formal_manifest_v1",
+  "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+  "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+  "timing_eligible": false,
+  "units": [
+    {
+      "checkpoint_bytes": 1144295999,
+      "checkpoint_sha256": "07297f6b975e2a0a730df2badeb351eb9be5ab857481f92a88ab2886087d2b18",
+      "data_inventory_sha256": "ec55b5f4be02ae5999bdd974508d5180625690f41c9ae1b32902c062c59d3695",
+      "final_val_loss": 3.252913237,
+      "metrics_sha256": "fe88fcf540458c7db8d57a6cda20c4b12dd04eb554927172c6155b5c46acd064",
+      "optimizer_state_bytes": 648671336,
+      "passed": true,
+      "peak_allocated_bytes": 37142450688,
+      "physical_gpu": 1,
+      "scale": "124m",
+      "schema_version": "ex54_llama_moonlight_unit_v1",
+      "seed": 2024,
+      "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+      "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+      "summary_sha256": "3903caf80d6b07e59d82807214b278c07ef553ca5eae9cd9c75c191a6705a359",
+      "timing_eligible": false
+    },
+    {
+      "checkpoint_bytes": 1144295999,
+      "checkpoint_sha256": "fd7171f782c20a00a59453a503fda32105cb9bbe5d69eeb360792e8aa21e592d",
+      "data_inventory_sha256": "ec55b5f4be02ae5999bdd974508d5180625690f41c9ae1b32902c062c59d3695",
+      "final_val_loss": 3.251150846,
+      "metrics_sha256": "dc18813cba6ebfdabae455916cfbc37ed11ba2c11999c51ef42f505bdfca1e79",
+      "optimizer_state_bytes": 648671336,
+      "passed": true,
+      "peak_allocated_bytes": 37142450688,
+      "physical_gpu": 1,
+      "scale": "124m",
+      "schema_version": "ex54_llama_moonlight_unit_v1",
+      "seed": 2025,
+      "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+      "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+      "summary_sha256": "dcebaf5bc3ff383cc9afa5766477ee89d9bd8abbeda565371ece2f4dd0604379",
+      "timing_eligible": false
+    },
+    {
+      "checkpoint_bytes": 1144295999,
+      "checkpoint_sha256": "00c25762ea92572ffe9c2ce06ec4dd6b2b739c61263f2277ec3a3d0b75f63fd3",
+      "data_inventory_sha256": "ec55b5f4be02ae5999bdd974508d5180625690f41c9ae1b32902c062c59d3695",
+      "final_val_loss": 3.250757933,
+      "metrics_sha256": "c3df7760379caa7345ca0cdea7448fa4d05f31a92278a64515c75f8ddbd5e018",
+      "optimizer_state_bytes": 648671336,
+      "passed": true,
+      "peak_allocated_bytes": 37142450688,
+      "physical_gpu": 1,
+      "scale": "124m",
+      "schema_version": "ex54_llama_moonlight_unit_v1",
+      "seed": 2026,
+      "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+      "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+      "summary_sha256": "56f9191092fa026d03a884005e41b5119f9d2efaec4d0565b72d29086c1ec5de",
+      "timing_eligible": false
+    },
+    {
+      "completed_phase_ids": [
+        "backbone_4400",
+        "cooldown_6200",
+        "backbone_11493",
+        "cooldown_13293"
+      ],
+      "data_inventory_sha256": "56dbf1841b18a4462698946fe865877f329e9fb4b8f343fb05cd78bfb079806a",
+      "endpoints": {
+        "tokens_3p2506b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__1874de9a7da0",
+          "retained": true,
+          "sha256": "bea9d5966256013a8ca3279204b89b622b6e6db93ce9909cd8ac6e3dab1b73d0"
+        },
+        "tokens_6p9694b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__19eb1098a062",
+          "retained": true,
+          "sha256": "fc8125345421af4bad086b838270c45b377a86d4a06ce36c35d806b03a13f9c5"
+        }
+      },
+      "passed": true,
+      "phases": {
+        "backbone_11493": {
+          "manifest_sha256": "72b3c4e62110c174f7e3004202480351628750d4016f174794a1d6906e6e028f",
+          "summary_sha256": "d5ba990198ee194a5110cdf4846dab30523fd8dee96fef6e52eb1451e9dbc172"
+        },
+        "backbone_4400": {
+          "manifest_sha256": "86e2e6842161e312e0f5565b258d414ff40ad47b6fd2495868409a5f35481213",
+          "summary_sha256": "de70f65973900e07f790c3b9acbcd9c2e33493a7f963ca38f7f4abf3f355990b"
+        },
+        "cooldown_13293": {
+          "manifest_sha256": "3800f9b7050aec6ca85deef86db639073ed296b827227dc283900a6f85e139a2",
+          "summary_sha256": "c5f7844cd9858791f0be0b5091e49d7a02b4b72caf7961c5a7adf0c63ca9f810"
+        },
+        "cooldown_6200": {
+          "manifest_sha256": "a1d530ff842ad41b5502fd1d9665182119b9c0942da127120eb6ed339d2c4e76",
+          "summary_sha256": "95339a165ab222340858c02ef7154d38f7e3748b5d9d74cb07df6dfcc1235ff7"
+        }
+      },
+      "physical_gpu": 0,
+      "scale": "1b",
+      "schema_version": "ex54_non10b_unit_v1",
+      "seed": 2024,
+      "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+      "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+      "stage": "formal_non10b",
+      "timing_eligible": false
+    },
+    {
+      "completed_phase_ids": [
+        "backbone_4400",
+        "cooldown_6200",
+        "backbone_11493",
+        "cooldown_13293"
+      ],
+      "data_inventory_sha256": "56dbf1841b18a4462698946fe865877f329e9fb4b8f343fb05cd78bfb079806a",
+      "endpoints": {
+        "tokens_3p2506b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__d12cc88f621c",
+          "retained": true,
+          "sha256": "ff9dfd3ab4ebc96a51e4da206bad6ce724496b32552ab2179ca69ad989e22625"
+        },
+        "tokens_6p9694b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__fe1d68227d73",
+          "retained": true,
+          "sha256": "16ff70ca91aa5d9f87c776c696f151c0c4d3005bb7c912e1adeb665b86129b27"
+        }
+      },
+      "passed": true,
+      "phases": {
+        "backbone_11493": {
+          "manifest_sha256": "1ba533a76f59e0e5154336b336099c984135a2489478664366324b4c6c66f617",
+          "summary_sha256": "b80e4c2e826636dc4238949f2632fc9dce13108d37d643808764f70e6b2189d0"
+        },
+        "backbone_4400": {
+          "manifest_sha256": "b51625e3cc4f87c2416449cd60246f6701470547d9238a2a836f06e73f7a745e",
+          "summary_sha256": "c9ce3b2d81e7c44849cbec4c0a7c74401f2f6a9af05db0e1c52adbd5bd5fa57d"
+        },
+        "cooldown_13293": {
+          "manifest_sha256": "616fa6e9e5877c34959450339809a9f18b08d729c69b1aaa9f00580aa275ef5c",
+          "summary_sha256": "cefa646b1cfcbf50cee4b9e8c9f5b34bd7e4a447956b03e8eba64bd67835a9e7"
+        },
+        "cooldown_6200": {
+          "manifest_sha256": "5649fdac4ae29511d7bc9bf034606c70c42d060dfb54c72d652a649d25222aca",
+          "summary_sha256": "32da1763abd25b42b7691823fbd6c750235e3e284fe36822c389627b2031b36f"
+        }
+      },
+      "physical_gpu": 1,
+      "scale": "1b",
+      "schema_version": "ex54_non10b_unit_v1",
+      "seed": 2025,
+      "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+      "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+      "stage": "formal_non10b",
+      "timing_eligible": false
+    },
+    {
+      "completed_phase_ids": [
+        "backbone_4400",
+        "cooldown_6200",
+        "backbone_11493",
+        "cooldown_13293"
+      ],
+      "data_inventory_sha256": "56dbf1841b18a4462698946fe865877f329e9fb4b8f343fb05cd78bfb079806a",
+      "endpoints": {
+        "tokens_3p2506b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__d32d07c9eb6b",
+          "retained": true,
+          "sha256": "f64cde27496b7593c931c4a40e865f467cff6748ded2a65a31fdf91a1e70cadc"
+        },
+        "tokens_6p9694b": {
+          "bytes": 8522344035,
+          "path": "PRIVATE_PATH_REDACTED__f8c760161384",
+          "retained": true,
+          "sha256": "b92811a0705fb62542470d49715ae3593c6ef555f5c5a9c320720334753e9773"
+        }
+      },
+      "passed": true,
+      "phases": {
+        "backbone_11493": {
+          "manifest_sha256": "a5f410fb46b48113626c3dcf3fe1a5055354173fd86faf5be7dc02f52a7b0783",
+          "summary_sha256": "7d697d742e3b1b338b1466efc9f9a2e49efa4062bbc9ac7dde60ba389c1b0c59"
+        },
+        "backbone_4400": {
+          "manifest_sha256": "5ec2bd4042bcbaeb9983eeb9640a37cdc0c262639720933b887bde4936ee2fb8",
+          "summary_sha256": "2b804a04adf8c648e81f0cdfb00ee1e1abf8bc217275d36b128ef4c25399cd1a"
+        },
+        "cooldown_13293": {
+          "manifest_sha256": "c459264d54374854d40e9266283d9b10d14830fbbafeb78c61e7fc5b16fad137",
+          "summary_sha256": "b8d9eb5f4770b66310692a2493ae73c62a041f46138cd2399531485aa559fe9f"
+        },
+        "cooldown_6200": {
+          "manifest_sha256": "6cbff7c6e8c852ef2a46261b21ed5642cd3401c5bf48a56b617bec6c715962d7",
+          "summary_sha256": "5de754791d617b29cfbd3a67da3bcc3d6c0a238c05eeaabb2a83d1131789785f"
+        }
+      },
+      "physical_gpu": 0,
+      "scale": "1b",
+      "schema_version": "ex54_non10b_unit_v1",
+      "seed": 2026,
+      "selected_contract_sha256": "ce7b8b14c45bb05262689a9457422130250e47fa6cbc247e346900e31a7e56d6",
+      "selection_sha256": "f8a75b3adf4c99f1ba910d7e1067f900abf6c10c058418e539debf50e1927702",
+      "stage": "formal_non10b",
+      "timing_eligible": false
+    }
+  ]
+}

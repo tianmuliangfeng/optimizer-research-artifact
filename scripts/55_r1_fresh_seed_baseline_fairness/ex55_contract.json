@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "script_version": "2026-08-17.6",
+  "protocol": {
+    "engineering_seed": 5501,
+    "fresh_formal_seed": 2027,
+    "historical_panel_seeds": [2024, 2025, 2026],
+    "repaired_panel_seeds": [2024, 2025, 2027],
+    "formal_steps": 6200,
+    "tokens_per_step": 524288,
+    "validation_every": 100,
+    "validation_tokens": 10485760,
+    "formal_smoke_steps": 34,
+    "timing_usable": false,
+    "wandb_required_for_scientific_validity": false,
+    "selection_policy": "reuse_only_the_previously_accepted_frozen_winners; no_retuning_no_dropping"
+  },
+  "methods": [
+    {"method": "block4", "family": "core", "selected_cell": "block4"},
+    {"method": "diag", "family": "core", "selected_cell": "diag"},
+    {"method": "none", "family": "core", "selected_cell": "none"},
+    {"method": "muon", "family": "core", "selected_cell": "muon"},
+    {"method": "adamw", "family": "extended", "selected_cell": "adamw_low"},
+    {"method": "normuon", "family": "extended", "selected_cell": "normuon_r1scale"},
+    {"method": "moonlight", "family": "extended", "selected_cell": "moonlight_r1scale"},
+    {"method": "mousse", "family": "mousse", "selected_cell": "mousse_lr100"},
+    {"method": "malt", "family": "malt", "selected_cell": "malt_lr0125"},
+    {"method": "malter_eq17", "family": "malt", "selected_cell": "malter_eq17_lr015"}
+  ],
+  "worker_method_labels": {
+    "moonlight": "moonlight_muon"
+  },
+  "accepted_inputs": {
+    "historical_panel_sha256": "6da83e28c832c145676128e761de4309f49b04fe48f845a411c23043c2a8c42a",
+    "extended_selection_sha256": "2b38133a27f1625c26174cea98a78568026d9a4e9b7eca12accb53e79228c80d",
+    "mousse_selection_sha256": "46a09b8053d20c0e8259c5d946be8d9ed60bc1c950fba677a74b8e563e4a2e3c",
+    "malt_selection_sha256": "591348aad2d19f36ca405abe2162d329dc89246bc41fc1fec3cb0581a28fe4ee"
+  },
+  "source_bindings": {
+    "scripts/15_official_newton_muon_r1/run_official_newton_muon_r1.py": "686128ef5a13a02538c270179f8d70197f5811968930e3efc6f978140da80367",
+    "scripts/15_official_newton_muon_r1/r1_source_builder.py": "73801dcb0d7f13b384cf49390bda2fa07d15516a85598038bc6d8e9907e4943c",
+    "scripts/19_r1_extended_baselines/run_r1_extended_baselines.py": "d63c00892485a4ecca0af9da3e935f1b35f4ec4ff05e824fdef9b16671787ab8",
+    "scripts/19_r1_extended_baselines/extended_optimizers.py": "bf39d7e1b435ef737833046c564ce8770d858d1aa474c9d7f11a914057253655",
+    "scripts/19_r1_extended_baselines/extended_source_builder.py": "53a2a25fe73b14f2ec6fc3d1af2afa469646a533bf052c6b8e44fdb8840ed718",
+    "scripts/45_r1_mousse_strong_baseline/run_r1_mousse.py": "17b66ea53aeabef279a109d4309f0c40ec94dfffc4138b09efd5b6959991cd5c",
+    "scripts/45_r1_mousse_strong_baseline/mousse_optimizer.py": "ccc2300111847b942c471bf25a19370a8743e4be6f9c37266580972c0211c336",
+    "scripts/45_r1_mousse_strong_baseline/mousse_source_builder.py": "f6b3568479b00bb6eb55524ce292ed5a5c948b030e3569dbd5f3f69f2f1b3036",
+    "scripts/45_r1_mousse_strong_baseline/mousse_contract.json": "26b395b7008f73e747b87549ea7d6e2449716367a29879ba1e856b3cfaccd8dd",
+    "scripts/49_r1_malt_strong_baseline/run_r1_malt.py": "5f84eaee199fa4e763626c0adfe79f164eb2d5e6e62686c7c2ee662f03e5b835",
+    "scripts/49_r1_malt_strong_baseline/malt_optimizer.py": "ace44ae3c4d5829bbce80c3d585d67c9debc4270518ea0f81647ac061e7d167f",
+    "scripts/49_r1_malt_strong_baseline/malt_source_builder.py": "d010491cb3c98acc400aef648d34da65010c9897cc138f0705b298ddc42962da",
+    "scripts/49_r1_malt_strong_baseline/malt_contract.json": "6193acbf018d0ae42b7f27749ee73468413e99a51c73357774b639c20b4cb684"
+  },
+  "execution_policy": {
+    "physical_gpus": ["1"],
+    "maximum_concurrent_training_processes": 1,
+    "one_process_per_gpu": true,
+    "host_colocation_policy": "GPU 0 is reserved for Experiment 53; Experiment 55 never schedules work there",
+    "formal_units": 10,
+    "all_methods_mandatory": true,
+    "formal_seed_must_not_change": true,
+    "accepted_2024_2025_rows_are_read_only": true,
+    "historical_2024_2025_2026_panel_must_be_preserved": true,
+    "no_best_checkpoint_selection": true,
+    "quality_and_state_primary": true,
+    "full_sha256_per_data_shard": true,
+    "full_sha256_per_formal_checkpoint": true,
+    "malt_pilot_lineage_frozen_self_contained_at_preflight": true
+  }
+}

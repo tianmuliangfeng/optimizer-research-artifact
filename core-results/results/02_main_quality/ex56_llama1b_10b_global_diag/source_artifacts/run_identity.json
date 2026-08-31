@@ -1,0 +1,15 @@
+{
+  "contract_sha256": "faae34be426e99b6e0af4593cd6f26c5ccbfa2e8afbfaac4a50a611fc141819a",
+  "created_at": "2026-08-17T07:01:16.527121+00:00",
+  "data_dir": "PRIVATE_PATH_REDACTED__5f931be33ddf",
+  "data_inventory_sha256": "76848d39697aa6e0a7083e4445185fd7215b4f7ddad411d60a7cd6943c384b21",
+  "gpus": [
+    3
+  ],
+  "live_repo": "PRIVATE_PATH_REDACTED",
+  "official_repo": "PRIVATE_PATH_REDACTED",
+  "run_dir": "PRIVATE_PATH_REDACTED__d070bb657e2b",
+  "schema_version": "ex56_run_identity_v1",
+  "source_snapshot_manifest_sha256": "284376d90a307e977edd647bd867c1a5b3e245a627e9ff901564e686b9a2ead5",
+  "training_python": "PRIVATE_PATH_REDACTED"
+}

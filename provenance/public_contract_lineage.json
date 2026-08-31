@@ -1,6 +1,6 @@
 {
   "policy": "Changed public hashes are limited to release path/label portability and explicit public-hash lineage; scientific settings are unchanged.",
-  "record_count": 21,
+  "record_count": 32,
   "records": [
     {
       "change_class": "path_label_or_public_hash_lineage_only",
@@ -132,22 +132,6 @@
     },
     {
       "change_class": "unchanged",
-      "original_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
-      "packaging_changed": false,
-      "public_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
-      "relative_path": "mdp_refresh_streaming/refresh_stream_contract.json",
-      "scientific_contract_changed_by_packaging": false
-    },
-    {
-      "change_class": "path_label_or_public_hash_lineage_only",
-      "original_sha256": "a164a6f8597ed94e1532acc8ca3d548524c48f65a8868c1ea94400c5c3775d71",
-      "packaging_changed": true,
-      "public_sha256": "adb07897c131978bb00635800c5a5af57e07f4d2b615eb64571c7bbdd571d6d2",
-      "relative_path": "mechanism_closure/closure_contract.json",
-      "scientific_contract_changed_by_packaging": false
-    },
-    {
-      "change_class": "unchanged",
       "original_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
       "packaging_changed": false,
       "public_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
@@ -168,6 +152,110 @@
       "packaging_changed": true,
       "public_sha256": "199d4b0a9e0877ca70e557aaea95850202b01281cdd008e0c5d8b8fd51d29997",
       "relative_path": "52_llama_global_diag_scale/llama_global_diag_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "427263e7f0d1ff353309b83d098707d55873d0bf53495626a6fc577df364f4b3",
+      "packaging_changed": false,
+      "public_sha256": "427263e7f0d1ff353309b83d098707d55873d0bf53495626a6fc577df364f4b3",
+      "relative_path": "53_r1_matched_diag_module_placement/matched_diag_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "95cb8a7186f4d27dd5fd490b04a564a11f4dc2e1801ab62f51be31b23b513a7a",
+      "packaging_changed": false,
+      "public_sha256": "95cb8a7186f4d27dd5fd490b04a564a11f4dc2e1801ab62f51be31b23b513a7a",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/accepted_ex48_data_projection.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "8903cbd214ad983094acacf83d824e95384cb38302440daaaf5cd2fa659ec5b9",
+      "packaging_changed": false,
+      "public_sha256": "8903cbd214ad983094acacf83d824e95384cb38302440daaaf5cd2fa659ec5b9",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/ex54_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+      "packaging_changed": false,
+      "public_sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/frozen_controls.csv",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "b91df4bb3612cd1fdb89173f8fc9bf7ffc2de7b3f8073c8162d4adf36d2ce659",
+      "packaging_changed": false,
+      "public_sha256": "b91df4bb3612cd1fdb89173f8fc9bf7ffc2de7b3f8073c8162d4adf36d2ce659",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/ex55_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "faae34be426e99b6e0af4593cd6f26c5ccbfa2e8afbfaac4a50a611fc141819a",
+      "packaging_changed": false,
+      "public_sha256": "faae34be426e99b6e0af4593cd6f26c5ccbfa2e8afbfaac4a50a611fc141819a",
+      "relative_path": "56_llama1b_10b_global_diag/formal_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "0fc60d42e9711ca00aaf72f88f290be9cf4a52c211740dad51315c766b8185c6",
+      "packaging_changed": false,
+      "public_sha256": "0fc60d42e9711ca00aaf72f88f290be9cf4a52c211740dad51315c766b8185c6",
+      "relative_path": "56_llama1b_10b_global_diag/frozen_ex48_controls.csv",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "4de6c759ad9e862b2aacd5fe8d668c9ef6e52988d3d3159ef641d2d01963c985",
+      "packaging_changed": false,
+      "public_sha256": "4de6c759ad9e862b2aacd5fe8d668c9ef6e52988d3d3159ef641d2d01963c985",
+      "relative_path": "57_llama1b_10b_moonlight/accepted_ex48_data_projection.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "eba75924e703a0ae1552ac2df2250bd3456f21638da3ccffb25ddd106b7b350f",
+      "packaging_changed": false,
+      "public_sha256": "eba75924e703a0ae1552ac2df2250bd3456f21638da3ccffb25ddd106b7b350f",
+      "relative_path": "57_llama1b_10b_moonlight/ex57_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+      "packaging_changed": false,
+      "public_sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+      "relative_path": "57_llama1b_10b_moonlight/frozen_controls.csv",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "2e561fb977f9624fac66590074d942ed1a8484d678b0ae6bdb19febebd0f0e3b",
+      "packaging_changed": false,
+      "public_sha256": "2e561fb977f9624fac66590074d942ed1a8484d678b0ae6bdb19febebd0f0e3b",
+      "relative_path": "57_llama1b_10b_moonlight/legacy_ex57_contract_fair_parallel_v2.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "unchanged",
+      "original_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
+      "packaging_changed": false,
+      "public_sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61",
+      "relative_path": "mdp_refresh_streaming/refresh_stream_contract.json",
+      "scientific_contract_changed_by_packaging": false
+    },
+    {
+      "change_class": "path_label_or_public_hash_lineage_only",
+      "original_sha256": "a164a6f8597ed94e1532acc8ca3d548524c48f65a8868c1ea94400c5c3775d71",
+      "packaging_changed": true,
+      "public_sha256": "adb07897c131978bb00635800c5a5af57e07f4d2b615eb64571c7bbdd571d6d2",
+      "relative_path": "mechanism_closure/closure_contract.json",
       "scientific_contract_changed_by_packaging": false
     }
   ],

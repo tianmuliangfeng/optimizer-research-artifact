@@ -1,0 +1,14 @@
+{
+  "analysis_manifest": "PRIVATE_PATH_REDACTED__15b49814f003",
+  "analysis_manifest_sha256": "87e13c29cac8932cb9a924a3c098ce1c84282a93c265b84cb6185c58e6d52628",
+  "completed_at": "2026-08-19T02:13:58.345612+00:00",
+  "descriptive_lowest_mean_arm": "c_fc_c_proj_diag",
+  "experiment_id": "53_r1_matched_diag_module_placement",
+  "formal_units": 15,
+  "passed": true,
+  "pilot_units": 5,
+  "schema_version": 1,
+  "scientific_result": "matched_placement_completed",
+  "status": "completed",
+  "timing_usable": false
+}

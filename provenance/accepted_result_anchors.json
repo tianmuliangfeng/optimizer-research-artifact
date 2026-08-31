@@ -1,521 +1,748 @@
 {
-  "schema_version": "selective_newton_muon_accepted_result_anchors_v1",
-  "path_base": "results_root",
   "artifact_payloads_bundled_in_source": false,
+  "path_base": "results_root",
   "records": [
     {
-      "experiment_id": "43_newton_muon_record28_275m",
-      "run_ids": [
-        "20260731T014352+0000"
-      ],
-      "legacy_result_roots": [
-        "43_newton_muon_record28_275m"
-      ],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_formal_passed",
       "anchors": [
         {
-          "role": "primary_scientific_analysis",
           "path": "43_newton_muon_record28_275m/20260731T014352+0000/analysis/record28_analysis_manifest.json",
+          "role": "primary_scientific_analysis",
           "sha256": "dfc519220caf3c1081e23e672c00c226f519c3b4a2171e2997439ab273c2f40c"
         },
         {
-          "role": "suite_manifest",
           "path": "43_newton_muon_record28_275m/20260731T014352+0000/record28_suite_manifest.json",
+          "role": "suite_manifest",
           "sha256": "21e07e4b4b0509fae4c3da6863ef0c1d444d9effef37d546292217ef6c3f5aea"
         },
         {
-          "role": "accepted_contract",
           "path": "43_newton_muon_record28_275m/20260731T014352+0000/source_snapshot/controller/record28_contract.json",
+          "role": "accepted_contract",
           "sha256": "dbc333f08605461b47d11622d2c2a4014c6f10aefc9f3cea4dbeef400b20e5ff"
         }
       ],
-      "gap_note": null
+      "experiment_id": "43_newton_muon_record28_275m",
+      "gap_note": null,
+      "legacy_result_roots": [
+        "43_newton_muon_record28_275m"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260731T014352+0000"
+      ],
+      "scientific_status": "accepted_formal_passed",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "44_newton_muon_record17_455m",
-      "run_ids": [
-        "20260730T104121+0000"
-      ],
-      "legacy_result_roots": [
-        "44_newton_muon_record17_455m"
-      ],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_formal_passed",
       "anchors": [
         {
-          "role": "primary_scientific_analysis",
           "path": "44_newton_muon_record17_455m/20260730T104121+0000/analysis/record17_analysis_manifest.json",
+          "role": "primary_scientific_analysis",
           "sha256": "a344b1c6d816713a66f65b4fefe6113c32d01e3ba8b1b0a172e39a21ae0e7b09"
         },
         {
-          "role": "suite_manifest",
           "path": "44_newton_muon_record17_455m/20260730T104121+0000/record17_suite_manifest.json",
+          "role": "suite_manifest",
           "sha256": "be8a2887a95c70d543f1d2938426c1ae3e2ee8677c78dec50b7ff4f9c7bc06fb"
         },
         {
-          "role": "accepted_contract",
           "path": "44_newton_muon_record17_455m/20260730T104121+0000/source_snapshot/controller/record17_contract.json",
+          "role": "accepted_contract",
           "sha256": "ebdec2e0196fcdf9b42fae7373f75f7f25d02e42daf4062f75075ce49f47dfef"
         }
       ],
-      "gap_note": null
+      "experiment_id": "44_newton_muon_record17_455m",
+      "gap_note": null,
+      "legacy_result_roots": [
+        "44_newton_muon_record17_455m"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260730T104121+0000"
+      ],
+      "scientific_status": "accepted_formal_passed",
+      "verified_during_packaging": true
     },
     {
+      "accepted": true,
+      "anchors": [
+        {
+          "path": "45_r1_mousse_strong_baseline/analysis/formal_20260803_authoritative/local_artifact_audit_manifest.json",
+          "role": "local_acceptance_audit",
+          "sha256": "b36d7c4b9b870ba69a92fb519e1b67b39dc99bf5511ad1eef2d4b967eeefa1ed"
+        },
+        {
+          "path": "45_r1_mousse_strong_baseline/analysis/formal_20260803_authoritative/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
+          "sha256": "ebda6864bb066cb1102cb2946d9007d8d406b32b6c2e5f00418ba25746fac394"
+        },
+        {
+          "path": "45_r1_mousse_strong_baseline/source_archives/45_r1_mousse_strong_baseline_732a7411.zip",
+          "role": "preserved_formal_archive",
+          "sha256": "732a7411561e15de31f9bafeb37834c0b014cca5407305deb690994b0829fc1f"
+        }
+      ],
       "experiment_id": "45_r1_mousse_strong_baseline",
+      "gap_note": "The three accepted formal result trees are preserved inside the recorded ZIP; the acceptance and scientific manifests are unpacked locally.",
+      "legacy_result_roots": [
+        "45_r1_mousse_strong_baseline"
+      ],
+      "missing_archive": false,
       "run_ids": [
         "20260731T073826+0000_formal_seed2024",
         "20260731T112529+0000_formal_seed2025",
         "20260731T073826+0000_formal_seed2026"
       ],
-      "legacy_result_roots": [
-        "45_r1_mousse_strong_baseline"
-      ],
-      "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
       "scientific_status": "accepted_formal_three_seed_completed_valid",
-      "anchors": [
-        {
-          "role": "local_acceptance_audit",
-          "path": "45_r1_mousse_strong_baseline/analysis/formal_20260803_authoritative/local_artifact_audit_manifest.json",
-          "sha256": "b36d7c4b9b870ba69a92fb519e1b67b39dc99bf5511ad1eef2d4b967eeefa1ed"
-        },
-        {
-          "role": "primary_scientific_analysis",
-          "path": "45_r1_mousse_strong_baseline/analysis/formal_20260803_authoritative/analysis_manifest.json",
-          "sha256": "ebda6864bb066cb1102cb2946d9007d8d406b32b6c2e5f00418ba25746fac394"
-        },
-        {
-          "role": "preserved_formal_archive",
-          "path": "45_r1_mousse_strong_baseline/source_archives/45_r1_mousse_strong_baseline_732a7411.zip",
-          "sha256": "732a7411561e15de31f9bafeb37834c0b014cca5407305deb690994b0829fc1f"
-        }
-      ],
-      "gap_note": "The three accepted formal result trees are preserved inside the recorded ZIP; the acceptance and scientific manifests are unpacked locally."
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "29_r1_depth_kmode",
-      "run_ids": [
-        "20260806T100702+0000"
-      ],
-      "legacy_result_roots": [
-        "29_r1_depth_kmode"
-      ],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_three_seed_formal_quality_timing_excluded",
       "anchors": [
         {
-          "role": "primary_scientific_analysis",
           "path": "29_r1_depth_kmode/analysis_20260809_formal/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
           "sha256": "a792565b329528bbdcb123186ac163eff95cc8af977b1cd96979958d3aacb3ae"
         },
         {
-          "role": "analysis_verdict",
           "path": "29_r1_depth_kmode/analysis_20260809_formal/analysis_verdict.json",
+          "role": "analysis_verdict",
           "sha256": "eb69b7c6b99da46b46ed4292a4ba985250082057d130e0b3593e39c60dbc8809"
         },
         {
-          "role": "formal_batch_state",
           "path": "29_r1_depth_kmode/batches/20260806T100702+0000/batch_state.json",
+          "role": "formal_batch_state",
           "sha256": "8b0af138cdc878334c14325a1c0a88207e5f5b937f913d1883e424efd9a29176"
         },
         {
-          "role": "acceptance_and_archive_status",
           "path": "29_r1_depth_kmode/ACCEPTANCE_AND_ARCHIVE_STATUS_20260809.md",
+          "role": "acceptance_and_archive_status",
           "sha256": "97fbdb0648129ff7bf654a0ebd236ea940040bb7e770acd746359a04c933088c"
         },
         {
-          "role": "preserved_result_archive",
           "path": "29_r1_depth_kmode/source_bundle/29_r1_depth_kmode_20260809.zip",
+          "role": "preserved_result_archive",
           "sha256": "f44ec4c7ad50c9d8f4fd94be59767146f3e6fa9871e9ec109167bbf5d3056b20"
         }
       ],
-      "gap_note": "The compact release retains accepted aggregate evidence and hash anchors, not raw W&B exports or concurrent timing. The claim is directional depth transfer with environment-specific amplitude, not a universal edge mask."
+      "experiment_id": "29_r1_depth_kmode",
+      "gap_note": "The compact release retains accepted aggregate evidence and hash anchors, not raw W&B exports or concurrent timing. The claim is directional depth transfer with environment-specific amplitude, not a universal edge mask.",
+      "legacy_result_roots": [
+        "29_r1_depth_kmode"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260806T100702+0000"
+      ],
+      "scientific_status": "accepted_three_seed_formal_quality_timing_excluded",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "49_r1_malt_strong_baseline",
-      "run_ids": [
-        "20260809T054721+0000"
-      ],
-      "legacy_result_roots": [
-        "49_r1_malt_strong_baseline"
-      ],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_fresh_v4_six_formal_completed_valid_with_wandb_reconciliation",
       "anchors": [
         {
-          "role": "primary_scientific_analysis",
           "path": "49_r1_malt_strong_baseline/analysis/formal_20260810_authoritative/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
           "sha256": "855179dee582b418d525431a2d0042911b29a86e81dbb0edf85dbf1f76e0fed7"
         },
         {
-          "role": "handoff_manifest",
           "path": "49_r1_malt_strong_baseline/analysis/formal_20260810_authoritative/handoff_manifest.json",
+          "role": "handoff_manifest",
           "sha256": "e37272e7ff8cba083ba00c24fcd6a186df4d6b5de3d3097cc0caadea7134762a"
         },
         {
-          "role": "fresh_v4_pilot_selection",
           "path": "49_r1_malt_strong_baseline/analysis/formal_20260810_authoritative/pilot_selection_verified.json",
+          "role": "fresh_v4_pilot_selection",
           "sha256": "591348aad2d19f36ca405abe2162d329dc89246bc41fc1fec3cb0581a28fe4ee"
         },
         {
-          "role": "wandb_formal_audit",
           "path": "49_r1_malt_strong_baseline/analysis/wandb_20260810_formal_review/WANDB_FORMAL_AUDIT.md",
+          "role": "wandb_formal_audit",
           "sha256": "6d7e41b871aca51e0824f426a9d585c2a3fd5db4521fa0d61c792ad1ab379472"
         },
         {
-          "role": "verified_compact_quality_state_derivative",
           "path": "49_r1_malt_strong_baseline/analysis/formal_20260810_authoritative/r1_unified_ten_method_quality_state_summary.csv",
+          "role": "verified_compact_quality_state_derivative",
           "sha256": "d932f5b8611c5e80b93cef7e2a015c07805101259e2968be068bed23d5d67ba6"
         },
         {
-          "role": "preserved_result_archive",
           "path": "49_r1_malt_strong_baseline/source_archives/49_r1_malt_strong_baseline_0567656e.zip",
+          "role": "preserved_result_archive",
           "sha256": "0567656e664d84550d2e4d3bfafc082b2073d201ce44289c6513d632623ae91d"
         }
       ],
-      "gap_note": "MALT and MALTER-Eq17 are paper-derived independent R1 adaptations rather than official-code reproductions. The compact release omits checkpoints, raw W&B exports, the full ZIP, and concurrent timing; MALT is main-panel quality/state evidence and MALTER-Eq17 is appendix-only negative evidence."
+      "experiment_id": "49_r1_malt_strong_baseline",
+      "gap_note": "MALT and MALTER-Eq17 are paper-derived independent R1 adaptations rather than official-code reproductions. The compact release omits checkpoints, raw W&B exports, the full ZIP, and concurrent timing; MALT is main-panel quality/state evidence and MALTER-Eq17 is appendix-only negative evidence.",
+      "legacy_result_roots": [
+        "49_r1_malt_strong_baseline"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260809T054721+0000"
+      ],
+      "scientific_status": "accepted_fresh_v4_six_formal_completed_valid_with_wandb_reconciliation",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "48_llama1b_10b_multibudget",
-      "run_ids": [
-        "20260805T061608+0000"
-      ],
-      "legacy_result_roots": [
-        "48_llama1b_10b_multibudget"
-      ],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_three_seed_three_budget_persistent_muon_lead_with_remote_full_checkpoint_rehash",
       "anchors": [
         {
-          "role": "primary_scientific_analysis",
           "path": "48_llama1b_10b_multibudget/20260805T061608+0000/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
           "sha256": "fb9b9f5f268cb9b2581511d485ff9b463a822e1f68f82c6a0feb6eb5993abea6"
         },
         {
-          "role": "generic_archive_verification",
           "path": "48_llama1b_10b_multibudget/analysis/final_acceptance_20260812/generic_verify_certificate.json",
+          "role": "generic_archive_verification",
           "sha256": "39c280f498b24bcefbb00d56582f236585174e9d3ef4d5afb8834489bbbb8590"
         },
         {
-          "role": "remote_full_checkpoint_native_verification",
           "path": "48_llama1b_10b_multibudget/_received_20260812/full_checkpoint_verify_20260812T031024+0000.json",
+          "role": "remote_full_checkpoint_native_verification",
           "sha256": "35416650350ca23e55de4864d1480bb1ca00b9463ef673154f74ad70f21c8010"
         },
         {
-          "role": "source_data_resume_lineage",
           "path": "48_llama1b_10b_multibudget/20260805T061608+0000/pilot_manifest.json",
+          "role": "source_data_resume_lineage",
           "sha256": "284d39638fcfb1e9117edc42f76c4cc13219152cda7d25b17e537d084048763d"
         },
         {
-          "role": "final_independent_acceptance",
           "path": "48_llama1b_10b_multibudget/analysis/final_acceptance_20260812/independent_audit_manifest.json",
+          "role": "final_independent_acceptance",
           "sha256": "c6c415dc41b884767bb6a7f93914b87e9c0ce38a8a4e45c129ef5f62e232563b"
         },
         {
-          "role": "lineage_bound_remote_full_rehash_certificate",
           "path": "48_llama1b_10b_multibudget/analysis/final_acceptance_20260812/remote_full_checkpoint_lineage_certificate.json",
+          "role": "lineage_bound_remote_full_rehash_certificate",
           "sha256": "252081aba95ecc828b10b72b9cd71aed369b021fbe13539811ab13a201f4b933"
         },
         {
-          "role": "wandb_full_trajectory_reconciliation",
           "path": "48_llama1b_10b_multibudget/analysis/final_acceptance_20260812/wandb_reconciliation_summary.json",
+          "role": "wandb_full_trajectory_reconciliation",
           "sha256": "00b7dd88b2f3707b7a078c5c19fb3f7da73ee1217f49829f42bf89a3effae896"
         },
         {
-          "role": "checkpoint_handoff_scope",
           "path": "48_llama1b_10b_multibudget/analysis/final_acceptance_20260812/checkpoint_handoff_scope.json",
+          "role": "checkpoint_handoff_scope",
           "sha256": "8b5c150f40317ea3e735891e6ec4970e314c0e12bcf321af3dac6bc2e26e3fb4"
         }
       ],
-      "gap_note": "The compact handoff omits the 36 retained endpoint checkpoints (439,092,884,892 bytes). Their phase certificates are bound to a persisted remote full-rehash receipt and a local lineage certificate; the receipt is a semantic verifier certificate, not a forensic process-execution log. Four-GPU concurrent timing is permanently ineligible for efficiency claims."
+      "experiment_id": "48_llama1b_10b_multibudget",
+      "gap_note": "The compact handoff omits the 36 retained endpoint checkpoints (439,092,884,892 bytes). Their phase certificates are bound to a persisted remote full-rehash receipt and a local lineage certificate; the receipt is a semantic verifier certificate, not a forensic process-execution log. Four-GPU concurrent timing is permanently ineligible for efficiency claims.",
+      "legacy_result_roots": [
+        "48_llama1b_10b_multibudget"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260805T061608+0000"
+      ],
+      "scientific_status": "accepted_three_seed_three_budget_persistent_muon_lead_with_remote_full_checkpoint_rehash",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "mdp04_refresh_streaming",
-      "run_ids": [
-        "20260803T063912+0000"
-      ],
-      "legacy_result_roots": [
-        "_shared/analysis/method_deepening_mdp04_refresh_replay"
-      ],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "archived_numeric_gate_failed_not_claim_eligible",
       "anchors": [
         {
-          "role": "final_local_adjudication",
           "path": "_shared/analysis/method_deepening_mdp04_refresh_replay/20260803T063912+0000_local_analysis/mdp04_local_analysis_manifest.json",
+          "role": "final_local_adjudication",
           "sha256": "d6a2144d1693a93687bf530349f5eaff4c4dff54261097703f7d106f6b286890"
         },
         {
-          "role": "formal_stream_manifest",
           "path": "_shared/analysis/method_deepening_mdp04_refresh_replay/20260803T063912+0000/analysis/formal_stream_manifest.json",
+          "role": "formal_stream_manifest",
           "sha256": "17de19a90fbf78386d3f9b0c048d0fd4c8114d3957450cc5e45e7c48a7837c52"
         },
         {
-          "role": "v4_stream_contract",
           "path": "_shared/analysis/method_deepening_mdp04_refresh_replay/20260803T063912+0000/source_snapshot_v4/scripts/mdp_refresh_streaming/refresh_stream_contract.json",
+          "role": "v4_stream_contract",
           "sha256": "3245574fe8bd219d23267b85e2c4f030a06ca9018f8166c81564beac17e38f61"
         }
       ],
-      "gap_note": "The accepted outcome is the recorded numeric-gate failure, not a passed mechanism result."
+      "experiment_id": "mdp04_refresh_streaming",
+      "gap_note": "The accepted outcome is the recorded numeric-gate failure, not a passed mechanism result.",
+      "legacy_result_roots": [
+        "_shared/analysis/method_deepening_mdp04_refresh_replay"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260803T063912+0000"
+      ],
+      "scientific_status": "archived_numeric_gate_failed_not_claim_eligible",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "46_mdp05_confirmatory_update_shock",
-      "run_ids": [
-        "20260804T021302+0000"
-      ],
-      "legacy_result_roots": [
-        "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock"
-      ],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_partial_or_null",
       "anchors": [
         {
-          "role": "accepted_scientific_analysis",
           "path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000_local_acceptance/accepted_analysis/analysis_manifest.json",
+          "role": "accepted_scientific_analysis",
           "sha256": "6cba65232a6192132f348c8958f940f22ba9cf6892944bfe737c86981924c78d"
         },
         {
-          "role": "acceptance_summary",
           "path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000_local_acceptance/acceptance_summary.json",
+          "role": "acceptance_summary",
           "sha256": "225ef2b148e8b66d1e825c3faca7b968a810aa9df996739fd39abd87f2f4de93"
         },
         {
-          "role": "derived_execution_contract",
           "path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000_local_acceptance/provenance/derived_execution_contract.json",
+          "role": "derived_execution_contract",
           "sha256": "734738b284cc63d2e1ffa8ab51c8e8b8c12630302fe627d0e455ebfc6ec35e1f"
         },
         {
-          "role": "restored_raw_scientific_analysis",
           "path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000/analysis/analysis_manifest.json",
+          "role": "restored_raw_scientific_analysis",
           "sha256": "6cba65232a6192132f348c8958f940f22ba9cf6892944bfe737c86981924c78d"
         },
         {
-          "role": "restored_raw_handoff_manifest",
           "path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/20260804T021302+0000/handoff_manifest.json",
+          "role": "restored_raw_handoff_manifest",
           "sha256": "58bd557977acdf98e5febb8e01fd224180ae7f59f771eca7b1b50d22cba3cc00"
         },
         {
-          "role": "preserved_historical_archive",
           "path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/source_archives/20260804T021302+0000_52189521.zip",
+          "role": "preserved_historical_archive",
           "sha256": "52189521ca8399ede2e33d1f96a6d9a68dc9d975e27f0e9fa1b3176718f2a1b4"
         },
         {
-          "role": "preserved_content_equivalent_reexport_archive",
           "path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/source_archives/20260804T021302+0000_def16a3ef.zip",
+          "role": "preserved_content_equivalent_reexport_archive",
           "sha256": "def16a3ef49b39e25fe946cd362cf5a752a37cf3091d29e59e6921703a3ea0cd"
         },
         {
-          "role": "local_archive_receipt",
           "path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/source_archives/20260804T021302+0000_archive_receipt.json",
+          "role": "local_archive_receipt",
           "sha256": "bbd2c7ba3c5775d2924db4fc663e65d64f0e67ce889cce4de6670e39b6312eea"
         }
       ],
+      "experiment_id": "46_mdp05_confirmatory_update_shock",
+      "gap_note": "Resolved on 2026-08-05 by recovering the exact historical ZIP. A second ZIP has different entry timestamps and therefore a different outer hash, but all 627 regular file entries have identical names, order, bytes, lengths, compressed lengths, and external attributes. Two files previously reported missing were present in both ZIPs and the local tree; that report was caused by Windows long-path visibility, and no content repair was required.",
+      "legacy_result_roots": [
+        "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock"
+      ],
+      "missing_archive": false,
       "recovered_historical_archive": {
         "name": "20260804T021302+0000.zip",
-        "stored_path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/source_archives/20260804T021302+0000_52189521.zip",
-        "sha256": "52189521ca8399ede2e33d1f96a6d9a68dc9d975e27f0e9fa1b3176718f2a1b4"
+        "sha256": "52189521ca8399ede2e33d1f96a6d9a68dc9d975e27f0e9fa1b3176718f2a1b4",
+        "stored_path": "_shared/analysis/method_deepening_mdp05_confirmatory_update_shock/source_archives/20260804T021302+0000_52189521.zip"
       },
-      "gap_note": "Resolved on 2026-08-05 by recovering the exact historical ZIP. A second ZIP has different entry timestamps and therefore a different outer hash, but all 627 regular file entries have identical names, order, bytes, lengths, compressed lengths, and external attributes. Two files previously reported missing were present in both ZIPs and the local tree; that report was caused by Windows long-path visibility, and no content repair was required."
+      "run_ids": [
+        "20260804T021302+0000"
+      ],
+      "scientific_status": "accepted_partial_or_null",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "47_update_geometry_curvature",
-      "run_ids": [
-        "20260804T070221+0000"
-      ],
-      "legacy_result_roots": [
-        "_shared/analysis/method_deepening_geo01_update_curvature"
-      ],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_engineering_pilot_only_no_scientific_claim",
       "anchors": [
         {
-          "role": "engineering_pilot_analysis",
           "path": "_shared/analysis/method_deepening_geo01_update_curvature/20260804T070221+0000/analysis/analysis_manifest.json",
+          "role": "engineering_pilot_analysis",
           "sha256": "94d015551b502451bcbcf06edf9352ce0b9662ebce89aff5cd812cc5ed26e382"
         },
         {
-          "role": "derived_execution_contract",
           "path": "_shared/analysis/method_deepening_geo01_update_curvature/20260804T070221+0000/sealed/derived_execution_contract.json",
+          "role": "derived_execution_contract",
           "sha256": "1bccfaf0c3658602c2a9d02a484e49c0f53851f5f916d567c9423bd57673b3b7"
         },
         {
-          "role": "handoff_manifest",
           "path": "_shared/analysis/method_deepening_geo01_update_curvature/20260804T070221+0000/handoff_manifest.json",
+          "role": "handoff_manifest",
           "sha256": "3ecb9acfec5d48ac776b13221a4ef511aa69d1a61f1f58a13c4b0e5f1ccff8eb"
         },
         {
-          "role": "preserved_result_archive",
           "path": "_shared/analysis/method_deepening_geo01_update_curvature/source_archives/20260804T070221+0000_e5a96a89.zip",
+          "role": "preserved_result_archive",
           "sha256": "e5a96a894ecad29a632533c6532c516bf7493cafe50bbc7424186fab2488ede2"
         },
         {
-          "role": "local_archive_receipt",
           "path": "_shared/analysis/method_deepening_geo01_update_curvature/source_archives/20260804T070221+0000_archive_receipt.json",
+          "role": "local_archive_receipt",
           "sha256": "b38e62b5c46b2367511179cb7bd5b5d35b1056a4a20f57c7feb6e358bc0f82d7"
         }
       ],
-      "gap_note": "Resolved on 2026-08-05. This remains an engineering pilot that is explicitly not claim-eligible; archiving does not upgrade its scientific status."
+      "experiment_id": "47_update_geometry_curvature",
+      "gap_note": "Resolved on 2026-08-05. This remains an engineering pilot that is explicitly not claim-eligible; archiving does not upgrade its scientific status.",
+      "legacy_result_roots": [
+        "_shared/analysis/method_deepening_geo01_update_curvature"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260804T070221+0000"
+      ],
+      "scientific_status": "accepted_engineering_pilot_only_no_scientific_claim",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "47b_geo01b_update_geometry_discovery",
-      "run_ids": [
-        "20260804T083122+0000"
+      "accepted": true,
+      "anchors": [
+        {
+          "path": "47b_geo01b_update_geometry_discovery/20260804T083122+0000/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
+          "sha256": "cbc0d231a660079ba891fd90b47dad6935ff0a58cb3ae5aa86177a4c883b2b1c"
+        },
+        {
+          "path": "47b_geo01b_update_geometry_discovery/20260804T083122+0000/source_snapshot/scripts/47b_geo01b_update_geometry_discovery/geo01b_contract.json",
+          "role": "frozen_contract",
+          "sha256": "6362647488486acd56cc6cfd9648cd6d990a85aa573c8f9ef2dcca20679d5e04"
+        },
+        {
+          "path": "47b_geo01b_update_geometry_discovery/20260804T083122+0000/handoff_manifest.json",
+          "role": "handoff_manifest",
+          "sha256": "0fedf27e450e4be90f302bbd017e02de5477f66c8d34faee254318efbeea47e3"
+        }
       ],
+      "experiment_id": "47b_geo01b_update_geometry_discovery",
+      "gap_note": "The alternative shared-analysis legacy root is absent locally; the accepted full run is retained under the experiment-specific root.",
       "legacy_result_roots": [
         "47b_geo01b_update_geometry_discovery",
         "_shared/analysis/method_deepening_geo01b_update_geometry_discovery"
       ],
-      "accepted": true,
-      "verified_during_packaging": true,
       "missing_archive": false,
-      "scientific_status": "accepted_discovery_directional_geometry_not_supported_not_claim_eligible",
-      "anchors": [
-        {
-          "role": "primary_scientific_analysis",
-          "path": "47b_geo01b_update_geometry_discovery/20260804T083122+0000/analysis/analysis_manifest.json",
-          "sha256": "cbc0d231a660079ba891fd90b47dad6935ff0a58cb3ae5aa86177a4c883b2b1c"
-        },
-        {
-          "role": "frozen_contract",
-          "path": "47b_geo01b_update_geometry_discovery/20260804T083122+0000/source_snapshot/scripts/47b_geo01b_update_geometry_discovery/geo01b_contract.json",
-          "sha256": "6362647488486acd56cc6cfd9648cd6d990a85aa573c8f9ef2dcca20679d5e04"
-        },
-        {
-          "role": "handoff_manifest",
-          "path": "47b_geo01b_update_geometry_discovery/20260804T083122+0000/handoff_manifest.json",
-          "sha256": "0fedf27e450e4be90f302bbd017e02de5477f66c8d34faee254318efbeea47e3"
-        }
+      "run_ids": [
+        "20260804T083122+0000"
       ],
-      "gap_note": "The alternative shared-analysis legacy root is absent locally; the accepted full run is retained under the experiment-specific root."
+      "scientific_status": "accepted_discovery_directional_geometry_not_supported_not_claim_eligible",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "50_r1_global_activation_diag",
-      "run_ids": ["20260814T045805+0000"],
-      "legacy_result_roots": ["50_r1_global_activation_diag"],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_global_diag_worse_than_selective_diag_three_seed",
       "anchors": [
         {
-          "role": "primary_scientific_analysis",
           "path": "50_r1_global_activation_diag/20260814T045805+0000/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
           "sha256": "a34f32e82ca9ecb47d77eb61452d6ab2b996d779b736adc82800b9044b6ee62b"
         },
         {
-          "role": "handoff_manifest",
           "path": "50_r1_global_activation_diag/20260814T045805+0000/handoff_manifest.json",
+          "role": "handoff_manifest",
           "sha256": "2acbc1b8df4fe63617af19df87cee298623ba0094ca5c449d3ddebb0a8abaa9b"
         },
         {
-          "role": "formal_manifest",
           "path": "50_r1_global_activation_diag/20260814T045805+0000/formal_manifest.json",
+          "role": "formal_manifest",
           "sha256": "f1fcf8c1c6a957e7061b835168de8e620d0be659f527dc4e65cc45f92e89dd32"
         },
         {
-          "role": "source_snapshot_manifest",
           "path": "50_r1_global_activation_diag/20260814T045805+0000/source_snapshot/source_snapshot_manifest.json",
+          "role": "source_snapshot_manifest",
           "sha256": "2ade88d8dc2ee388f11cb5d3a82a4f9ff8ef3f53f21793c3de916427ae9b3d4b"
         },
         {
-          "role": "wandb_reconciliation",
           "path": "_shared/analysis/global_diag_wandb_reconciliation_20260816/wandb_audit_manifest.json",
+          "role": "wandb_reconciliation",
           "sha256": "9a6a1cc33178aff11dd46edae7b18649cf3e376f3159ae08d6df6a5344ca3dec"
         }
       ],
-      "gap_note": "W&B is a pointwise-checked secondary mirror; concurrent timing is excluded."
+      "experiment_id": "50_r1_global_activation_diag",
+      "gap_note": "W&B is a pointwise-checked secondary mirror; concurrent timing is excluded.",
+      "legacy_result_roots": [
+        "50_r1_global_activation_diag"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260814T045805+0000"
+      ],
+      "scientific_status": "accepted_global_diag_worse_than_selective_diag_three_seed",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "51_moddedgpt_global_diag_scale",
-      "run_ids": ["20260814T103626+0000"],
-      "legacy_result_roots": ["51_moddedgpt_global_diag_scale"],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_moddedgpt_global_diag_scale_confirmation",
       "anchors": [
         {
-          "role": "primary_scientific_analysis",
           "path": "51_moddedgpt_global_diag_scale/20260814T103626+0000/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
           "sha256": "aebc409fa4e4ab8f7f3d2d7b7f83d2a05e61c8b91ce759368ea5054501d331e9"
         },
         {
-          "role": "handoff_manifest",
           "path": "51_moddedgpt_global_diag_scale/20260814T103626+0000/handoff_manifest.json",
+          "role": "handoff_manifest",
           "sha256": "745a03295acb91e10417590bb4158239b3a21802a885bc47a0a3ef929707e805"
         },
         {
-          "role": "formal_manifest",
           "path": "51_moddedgpt_global_diag_scale/20260814T103626+0000/formal/formal_manifest.json",
+          "role": "formal_manifest",
           "sha256": "d433011d3d3ac0868554f91ec5783f07dec10be955cfb4c6166464f032b05746"
         },
         {
-          "role": "source_snapshot_manifest",
           "path": "51_moddedgpt_global_diag_scale/20260814T103626+0000/source_snapshot/source_snapshot_manifest.json",
+          "role": "source_snapshot_manifest",
           "sha256": "a3d8c7edf4f5e0857d41fb922e011af10d422e0dc47bee788adfc07a692c8be7"
         },
         {
-          "role": "wandb_reconciliation",
           "path": "_shared/analysis/global_diag_wandb_reconciliation_20260816/wandb_audit_manifest.json",
+          "role": "wandb_reconciliation",
           "sha256": "9a6a1cc33178aff11dd46edae7b18649cf3e376f3159ae08d6df6a5344ca3dec"
         }
       ],
-      "gap_note": "W&B is a pointwise-checked secondary mirror; concurrent timing is excluded."
+      "experiment_id": "51_moddedgpt_global_diag_scale",
+      "gap_note": "W&B is a pointwise-checked secondary mirror; concurrent timing is excluded.",
+      "legacy_result_roots": [
+        "51_moddedgpt_global_diag_scale"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260814T103626+0000"
+      ],
+      "scientific_status": "accepted_moddedgpt_global_diag_scale_confirmation",
+      "verified_during_packaging": true
     },
     {
-      "experiment_id": "52_llama_global_diag_scale",
-      "run_ids": ["20260814T081710+0000"],
-      "legacy_result_roots": ["52_llama_global_diag_scale"],
       "accepted": true,
-      "verified_during_packaging": true,
-      "missing_archive": false,
-      "scientific_status": "accepted_llama_global_diag_scale_confirmation",
       "anchors": [
         {
-          "role": "primary_scientific_analysis",
           "path": "52_llama_global_diag_scale/20260814T081710+0000/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
           "sha256": "9472b035a994d7e7810933c37383711ef47418a2508217aad053d8ed79056bbd"
         },
         {
-          "role": "handoff_manifest",
           "path": "52_llama_global_diag_scale/20260814T081710+0000/handoff_manifest.json",
+          "role": "handoff_manifest",
           "sha256": "5b825de88a0d5710174a3fccd1bbc02b7850d14b5f69bf2f10b9abb5c6ad85d2"
         },
         {
-          "role": "formal_manifest",
           "path": "52_llama_global_diag_scale/20260814T081710+0000/formal/formal_manifest.json",
+          "role": "formal_manifest",
           "sha256": "396fdf995e7fee379f67c3223191b2a62f27c4ff0410f093bbc4f719958a3a9d"
         },
         {
-          "role": "source_snapshot_manifest",
           "path": "52_llama_global_diag_scale/20260814T081710+0000/source_snapshot/source_snapshot_manifest.json",
+          "role": "source_snapshot_manifest",
           "sha256": "3b55a132071d2fa340f9ae233fb154d43a46f0de188c16665d86e01d05c01f76"
         },
         {
-          "role": "wandb_reconciliation",
           "path": "_shared/analysis/global_diag_wandb_reconciliation_20260816/wandb_audit_manifest.json",
+          "role": "wandb_reconciliation",
           "sha256": "9a6a1cc33178aff11dd46edae7b18649cf3e376f3159ae08d6df6a5344ca3dec"
         }
       ],
-      "gap_note": "The reused 1B W&B history stitches screen and formal; accepted local formal CSVs and manifests remain primary. Timing is excluded."
+      "experiment_id": "52_llama_global_diag_scale",
+      "gap_note": "The reused 1B W&B history stitches screen and formal; accepted local formal CSVs and manifests remain primary. Timing is excluded.",
+      "legacy_result_roots": [
+        "52_llama_global_diag_scale"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260814T081710+0000"
+      ],
+      "scientific_status": "accepted_llama_global_diag_scale_confirmation",
+      "verified_during_packaging": true
+    },
+    {
+      "accepted": true,
+      "anchors": [
+        {
+          "path": "53_r1_matched_diag_module_placement/received_20260820/source_artifacts/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
+          "sha256": "87e13c29cac8932cb9a924a3c098ce1c84282a93c265b84cb6185c58e6d52628"
+        },
+        {
+          "path": "53_r1_matched_diag_module_placement/received_20260820/source_artifacts/handoff_manifest.json",
+          "role": "handoff_manifest",
+          "sha256": "ef598568d326a3110bce60deb6b56449bd87fb49c39d1b78378b18d7dc8e5cd4"
+        },
+        {
+          "path": "53_r1_matched_diag_module_placement/received_20260820/source_artifacts/formal_manifest.json",
+          "role": "formal_manifest",
+          "sha256": "9b7a79f1b09001fa015cbd2d25680759dba7a3d6321a11943fa925a1cfb42cda"
+        },
+        {
+          "path": "53_r1_matched_diag_module_placement/received_20260820/source_artifacts/source_snapshot_manifest.json",
+          "role": "source_snapshot_manifest",
+          "sha256": "076f31273d99f3312d1e8d7e1bcaf4486434e9dc2870e346a65f530c71214d50"
+        },
+        {
+          "path": "53_r1_matched_diag_module_placement/received_20260820/independent_review/independent_review_manifest.json",
+          "role": "independent_review",
+          "sha256": "d14d9cfa5e15be2ce3972b582156df9edd5dbf1a7c73d2f8c1655dab29124d7c"
+        },
+        {
+          "path": "53_r1_matched_diag_module_placement/received_20260820/wandb/reconciliation/wandb_audit_manifest.json",
+          "role": "wandb_reconciliation",
+          "sha256": "0a174bf6475e2e8f73f83db9647bb91d73989d14d0f143d489da4e17e2562982"
+        }
+      ],
+      "experiment_id": "53_r1_matched_diag_module_placement",
+      "gap_note": "Matched diagonal representations isolate placement within the tested Modded GPT setting; no universal module ranking is claimed.",
+      "legacy_result_roots": [
+        "53_r1_matched_diag_module_placement"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260817T013015+0000"
+      ],
+      "scientific_status": "accepted_matched_diagonal_module_placement_three_seed",
+      "verified_during_packaging": true
+    },
+    {
+      "accepted": true,
+      "anchors": [
+        {
+          "path": "54_llama_moonlight_multiscale_multibudget/received_20260831/source_artifacts/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
+          "sha256": "18f1eadbbbc909af70866f040ff3f8b5e17b8a287bb7fd18ca979c31daecddb4"
+        },
+        {
+          "path": "54_llama_moonlight_multiscale_multibudget/received_20260831/source_artifacts/completion_manifest.json",
+          "role": "completion_manifest",
+          "sha256": "254e9c5ae56be37f1d1d203081773f9851b46e3669a48f7301f3bda00949e7fe"
+        },
+        {
+          "path": "54_llama_moonlight_multiscale_multibudget/received_20260831/source_artifacts/formal/formal_non10b_manifest.json",
+          "role": "formal_manifest",
+          "sha256": "69ab0de84079c968f1eb4e93a4baa560031015d99c303ca1092c7623ff986f0a"
+        },
+        {
+          "path": "54_llama_moonlight_multiscale_multibudget/received_20260831/source_artifacts/source_snapshot/source_snapshot_manifest.json",
+          "role": "source_snapshot_manifest",
+          "sha256": "b74311165b07eae365c1bbf78402f2cc6babbe6a355c072db974daa638d77379"
+        },
+        {
+          "path": "54_llama_moonlight_multiscale_multibudget/received_20260831/independent_review/independent_review_manifest.json",
+          "role": "independent_review",
+          "sha256": "152a5670e3a15728fc10c6607d1d9641b6f3dc30a513cfac72a585e72141f5ad"
+        }
+      ],
+      "experiment_id": "54_llama_moonlight_multiscale_multibudget",
+      "gap_note": "Moonlight is strong at 124M but weaker at 1B; EX54 and EX57 are not pooled. Timing is excluded.",
+      "legacy_result_roots": [
+        "54_llama_moonlight_multiscale_multibudget"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260820T043013+0000"
+      ],
+      "scientific_status": "accepted_moonlight_multiscale_architecture_conditioned",
+      "verified_during_packaging": true
+    },
+    {
+      "accepted": true,
+      "anchors": [
+        {
+          "path": "55_r1_fresh_seed_baseline_fairness/received_20260820/source_artifacts/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
+          "sha256": "00f1adf557010d75459fad1cc29b1913c74d348118ef28de75ea97921b7b8f2e"
+        },
+        {
+          "path": "55_r1_fresh_seed_baseline_fairness/received_20260820/source_artifacts/handoff_manifest.json",
+          "role": "handoff_manifest",
+          "sha256": "bd12087fc5f84ef78f2ced4fd374fa92f5f131824f21eacce029237535d7a763"
+        },
+        {
+          "path": "55_r1_fresh_seed_baseline_fairness/received_20260820/source_artifacts/formal_units_manifest.json",
+          "role": "formal_units_manifest",
+          "sha256": "a7c6a4967a81d619205957d1d81fac6e014c3838552ab158e8c0ca6b2fdb2e90"
+        },
+        {
+          "path": "55_r1_fresh_seed_baseline_fairness/received_20260820/source_artifacts/source_snapshot_manifest.json",
+          "role": "source_snapshot_manifest",
+          "sha256": "aea2bed59e788f72c4fba227560bb73e102ccbcbd5b901048cd2399045cea239"
+        },
+        {
+          "path": "55_r1_fresh_seed_baseline_fairness/received_20260820/independent_review/independent_review_manifest.json",
+          "role": "independent_review",
+          "sha256": "9ba6d4bf94967b8119e4d246ed8e6d3072ace2f251734abcf68f16713369adfc"
+        },
+        {
+          "path": "55_r1_fresh_seed_baseline_fairness/received_20260820/wandb/reconciliation/wandb_audit_manifest.json",
+          "role": "wandb_reconciliation",
+          "sha256": "2ef6ce89adec9bfce1990c59181b7109b15b82646e50efb97ed3b4099602f8a3"
+        }
+      ],
+      "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+      "gap_note": "The accepted panel uses the repaired tail-5 lineage and a fresh formal seed; timing is not a claim.",
+      "legacy_result_roots": [
+        "55_r1_fresh_seed_baseline_fairness"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260817T021952+0000"
+      ],
+      "scientific_status": "accepted_fresh_seed_baseline_fairness",
+      "verified_during_packaging": true
+    },
+    {
+      "accepted": true,
+      "anchors": [
+        {
+          "path": "56_llama1b_10b_global_diag/received_20260831/source_artifacts/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
+          "sha256": "1cdd8cf50f7530cd81c8135ba32b0ae136285450d3da68c56a33ce8c09e1c0c4"
+        },
+        {
+          "path": "56_llama1b_10b_global_diag/received_20260831/source_artifacts/handoff_manifest.json",
+          "role": "handoff_manifest",
+          "sha256": "cbfb1afc0271617d94974276204909f4ecbae07394102bbd7900a2cca137d04c"
+        },
+        {
+          "path": "56_llama1b_10b_global_diag/received_20260831/source_artifacts/analysis/native_verify_full.json",
+          "role": "native_verify_full",
+          "sha256": "6becd343a650d22cbfa15b61d7ba4f6da98e38ff7d6203f14c1157fb6781c59e"
+        },
+        {
+          "path": "56_llama1b_10b_global_diag/received_20260831/source_artifacts/source_snapshot/source_snapshot_manifest.json",
+          "role": "source_snapshot_manifest",
+          "sha256": "284376d90a307e977edd647bd867c1a5b3e245a627e9ff901564e686b9a2ead5"
+        },
+        {
+          "path": "56_llama1b_10b_global_diag/received_20260831/independent_review/independent_review_manifest.json",
+          "role": "independent_review",
+          "sha256": "a5ba90825e21a5b6ef82bf00c3f524be6aa0d1826bb39678f50d3698df293376"
+        }
+      ],
+      "experiment_id": "56_llama1b_10b_global_diag",
+      "gap_note": "Global diagonal beats all local curvature-state routes at 27/27 endpoints; Muon beats global diagonal at 9/9. No equivalence claim is made.",
+      "legacy_result_roots": [
+        "56_llama1b_10b_global_diag"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260817T065720+0000"
+      ],
+      "scientific_status": "accepted_llama1b_10b_global_diag_ordering",
+      "verified_during_packaging": true
+    },
+    {
+      "accepted": true,
+      "anchors": [
+        {
+          "path": "57_llama1b_10b_moonlight/received_20260831/source_artifacts/analysis/analysis_manifest.json",
+          "role": "primary_scientific_analysis",
+          "sha256": "9ed007a81efc2ed7dbda10ddf1de972a4291fba693ad92e659293ec7ce0a7bcc"
+        },
+        {
+          "path": "57_llama1b_10b_moonlight/received_20260831/source_artifacts/completion_manifest.json",
+          "role": "completion_manifest",
+          "sha256": "85af81b4c77e47172e3db1b92cb8b9014545c6a51adf6deced216f0279a19383"
+        },
+        {
+          "path": "57_llama1b_10b_moonlight/received_20260831/source_artifacts/formal/formal_manifest.json",
+          "role": "formal_manifest",
+          "sha256": "65609fcf80909d31bc3370e9f58ba270eebeacb9b9c673075408ff6c340b8c16"
+        },
+        {
+          "path": "57_llama1b_10b_moonlight/received_20260831/source_artifacts/source_snapshot/source_snapshot_manifest.json",
+          "role": "source_snapshot_manifest",
+          "sha256": "e4ec8bb45d31e0d1722d665b8fbea4bf35be367aa620d19f76708732a7b89cc1"
+        },
+        {
+          "path": "57_llama1b_10b_moonlight/received_20260831/independent_review/independent_review_manifest.json",
+          "role": "independent_review",
+          "sha256": "768f6b6ff8c2c216fc3fb77d93c6272daaf5823bee24636a3f786235ed5ccc15"
+        }
+      ],
+      "experiment_id": "57_llama1b_10b_moonlight",
+      "gap_note": "Moonlight trails Muon at all three budgets and all core routes at the two longer budgets. Timing is excluded.",
+      "legacy_result_roots": [
+        "57_llama1b_10b_moonlight"
+      ],
+      "missing_archive": false,
+      "run_ids": [
+        "20260820T043038+0000"
+      ],
+      "scientific_status": "accepted_llama1b_10b_moonlight_long_budget",
+      "verified_during_packaging": true
     }
-  ]
+  ],
+  "schema_version": "selective_newton_muon_accepted_result_anchors_v1"
 }

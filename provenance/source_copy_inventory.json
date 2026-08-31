@@ -1,6 +1,6 @@
 {
   "path_policy": "Only source-role labels and repository-relative paths are public.",
-  "record_count": 525,
+  "record_count": 590,
   "records": [
     {
       "original_present_at_packaging": true,
@@ -3476,6 +3476,750 @@
     },
     {
       "original_present_at_packaging": true,
+      "original_sha256": "0dac076fb13f1f15ad1107b9c19c76d23a2c2dea71d6a7d97d8c68562369b409",
+      "packaging_changed": true,
+      "public_sha256": "3d59cb781e92739e134ed51a5ab9353ea4aee762bcf9beb3ba631c70c865dec8",
+      "relative_path": "50_r1_global_activation_diag/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "18b7aff7994c52b8bf348db59a77763d5dac681ce99c1ed6eb9cfc37e3fd508c",
+      "packaging_changed": false,
+      "public_sha256": "18b7aff7994c52b8bf348db59a77763d5dac681ce99c1ed6eb9cfc37e3fd508c",
+      "relative_path": "50_r1_global_activation_diag/analyze_global_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4",
+      "packaging_changed": false,
+      "public_sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4",
+      "relative_path": "50_r1_global_activation_diag/frozen_r1_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
+      "packaging_changed": false,
+      "public_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
+      "relative_path": "50_r1_global_activation_diag/global_diag_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "02e0b84d36637180428b6181f542e334ace02ce56eb60d948ffa2dcb2e28dbb1",
+      "packaging_changed": false,
+      "public_sha256": "02e0b84d36637180428b6181f542e334ace02ce56eb60d948ffa2dcb2e28dbb1",
+      "relative_path": "50_r1_global_activation_diag/global_diag_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b5ffbff45f76defa97ec17032cc5412d6682ff19fdadae10efced5a5dd1aa479",
+      "packaging_changed": true,
+      "public_sha256": "74385786f1bb88266dc0934532e003cb6eaf651fe8a781b76d181a5b989ec2fd",
+      "relative_path": "50_r1_global_activation_diag/run_global_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "698839ce928410a4a484aa2ff98a15ab0c35459f1bbbc8a5a23148ebd3f59b12",
+      "packaging_changed": true,
+      "public_sha256": "5f2d5023a5a830e9e42b66788992f87e30009a31ef414c03387bc2fca283c068",
+      "relative_path": "50_r1_global_activation_diag/run_global_diag_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "4d018b6624b8b7959a4fb0aa6bf6edf56f457a509642edfa18b0a4081f402333",
+      "packaging_changed": false,
+      "public_sha256": "4d018b6624b8b7959a4fb0aa6bf6edf56f457a509642edfa18b0a4081f402333",
+      "relative_path": "50_r1_global_activation_diag/test_analyze_global_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "e431a8c0012378db022904655661b8295a1649a3c147eab54506cb5d15b92ffa",
+      "packaging_changed": false,
+      "public_sha256": "e431a8c0012378db022904655661b8295a1649a3c147eab54506cb5d15b92ffa",
+      "relative_path": "50_r1_global_activation_diag/test_global_diag_source.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "da836b08b5f9e123b90104eb41c52d0359851a7c322fd9dbe6a65db381a1927b",
+      "packaging_changed": false,
+      "public_sha256": "da836b08b5f9e123b90104eb41c52d0359851a7c322fd9dbe6a65db381a1927b",
+      "relative_path": "50_r1_global_activation_diag/test_global_diag_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "bfcf60f45d95b0638a7a2c4dc1c8a0c2067cc4cab001b5009380a82e220c4cd6",
+      "packaging_changed": false,
+      "public_sha256": "bfcf60f45d95b0638a7a2c4dc1c8a0c2067cc4cab001b5009380a82e220c4cd6",
+      "relative_path": "51_moddedgpt_global_diag_scale/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "c877bf41c004d4f49ad178ffb282586e4c51141ffdd3d580be7a2123ead8d448",
+      "packaging_changed": false,
+      "public_sha256": "c877bf41c004d4f49ad178ffb282586e4c51141ffdd3d580be7a2123ead8d448",
+      "relative_path": "51_moddedgpt_global_diag_scale/analyze_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79",
+      "packaging_changed": false,
+      "public_sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79",
+      "relative_path": "51_moddedgpt_global_diag_scale/frozen_scale_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
+      "packaging_changed": false,
+      "public_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
+      "relative_path": "51_moddedgpt_global_diag_scale/global_diag_scale_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0b36f9eff7b941617ba5b23a8bb20ae40bc86b286d9eb9e94ad34025586be6c1",
+      "packaging_changed": false,
+      "public_sha256": "0b36f9eff7b941617ba5b23a8bb20ae40bc86b286d9eb9e94ad34025586be6c1",
+      "relative_path": "51_moddedgpt_global_diag_scale/global_diag_scale_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "3de5126424351064311c99001d73d3595faf9649ca830ad101eb8dfad9305be5",
+      "packaging_changed": false,
+      "public_sha256": "3de5126424351064311c99001d73d3595faf9649ca830ad101eb8dfad9305be5",
+      "relative_path": "51_moddedgpt_global_diag_scale/prepare_frozen51_data_repo.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "61927beb2541d577df6b76141f4d94cdcd587a2c133e5d9328ea98d206d1c63b",
+      "packaging_changed": false,
+      "public_sha256": "61927beb2541d577df6b76141f4d94cdcd587a2c133e5d9328ea98d206d1c63b",
+      "relative_path": "51_moddedgpt_global_diag_scale/run_global_diag_scale_cell.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "59429f1b88642809c848de2a39dd9d71319bd7e9168cf180290aa55259dc9a68",
+      "packaging_changed": true,
+      "public_sha256": "0b9258ffb3c950e066029a425a7b16b5848d61cf7222f653c410b7b5488884b2",
+      "relative_path": "51_moddedgpt_global_diag_scale/run_global_diag_scale_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "e9c23e135d411aabeef92d76929a99c5bf4270fd61d4a6612fee366940b9ddcd",
+      "packaging_changed": false,
+      "public_sha256": "e9c23e135d411aabeef92d76929a99c5bf4270fd61d4a6612fee366940b9ddcd",
+      "relative_path": "51_moddedgpt_global_diag_scale/test_analyze_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "d0c055bdd22257c26a4db4daba848611394024970c8ecd3f5b9cfd9f997813fa",
+      "packaging_changed": true,
+      "public_sha256": "9d669a012e7c02de7ced890f0bbc59c2e354cb5d17dcda17d7f3e63774492bd9",
+      "relative_path": "51_moddedgpt_global_diag_scale/test_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "720e502eb3c05b9756ed9b045866a53c9c40b8ae26b3beb09847f393fb0dfed6",
+      "packaging_changed": false,
+      "public_sha256": "720e502eb3c05b9756ed9b045866a53c9c40b8ae26b3beb09847f393fb0dfed6",
+      "relative_path": "52_llama_global_diag_scale/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0c702c3c26686db1b443002ccbbbdcaf40b11e8536122511a472b5fe4315659e",
+      "packaging_changed": false,
+      "public_sha256": "0c702c3c26686db1b443002ccbbbdcaf40b11e8536122511a472b5fe4315659e",
+      "relative_path": "52_llama_global_diag_scale/analyze_llama_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "e5864fbe5997df2a09c8063705a6fa1117fec73f332ae3780105f944ce7c8474",
+      "packaging_changed": false,
+      "public_sha256": "e5864fbe5997df2a09c8063705a6fa1117fec73f332ae3780105f944ce7c8474",
+      "relative_path": "52_llama_global_diag_scale/frozen_llama_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
+      "packaging_changed": true,
+      "public_sha256": "199d4b0a9e0877ca70e557aaea95850202b01281cdd008e0c5d8b8fd51d29997",
+      "relative_path": "52_llama_global_diag_scale/llama_global_diag_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "184c9c4f8b966adf676348e353ae0ff9100b7f459520e1ef7fe235f073f9bd85",
+      "packaging_changed": true,
+      "public_sha256": "78f4be8b0e810f89112448882d45c478193c199f6b138cbfb4b7a1ca580cbb8a",
+      "relative_path": "52_llama_global_diag_scale/llama_global_diag_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "3fec2d0e27b499284ba28eb9b61532ca8a02e1704a3437f0edb7776d2b1e060a",
+      "packaging_changed": false,
+      "public_sha256": "3fec2d0e27b499284ba28eb9b61532ca8a02e1704a3437f0edb7776d2b1e060a",
+      "relative_path": "52_llama_global_diag_scale/prepare_frozen50_view.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "917ca5fa152a13091af9a2d35a4cc286f93c46ac0967a81cb704cd6b1dfa5671",
+      "packaging_changed": true,
+      "public_sha256": "8737e562aae5ca80fa1d24d3110177601c88e3358b8f5a3b14888542c382ab05",
+      "relative_path": "52_llama_global_diag_scale/run_llama_global_diag_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "cb6ced6de2b2816640a355f36a684aaf575fd314f742a5887d7cbcd36a5e751e",
+      "packaging_changed": false,
+      "public_sha256": "cb6ced6de2b2816640a355f36a684aaf575fd314f742a5887d7cbcd36a5e751e",
+      "relative_path": "52_llama_global_diag_scale/test_analyze_llama_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "20671514db193705d97e6882d720e027dcd15becae985cc96c15403a464232d4",
+      "packaging_changed": true,
+      "public_sha256": "e7d75f62396ba5a10c471c93894e95e7c6c58e2f78a04f68383b9408311a75fe",
+      "relative_path": "52_llama_global_diag_scale/test_llama_global_diag_scale.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "3c52d232589ed8c8e2f1cdae2248f2ee732c65b8ba73deb65bae572c72e4d91f",
+      "packaging_changed": true,
+      "public_sha256": "a3523cddddf023e81ada1d822f9a34cc8239d2bbb41b5451af7adda4dc7ffa24",
+      "relative_path": "53_r1_matched_diag_module_placement/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "af198f6a804b32a1c0f408a749917b8fb39276baffd44bf4d148b18e09c91e2b",
+      "packaging_changed": false,
+      "public_sha256": "af198f6a804b32a1c0f408a749917b8fb39276baffd44bf4d148b18e09c91e2b",
+      "relative_path": "53_r1_matched_diag_module_placement/analyze_matched_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "427263e7f0d1ff353309b83d098707d55873d0bf53495626a6fc577df364f4b3",
+      "packaging_changed": false,
+      "public_sha256": "427263e7f0d1ff353309b83d098707d55873d0bf53495626a6fc577df364f4b3",
+      "relative_path": "53_r1_matched_diag_module_placement/matched_diag_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "c4400ae77075622b1256ecc39b31dd28d5d580e49d3ded004dce8c129ba2fc54",
+      "packaging_changed": false,
+      "public_sha256": "c4400ae77075622b1256ecc39b31dd28d5d580e49d3ded004dce8c129ba2fc54",
+      "relative_path": "53_r1_matched_diag_module_placement/matched_diag_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "829b93a3907399af83f913531f9d2c8bd8e8dc859be622e4e7a90abfe3644fa4",
+      "packaging_changed": false,
+      "public_sha256": "829b93a3907399af83f913531f9d2c8bd8e8dc859be622e4e7a90abfe3644fa4",
+      "relative_path": "53_r1_matched_diag_module_placement/run_matched_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "ca6a42496b8e9f9a99b0cd09c9ebc5cf9cd6745265dc8ab15888291f5b880ce8",
+      "packaging_changed": true,
+      "public_sha256": "01f2d06997215763e5269a8b94cbdfb88ccc166fcb90380b8c48b9d7c37e3782",
+      "relative_path": "53_r1_matched_diag_module_placement/run_matched_diag_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0669dce32676219b7a420c9fe5d6cedeeb656e02900c1b195601513714ff1556",
+      "packaging_changed": false,
+      "public_sha256": "0669dce32676219b7a420c9fe5d6cedeeb656e02900c1b195601513714ff1556",
+      "relative_path": "53_r1_matched_diag_module_placement/test_analyze_matched_diag.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "2ed8c51b4c1853ed9832332e7e3dbfadec67593eca92ce17c6b0ea7f37991b8e",
+      "packaging_changed": false,
+      "public_sha256": "2ed8c51b4c1853ed9832332e7e3dbfadec67593eca92ce17c6b0ea7f37991b8e",
+      "relative_path": "53_r1_matched_diag_module_placement/test_matched_diag_source.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "c9373b7a17c20fb7ef680f75f70658273210e6acbba6cc6df68fa7e2e37c3da3",
+      "packaging_changed": true,
+      "public_sha256": "c2ca2cfac677c47bbc48c03cdf4ce79f141b9e1c38d72250b384fbbf6b88abab",
+      "relative_path": "53_r1_matched_diag_module_placement/test_matched_diag_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "4a29b5b115c52b2115f9b04949325490d35c434079e6a08781a933bc371bd230",
+      "packaging_changed": true,
+      "public_sha256": "0affd1a334fb502cae1477a6196792204e971b33a0372c792ce19113b58ebdd8",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "95cb8a7186f4d27dd5fd490b04a564a11f4dc2e1801ab62f51be31b23b513a7a",
+      "packaging_changed": false,
+      "public_sha256": "95cb8a7186f4d27dd5fd490b04a564a11f4dc2e1801ab62f51be31b23b513a7a",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/accepted_ex48_data_projection.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "9943f4672c51c371cc753af29bc24e36ac084ea9acd44f47045b9612172874cb",
+      "packaging_changed": false,
+      "public_sha256": "9943f4672c51c371cc753af29bc24e36ac084ea9acd44f47045b9612172874cb",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/analyze.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "8903cbd214ad983094acacf83d824e95384cb38302440daaaf5cd2fa659ec5b9",
+      "packaging_changed": false,
+      "public_sha256": "8903cbd214ad983094acacf83d824e95384cb38302440daaaf5cd2fa659ec5b9",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/ex54_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "459dfff112a077fe8368fd68d62cae538de4f58d1c4dc2c664ce91d3b28afef5",
+      "packaging_changed": false,
+      "public_sha256": "459dfff112a077fe8368fd68d62cae538de4f58d1c4dc2c664ce91d3b28afef5",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/freeze_ex48_data_projection.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+      "packaging_changed": false,
+      "public_sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/frozen_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0f387bda098b593f4e319d3d23c966b999d41a47fdd24cbb6a3ca19ca38227a6",
+      "packaging_changed": false,
+      "public_sha256": "0f387bda098b593f4e319d3d23c966b999d41a47fdd24cbb6a3ca19ca38227a6",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/long_worker.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "fdf3440f17759ef0d4a3c256c853b3556ad856a696038bd06227181b45cd7bff",
+      "packaging_changed": false,
+      "public_sha256": "fdf3440f17759ef0d4a3c256c853b3556ad856a696038bd06227181b45cd7bff",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/moonlight_optimizer.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "996cbbc55e6d7839322023e2c883a662064631d2b53ef5b14a9eff4c3ab6b845",
+      "packaging_changed": false,
+      "public_sha256": "996cbbc55e6d7839322023e2c883a662064631d2b53ef5b14a9eff4c3ab6b845",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/prepare_frozen50_view.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "23eb574d38e9a3162a374a839a2470fb78d25281d9a08e3af566cae271bd4e1b",
+      "packaging_changed": false,
+      "public_sha256": "23eb574d38e9a3162a374a839a2470fb78d25281d9a08e3af566cae271bd4e1b",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/protocol.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "aab1a5e9ce4661e2fbc649b498c31211b2e345dc72505a4112bcf0ec968c1597",
+      "packaging_changed": true,
+      "public_sha256": "c04570df66f01a4e38344bac2e2d691c98f92986b3e8fa8a5264495e4aafd550",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/run_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b0f727fa3a452fe8222192aab97378036ec93f78122fb5da32f5c426de26609e",
+      "packaging_changed": false,
+      "public_sha256": "b0f727fa3a452fe8222192aab97378036ec93f78122fb5da32f5c426de26609e",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "7eae40154aec6b63fa1d2b184d14291ecc209d32ff5e1d55640b5324c0aae6f5",
+      "packaging_changed": false,
+      "public_sha256": "7eae40154aec6b63fa1d2b184d14291ecc209d32ff5e1d55640b5324c0aae6f5",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/test_analyze.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "a7e902c68786dfa81bff716de8256456ea4c346210343377f941821078e6d8d2",
+      "packaging_changed": false,
+      "public_sha256": "a7e902c68786dfa81bff716de8256456ea4c346210343377f941821078e6d8d2",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/test_controller_logic.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0f264cc719b212e2b899474a3e1352e3398178d3b172055299c0c43acbfc28a3",
+      "packaging_changed": false,
+      "public_sha256": "0f264cc719b212e2b899474a3e1352e3398178d3b172055299c0c43acbfc28a3",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/test_long_worker_contract_compat_v3.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "9c65b3f4ef11ac5e5871cc1e1fef746dc5f71d45dd63db16e4a27babe24e50e1",
+      "packaging_changed": false,
+      "public_sha256": "9c65b3f4ef11ac5e5871cc1e1fef746dc5f71d45dd63db16e4a27babe24e50e1",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/test_parallel_atomic_io.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "25cac0040e854a10c282e688c33f0f5fc23bbad59a0fc43f3f794440389bf515",
+      "packaging_changed": false,
+      "public_sha256": "25cac0040e854a10c282e688c33f0f5fc23bbad59a0fc43f3f794440389bf515",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/test_protocol.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "24f92afe5f1c5aa323248dfdac442e0f87d7a2e8c8601bb5acfd008fbe3f454a",
+      "packaging_changed": false,
+      "public_sha256": "24f92afe5f1c5aa323248dfdac442e0f87d7a2e8c8601bb5acfd008fbe3f454a",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/test_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "1069fb72d1c5ba44f373f8d2be567aeaab5dd195a9febe0a98847e9d0ca38e90",
+      "packaging_changed": false,
+      "public_sha256": "1069fb72d1c5ba44f373f8d2be567aeaab5dd195a9febe0a98847e9d0ca38e90",
+      "relative_path": "54_llama_moonlight_multiscale_multibudget/upload_wandb.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "8e02a93301c27c07daedc00f12c774933116ffa3552a01974b2526aae5dd228a",
+      "packaging_changed": true,
+      "public_sha256": "f7658a6f241c2f5b92dc6cc68a6aae2ca7d0eb1826c3c2e854aa1786e37da1aa",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "385ee7644ef49643c9d86cc44fe2b2fdea94e1e67cfd85620fc0ec8f3b1c8a31",
+      "packaging_changed": false,
+      "public_sha256": "385ee7644ef49643c9d86cc44fe2b2fdea94e1e67cfd85620fc0ec8f3b1c8a31",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/accepted_inputs_encoded/extended_selection.csv.b64",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "841b63933f25e195f1f59d220fbbb4e41b6a93dcd3cbb44110693a5caaa53f23",
+      "packaging_changed": false,
+      "public_sha256": "841b63933f25e195f1f59d220fbbb4e41b6a93dcd3cbb44110693a5caaa53f23",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/accepted_inputs_encoded/historical_panel.csv.b64",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "f00d8325e82807f724244b6ef43410fe88d116088ebef032b27753adc6ee42cc",
+      "packaging_changed": false,
+      "public_sha256": "f00d8325e82807f724244b6ef43410fe88d116088ebef032b27753adc6ee42cc",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/accepted_inputs_encoded/malt_selection.json.b64",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b55fbe6bd4153265060d2d2b4bb7d950f0ea1ed3090d7f3167c97b780374795f",
+      "packaging_changed": false,
+      "public_sha256": "b55fbe6bd4153265060d2d2b4bb7d950f0ea1ed3090d7f3167c97b780374795f",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/accepted_inputs_encoded/mousse_selection.json.b64",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "4e3730f2a3293391c269e67a38edc807096827e233575bbbd553ec207f3709ee",
+      "packaging_changed": false,
+      "public_sha256": "4e3730f2a3293391c269e67a38edc807096827e233575bbbd553ec207f3709ee",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/analyze_fresh_seed_panel.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b91df4bb3612cd1fdb89173f8fc9bf7ffc2de7b3f8073c8162d4adf36d2ce659",
+      "packaging_changed": false,
+      "public_sha256": "b91df4bb3612cd1fdb89173f8fc9bf7ffc2de7b3f8073c8162d4adf36d2ce659",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/ex55_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "8c39788542c84dc3bbea550bc719ee894009aca26b16293e5f760ab49bf4ee39",
+      "packaging_changed": false,
+      "public_sha256": "8c39788542c84dc3bbea550bc719ee894009aca26b16293e5f760ab49bf4ee39",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/materialize_accepted_inputs.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "372178d474b791962812238a48aaed61e7144e04ff4170122b317bc107a92280",
+      "packaging_changed": true,
+      "public_sha256": "3c54ce0ac082641ace09050a3c7212169a85f0938039c549165c79a2b17647db",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/run_fresh_seed_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "3ca7f44686bac1c9cd4c2b329cbec6a70088a662ba48cee36a97da052e2aab04",
+      "packaging_changed": false,
+      "public_sha256": "3ca7f44686bac1c9cd4c2b329cbec6a70088a662ba48cee36a97da052e2aab04",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/test_analyze_fresh_seed_panel.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "43685f485a209fa6b220d25c245e38bc05be34464a7aaf3838be55238cf19adc",
+      "packaging_changed": true,
+      "public_sha256": "d6796ebfd7636246cf988207f5df3d389575298f39a83ae3f2d5b90f77b23165",
+      "relative_path": "55_r1_fresh_seed_baseline_fairness/test_fresh_seed_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b20ee911cb7baecc5c7f7da99c616ffac6df8ff3b863c55d5774956517a39c75",
+      "packaging_changed": false,
+      "public_sha256": "b20ee911cb7baecc5c7f7da99c616ffac6df8ff3b863c55d5774956517a39c75",
+      "relative_path": "56_llama1b_10b_global_diag/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "d75ba8de6f720afeaddc15ab662bff40bfc89f908ffd7dda6464b2fd42edc1e7",
+      "packaging_changed": false,
+      "public_sha256": "d75ba8de6f720afeaddc15ab662bff40bfc89f908ffd7dda6464b2fd42edc1e7",
+      "relative_path": "56_llama1b_10b_global_diag/analyze_formal.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "faae34be426e99b6e0af4593cd6f26c5ccbfa2e8afbfaac4a50a611fc141819a",
+      "packaging_changed": false,
+      "public_sha256": "faae34be426e99b6e0af4593cd6f26c5ccbfa2e8afbfaac4a50a611fc141819a",
+      "relative_path": "56_llama1b_10b_global_diag/formal_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "0fc60d42e9711ca00aaf72f88f290be9cf4a52c211740dad51315c766b8185c6",
+      "packaging_changed": false,
+      "public_sha256": "0fc60d42e9711ca00aaf72f88f290be9cf4a52c211740dad51315c766b8185c6",
+      "relative_path": "56_llama1b_10b_global_diag/frozen_ex48_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "184c9c4f8b966adf676348e353ae0ff9100b7f459520e1ef7fe235f073f9bd85",
+      "packaging_changed": false,
+      "public_sha256": "184c9c4f8b966adf676348e353ae0ff9100b7f459520e1ef7fe235f073f9bd85",
+      "relative_path": "56_llama1b_10b_global_diag/llama_global_diag_source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "188589e9bae2401411f984468d3224066b9da5f6cc37ae34496735b605d30bb9",
+      "packaging_changed": false,
+      "public_sha256": "188589e9bae2401411f984468d3224066b9da5f6cc37ae34496735b605d30bb9",
+      "relative_path": "56_llama1b_10b_global_diag/protocol.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "3320cc8f2d1312d292e571979bea9f798ce0e4a43944b85228ed1e44a4e31c18",
+      "packaging_changed": false,
+      "public_sha256": "3320cc8f2d1312d292e571979bea9f798ce0e4a43944b85228ed1e44a4e31c18",
+      "relative_path": "56_llama1b_10b_global_diag/run_formal.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "bac8d49a045598665828df4ccda0730ff74e60478074b17900e3ef713fe33f57",
+      "packaging_changed": true,
+      "public_sha256": "b8e0bcc3d362160c178754eb400852d6739b9c3d405044c6f29934863c32b7bc",
+      "relative_path": "56_llama1b_10b_global_diag/test_ex56_contract.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "41d0acf8d152d20d46ce6a8317d3b78cc5fc20ae2d15342b65b0814029eb6c0f",
+      "packaging_changed": false,
+      "public_sha256": "41d0acf8d152d20d46ce6a8317d3b78cc5fc20ae2d15342b65b0814029eb6c0f",
+      "relative_path": "56_llama1b_10b_global_diag/train_segment.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "f66e48dad7b5f637451f123c770097732d9f34cdb821d76eb047ef55fb0576c2",
+      "packaging_changed": false,
+      "public_sha256": "f66e48dad7b5f637451f123c770097732d9f34cdb821d76eb047ef55fb0576c2",
+      "relative_path": "56_llama1b_10b_global_diag/upload_wandb.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "6b1679fd57923c7062c145b8c0557a44f75443186585cc353c33a1163230fbac",
+      "packaging_changed": true,
+      "public_sha256": "02f192f4f89badfee690542ff8b22cfc5cd1b7b45821dc0a479975a5d53f8543",
+      "relative_path": "57_llama1b_10b_moonlight/README.md",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "4de6c759ad9e862b2aacd5fe8d668c9ef6e52988d3d3159ef641d2d01963c985",
+      "packaging_changed": false,
+      "public_sha256": "4de6c759ad9e862b2aacd5fe8d668c9ef6e52988d3d3159ef641d2d01963c985",
+      "relative_path": "57_llama1b_10b_moonlight/accepted_ex48_data_projection.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b8ede24b6c312e104f4e56870da748736269441f4bc141124c41f73d26c2cfb9",
+      "packaging_changed": false,
+      "public_sha256": "b8ede24b6c312e104f4e56870da748736269441f4bc141124c41f73d26c2cfb9",
+      "relative_path": "57_llama1b_10b_moonlight/analyze.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "eba75924e703a0ae1552ac2df2250bd3456f21638da3ccffb25ddd106b7b350f",
+      "packaging_changed": false,
+      "public_sha256": "eba75924e703a0ae1552ac2df2250bd3456f21638da3ccffb25ddd106b7b350f",
+      "relative_path": "57_llama1b_10b_moonlight/ex57_contract.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+      "packaging_changed": false,
+      "public_sha256": "702b5bc2d4f8b205b530664e14a17dc303a64fcea02a1c419174404c720b52c3",
+      "relative_path": "57_llama1b_10b_moonlight/frozen_controls.csv",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "2e561fb977f9624fac66590074d942ed1a8484d678b0ae6bdb19febebd0f0e3b",
+      "packaging_changed": false,
+      "public_sha256": "2e561fb977f9624fac66590074d942ed1a8484d678b0ae6bdb19febebd0f0e3b",
+      "relative_path": "57_llama1b_10b_moonlight/legacy_ex57_contract_fair_parallel_v2.json",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "1e11ed84cb8a847e87b200731197fdb71058cded89285f237943e64b76fa1e0c",
+      "packaging_changed": false,
+      "public_sha256": "1e11ed84cb8a847e87b200731197fdb71058cded89285f237943e64b76fa1e0c",
+      "relative_path": "57_llama1b_10b_moonlight/long_worker.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "b9217bf432431c72ff6c0cebe9485c18fb6b409f16446b850a6e4867ce863d20",
+      "packaging_changed": false,
+      "public_sha256": "b9217bf432431c72ff6c0cebe9485c18fb6b409f16446b850a6e4867ce863d20",
+      "relative_path": "57_llama1b_10b_moonlight/moonlight_optimizer.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "801eeb0001f9383d6bdc5a4e24e284a366dacbdc942d1db75cc6a378b3a7927f",
+      "packaging_changed": false,
+      "public_sha256": "801eeb0001f9383d6bdc5a4e24e284a366dacbdc942d1db75cc6a378b3a7927f",
+      "relative_path": "57_llama1b_10b_moonlight/protocol.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "cc5b5f58eaa0ebe0bcd9a694e6ed7dab918eeef5d06a2d45bad07299f9a83c56",
+      "packaging_changed": false,
+      "public_sha256": "cc5b5f58eaa0ebe0bcd9a694e6ed7dab918eeef5d06a2d45bad07299f9a83c56",
+      "relative_path": "57_llama1b_10b_moonlight/run_suite.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "47e7f69158b1a8aaf2716254e4dfbbbc255004f34dd569c2e4051600b1ed56ab",
+      "packaging_changed": true,
+      "public_sha256": "fa4946114d8405ff0df392fcaa0048641c6a3c14398b34dca225d2abb91056c8",
+      "relative_path": "57_llama1b_10b_moonlight/runtime.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "a5d67cbaec69a2949517f525eb5f6415aa67715c714af25149978664a9c2fe31",
+      "packaging_changed": false,
+      "public_sha256": "a5d67cbaec69a2949517f525eb5f6415aa67715c714af25149978664a9c2fe31",
+      "relative_path": "57_llama1b_10b_moonlight/source_builder.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "1fbd44fdd3b1e8f5247d3af9f6e65378e9c1c2b7e087cddb990d36e8894c676a",
+      "packaging_changed": false,
+      "public_sha256": "1fbd44fdd3b1e8f5247d3af9f6e65378e9c1c2b7e087cddb990d36e8894c676a",
+      "relative_path": "57_llama1b_10b_moonlight/test_compile_cache_contract_compat.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "9be2151c859eff914b4bf7b2ec1cd155aa85b7aa3f4b6e0498f0237817ef435d",
+      "packaging_changed": false,
+      "public_sha256": "9be2151c859eff914b4bf7b2ec1cd155aa85b7aa3f4b6e0498f0237817ef435d",
+      "relative_path": "57_llama1b_10b_moonlight/test_ex57_contract.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "9c65b3f4ef11ac5e5871cc1e1fef746dc5f71d45dd63db16e4a27babe24e50e1",
+      "packaging_changed": false,
+      "public_sha256": "9c65b3f4ef11ac5e5871cc1e1fef746dc5f71d45dd63db16e4a27babe24e50e1",
+      "relative_path": "57_llama1b_10b_moonlight/test_parallel_atomic_io.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
       "original_sha256": "31d75e9ad7d8c14c85b4d9bbe20a9afa7b5e4e04eed8dbe628bfe04cf538f13d",
       "packaging_changed": true,
       "public_sha256": "45462f35ccc22376d86af4f770197852461879bf0cde26d9ed928e4dadec87c6",
@@ -3560,6 +4304,22 @@
       "packaging_changed": true,
       "public_sha256": "52ca97d94ef829dd143ea97154c9ab01a6f28556f0880ef36fdc59fb6fa8ab96",
       "relative_path": "analysis/analyze_wikitext103_seed2024.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "554fbe6c09855a88830938bf5c4d21d21475ee815cb53d752364c74fa3a80a21",
+      "packaging_changed": false,
+      "public_sha256": "554fbe6c09855a88830938bf5c4d21d21475ee815cb53d752364c74fa3a80a21",
+      "relative_path": "analysis/audit_ex50_52_wandb_exports.py",
+      "source_role": "legacy_experiment_repo"
+    },
+    {
+      "original_present_at_packaging": true,
+      "original_sha256": "23c70deb47c489bb7259dc4f060a5a96296dcf0f249782c19505759a584d2629",
+      "packaging_changed": false,
+      "public_sha256": "23c70deb47c489bb7259dc4f060a5a96296dcf0f249782c19505759a584d2629",
+      "relative_path": "analysis/audit_ex54_ex56_ex57_received.py",
       "source_role": "legacy_experiment_repo"
     },
     {
@@ -3960,246 +4720,6 @@
       "packaging_changed": false,
       "public_sha256": "ea6e7c68f04e6344e0282eb219d9e01286f1af1004453f47b6b8221651c4d5f2",
       "relative_path": "mechanism_closure/validate_mechanism_closure.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "18b7aff7994c52b8bf348db59a77763d5dac681ce99c1ed6eb9cfc37e3fd508c",
-      "packaging_changed": false,
-      "public_sha256": "18b7aff7994c52b8bf348db59a77763d5dac681ce99c1ed6eb9cfc37e3fd508c",
-      "relative_path": "50_r1_global_activation_diag/analyze_global_diag.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4",
-      "packaging_changed": false,
-      "public_sha256": "882263b5ea74b58e1f6fd76b4bb74193ec96594b53f092556bda5a71141398c4",
-      "relative_path": "50_r1_global_activation_diag/frozen_r1_controls.csv",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
-      "packaging_changed": false,
-      "public_sha256": "c6b1d6d3c77b2f40817985a5f1496fd7c261f75b8356ddcf3f9caac6c6a3bb38",
-      "relative_path": "50_r1_global_activation_diag/global_diag_contract.json",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "02e0b84d36637180428b6181f542e334ace02ce56eb60d948ffa2dcb2e28dbb1",
-      "packaging_changed": false,
-      "public_sha256": "02e0b84d36637180428b6181f542e334ace02ce56eb60d948ffa2dcb2e28dbb1",
-      "relative_path": "50_r1_global_activation_diag/global_diag_source_builder.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "0dac076fb13f1f15ad1107b9c19c76d23a2c2dea71d6a7d97d8c68562369b409",
-      "packaging_changed": true,
-      "public_sha256": "3d59cb781e92739e134ed51a5ab9353ea4aee762bcf9beb3ba631c70c865dec8",
-      "relative_path": "50_r1_global_activation_diag/README.md",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "698839ce928410a4a484aa2ff98a15ab0c35459f1bbbc8a5a23148ebd3f59b12",
-      "packaging_changed": true,
-      "public_sha256": "5f2d5023a5a830e9e42b66788992f87e30009a31ef414c03387bc2fca283c068",
-      "relative_path": "50_r1_global_activation_diag/run_global_diag_suite.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "b5ffbff45f76defa97ec17032cc5412d6682ff19fdadae10efced5a5dd1aa479",
-      "packaging_changed": true,
-      "public_sha256": "74385786f1bb88266dc0934532e003cb6eaf651fe8a781b76d181a5b989ec2fd",
-      "relative_path": "50_r1_global_activation_diag/run_global_diag.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "4d018b6624b8b7959a4fb0aa6bf6edf56f457a509642edfa18b0a4081f402333",
-      "packaging_changed": false,
-      "public_sha256": "4d018b6624b8b7959a4fb0aa6bf6edf56f457a509642edfa18b0a4081f402333",
-      "relative_path": "50_r1_global_activation_diag/test_analyze_global_diag.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "e431a8c0012378db022904655661b8295a1649a3c147eab54506cb5d15b92ffa",
-      "packaging_changed": false,
-      "public_sha256": "e431a8c0012378db022904655661b8295a1649a3c147eab54506cb5d15b92ffa",
-      "relative_path": "50_r1_global_activation_diag/test_global_diag_source.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "da836b08b5f9e123b90104eb41c52d0359851a7c322fd9dbe6a65db381a1927b",
-      "packaging_changed": false,
-      "public_sha256": "da836b08b5f9e123b90104eb41c52d0359851a7c322fd9dbe6a65db381a1927b",
-      "relative_path": "50_r1_global_activation_diag/test_global_diag_suite.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "c877bf41c004d4f49ad178ffb282586e4c51141ffdd3d580be7a2123ead8d448",
-      "packaging_changed": false,
-      "public_sha256": "c877bf41c004d4f49ad178ffb282586e4c51141ffdd3d580be7a2123ead8d448",
-      "relative_path": "51_moddedgpt_global_diag_scale/analyze_global_diag_scale.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79",
-      "packaging_changed": false,
-      "public_sha256": "efb4805e3ac97cc1d69d396533d8d2b296de337be0cb65006544920561755d79",
-      "relative_path": "51_moddedgpt_global_diag_scale/frozen_scale_controls.csv",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
-      "packaging_changed": false,
-      "public_sha256": "cd567c19fa07e90574042a3a3db23542e83ead45c0b9e585d3531dc8cbf48485",
-      "relative_path": "51_moddedgpt_global_diag_scale/global_diag_scale_contract.json",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "0b36f9eff7b941617ba5b23a8bb20ae40bc86b286d9eb9e94ad34025586be6c1",
-      "packaging_changed": false,
-      "public_sha256": "0b36f9eff7b941617ba5b23a8bb20ae40bc86b286d9eb9e94ad34025586be6c1",
-      "relative_path": "51_moddedgpt_global_diag_scale/global_diag_scale_source_builder.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "3de5126424351064311c99001d73d3595faf9649ca830ad101eb8dfad9305be5",
-      "packaging_changed": false,
-      "public_sha256": "3de5126424351064311c99001d73d3595faf9649ca830ad101eb8dfad9305be5",
-      "relative_path": "51_moddedgpt_global_diag_scale/prepare_frozen51_data_repo.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "bfcf60f45d95b0638a7a2c4dc1c8a0c2067cc4cab001b5009380a82e220c4cd6",
-      "packaging_changed": false,
-      "public_sha256": "bfcf60f45d95b0638a7a2c4dc1c8a0c2067cc4cab001b5009380a82e220c4cd6",
-      "relative_path": "51_moddedgpt_global_diag_scale/README.md",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "61927beb2541d577df6b76141f4d94cdcd587a2c133e5d9328ea98d206d1c63b",
-      "packaging_changed": false,
-      "public_sha256": "61927beb2541d577df6b76141f4d94cdcd587a2c133e5d9328ea98d206d1c63b",
-      "relative_path": "51_moddedgpt_global_diag_scale/run_global_diag_scale_cell.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "59429f1b88642809c848de2a39dd9d71319bd7e9168cf180290aa55259dc9a68",
-      "packaging_changed": true,
-      "public_sha256": "0b9258ffb3c950e066029a425a7b16b5848d61cf7222f653c410b7b5488884b2",
-      "relative_path": "51_moddedgpt_global_diag_scale/run_global_diag_scale_suite.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "e9c23e135d411aabeef92d76929a99c5bf4270fd61d4a6612fee366940b9ddcd",
-      "packaging_changed": false,
-      "public_sha256": "e9c23e135d411aabeef92d76929a99c5bf4270fd61d4a6612fee366940b9ddcd",
-      "relative_path": "51_moddedgpt_global_diag_scale/test_analyze_global_diag_scale.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "d0c055bdd22257c26a4db4daba848611394024970c8ecd3f5b9cfd9f997813fa",
-      "packaging_changed": true,
-      "public_sha256": "9d669a012e7c02de7ced890f0bbc59c2e354cb5d17dcda17d7f3e63774492bd9",
-      "relative_path": "51_moddedgpt_global_diag_scale/test_global_diag_scale.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "0c702c3c26686db1b443002ccbbbdcaf40b11e8536122511a472b5fe4315659e",
-      "packaging_changed": false,
-      "public_sha256": "0c702c3c26686db1b443002ccbbbdcaf40b11e8536122511a472b5fe4315659e",
-      "relative_path": "52_llama_global_diag_scale/analyze_llama_global_diag_scale.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "e5864fbe5997df2a09c8063705a6fa1117fec73f332ae3780105f944ce7c8474",
-      "packaging_changed": false,
-      "public_sha256": "e5864fbe5997df2a09c8063705a6fa1117fec73f332ae3780105f944ce7c8474",
-      "relative_path": "52_llama_global_diag_scale/frozen_llama_controls.csv",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "b7b2b23d299550c4bc18f036e876b007e549abc6fb495f789c9711d92b6fb53a",
-      "packaging_changed": true,
-      "public_sha256": "199d4b0a9e0877ca70e557aaea95850202b01281cdd008e0c5d8b8fd51d29997",
-      "relative_path": "52_llama_global_diag_scale/llama_global_diag_contract.json",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "184c9c4f8b966adf676348e353ae0ff9100b7f459520e1ef7fe235f073f9bd85",
-      "packaging_changed": true,
-      "public_sha256": "78f4be8b0e810f89112448882d45c478193c199f6b138cbfb4b7a1ca580cbb8a",
-      "relative_path": "52_llama_global_diag_scale/llama_global_diag_source_builder.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "3fec2d0e27b499284ba28eb9b61532ca8a02e1704a3437f0edb7776d2b1e060a",
-      "packaging_changed": false,
-      "public_sha256": "3fec2d0e27b499284ba28eb9b61532ca8a02e1704a3437f0edb7776d2b1e060a",
-      "relative_path": "52_llama_global_diag_scale/prepare_frozen50_view.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "720e502eb3c05b9756ed9b045866a53c9c40b8ae26b3beb09847f393fb0dfed6",
-      "packaging_changed": false,
-      "public_sha256": "720e502eb3c05b9756ed9b045866a53c9c40b8ae26b3beb09847f393fb0dfed6",
-      "relative_path": "52_llama_global_diag_scale/README.md",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "917ca5fa152a13091af9a2d35a4cc286f93c46ac0967a81cb704cd6b1dfa5671",
-      "packaging_changed": true,
-      "public_sha256": "8737e562aae5ca80fa1d24d3110177601c88e3358b8f5a3b14888542c382ab05",
-      "relative_path": "52_llama_global_diag_scale/run_llama_global_diag_suite.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "cb6ced6de2b2816640a355f36a684aaf575fd314f742a5887d7cbcd36a5e751e",
-      "packaging_changed": false,
-      "public_sha256": "cb6ced6de2b2816640a355f36a684aaf575fd314f742a5887d7cbcd36a5e751e",
-      "relative_path": "52_llama_global_diag_scale/test_analyze_llama_global_diag_scale.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "20671514db193705d97e6882d720e027dcd15becae985cc96c15403a464232d4",
-      "packaging_changed": true,
-      "public_sha256": "e7d75f62396ba5a10c471c93894e95e7c6c58e2f78a04f68383b9408311a75fe",
-      "relative_path": "52_llama_global_diag_scale/test_llama_global_diag_scale.py",
-      "source_role": "legacy_experiment_repo"
-    },
-    {
-      "original_present_at_packaging": true,
-      "original_sha256": "554fbe6c09855a88830938bf5c4d21d21475ee815cb53d752364c74fa3a80a21",
-      "packaging_changed": false,
-      "public_sha256": "554fbe6c09855a88830938bf5c4d21d21475ee815cb53d752364c74fa3a80a21",
-      "relative_path": "analysis/audit_ex50_52_wandb_exports.py",
       "source_role": "legacy_experiment_repo"
     }
   ],

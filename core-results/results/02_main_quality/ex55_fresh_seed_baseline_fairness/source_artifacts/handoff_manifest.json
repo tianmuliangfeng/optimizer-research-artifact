@@ -1,0 +1,73 @@
+{
+  "analysis_amendment": {
+    "bytes": 1763,
+    "path": "PRIVATE_PATH_REDACTED__981889e719e9",
+    "sha256": "f06e7b837899a5336040b4f43ebac5491a67495ea71ccce577f80970324eafdd"
+  },
+  "analysis_analyzer": {
+    "bytes": 35462,
+    "path": "PRIVATE_PATH_REDACTED__f8c13d30890b",
+    "sha256": "4e3730f2a3293391c269e67a38edc807096827e233575bbbd553ec207f3709ee"
+  },
+  "analysis_manifest": "PRIVATE_PATH_REDACTED__5af60c98b71c",
+  "analysis_manifest_sha256": "00f1adf557010d75459fad1cc29b1913c74d348118ef28de75ea97921b7b8f2e",
+  "checkpoint_verification_manifest": "PRIVATE_PATH_REDACTED__74c5f6734168",
+  "checkpoint_verification_manifest_sha256": "738d8c078fa694e5842159a18ba3f579253eaff701825b6724394c42ff94d9ae",
+  "completed_at": "2026-08-19T02:17:13.958368+00:00",
+  "experiment_id": "55_r1_fresh_seed_baseline_fairness",
+  "extended_selection_audit": {
+    "checks": {
+      "all_advance": true,
+      "exact_methods_and_cells": true,
+      "exact_three_rows": true,
+      "quality_usable": true,
+      "seed2026_pilot": true
+    },
+    "passed": true,
+    "selected_cells": {
+      "adamw": "adamw_low",
+      "moonlight": "moonlight_r1scale",
+      "normuon": "normuon_r1scale"
+    },
+    "sha256": "2b38133a27f1625c26174cea98a78568026d9a4e9b7eca12accb53e79228c80d"
+  },
+  "formal_seed": 2027,
+  "formal_units": 10,
+  "historical_panel_preserved": true,
+  "malt_winner_selection_audit": {
+    "checks": {
+      "formal_allowed": true,
+      "malt_cell": true,
+      "malter_cell": true,
+      "protocol": true,
+      "required_methods": true,
+      "seed_and_steps": true,
+      "selected": true
+    },
+    "passed": true,
+    "sha256": "591348aad2d19f36ca405abe2162d329dc89246bc41fc1fec3cb0581a28fe4ee"
+  },
+  "mousse_selection_audit": {
+    "checks": {
+      "protocol": true,
+      "seed_and_steps": true,
+      "selected": true,
+      "selected_cell": true,
+      "selected_lr": true
+    },
+    "passed": true,
+    "sha256": "46a09b8053d20c0e8259c5d946be8d9ed60bc1c950fba677a74b8e563e4a2e3c"
+  },
+  "passed": true,
+  "preformal_sensitivity_manifest": "PRIVATE_PATH_REDACTED__17bbc657e48c",
+  "preformal_sensitivity_manifest_sha256": "3417cbab3f2f409fcde464af5e25c4a2ded3b558c823f95ad831e1db16df1057",
+  "repaired_panel_seeds": [
+    2024,
+    2025,
+    2027
+  ],
+  "schema_version": 1,
+  "scientific_result": "fresh_seed_fairness_panel_completed",
+  "status": "completed",
+  "timing_usable": false
+}
